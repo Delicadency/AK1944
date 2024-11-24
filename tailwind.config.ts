@@ -24,7 +24,10 @@ export default {
         yellowVintage: "#F4DBBE",
       },
       fontFamily: {
-        // fonty wykorzystywane w projekcie
+        figtree: ["var(--font-figtree)", "sans-serif"],
+        lora: ["var(--font-lora)", "serif"],
+        sourceSans: ["var(--font-source-sans)", "sans-serif"],
+        courier: ["Courier New", "Courier", "monospace"],
       },
       fontSize: {
         "12": "12px",
@@ -58,7 +61,7 @@ export default {
       },
       animation: {
         // animacje
-      }
+      },
     },
   },
   plugins: [],

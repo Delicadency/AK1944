@@ -2,15 +2,20 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const figtree = localFont({
+  src: "./fonts/Figtree-Variable.woff2",
+  variable: "--font-figtree",
+  weight: "400",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const lora = localFont({
+  src: "./fonts/Lora-Variable.woff2",
+  variable: "--font-lora",
+  weight: "700",
+});
+const sourceSans = localFont({
+  src: "./fonts/SourceSans3-Variable.woff2",
+  variable: "--font-source-sans",
+  weight: "400 600",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${figtree.variable} ${lora.variable} ${sourceSans.variable} antialiased`}
       >
         {children}
       </body>
