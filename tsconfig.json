@@ -8,10 +8,10 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node", 
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",  
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -23,9 +23,12 @@
     }
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "jest.setup.js", "jest.config.js"  ],
+    "**/*.tsx",
+    "jest.config.js",
+    "jest.setup.js",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
