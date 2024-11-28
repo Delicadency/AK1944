@@ -18,5 +18,8 @@ const customJestConfig = {
     '^@/(.*)$': '<rootDir>/$1',
   },
 };
+module.exports = {
+  setupFilesAfterEnv: ["<rootDir>/src/jest.setup.ts"],
+};
 
 export default createJestConfig(customJestConfig);
