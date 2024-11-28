@@ -15,7 +15,7 @@ export default {
         greenMain: "#163020",
         greenMain30: "rgba(22, 48, 32, 0.3)",
         greenMain10: "rgba(22, 48, 32, 0.1)",
-        greenLight: "#6F8E6E",
+        greenLight: "#D4E0D3",
         greenB: "#304D30",
         greenC: "#6F8E6E",
         backgroundMain: "#FFFCF5",
