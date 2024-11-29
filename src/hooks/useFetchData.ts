@@ -11,25 +11,25 @@ interface Post {
 }
 
 export const useFetchData = (url: string) => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isPending, setIsPending] = useState(true);
   const [data, setData] = useState<Post[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setIsLoading(true);
+        setIsPending(true);
         const res = await fetch(url);
         const result: Post[] = await res.json();
         setData(result);
       } catch (e) {
         console.log("Error fetching data", e);
       } finally {
-        setIsLoading(false);
+        setIsPending(false);
       }
     };
 
     fetchData();
-  }, [url, setIsLoading, setData]);
+  }, [url, setIsPending, setData]);
 
-  return { data, isLoading };
+  return { data, isPending };
 };

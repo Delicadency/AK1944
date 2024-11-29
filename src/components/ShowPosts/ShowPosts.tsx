@@ -4,13 +4,13 @@ import { useFetchData } from "@/hooks/useFetchData";
 import parse from "html-react-parser";
 
 export const ShowPosts = () => {
-  const { data: posts, isLoading } = useFetchData(
+  const { data: posts, isPending } = useFetchData(
     "https://wordpressapi.eu/wp-json/wp/v2/posts/",
   );
 
   return (
     <>
-      {isLoading ? (
+      {isPending ? (
         <div>Wczytuje dane...</div>
       ) : (
         posts.map((post) => (
