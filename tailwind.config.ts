@@ -5,6 +5,7 @@ export default {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./stories/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -14,7 +15,7 @@ export default {
         greenMain: "#163020",
         greenMain30: "rgba(22, 48, 32, 0.3)",
         greenMain10: "rgba(22, 48, 32, 0.1)",
-        greenLight: "#6F8E6E",
+        greenLight: "#D4E0D3",
         greenB: "#304D30",
         greenC: "#6F8E6E",
         backgroundMain: "#FFFCF5",
@@ -50,7 +51,7 @@ export default {
       screens: {
         // rozdzielczości do zdefiniowania na podstawie projektu
       },
-      borderRedius: {
+      borderRadius: {
         // niestandardowe zaokrąglenia
       },
       boxShadow: {
