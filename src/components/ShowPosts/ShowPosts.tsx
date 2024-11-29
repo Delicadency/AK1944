@@ -15,10 +15,12 @@ interface Post {
 }
 
 export const ShowPosts = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [posts, setPosts] = useState<Post[]>([]); // Określamy typ stanu
 
   async function fetchData() {
     try {
+      setIsLoading(true);
       const res = await fetch("https://wordpressapi.eu/wp-json/wp/v2/posts/");
       const data: Post[] = await res.json(); // Użyj interfejsu Post
       setPosts(data);
@@ -26,20 +28,26 @@ export const ShowPosts = () => {
       console.log("Error!", e);
     } finally {
       console.log("The data was fetched correctly!");
+      setIsLoading(false);
     }
   }
 
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <>
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2 className="text-2xl">{post.title.rendered}</h2>
-          <div className="text-lg">{parse(post.content.rendered)}</div>
-        </div>
-      ))}
+      {isLoading ? (
+        <div>Wczytuje dane...</div>
+      ) : (
+        posts.map((post) => (
+          <div key={post.id}>
+            <h2 className="text-2xl">{post.title.rendered}</h2>
+            <div className="text-lg">{parse(post.content.rendered)}</div>
+          </div>
+        ))
+      )}
     </>
   );
 };
