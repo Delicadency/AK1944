@@ -16,17 +16,16 @@ interface Post {
 
 export default function Home() {
   const [posts, setPosts] = useState<Post[]>([]); // Określamy typ stanu
-  const [isRefreshing, setIsRefreshing] = useState(false); // Stan do zarządzania odświeżaniem
+
   async function fetchData() {
     try {
-      setIsRefreshing(true); // Ustawia stan odświeżania na true
       const res = await fetch("https://wordpressapi.eu/wp-json/wp/v2/posts/");
       const data: Post[] = await res.json(); // Użyj interfejsu Post
       setPosts(data);
     } catch (e) {
       console.log("Error!", e);
     } finally {
-      setIsRefreshing(false); // Ustawia stan odświeżania na false, niezależnie od wyniku
+      console.log("The data was fetched correctly!");
     }
   }
 
