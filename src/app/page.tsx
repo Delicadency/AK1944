@@ -21,8 +21,8 @@ export default function Home() {
     try {
       setIsRefreshing(true); // Ustawia stan odświeżania na true
       const res = await fetch("https://wordpressapi.eu/wp-json/wp/v2/posts/");
-      const myResponse: Post[] = await res.json(); // Użyj interfejsu Post
-      setPosts(myResponse);
+      const data: Post[] = await res.json(); // Użyj interfejsu Post
+      setPosts(data);
     } catch (e) {
       console.log("Error!", e);
     } finally {
