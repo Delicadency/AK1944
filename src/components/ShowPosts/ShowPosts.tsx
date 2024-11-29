@@ -1,40 +1,12 @@
 "use client";
 
+import { useFetchData } from "@/hooks/useFetchData";
 import parse from "html-react-parser";
-import { useEffect, useState } from "react";
-
-interface Post {
-  id: number;
-  date: string;
-  title: {
-    rendered: string;
-  };
-  content: {
-    rendered: string;
-  };
-}
 
 export const ShowPosts = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [posts, setPosts] = useState<Post[]>([]); // Określamy typ stanu
-
-  async function fetchData() {
-    try {
-      setIsLoading(true);
-      const res = await fetch("https://wordpressapi.eu/wp-json/wp/v2/posts/");
-      const data: Post[] = await res.json(); // Użyj interfejsu Post
-      setPosts(data);
-    } catch (e) {
-      console.log("Error!", e);
-    } finally {
-      console.log("The data was fetched correctly!");
-      setIsLoading(false);
-    }
-  }
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const { data: posts, isLoading } = useFetchData(
+    "https://wordpressapi.eu/wp-json/wp/v2/posts/",
+  );
 
   return (
     <>
