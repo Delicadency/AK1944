@@ -8,15 +8,17 @@ export default {
   component: News,
 } as Meta;
 
-const Template: StoryFn = (args) => <News {...args} />;
+const Template: StoryFn = (args) => (
+  <News url="https://wordpressapi.eu/wp-json/wp/v2/posts" {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
-  url: "https://wordpressapi.eu/wp-json/wp/v2/posts",
+  // Prawidłowy url aby pokazać obsłgę danych
 };
 
 export const ErrorState = Template.bind({});
 ErrorState.args = {
-  url: "https://zlyadress.eu/wp-json/wp/v2/posts",
+  url: "https://zlyadres.eu/",
   // Błedny url aby pokazać obsługę błędu
 };
