@@ -1,7 +1,7 @@
 // src/stories/News.stories.tsx
 import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import { News } from "./News";
+import { News } from ".";
 
 export default {
   title: "Components/News",
