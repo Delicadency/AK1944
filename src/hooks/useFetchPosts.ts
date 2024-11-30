@@ -10,19 +10,19 @@ interface Post {
   };
 }
 
-export const useFetchData = (url: string) => {
+export const useFetchPosts = (url: string) => {
   const [isPending, setIsPending] = useState(true);
-  const [data, setData] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchPost = async () => {
       setIsPending(true);
       try {
         const response = await fetch(url);
         if (!response.ok) throw new Error(response.statusText);
         const json: Post[] = await response.json();
-        setData(json);
+        setPosts(json);
         setError(null);
       } catch (error) {
         setError(`${error} Nie udało się pobrać danych`);
@@ -31,8 +31,8 @@ export const useFetchData = (url: string) => {
       }
     };
 
-    fetchData();
-  }, [url, setIsPending, setData]);
+    fetchPost();
+  }, [url, setIsPending, setPosts]);
 
-  return { data, isPending, error };
+  return { posts, isPending, error };
 };
