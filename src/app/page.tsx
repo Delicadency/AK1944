@@ -1,9 +1,9 @@
-import { ShowPosts } from "@/components/ShowPosts/ShowPosts";
+import { News } from "@/components/News/News";
 
 export default function Home() {
   return (
     <main>
-      <ShowPosts />
+      <News url="https://wordpressapi.eu/wp-json/wp/v2/posts/" />
     </main>
   );
 }

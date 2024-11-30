@@ -2,10 +2,12 @@
 import { useFetchPosts } from "@/hooks/useFetchPosts";
 import parse from "html-react-parser";
 
-export const ShowPosts = () => {
-  const { posts, isPending, error } = useFetchPosts(
-    "https://wordpressapi.eu/wp-json/wp/v2/posts/",
-  );
+interface NewsProps {
+  url: string;
+}
+
+export const News: React.FC<NewsProps> = ({ url }) => {
+  const { posts, isPending, error } = useFetchPosts(url);
 
   return (
     <>
