@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl">
+    <html lang="pl" data-lt-installed="true">
       <body
         className={`${figtree.variable} ${lora.variable} ${sourceSans.variable} antialiased`}
       >
