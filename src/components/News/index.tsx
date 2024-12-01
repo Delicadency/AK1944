@@ -6,6 +6,7 @@ interface NewsProps {
 }
 
 export const News = async ({ url }: NewsProps) => {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   try {
     const posts = await getPosts(url);
 
