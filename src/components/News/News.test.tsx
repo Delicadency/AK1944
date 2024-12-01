@@ -22,4 +22,22 @@ describe("News component", () => {
       expect(screen.queryByText("Second Post")).not.toBeInTheDocument();
     });
   });
+
+  it("handles API errors gracefully", async () => {
+    render(await News({ url: "/error-endpoint" }));
+
+    await waitFor(() => {
+      expect(
+        screen.getByText(/Wystąpił błąd podczas ładowania danych/),
+      ).toBeVisible();
+    });
+  });
+
+  it("hides loader text after posts are fetched", async () => {
+    render(await News({ url: "/posts" }));
+
+    await waitFor(() => {
+      expect(screen.queryByText("Wczytuje dane...")).not.toBeInTheDocument();
+    });
+  });
 });

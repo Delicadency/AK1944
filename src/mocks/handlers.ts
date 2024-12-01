@@ -27,4 +27,8 @@ export const handlers = [
   http.get("/empty-posts", () => {
     return HttpResponse.json([]);
   }),
+
+  http.get("/error-endpoint", () => {
+    return HttpResponse.json(["Wystąpił błąd podczas ładowania danych"]);
+  }),
 ];
