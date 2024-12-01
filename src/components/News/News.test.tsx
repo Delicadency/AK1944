@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from "@testing-library/react";
-import { News } from "@/components/News";
+import { News } from "@/components/News/News";
 
 describe("News component", () => {
   it("renders posts fetched from API", async () => {

@@ -1,7 +1,5 @@
-// src/stories/News.stories.tsx
-import React from "react";
 import { Meta, StoryFn } from "@storybook/react";
-import { News } from ".";
+import { News } from "./News";
 
 export default {
   title: "Components/News",
@@ -14,7 +12,7 @@ const Template: StoryFn = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  // Prawidłowy url aby pokazać obsłgę danych
+  url: "https://wordpressapi.eu/wp-json/wp/v2/posts", // Prawidłowy url aby pokazać obsłgę danych
 };
 
 export const ErrorState = Template.bind({});
