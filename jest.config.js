@@ -1,25 +1,25 @@
-import nextJest from 'next/jest';
+import nextJest from "next/jest.js";
 
 const createJestConfig = nextJest({
-  dir: './', 
+  dir: "./",
 });
 
 const customJestConfig = {
   setupFilesAfterEnv: [
-    '@testing-library/jest-dom/extend-expect', 
-    '<rootDir>/jest.setup.js', 
+    "@testing-library/jest-dom", // Zaktualizowano do poprawnej ścieżki
+    "<rootDir>/jest.setup.js", // Dodatkowy plik setup (opcjonalnie)
   ],
-  testEnvironment: 'jest-environment-jsdom',
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'], 
+  testEnvironment: "jest-fixed-jsdom",
+  testEnvironmentOptions: {
+    customExportConditions: [""],
+  },
+  testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest', 
+    "^.+\\.(ts|tsx)$": "ts-jest",
   },
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/$1',
+    "^@/(.*)$": "<rootDir>/$1",
   },
-};
-module.exports = {
-  setupFilesAfterEnv: ["<rootDir>/src/jest.setup.ts"],
 };
 
 export default createJestConfig(customJestConfig);
