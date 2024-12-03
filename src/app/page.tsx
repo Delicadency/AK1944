@@ -1,7 +1,9 @@
+import { NewsSkeleton } from "@/components/NewsSkeleton/NewsSkeleton";
+
 export default function Home() {
   return (
-    <>
-    {/* Uzupełnić strukturę strony o utworzone komponenty */}
-    </>
+    <main>
+      <NewsSkeleton />
+    </main>
   );
 }
