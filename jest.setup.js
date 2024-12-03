@@ -1,4 +1,7 @@
-import "@testing-library/jest-dom/extend-expect";
 import "@testing-library/jest-dom";
+import "whatwg-fetch";
+import { server } from "./src/mocks/server";
 
-// Do uzupełnienia mockowanie wybranych elementów next.js wykorzystywanych w testach, na razie zostawiam puste
+beforeAll(() => server.listen({ onUnhandledRequest: "warn" }));
+afterEach(() => server.resetHandlers());
+afterAll(() => server.close());
