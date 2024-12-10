@@ -49,7 +49,8 @@ export default {
         "50": "50px",
       },
       screens: {
-        // rozdzielczości do zdefiniowania na podstawie projektu
+        tablet: "768px",
+        desktop: "1280px"
       },
       borderRadius: {
         // niestandardowe zaokrąglenia
