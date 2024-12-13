@@ -15,7 +15,7 @@ export const homeArmyUnionNavData = [
   { href: "/board", label: "Zarząd" },
   { href: "/union", label: "Historia Związku" },
   { href: "/calendar", label: "Kalendarz uroczystości" },
-  { href: "/projects", label: "Realizowane projekty" },
+  { href: "/ongoing-projects", label: "Realizowane projekty" },
   { href: "/memorials", label: "Miejsca pamięci" },
 ];
 
@@ -33,8 +33,8 @@ export const partisanTrailData = [
 ];
 
 export const footerNavData = [
-  { href: "/about", label: "O nas" },
-  { href: "/partisan-trail", label: "Szlak Partyzancki" },
+  { href: "/partisan-trail/about", label: "O nas" },
+  { href: "/partisan-trail/partisan-trail", label: "Szlak Partyzancki" },
   { href: "/graves", label: "Inwentarz grobów" },
   { href: "/partners", label: "Partnerzy" },
   { href: "/contact", label: "Kontakt" },
