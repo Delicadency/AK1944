@@ -7,22 +7,27 @@ const FontSwitcher = () => {
   if (!fontContext) {
     return null; // or handle the null case appropriately
   }
-  const { font, changeFont } = fontContext;
+  const { changeFont } = fontContext;
 
   return (
-    <div className="flex items-center justify-center gap-10">
-      <button onClick={() => changeFont("")}>Normal Font {font}</button>
+    <div className="flex items-center justify-center gap-10 text-white contrast:text-black">
       <button
-        className="mediumFont:text-2xl"
-        onClick={() => changeFont("mediumFont")}
+        className="w-[33px] text-22 leading-9"
+        onClick={() => changeFont("")}
       >
-        Medium Font {font}
+        A
       </button>
       <button
-        className="largeFont:text-3xl"
+        className="w-[37px] text-28 leading-10"
+        onClick={() => changeFont("mediumFont")}
+      >
+        A
+      </button>
+      <button
+        className="w-[40px] text-30 leading-[60px]"
         onClick={() => changeFont("largeFont")}
       >
-        Large Font {font}
+        A
       </button>
     </div>
   );
