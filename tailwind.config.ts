@@ -23,6 +23,7 @@ export default {
         redMain: "#8F0000",
         redError: "#D31828",
         yellowVintage: "#F4DBBE",
+        yellow: "FFF205",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
@@ -50,7 +51,7 @@ export default {
       },
       screens: {
         tablet: "768px",
-        desktop: "1280px"
+        desktop: "1280px",
       },
       borderRadius: {
         // niestandardowe zaokrąglenia
