@@ -24,6 +24,7 @@ export default {
         redMain: "#8F0000",
         redError: "#D31828",
         yellowVintage: "#F4DBBE",
+        yellowContrast: "#FFF205",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
