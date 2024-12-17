@@ -1,7 +1,12 @@
-export const navigationData = [
-  { href: "/", label: "Związek AK" },
-  { href: "/", label: "Szlak Partyzancki" },
-  { href: "/", label: "Inwentarz grobów" },
-  { href: "/", label: "Partnerzy" },
-  { href: "/", label: "Wesprzyj" },
+type NavigationItem = {
+  label: string;
+  href: string;
+};
+
+export const navigationData: NavigationItem[] = [
+  { label: "Związek AK", href: "/zwiazek-ak" },
+  { label: "Szlak Partyzancki", href: "/szlak-partyzancki" },
+  { label: "Inwentarz grobów", href: "/inwentarz-grobow" },
+  { label: "Partnerzy", href: "/partnerzy" },
+  { label: "Wesprzyj", href: "/wesprzyj" },
 ];
