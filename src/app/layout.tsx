@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Layout } from "@/components/Layout";
 import ThemeProvider from "@/context/ThemesProvider";
 
 const figtree = localFont({
@@ -38,6 +39,7 @@ export default function RootLayout({
       <body
         className={`${figtree.variable} ${lora.variable} ${sourceSans.variable} antialiased`}
       >
+        <Layout> {children} </Layout>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
