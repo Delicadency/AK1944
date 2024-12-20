@@ -7,7 +7,7 @@ export interface ButtonProps {
   variant: "primary" | "inversion" | "secondary";
   size: "medium" | "large";
   icon: boolean;
-  iconName: IconName
+  iconName: IconName;
   label: string;
   href: string;
 }
@@ -27,11 +27,6 @@ export const Button = ({
       "bg-backgroundMain text-redMain hover:bg-backgroundB active:bg-[#e8e3da]",
     secondary: "bg-greenLight text-black hover:bg-greenC active:bg-greenB",
   };
-  const iconVariants = {
-    primary: "text-backgroundMain",
-    inversion: "text-redMain",
-    secondary: "text-black",
-  };
   //active and hover are not set in Figma yet, to change later !!!
   const sizes = {
     medium: "text-16",
@@ -41,14 +36,14 @@ export const Button = ({
     <Link
       href={href}
       className={clsx(
-        "button-outline h-fit rounded px-8 py-3 font-sourceSans shadow-inner",
+        "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner",
         variants[variant],
         sizes[size],
       )}
     >
       {icon && iconName && (
-      <ButtonIcon name={iconName} className={iconVariants[variant]} />
-    )}
+        <ButtonIcon name={iconName} className="text-inherit" />
+      )}
       {label}
     </Link>
   );
