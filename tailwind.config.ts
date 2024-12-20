@@ -56,7 +56,6 @@ export default {
       screens: {
         tablet: "768px",
         desktop: "1280px",
-        desktop: "1280px",
       },
       borderRadius: {
         // niestandardowe zaokrąglenia

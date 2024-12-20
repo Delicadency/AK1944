@@ -24,10 +24,11 @@ export const Button = ({
 }: ButtonProps) => {
   const variants = {
     primary:
-      "bg-redMain text-backgroundMain hover:bg-[#7A0003] active:bg-[#520103]",
+      "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain hover:bg-[#7A0003] active:bg-[#520103]",
     inversion:
-      "bg-backgroundMain text-redMain hover:bg-backgroundB active:bg-[#e8e3da]",
-    secondary: "bg-greenLight text-black hover:bg-greenC active:bg-greenB",
+      "constrast:bg-yellow contrast:text-black00 bg-backgroundMain text-redMain hover:bg-backgroundB active:bg-[#e8e3da]",
+    secondary:
+      "constrast:bg-yellow contrast:text-black00 bg-greenLight text-black hover:bg-greenC active:bg-greenB",
   };
   //active and hover are not set in Figma yet, to change later !!!
   //remember to add focus:outline-color
