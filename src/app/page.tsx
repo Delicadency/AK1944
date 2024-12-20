@@ -9,7 +9,9 @@ export default function Home() {
       <NewsSkeleton />
       <SwitchContrast />
       <FontSwitcher />
-      <BackgroundImage />
+      <BackgroundImage>
+        <p>Home</p>
+      </BackgroundImage>
     </main>
   );
 }
