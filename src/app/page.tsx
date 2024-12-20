@@ -1,3 +1,4 @@
+import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 import { NewsSkeleton } from "@/components/NewsSkeleton/NewsSkeleton";
 import SwitchContrast from "@/components/Switcher/ContrastSwitcher";
 import FontSwitcher from "@/components/Switcher/FontSwitcher";
@@ -8,6 +9,7 @@ export default function Home() {
       <NewsSkeleton />
       <SwitchContrast />
       <FontSwitcher />
+      <BackgroundImage />
     </main>
   );
 }
