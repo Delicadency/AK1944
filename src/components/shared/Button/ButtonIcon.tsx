@@ -33,5 +33,5 @@ export default function ButtonIcon({
   if (!IconComponent) {
     return <></>;
   }
-  return <IconComponent className={className} />;
+  return <IconComponent className={className} aria-hidden="true"/>;
 }
