@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 export default {
   content: [
@@ -55,6 +56,7 @@ export default {
       screens: {
         tablet: "768px",
         desktop: "1280px",
+        desktop: "1280px",
       },
       borderRadius: {
         // niestandardowe zaokrąglenia
@@ -70,5 +72,11 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("contrast", ".contrast &");
+      addVariant("mediumFont", ".mediumFont &");
+      addVariant("largeFont", ".largeFont &");
+    }),
+  ],
 } satisfies Config;
