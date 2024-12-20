@@ -22,10 +22,13 @@ const Modal = ({ children, isModalOpen, setIsModalOpen }: ModalProps) => {
     isModalOpen && (
       <div
         onClick={() => setIsModalOpen(false)}
-        className="fixed inset-0 z-50 flex h-screen cursor-pointer items-center justify-center overflow-y-scroll bg-slate-900/20 backdrop-blur"
+        className="fixed inset-0 z-50 flex h-screen items-center justify-center overflow-y-scroll bg-slate-900/20 backdrop-blur"
       >
-        <div className="relative m-auto flex animate-modalAnimation cursor-default flex-col items-center overflow-hidden overflow-y-auto rounded bg-greenMain px-3 pt-[10px] text-white ease-in">
-          <button className="self-end" onClick={() => setIsModalOpen(false)}>
+        <div className="relative m-auto flex animate-modalAnimation cursor-default flex-col items-center rounded bg-greenMain px-3 pt-12 text-white ease-in desktop:px-10 desktop:pt-[60px]">
+          <button
+            className="absolute right-3 top-3"
+            onClick={() => setIsModalOpen(false)}
+          >
             <ModalCloseIcon />
           </button>
           {children}
