@@ -1,13 +1,22 @@
-type BackgroundImageProps = {
+import Image from "next/image";
+
+export type BackgroundImageProps = {
   children: React.ReactNode;
+  src: string;
 };
 
-const BackgroundImage = ({ children }: BackgroundImageProps) => {
+export const BackgroundImage = ({ children, src }: BackgroundImageProps) => {
   return (
-    <div className="h-[960px] w-full bg-[url('/images/AK_bg_photo1.png')] bg-cover bg-center bg-no-repeat">
+    <div className="relative w-full">
+      <Image
+        src={src}
+        alt="Background Image"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        className="absolute -z-10"
+      />
       {children}
     </div>
   );
 };
-
-export default BackgroundImage;
