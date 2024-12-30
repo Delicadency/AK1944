@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import cn from "classnames";
 import Link from "next/link";
 import ButtonIcon from "./ButtonIcon";
 import { IconName } from "@/types";
@@ -41,7 +41,7 @@ export const Button = ({
     <Link
       href={disabled ? "#" : href}
       aria-label={ariaDescription}
-      className={clsx(
+      className={cn(
         "focus:outline-violet flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all focus:outline-2",
         disabled && "pointer-events-none cursor-not-allowed opacity-50",
         variants[variant],
