@@ -3,26 +3,29 @@ import Link from "next/link";
 import ButtonIcon from "./ButtonIcon";
 import { IconName } from "@/types";
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant: "primary" | "inversion" | "secondary";
   size: "medium" | "large";
   icon: boolean;
   iconName?: IconName;
   label: string;
-  href: string;
+  href?: string;
   ariaDescription: string;
   disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 export const Button = ({
-  variant,
-  label,
-  size,
-  href,
-  icon,
+  variant = "primary",
+  size = "medium",
+  icon = false,
   iconName,
-  ariaDescription,
   disabled = false,
+  label,
+  href,
+  ariaDescription,
+  type = "button",
 }: ButtonProps) => {
   const variants = {
     primary:
@@ -32,27 +35,49 @@ export const Button = ({
     secondary:
       "constrast:bg-yellow constrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
   };
-
   const sizes = {
     medium: "text-16",
     large: "text-lg",
   };
-  return (
-    <Link
-      href={disabled ? "#" : href}
-      aria-label={ariaDescription}
-      className={cn(
-        "focus:outline-violet flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all focus:outline-2",
-        disabled && "pointer-events-none cursor-not-allowed opacity-50",
-        variants[variant],
-        sizes[size],
-      )}
-      aria-disabled={disabled}
-    >
+
+  const commonClassNames = cn(
+    "focus:outline-violet flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all focus:outline-2",
+    variants[variant],
+    sizes[size],
+  );
+
+  const renderContent = () => (
+    <>
       {icon && iconName && (
         <ButtonIcon name={iconName} className="text-inherit" />
       )}
       {label}
-    </Link>
+    </>
+  );
+
+  if (href && !disabled) {
+    return (
+      <Link
+        href={href}
+        aria-label={ariaDescription}
+        className={commonClassNames}
+      >
+        {renderContent()}
+      </Link>
+    );
+  }
+
+  return (
+    <button
+      type={type}
+      aria-label={ariaDescription}
+      disabled={disabled}
+      className={cn(
+        commonClassNames,
+        disabled && "pointer-events-none cursor-not-allowed opacity-50",
+      )}
+    >
+      {renderContent()}
+    </button>
   );
 };
