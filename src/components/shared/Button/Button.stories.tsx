@@ -2,46 +2,47 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Button",
-  component: Button,
-  tags: ["autodocs"],
-  argTypes: {
-    variant: {
-      control: {
-        type: "radio",
-        options: ["primary", "inversion", "secondary"],
+    title: "Components/Button",
+    component: Button,
+    tags: ["autodocs"],
+    argTypes: {
+      variant: {
+        control: {
+          type: "radio",
+          options: ["primary", "inversion", "secondary"],
+        },
       },
-    },
-    size: {
-      control: {
-        type: "radio",
-        options: ["medium", "large"],
+      size: {
+        control: {
+          type: "radio",
+          options: ["medium", "large"],
+        },
       },
-    },
-    icon: {
-      control: "boolean",
-    },
-    iconName: {
-      control: {
-        type: "select",
-        options: [
-          "award",
-          "check",
-          "coffee",
-          "compass",
-          "file",
-          "gift",
-          "help",
-          "info",
-          "pin",
-          "send",
-          "target",
-        ],
+      icon: {
+        control: "boolean",
       },
+      iconName: {
+        control: {
+          type: "select",
+          options: [
+            "award",
+            "check",
+            "coffee",
+            "compass",
+            "file",
+            "gift",
+            "help",
+            "info",
+            "pin",
+            "send",
+            "target",
+          ],
+        },
+      },
+      disabled: { control: "boolean" },
     },
-  },
-};
-export default meta;
+  };
+  export default meta;
 
 type Story = StoryObj<typeof Button>;
 
@@ -108,3 +109,36 @@ export const SecondaryWithIcon: Story = {
     iconName: "send",
   },
 };
+export const PrimaryDisabled: Story = {
+    args: {
+      variant: "primary",
+      size: "medium",
+      label: "Primary Button",
+      href: "/",
+      icon: false,
+      disabled: true,
+    },
+  };
+  
+  export const InversionDisabled: Story = {
+    args: {
+      variant: "inversion",
+      size: "large",
+      label: "Inversion Button",
+      href: "/",
+      icon: true,
+      iconName: "check",
+      disabled: true,
+    },
+  };
+  
+  export const SecondaryDisabled: Story = {
+    args: {
+      variant: "secondary",
+      size: "medium",
+      label: "Secondary Button",
+      href: "/",
+      icon: false,
+      disabled: true,
+    },
+  };

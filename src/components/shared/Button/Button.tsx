@@ -11,6 +11,7 @@ export interface ButtonProps {
   label: string;
   href: string;
   ariaDescription: string;
+  disabled?: boolean;
 }
 
 export const Button = ({
@@ -21,30 +22,32 @@ export const Button = ({
   icon,
   iconName,
   ariaDescription,
+  disabled = false,
 }: ButtonProps) => {
   const variants = {
     primary:
-      "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain hover:bg-[#7A0003] active:bg-[#520103]",
+      "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
     inversion:
-      "constrast:bg-yellow contrast:text-black00 bg-backgroundMain text-redMain hover:bg-backgroundB active:bg-[#e8e3da]",
+      "constrast:bg-yellow constrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
     secondary:
-      "constrast:bg-yellow contrast:text-black00 bg-greenLight text-black hover:bg-greenC active:bg-greenB",
+      "constrast:bg-yellow constrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
   };
-  //active and hover are not set in Figma yet, to change later !!!
-  //remember to add focus:outline-color
+
   const sizes = {
     medium: "text-16",
     large: "text-lg",
   };
   return (
     <Link
-      href={href}
+      href={disabled ? "#" : href}
       aria-label={ariaDescription}
       className={clsx(
-        "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner focus:outline-1",
+        "focus:outline-violet flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all focus:outline-2",
+        disabled && "pointer-events-none cursor-not-allowed opacity-50",
         variants[variant],
         sizes[size],
       )}
+      aria-disabled={disabled}
     >
       {icon && iconName && (
         <ButtonIcon name={iconName} className="text-inherit" />
