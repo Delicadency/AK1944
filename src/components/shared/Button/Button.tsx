@@ -1,13 +1,12 @@
-import cn from "classnames";
+import clsx from "clsx";
 import Link from "next/link";
 import ButtonIcon from "./ButtonIcon";
 import { IconName } from "@/types";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant: "primary" | "inversion" | "secondary";
-  size: "medium" | "large";
-  icon: boolean;
+  variant?: "primary" | "inversion" | "secondary";
+  size?: "medium" | "large";
   iconName?: IconName;
   label: string;
   href?: string;
@@ -19,7 +18,6 @@ export interface ButtonProps
 export const Button = ({
   variant = "primary",
   size = "medium",
-  icon = false,
   iconName,
   disabled = false,
   label,
@@ -31,24 +29,24 @@ export const Button = ({
     primary:
       "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
     inversion:
-      "constrast:bg-yellow constrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
+      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
     secondary:
-      "constrast:bg-yellow constrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
+      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
   };
   const sizes = {
     medium: "text-16",
     large: "text-lg",
   };
 
-  const commonClassNames = cn(
-    "focus:outline-violet flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all focus:outline-2",
+  const commonClassNames = clsx(
+    "focus:ring-violet focus:ring flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all",
     variants[variant],
     sizes[size],
   );
 
   const renderContent = () => (
     <>
-      {icon && iconName && (
+      {iconName && (
         <ButtonIcon name={iconName} className="text-inherit" />
       )}
       {label}
@@ -72,9 +70,9 @@ export const Button = ({
       type={type}
       aria-label={ariaDescription}
       disabled={disabled}
-      className={cn(
+      className={clsx(
         commonClassNames,
-        disabled && "pointer-events-none cursor-not-allowed opacity-50",
+        disabled && "pointer-events-none cursor-not-allowed opacity-30",
       )}
     >
       {renderContent()}
