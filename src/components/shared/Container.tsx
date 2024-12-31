@@ -1,4 +1,5 @@
 import { ElementType, ReactNode } from "react";
+import { cn } from "@/utils";
 
 interface ContainerProps {
   children: ReactNode;
@@ -13,7 +14,10 @@ const Container: React.FC<ContainerProps> = ({
 }) => {
   return (
     <Container
-      className={`mx-auto w-full max-w-[767px] px-4 tablet:max-w-[1279px] desktop:max-w-[1440px] desktop:px-6 ${className}`}
+      className={cn(
+        "mx-auto w-full max-w-[767px] px-4 tablet:max-w-[1279px] desktop:max-w-[1440px] desktop:px-6",
+        className,
+      )}
     >
       {children}
     </Container>
