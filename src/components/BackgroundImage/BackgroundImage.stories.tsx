@@ -1,23 +1,46 @@
-import { StoryFn, Meta } from "@storybook/react/types-6-0";
-import { BackgroundImage, BackgroundImageProps } from "./BackgroundImage";
+import { StoryObj, Meta } from "@storybook/react/types-6-0";
+import { BackgroundImage } from "./BackgroundImage";
 
-export default {
+const meta: Meta<typeof BackgroundImage> = {
   title: "Components/BackgroundImage",
   component: BackgroundImage,
-} as Meta;
-
-const Template: StoryFn<BackgroundImageProps> = (args) => (
-  <BackgroundImage {...args} />
-);
-
-export const Default = Template.bind({});
-Default.args = {
-  src: "https://via.placeholder.com/150",
-  children: "Hello World",
+  parameters: {
+    layout: "centered",
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: "text",
+      },
+      description: "The image source",
+    },
+    alt: {
+      control: {
+        type: "text",
+      },
+      description: "The image alt text",
+    },
+    children: {
+      control: {
+        type: "text",
+      },
+      description: "The content to display over the image",
+    },
+  },
 };
 
-export const CustomImage = Template.bind({});
-CustomImage.args = {
-  src: "https://via.placeholder.com/300",
-  children: "Hello World",
+export default meta;
+type Story = StoryObj<typeof BackgroundImage>;
+
+export const Default: Story = {
+  args: {
+    src: "/placeholder-image.jpg",
+    alt: "Example background",
+    children: (
+      <div className="p-8 text-white">
+        <h2 className="text-2xl font-bold">Hello World</h2>
+        <p>This is an example of content over a background image</p>
+      </div>
+    ),
+  },
 };
