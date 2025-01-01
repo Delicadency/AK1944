@@ -4,6 +4,7 @@ export default function IconCheckSquare({ className }: IconProps): JSX.Element {
   return (
     <svg
       className={className}
+      role="presentation"
       width="24"
       height="25"
       viewBox="0 0 24 25"
