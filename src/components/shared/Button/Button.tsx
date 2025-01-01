@@ -12,7 +12,6 @@ export interface ButtonProps
   href?: string;
   ariaDescription: string;
   disabled?: boolean;
-  type?: "button" | "submit" | "reset";
 }
 
 export const Button = ({
@@ -23,7 +22,8 @@ export const Button = ({
   label,
   href,
   ariaDescription,
-  type = "button",
+  className,
+  ...props
 }: ButtonProps) => {
   const variants = {
     primary:
@@ -42,13 +42,12 @@ export const Button = ({
     "focus:ring-violet focus:ring flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all",
     variants[variant],
     sizes[size],
+    className,
   );
 
   const renderContent = () => (
     <>
-      {iconName && (
-        <ButtonIcon name={iconName} className="text-inherit" />
-      )}
+      {iconName && <ButtonIcon name={iconName} className="text-inherit" />}
       {label}
     </>
   );
@@ -67,13 +66,13 @@ export const Button = ({
 
   return (
     <button
-      type={type}
       aria-label={ariaDescription}
       disabled={disabled}
       className={clsx(
         commonClassNames,
         disabled && "pointer-events-none cursor-not-allowed opacity-30",
       )}
+      {...props}
     >
       {renderContent()}
     </button>
