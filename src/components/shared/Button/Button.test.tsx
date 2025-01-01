@@ -1,5 +1,6 @@
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { Button } from "./Button";
+import { axe, toHaveNoViolations } from "jest-axe";
 
 describe("Button component", () => {
   it("renders correctly with default props", () => {
@@ -15,7 +16,7 @@ describe("Button component", () => {
     expect(buttonElement).not.toHaveClass(
       "pointer-events-none cursor-not-allowed opacity-30",
     );
-    expect(buttonElement).toHaveTextContent("Kliknij mnie");
+    expect(buttonElement).toHaveTextContent(/kliknij mnie/i);
     expect(buttonElement).toHaveAttribute("type", "button");
     expect(buttonElement).toHaveAccessibleName(/przycisk testowy/i);
   });
@@ -74,9 +75,49 @@ describe("Button component", () => {
     expect(linkElement).not.toHaveRole("button");
     expect(linkElement).toHaveAttribute("href", "/test");
   });
-  it("renders ButtonIcon when iconName is provided", () => {
-    render(<Button label="Kliknij mnie" ariaDescription="Przycisk testowy" iconName="coffee" />)
+
+  it("renders icon and text when iconName is provided", () => {
+    render(
+      <Button
+        label="Kliknij mnie"
+        ariaDescription="Przycisk testowy"
+        iconName="coffee"
+      />,
+    );
     const iconElement = screen.getByRole("presentation");
     expect(iconElement).toBeInTheDocument();
-  })
+    const buttonElement = screen.getByRole("button", {
+      name: /przycisk testowy/i,
+    });
+    expect(buttonElement).toHaveTextContent(/kliknij mnie/i);
+  });
+
+  it("should trigger form submit when the button is of type 'submit'", () => {
+    const handleSubmit = jest.fn((event) => event.preventDefault());
+    render(
+      <form onSubmit={handleSubmit}>
+        <Button
+          label="Prześlij formularz"
+          ariaDescription="Kliknij, by przesłać formularz"
+          type="submit"
+        />
+      </form>,
+    );
+    const buttonElement = screen.getByRole("button", {
+      name: /przesłać formularz/i,
+    });
+    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement).toHaveAttribute("type", "submit");
+    fireEvent.click(buttonElement);
+    expect(handleSubmit).toHaveBeenCalledTimes(1);
+  });
+  
+  it("should have no accessibility violations", async () => {
+    const { container } = render(
+      <Button label="Kliknij mnie" ariaDescription="Przycisk testowy" />,
+    );
+    const results = await axe(container);
+    expect.extend(toHaveNoViolations);
+    expect(results).toHaveNoViolations();
+  });
 });
