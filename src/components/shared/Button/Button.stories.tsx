@@ -11,12 +11,16 @@ const meta: Meta<typeof Button> = {
         type: "radio",
         options: ["primary", "inversion", "secondary"],
       },
+      description:
+        "Variants of the button to choose from, giving the component the relevant classes.",
     },
     size: {
       control: {
         type: "radio",
         options: ["medium", "large"],
       },
+      description:
+        "Manage button size based on text size - medium 16px or large 18px. Padding inside the button is fixed.",
     },
     iconName: {
       control: {
@@ -35,8 +39,36 @@ const meta: Meta<typeof Button> = {
           "target",
         ],
       },
+      description:
+        "If you specify one of the listed icon names, an svg element on the left side of the button will be generated. The icon takes on the text color used in the selected variant.",
     },
-    disabled: { control: "boolean" },
+    disabled: {
+      control: "boolean",
+      description:
+        "When the button is deactivated, the styles responsible for the appearance and behavior of the button that is deactivated are transferred.",
+    },
+    label: {
+      control: "text",
+      description: "Allows you to enter the text displayed inside the button.",
+    },
+    href: {
+      control: "text",
+      description:
+        "If completed with a URL path, a Next.js Link element will be generated, ostylated like a button. Otherwise, a button element will be generated.",
+    },
+    ariaDescription: {
+      control: "text",
+      description:
+        "The element responsible for the text displayed in the aria-label attribute.",
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "Universal button with a choice of color variants and sizes, with an option to select an icon. Can be deactivated.",
+      },
+    },
   },
 };
 export default meta;
@@ -50,6 +82,16 @@ export const Primary: Story = {
     label: "Primary Button",
     href: "/",
   },
+  parameters: {
+    docs:{
+description:{
+  story: "Link element in the default **primary** variant, in **medium** size."
+}
+    }
+  },
+
+  
+
 };
 
 export const PrimaryWithIcon: Story = {
@@ -57,9 +99,15 @@ export const PrimaryWithIcon: Story = {
     variant: "primary",
     size: "large",
     label: "Primary Button",
-    href: "/",
     iconName: "gift",
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "Button element with gift icon, in the default **primary** variant and **large** size"
+      }
+    }
+  }
 };
 
 export const Inversion: Story = {
@@ -67,8 +115,14 @@ export const Inversion: Story = {
     variant: "inversion",
     size: "medium",
     label: "Inversion Button",
-    href: "/",
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "Button element in the **inversion** variant and **medium** size"
+      }
+    }
+  }
 };
 
 export const InversionWithIcon: Story = {
@@ -79,6 +133,13 @@ export const InversionWithIcon: Story = {
     href: "/",
     iconName: "check",
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "Link element with **check** icon, in **inversion** variant and **large** size"
+      }
+    }
+  }
 };
 
 export const Secondary: Story = {
@@ -88,25 +149,44 @@ export const Secondary: Story = {
     label: "Secondary Button",
     href: "/",
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "Link element in the **secondary** variant and **medium** size"
+      }
+    }
+  }
 };
 
 export const SecondaryWithIcon: Story = {
   args: {
     variant: "secondary",
-    size: "large",
+    size: "medium",
     label: "Secondary Button",
-    href: "/",
     iconName: "send",
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "Button element with **send** icon, in the **secondary** variant and **medium** size"
+      }
+    }
+  }
 };
 export const PrimaryDisabled: Story = {
   args: {
     variant: "primary",
     size: "medium",
     label: "Primary Button",
-    href: "/",
     disabled: true,
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "**Disabled** button element in the **primary** variant and **medium** size"
+      }
+    }
+  }
 };
 
 export const InversionDisabled: Story = {
@@ -118,14 +198,28 @@ export const InversionDisabled: Story = {
     iconName: "check",
     disabled: true,
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "**Disabled** link element with **check** icon, in the **inversion** variant and **large** size"
+      }
+    }
+  }
 };
 
 export const SecondaryDisabled: Story = {
   args: {
     variant: "secondary",
-    size: "medium",
+    size: "large",
     label: "Secondary Button",
     href: "/",
     disabled: true,
   },
+  parameters:{
+    docs:{
+      description:{
+        story: "**Disabled** link element in the **secondary** variant and **large** size"
+      }
+    }
+  }
 };
