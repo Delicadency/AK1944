@@ -20,6 +20,15 @@ describe("Button component", () => {
     expect(buttonElement).toHaveAccessibleName(/przycisk testowy/i);
   });
 
+  it("renders correctly text content and aria-label attribute", () => {
+    render(<Button label="Kliknij mnie" ariaDescription="Przycisk testowy" />);
+    const buttonElement = screen.getByRole("button", {
+      name: /przycisk testowy/i,
+    });
+    expect(buttonElement).toHaveTextContent(/kliknij mnie/i);
+    expect(buttonElement).toHaveAccessibleName(/przycisk testowy/i);
+  });
+
   it("renders in secondary variant with large text", () => {
     render(
       <Button
