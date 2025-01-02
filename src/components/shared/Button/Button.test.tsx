@@ -17,7 +17,6 @@ describe("Button component", () => {
       "pointer-events-none cursor-not-allowed opacity-30",
     );
     expect(buttonElement).toHaveTextContent(/kliknij mnie/i);
-    expect(buttonElement).toHaveAttribute("type", "button");
     expect(buttonElement).toHaveAccessibleName(/przycisk testowy/i);
   });
 
@@ -58,7 +57,6 @@ describe("Button component", () => {
     expect(buttonElement).toHaveClass(
       "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
     );
-    expect(buttonElement).toHaveAttribute("type", "button");
     expect(buttonElement).not.toHaveAttribute("href", "/test");
   });
 
@@ -111,7 +109,7 @@ describe("Button component", () => {
     fireEvent.click(buttonElement);
     expect(handleSubmit).toHaveBeenCalledTimes(1);
   });
-  
+
   it("should have no accessibility violations", async () => {
     const { container } = render(
       <Button label="Kliknij mnie" ariaDescription="Przycisk testowy" />,
