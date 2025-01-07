@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Layout } from "@/components/Layout";
 import ThemeProvider from "@/context/ThemesProvider";
 import { cn } from "@/utils";
 
@@ -44,6 +45,7 @@ export default function RootLayout({
           "antialiased",
         )}
       >
+        <Layout> {children} </Layout>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
