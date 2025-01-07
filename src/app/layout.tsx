@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ThemeProvider from "@/context/ThemesProvider";
+import { cn } from "@/utils";
 
 const figtree = localFont({
   src: "./fonts/Figtree-Variable.woff2",
@@ -36,7 +37,12 @@ export default function RootLayout({
   return (
     <html lang="pl" data-lt-installed="true">
       <body
-        className={`${figtree.variable} ${lora.variable} ${sourceSans.variable} antialiased`}
+        className={cn(
+          figtree.variable,
+          lora.variable,
+          sourceSans.variable,
+          "antialiased",
+        )}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

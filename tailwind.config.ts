@@ -12,7 +12,7 @@ export default {
     extend: {
       colors: {
         white: "#FFFFFF",
-        black: "#000000",
+        black: "#262827",
         greenMain: "#163020",
         greenMain30: "rgba(22, 48, 32, 0.3)",
         greenMain10: "rgba(22, 48, 32, 0.1)",
@@ -24,6 +24,10 @@ export default {
         redMain: "#8F0000",
         redError: "#D31828",
         yellowVintage: "#F4DBBE",
+        yellow: "FFF205",
+        black00: "000000",
+        blue: "0080FF",
+        violet: "C589F9",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
@@ -61,9 +65,20 @@ export default {
       },
       keyframes: {
         // animacje kluczowe
+        modalFadeIn: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-50px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         // animacje
+        modalAnimation: "modalFadeIn 0.3s ease-in",
       },
     },
   },
