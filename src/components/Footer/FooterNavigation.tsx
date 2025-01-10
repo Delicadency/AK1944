@@ -9,6 +9,8 @@ export const FooterNavigation = () => {
           <li>
             <Link
               href="/zwiazek-ak"
+              aria-label="Navigate to the Związek AK page"
+              title="Go to the Związek AK page"
               className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
             >
               Związek AK
@@ -17,6 +19,8 @@ export const FooterNavigation = () => {
           <li>
             <Link
               href="/szlak-partyzancki"
+              aria-label="Navigate to the Szlak Partyzancki page"
+              title="Go to the Szlak Partyzancki page"
               className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
             >
               Szlak Partyzancki
@@ -25,6 +29,8 @@ export const FooterNavigation = () => {
           <li>
             <Link
               href="/inwentarz-grobow"
+              aria-label="Navigate to the Inwentarz Grobów page"
+              title="Go to the Inwentarz Grobów page"
               className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
             >
               Inwentarz grobów
@@ -37,6 +43,8 @@ export const FooterNavigation = () => {
           <li>
             <Link
               href="/partnerzy"
+              ari-label="Navigate to the Partnerzy page"
+              title="Go to the Partnerzy page"
               className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
             >
               Partnerzy
@@ -45,6 +53,8 @@ export const FooterNavigation = () => {
           <li>
             <Link
               href="/kontakt"
+              aria-label="Navigate to the Kontakt page"
+              title="Go to the Kontakt page"
               className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
             >
               Kontakt
@@ -53,6 +63,8 @@ export const FooterNavigation = () => {
           <li>
             <Link
               href="/wesprzyj"
+              aria-label="Navigate to the Wesprzyj page"
+              title="Go to the Wesprzyj page"
               className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
             >
               Wesprzyj
