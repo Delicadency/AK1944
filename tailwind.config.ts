@@ -24,10 +24,11 @@ export default {
         redMain: "#8F0000",
         redError: "#D31828",
         yellowVintage: "#F4DBBE",
-        yellow: "FFF205",
+        yellowContrast: "#FFF205",
         black00: "000000",
         blue: "0080FF",
         violet: "C589F9",
+        grayDate: "#8E8E8E",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
