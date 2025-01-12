@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Container from "../shared/Container";
 import { HeaderMobile } from "./HeaderMobile";
+import { HeaderTabAndDesktop } from "./HeaderTabAndDesktop";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,15 +18,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed h-[80px] w-full bg-greenMain contrast:bg-yellow tablet:h-[148px] desktop:h-[140px]">
+    <header className="fixed h-[80px] w-full bg-greenMain contrast:bg-yellowContrast tablet:h-[148px] desktop:h-[140px]">
       <Container>
-        {isMobile ? (
-          <div className="">
-            <HeaderMobile />
-          </div>
-        ) : (
-          <div></div>
-        )}
+        {isMobile ? <HeaderMobile /> : <HeaderTabAndDesktop />}
       </Container>
     </header>
   );

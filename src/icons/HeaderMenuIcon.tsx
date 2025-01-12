@@ -17,28 +17,28 @@ export default function HeaderMenuIcon({
     >
       <path
         d="M21 10H3"
-        stroke="#FFFCF5"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M21 6H3"
-        stroke="#FFFCF5"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M21 14H3"
-        stroke="#FFFCF5"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M21 18H3"
-        stroke="#FFFCF5"
+        stroke="currentColor"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
