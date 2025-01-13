@@ -41,7 +41,7 @@ export const ReadMore = ({
             {endText}
           </span>
           <span
-            className="ml-2"
+            className="ml-2 underline"
             role="button"
             tabIndex={0}
             aria-expanded={isExpanded}
@@ -49,7 +49,7 @@ export const ReadMore = ({
             onKeyDown={handleKeyboard}
             onClick={() => setIsExpanded(!isExpanded)}
           >
-            {isExpanded ? "ukryj" : "czytaj więcej"}
+            {isExpanded ? "ukryj" : "czytaj więcej."}
           </span>
         </>
       )}
