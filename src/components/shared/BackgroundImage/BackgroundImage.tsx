@@ -18,7 +18,7 @@ export const BackgroundImage = ({
         src={src}
         alt={alt}
         quality={100}
-        className="absolute -z-10 h-full object-cover"
+        className="absolute -z-10 h-full w-full object-cover"
         {...props}
       />
       {children}
