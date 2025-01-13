@@ -1,7 +1,9 @@
+import Container from "@/components/shared/Container";
+
 export default function DebicaDistrictPage() {
   return (
-    <div>
+    <Container>
       <p>Obwód Dębica SZP-ZWZ-AK</p>
-    </div>
+    </Container>
   );
 }

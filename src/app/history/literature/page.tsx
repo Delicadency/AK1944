@@ -1,7 +1,9 @@
+import Container from "@/components/shared/Container";
+
 export default function LiteraturePage() {
   return (
-    <div>
+    <Container>
       <p>Literatura</p>
-    </div>
+    </Container>
   );
 }

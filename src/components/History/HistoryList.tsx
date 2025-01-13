@@ -1,9 +1,9 @@
 import Container from "@/components/shared/Container";
 
-export default function OperationBurzaPage() {
+export default function HistoryList(children: React.ReactNode) {
   return (
     <Container>
-      <p>Akcja &quot;Burza&quot;</p>
+      <ul>{children}</ul>
     </Container>
   );
 }

@@ -1,9 +1,9 @@
 import Container from "@/components/shared/Container";
 
-export default function OperationBurzaPage() {
+export default function Regiment() {
   return (
     <Container>
-      <p>Akcja &quot;Burza&quot;</p>
+      <p>5. Pułk Strzelców konnych</p>
     </Container>
   );
 }

@@ -1,9 +1,9 @@
 import Container from "@/components/shared/Container";
 
-export default function OperationBurzaPage() {
+export default function OperationBurza() {
   return (
     <Container>
-      <p>Akcja &quot;Burza&quot;</p>
+      <p>Akcja Burza</p>
     </Container>
   );
 }
