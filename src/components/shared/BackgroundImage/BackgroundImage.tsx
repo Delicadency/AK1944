@@ -13,12 +13,12 @@ export const BackgroundImage = ({
   ...props
 }: BackgroundImageProps) => {
   return (
-    <div className="relative w-full">
+    <div className="relative h-full w-full">
       <Image
         src={src}
         alt={alt}
         quality={100}
-        className="absolute -z-10 object-cover"
+        className="absolute -z-10 h-full object-cover"
         {...props}
       />
       {children}
