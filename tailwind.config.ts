@@ -25,10 +25,9 @@ export default {
         redError: "#D31828",
         yellowVintage: "#F4DBBE",
         yellowContrast: "#FFF205",
-        black00: "000000",
-        blue: "0080FF",
-        violet: "C589F9",
-        grayDate: "#8E8E8E",
+        black00: "#000000",
+        blue: "#0080FF",
+        violet: "#C589F9",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
