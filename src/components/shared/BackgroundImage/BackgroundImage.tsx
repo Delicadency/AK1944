@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/image";
 
-interface BackgroundImageProps extends Omit<ImageProps, "alt"> {
+export interface BackgroundImageProps extends Omit<ImageProps, "alt"> {
   children?: React.ReactNode;
   alt: string;
   src: string;
@@ -13,12 +13,12 @@ export const BackgroundImage = ({
   ...props
 }: BackgroundImageProps) => {
   return (
-    <div className="relative w-full">
+    <div className="relative h-full w-full">
       <Image
         src={src}
         alt={alt}
         quality={100}
-        className="absolute -z-10 object-cover"
+        className="absolute -z-10 h-full object-cover"
         {...props}
       />
       {children}

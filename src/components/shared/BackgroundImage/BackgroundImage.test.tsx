@@ -5,6 +5,7 @@ describe("BackgroundImage", () => {
   const defaultProps: BackgroundImageProps = {
     children: <div>Test Child</div>,
     src: "/test-image.jpg",
+    alt: "Background Image",
   };
 
   it("renders without crashing", () => {
