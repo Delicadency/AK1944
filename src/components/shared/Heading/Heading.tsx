@@ -6,6 +6,7 @@ export interface HeadingProps {
   underline?: boolean;
   contrast: "yellow" | "black";
   color: "green" | "white";
+  className?: string;
 }
 
 export const Heading = ({
@@ -14,6 +15,7 @@ export const Heading = ({
   underline = false,
   contrast,
   color,
+  className = "",
 }: HeadingProps) => {
   const getHeadingTag = () => {
     switch (variant) {
@@ -57,6 +59,8 @@ export const Heading = ({
           contrastStyle[contrast],
           variants[variant],
           colors[color],
+
+          className,
         )}
       >
         {children}
