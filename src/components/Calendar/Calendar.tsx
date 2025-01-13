@@ -2,7 +2,12 @@ import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
 
-const Calendar = () => {
+interface CalendarProps {
+  date: string | number;
+  description: string;
+}
+
+const Calendar = ({ date, description }: CalendarProps) => {
   const currentDate = new Date();
   const currentMonth = currentDate.toLocaleString("default", { month: "long" });
   const currentYear = currentDate.getFullYear();
@@ -17,18 +22,27 @@ const Calendar = () => {
         height={1080}
       >
         <Container className="flex flex-col items-center justify-center py-4 font-lora">
-          <h4 className="text-24 font-bold">
+          <h4 className="text-24 font-bold" aria-label="Rok i miesiąc">
             {currentMonth} {currentYear}
           </h4>
-          <hr className="mt-5 w-full border border-solid border-redMain" />
-          <p className="text-[96px] font-bold">{dayInNumbers}</p>
-          <p className="text-24 font-bold">{dayInWords}</p>
-          <hr className="my-5 w-full border border-solid border-redMain" />
+          <hr
+            className="mt-5 w-full border border-solid border-redMain contrast:border-black"
+            aria-hidden
+          />
+          <p className="text-[96px] font-bold" aria-label="Dzień miesiąca">
+            {dayInNumbers}
+          </p>
+          <p className="text-24 font-bold" aria-label="Dzień tygodnia">
+            {dayInWords}
+          </p>
+          <hr
+            className="my-5 w-full border border-solid border-redMain contrast:border-black"
+            aria-hidden
+          />
           <div className="mb-5 grid grid-cols-[auto_1fr] gap-2 font-sans">
-            <p className="text-16 font-bold">1942</p>
+            <p className="text-16 font-bold">{date}</p>
             <p className="relative text-16 before:absolute before:-left-[7px] before:content-['-']">
-              Związek Walki Zbrojnej (ZWZ) został przekształcony w Armię Krajową
-              (AK)
+              {description}
             </p>
           </div>
           <Button
