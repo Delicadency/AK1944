@@ -1,6 +1,6 @@
 import Image, { ImageProps } from "next/image";
 
-interface BackgroundImageProps extends Omit<ImageProps, "alt"> {
+export interface BackgroundImageProps extends Omit<ImageProps, "alt"> {
   children?: React.ReactNode;
   alt: string;
   src: string;
