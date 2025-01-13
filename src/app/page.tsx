@@ -1,4 +1,4 @@
-import Calendar from "@/components/Calendar/Calendar";
+import Hero from "@/components/Hero/Hero";
 import { NewsSkeleton } from "@/components/NewsSkeleton/NewsSkeleton";
 import SwitchContrast from "@/components/Switcher/ContrastSwitcher";
 import FontSwitcher from "@/components/Switcher/FontSwitcher";
@@ -9,11 +9,7 @@ export default function Home() {
       <NewsSkeleton />
       <SwitchContrast />
       <FontSwitcher />
-      <Calendar
-        date={1942}
-        description="Związek Walki Zbrojnej (ZWZ) został przekształcony w Armię Krajową
-              (AK)"
-      />
+      <Hero />
     </main>
   );
 }

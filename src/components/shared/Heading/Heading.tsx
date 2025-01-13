@@ -66,6 +66,7 @@ export const Heading = ({
       </HeadingTag>
       {underline && (
         <hr
+          aria-hidden="true"
           className={cn(
             "w-[200px] border-t-2 border-solid",
             colors[color],
