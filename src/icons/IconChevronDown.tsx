@@ -1,13 +1,9 @@
-interface IconChevronDownProps {
-  className: string;
-}
+import { DefaultIconProps } from "@/types";
 
-export function IconChevronDown({
-  className,
-}: IconChevronDownProps): JSX.Element {
+export function IconChevronDown({ className }: DefaultIconProps): JSX.Element {
   return (
     <svg
-    className={className}
+      className={className}
       width="20"
       height="20"
       viewBox="0 0 20 20"
