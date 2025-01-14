@@ -1,3 +1,4 @@
+import AboutUsLanding from "@/components/AboutUsLanding/AboutUsLanding";
 import Hero from "@/components/Hero/Hero";
 import { NewsSkeleton } from "@/components/NewsSkeleton/NewsSkeleton";
 import SwitchContrast from "@/components/Switcher/ContrastSwitcher";
@@ -10,6 +11,7 @@ export default function Home() {
       <SwitchContrast />
       <FontSwitcher />
       <Hero />
+      <AboutUsLanding />
     </main>
   );
 }
