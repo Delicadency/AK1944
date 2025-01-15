@@ -1,9 +1,21 @@
-import Container from "@/components/shared/Container";
+import Regiment from "@/components/History/Regiment";
+import OperationBurza from "@/components/History/OperationBurza";
+import DebicaDistrict from "@/components/History/DebicaDistrict";
 
-export default function HistoryList(children: React.ReactNode) {
+export default function HistoryList() {
   return (
-    <Container>
-      <ul>{children}</ul>
-    </Container>
+    <>
+      <ul>
+        <li>
+          <Regiment />
+        </li>
+        <li>
+          <OperationBurza />
+        </li>
+        <li>
+          <DebicaDistrict />
+        </li>
+      </ul>
+    </>
   );
 }
