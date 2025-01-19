@@ -1,10 +1,8 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import Container from "../shared/Container";
 import { HeaderMobile } from "./HeaderMobile";
 import { HeaderTabAndDesktop } from "./HeaderTabAndDesktop";
-// import { HeaderMobileMenu } from "./HeaderMobileMenu";
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);

@@ -18,12 +18,12 @@ export const HeaderMobile = () => {
           Światowy Związek Żołnierzy AK
         </p>
         <button type="button" onClick={toggleMenu}>
-          <HeaderMenuIcon className="self-center text-white contrast:text-black00" />
+          <HeaderMenuIcon className="self-center text-white contrast:text-black00 transition duration-300 active:scale-110 active:text-blue" />
         </button>
       </div>
 
       <div
-        className={`fixed right-0 top-0 z-50 h-full w-full transform bg-greenB ${
+        className={`fixed right-0 top-0 z-50 h-full w-full transform bg-greenB contrast:bg-yellowContrast ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
