@@ -1,4 +1,5 @@
 import { cn } from "@/utils";
+import clsx from "clsx";
 
 export interface HeadingProps {
   children: React.ReactNode;
@@ -35,10 +36,10 @@ export const Heading = ({
   const HeadingTag = getHeadingTag();
 
   const variants = {
-    h1: "text-[40px]",
-    h2: "text-[32px]",
-    h3: "text-[28px]",
-    h4: "text-[24px]",
+    h1: "text-40",
+    h2: "text-32",
+    h3: "text-28",
+    h4: "text-24",
   };
 
   const contrastStyle = {
@@ -54,11 +55,11 @@ export const Heading = ({
   return (
     <div className="flex flex-col items-center">
       <HeadingTag
-        className={cn(
-          "font-lora font-bold",
+        className={clsx(
           contrastStyle[contrast],
           variants[variant],
           colors[color],
+          "font-lora font-bold",
           className,
         )}
       >
