@@ -29,7 +29,7 @@ export default function IconFacebook({
           y2="18.4629"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4676ED" />
+          <stop stopColor="#4676ED" />
           <stop offset="0.1854" stopColor="#436DE4" />
           <stop offset="0.487" stopColor="#3C55CD" />
           <stop offset="0.8651" stopColor="#302EA8" />
