@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react/*";
 import { NewsItem } from "./NewsItem";
 
 const meta: Meta<typeof NewsItem> = {
-  title: "Components/Shared/Heading",
+  title: "Components/Shared/Heading(NewsItem)",
   component: NewsItem,
   argTypes: {
     heading: {
