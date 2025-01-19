@@ -7,13 +7,8 @@ describe("NewsItem Component", () => {
   const mockProps = {
     heading: "Test Heading",
     date: "2023-10-01",
-    image: {
-      alt: "Test Image",
-      src: "/test-image.jpg",
-      width: 600,
-      height: 400,
-    },
-    text: "Test text content",
+    excerpt: "Test text content",
+    featured_media: "1",
     id: "1",
   };
 
@@ -27,14 +22,6 @@ describe("NewsItem Component", () => {
     render(<NewsItem {...mockProps} />);
     const dateElement = await screen.findByText("2023-10-01");
     expect(dateElement).toBeInTheDocument();
-  });
-
-  it("renders the image with correct attributes", async () => {
-    render(<NewsItem {...mockProps} />);
-    const imageElement = await screen.findByAltText("Test Image");
-    expect(imageElement).toHaveAttribute("src", "/test-image.jpg");
-    expect(imageElement).toHaveAttribute("width", "600");
-    expect(imageElement).toHaveAttribute("height", "400");
   });
 
   it("renders the read more text", async () => {
