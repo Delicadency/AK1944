@@ -2,24 +2,24 @@
 import { useState } from "react";
 
 interface ReadMoreProps {
-  id: string;
-  text: string;
+  id: number;
+  excerpt: string;
   amountOfWords?: number;
   className?: string;
 }
 
 export const ReadMore = ({
   id,
-  text,
+  excerpt,
   amountOfWords = 30,
   className,
 }: ReadMoreProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const splittedText = text.split(" ");
+  const splittedText = excerpt.split(" ");
   const itCanOverflow = splittedText.length > amountOfWords;
   const beginText = itCanOverflow
     ? splittedText.slice(0, amountOfWords - 1).join(" ")
-    : text;
+    : excerpt;
   const endText = splittedText.slice(amountOfWords - 1).join(" ");
 
   const handleKeyboard = (e: React.KeyboardEvent) => {

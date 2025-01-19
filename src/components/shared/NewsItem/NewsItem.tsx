@@ -6,15 +6,15 @@ interface NewsProps {
   heading: string;
   date: string;
   image: ImageProps;
-  text: string;
-  id: string;
+  excerpt: string;
+  id: number;
 }
 
 export const NewsItem = async ({
   heading,
   date,
   image,
-  text,
+  excerpt,
   id,
 }: NewsProps) => {
   return (
@@ -36,7 +36,7 @@ export const NewsItem = async ({
       </div>
       <ReadMore
         id={id}
-        text={text}
+        excerpt={excerpt}
         amountOfWords={28}
         className="text-white contrast:text-black tablet:col-start-2 tablet:row-start-2"
       />

@@ -18,7 +18,7 @@ export const News = async ({ url }: NewsProps) => {
       <>
         {posts.map((post) => (
           <div
-            className="bg-greenMain text-black contrast:bg-black"
+            className="bg-greenMain text-white contrast:bg-black"
             key={post.id}
           >
             <h2 className="text-2xl">{post.title}</h2>

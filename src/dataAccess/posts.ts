@@ -6,12 +6,16 @@ export const getPosts = async (url: string) => {
     throw new Error("Could not fetch the data for that resource");
   }
 
-  const posts = await res.json() as PostResponse[];
+  const posts = (await res.json()) as PostResponse[];
 
-  return posts.map((post) => ({
-    id: post.id,
-    title: post.title.rendered,
-    content: post.content.rendered,
-  }) as Post);
-}
-
+  return posts.map(
+    (post) =>
+      ({
+        id: post.id,
+        date: post.date,
+        title: post.title.rendered,
+        content: post.content.rendered,
+        excerpt: post.excerpt.rendered,
+      }) as Post,
+  );
+};
