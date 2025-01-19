@@ -10,21 +10,21 @@ const FontSwitcher = () => {
   const { changeFont } = fontContext;
 
   return (
-    <div className="flex items-center justify-center gap-10 text-white contrast:text-black">
+    <div className="flex w-[110px] items-center justify-center gap-1 text-white contrast:text-black">
       <button
-        className="w-[33px] text-22 leading-9"
+        className="w-[27px] text-16 desktop:w-[30px] desktop:text-22 desktop:leading-9"
         onClick={() => changeFont("")}
       >
         A
       </button>
       <button
-        className="w-[37px] text-28 leading-10"
+        className="w-[27px] text-20 desktop:w-[30px] desktop:text-28 desktop:leading-10"
         onClick={() => changeFont("mediumFont")}
       >
         A
       </button>
       <button
-        className="w-[40px] text-30 leading-[60px]"
+        className="w-[27px] text-22 desktop:w-[30px] desktop:text-30 desktop:leading-[60px]"
         onClick={() => changeFont("largeFont")}
       >
         A

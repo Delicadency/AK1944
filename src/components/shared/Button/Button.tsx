@@ -39,7 +39,7 @@ export const Button = ({
   };
 
   const commonClassNames = clsx(
-    "focus:ring-violet focus:ring flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all",
+    "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all",
     variants[variant],
     sizes[size],
     className,

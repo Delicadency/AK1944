@@ -26,7 +26,11 @@ export type IconName =
   | "pin"
   | "send"
   | "target";
-export interface IconProps {
-  className?: string;
+  
+export interface IconProps extends DefaultIconProps {
   name: IconName;
+}
+
+export interface DefaultIconProps {
+  className?: string;
 }
