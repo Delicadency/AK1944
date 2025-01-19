@@ -16,6 +16,7 @@ export const getPosts = async (url: string) => {
         title: post.title.rendered,
         content: post.content.rendered,
         excerpt: post.excerpt.rendered,
+        featured_media: post.featured_media,
       }) as Post,
   );
 };

@@ -1,5 +1,5 @@
 export interface PostResponse {
-  id: number;
+  id: string;
   date: string;
   title: {
     rendered: string;
@@ -10,14 +10,28 @@ export interface PostResponse {
   excerpt: {
     rendered: string;
   };
+  featured_media: string;
 }
 
 export interface Post {
-  id: number;
+  id: string;
   date: string;
   title: string;
   content: string;
   excerpt: string;
+  featured_media: string;
+}
+
+export interface ImageResponse {
+  source_url: string;
+  title: {
+    rendered: string;
+  };
+}
+
+export interface Image {
+  source_url: string;
+  title: string;
 }
 
 export type IconName =

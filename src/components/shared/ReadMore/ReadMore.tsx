@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 interface ReadMoreProps {
-  id: number;
+  id: string;
   excerpt: string;
   amountOfWords?: number;
   className?: string;

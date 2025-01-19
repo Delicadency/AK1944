@@ -47,16 +47,11 @@ const NewsLanding = async () => {
             {posts.map((post) => (
               <NewsItem
                 key={post.id}
+                id={post.id}
                 heading={post.title}
                 date={post.date}
-                image={{
-                  src: "/images/news_placeholder.png",
-                  alt: "news image",
-                  width: 400,
-                  height: 300,
-                }}
                 excerpt={post.excerpt}
-                id={post.id}
+                featured_media={post.featured_media}
               />
             ))}
           </div>
