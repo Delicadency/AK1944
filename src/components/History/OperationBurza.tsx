@@ -1,7 +1,11 @@
+import { Heading } from "../shared/Heading/Heading";
+
 export default function OperationBurza() {
   return (
     <>
-      <p>Akcja Burza</p>
+      <Heading variant="h3" contrast="yellow" color="green">
+        Akcja Burza
+      </Heading>
     </>
   );
 }

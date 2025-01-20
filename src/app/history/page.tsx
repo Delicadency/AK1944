@@ -6,13 +6,16 @@ import HistoryNav from "@/components/History/HistoryNav";
 
 export default function HistoryPage() {
   return (
-    <Container>
+    <Container className="bg-slate-300">
       <button>Domek</button>
       <History />
       <HistoryNav />
       <HistoryList />
-      <p>Biogram</p>
-      <Literature />
+      <section>
+        <p>Zobacz także</p>
+        <p>Biogramy</p>
+        <Literature />
+      </section>
     </Container>
   );
 }

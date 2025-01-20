@@ -1,7 +1,11 @@
+import { Heading } from "../shared/Heading/Heading";
+
 export default function DebicaDistrict() {
   return (
     <>
-      <p>Obwód Dębica SZP-ZWZ-AK</p>
+      <Heading variant="h3" contrast="yellow" color="green">
+        Obwód Dębica SZP-ZWZ-AK
+      </Heading>
     </>
   );
 }
