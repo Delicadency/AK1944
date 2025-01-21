@@ -14,7 +14,7 @@ const Calendar = ({ date, description }: CalendarProps) => {
   const dayInNumbers = currentDate.getDate();
   const dayInWords = currentDate.toLocaleString("default", { weekday: "long" });
   return (
-    <Container className="max-h-[400px] overflow-hidden">
+    <div className="flex w-[284px] items-center justify-center overflow-hidden px-0 tablet:px-0 desktop:px-0">
       <BackgroundImage
         alt="calendar background"
         src="/images/calendar_background.png"
@@ -29,7 +29,7 @@ const Calendar = ({ date, description }: CalendarProps) => {
             className="mt-5 w-full border border-solid border-redMain contrast:border-black"
             aria-hidden
           />
-          <p className="text-[96px] font-bold" aria-label="Dzień miesiąca">
+          <p className="text-96 font-bold" aria-label="Dzień miesiąca">
             {dayInNumbers}
           </p>
           <p className="text-24 font-bold" aria-label="Dzień tygodnia">
@@ -52,7 +52,7 @@ const Calendar = ({ date, description }: CalendarProps) => {
           />
         </Container>
       </BackgroundImage>
-    </Container>
+    </div>
   );
 };
 

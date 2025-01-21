@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.mediumFont {
+  font-size: 125%
+}
+
+.largeFont {
+  font-size: 150%
+}
+
+
 * {
   margin: 0;
   padding: 0;
