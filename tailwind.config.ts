@@ -12,7 +12,7 @@ export default {
     extend: {
       colors: {
         white: "#FFFFFF",
-        black: "#000000",
+        black: "#262827",
         greenMain: "#163020",
         greenMain30: "rgba(22, 48, 32, 0.3)",
         greenMain10: "rgba(22, 48, 32, 0.1)",
@@ -25,6 +25,10 @@ export default {
         redError: "#D31828",
         yellowVintage: "#F4DBBE",
         yellowContrast: "#FFF205",
+        black00: "#000000",
+        blue: "#0080FF",
+        violet: "#C589F9",
+        grayDate: "#8E8E8E",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
@@ -33,22 +37,31 @@ export default {
         courier: ["Courier New", "Courier", "monospace"],
       },
       fontSize: {
-        "12": "12px",
-        "14": "14px",
-        "16": "16px",
-        "18": "18px",
-        "20": "20px",
-        "22": "22px",
-        "24": "24px",
-        "26": "26px",
-        "28": "28px",
-        "30": "30px",
-        "32": "32px",
-        "34": "34px",
-        "36": "36px",
-        "48": "48px",
-        "44": "44px",
-        "50": "50px",
+        "12": "0.75rem",
+        "14": "0.875rem",
+        "16": "1rem",
+        "18": "1.125rem",
+        "20": "1.25rem",
+        "22": "1.375rem",
+        "24": "1.5rem",
+        "26": "1.625rem",
+        "28": "1.75rem",
+        "30": "1.875rem",
+        "32": "2rem",
+        "34": "2.125rem",
+        "36": "2.25rem",
+        "38": "2.375rem",
+        "40": "2.5rem",
+        "42": "2.625rem",
+        "44": "2.75rem",
+        "46": "2.875rem",
+        "48": "3rem",
+        "50": "3.125rem",
+        "96": "6rem",
+      },
+      scale: {
+        mediumFont: "1.25",
+        largeFont: "1.5",
       },
       screens: {
         tablet: "768px",
@@ -62,9 +75,20 @@ export default {
       },
       keyframes: {
         // animacje kluczowe
+        modalFadeIn: {
+          from: {
+            opacity: "0",
+            transform: "translateY(-50px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         // animacje
+        modalAnimation: "modalFadeIn 0.3s ease-in",
       },
     },
   },

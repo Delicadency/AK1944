@@ -13,3 +13,20 @@ export interface Post {
   title: string;
   content: string;
 }
+
+export type IconName =
+  | "award"
+  | "check"
+  | "coffee"
+  | "compass"
+  | "file"
+  | "gift"
+  | "help"
+  | "info"
+  | "pin"
+  | "send"
+  | "target";
+export interface IconProps {
+  className?: string;
+  name: IconName;
+}
