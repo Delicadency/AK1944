@@ -1,39 +1,48 @@
-type NavigationItem = {
-  label: string;
-  href: string;
-  ariaLabel: string;
-  title: string;
-};
-
-export const navigationData: NavigationItem[] = [
+export const navigationData = [
   {
-    label: "Związek AK",
-    href: "/zwiazek-ak",
-    ariaLabel: "Navigate to the Związek AK page",
-    title: "Go to the Związek AK page",
+    section: "Główna",
+    links: [
+      {
+        label: "Związek AK",
+        href: "/zwiazek-ak",
+        ariaLabel: "Przejdź do strony Związek AK",
+        title: "Przejdź do strony Związek AK",
+      },
+      {
+        label: "Szlak Partyzancki",
+        href: "/szlak-partyzancki",
+        ariaLabel: "Przejdź do strony Szlak Partyzancki",
+        title: "Przejdź do strony Szlak Partyzancki",
+      },
+      {
+        label: "Inwentarz grobów",
+        href: "/inwentarz-grobow",
+        ariaLabel: "Przejdź do strony Inwentarz Grobów",
+        title: "Przejdź do strony Inwentarz Grobów",
+      },
+    ],
   },
   {
-    label: "Szlak Partyzancki",
-    href: "/szlak-partyzancki",
-    ariaLabel: "Navigate to the Szlak Partyzancki page",
-    title: "Go to the Szlak Partyzancki page",
-  },
-  {
-    label: "Inwentarz grobów",
-    href: "/inwentarz-grobow",
-    ariaLabel: "Navigate to the Inwentarz Grobów page",
-    title: "Go to the Inwentarz Grobów page",
-  },
-  {
-    label: "Partnerzy",
-    href: "/partnerzy",
-    ariaLabel: "Navigate to the Partnerzy page",
-    title: "Go to the Partnerzy page",
-  },
-  {
-    label: "Wesprzyj",
-    href: "/wesprzyj",
-    ariaLabel: "Navigate to the Wesprzyj page",
-    title: "Go to the Wesprzyj page",
+    section: "Informacje",
+    links: [
+      {
+        label: "Partnerzy",
+        href: "/partnerzy",
+        ariaLabel: "Przejdź do strony Partnerzy",
+        title: "Przejdź do strony Partnerzy",
+      },
+      {
+        label: "Kontakt",
+        href: "/kontakt",
+        ariaLabel: "Przejdź do strony Kontakt",
+        title: "Przejdź do strony Kontakt",
+      },
+      {
+        label: "Wesprzyj",
+        href: "/wesprzyj",
+        ariaLabel: "Przejdź do strony Wesprzyj",
+        title: "Przejdź do strony Wesprzyj",
+      },
+    ],
   },
 ];

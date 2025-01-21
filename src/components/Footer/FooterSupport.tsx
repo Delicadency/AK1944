@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Blik from "../../../public/images/Blik.png";
 
 export const FooterSupport = () => {
   return (
@@ -9,7 +8,11 @@ export const FooterSupport = () => {
         PL12 3456 7890 1234 5678 9012 3456
       </p>
       <p className="relative">
-        <Image src={Blik} alt="Logo Blik" className="h-auto w-[67px]" />
+        <Image
+          src="/images/Blik.png"
+          alt="Logo Blik"
+          className="h-auto w-[67px]"
+        />
       </p>
     </div>
   );

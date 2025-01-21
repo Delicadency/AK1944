@@ -7,8 +7,8 @@ export const FooterLegalInfo = () => {
         <Link
           href="/privatepolicy"
           className="text-sm transition-opacity hover:opacity-80 md:text-base"
-          aria-label="Navigate to the private policy page"
-          title="Go to the private policy page"
+          aria-label="Przejdź do strony Polityka prywatności"
+          title="Przejdź do strony Polityka prywatności"
         >
           Polityka prywatności
         </Link>
@@ -16,8 +16,8 @@ export const FooterLegalInfo = () => {
         <Link
           href="/regulations"
           className="text-sm transition-opacity hover:opacity-80 md:text-base"
-          aria-label="Navigate to the regulations page"
-          title="Go to the regulations page"
+          aria-label="Przejdź do strony Regulamin"
+          title="Przejdź do strony Regulamin"
         >
           Regulamin
         </Link>

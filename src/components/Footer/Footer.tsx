@@ -7,7 +7,7 @@ import Container from "../shared/Container";
 
 export const Footer = () => {
   return (
-    <footer className="w-full max-w-[1200px] bg-[#0A290A] px-6 py-8 text-white">
+    <footer className="w-full max-w-[1200px] bg-greenMain px-6 py-8 text-white">
       <Container>
         <div className="md:py-19 flex flex-col md:flex-row md:items-start md:justify-between">
           <div className="mb-4 flex justify-center">

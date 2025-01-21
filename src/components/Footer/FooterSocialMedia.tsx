@@ -1,8 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import LogoFacebook from "../../../public/images/IconFecebook.png";
-import LogoInstagram from "../../../public/images/IconInstagram.png";
-import LogoYouTube from "../../../public/images/IconYouTube.png";
+import Image from "next/image";
 
 const FooterSocialMedia: React.FC = () => {
   return (
@@ -14,7 +11,7 @@ const FooterSocialMedia: React.FC = () => {
         rel="noopener noreferrer"
       >
         <Image
-          src={LogoFacebook}
+          src="/images/IconFecebook.png"
           alt="Facebook"
           className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
         />
@@ -26,7 +23,7 @@ const FooterSocialMedia: React.FC = () => {
         rel="noopener noreferrer"
       >
         <Image
-          src={LogoInstagram}
+          src="/images/IconInstagram.png"
           alt="Instagram"
           className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
         />
@@ -38,7 +35,7 @@ const FooterSocialMedia: React.FC = () => {
         rel="noopener noreferrer"
       >
         <Image
-          src={LogoYouTube}
+          src="/images/IconYouTube.png"
           alt="YouTube"
           className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
         />
@@ -46,4 +43,5 @@ const FooterSocialMedia: React.FC = () => {
     </div>
   );
 };
+
 export default FooterSocialMedia;
