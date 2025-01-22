@@ -13,6 +13,8 @@ const FooterSocialMedia: React.FC = () => {
         <Image
           src="/images/IconFecebook.png"
           alt="Facebook"
+          width={32}
+          height={32}
           className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
         />
       </Link>
@@ -25,6 +27,8 @@ const FooterSocialMedia: React.FC = () => {
         <Image
           src="/images/IconInstagram.png"
           alt="Instagram"
+          width={32}
+          height={32}
           className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
         />
       </Link>
@@ -37,6 +41,8 @@ const FooterSocialMedia: React.FC = () => {
         <Image
           src="/images/IconYouTube.png"
           alt="YouTube"
+          width={32}
+          height={32}
           className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
         />
       </Link>

@@ -7,6 +7,8 @@ const LogoFooter: React.FC = () => {
         <Image
           src="/images/LogoFooterMobile.png"
           alt="Związek AK Logo"
+          width={83}
+          height={100}
           className="h-auto w-[83px]"
         />
       </div>
@@ -14,6 +16,8 @@ const LogoFooter: React.FC = () => {
         <Image
           src="/images/LogoFooterTab.png"
           alt="Związek AK Logo"
+          width={149}
+          height={181}
           className="h-[180px] w-[148px]"
         />
       </div>

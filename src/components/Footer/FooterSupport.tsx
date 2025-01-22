@@ -11,6 +11,8 @@ export const FooterSupport = () => {
         <Image
           src="/images/Blik.png"
           alt="Logo Blik"
+          width={68}
+          height={32}
           className="h-auto w-[67px]"
         />
       </p>
