@@ -98,6 +98,7 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
                       aria-expanded={openSubmenuIndex === index}
                       aria-controls={`submenu-${index}`}
                       aria-label={`Rozwiń menu ${label}`}
+                      aria-haspopup="menu"
                     >
                       <span>{label}</span>
                       <IconChevronDown

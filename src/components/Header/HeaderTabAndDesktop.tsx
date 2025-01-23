@@ -64,6 +64,7 @@ export const HeaderTabAndDesktop = () => {
                 aria-expanded={
                   subMenuData ? openIndex === actualIndex : undefined
                 }
+                aria-haspopup="menu"
               >
                 {item.label}
                 {subMenuData && (
