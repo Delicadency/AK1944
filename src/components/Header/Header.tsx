@@ -1,7 +1,7 @@
 "use client";
 import Container from "../shared/Container";
-import { HeaderMobile } from "./HeaderMobile";
-import { HeaderTabAndDesktop } from "./HeaderTabAndDesktop";
+import { HeaderMobile } from "./HeaderMobile/HeaderMobile";
+import { HeaderTabAndDesktop } from "./HeaderTabletAndDesktop/HeaderTabAndDesktop";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export default function Header() {

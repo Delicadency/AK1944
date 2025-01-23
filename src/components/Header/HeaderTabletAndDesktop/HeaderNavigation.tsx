@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { cn } from "@/utils";
-import { ActiveLink } from "../shared/ActiveLink";
+import { ActiveLink } from "../../shared/ActiveLink";
 import { navData } from "@/data/navigationData";
 import { submenuTabDeskData } from "@/data/headerData";
 import { useClickOutside } from "@/hooks/useClickOutside";

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import HeaderMenuIcon from "@/icons/HeaderMenuIcon";
-import { HeaderLogo } from "./HeaderLogo";
+import { HeaderLogo } from "../HeaderLogo";
 import { HeaderMobileMenu } from "./HeaderMobileMenu";
 import { cn } from "@/utils";
 

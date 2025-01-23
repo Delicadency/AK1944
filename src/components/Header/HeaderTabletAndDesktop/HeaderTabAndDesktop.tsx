@@ -1,8 +1,8 @@
 import { useRef } from "react";
-import FontSwitcher from "../Switcher/FontSwitcher";
-import ContrastSwitcher from "../Switcher/ContrastSwitcher";
-import { HeaderLogo } from "./HeaderLogo";
-import { Button } from "../shared/Button/Button";
+import FontSwitcher from "../../Switcher/FontSwitcher";
+import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
+import { HeaderLogo } from "../HeaderLogo";
+import { Button } from "../../shared/Button/Button";
 import { firstNav, secondNav } from "@/data/headerData";
 import { HeaderNavigation } from "./HeaderNavigation";
 

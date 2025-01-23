@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { ActiveLink } from "../shared/ActiveLink";
+import { ActiveLink } from "../../shared/ActiveLink";
 import { cn } from "@/utils";
-import { Button } from "../shared/Button/Button";
-import Container from "../shared/Container";
-import FontSwitcher from "../Switcher/FontSwitcher";
-import ContrastSwitcher from "../Switcher/ContrastSwitcher";
+import { Button } from "../../shared/Button/Button";
+import Container from "../../shared/Container";
+import FontSwitcher from "../../Switcher/FontSwitcher";
+import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
 import IconXCircle from "@/icons/IconXCircle";
-import { HeaderLogo } from "./HeaderLogo";
+import { HeaderLogo } from "../HeaderLogo";
 import IconFacebook from "@/icons/IconFacebook";
 import IconInstagram from "@/icons/IconInstagram";
 import IconYoutube from "@/icons/IconYoutube";
