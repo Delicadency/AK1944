@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { ActiveLink } from "../shared/ActiveLink";
 import { cn } from "@/utils";
 import FontSwitcher from "../Switcher/FontSwitcher";
@@ -8,6 +8,7 @@ import { HeaderLogo } from "./HeaderLogo";
 import { Button } from "../shared/Button/Button";
 import { IconChevronDown } from "@/icons/IconChevronDown";
 import { submenuTabDeskData, firstNav, secondNav } from "@/data/headerData";
+import { useClickOutside } from "@/hooks/useClickOutside";
 
 export const HeaderTabAndDesktop = () => {
   const classes =
@@ -24,18 +25,7 @@ export const HeaderTabAndDesktop = () => {
     setOpenIndex(null);
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setOpenIndex(null);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  useClickOutside(menuRef, () => setOpenIndex(null));
 
   const renderNav = (navItems: typeof navData, baseIndex = 0) => (
     <nav aria-label="Główna nawigacja">
