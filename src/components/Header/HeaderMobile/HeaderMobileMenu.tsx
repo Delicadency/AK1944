@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Button } from "../../shared/Button/Button";
 import Container from "../../shared/Container";
 import FontSwitcher from "../../Switcher/FontSwitcher";

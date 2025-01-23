@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import * as React from "react";
+import { useState } from "react";
 import { cn } from "@/utils";
 import { SubmenuItem } from "@/types";
 import { ActiveLink } from "@/components/shared/ActiveLink";
@@ -8,12 +9,16 @@ import { IconChevronDown } from "@/icons/IconChevronDown";
 
 export const HeaderMobileNavigation = () => {
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState<number | null>(null);
+
   const orderedNavData = customOrder.map((index) => navData[index]);
+
   const toggleSubmenu = (index: number) => {
     setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
   };
+
   const navClasses =
     "text-16 text-backgroundMain transition duration-300 ease-in-out active:text-blue contrast:text-black00";
+
   return (
     <nav aria-label="Główna nawigacja">
       <ul className="flex flex-col gap-5">
@@ -55,6 +60,9 @@ export const HeaderMobileNavigation = () => {
                     openSubmenuIndex === index ? "max-h-screen" : "max-h-0"
                   }`}
                   aria-hidden={openSubmenuIndex !== index}
+                  style={{
+                    pointerEvents: openSubmenuIndex === index ? "auto" : "none",
+                  }}
                 >
                   {submenuData[index]?.map(
                     (
