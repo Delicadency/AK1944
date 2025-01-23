@@ -2,6 +2,7 @@ import { useState } from "react";
 import HeaderMenuIcon from "@/icons/HeaderMenuIcon";
 import { HeaderLogo } from "./HeaderLogo";
 import { HeaderMobileMenu } from "./HeaderMobileMenu";
+import { cn } from "@/utils";
 
 export const HeaderMobile = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,14 +19,19 @@ export const HeaderMobile = () => {
           Światowy Związek Żołnierzy AK
         </p>
         <button type="button" onClick={toggleMenu}>
-          <HeaderMenuIcon className="self-center text-white contrast:text-black00 transition duration-300 active:scale-110 active:text-blue" />
+          <HeaderMenuIcon className="self-center text-white transition duration-300 active:scale-110 active:text-blue contrast:text-black00" />
         </button>
       </div>
 
       <div
-        className={`fixed right-0 top-0 z-50 h-full w-full transform bg-greenB contrast:bg-yellowContrast ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out`}
+        className={cn(
+          "fixed right-0 top-0 z-50 h-full w-full transform transition-transform duration-300 ease-in-out",
+          "bg-greenB contrast:bg-yellowContrast",
+          {
+            "translate-x-0": isMenuOpen,
+            "translate-x-full": !isMenuOpen,
+          },
+        )}
       >
         <HeaderMobileMenu onClose={toggleMenu} />
       </div>
