@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import { ActiveLink } from "../shared/ActiveLink";
 import { cn } from "@/utils";
-import {
-  navData,
-  homeArmyUnionNavData,
-  historyNavData,
-  partisanTrailData,
-} from "@/data/navigationData";
 import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
 import FontSwitcher from "../Switcher/FontSwitcher";
@@ -18,30 +11,19 @@ import IconFacebook from "@/icons/IconFacebook";
 import IconInstagram from "@/icons/IconInstagram";
 import IconYoutube from "@/icons/IconYoutube";
 import { IconChevronDown } from "@/icons/IconChevronDown";
+import { navData } from "@/data/navigationData";
+import { customOrder, submenuData } from "@/data/headerData";
+import { SubmenuItem } from "@/types";
 
 interface HeaderMobileMenuProps {
   onClose: () => void;
-}
-
-interface SubmenuItem {
-  href: string;
-  label: string;
 }
 
 export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
   onClose,
 }) => {
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState<number | null>(null);
-
-  const customOrder = [0, 4, 5, 6, 7, 1, 2, 3];
   const orderedNavData = customOrder.map((index) => navData[index]);
-
-  const submenuData: { [key: number]: SubmenuItem[] } = {
-    0: homeArmyUnionNavData,
-    1: historyNavData,
-    2: partisanTrailData,
-  };
-
   const toggleSubmenu = (index: number) => {
     setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
   };
@@ -75,31 +57,31 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
           className="flex justify-center gap-4 py-[26px]"
           aria-label="Linki do mediów społecznościowych"
         >
-          <Link
+          <a
             href="https://facebook.com/Szlak.Partyzancki/"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Oficjalna strona Szlaku Partyzanckiego na Facebooku"
           >
             <IconFacebook />
-          </Link>
+          </a>
           {/* Do zweryfikowania, czy klient ma konto na instagramie. Jesli nie, podmienić na X */}
-          <Link
+          <a
             href="https://instagram.com"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Oficjalna strona Szlaku Partyzanckiego na Instagramie"
           >
             <IconInstagram />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://youtube.com/@armiakrajowadebica3809"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Oficjalna strona Armii Krajowej Dębica na YouTube"
           >
             <IconYoutube />
-          </Link>
+          </a>
         </div>
         <nav aria-label="Główna nawigacja">
           <ul className="flex flex-col gap-5">

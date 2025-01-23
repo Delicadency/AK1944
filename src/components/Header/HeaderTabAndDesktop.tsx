@@ -1,21 +1,15 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react";
 import { ActiveLink } from "../shared/ActiveLink";
 import { cn } from "@/utils";
 import FontSwitcher from "../Switcher/FontSwitcher";
 import ContrastSwitcher from "../Switcher/ContrastSwitcher";
-import {
-  navData,
-  homeArmyUnionNavData,
-  historyNavData,
-  partisanTrailData,
-} from "@/data/navigationData";
+import { navData } from "@/data/navigationData";
 import { HeaderLogo } from "./HeaderLogo";
 import { Button } from "../shared/Button/Button";
 import { IconChevronDown } from "@/icons/IconChevronDown";
+import { submenuTabDeskData, firstNav, secondNav } from "@/data/headerData";
 
 export const HeaderTabAndDesktop = () => {
-  const firstNav = navData.slice(0, 4);
-  const secondNav = navData.slice(4, 8);
   const classes =
     "contrast:text-black00 hover:text-yellowVintage leading-6 transition duration-300 ease-in-out active:text-blue";
 
@@ -28,13 +22,6 @@ export const HeaderTabAndDesktop = () => {
 
   const handleSubMenuLinkClick = () => {
     setOpenIndex(null);
-  };
-
-  const getSubMenuData = (index: number) => {
-    if (index === 0) return homeArmyUnionNavData;
-    if (index === 4) return historyNavData;
-    if (index === 5) return partisanTrailData;
-    return null;
   };
 
   useEffect(() => {
@@ -58,7 +45,7 @@ export const HeaderTabAndDesktop = () => {
       >
         {navItems.map((item, index) => {
           const actualIndex = baseIndex + index;
-          const subMenuData = getSubMenuData(actualIndex);
+          const subMenuData = submenuTabDeskData[actualIndex] || null;
 
           return (
             <li
