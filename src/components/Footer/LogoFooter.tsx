@@ -12,9 +12,18 @@ const LogoFooter: React.FC = () => {
           className="h-auto w-[83px]"
         />
       </div>
-      <div className="hidden md:mt-4 md:block">
+      <div className="hidden md:mt-4 md:block lg:hidden">
         <Image
           src="/images/LogoFooterTab.png"
+          alt="Związek AK Logo"
+          width={149}
+          height={181}
+          className="h-[180px] w-[148px]"
+        />
+      </div>
+      <div className="hidden lg:mr-[40px] lg:mt-[22px] lg:block">
+        <Image
+          src="/images/LogoFooterDesktop.png"
           alt="Związek AK Logo"
           width={149}
           height={181}

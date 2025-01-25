@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const FooterSocialMedia: React.FC = () => {
   return (
-    <div className="mt-2 hidden space-x-4 md:flex">
+    <div className="mt-2 hidden space-x-4 md:flex lg:mr-8 lg:space-x-4">
       <Link
         href="https://www.facebook.com"
         aria-label="Facebook"
@@ -13,9 +13,9 @@ const FooterSocialMedia: React.FC = () => {
         <Image
           src="/images/IconFecebook.png"
           alt="Facebook"
-          width={32}
-          height={32}
-          className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
+          width={38}
+          height={38}
+          className="transition-opacity hover:opacity-80"
         />
       </Link>
       <Link
@@ -27,9 +27,9 @@ const FooterSocialMedia: React.FC = () => {
         <Image
           src="/images/IconInstagram.png"
           alt="Instagram"
-          width={32}
-          height={32}
-          className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
+          width={38}
+          height={38}
+          className="transition-opacity hover:opacity-80"
         />
       </Link>
       <Link
@@ -41,9 +41,9 @@ const FooterSocialMedia: React.FC = () => {
         <Image
           src="/images/IconYouTube.png"
           alt="YouTube"
-          width={32}
-          height={32}
-          className="h-[32px] w-[32px] transition-opacity hover:opacity-80"
+          width={38}
+          height={38}
+          className="transition-opacity hover:opacity-80"
         />
       </Link>
     </div>
