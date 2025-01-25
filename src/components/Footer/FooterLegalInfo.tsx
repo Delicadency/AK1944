@@ -22,10 +22,8 @@ export const FooterLegalInfo = () => {
           Regulamin
         </Link>
       </p>
-      <p className="mt-[20px] text-sm md:text-base">
-        © 2023 . All rights reserved.
-      </p>
-      <p className="mt-[20px] text-sm md:text-base">
+      <p className="mt-[20px] text-16">© 2023 . All rights reserved.</p>
+      <p className="mt-[20px] text-16">
         Strona powstała dzięki pracy wolontariuszy.
       </p>
     </div>

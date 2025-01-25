@@ -16,7 +16,7 @@ export const FooterNavigation = () => {
                   href={link.href}
                   aria-label={link.ariaLabel}
                   title={link.title}
-                  className="text-base font-normal transition-opacity hover:opacity-80 md:text-lg"
+                  className="text-16 text-base font-normal transition-opacity hover:opacity-80 md:text-18 lg:text-20"
                 >
                   {link.label}
                 </Link>
