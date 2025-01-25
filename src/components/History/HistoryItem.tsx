@@ -1,10 +1,26 @@
-export default function HistoryItem() {
+import { Heading } from "../shared/Heading/Heading";
+import { Button } from "../shared/Button/Button";
+
+interface HeadingProps {
+  title: string;
+  description: string;
+  images: string[];
+}
+export default function HistoryItem({
+  title,
+  description,
+  images,
+}: HeadingProps) {
   return (
     <li>
-      <h2>HistoryItem</h2>
-      <p>HistoryItem content</p>
-      <div>Swiper</div>
-      <button>Zobacz więcej</button>
+      <Heading variant="h4" color="green" contrast="yellow">
+        {title}
+      </Heading>
+      <p>{description}</p>
+      <div>{images}</div>
+      <Button label="Zobacz więcej" ariaDescription="Zobacz więcej">
+        Zobacz więcej
+      </Button>
     </li>
   );
 }

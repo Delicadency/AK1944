@@ -2,14 +2,18 @@ export const historyData = {
   history: {
     title: "Historia",
     description1:
-      "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność. Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji &quot;Burza&quot;, będącej symbolem odwagi i determinacji Armii Krajowej, a także odkryjesz historię Obwodu Dębica SZP-ZWZ-AK, którego członkowie z honorem i poświęceniem walczyli w czasie największej próby.",
+      "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
     description2:
-      "Na stronie znajdziesz również przejście do sekcji poświęconej literaturze i biogramom bohaterów, gdzie możesz zgłębić osobiste historie ludzi, którzy stali na straży ojczyzny, oddając jej swoje życie i serce. Zapraszamy do podróży w czasie, która ożywi wspomnienia i wzbudzi refleksję nad siłą ducha polskiego żołnierza i patrioty.",
+      'Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji \"Burza\", będącej symbolem odwagi i determinacji Armii Krajowej, a także odkryjesz historię Obwodu Dębica SZP-ZWZ-AK, którego członkowie z honorem i poświęceniem walczyli w czasie największej próby.',
+    description3:
+      "Na stronie znajdziesz również przejście do sekcji poświęconej literaturze i biogramom bohaterów, gdzie możesz zgłębić osobiste historie ludzi, którzy stali na straży ojczyzny, oddając jej swoje życie i serce.",
+    description4:
+      "Zapraszamy do podróży w czasie, która ożywi wspomnienia i wzbudzi refleksję nad siłą ducha polskiego żołnierza i patrioty.",
   },
   regiment: {
     title: "5. Pułk Strzelców Konnych",
     description:
-      "5. Pułk Strzelców Konnych to historia jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie „Akcji Burza” na ziemi dębickiej. Dowiesz się, jak wyglądała struktura pułku, kim byli jego dowódcy oraz jakie zadania realizowali w trakcie walk z okupantem. Poznasz szczegóły organizacji, podziału na rejony oraz najważniejszych działań bojowych i dywersyjnych. To opowieść o odwadze, zgraniu i niezłomnym duchu żołnierzy, którzy walczyli o wolną Polskę. Zapraszamy do zgłębienia tej niezwykłej historii jednostki, która zapisała się na kartach dziejów AK.",
+      '5. Pułk Strzelców Konnych to historia jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie "Akcji Burza" na ziemi dębickiej. Dowiesz się, jak wyglądała struktura pułku, kim byli jego dowódcy oraz jakie zadania realizowali w trakcie walk z okupantem. Poznasz szczegóły organizacji, podziału na rejony oraz najważniejszych działań bojowych i dywersyjnych. To opowieść o odwadze, zgraniu i niezłomnym duchu żołnierzy, którzy walczyli o wolną Polskę. Zapraszamy do zgłębienia tej niezwykłej historii jednostki, która zapisała się na kartach dziejów AK.',
     genesisTitle: "Geneza powstania",
     genesis1:
       "Historia powstania 5. Pułku Strzelców Konnych wiąże się z okresem napoleońskim, kiedy to w Kościanie na przełomie 1806 i 1807 r. Franciszek Garczyński sformował pułk, który w czerwcu 1807 r. otrzymał nazwę 5. PSK. Dowódcą tegoż pułku został płk Kazimierz Turno. Po burzliwych perypetiach okresu napoleońskiego, udziale w wojnie z Austrią w 1809 r. i zdziesiątkowaniu pułku w wielkiej wyprawie Napoleona na Moskwę w 1812 r. pułk uległ naturalnemu rozwiązaniu. Warto dodać, że w wyprawie w roku 1812 w szeregach pułku walczył Aleksander Fredro, który okres ten opisał w pamiętniku ”Trzy po trzy”.",
