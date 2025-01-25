@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
 import { Heading } from "../shared/Heading/Heading";
