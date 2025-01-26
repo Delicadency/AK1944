@@ -3,6 +3,8 @@ import { historyData as txt } from "@/data/historyData";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
 export default function History() {
+  const { title, description1, description2, description3, description4 } =
+    txt.history;
   return (
     <BackgroundImage
       alt="Historyczne zdjęcie 5. Pułku Strzelców Konnych"
@@ -18,13 +20,13 @@ export default function History() {
           color="green"
           className="mb-10 mt-5"
         >
-          {txt.history.title}
+          {title}
         </Heading>
         <div className="max-w-[709px] text-white">
-          <p>{txt.history.description1}</p>
-          <p>{txt.history.description2}</p>
-          <p className="mobile:mt-6">{txt.history.description3}</p>
-          <p>{txt.history.description4}</p>
+          <p>{description1}</p>
+          <p>{description2}</p>
+          <p className="mobile:mt-6">{description3}</p>
+          <p>{description4}</p>
         </div>
       </Container>
     </BackgroundImage>

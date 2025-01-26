@@ -13,7 +13,7 @@ export const historyData = {
   regiment: {
     title: "5. Pułk Strzelców Konnych",
     description:
-      '5. Pułk Strzelców Konnych to historia jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie "Akcji Burza" na ziemi dębickiej. Dowiesz się, jak wyglądała struktura pułku, kim byli jego dowódcy oraz jakie zadania realizowali w trakcie walk z okupantem. Poznasz szczegóły organizacji, podziału na rejony oraz najważniejszych działań bojowych i dywersyjnych. To opowieść o odwadze, zgraniu i niezłomnym duchu żołnierzy, którzy walczyli o wolną Polskę. Zapraszamy do zgłębienia tej niezwykłej historii jednostki, która zapisała się na kartach dziejów AK.',
+      "5. Pułk Strzelców Konnych to historia jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie „Akcji Burza” na ziemi dębickiej. Dowiesz się, jak wyglądała struktura pułku, kim byli jego dowódcy oraz jakie zadania realizowali w trakcie walk z okupantem. Poznasz szczegóły organizacji, podziału na rejony oraz najważniejszych działań bojowych i dywersyjnych. To opowieść o odwadze, zgraniu i niezłomnym duchu żołnierzy, którzy walczyli o wolną Polskę. Zapraszamy do zgłębienia tej niezwykłej historii jednostki, która zapisała się na kartach dziejów AK.",
     genesisTitle: "Geneza powstania",
     genesis1:
       "Historia powstania 5. Pułku Strzelców Konnych wiąże się z okresem napoleońskim, kiedy to w Kościanie na przełomie 1806 i 1807 r. Franciszek Garczyński sformował pułk, który w czerwcu 1807 r. otrzymał nazwę 5. PSK. Dowódcą tegoż pułku został płk Kazimierz Turno. Po burzliwych perypetiach okresu napoleońskiego, udziale w wojnie z Austrią w 1809 r. i zdziesiątkowaniu pułku w wielkiej wyprawie Napoleona na Moskwę w 1812 r. pułk uległ naturalnemu rozwiązaniu. Warto dodać, że w wyprawie w roku 1812 w szeregach pułku walczył Aleksander Fredro, który okres ten opisał w pamiętniku ”Trzy po trzy”.",
@@ -112,6 +112,8 @@ export const historyData = {
   },
   burza: {
     title: "Akcja „Burza”",
+    description:
+      "„Akcja Burza” to opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przeniesiesz się w czasy dramatycznych walk w rejonie Dębicy, poznasz bohaterów, którzy stanęli do nierównej walki z okupantem, i dowiesz się, jak przebiegała bitwa na polanie Kałużówka. Zobaczysz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacjami. Te wydarzenia to świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia. Wejdź i poznaj szczegóły tej niezwykłej historii.",
     districtTitle: "Obwód AK Dębica w Operacji „Burza” - Struktura i Działania",
     district1:
       "Obwód AK Dębica, wchodzący w skład 24. Dywizji Piechoty, odtwarzał w okresie „Burzy” - 5. Pułk Strzelców Konnych Armii Krajowej. Dowództwo nad całością objął zastępca inspektora rejonowego w Rzeszowie, kpt. Adam Lazarowicz „Klamra”, natomiast komendant Obwodu Dębica, kpt. Ludwik Marszałek „Zbroja”, został na czas „Burzy” - zastępcą „Klamry”. Teren Obwodu podzielono na trzy rejony walki zwane także zgrupowaniami [1].",
@@ -228,6 +230,8 @@ export const historyData = {
   },
   debica: {
     title: "Obwód Dębica SZP-ZWZ-AK",
+    description:
+      "Obwód Dębica SZP-ZWZ-AK to historia lokalnych struktur konspiracyjnych, które odegrały kluczową rolę w walce z okupantem na ziemi dębickiej. W tej części poznasz rozwój organizacji od początków Służby Zwycięstwu Polski, przez Związek Walki Zbrojnej, aż po przekształcenie w Armię Krajową. Dowiesz się, jak wyglądała działalność wywiadowcza, dywersyjna i szkoleniowa, a także jak Obwód przygotowywał się do operacji „Burza”. To opowieść o ludziach, którzy, mimo ogromnego ryzyka, tworzyli fundamenty oporu wobec okupacji. Zapraszamy do odkrycia tej fascynującej części historii Dębicy i jej bohaterów!",
     fortressTitle: "Obwód SZP-ZWZ-AK Dębica - Twierdza Polskiego Podziemia",
     fortress1:
       "Na tle Polskiego Podziemia szczególną rolę odegrał Obwod SZP - ZWZ - AK Dębica krypt. „Dziekania”, „Deser”, odnosząc sukcesy m.in. na płaszczyźnie sabotażowo-dywersyjnej oraz wywiadowczej. Kiedy trwały jeszcze walki polskich armii z Niemcami m.in. pod Kockiem, w twierdzy Modlin oraz w Warszawie, 27 września 1939 roku powstała w stolicy tajna organizacja pn. Służba Zwycięstwu Polski (SZP), na czele której stanął gen. Michał Karaszewicz-Tokarzewski. Jej zadaniem było „prowadzenie dalszej walki o utrzymanie niepodległości i całości granic”.",
