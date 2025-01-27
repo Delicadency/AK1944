@@ -4,7 +4,7 @@ import DebicaDistrict from "@/components/History/DebicaDistrict";
 
 export default function HistoryList() {
   return (
-    <>
+    <section>
       <ul className="flex flex-col gap-10">
         <li>
           <Regiment />
@@ -16,6 +16,6 @@ export default function HistoryList() {
           <DebicaDistrict />
         </li>
       </ul>
-    </>
+    </section>
   );
 }

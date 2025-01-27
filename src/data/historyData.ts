@@ -9,6 +9,16 @@ export const historyData = {
       "Na stronie znajdziesz również przejście do sekcji poświęconej literaturze i biogramom bohaterów, gdzie możesz zgłębić osobiste historie ludzi, którzy stali na straży ojczyzny, oddając jej swoje życie i serce.",
     description4:
       "Zapraszamy do podróży w czasie, która ożywi wspomnienia i wzbudzi refleksję nad siłą ducha polskiego żołnierza i patrioty.",
+    literature: {
+      title: "Literatura",
+      content:
+        "Chcesz zgłębić wiedzę o Armii Krajowej i jej działalności? Odkryj polecaną literaturę, która przybliża historię największej organizacji podziemnej w okupowanej Europie. Znajdziesz tu książki i wspomnienia, które pozwolą lepiej zrozumieć heroizm i poświęcenie żołnierzy AK. To doskonałe źródło wiedzy dla pasjonatów historii oraz tych, którzy chcą poznać kulisy walk o niepodległość. Poznaj opowieści, które na zawsze zapisały się w dziejach Polski.",
+    },
+    biograms: {
+      title: "Biogramy",
+      content:
+        "Poznaj sylwetki bohaterów Armii Krajowej - ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
+    },
   },
   regiment: {
     title: "5. Pułk Strzelców Konnych",
@@ -308,10 +318,5 @@ export const historyData = {
       "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
     expansion6:
       "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
-  },
-  literature: {
-    title: "Literatura",
-    content:
-      "Chcesz zgłębić wiedzę o Armii Krajowej i jej działalności? Odkryj polecaną literaturę, która przybliża historię największej organizacji podziemnej w okupowanej Europie. Znajdziesz tu książki i wspomnienia, które pozwolą lepiej zrozumieć heroizm i poświęcenie żołnierzy AK. To doskonałe źródło wiedzy dla pasjonatów historii oraz tych, którzy chcą poznać kulisy walk o niepodległość. Poznaj opowieści, które na zawsze zapisały się w dziejach Polski.",
   },
 };

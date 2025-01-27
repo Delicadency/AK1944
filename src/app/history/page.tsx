@@ -1,7 +1,8 @@
 import History from "@/components/History/History";
-import Literature from "@/components/History/Literature";
-import HistoryList from "@/components/History/HistoryList";
 import HistoryNav from "@/components/History/HistoryNav";
+import HistoryList from "@/components/History/HistoryList";
+import Literature from "@/components/History/Literature";
+import HistoryBiogram from "@/components/History/HistoryBiogram";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
@@ -22,7 +23,7 @@ export default function HistoryPage() {
         <Heading variant="h4" color="white" contrast="black">
           Zobacz także
         </Heading>
-        <p>Biogramy?</p>
+        <HistoryBiogram />
         <Literature />
       </section>
     </div>
