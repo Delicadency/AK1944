@@ -53,7 +53,7 @@ export const Heading = ({
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <>
       <HeadingTag
         className={clsx(
           contrastStyle[contrast],
@@ -75,6 +75,6 @@ export const Heading = ({
           )}
         />
       )}
-    </div>
+    </>
   );
 };
