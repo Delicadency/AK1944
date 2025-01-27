@@ -1,4 +1,5 @@
 import { cn } from "@/utils";
+import clsx from "clsx";
 
 export interface HeadingProps {
   children: React.ReactNode;
@@ -6,6 +7,7 @@ export interface HeadingProps {
   underline?: boolean;
   contrast: "yellow" | "black";
   color: "green" | "white";
+  className?: string;
 }
 
 export const Heading = ({
@@ -14,6 +16,7 @@ export const Heading = ({
   underline = false,
   contrast,
   color,
+  className = "",
 }: HeadingProps) => {
   const getHeadingTag = () => {
     switch (variant) {
@@ -33,10 +36,10 @@ export const Heading = ({
   const HeadingTag = getHeadingTag();
 
   const variants = {
-    h1: "text-[40px]",
-    h2: "text-[32px]",
-    h3: "text-[28px]",
-    h4: "text-[24px]",
+    h1: "text-40",
+    h2: "text-32",
+    h3: "text-28",
+    h4: "text-24",
   };
 
   const contrastStyle = {
@@ -50,19 +53,21 @@ export const Heading = ({
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <>
       <HeadingTag
-        className={cn(
-          "font-lora font-bold",
+        className={clsx(
           contrastStyle[contrast],
           variants[variant],
           colors[color],
+          "font-lora font-bold",
+          className,
         )}
       >
         {children}
       </HeadingTag>
       {underline && (
         <hr
+          aria-hidden="true"
           className={cn(
             "w-[200px] border-t-2 border-solid",
             colors[color],
@@ -70,6 +75,6 @@ export const Heading = ({
           )}
         />
       )}
-    </div>
+    </>
   );
 };
