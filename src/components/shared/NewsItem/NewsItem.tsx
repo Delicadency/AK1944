@@ -4,7 +4,6 @@ import parse from "html-react-parser";
 
 import { Heading } from "../Heading/Heading";
 import { getImage } from "@/dataAccess/image";
-import { BASE_API_URL } from "@/utils/constans";
 import { cleanHTML, formatDate, truncateText } from "@/utils";
 
 interface NewsProps {
@@ -22,17 +21,8 @@ export const NewsItem = async ({
   featured_media,
   excerpt,
 }: NewsProps) => {
-  let image: string = "/images/news_placeholder.png";
-
-  try {
-    const apiUrl = `${BASE_API_URL}/media/${featured_media}`;
-    const res = await getImage(apiUrl);
-    if (res) {
-      image = res;
-    }
-  } catch {
-    // Brak zdjęcia nie jest błędem, dlatego wyłączyłem logowanie
-  }
+  // Get image with error handling encapsulated in getImage function
+  const image = await getImage(featured_media);
 
   // Parsowanie HTML do tekstu za pomocą regularnego wyrażenia
   const cleandExcerpt = cleanHTML(excerpt);

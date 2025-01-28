@@ -1,10 +1,22 @@
-export const getImage = async (url: string): Promise<string | null> => {
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error("Could not fetch the data for that resource");
+import { BASE_API_URL } from "@/utils/constans";
+
+export const getImage = async (mediaId: string): Promise<string> => {
+  const DEFAULT_IMAGE = "/images/news_placeholder.png";
+
+  if (!mediaId) {
+    return DEFAULT_IMAGE;
   }
 
-  const image = await res.json();
+  try {
+    const response = await fetch(`${BASE_API_URL}/media/${mediaId}`);
 
-  return image.source_url || null;
+    if (!response.ok) {
+      return DEFAULT_IMAGE;
+    }
+
+    const data = await response.json();
+    return data.source_url ?? DEFAULT_IMAGE;
+  } catch {
+    return DEFAULT_IMAGE;
+  }
 };
