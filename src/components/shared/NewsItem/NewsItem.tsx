@@ -31,7 +31,7 @@ export const NewsItem = async ({
   const truncatedExcerpt = truncateText(decodedCleanExcerpt, 230);
 
   return (
-    <div
+    <article
       id={id}
       className="flex flex-col items-start justify-start gap-3 text-20 tablet:grid tablet:gap-x-6 tablet:gap-y-3"
     >
@@ -63,6 +63,6 @@ export const NewsItem = async ({
           czytaj więcej.
         </Link>
       </p>
-    </div>
+    </article>
   );
 };
