@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { Heading } from "../Heading/Heading";
-import { getImage } from "@/dataAccess/image";
 import Link from "next/link";
 import parse from "html-react-parser";
+
+import { Heading } from "../Heading/Heading";
+import { getImage } from "@/dataAccess/image";
+import { BASE_API_URL } from "@/utils/constans";
 
 interface NewsProps {
   id: string;
@@ -31,7 +33,7 @@ export const NewsItem = async ({
   let image: string = "/images/news_placeholder.png";
 
   try {
-    const apiUrl = `https://ak1944.pl/wp-json/wp/v2/media/${featured_media}`;
+    const apiUrl = `${BASE_API_URL}/media/${featured_media}`;
     const res = await getImage(apiUrl);
     if (res) {
       image = res;

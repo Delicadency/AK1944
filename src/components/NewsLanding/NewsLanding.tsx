@@ -1,17 +1,18 @@
-import { getPosts } from "@/dataAccess/posts";
 import Calendar from "../Calendar/Calendar";
-import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
+import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
 import { NewsItem } from "../shared/NewsItem/NewsItem";
+import { getPosts } from "@/dataAccess/posts";
 import { Post } from "@/types";
+import { BASE_API_URL } from "@/utils/constans";
 
 const NewsLanding = async () => {
   let posts: Post[] = [];
   let errorMessage: string | null = null;
 
   try {
-    posts = await getPosts("https://ak1944.pl/wp-json/wp/v2/posts?per_page=2");
+    posts = await getPosts(`${BASE_API_URL}/posts?per_page=2`);
 
     if (!posts || posts.length === 0) {
       errorMessage = "Brak danych";
