@@ -33,14 +33,7 @@ const NewsLanding = async () => {
           </div>
           <div className="flex flex-col items-center justify-center gap-5 tablet:gap-10">
             {posts.map((post) => (
-              <NewsItem
-                key={post.id}
-                id={post.id}
-                heading={post.title}
-                date={post.date}
-                excerpt={post.excerpt}
-                featured_media={post.featured_media}
-              />
+              <NewsItem key={post.id} post={post} />
             ))}
           </div>
         </Container>
