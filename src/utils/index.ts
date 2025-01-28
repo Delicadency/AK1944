@@ -11,3 +11,13 @@ export const formatDate = (isoDate: string): string => {
     year: "numeric",
   }).format(date);
 };
+
+export const cleanHTML = (html: string): string => {
+  return html.replace(/<[^>]+>/g, "").trim();
+};
+
+export const truncateText = (text: string, maxLength: number): string => {
+  return text.length > maxLength
+    ? `${text.substring(0, maxLength - 3)}...`
+    : text;
+};

@@ -5,7 +5,7 @@ import parse from "html-react-parser";
 import { Heading } from "../Heading/Heading";
 import { getImage } from "@/dataAccess/image";
 import { BASE_API_URL } from "@/utils/constans";
-import { formatDate } from "@/utils";
+import { cleanHTML, formatDate, truncateText } from "@/utils";
 
 interface NewsProps {
   id: string;
@@ -35,15 +35,10 @@ export const NewsItem = async ({
   }
 
   // Parsowanie HTML do tekstu za pomocą regularnego wyrażenia
-  const cleandExcerpt = excerpt.replace(/<[^>]+>/g, "").trim();
-
+  const cleandExcerpt = cleanHTML(excerpt);
   const decodedCleanExcerpt = parse(cleandExcerpt).toString();
-
   // Skrócenie tekstu do 230 znaków
-  const truncatedExcerpt =
-    decodedCleanExcerpt.length > 230
-      ? `${decodedCleanExcerpt.substring(0, 227)}...`
-      : decodedCleanExcerpt;
+  const truncatedExcerpt = truncateText(decodedCleanExcerpt, 230);
 
   return (
     <div
