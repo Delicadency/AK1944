@@ -4,29 +4,16 @@ import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
 import { NewsItem } from "../shared/NewsItem/NewsItem";
 import { getPosts } from "@/dataAccess/posts";
-import { Post } from "@/types";
-import { BASE_API_URL } from "@/utils/constans";
 
 const NewsLanding = async () => {
-  let posts: Post[] = [];
-  let errorMessage: string | null = null;
+  const [posts, error] = await getPosts(2);
 
-  try {
-    posts = await getPosts(`${BASE_API_URL}/posts?per_page=2`);
-
-    if (!posts || posts.length === 0) {
-      errorMessage = "Brak danych";
-    }
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      errorMessage = `Wystąpił błąd podczas ładowania danych. ${error.message}`;
-    } else {
-      errorMessage = "Wystąpił nieznany błąd.";
-    }
+  if (error) {
+    return <p>{`Wystąpił błąd podczas ładowania danych. ${error.message}`}</p>;
   }
 
-  if (errorMessage) {
-    return <p>{errorMessage}</p>;
+  if (!posts || posts.length === 0) {
+    return <p>Brak danych</p>;
   }
 
   return (
