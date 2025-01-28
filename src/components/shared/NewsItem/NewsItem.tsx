@@ -40,7 +40,7 @@ export const NewsItem = async ({
           {heading}
         </Heading>
         <p className="font-sourceSans text-grayDate contrast:text-black">
-          {formatDate(date)}
+          <time dateTime={date}>{formatDate(date)}</time>
         </p>
       </div>
 
