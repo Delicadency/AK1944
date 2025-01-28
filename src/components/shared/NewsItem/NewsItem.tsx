@@ -1,10 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
 import parse from "html-react-parser";
 
-import { Heading } from "../Heading/Heading";
+import { NewsHeader } from "../NewsHeader/NewsHeader";
+import { NewsImage } from "../NewsImage/NewsImage";
+import { NewsContent } from "../NewsContent/NewsContent";
+
 import { getImage } from "@/dataAccess/image";
-import { cleanHTML, formatDate, truncateText } from "@/utils";
+import { cleanHTML, truncateText } from "@/utils";
 
 interface NewsProps {
   id: string;
@@ -21,13 +22,9 @@ export const NewsItem = async ({
   featured_media,
   excerpt,
 }: NewsProps) => {
-  // Get image with error handling encapsulated in getImage function
   const image = await getImage(featured_media);
-
-  // Parsowanie HTML do tekstu za pomocą regularnego wyrażenia
-  const cleandExcerpt = cleanHTML(excerpt);
-  const decodedCleanExcerpt = parse(cleandExcerpt).toString();
-  // Skrócenie tekstu do 230 znaków
+  const cleanedExcerpt = cleanHTML(excerpt);
+  const decodedCleanExcerpt = parse(cleanedExcerpt).toString();
   const truncatedExcerpt = truncateText(decodedCleanExcerpt, 230);
 
   return (
@@ -35,34 +32,9 @@ export const NewsItem = async ({
       id={id}
       className="flex flex-col items-start justify-start gap-3 text-20 tablet:grid tablet:gap-x-6 tablet:gap-y-3"
     >
-      <div className="flex flex-col items-start justify-start tablet:col-start-2 tablet:row-start-1 tablet:flex-row tablet:items-center tablet:gap-4">
-        <Heading variant="h4" color="white" contrast="black">
-          {heading}
-        </Heading>
-        <p className="font-sourceSans text-grayDate contrast:text-black">
-          <time dateTime={date}>{formatDate(date)}</time>
-        </p>
-      </div>
-
-      <div className="h-[191px] w-[288px] tablet:col-start-1 tablet:row-span-2 tablet:row-start-1 tablet:h-[169px] tablet:w-[262px]">
-        <Image
-          alt="news image"
-          src={image}
-          width="400"
-          height="300"
-          className="object-cover"
-        />
-      </div>
-
-      <p className="w-[395px] font-sourceSans text-backgroundMain contrast:text-black">
-        {truncatedExcerpt}{" "}
-        <Link
-          href="/"
-          className="text-greenLight underline contrast:text-black tablet:col-start-2 tablet:row-start-2"
-        >
-          czytaj więcej.
-        </Link>
-      </p>
+      <NewsHeader heading={heading} date={date} />
+      <NewsImage src={image} />
+      <NewsContent excerpt={truncatedExcerpt} />
     </article>
   );
 };
