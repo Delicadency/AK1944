@@ -5,6 +5,7 @@ import parse from "html-react-parser";
 import { Heading } from "../Heading/Heading";
 import { getImage } from "@/dataAccess/image";
 import { BASE_API_URL } from "@/utils/constans";
+import { formatDate } from "@/utils";
 
 interface NewsProps {
   id: string;
@@ -13,15 +14,6 @@ interface NewsProps {
   excerpt: string;
   featured_media: string;
 }
-
-const formatDate = (isoDate: string): string => {
-  const date = new Date(isoDate);
-  return new Intl.DateTimeFormat("pl-PL", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  }).format(date);
-};
 
 export const NewsItem = async ({
   heading,
