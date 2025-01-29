@@ -24,7 +24,7 @@ export const NewsItem = async ({ post }: Props) => {
       id={id}
       className="flex flex-col items-start justify-start gap-3 text-20 tablet:grid tablet:gap-x-6 tablet:gap-y-3"
     >
-      <NewsHeader heading={title} date={date} />
+      <NewsHeader title={title} date={date} />
       <NewsImage src={image} />
       <NewsContent excerpt={truncatedExcerpt} />
     </article>
