@@ -6,6 +6,8 @@ describe("BackgroundImage", () => {
     children: <div>Test Child</div>,
     src: "/test-image.jpg",
     alt: "Background Image",
+    width: 1920,
+    height: 1080,
   };
 
   it("renders without crashing", () => {
