@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { NewsItem } from "./NewsItem";
 
 const meta: Meta<typeof NewsItem> = {
-  title: "Components/Shared/NewsItem",
+  title: "Components/shared/NewsItem",
   component: NewsItem,
   argTypes: {
     post: {
