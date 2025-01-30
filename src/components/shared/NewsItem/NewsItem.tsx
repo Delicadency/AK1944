@@ -12,8 +12,9 @@ interface Props {
   post: Post;
 }
 
-export const NewsItem = async ({ post }: Props) => {
-  const { title, date, id, featured_media, excerpt } = post;
+export const NewsItem = async ({
+  post: { title, date, id, featured_media, excerpt },
+}: Props) => {
   const image = await getImage(featured_media);
   const cleanedExcerpt = cleanHTML(excerpt);
   const decodedCleanExcerpt = parse(cleanedExcerpt).toString();
