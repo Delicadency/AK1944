@@ -1,32 +1,10 @@
-export interface PostResponse {
-  id: string;
-  date: string;
-  title: {
-    rendered: string;
-  };
-  content: {
-    rendered: string;
-  };
-  excerpt: {
-    rendered: string;
-  };
-  featured_media: string;
-}
-
 export interface Post {
-  id: string;
+  id: number;
   date: string;
   title: string;
   content: string;
   excerpt: string;
-  featured_media: string;
-}
-
-export interface ImageResponse {
-  source_url: string;
-  title: {
-    rendered: string;
-  };
+  featured_media: number;
 }
 
 export interface Image {

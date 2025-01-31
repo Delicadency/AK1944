@@ -1,8 +1,12 @@
-import { BASE_API_URL } from "@/utils/constans";
+import { z } from "zod";
+
+import { BASE_API_URL, DEFAULT_IMAGE } from "@/utils/constans";
+
+const imageSchema = z.object({
+  source_url: z.string().url(),
+});
 
 export const getImage = async (mediaId: string): Promise<string> => {
-  const DEFAULT_IMAGE = "/images/news_placeholder.png";
-
   if (!mediaId) {
     return DEFAULT_IMAGE;
   }
@@ -15,7 +19,8 @@ export const getImage = async (mediaId: string): Promise<string> => {
     }
 
     const data = await response.json();
-    return data.source_url ?? DEFAULT_IMAGE;
+    const parsedData = imageSchema.safeParse(data);
+    return parsedData.success ? parsedData.data.source_url : DEFAULT_IMAGE;
   } catch {
     return DEFAULT_IMAGE;
   }

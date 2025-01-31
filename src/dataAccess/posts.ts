@@ -1,5 +1,18 @@
-import type { Post, PostResponse } from "@/types";
+import { z } from "zod";
+
+import type { Post } from "@/types";
 import { BASE_API_URL } from "@/utils/constans";
+
+const postSchema = z.object({
+  id: z.number(),
+  date: z.string(),
+  title: z.object({ rendered: z.string() }),
+  content: z.object({ rendered: z.string() }),
+  excerpt: z.object({ rendered: z.string() }),
+  featured_media: z.number(),
+});
+
+const postsSchema = z.array(postSchema);
 
 export const getPosts = async (
   perPage: number,
@@ -10,8 +23,13 @@ export const getPosts = async (
       throw new Error("Could not fetch the data for that resource");
     }
 
-    const posts = (await res.json()) as PostResponse[];
-    const mappedPosts: Post[] = posts.map((post) => ({
+    const jsonData = await res.json();
+    const parsedData = postsSchema.safeParse(jsonData);
+    if (!parsedData.success) {
+      throw new Error("Invalid API response format");
+    }
+
+    const mappedPosts: Post[] = parsedData.data.map((post) => ({
       id: post.id,
       date: post.date,
       title: post.title.rendered,
