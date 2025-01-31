@@ -14,6 +14,15 @@ const postSchema = z.object({
 
 const postsSchema = z.array(postSchema);
 
+const mapPost = (post: z.infer<typeof postSchema>): Post => ({
+  id: post.id,
+  date: post.date,
+  title: post.title.rendered,
+  content: post.content.rendered,
+  excerpt: post.excerpt.rendered,
+  featured_media: post.featured_media,
+});
+
 export const getPosts = async (
   perPage: number,
 ): Promise<[Post[] | null, Error | null]> => {
@@ -29,14 +38,7 @@ export const getPosts = async (
       throw new Error("Invalid API response format");
     }
 
-    const mappedPosts: Post[] = parsedData.data.map((post) => ({
-      id: post.id,
-      date: post.date,
-      title: post.title.rendered,
-      content: post.content.rendered,
-      excerpt: post.excerpt.rendered,
-      featured_media: post.featured_media,
-    }));
+    const mappedPosts: Post[] = parsedData.data.map(mapPost);
 
     return [mappedPosts, null];
   } catch (error: unknown) {
