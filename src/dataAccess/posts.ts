@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import type { Post } from "@/types";
+import { fetchData } from "@/utils/fetchData";
 import { BASE_API_URL } from "@/utils/constants";
 
 const postSchema = z.object({
@@ -26,25 +27,19 @@ const mapPost = (post: z.infer<typeof postSchema>): Post => ({
 export const getPosts = async (
   perPage: number,
 ): Promise<[Post[] | null, Error | null]> => {
-  try {
-    const res = await fetch(`${BASE_API_URL}/posts?per_page=${perPage}`);
-    if (!res.ok) {
-      throw new Error("Could not fetch the data for that resource");
-    }
+  const { data, error } = await fetchData(
+    `${BASE_API_URL}/posts?per_page=${perPage}`,
+  );
 
-    const jsonData = await res.json();
-    const parsedData = postsSchema.safeParse(jsonData);
-    if (!parsedData.success) {
-      throw new Error("Invalid API response format");
-    }
-
-    const mappedPosts: Post[] = parsedData.data.map(mapPost);
-
-    return [mappedPosts, null];
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      return [null, error];
-    }
-    return [null, new Error("Wystąpił nieznany błąd.")];
+  if (error instanceof Error) {
+    return [null, error];
   }
+
+  const parsedData = postsSchema.safeParse(data);
+  if (!parsedData.success) {
+    return [null, new Error("Invalid API response format")];
+  }
+
+  const mappedPosts: Post[] = parsedData.data.map(mapPost);
+  return [mappedPosts, null];
 };

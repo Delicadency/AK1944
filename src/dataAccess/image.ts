@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+import { fetchData } from "@/utils/fetchData";
 import { BASE_API_URL, DEFAULT_IMAGE } from "@/utils/constants";
 
 const imageSchema = z.object({
@@ -11,17 +12,12 @@ export const getImage = async (mediaId: number): Promise<string> => {
     return DEFAULT_IMAGE;
   }
 
-  try {
-    const response = await fetch(`${BASE_API_URL}/media/${mediaId}`);
+  const data = await fetchData(`${BASE_API_URL}/media/${mediaId}`);
 
-    if (!response.ok) {
-      return DEFAULT_IMAGE;
-    }
-
-    const data = await response.json();
-    const parsedData = imageSchema.safeParse(data);
-    return parsedData.success ? parsedData.data.source_url : DEFAULT_IMAGE;
-  } catch {
+  if (!data) {
     return DEFAULT_IMAGE;
   }
+
+  const parsedData = imageSchema.safeParse(data);
+  return parsedData.success ? parsedData.data.source_url : DEFAULT_IMAGE;
 };
