@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { BASE_API_URL, DEFAULT_IMAGE } from "@/utils/constans";
+import { BASE_API_URL, DEFAULT_IMAGE } from "@/utils/constants";
 
 const imageSchema = z.object({
   source_url: z.string().url(),

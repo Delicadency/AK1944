@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 import type { Post } from "@/types";
-import { BASE_API_URL } from "@/utils/constans";
+import { BASE_API_URL } from "@/utils/constants";
 
 const postSchema = z.object({
   id: z.number(),
