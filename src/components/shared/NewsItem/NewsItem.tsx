@@ -13,7 +13,7 @@ interface Props {
 }
 
 export const NewsItem = async ({
-  post: { title, date, id, featured_media, excerpt },
+  post: { id, title, date, featured_media, excerpt },
 }: Props) => {
   const image = await getImage(featured_media);
   const cleanedExcerpt = cleanHTML(excerpt);
@@ -22,7 +22,7 @@ export const NewsItem = async ({
 
   return (
     <article
-      id={id}
+      key={id}
       className="flex flex-col items-start justify-start gap-3 text-20 tablet:grid tablet:gap-x-6 tablet:gap-y-3"
     >
       <NewsHeader title={title} date={date} />

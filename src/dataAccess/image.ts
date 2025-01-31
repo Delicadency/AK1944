@@ -6,7 +6,7 @@ const imageSchema = z.object({
   source_url: z.string().url(),
 });
 
-export const getImage = async (mediaId: string): Promise<string> => {
+export const getImage = async (mediaId: number): Promise<string> => {
   if (!mediaId) {
     return DEFAULT_IMAGE;
   }
