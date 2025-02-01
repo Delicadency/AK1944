@@ -6,11 +6,11 @@ jest.mock("@/hooks/useMediaQuery", () => ({
   useMediaQuery: jest.fn(),
 }));
 
-jest.mock("./HeaderMobile/HeaderMobile", () => ({
+jest.mock("@/components/Header/HeaderMobile/HeaderMobile", () => ({
   HeaderMobile: () => <div data-testid="header-mobile">Header Mobile</div>,
 }));
 
-jest.mock("./HeaderTabletAndDesktop/HeaderTabAndDesktop", () => ({
+jest.mock("@/components/Header/HeaderTabletAndDesktop/HeaderTabAndDesktop", () => ({
   HeaderTabAndDesktop: () => (
     <div data-testid="header-tab-desktop">Header Tablet/Desktop</div>
   ),
