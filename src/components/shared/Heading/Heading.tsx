@@ -53,7 +53,7 @@ export const Heading = ({
   };
 
   return (
-    <>
+    <hgroup className="flex flex-col items-center">
       <HeadingTag
         className={clsx(
           contrastStyle[contrast],
@@ -69,12 +69,12 @@ export const Heading = ({
         <hr
           aria-hidden="true"
           className={cn(
-            "w-[200px] border-t-2 border-solid",
+            "mt-2 w-[200px] border-t-2 border-solid",
             colors[color],
             contrastStyle[contrast],
           )}
         />
       )}
-    </>
+    </hgroup>
   );
 };

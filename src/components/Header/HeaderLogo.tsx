@@ -12,6 +12,7 @@ export const HeaderLogo = () => {
           width={82}
           height={100}
           sizes="(max-width: 767px) 33px, (max-width: 1279px) 78px, 82px"
+          aria-label="Logo"
         />
       </Link>
     </div>
