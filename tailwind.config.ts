@@ -64,6 +64,7 @@ export default {
         largeFont: "1.5",
       },
       screens: {
+        mobile: "320px",
         tablet: "768px",
         desktop: "1280px",
       },

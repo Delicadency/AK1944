@@ -1,7 +1,9 @@
+import Container from "@/components/shared/Container";
+
 export default function RegimentPage() {
   return (
-    <div>
+    <Container>
       <p>5. Pułk Strzelców Konnych</p>
-    </div>
+    </Container>
   );
 }
