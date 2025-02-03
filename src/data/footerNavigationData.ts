@@ -4,13 +4,13 @@ export const navigationData = [
     links: [
       {
         label: "Związek AK",
-        href: "/zwiazek-ak",
+        href: "/o-nas",
         ariaLabel: "Przejdź do strony Związek AK",
         title: "Przejdź do strony Związek AK",
       },
       {
         label: "Szlak Partyzancki",
-        href: "/szlak-partyzancki",
+        href: "/szlak-partyzancki/szlak",
         ariaLabel: "Przejdź do strony Szlak Partyzancki",
         title: "Przejdź do strony Szlak Partyzancki",
       },

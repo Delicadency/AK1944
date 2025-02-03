@@ -52,7 +52,7 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
           <Button
             label="Wesprzyj"
             ariaDescription="Kliknij, aby wesprzeć fundację"
-            href="/support"
+            href="/wesprzyj"
             className="self-center"
           />
         </div>
