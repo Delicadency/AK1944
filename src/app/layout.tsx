@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { Layout } from "@/components/Layout";
 import ThemeProvider from "@/context/ThemesProvider";
 import { cn } from "@/utils";
+import Header from "@/components/Header/Header";
 
 const figtree = localFont({
   src: "./fonts/Figtree-Variable.woff2",
@@ -45,8 +45,12 @@ export default function RootLayout({
           "antialiased",
         )}
       >
-        <Layout> {children} </Layout>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Header />
+          <main className="pt-[80px] tablet:pt-[148px] desktop:pt-[140px]">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
