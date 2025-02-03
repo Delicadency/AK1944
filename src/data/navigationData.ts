@@ -1,42 +1,41 @@
 export const navData = [
-  { href: "/", label: "Start" },
   { href: "", label: "Światowy Związek Żołnierzy AK" },
-  { href: "/gallery", label: "Galeria" },
-  { href: "/partners", label: "Partnerzy" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/galeria", label: "Galeria" },
+  { href: "/partnerzy", label: "Partnerzy" },
+  { href: "/kontakt", label: "Kontakt" },
   { href: "", label: "Historia" },
   { href: "", label: "Szlak Partyzancki" },
-  { href: "/graves", label: "Inwentarz grobów" },
-  { href: "/biograms", label: "Biogramy" },
+  { href: "/inwentarz-grobow", label: "Inwentarz grobów" },
+  { href: "/biogramy", label: "Biogramy" },
 ];
 
 export const homeArmyUnionNavData = [
-  { href: "/about", label: "O nas" },
-  { href: "/board", label: "Zarząd" },
-  { href: "/union", label: "Historia Związku" },
-  { href: "/calendar", label: "Kalendarz uroczystości" },
-  { href: "/ongoing-projects", label: "Realizowane projekty" },
-  { href: "/memorials", label: "Miejsca pamięci" },
+  { href: "/zwiazek/o-nas", label: "O nas" },
+  { href: "/zwiazek/zarzad", label: "Zarząd" },
+  { href: "/zwiazek/historia-zwiazku", label: "Historia Związku" },
+  { href: "/zwiazek/kalendarz", label: "Kalendarz uroczystości" },
+  { href: "/zwiazek/projekty", label: "Realizowane projekty" },
+  { href: "/zwiazek/miejsca-pamieci", label: "Miejsca pamięci" },
 ];
 
 export const historyNavData = [
-  { href: "/5th-regiment-home-army", label: "5. Pułk Strzelców Konnych" },
-  { href: "/debica-district-szp-zwz-ak", label: "Obwód Dębica SZP-ZWZ-AK" },
-  { href: "/operation-burza", label: "Operacja Burza" },
-  { href: "/literature", label: "Literatura" },
+  { href: "/historia/strzelcy", label: "5. Pułk Strzelców Konnych" },
+  { href: "/historia/obwod-debica", label: "Obwód Dębica SZP-ZWZ-AK" },
+  { href: "/historia/operacja-burza", label: "Operacja Burza" },
+  { href: "/historia/literatura", label: "Literatura" },
 ];
 
 export const partisanTrailData = [
-  { href: "/partisan-trail", label: "Szlak Partyzancki" },
-  { href: "/origins", label: "Geneza" },
-  { href: "/rallies", label: "Rajdy" },
+  { href: "/szlak-partyzancki/szlak", label: "Szlak Partyzancki" },
+  { href: "/szlak-partyzancki/geneza", label: "Geneza" },
+  { href: "/szlak-partyzancki/rajdy", label: "Rajdy" },
 ];
 
 export const footerNavData = [
-  { href: "/partisan-trail/about", label: "O nas" },
-  { href: "/partisan-trail/partisan-trail", label: "Szlak Partyzancki" },
-  { href: "/graves", label: "Inwentarz grobów" },
-  { href: "/partners", label: "Partnerzy" },
-  { href: "/contact", label: "Kontakt" },
-  { href: "/support", label: "Wesprzyj" },
+  { href: "/zwiazek/o-nas", label: "O nas" },
+  { href: "/szlak-partyzancki/szlak", label: "Szlak Partyzancki" },
+  { href: "/inwentarz-grobow", label: "Inwentarz grobów" },
+  { href: "/partnerzy", label: "Partnerzy" },
+  { href: "/kontakt", label: "Kontakt" },
+  { href: "/wesprzyj", label: "Wesprzyj" },
 ];
