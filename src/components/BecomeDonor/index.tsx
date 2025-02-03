@@ -9,8 +9,9 @@ export const BecomeDonor = () => (
       alt="Starszy mężczyzna siedzący na ławce nad morzem, czytający gazetę pod zachmurzonym niebem."
       width={1920}
       height={1080}
+      priority
     >
-      <div className="flex size-full flex-col items-center justify-center px-4 pb-[100px] pt-10 text-center tablet:px-8 tablet:pb-[150px] tablet:pt-10 desktop:px-[368px]">
+      <div className="flex size-full flex-col items-center justify-center px-4 pb-[100px] pt-10 text-center tablet:px-8 tablet:pb-[100px] tablet:pt-[70px] desktop:px-[368px]">
         <Heading variant="h2" color="white" contrast="yellow" underline>
           Zostań darczyńcą
         </Heading>
