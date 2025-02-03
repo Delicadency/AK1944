@@ -1,10 +1,21 @@
 import Calendar from "../Calendar/Calendar";
-import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
+import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
 import { NewsItem } from "../shared/NewsItem/NewsItem";
+import { getPosts } from "@/dataAccess/posts";
 
-const NewsLanding = () => {
+const NewsLanding = async () => {
+  const [posts, error] = await getPosts(2);
+
+  if (error) {
+    return <p>{`Wystąpił błąd podczas ładowania danych. ${error.message}`}</p>;
+  }
+
+  if (!posts || posts.length === 0) {
+    return <p>Brak danych</p>;
+  }
+
   return (
     <section>
       <div className="flex items-center justify-center bg-white py-10 contrast:bg-black">
@@ -21,30 +32,9 @@ const NewsLanding = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-center gap-5 tablet:gap-10">
-            <NewsItem
-              heading="Nagłówek jakiegoś wydarzenia"
-              date="12.12.2024"
-              image={{
-                src: "/images/news_placeholder.png",
-                alt: "news image",
-                width: 400,
-                height: 300,
-              }}
-              text="Lorem ipsum dolor sit amet consectetur. Imperdiet est libero faucibus sed nullam nibh tempus massa ipsum. Vel commodo urna praesent justo convallis vel duis justo. Placerat ut egestas volutpat tincidunt sed. Diam pharetra sed ultricies mi eget mauris pharetra et ultrices. Eget nunc scelerisque viverra mauris in aliqu amet. Eget nunc scelerisque viverra mauris in aliqu amet. Eget nunc scelerisque viverra maur in aliqu amet."
-              id="1"
-            />
-            <NewsItem
-              heading="Nagłówek jakiegoś wydarzenia"
-              date="12.12.2024"
-              image={{
-                src: "/images/news_placeholder.png",
-                alt: "news image",
-                width: 400,
-                height: 300,
-              }}
-              text="Lorem ipsum dolor sit amet consectetur. Imperdiet est libero faucibus sed nullam nibh tempus massa ipsum. Vel commodo urna praesent justo convallis vel duis justo. Placerat ut egestas volutpat tincidunt sed. Diam pharetra sed ultricies mi eget mauris pharetra et ultrices. Eget nunc scelerisque viverra mauris in aliqu amet. Eget nunc scelerisque viverra mauris in aliqu amet. Eget nunc scelerisque viverra maur in aliqu amet."
-              id="1"
-            />
+            {posts.map((post) => (
+              <NewsItem key={post.id} post={post} />
+            ))}
           </div>
         </Container>
         <Button
