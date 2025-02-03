@@ -71,7 +71,7 @@ WithCustomContent.args = {
     <div className="p-8">
       <h1 className="mb-4 text-2xl">Custom Content Modal</h1>
       <p className="mb-4">This modal demonstrates custom styling and content</p>
-      <button className="rounded bg-blue-500 px-4 py-2 text-white">
+      <button className="bg-blue-500 rounded px-4 py-2 text-white">
         Action Button
       </button>
     </div>
