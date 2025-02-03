@@ -7,24 +7,27 @@ import Image from "next/image";
 export default function OperationBurza() {
   const { title, description } = historyData.burza;
   return (
-    <Container>
-      <Heading variant="h3" contrast="yellow" color="green">
-        {title}
-      </Heading>
-      <p className="my-6 text-greenMain">{description}</p>
-      <Image
-        src="/images/history/main/burza_placeholder.jpg"
-        alt="burza"
-        width={1920}
-        height={1080}
-      ></Image>
-
+    <>
+      <Container className="gap-[130px] desktop:flex">
+        <div>
+          <Heading variant="h3" contrast="yellow" color="green">
+            {title}
+          </Heading>
+          <p className="my-6 text-greenMain">{description}</p>
+        </div>
+        <Image
+          src="/images/history/main/burza_placeholder.jpg"
+          alt="burza"
+          width={500}
+          height={1080}
+        ></Image>
+      </Container>
       <Button
         label="Zobacz więcej"
         ariaDescription="Zobacze Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
       ></Button>
-    </Container>
+    </>
   );
 }

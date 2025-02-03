@@ -6,7 +6,7 @@ import { Button } from "../shared/Button/Button";
 export default function Literature() {
   const { title, content } = txt.history.literature;
   return (
-    <Container className="justify-items-center bg-greenMain py-6 contrast:bg-yellowContrast">
+    <Container className="justify-items-center bg-greenMain py-6 contrast:bg-yellowContrast desktop:max-w-[420px]">
       <Heading variant="h3" contrast="black" color="white">
         {title}
       </Heading>
