@@ -10,7 +10,7 @@ const meta: Meta<typeof ReadMore> = {
         type: "text",
       },
     },
-    text: {
+    excerpt: {
       control: {
         type: "text",
       },
@@ -35,7 +35,8 @@ type Story = StoryObj<typeof ReadMore>;
 export const Default: Story = {
   args: {
     id: "read-more",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis eligendi, similique quisquam esse aliquam possimus, illum quaerat eaque illo dolor officiis. Temporibus odit, pariatur corporis ipsa odio officia tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis eligendi, similique quisquam esse aliquam possimus, illum quaerat eaque illo dolor officiis. Temporibus odit, pariatur corporis ipsa odio officia tenetur?",
+    excerpt:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis eligendi, similique quisquam esse aliquam possimus, illum quaerat eaque illo dolor officiis. Temporibus odit, pariatur corporis ipsa odio officia tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae perspiciatis eligendi, similique quisquam esse aliquam possimus, illum quaerat eaque illo dolor officiis. Temporibus odit, pariatur corporis ipsa odio officia tenetur?",
     amountOfWords: 36,
     className: "",
   },

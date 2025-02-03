@@ -1,15 +1,12 @@
 import NewsLanding from "@/components/NewsLanding/NewsLanding";
 import Hero from "@/components/Hero/Hero";
-import { NewsSkeleton } from "@/components/NewsSkeleton/NewsSkeleton";
-import SwitchContrast from "@/components/Switcher/ContrastSwitcher";
-import FontSwitcher from "@/components/Switcher/FontSwitcher";
+import Header from "@/components/Header/Header";
+
 
 export default function Home() {
   return (
     <main>
-      <NewsSkeleton />
-      <SwitchContrast />
-      <FontSwitcher />
+      <Header />
       <Hero />
       <NewsLanding />
     </main>
