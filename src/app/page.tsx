@@ -1,15 +1,18 @@
-// import { NewsSkeleton } from "@/components/NewsSkeleton/NewsSkeleton";
-import Header from "@/components/Header/Header";
-// import SwitchContrast from "@/components/Switcher/ContrastSwitcher";
-// import FontSwitcher from "@/components/Switcher/FontSwitcher";
+import NewsLanding from "@/components/NewsLanding/NewsLanding";
+import AboutUsLanding from "@/components/AboutUsLanding/AboutUsLanding";
+import Hero from "@/components/Hero/Hero";
+import { Footer } from "@/components/Footer/Footer";
+import { BecomeDonor } from "@/components/BecomeDonor";
+
 
 export default function Home() {
   return (
     <main>
-      <Header />
-      {/* <NewsSkeleton /> */}
-      {/* <SwitchContrast />
-      <FontSwitcher /> */}
+      <Hero />
+      <NewsLanding />
+      <AboutUsLanding />
+      <BecomeDonor />
+      <Footer/>
     </main>
   );
 }

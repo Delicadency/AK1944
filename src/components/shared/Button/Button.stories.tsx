@@ -83,15 +83,13 @@ export const Primary: Story = {
     href: "/",
   },
   parameters: {
-    docs:{
-description:{
-  story: "Link element in the default **primary** variant, in **medium** size."
-}
-    }
+    docs: {
+      description: {
+        story:
+          "Link element in the default **primary** variant, in **medium** size.",
+      },
+    },
   },
-
-  
-
 };
 
 export const PrimaryWithIcon: Story = {
@@ -101,13 +99,14 @@ export const PrimaryWithIcon: Story = {
     label: "Primary Button",
     iconName: "gift",
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "Button element with gift icon, in the default **primary** variant and **large** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Button element with gift icon, in the default **primary** variant and **large** size",
+      },
+    },
+  },
 };
 
 export const Inversion: Story = {
@@ -116,13 +115,14 @@ export const Inversion: Story = {
     size: "medium",
     label: "Inversion Button",
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "Button element in the **inversion** variant and **medium** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Button element in the **inversion** variant and **medium** size",
+      },
+    },
+  },
 };
 
 export const InversionWithIcon: Story = {
@@ -133,13 +133,14 @@ export const InversionWithIcon: Story = {
     href: "/",
     iconName: "check",
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "Link element with **check** icon, in **inversion** variant and **large** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Link element with **check** icon, in **inversion** variant and **large** size",
+      },
+    },
+  },
 };
 
 export const Secondary: Story = {
@@ -149,13 +150,13 @@ export const Secondary: Story = {
     label: "Secondary Button",
     href: "/",
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "Link element in the **secondary** variant and **medium** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story: "Link element in the **secondary** variant and **medium** size",
+      },
+    },
+  },
 };
 
 export const SecondaryWithIcon: Story = {
@@ -165,13 +166,14 @@ export const SecondaryWithIcon: Story = {
     label: "Secondary Button",
     iconName: "send",
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "Button element with **send** icon, in the **secondary** variant and **medium** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "Button element with **send** icon, in the **secondary** variant and **medium** size",
+      },
+    },
+  },
 };
 export const PrimaryDisabled: Story = {
   args: {
@@ -180,13 +182,14 @@ export const PrimaryDisabled: Story = {
     label: "Primary Button",
     disabled: true,
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "**Disabled** button element in the **primary** variant and **medium** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "**Disabled** button element in the **primary** variant and **medium** size",
+      },
+    },
+  },
 };
 
 export const InversionDisabled: Story = {
@@ -198,13 +201,14 @@ export const InversionDisabled: Story = {
     iconName: "check",
     disabled: true,
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "**Disabled** link element with **check** icon, in the **inversion** variant and **large** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "**Disabled** link element with **check** icon, in the **inversion** variant and **large** size",
+      },
+    },
+  },
 };
 
 export const SecondaryDisabled: Story = {
@@ -215,11 +219,12 @@ export const SecondaryDisabled: Story = {
     href: "/",
     disabled: true,
   },
-  parameters:{
-    docs:{
-      description:{
-        story: "**Disabled** link element in the **secondary** variant and **large** size"
-      }
-    }
-  }
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "**Disabled** link element in the **secondary** variant and **large** size",
+      },
+    },
+  },
 };
