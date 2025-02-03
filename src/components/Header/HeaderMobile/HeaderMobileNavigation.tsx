@@ -59,6 +59,7 @@ export const HeaderMobileNavigation = () => {
                   className={`ml-4 flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${
                     openSubmenuIndex === index ? "max-h-screen" : "max-h-0"
                   }`}
+                  data-testid={`submenu-${index}`}
                   aria-hidden={openSubmenuIndex !== index}
                   style={{
                     pointerEvents: openSubmenuIndex === index ? "auto" : "none",
@@ -87,6 +88,7 @@ export const HeaderMobileNavigation = () => {
               <hr
                 className="-translate-y-2 border-t border-backgroundMain contrast:border-black00"
                 aria-hidden="true"
+                data-testid="separator"
               />
             )}
           </React.Fragment>
