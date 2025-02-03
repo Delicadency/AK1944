@@ -6,7 +6,7 @@ describe("ReadMore Component", () => {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
   test("renders the truncated text when the text exceeds the word limit", () => {
-    render(<ReadMore id="test" text={text} amountOfWords={5} />);
+    render(<ReadMore id="test" excerpt={text} amountOfWords={5} />);
 
     expect(screen.getByText(/Lorem ipsum dolor sit/)).toBeInTheDocument();
     expect(screen.queryByText(/consectetur adipiscing elit/)).toHaveClass(
@@ -17,7 +17,7 @@ describe("ReadMore Component", () => {
 
   test("does not truncate text when it is within the word limit", () => {
     render(
-      <ReadMore id="test" text={"Short text example."} amountOfWords={5} />,
+      <ReadMore id="test" excerpt={"Short text example."} amountOfWords={5} />,
     );
 
     expect(screen.getByText("Short text example.")).toBeInTheDocument();
@@ -25,7 +25,7 @@ describe("ReadMore Component", () => {
   });
 
   test("expands and collapses the text when 'czytaj więcej' or 'ukryj' is clicked", () => {
-    render(<ReadMore id="test" text={text} amountOfWords={5} />);
+    render(<ReadMore id="test" excerpt={text} amountOfWords={5} />);
 
     // Check initial state
     expect(screen.queryByText(/consectetur adipiscing elit/)).toHaveClass(
@@ -46,7 +46,7 @@ describe("ReadMore Component", () => {
   });
 
   test("handles keyboard events (Enter and Space) to toggle expansion", () => {
-    render(<ReadMore id="test" text={text} amountOfWords={5} />);
+    render(<ReadMore id="test" excerpt={text} amountOfWords={5} />);
     const toggleButton = screen.getByRole("button");
 
     // Press Space to expand
@@ -66,7 +66,7 @@ describe("ReadMore Component", () => {
     render(
       <ReadMore
         id="test"
-        text={text}
+        excerpt={text}
         amountOfWords={5}
         className="custom-class"
       />,

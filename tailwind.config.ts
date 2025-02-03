@@ -90,6 +90,9 @@ export default {
         // animacje
         modalAnimation: "modalFadeIn 0.3s ease-in",
       },
+      objectPosition: {
+        "center-100": "65% center",
+      },
     },
   },
   plugins: [

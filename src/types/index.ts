@@ -1,17 +1,15 @@
-export interface PostResponse {
-  id: number;
-  title: {
-    rendered: string;
-  };
-  content: {
-    rendered: string;
-  };
-}
-
 export interface Post {
   id: number;
+  date: string;
   title: string;
   content: string;
+  excerpt: string;
+  featured_media: number;
+}
+
+export interface Image {
+  source_url: string;
+  title: string;
 }
 
 export type IconName =

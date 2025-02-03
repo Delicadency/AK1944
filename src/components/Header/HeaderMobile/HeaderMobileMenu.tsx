@@ -19,12 +19,12 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
     <Container>
       <div
         className="relative h-full w-full bg-greenB contrast:bg-yellowContrast"
-        aria-label="Menu"
+        aria-label="Menu" aria-roledescription="Menu"
       >
         <div className="mt-5 flex content-center justify-around">
-          <HeaderLogo aria-label="Logo" />
+          <HeaderLogo />
           <p
-            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00"
+            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00 mediumFont:pb-[70px] largeFont:pb-[110px] "
             aria-label="Światowy Związek Żołnierzy Armii Krajowej"
           >
             Światowy Związek Żołnierzy AK
@@ -40,15 +40,14 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
         </div>
         <div
           className="flex justify-center gap-4 py-[26px]"
-          aria-label="Linki do mediów społecznościowych"
         >
           <HeaderSocialMediaLinks />
         </div>
         <HeaderMobileNavigation />
         <div className="flex flex-col gap-[22px] py-5">
           <div className="flex h-[42px] flex-row justify-center">
-            <FontSwitcher aria-label="Przełącznik wielkości czcionki" />
-            <ContrastSwitcher aria-label="Przełącznik kontrastu" />
+            <FontSwitcher />
+            <ContrastSwitcher />
           </div>
           <Button
             label="Wesprzyj"
