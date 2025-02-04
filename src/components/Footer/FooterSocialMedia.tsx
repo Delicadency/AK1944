@@ -17,6 +17,11 @@ const socials = [
     src: "/images/IconYouTube.png",
     href: "https://www.youtube.com/@armiakrajowadebica3809",
   },
+  // {
+  //   name: "X",
+  //   src: "/images/IconX.png", // Todo: Add icon file.
+  //   href: "https://x.com/szlak",
+  // },
 ];
 
 export const FooterSocialMedia = () => (
