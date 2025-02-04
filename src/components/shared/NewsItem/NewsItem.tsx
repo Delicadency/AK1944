@@ -21,10 +21,7 @@ export const NewsItem = async ({
   const truncatedExcerpt = truncateText(decodedCleanExcerpt, 230);
 
   return (
-    <article
-      key={id}
-      className="flex flex-col items-start justify-start gap-3 text-20 tablet:grid tablet:gap-x-6 tablet:gap-y-3"
-    >
+    <article key={id}>
       <NewsHeader title={title} date={date} />
       <NewsImage src={image} />
       <NewsContent excerpt={truncatedExcerpt} />

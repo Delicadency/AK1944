@@ -51,7 +51,7 @@ export default function RootLayout({
           <main className="pt-[80px] tablet:pt-[130px] desktop:pt-[120px]">
             {children}
           </main>
-          <Footer/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
