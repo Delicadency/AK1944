@@ -6,9 +6,9 @@ export const NewsImage = ({ src }: { src: string }) => {
       <Image
         alt="news image"
         src={src}
-        width={400}
-        height={300}
-        className="object-cover"
+        width={288}
+        height={191}
+        className="rounded-sm object-cover"
       />
     </div>
   );

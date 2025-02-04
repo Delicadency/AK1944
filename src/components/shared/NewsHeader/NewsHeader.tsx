@@ -13,7 +13,7 @@ export const NewsHeader = ({
       <Heading variant="h4" color="white" contrast="black">
         {title}
       </Heading>
-      <p>
+      <p className="my-[10px] font-sourceSans text-20 text-[#8e8e8e]">
         <time dateTime={date}>{formatDate(date)}</time>
       </p>
     </div>
