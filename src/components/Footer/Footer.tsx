@@ -33,7 +33,7 @@ import { FooterNavigation } from "./FooterNavigation";
 import LogoFooter from "./LogoFooter";
 import { FooterSupport } from "./FooterSupport";
 import { FooterLegalInfo } from "./FooterLegalInfo";
-import FooterSocialMedia from "./FooterSocialMedia";
+import { FooterSocialMedia } from "./FooterSocialMedia";
 import Container from "../shared/Container";
 
 export const Footer = () => {
