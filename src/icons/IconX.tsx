@@ -23,7 +23,7 @@ export default function IconX({ className }: DefaultIconProps) {
           y2="20.2198"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0789996" stop-color="#515151" />
+          <stop offset="0.0789996" stopColor="#515151" />
           <stop offset="1" />
         </linearGradient>
       </defs>
