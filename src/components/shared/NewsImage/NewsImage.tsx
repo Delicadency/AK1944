@@ -8,7 +8,7 @@ export const NewsImage = ({ src }: { src: string }) => {
         src={src}
         width={288}
         height={191}
-        className="rounded-sm object-cover"
+        className="tablet:w-3/3 rounded-sm object-cover tablet:order-1"
       />
     </div>
   );
