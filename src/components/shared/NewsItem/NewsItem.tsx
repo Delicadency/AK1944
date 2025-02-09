@@ -22,7 +22,7 @@ export const NewsItem = async ({
 
   return (
     <article
-      className="flex flex-col items-center gap-4 tablet:grid tablet:grid-cols-2 tablet:items-start"
+      className="flex flex-col items-center gap-4 tablet:grid tablet:grid-cols-2 tablet:items-start desktop:w-[900px]"
       key={id}
     >
       {/* Header i content na mobile, a na tabletach razem w drugiej kolumnie */}

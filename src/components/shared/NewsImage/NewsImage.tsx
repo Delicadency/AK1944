@@ -9,7 +9,7 @@ export const NewsImage = ({
 }) => {
   return (
     <div
-      className={`${className} relative aspect-[288/191] w-full rounded-sm tablet:aspect-[261/169]`}
+      className={`${className} relative aspect-[288/191] w-full rounded-sm tablet:aspect-[261/169] desktop:aspect-[300/194]`}
     >
       <Image
         alt="news image"
