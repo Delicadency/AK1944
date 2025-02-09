@@ -20,7 +20,7 @@ export default function HistoryPage() {
           width={100}
           height={100}
           className="absolute right-1 top-1 z-10"
-        ></Image>
+        />
         <Heading variant="h4" color="white" contrast="black">
           Zobacz także
         </Heading>

@@ -8,7 +8,7 @@ import { Button } from "../shared/Button/Button";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export default function HistoryBiogram() {
-  const { title, content } = historyData.history.biograms;
+  const { title, content } = historyData.history.biograms ?? {};
   const isDesktop = useMediaQuery("(max-width: 1280px)");
   return (
     <BackgroundImage

@@ -5,7 +5,7 @@ import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
 export default function DebicaDistrict() {
-  const { title, description } = historyData.debica;
+  const { title, description } = historyData.debica ?? {};
   return (
     <>
       <Container className="gap-[130px] desktop:flex">
@@ -19,9 +19,10 @@ export default function DebicaDistrict() {
           <Image
             src="/images/history/main/debica_placeholder.jpg"
             alt="debica"
-            width={1920}
+            width={500}
             height={1080}
-          ></Image>
+            className="justify-self-center"
+          />
         </div>
       </Container>
       <Button
@@ -29,7 +30,7 @@ export default function DebicaDistrict() {
         ariaDescription="Zobacze Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
-      ></Button>
+      />
     </>
   );
 }

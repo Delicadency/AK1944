@@ -4,7 +4,7 @@ import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
 export default function History() {
   const { title, description1, description2, description3, description4 } =
-    txt.history;
+    txt.history ?? {};
   return (
     <div>
       <BackgroundImage
@@ -13,6 +13,7 @@ export default function History() {
         width="1920"
         height="912"
         className="absolute z-0 w-full object-cover desktop:h-[912px] desktop:object-fill"
+        priority
       >
         <Container className="pb-36 pt-5 desktop:h-[912px]" as="section">
           <button>{`Domek :)`}</button>

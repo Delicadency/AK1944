@@ -5,16 +5,16 @@ import IconArrowVertical from "@/icons/IconArrowVertical";
 import IconArrowHorizontal from "@/icons/IconArrowHorizontal";
 
 export default function HistoryNav() {
-  const isMobile = useMediaQuery("(max-width: 767px)");
+  const isDesktop = useMediaQuery("(min-width: 1280px)");
   return (
     <Container
       as="nav"
       className="flex justify-center desktop:flex-col desktop:items-center"
     >
-      {isMobile ? (
-        <IconArrowVertical className="z-[-1] translate-x-10" />
-      ) : (
+      {isDesktop ? (
         <IconArrowHorizontal className="z-[-10]" />
+      ) : (
+        <IconArrowVertical className="z-[-1] translate-x-10" />
       )}
       <ul className="mb-[60px] flex flex-col gap-10 desktop:w-full desktop:-translate-y-10 desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
         <li className="flex items-center gap-5 desktop:flex-col">
