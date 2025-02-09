@@ -19,8 +19,6 @@ export default function BoardPage() {
       <div className="desktop:flex desktop:flex-col desktop:items-center desktop:justify-center">
         <article
           className="font-16 h-fit w-full bg-greenMain py-6 leading-6 text-backgroundMain desktop:min-h-[740px] desktop:w-[1022px]"
-          role="article"
-          aria-labelledby="boardArticle"
         >
           <Container>
             <div className="mobile:hidden tablet:block">
@@ -35,15 +33,15 @@ export default function BoardPage() {
                   <h4 className="font-bold" id={`section-${index}`}>
                     {section.subtitle}
                   </h4>
-                  <ul role="list" className="pb-6">
+                  <ul className="pb-6">
                     {section.members.map((member, i) => (
-                      <li key={i} role="listitem">{member}</li>
+                      <li key={i}>{member}</li>
                     ))}
                   </ul>
                 </div>
               ))}
             </div>
-            <p className="pb-6 tablet:px-[88px]" aria-labelledby="note">
+            <p className="pb-6 tablet:px-[88px]">
               {boardData.note}
             </p>
           </Container>

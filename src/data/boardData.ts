@@ -42,4 +42,4 @@ export const boardData = {
 
   electionInfo:
     "Władze Koła wybrano w trakcie Walnego Zebrania dnia 30 marca 2019 roku.",
-};
+} as const;

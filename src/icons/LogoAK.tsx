@@ -11,7 +11,13 @@ const LogoAK = ({ className }: LogoAKProps) => {
       viewBox="0 0 436 159"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-labelledby="logo-title logo-desc"
     >
+      <title id="logo-title">Home Army (AK) Logo</title>
+      <desc id="logo-desc">
+        Symbol of the Polish resistance movement Armia Krajowa
+      </desc>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
