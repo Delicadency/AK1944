@@ -42,11 +42,11 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
           </button>
         </div>
 
-        <SocialMediaTray className="flex items-center justify-center gap-4 py-[26px]" />
+        <SocialMediaTray className="flex items-center justify-center gap-4 py-7" />
 
         <HeaderMobileNavigation />
 
-        <div className="flex flex-col gap-[22px] py-5">
+        <div className="flex flex-col gap-6 py-5">
           <div className="flex h-[42px] flex-row justify-center">
             <FontSwitcher />
             <ContrastSwitcher />
