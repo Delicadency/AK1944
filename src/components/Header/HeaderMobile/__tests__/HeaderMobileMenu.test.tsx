@@ -71,12 +71,12 @@ describe("HeaderMobileMenu", () => {
     );
     expect(supportButton).toBeInTheDocument();
     expect(supportButton).toHaveTextContent(/wesprzyj/i);
-    expect(supportButton).toHaveAttribute("href", "/support");
+    expect(supportButton).toHaveAttribute("href", "/wesprzyj");
   });
 
   it("renders the ContrastSwitcher component", () => {
     render(<HeaderMobileMenu onClose={() => {}} />);
-    
+
     const contrastSwitchers = screen.getAllByTestId("contrast-switcher");
     expect(contrastSwitchers.length).toBeGreaterThan(0);
     expect(contrastSwitchers[0]).toBeInTheDocument();
