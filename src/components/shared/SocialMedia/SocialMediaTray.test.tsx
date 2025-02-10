@@ -17,18 +17,22 @@ jest.mock("@/icons/IconX", () => jest.fn(() => <div>X Icon</div>));
 describe("SocialMediaTray", () => {
   const socials = {
     Facebook: {
+      title: "Facebook",
       href: "https://www.facebook.com/Szlak.Partyzancki",
       label: "Oficjalna strona Szlaku Partyzanckiego na Facebooku",
     },
     Instagram: {
+      title: "Instagram",
       href: "https://www.instagram.com", // Todo: Update link https://app.clickup.com/t/8697u6n5a
       label: "Oficjalna strona Szlaku Partyzanckiego na Instagramie",
     },
     YouTube: {
+      title: "YouTube",
       href: "https://www.youtube.com/@armiakrajowadebica3809",
       label: "Oficjalna strona Armii Krajowej Dębica na YouTube",
     },
     X: {
+      title: "X",
       href: "https://x.com/szlak",
       label: "Oficjalna strona Szlaku Partyzanckiego na X",
     },
@@ -43,33 +47,15 @@ describe("SocialMediaTray", () => {
     expect(screen.getByLabelText(socials.X.label)).toBeInTheDocument();
   });
 
-  it("renders correct href for Facebook link", () => {
-    render(<SocialMediaTray />);
+  it.each([socials.Facebook, socials.Instagram, socials.YouTube, socials.X])(
+    "renders correct href for $title link",
+    ({ label, href }) => {
+      render(<SocialMediaTray />);
 
-    const facebookLink = screen.getByLabelText(socials.Facebook.label);
-    expect(facebookLink).toHaveAttribute("href", socials.Facebook.href);
-  });
-
-  it("renders correct href for Instagram link", () => {
-    render(<SocialMediaTray />);
-
-    const instagramLink = screen.getByLabelText(socials.Instagram.label);
-    expect(instagramLink).toHaveAttribute("href", socials.Instagram.href);
-  });
-
-  it("renders correct href for YouTube link", () => {
-    render(<SocialMediaTray />);
-
-    const youtubeLink = screen.getByLabelText(socials.YouTube.label);
-    expect(youtubeLink).toHaveAttribute("href", socials.YouTube.href);
-  });
-
-  it("renders correct href for X link", () => {
-    render(<SocialMediaTray />);
-
-    const youtubeLink = screen.getByLabelText(socials.X.label);
-    expect(youtubeLink).toHaveAttribute("href", socials.X.href);
-  });
+      const link = screen.getByLabelText(label);
+      expect(link).toHaveAttribute("href", href);
+    },
+  );
 
   it("renders all icons correctly", () => {
     render(<SocialMediaTray />);
