@@ -1,11 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import AboutUsLandingCard from "../AboutUsLandingCard/AboutUsLandingCard";
-import Image from "next/image";
 
 jest.mock("next/image", () => ({
   __esModule: true,
   default: ({ src, alt }: { src: string; alt: string }) => (
-    <Image src={src} alt={alt} />
+    <img src={src} alt={alt} />
   ),
 }));
 
