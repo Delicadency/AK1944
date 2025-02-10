@@ -36,29 +36,27 @@ import { FooterNavigation } from "./FooterNavigation";
 import { FooterSupport } from "./FooterSupport";
 import { FooterLegalInfo } from "./FooterLegalInfo";
 
-export const Footer = () => {
-  return (
-    <footer className="w-full bg-greenMain px-6 py-8 text-white">
-      <Container>
-        <div className="flex flex-col gap-8 md:grid md:grid-cols-[minmax(150px,200px)_1fr] md:gap-4 lg:grid lg:grid-cols-[200px_1fr] lg:items-start lg:gap-8">
-          <FooterColumn>
-            <Logo />
-            <SocialMediaTray className="flex items-center gap-4" />
-          </FooterColumn>
+export const Footer = () => (
+  <footer className="w-full bg-greenMain px-6 py-8 text-white">
+    <Container>
+      <div className="flex flex-col gap-8 md:grid md:grid-cols-[minmax(150px,200px)_1fr] md:gap-4 lg:grid lg:grid-cols-[200px_1fr] lg:items-start lg:gap-8">
+        <FooterColumn>
+          <Logo />
+          <SocialMediaTray className="flex items-center gap-4" />
+        </FooterColumn>
 
-          <FooterColumn>
-            <FooterNavigation />
-            <FooterSupport />
-          </FooterColumn>
-        </div>
+        <FooterColumn>
+          <FooterNavigation />
+          <FooterSupport />
+        </FooterColumn>
+      </div>
 
-        <Divider />
+      <Divider />
 
-        <FooterLegalInfo />
-      </Container>
-    </footer>
-  );
-};
+      <FooterLegalInfo />
+    </Container>
+  </footer>
+);
 
 const FooterColumn = ({ children }: { children: React.ReactNode }) => (
   <div className="flex h-full flex-col items-center justify-between gap-8">
