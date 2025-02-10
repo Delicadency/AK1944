@@ -43,7 +43,7 @@ export const Footer = () => {
         <div className="flex flex-col gap-8 md:grid md:grid-cols-[minmax(150px,200px)_1fr] md:gap-4 lg:grid lg:grid-cols-[200px_1fr] lg:items-start lg:gap-8">
           <FooterColumn>
             <Logo />
-            <SocialMediaTray className="flex gap-4" />
+            <SocialMediaTray className="flex items-center gap-4" />
           </FooterColumn>
 
           <FooterColumn>
