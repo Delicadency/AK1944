@@ -5,7 +5,7 @@ export const FooterLegalInfo = () => {
     <div className="mt-[30px] w-full text-center">
       <p className="mb-3 flex justify-center gap-[20px]">
         <Link
-          href="/privatepolicy"
+          href="/polityka-prywatnosci"
           className="text-sm transition-opacity hover:opacity-80 md:text-base"
           aria-label="Przejdź do strony Polityka prywatności"
           title="Przejdź do strony Polityka prywatności"
@@ -14,7 +14,7 @@ export const FooterLegalInfo = () => {
         </Link>
 
         <Link
-          href="/regulations"
+          href="/regulamin"
           className="text-sm transition-opacity hover:opacity-80 md:text-base"
           aria-label="Przejdź do strony Regulamin"
           title="Przejdź do strony Regulamin"

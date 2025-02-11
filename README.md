@@ -1,3 +1,6 @@
+Old page:
+https://ak1944.pl/
+
 To use Contrast and Font switcher simply put relevant class name according to one below:
 <!-- for contrast -->
 contrast:<!--here you add class like bg-black-->

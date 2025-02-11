@@ -33,7 +33,7 @@ export const HeaderTabAndDesktop = () => {
         <Button
           label="Wesprzyj"
           ariaDescription="Kliknij, aby wesprzeć fundację"
-          href="/support"
+          href="/wesprzyj"
           className="self-end"
           aria-label="Kliknij, aby przejść do strony wsparcia"
         />

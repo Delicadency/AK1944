@@ -22,7 +22,7 @@ export const BecomeDonor = () => (
         </p>
         <Button
           variant="primary"
-          href="/support"
+          href="/wesprzyj"
           label="Wesprzyj"
           ariaDescription="Wesprzyj"
         />

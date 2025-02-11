@@ -1,32 +1,34 @@
 import { DefaultIconProps } from "@/types";
 
-export default function IconFacebook({
-  className,
-}: DefaultIconProps): JSX.Element {
+interface Props extends DefaultIconProps {
+  size?: number;
+}
+
+export default function IconFacebook({ className, size = 32 }: Props) {
   return (
     <svg
       className={className}
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
+      width={size}
+      height={size}
+      viewBox="0 0 33 33"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M0 14.768V5.23134C0 2.35407 2.35407 0 5.23134 0H14.768C17.6453 0 19.9993 2.35407 19.9993 5.23134V14.768C19.9993 17.6452 17.6453 19.9993 14.768 19.9993H11.5624L9.88339 19.5903L8.43689 19.9993H5.23134C2.35407 19.9993 0 17.6452 0 14.768Z"
-        fill="url(#paint0_linear_327_5598)"
+        d="M0.5 23.6296V8.37042C0.5 3.76664 4.26664 0 8.87043 0H24.1296C28.7334 0 32.5 3.76664 32.5 8.37042V23.6296C32.5 28.2334 28.7334 32 24.1296 32H19.0005L16.314 31.3456L13.9995 32H8.87043C4.26664 32 0.5 28.2334 0.5 23.6296Z"
+        fill="url(#paint0_linear_2034_5524)"
       />
       <path
-        d="M13.8931 13.2191L14.3363 10.3281H11.563V8.45214C11.563 7.66152 11.9501 6.89074 13.1928 6.89074H14.4539V4.42998C14.4539 4.42998 13.3097 4.23438 12.2155 4.23438C9.93115 4.23438 8.43814 5.61864 8.43814 8.12522V10.3281H5.89941V13.2191H8.43814V20.0002H11.563V13.2191H13.8931Z"
+        d="M22.7279 21.1514L23.437 16.5258H18.9995V13.524C18.9995 12.259 19.6189 11.0257 21.6073 11.0257H23.6252V7.08837C23.6252 7.08837 21.7944 6.77539 20.0435 6.77539C16.3885 6.77539 13.9996 8.99029 13.9996 13.001V16.5258H9.9375V21.1514H13.9996V32.0016H18.9995V21.1514H22.7279Z"
         fill="white"
       />
       <defs>
         <linearGradient
-          id="paint0_linear_327_5598"
-          x1="18.4632"
-          y1="1.53664"
-          x2="1.53692"
-          y2="18.4629"
+          id="paint0_linear_2034_5524"
+          x1="30.0421"
+          y1="2.45871"
+          x2="2.95915"
+          y2="29.5416"
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#4676ED" />
