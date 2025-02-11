@@ -14,9 +14,9 @@ const LogoAK = ({ className }: LogoAKProps) => {
       role="img"
       aria-labelledby="logo-title logo-desc"
     >
-      <title id="logo-title">Home Army (AK) Logo</title>
+      <title id="logo-title">Logo Armii Krajowej</title>
       <desc id="logo-desc">
-        Symbol of the Polish resistance movement Armia Krajowa
+      Oficjalne logo Armii Krajowej – nowoczesny znak graficzny z wyrazistymi, stylizowanymi literami AK 
       </desc>
       <path
         fillRule="evenodd"
