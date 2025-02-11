@@ -1,10 +1,17 @@
-export const boardData = {
-  data: [
-    { subtitle: "Prezes Honorowy:", members: ["kpt. Edmund Książek"] },
-    { subtitle: "Prezes:", members: ["Maciej Małozięć*"] },
+type BoardData = {
+  members: { title: string; names: string[]; }[];
+  note: string;
+  announcement: string;
+  electionInfo: string;
+};
+
+export const boardData : BoardData = {
+  members: [
+    { title: "Prezes Honorowy:", names: ["kpt. Edmund Książek"] },
+    { title: "Prezes:", names: ["Maciej Małozięć*"] },
     {
-      subtitle: "Skład zarządu:",
-      members: [
+      title: "Skład zarządu:",
+      names: [
         "Elżbieta Jarzębska* – wiceprezes",
         "Tomasz Czapla* – wiceprezes",
         "Małgorzata Grzybowska* – sekretarz",
@@ -16,8 +23,8 @@ export const boardData = {
       ],
     },
     {
-      subtitle: "Komisja Rewizyjna:",
-      members: [
+      title: "Komisja Rewizyjna:",
+      names: [
         "Andrzej Żylicz – przewodniczący KR",
         "Tadeusz Garstka – członek KR",
         "Stanisław Nylec* – członek KR",
@@ -26,8 +33,8 @@ export const boardData = {
       ],
     },
     {
-      subtitle: "Delegaci na Walny Zjazd Okręgu:",
-      members: [
+      title: "Delegaci na Walny Zjazd Okręgu:",
+      names: [
         "Bronisław Ćwik – delegat",
         "Elżbieta Jarzębska* – delegat",
         " Małgorzata Grzybowska* – zastępca delegata",

@@ -28,14 +28,14 @@ export default function BoardPage() {
               </div>
             </div>
             <div className="desktop:grid desktop:grid-cols-2">
-              {boardData.data.map((section, index) => (
+              {boardData.members.map((section, index) => (
                 <div key={index} className="tablet:px-[88px] desktop:pr-0">
                   <h4 className="font-bold" id={`section-${index}`}>
-                    {section.subtitle}
+                    {section.title}
                   </h4>
                   <ul className="pb-6">
-                    {section.members.map((member, i) => (
-                      <li key={i}>{member}</li>
+                    {section.names.map((name, i) => (
+                      <li key={i}>{name}</li>
                     ))}
                   </ul>
                 </div>
