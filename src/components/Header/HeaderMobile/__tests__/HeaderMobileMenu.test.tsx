@@ -5,6 +5,10 @@ import { axe, toHaveNoViolations } from "jest-axe";
 
 expect.extend(toHaveNoViolations);
 
+jest.mock("../../HeaderLogo", () => ({
+  HeaderLogo: jest.fn(() => <div data-testid="logo" />),
+}));
+
 jest.mock("../../../shared/Button/Button", () => ({
   Button: jest.fn(({ label, ariaDescription, href, className }) => (
     <a href={href} className={className} aria-label={ariaDescription}>
@@ -13,12 +17,8 @@ jest.mock("../../../shared/Button/Button", () => ({
   )),
 }));
 
-jest.mock("../../HeaderLogo", () => ({
-  HeaderLogo: jest.fn(() => <div data-testid="logo" />),
-}));
-
-jest.mock("../HeaderSocialMediaLinks", () => ({
-  HeaderSocialMediaLinks: jest.fn(() => (
+jest.mock("@/components/shared/SocialMedia/SocialMediaTray", () => ({
+  SocialMediaTray: jest.fn(() => (
     <div data-testid="linki do mediów społecznościowych" />
   )),
 }));
@@ -59,7 +59,7 @@ describe("HeaderMobileMenu", () => {
     expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
 
-  it("renders the HeaderSocialMediaLinks component", () => {
+  it("renders the SocialMediaTray component", () => {
     expect(
       screen.getByTestId(/linki do mediów społecznościowych/i),
     ).toBeInTheDocument();
@@ -71,12 +71,12 @@ describe("HeaderMobileMenu", () => {
     );
     expect(supportButton).toBeInTheDocument();
     expect(supportButton).toHaveTextContent(/wesprzyj/i);
-    expect(supportButton).toHaveAttribute("href", "/support");
+    expect(supportButton).toHaveAttribute("href", "/wesprzyj");
   });
 
   it("renders the ContrastSwitcher component", () => {
     render(<HeaderMobileMenu onClose={() => {}} />);
-    
+
     const contrastSwitchers = screen.getAllByTestId("contrast-switcher");
     expect(contrastSwitchers.length).toBeGreaterThan(0);
     expect(contrastSwitchers[0]).toBeInTheDocument();
