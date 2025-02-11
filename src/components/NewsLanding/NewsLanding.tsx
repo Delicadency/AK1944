@@ -18,7 +18,7 @@ const NewsLanding = async () => {
 
   return (
     <section>
-      <div className="flex items-center justify-center bg-white py-10 contrast:bg-black">
+      <div className="flex items-center justify-center bg-white py-10 contrast:bg-black00">
         <Heading variant="h2" color="green" contrast="yellow" underline>
           Aktualności
         </Heading>
