@@ -13,7 +13,7 @@ export default function BoardPage() {
           </h3>
         </section>
         <div className="flex justify-center py-10 tablet:hidden">
-          <LogoAK className="h-[64px] w-[176px]" aria-label="Logo AK" />
+          <LogoAK className="h-[64px] w-[176px]" />
         </div>
       </Container>
       <div className="desktop:flex desktop:flex-col desktop:items-center desktop:justify-center">
@@ -23,7 +23,7 @@ export default function BoardPage() {
           <Container>
             <div className="mobile:hidden tablet:block">
               <div className="flex flex-col items-center px-[88px] pt-3">
-                <LogoAK className="h-[100px] w-[275px]" aria-label="Logo AK" />
+                <LogoAK className="h-[100px] w-[275px]" />
                 <hr className="my-9 w-full" aria-hidden="true"></hr>
               </div>
             </div>
