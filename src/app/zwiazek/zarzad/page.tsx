@@ -9,7 +9,7 @@ export default function BoardPage() {
         <section className="pt-5 tablet:pb-[64px] desktop:py-10">
           {/* todo: replace to a proper Breadcrumbs component - https://app.clickup.com/t/8697w2c4t */}
           <h3 className="font-lora text-28 text-greenMain" aria-label="Ścieżka nawigacji">
-            Breadbrumbs Placeholder
+            Breadcrumbs Placeholder
           </h3>
         </section>
         <div className="flex justify-center py-10 tablet:hidden">
