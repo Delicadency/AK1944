@@ -5,8 +5,8 @@ import FontSwitcher from "../../Switcher/FontSwitcher";
 import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
 import IconXCircle from "@/icons/IconXCircle";
 import { HeaderLogo } from "../HeaderLogo";
-import { HeaderSocialMediaLinks } from "./HeaderSocialMediaLinks";
 import { HeaderMobileNavigation } from "./HeaderMobileNavigation";
+import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray";
 
 interface HeaderMobileMenuProps {
   onClose: () => void;
@@ -19,16 +19,19 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
     <Container>
       <div
         className="relative h-full w-full bg-greenB contrast:bg-yellowContrast"
-        aria-label="Menu" aria-roledescription="Menu"
+        aria-label="Menu"
+        aria-roledescription="Menu"
       >
         <div className="mt-5 flex content-center justify-around">
           <HeaderLogo />
+
           <p
-            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00 mediumFont:pb-[70px] largeFont:pb-[110px] "
+            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00 mediumFont:pb-[70px] largeFont:pb-[110px]"
             aria-label="Światowy Związek Żołnierzy Armii Krajowej"
           >
             Światowy Związek Żołnierzy AK
           </p>
+
           <button
             className="h-6 w-6"
             type="button"
@@ -38,17 +41,17 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
             <IconXCircle className="text-greenC transition duration-300 active:scale-110 active:text-backgroundMain contrast:text-black00" />
           </button>
         </div>
-        <div
-          className="flex justify-center gap-4 py-[26px]"
-        >
-          <HeaderSocialMediaLinks />
-        </div>
+
+        <SocialMediaTray className="flex items-center justify-center gap-4 py-7" />
+
         <HeaderMobileNavigation />
-        <div className="flex flex-col gap-[22px] py-5">
+
+        <div className="flex flex-col gap-6 py-5">
           <div className="flex h-[42px] flex-row justify-center">
             <FontSwitcher />
             <ContrastSwitcher />
           </div>
+
           <Button
             label="Wesprzyj"
             ariaDescription="Kliknij, aby wesprzeć fundację"
