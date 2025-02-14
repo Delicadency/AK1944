@@ -31,7 +31,7 @@ const NewsLanding = async () => {
               description="Związek Walki Zbrojnej (ZWZ) został przekształcony w Armię Krajową (AK)"
             />
           </div>
-          <div className="flex flex-col items-center justify-center gap-5 tablet:gap-10">
+          <div className="flex flex-col items-center justify-center gap-[30px]">
             {posts.map((post) => (
               <NewsItem key={post.id} post={post} />
             ))}
