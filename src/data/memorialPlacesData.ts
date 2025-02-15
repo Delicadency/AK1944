@@ -1,11 +1,4 @@
-export interface Place {
-  id: number;
-  name: string;
-  location: string;
-  description: string;
-  image: string;
-  link: string;
-}
+import { Place } from "@/types/index";
 
 export const memorialPlaces: Place[] = [
   {

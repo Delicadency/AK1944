@@ -1,15 +1,21 @@
 // import Image from "next/image";
-import { Place } from "../../data/memorialPlacesData";
-import { Button } from "../shared/Button/Button";
+import { Place } from "@/types/index";
+import { Button } from "@/components/shared/Button/Button";
 
-export const PlaceItem: React.FC<{ miejsce: Place }> = ({ miejsce }) => (
-  <div className="mb-8 border-b border-gray-300 pb-8">
-    <div className="flex flex-col items-center md:flex-row md:items-start">
+interface Props {
+  place: Place;
+}
+
+
+
+export const PlaceItem = ({ place }: Props) => (
+  <article className="border-b border-gray-300 flex flex-col gap-8 pb-8">
+    <div className="flex flex-col md:flex-row items-start gap-6">
       {/* Zdjęcie */}
-      <div className="mb-4 flex-shrink-0 md:mb-0 md:mr-4">
+      <div className="flex-shrink-0">
         {/* <Image
-                src={miejsce.image}
-                alt={miejsce.name}
+                src={place.image}
+                alt={place.name}
                 width={200}
                 height={200}
                 className="rounded-lg object-cover"
@@ -17,18 +23,18 @@ export const PlaceItem: React.FC<{ miejsce: Place }> = ({ miejsce }) => (
       </div>
       {/* Opis i button */}
       <div className="flex flex-1 flex-col items-start justify-between md:flex-row md:items-center">
-        <div className="mb-4 md:mb-0">
-          <h2 className="mb-2 text-lg font-semibold">{miejsce.name}</h2>
-          <h4 className="mb-4 text-sm text-gray-500">{miejsce.location}</h4>
-          <p className="mb-4 text-gray-700">{miejsce.description}</p>
+        <div className="flex flex-col gap-2">
+          <h2 className="text-lg font-semibold">{place.name}</h2>
+          <h4 className="text-sm text-gray-500">{place.location}</h4>
+          <p className="text-gray-700">{place.description}</p>
         </div>
         <Button
-          href={miejsce.link}
+          href={place.link}
           label="Czytaj dalej"
-          ariaDescription={`Przejdź do szczegółów miejsca: ${miejsce.name}`}
+          ariaDescription={`Przejdź do szczegółów miejsca: ${place.name}`}
           variant="secondary"
         />
       </div>
     </div>
-  </div>
+  </article>
 );
