@@ -25,9 +25,8 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
         <div className="mt-5 flex content-center justify-around">
           <HeaderLogo />
 
-          {/* Todo: Remove. */}
           <p
-            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00 mediumFont:pb-[70px] largeFont:pb-[110px]"
+            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00"
             aria-label="Światowy Związek Żołnierzy Armii Krajowej"
           >
             Światowy Związek Żołnierzy AK
