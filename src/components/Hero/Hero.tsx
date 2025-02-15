@@ -11,6 +11,7 @@ const Hero = () => {
         src="/images/hero_background.png"
         width={1920}
         height={1080}
+        priority
       >
         <Container className="flex h-full flex-col items-center gap-6 pb-5 pt-20 tablet:pt-32 desktop:pt-28">
           <Heading

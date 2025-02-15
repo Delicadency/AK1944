@@ -10,8 +10,10 @@ const ContrastSwitcher = () => {
 
   return (
     <button
-      className="=bg-green-500 normal:bg-black normal:text-white text-black"
+      className="normal:bg-black normal:text-white text-black"
       onClick={toggleTheme}
+      aria-label="Przełącznik kontrastu"
+      data-testid="contrast-switcher"
     >
       <div className="relative flex h-[32px] w-[32px] items-center justify-center">
         <div className="absolute right-[4px] top-[-3px] h-[26px] w-[13px] -rotate-45 rounded-br-full rounded-tr-full bg-black"></div>

@@ -1,45 +1,33 @@
-import Image, { ImageProps } from "next/image";
-import { Heading } from "../Heading/Heading";
-import { ReadMore } from "../ReadMore/ReadMore";
+import parse from "html-react-parser";
 
-interface NewsProps {
-  heading: string;
-  date: string;
-  image: ImageProps;
-  text: string;
-  id: string;
+import { NewsHeader } from "../NewsHeader/NewsHeader";
+import { NewsImage } from "../NewsImage/NewsImage";
+import { NewsContent } from "../NewsContent/NewsContent";
+
+import { getImage } from "@/dataAccess/image";
+import { cleanHTML, truncateText } from "@/utils";
+import { Post } from "@/types";
+
+interface Props {
+  post: Post;
 }
 
 export const NewsItem = async ({
-  heading,
-  date,
-  image,
-  text,
-  id,
-}: NewsProps) => {
+  post: { id, title, date, featured_media, excerpt },
+}: Props) => {
+  const image = await getImage(featured_media);
+  const cleanedExcerpt = cleanHTML(excerpt);
+  const decodedCleanExcerpt = parse(cleanedExcerpt).toString();
+  const truncatedExcerpt = truncateText(decodedCleanExcerpt, 230);
+
   return (
-    <div className="flex flex-col items-start justify-start gap-3 tablet:grid tablet:gap-x-6 tablet:gap-y-3">
-      <div className="flex flex-col items-start justify-start tablet:col-start-2 tablet:row-start-1 tablet:flex-row tablet:items-center tablet:gap-4">
-        <Heading variant="h4" color="white" contrast="black">
-          {heading}
-        </Heading>
-        <p className="text-20 text-grayDate contrast:text-black">{date}</p>
-      </div>
-      <div className="h-[191px] w-[288px] tablet:col-start-1 tablet:row-span-2 tablet:row-start-1 tablet:h-[169px] tablet:w-[262px]">
-        <Image
-          alt={image.alt}
-          src={image.src}
-          width={image.width}
-          height={image.height}
-          className="object-cover"
-        />
-      </div>
-      <ReadMore
-        id={id}
-        text={text}
-        amountOfWords={28}
-        className="text-white contrast:text-black tablet:col-start-2 tablet:row-start-2"
-      />
-    </div>
+    <article
+      key={id}
+      className="flex flex-col items-start justify-start gap-3 text-20 tablet:grid tablet:gap-x-6 tablet:gap-y-3"
+    >
+      <NewsHeader title={title} date={date} />
+      <NewsImage src={image} />
+      <NewsContent excerpt={truncatedExcerpt} />
+    </article>
   );
 };

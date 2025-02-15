@@ -64,6 +64,7 @@ export default {
         largeFont: "1.5",
       },
       screens: {
+        mobile: "320px",
         tablet: "768px",
         desktop: "1280px",
       },
@@ -89,6 +90,9 @@ export default {
       animation: {
         // animacje
         modalAnimation: "modalFadeIn 0.3s ease-in",
+      },
+      objectPosition: {
+        "center-100": "65% center",
       },
     },
   },
