@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Button } from "../../shared/Button/Button";
 import Container from "../../shared/Container";
-import FontSwitcher from "../../Switcher/FontSwitcher";
+// import FontSwitcher from "../../Switcher/FontSwitcher";
 import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
 import IconXCircle from "@/icons/IconXCircle";
 import { HeaderLogo } from "../HeaderLogo";
@@ -48,7 +48,7 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
 
         <div className="flex flex-col gap-6 py-5">
           <div className="flex h-[42px] flex-row justify-center">
-            <FontSwitcher />
+            {/* <FontSwitcher /> */}
             <ContrastSwitcher />
           </div>
 
