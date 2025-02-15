@@ -1,5 +1,4 @@
 import { useRef } from "react";
-// import FontSwitcher from "../../Switcher/FontSwitcher";
 import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
 import { HeaderLogo } from "../HeaderLogo";
 import { Button } from "../../shared/Button/Button";
@@ -7,6 +6,7 @@ import { firstNav, secondNav } from "@/data/headerData";
 import { HeaderNavigation } from "./HeaderNavigation";
 
 export const HeaderTabAndDesktop = () => {
+  /* What is that ref for? */
   const menuRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -27,7 +27,6 @@ export const HeaderTabAndDesktop = () => {
           className="flex h-[42px] flex-row desktop:w-[162px] desktop:gap-5"
           aria-label="Przełączniki czcionki i kontrastu"
         >
-          {/* <FontSwitcher aria-label="Przełącznik wielkości czcionki" /> */}
           <ContrastSwitcher aria-label="Przełącznik kontrastu" />
         </div>
         <Button
