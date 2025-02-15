@@ -27,6 +27,7 @@ export const HeaderTabAndDesktop = () => {
           className="flex h-[42px] flex-row desktop:w-[162px] desktop:gap-5"
           aria-label="Przełączniki czcionki i kontrastu"
         >
+          {/* Todo: Adjust Design */}
           <ContrastSwitcher aria-label="Przełącznik kontrastu" />
         </div>
         <Button

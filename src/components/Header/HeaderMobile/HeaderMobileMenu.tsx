@@ -44,6 +44,7 @@ export const HeaderMobileMenu = ({ onClose }: HeaderMobileMenuProps) => {
 
         <div className="flex flex-col gap-6 py-5">
           <div className="flex h-[42px] flex-row justify-center">
+            {/* Todo: Adjust Design */}
             <ContrastSwitcher />
           </div>
 
