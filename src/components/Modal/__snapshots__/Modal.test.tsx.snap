@@ -9,10 +9,10 @@ exports[`Modal component should match snapshot 1`] = `
     tabindex="-1"
   >
     <div
-      class="relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 pt-12 text-white desktop:px-10 desktop:pt-[60px]"
+      class="relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 py-12 text-white desktop:px-10 desktop:py-[60px]"
     >
       <button
-        aria-label="Close modal"
+        aria-label="Zamknij modal"
         class="absolute right-3 top-3"
       >
         <svg
