@@ -1,3 +1,4 @@
+// Todo: Remove.
 "use client";
 
 import { useFont } from "@/context/FontProvider";
@@ -10,7 +11,7 @@ const FontSwitcher = () => {
   const { changeFont } = fontContext;
 
   return (
-    <div 
+    <div
       className="flex w-[110px] items-center justify-center gap-1 text-white contrast:text-black"
       role="group"
       aria-labelledby="font-switcher-label"

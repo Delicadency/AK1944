@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Todo: Remove. */
 .mediumFont {
-  font-size: 125%
+  font-size: 125%;
 }
 
 .largeFont {
-  font-size: 150%
+  font-size: 150%;
 }
-
 
 * {
   margin: 0;

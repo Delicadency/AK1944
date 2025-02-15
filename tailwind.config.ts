@@ -60,6 +60,7 @@ export default {
         "96": "6rem",
       },
       scale: {
+        // Todo: Remove.
         mediumFont: "1.25",
         largeFont: "1.5",
       },
@@ -99,6 +100,7 @@ export default {
   plugins: [
     plugin(function ({ addVariant }) {
       addVariant("contrast", ".contrast &");
+      // Todo: Remove.
       addVariant("mediumFont", ".mediumFont &");
       addVariant("largeFont", ".largeFont &");
     }),

@@ -19,6 +19,7 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       value={{
         normal: "normal",
         contrast: "contrast",
+        // Todo: Remove.
         normalFont: "normalFont",
         mediumFont: "mediumFont",
         largeFont: "largeFont",
