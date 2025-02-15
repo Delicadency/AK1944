@@ -59,11 +59,6 @@ export default {
         "50": "3.125rem",
         "96": "6rem",
       },
-      scale: {
-        // Todo: Remove.
-        mediumFont: "1.25",
-        largeFont: "1.5",
-      },
       screens: {
         mobile: "320px",
         tablet: "768px",
@@ -100,9 +95,6 @@ export default {
   plugins: [
     plugin(function ({ addVariant }) {
       addVariant("contrast", ".contrast &");
-      // Todo: Remove.
-      addVariant("mediumFont", ".mediumFont &");
-      addVariant("largeFont", ".largeFont &");
     }),
   ],
 } satisfies Config;
