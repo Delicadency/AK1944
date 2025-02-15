@@ -6,7 +6,7 @@ import { firstNav, secondNav } from "@/data/headerData";
 import { HeaderNavigation } from "./HeaderNavigation";
 
 export const HeaderTabAndDesktop = () => {
-  /* What is that ref for? */
+  /* Todo: What is that ref for? */
   const menuRef = useRef<HTMLDivElement>(null);
 
   return (
