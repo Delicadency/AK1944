@@ -19,6 +19,7 @@ export const homeArmyUnionNavData = [
 ];
 
 export const historyNavData = [
+  { href: "/historia", label: "Historia" },
   { href: "/historia/strzelcy", label: "5. Pułk Strzelców Konnych" },
   { href: "/historia/obwod-debica", label: "Obwód Dębica SZP-ZWZ-AK" },
   { href: "/historia/operacja-burza", label: "Operacja Burza" },
