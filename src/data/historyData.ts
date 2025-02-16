@@ -257,41 +257,49 @@ export const historyData = {
       "Od 1941 do 1943 roku w ramach obwodu funkcjonowało 8 placówek:",
     places: [
       {
+        id: "1",
         name: "Placówka Dębica",
         description:
           "(„Działo”, „62”), którą dowodzili kolejno: Adam Lazarowicz, ppor. Antoni Szlachta „Kornicz” oraz ppor. Leon Kloc „Jasny” (od grudnia 1941 roku);",
       },
       {
+        id: "2",
         name: "Placówka Korzeniów",
         description:
           "(„Kartacz”, „68”), została zorganizowana w połowie 1941 roku. Jej komendantem był pchor. Franciszek Podraza „Nałęcz”;",
       },
       {
+        id: "3",
         name: "Placówka Brzeziny",
         description:
           "(„Bomba”, „69”, „74”), której organizatorem i pierwszym komendantem był por. Ludwik Marszałek „Wilk”. W maju 1941 roku „Wilka” zastąpił Stanisław Lachman „Wielki”, „Zan”;",
       },
       {
+        id: "4",
         name: "Placówka Sędziszów",
         description:
           "(„Sława”, „72”), którą wpierw dowodził ppor. Mieczysław Szczurowski „Bączek”, a od 1941 roku por. Mieczysław Stachowski „Sęp”, „Maciej”;",
       },
       {
+        id: "5",
         name: "Placówka Ropczyce",
         description:
           " („Rakieta”, „76”), zorganizowana wpierw przez ppor. Wojciecha Passowicza „Karpa”, a następnie od 1940 roku dowodzona przez por. Władysława Grzegorskiego „Grzmota”;",
       },
       {
+        id: "6",
         name: "Placówka Łączki Kucharskie ",
         description:
           "(„Ławka”, „Ładunek”, „78”), została zorganizowana w 1941 roku. Jej komendantem był pchor. Piotr Passowicz „Klon”, „Olcha”, a od stycznia 1943 roku pchor. Franciszek Szara „Pęk”;",
       },
       {
+        id: "7",
         name: "Placówka Pilzno",
         description:
           "(„Pocisk”, „Piwonia”, „64”), której organizatorem i komendantem do lipca 1940 roku był sierż. Walenty Kula „Gater”. Po nim prowadzeniem placówki zajął się ppor. Zygmunt Pawlus „Turek”, a w lipcu 1942 roku zastąpił go ppor. Edmund Matecki „Lis”;",
       },
       {
+        id: "8",
         name: "Placówka Zassów",
         description:
           "(„Zapalnik”, Zawilec”, „66”), została zorganizowana przez harcmistrza Pawła Barana „Wytrwał”, który kierował nią do grudnia 1941 roku. Po nim funkcję komendanta objął pchor. Alfred Łubieński „Iwo”.",
@@ -309,14 +317,16 @@ export const historyData = {
     expansion1:
       "W styczniu 1944 roku z AK scaliły się oddziały Batalionów Chłopskich. W ten sposób obwód wzmocnił się batalionem 500 żołnierzy BCh. Zgodnie z postanowieniami akcji scaleniowej Karol Chmiel „Grom” z Zagorzyc został zastępcą komendanta obwodu.",
     expansion2:
-      "Ponadto, wiosną 1944 roku doszło do zmian personalnych w Inspektoracie Rzeszów, których następstwem były zmiany w Obwodzie Dębica. Pierwszym zastępcą inspektora Łukasza Cieplińskiego „Pługa” został dotychczasowy komendant obwodu Dębica Adam Lazarowicz „Klamra”. Na stanowisku komendanta w Dębicy zastąpił go Ludwik Marszałek „Zbroja”. Lazarowicz obejmując funkcję w inspektoracie prosił, aby na czas powstania lub „Burzy” mógł powrócić do Gumnisk by dowodzić oddziałami obwodu „Deser”, co stało się faktem latem 1944 roku. W wyniku wspomnianej akcji scaleniowej obwodowi przybyło 6 nowych plutonów, 644 żołnierzy, w tym 12 oficerów rezerwy, 3 podchorążych, 52 podoficerów i 577 szeregowych.",
+      "Ponadto, wiosną 1944 roku doszło do zmian personalnych w Inspektoracie Rzeszów, których następstwem były zmiany w Obwodzie Dębica. Pierwszym zastępcą inspektora Łukasza Cieplińskiego „Pługa” został dotychczasowy komendant obwodu Dębica Adam Lazarowicz „Klamra”. Na stanowisku komendanta w Dębicy zastąpił go Ludwik Marszałek „Zbroja”.",
     expansion3:
-      "Aby ułatwić dowodzenie na obszarze rozległego obwodu, komendant zdecydował się podzielić cały obszar początkowo na dwa, a następnie na trzy podobwody. W pierwszym rzucie utworzono Podobwód Sędziszów „70”, a w maju 1944 roku z terenu Podobwodu Dębica wyodrębniono Podobwód Pilzno „Płoza”. W rozkazie z 15 lutego 1944 roku „Pług” wnioskuje o utworzenie Podobwodu „Sława” w skład którego miałyby wejść placówki: Sędziszów, Ropczyce oraz „dwie placówki wielopolskie. Razem 22 plutony bojowe”. Podział na podobwody - rejony walki, znalazł praktyczne zastosowanie dopiero w okresie akcji „Burza”.",
+      "Lazarowicz obejmując funkcję w inspektoracie prosił, aby na czas powstania lub „Burzy” mógł powrócić do Gumnisk by dowodzić oddziałami obwodu „Deser”, co stało się faktem latem 1944 roku. W wyniku wspomnianej akcji scaleniowej obwodowi przybyło 6 nowych plutonów, 644 żołnierzy, w tym 12 oficerów rezerwy, 3 podchorążych, 52 podoficerów i 577 szeregowych.",
     expansion4:
-      "W skład I rejonu walki - I Zgrupowania dowodzonego przez por. Mieczysława Stachowskiego „Sępa” weszły placówki „Sława”, Strzała” i „Ropa”.",
+      "Aby ułatwić dowodzenie na obszarze rozległego obwodu, komendant zdecydował się podzielić cały obszar początkowo na dwa, a następnie na trzy podobwody. W pierwszym rzucie utworzono Podobwód Sędziszów „70”, a w maju 1944 roku z terenu Podobwodu Dębica wyodrębniono Podobwód Pilzno „Płoza”. W rozkazie z 15 lutego 1944 roku „Pług” wnioskuje o utworzenie Podobwodu „Sława” w skład którego miałyby wejść placówki: Sędziszów, Ropczyce oraz „dwie placówki wielopolskie. Razem 22 plutony bojowe”. Podział na podobwody - rejony walki, znalazł praktyczne zastosowanie dopiero w okresie akcji „Burza”.",
     expansion5:
-      "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
+      "W skład I rejonu walki - I Zgrupowania dowodzonego przez por. Mieczysława Stachowskiego „Sępa” weszły placówki „Sława”, Strzała” i „Ropa”.",
     expansion6:
+      "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
+    expansion7:
       "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
   },
 };

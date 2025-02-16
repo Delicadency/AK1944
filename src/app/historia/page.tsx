@@ -24,7 +24,7 @@ export default function HistoryPage() {
         <Heading variant="h4" color="white" contrast="black">
           Zobacz także
         </Heading>
-        <div className="flex flex-col desktop:flex-row desktop:gap-[104px]">
+        <div className="mt-5 flex flex-col desktop:flex-row desktop:gap-[104px]">
           <HistoryBiogram />
           <Literature />
         </div>

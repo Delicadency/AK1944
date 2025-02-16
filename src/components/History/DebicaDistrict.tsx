@@ -17,7 +17,7 @@ export default function DebicaDistrict() {
         </div>
         <div>
           <Image
-            src="/images/history/main/debica_placeholder.jpg"
+            src="/images/history/debica/horses.jpg"
             alt="debica"
             width={500}
             height={1080}
@@ -27,9 +27,10 @@ export default function DebicaDistrict() {
       </Container>
       <Button
         label="Zobacz więcej"
-        ariaDescription="Zobacze Więcej"
+        ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
+        href="/historia/obwod-debica"
       />
     </>
   );

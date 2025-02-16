@@ -25,9 +25,10 @@ export default function OperationBurza() {
       </Container>
       <Button
         label="Zobacz więcej"
-        ariaDescription="Zobacze Więcej"
+        ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
+        href="/historia/operacja-burza"
       />
     </>
   );

@@ -40,6 +40,7 @@ export default function HistoryBiogram() {
           label="Sprawdź"
           ariaDescription="Sprawdź"
           className="mt-6"
+          href="/biogramy"
         ></Button>
       </Container>
     </BackgroundImage>
