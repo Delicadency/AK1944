@@ -36,3 +36,12 @@ export interface SubmenuItem {
   href: string;
   label: string;
 }
+
+export interface Place {
+  id: number;
+  name: string;
+  location: string;
+  description: string;
+  image: string;
+  link: string;
+}
