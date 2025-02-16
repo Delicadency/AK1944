@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { ReadMore } from "./ReadMore";
 
-describe("ReadMore Component", () => {
+describe("ReadMore", () => {
   const text =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
@@ -12,7 +12,7 @@ describe("ReadMore Component", () => {
     expect(screen.queryByText(/consectetur adipiscing elit/)).toHaveClass(
       "hidden",
     );
-    expect(screen.getByText("czytaj więcej")).toBeInTheDocument();
+    expect(screen.getByText("czytaj więcej.")).toBeInTheDocument();
   });
 
   test("does not truncate text when it is within the word limit", () => {
@@ -33,7 +33,7 @@ describe("ReadMore Component", () => {
     );
 
     // Click to expand
-    fireEvent.click(screen.getByText("czytaj więcej"));
+    fireEvent.click(screen.getByText("czytaj więcej."));
     expect(screen.getByText(/consectetur adipiscing elit/)).toBeVisible();
     expect(screen.getByText("ukryj")).toBeInTheDocument();
 
@@ -42,7 +42,7 @@ describe("ReadMore Component", () => {
     expect(screen.queryByText(/consectetur adipiscing elit/)).toHaveClass(
       "hidden",
     );
-    expect(screen.getByText("czytaj więcej")).toBeInTheDocument();
+    expect(screen.getByText("czytaj więcej.")).toBeInTheDocument();
   });
 
   test("handles keyboard events (Enter and Space) to toggle expansion", () => {
@@ -59,7 +59,7 @@ describe("ReadMore Component", () => {
     expect(screen.queryByText(/consectetur adipiscing elit/)).toHaveClass(
       "hidden",
     );
-    expect(screen.getByText("czytaj więcej")).toBeInTheDocument();
+    expect(screen.getByText("czytaj więcej.")).toBeInTheDocument();
   });
 
   test("applies custom className to the paragraph", () => {
