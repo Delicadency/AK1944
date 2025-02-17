@@ -2,7 +2,7 @@ import Regiment from "@/components/History/Regiment";
 import OperationBurza from "@/components/History/OperationBurza";
 import DebicaDistrict from "@/components/History/DebicaDistrict";
 
-export default function HistoryList() {
+export const HistoryList = () => {
   return (
     <section>
       <ul className="flex flex-col gap-10">
@@ -18,4 +18,4 @@ export default function HistoryList() {
       </ul>
     </section>
   );
-}
+};

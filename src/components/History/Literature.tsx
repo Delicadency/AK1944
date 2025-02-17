@@ -3,7 +3,7 @@ import { Heading } from "../shared/Heading/Heading";
 import { historyData as txt } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 
-export default function Literature() {
+export const Literature = () => {
   const { title, content } = txt.history.literature ?? {};
   return (
     <Container className="mt-10 justify-items-center bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">
@@ -19,4 +19,4 @@ export default function Literature() {
       ></Button>
     </Container>
   );
-}
+};

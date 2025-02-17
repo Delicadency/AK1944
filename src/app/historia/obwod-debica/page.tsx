@@ -46,7 +46,6 @@ export default function DebicaDistrictPage() {
       [id]: !prev[id],
     }));
   };
-  console.log(openDescription);
 
   return (
     <Container as="article" className="contrast:bg-black">
@@ -62,22 +61,23 @@ export default function DebicaDistrictPage() {
         <Heading variant="h4" color="green" contrast="yellow">
           {fortressTitle}
         </Heading>
-        <p className="text-18 contrast:text-yellowContrast">{fortress1}</p>
-        <p className="text-18 contrast:text-yellowContrast">{fortress2}</p>
+        <p className="text-lg contrast:text-yellowContrast">{fortress1}</p>
+        <p className="text-lg contrast:text-yellowContrast">{fortress2}</p>
         <Image
           src="/images/history/debica/horses.jpg"
           alt="debica"
           width={500}
           height={1080}
           className="m-auto"
+          priority
         />
       </section>
       <section className="mb-6 flex flex-col gap-6">
         <Heading variant="h4" color="green" contrast="yellow">
           {beginningsTitle}
         </Heading>
-        <p className="text-18 contrast:text-yellowContrast">{beginnings1}</p>
-        <p className="text-18 contrast:text-yellowContrast">{beginnings2}</p>
+        <p className="text-lg contrast:text-yellowContrast">{beginnings1}</p>
+        <p className="text-lg contrast:text-yellowContrast">{beginnings2}</p>
       </section>
       <section className="mb-6 flex flex-col gap-6">
         <Heading variant="h4" color="green" contrast="yellow">
@@ -91,14 +91,18 @@ export default function DebicaDistrictPage() {
                 onClick={() => isMobile && toggleDescription(place.id)}
               >
                 <div className="h-4 w-4 rounded-full bg-redMain" />
-                <p className="text-18 contrast:text-yellowContrast">
+                <p className="text-lg contrast:text-yellowContrast">
                   {place.name}
                 </p>
                 {isMobile && (
-                  <button type="button" className="ml-auto">
+                  <button
+                    type="button"
+                    className="ml-auto"
+                    aria-label="Rozwiń opis"
+                  >
                     <IconChevronDown
                       className={cn(
-                        "h-7 w-7 transition-transform",
+                        "size-7 transition-transform",
                         openDescription[place.id] ? "rotate-180" : "rotate-0",
                       )}
                     />
@@ -107,10 +111,8 @@ export default function DebicaDistrictPage() {
               </div>
               <p
                 className={cn(
-                  "mt-2 text-18 contrast:text-yellowContrast",
-                  window.innerWidth >= 768 || openDescription[place.id]
-                    ? "block"
-                    : "hidden",
+                  "mt-2 text-lg contrast:text-yellowContrast",
+                  isMobile && !openDescription[place.id] ? "hidden" : "block",
                 )}
               >
                 {place.description}
@@ -118,7 +120,7 @@ export default function DebicaDistrictPage() {
             </li>
           ))}
         </ul>
-        <p className="text-18 contrast:text-yellowContrast">{places1}</p>
+        <p className="text-lg contrast:text-yellowContrast">{places1}</p>
         {/* button todo */}
         <Button
           label="Czytaj więcej"
@@ -138,8 +140,8 @@ export default function DebicaDistrictPage() {
         <Heading variant="h4" color="green" contrast="yellow">
           {readinessTitle}
         </Heading>
-        <p className="text-18 contrast:text-yellowContrast">{readiness1}</p>
-        <p className="text-18 contrast:text-yellowContrast">{readiness2}</p>
+        <p className="text-lg contrast:text-yellowContrast">{readiness1}</p>
+        <p className="text-lg contrast:text-yellowContrast">{readiness2}</p>
       </section>
       <section className="mb-6 flex flex-col gap-6">
         <Heading variant="h4" color="green" contrast="yellow">
@@ -152,9 +154,9 @@ export default function DebicaDistrictPage() {
           height={1080}
           className="m-auto"
         />
-        <p className="text-18 contrast:text-yellowContrast">{expansion1}</p>
-        <p className="text-18 contrast:text-yellowContrast">{expansion2}</p>
-        <p className="text-18 contrast:text-yellowContrast">{expansion3}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion1}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion2}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion3}</p>
         <Image
           src="/images/history/debica/attention.jpg"
           alt="debica"
@@ -162,10 +164,10 @@ export default function DebicaDistrictPage() {
           height={1080}
           className="m-auto"
         />
-        <p className="text-18 contrast:text-yellowContrast">{expansion4}</p>
-        <p className="text-18 contrast:text-yellowContrast">{expansion5}</p>
-        <p className="text-18 contrast:text-yellowContrast">{expansion6}</p>
-        <p className="text-18 contrast:text-yellowContrast">{expansion7}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion4}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion5}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion6}</p>
+        <p className="text-lg contrast:text-yellowContrast">{expansion7}</p>
       </section>
     </Container>
   );

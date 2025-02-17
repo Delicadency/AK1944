@@ -7,20 +7,22 @@ import Image from "next/image";
 import { Button } from "../shared/Button/Button";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
-export default function HistoryBiogram() {
+export const HistoryBiogram = () => {
   const { title, content } = historyData.history.biograms ?? {};
-  const isDesktop = useMediaQuery("(max-width: 1280px)");
+  const isSmallScreen = useMediaQuery("(max-width: 1280px)");
+
   return (
     <BackgroundImage
-      alt="tło imitujące kartkę"
+      alt=""
       src={
-        isDesktop
+        isSmallScreen
           ? "/images/history/main/paper_mobile_bg.png"
           : "/images/history/main/paper_desktop_bg.png"
       }
       width="768"
       height="948"
       className="absolute object-fill"
+      aria-hidden="true"
     >
       <Container className="relative justify-items-center py-10 contrast:bg-yellowContrast">
         <Heading variant="h3" contrast="yellow" color="green">
@@ -45,4 +47,4 @@ export default function HistoryBiogram() {
       </Container>
     </BackgroundImage>
   );
-}
+};

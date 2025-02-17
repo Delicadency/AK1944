@@ -4,7 +4,7 @@ import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
-export default function DebicaDistrict() {
+export const DebicaDistrict = () => {
   const { title, description } = historyData.debica ?? {};
   return (
     <>
@@ -34,4 +34,4 @@ export default function DebicaDistrict() {
       />
     </>
   );
-}
+};

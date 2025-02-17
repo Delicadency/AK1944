@@ -329,4 +329,4 @@ export const historyData = {
     expansion7:
       "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
   },
-};
+} as const;

@@ -4,7 +4,7 @@ import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
-export default function Regiment() {
+export const Regiment = () => {
   const { title, description } = historyData.regiment ?? {};
   return (
     <>
@@ -32,4 +32,4 @@ export default function Regiment() {
       />
     </>
   );
-}
+};

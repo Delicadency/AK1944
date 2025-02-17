@@ -4,7 +4,7 @@ import Container from "../shared/Container";
 import IconArrowVertical from "@/icons/IconArrowVertical";
 import IconArrowHorizontal from "@/icons/IconArrowHorizontal";
 
-export default function HistoryNav() {
+export const HistoryNav = () => {
   const isDesktop = useMediaQuery("(min-width: 1280px)");
   return (
     <Container
@@ -40,4 +40,4 @@ export default function HistoryNav() {
       </ul>
     </Container>
   );
-}
+};

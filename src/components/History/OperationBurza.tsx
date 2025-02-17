@@ -4,7 +4,7 @@ import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
-export default function OperationBurza() {
+export const OperationBurza = () => {
   const { title, description } = historyData.burza ?? {};
   return (
     <>
@@ -32,4 +32,4 @@ export default function OperationBurza() {
       />
     </>
   );
-}
+};
