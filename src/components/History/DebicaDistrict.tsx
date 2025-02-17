@@ -17,7 +17,7 @@ export const DebicaDistrict = () => {
         </div>
         <div>
           <Image
-            src="/images/history/debica/horses.jpg"
+            src="/images/history/debica/debica.jpeg"
             alt="debica"
             width={500}
             height={1080}

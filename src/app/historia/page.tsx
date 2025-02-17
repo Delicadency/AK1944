@@ -1,8 +1,8 @@
-import History from "@/components/History/History";
-import HistoryNav from "@/components/History/HistoryNav";
-import HistoryList from "@/components/History/HistoryList";
-import Literature from "@/components/History/Literature";
-import HistoryBiogram from "@/components/History/HistoryBiogram";
+import { History } from "@/components/History/History";
+import { HistoryNav } from "@/components/History/HistoryNav";
+import { HistoryList } from "@/components/History/HistoryList";
+import { Literature } from "@/components/History/Literature";
+import { HistoryBiogram } from "@/components/History/HistoryBiogram";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 import Container from "@/components/shared/Container";

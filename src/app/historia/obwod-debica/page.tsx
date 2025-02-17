@@ -64,7 +64,7 @@ export default function DebicaDistrictPage() {
         <p className="text-lg contrast:text-yellowContrast">{fortress1}</p>
         <p className="text-lg contrast:text-yellowContrast">{fortress2}</p>
         <Image
-          src="/images/history/debica/horses.jpg"
+          src="/images/history/debica/debica.jpeg"
           alt="debica"
           width={500}
           height={1080}

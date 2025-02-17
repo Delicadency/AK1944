@@ -1,6 +1,6 @@
-import Regiment from "@/components/History/Regiment";
-import OperationBurza from "@/components/History/OperationBurza";
-import DebicaDistrict from "@/components/History/DebicaDistrict";
+import { Regiment } from "@/components/History/Regiment";
+import { OperationBurza } from "@/components/History/OperationBurza";
+import { DebicaDistrict } from "@/components/History/DebicaDistrict";
 
 export const HistoryList = () => {
   return (
