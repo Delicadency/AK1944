@@ -49,9 +49,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Header />
-          <main className="pt-[80px] tablet:pt-[130px] desktop:pt-[120px]">
-            {children}
-          </main>
+          {children}
           <Footer />
         </ThemeProvider>
       </body>

@@ -8,10 +8,16 @@ export default function Header() {
   const isMobile = useMediaQuery("(max-width: 767px)");
 
   return (
-    <header className="fixed z-20 h-auto w-full bg-greenMain pb-5 contrast:bg-yellowContrast tablet:pb-0">
-      <Container>
-        {isMobile ? <HeaderMobile /> : <HeaderTabAndDesktop />}
-      </Container>
-    </header>
+    <Spacer>
+      <header className="fixed z-20 h-auto w-full bg-greenMain pb-5 contrast:bg-yellowContrast tablet:pb-0">
+        <Container>
+          {isMobile ? <HeaderMobile /> : <HeaderTabAndDesktop />}
+        </Container>
+      </header>
+    </Spacer>
   );
 }
+
+const Spacer = ({ children }: { children: React.ReactNode }) => (
+  <div className="h-[80px] tablet:h-[135px]">{children}</div>
+);
