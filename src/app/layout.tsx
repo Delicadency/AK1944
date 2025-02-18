@@ -49,8 +49,6 @@ export default function RootLayout({
           "antialiased",
         )}
       >
-        <Analytics />
-        <SpeedInsights />
         <ThemeProvider>
           <Header />
           <main className="pt-[80px] tablet:pt-[130px] desktop:pt-[120px]">
@@ -58,6 +56,8 @@ export default function RootLayout({
           </main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
