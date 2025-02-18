@@ -11,7 +11,13 @@ const LogoAK = ({ className }: LogoAKProps) => {
       viewBox="0 0 436 159"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      aria-labelledby="logo-title logo-desc"
     >
+      <title id="logo-title">Logo Armii Krajowej</title>
+      <desc id="logo-desc">
+      Oficjalne logo Armii Krajowej – nowoczesny znak graficzny z wyrazistymi, stylizowanymi literami AK 
+      </desc>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
