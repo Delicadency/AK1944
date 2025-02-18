@@ -1,3 +1,5 @@
+import { ElementType, ReactNode } from "react";
+
 export interface Post {
   id: number;
   date: string;
@@ -35,4 +37,10 @@ export interface DefaultIconProps {
 export interface SubmenuItem {
   href: string;
   label: string;
+}
+
+export interface ContainerProps {
+  children: ReactNode;
+  className?: string;
+  as?: ElementType;
 }
