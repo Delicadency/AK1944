@@ -16,6 +16,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "clsx": "^2.1.1",
     "html-react-parser": "^5.1.18",
     "next": "15.0.3",
