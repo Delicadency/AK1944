@@ -4,8 +4,8 @@ import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
-export default function OperationBurza() {
-  const { title, description } = historyData.burza;
+export const OperationBurza = () => {
+  const { title, description } = historyData.burza ?? {};
   return (
     <>
       <Container className="gap-[130px] desktop:flex">
@@ -20,14 +20,16 @@ export default function OperationBurza() {
           alt="burza"
           width={500}
           height={1080}
-        ></Image>
+          className="justify-self-center"
+        />
       </Container>
       <Button
         label="Zobacz więcej"
-        ariaDescription="Zobacze Więcej"
+        ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
-      ></Button>
+        href="/historia/operacja-burza"
+      />
     </>
   );
-}
+};

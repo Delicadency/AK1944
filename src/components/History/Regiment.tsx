@@ -4,8 +4,8 @@ import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
-export default function Regiment() {
-  const { title, description } = historyData.regiment;
+export const Regiment = () => {
+  const { title, description } = historyData.regiment ?? {};
   return (
     <>
       <Container className="gap-[130px] desktop:flex">
@@ -20,14 +20,16 @@ export default function Regiment() {
           alt="regiment"
           width={500}
           height={1080}
-        ></Image>
+          className="justify-self-center"
+        />
       </Container>
       <Button
         label="Zobacz więcej"
-        ariaDescription="Zobacze Więcej"
+        ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
-      ></Button>
+        href="/historia/strzelcy"
+      />
     </>
   );
-}
+};
