@@ -6,7 +6,7 @@ export const FooterLegalInfo = () => {
       <p className="flex justify-center gap-5">
         <Link
           href="/polityka-prywatnosci"
-          className="text-sm transition-opacity hover:opacity-80 md:text-base"
+          className="text-16 transition-opacity hover:opacity-80"
           aria-label="Przejdź do strony Polityka prywatności"
           title="Przejdź do strony Polityka prywatności"
         >
@@ -15,7 +15,7 @@ export const FooterLegalInfo = () => {
 
         <Link
           href="/regulamin"
-          className="text-sm transition-opacity hover:opacity-80 md:text-base"
+          className="text-16 transition-opacity hover:opacity-80"
           aria-label="Przejdź do strony Regulamin"
           title="Przejdź do strony Regulamin"
         >
@@ -27,7 +27,7 @@ export const FooterLegalInfo = () => {
 
       <Link
         href="/wolontariusze"
-        className="text-sm transition-opacity hover:opacity-80 md:text-base"
+        className="text-16 transition-opacity hover:opacity-80"
         aria-label="Przejdź do strony Wolontariuszy"
         title="Przejdź do strony Wolontariuszy"
       >
