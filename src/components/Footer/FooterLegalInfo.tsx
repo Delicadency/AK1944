@@ -23,7 +23,7 @@ export const FooterLegalInfo = () => {
         </Link>
       </p>
 
-      <p className="text-16">© 2023 . All rights reserved.</p>
+      <p className="text-16">© 2025. All rights reserved.</p>
 
       <Link
         href="/wolontariusze"
