@@ -1,9 +1,5 @@
-import Container from "@/components/shared/Container";
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
 
 export default function OperationBurzaPage() {
-  return (
-    <Container>
-      <p>Akcja &quot;Burza&quot;</p>
-    </Container>
-  );
+  return <ComingSoon />;
 }

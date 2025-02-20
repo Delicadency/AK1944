@@ -1,9 +1,5 @@
-import Container from "@/components/shared/Container";
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
 
 export default function DebicaDistrictPage() {
-  return (
-    <Container>
-      <p>Obwód Dębica SZP-ZWZ-AK</p>
-    </Container>
-  );
+  return <ComingSoon />;
 }

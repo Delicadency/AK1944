@@ -1,9 +1,5 @@
-import Container from "@/components/shared/Container";
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
 
 export default function RegimentPage() {
-  return (
-    <Container>
-      <p>5. Pułk Strzelców Konnych</p>
-    </Container>
-  );
+  return <ComingSoon />;
 }

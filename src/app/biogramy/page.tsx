@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function BiogramsPage() {
-  return (
-    <div>
-      <p>Biogramy</p>
-    </div>
-  );
+  return <ComingSoon />;
 }

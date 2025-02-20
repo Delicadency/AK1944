@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function PartisanTrailPage() {
-  return (
-    <div>
-      <p>Szlak Partyzancki</p>
-    </div>
-  );
+  return <ComingSoon />;
 }

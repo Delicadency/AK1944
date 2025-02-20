@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function OngoingProjectsPage() {
-  return (
-    <div>
-      <p>Realizowane projekty</p>
-    </div>
-  );
+  return <ComingSoon />;
 }

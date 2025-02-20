@@ -1,9 +1,5 @@
-import Container from "@/components/shared/Container";
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
 
 export default function LiteraturePage() {
-  return (
-    <Container>
-      <p>Literatura</p>
-    </Container>
-  );
+  return <ComingSoon />;
 }
