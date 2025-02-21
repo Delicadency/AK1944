@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function GravesPage() {
-  return (
-    <div>
-      <p>Inwentarz grobów</p>
-    </div>
-  );
+  return <ComingSoon />;
 }
