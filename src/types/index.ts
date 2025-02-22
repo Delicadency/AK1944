@@ -1,3 +1,5 @@
+import { ElementType, ReactNode } from "react";
+
 export interface Post {
   id: number;
   date: string;
@@ -44,4 +46,10 @@ export interface Place {
   description: string;
   image: string;
   link: string;
+}
+
+export interface ContainerProps {
+  children: ReactNode;
+  className?: string;
+  as?: ElementType;
 }
