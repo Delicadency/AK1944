@@ -65,12 +65,14 @@ export const Places = () => {
       </ul>
       <p className="text-lg contrast:text-yellowContrast">{places1}</p>
       {/* button todo */}
-      <Button
-        label="Czytaj więcej"
-        ariaDescription="Czytaj więcej"
-        variant={"secondary"}
-        className="m-auto"
-      />
+      {isMobile && (
+        <Button
+          label="Czytaj więcej"
+          ariaDescription="Czytaj więcej"
+          variant={"secondary"}
+          className="m-auto"
+        />
+      )}
     </section>
   );
 };

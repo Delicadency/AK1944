@@ -13,7 +13,7 @@ export default function DebicaDistrictPage() {
 
   return (
     <div className="contrast:bg-black">
-      <Container as="article">
+      <Container as="article" className="flex flex-col gap-10">
         <Heading
           variant="h3"
           color="green"
