@@ -13,13 +13,8 @@ export default function DebicaDistrictPage() {
 
   return (
     <div className="contrast:bg-black">
-      <Container as="article" className="flex flex-col gap-10">
-        <Heading
-          variant="h3"
-          color="green"
-          contrast="yellow"
-          className="mb-6 mt-4"
-        >
+      <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+        <Heading variant="h3" color="green" contrast="yellow" className="mb-6">
           {title}
         </Heading>
         <Fortress />

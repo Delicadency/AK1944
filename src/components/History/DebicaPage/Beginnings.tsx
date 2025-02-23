@@ -4,7 +4,7 @@ export const Beginnings = () => {
   const { beginningsTitle, beginnings1, beginnings2 } =
     historyData.debica ?? {};
   return (
-    <section className="mb-6 flex flex-col gap-6">
+    <section className="flex flex-col gap-6">
       <Heading variant="h4" color="green" contrast="yellow">
         {beginningsTitle}
       </Heading>

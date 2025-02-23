@@ -15,10 +15,9 @@ export const Expansion = () => {
   } = historyData.debica ?? {};
 
   const isDesktop = useMediaQuery("(min-width: 1280px)");
-  // const isDesktop;
 
   return (
-    <section className="mb-6 flex flex-col gap-6">
+    <section className="flex flex-col gap-6">
       <Heading variant="h4" color="green" contrast="yellow">
         {expansionTitle}
       </Heading>
@@ -28,11 +27,11 @@ export const Expansion = () => {
             src="/images/history/debica/officer-school.jpg"
             alt="debica"
             width={500}
-            height={1080}
+            height={310}
             className="m-auto"
           />
         )}
-        <div>
+        <div className="flex flex-col gap-6">
           <div>
             <p className="text-lg contrast:text-yellowContrast">{expansion1}</p>
             <p className="text-lg contrast:text-yellowContrast">{expansion2}</p>
@@ -43,7 +42,8 @@ export const Expansion = () => {
               src="/images/history/debica/attention.jpg"
               alt="debica"
               width={500}
-              height={1080}
+              height={310}
+              sizes="(max-width: 767px) 200px"
               className="m-auto"
             />
           )}
@@ -57,20 +57,18 @@ export const Expansion = () => {
           </div>
         </div>
         {isDesktop && (
-          <div>
+          <div className="flex shrink-0 flex-col justify-center gap-6">
             <Image
               src="/images/history/debica/officer-school.jpg"
               alt="debica"
               width={500}
-              height={1080}
-              className="m-auto"
+              height={310}
             />
             <Image
               src="/images/history/debica/attention.jpg"
               alt="debica"
               width={500}
-              height={1080}
-              className="m-auto"
+              height={310}
             />
           </div>
         )}
