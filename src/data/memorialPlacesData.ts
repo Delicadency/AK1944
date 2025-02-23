@@ -8,7 +8,7 @@ export const memorialPlaces: Place[] = [
     description:
       "Krzyż upamiętniający zakończenie II wojny światowej oraz rozwiązanie Armii Krajowej. Poświęcony w 1975 roku, z okazji 30. rocznicy tych wydarzeń.",
     image: "/images/place1.jpg",
-    link: "/miejsce-1",
+    link: "/zwiazek/miejsca-pamieci/miejsce",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const memorialPlaces: Place[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Tristique purus vehicula a mollis condimentum non.",
     image: "/images/place2.jpg",
-    link: "/miejsce-2",
+    link: "/zwiazek/miejsca-pamieci/miejsce",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const memorialPlaces: Place[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
     image: "/images/place3.jpg",
-    link: "/miejsce-3",
+    link: "/zwiazek/miejsca-pamieci/miejsce",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ export const memorialPlaces: Place[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
     image: "/images/place4.jpg",
-    link: "/miejsce-4",
+    link: "/zwiazek/miejsca-pamieci/miejsce",
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ export const memorialPlaces: Place[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
     image: "/images/place5.jpg",
-    link: "/miejsce-5",
+    link: "/zwiazek/miejsca-pamieci/miejsce",
   },
   {
     id: 6,
@@ -53,6 +53,6 @@ export const memorialPlaces: Place[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
     image: "/images/place6.jpg",
-    link: "/miejsce-6",
+    link: "/zwiazek/miejsca-pamieci/miejsce",
   },
 ];
