@@ -1,14 +1,21 @@
 import Image from "next/image";
 
-export const NewsImage = ({ src }: { src: string }) => {
+export const NewsImage = ({
+  src,
+  className,
+}: {
+  src: string;
+  className?: string;
+}) => {
   return (
-    <div className="h-[191px] w-[288px] tablet:col-start-1 tablet:row-span-2 tablet:row-start-1 tablet:h-[169px] tablet:w-[262px]">
+    <div
+      className={`${className} relative aspect-[288/191] w-full rounded-sm tablet:aspect-[261/169] desktop:aspect-[300/194]`}
+    >
       <Image
         alt="news image"
         src={src}
-        width={400}
-        height={300}
-        className="object-cover"
+        fill
+        className="rounded-sm object-cover"
       />
     </div>
   );

@@ -1,13 +1,10 @@
 import Link from "next/link";
 
 export const NewsContent = ({ excerpt }: { excerpt: string }) => (
-  <div className="w-[395px] font-sourceSans text-backgroundMain contrast:text-black">
+  <p className="mt-[10px] font-sourceSans text-20 text-backgroundMain tablet:mt-0">
     {excerpt}{" "}
-    <Link
-      href="/"
-      className="text-greenLight underline contrast:text-black tablet:col-start-2 tablet:row-start-2"
-    >
+    <Link href="/" className="ml-2 text-greenLight underline">
       czytaj więcej.
     </Link>
-  </div>
+  </p>
 );
