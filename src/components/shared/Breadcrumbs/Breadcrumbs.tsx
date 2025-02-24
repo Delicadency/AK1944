@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import IconBackHome from "@/icons/IconBackHome";
 import clsx from "clsx";
 import Link from "next/link";
-import IconChevronRight from "@/icons/IconChevronRight";
 import {
   navData,
   homeArmyUnionNavData,
@@ -12,6 +11,7 @@ import {
   partisanTrailData,
   footerNavData,
 } from "@/data/navigationData";
+import { IconChevronDown } from "@/icons/IconChevronDown";
 
 const allNavData = [
   ...navData,
@@ -56,7 +56,9 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
         <li className="flex flex-row items-center justify-center">
           <Link href="/" className="flex items-center justify-center gap-2">
             <IconBackHome className={clsx(iconFillColor[color])} />
-            <IconChevronRight className={clsx(iconChevronColor[color])} />
+            <IconChevronDown
+              className={clsx(iconChevronColor[color], "-rotate-90")}
+            />
           </Link>
         </li>
         {pathSegments.map((_, index) => {
@@ -82,7 +84,9 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
                 {previousPath === "/zwiazek"
                   ? "Światowy Związek Żołnierzy AK"
                   : getLabelForPath(previousPath.replace("-", " "))}
-                <IconChevronRight className={clsx(iconChevronColor[color])} />
+                <IconChevronDown
+                  className={clsx(iconChevronColor[color], "-rotate-90")}
+                />
               </Link>
             </li>
           );
