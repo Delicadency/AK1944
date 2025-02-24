@@ -22,7 +22,8 @@ const AboutUsLanding = () => {
         <Button
           label="Poznajmy się"
           ariaDescription="Poznajmy się"
-          variant="secondary"
+          variant="primary"
+          className="contrast:bg-yellowContrast contrast:text-black00"
         />
       </Container>
       <div className="flex w-full flex-col gap-10 tablet:snap-mandatory tablet:flex-row tablet:overflow-x-auto tablet:scroll-smooth tablet:px-11 desktop:mx-auto desktop:max-w-[1440px] desktop:items-center desktop:justify-center desktop:gap-6 desktop:overflow-x-hidden desktop:px-28">

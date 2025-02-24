@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function RalliesPage() {
-  return (
-    <div>
-      <p>Rajdy</p>
-    </div>
-  );
+  return <ComingSoon />;
 }

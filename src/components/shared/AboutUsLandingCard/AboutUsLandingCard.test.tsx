@@ -1,16 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import AboutUsLandingCard from "../AboutUsLandingCard/AboutUsLandingCard";
-import Image from "next/image";
 
 jest.mock("next/image", () => ({
   __esModule: true,
   default: ({ src, alt }: { src: string; alt: string }) => (
-    <Image src={src} alt={alt} />
+    <img src={src} alt={alt} />
   ),
 }));
 
 describe("AboutUsLandingCard", () => {
-  const defaultProps = {
+  const props = {
     image: {
       src: "/test-image.jpg",
       alt: "Test Image",
@@ -23,25 +22,19 @@ describe("AboutUsLandingCard", () => {
   };
 
   it("renders the component with the correct content", () => {
-    render(<AboutUsLandingCard {...defaultProps} />);
+    render(<AboutUsLandingCard {...props} />);
 
-    // Verify image
-    const image = screen.getByAltText(defaultProps.image.alt);
+    const image = screen.getByAltText(props.image.alt);
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute("src", defaultProps.image.src);
+    expect(image).toHaveAttribute("src", props.image.src);
 
-    // Verify heading
-    const heading = screen.getByText(defaultProps.heading);
+    const heading = screen.getByText(props.heading);
     expect(heading).toBeInTheDocument();
 
-    // Verify description
-    const description = screen.getByText(defaultProps.description);
+    const description = screen.getByText(props.description);
     expect(description).toBeInTheDocument();
 
-    // Verify button
-    const button = screen.getByRole("button", {
-      name: defaultProps.buttonLabel,
-    });
+    const button = screen.getByRole("button", { name: props.buttonLabel });
     expect(button).toBeInTheDocument();
   });
 });

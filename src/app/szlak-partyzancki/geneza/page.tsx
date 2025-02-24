@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function OriginsPage() {
-  return (
-    <div>
-      <p>Geneza</p>
-    </div>
-  );
+  return <ComingSoon />;
 }
