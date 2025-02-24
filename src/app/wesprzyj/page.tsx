@@ -1,5 +1,10 @@
-import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+import Container from "@/components/shared/Container";
+import { TaxDonationModal } from "@/components/shared/TaxDonationModal";
 
 export default function SupportPage() {
-  return <ComingSoon />;
+  return (
+    <Container className="bg-backgroundMain pb-20 pt-10">
+      <TaxDonationModal />
+    </Container>
+  );
 }

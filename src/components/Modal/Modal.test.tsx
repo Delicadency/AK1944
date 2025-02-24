@@ -27,7 +27,7 @@ describe("Modal component", () => {
         Test
       </Modal>,
     );
-    fireEvent.click(screen.getByLabelText("Close modal"));
+    fireEvent.click(screen.getByLabelText("Zamknij modal"));
     expect(setIsModalOpen).toHaveBeenCalledTimes(1);
   });
 

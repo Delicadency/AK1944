@@ -1,5 +1,7 @@
-import ModalCloseIcon from "@/icons/ModalCloseIcon";
+"use client";
+
 import { useEffect, useCallback, useRef } from "react";
+import ModalCloseIcon from "@/icons/ModalCloseIcon";
 
 export type ModalProps = {
   isModalOpen: boolean;
@@ -63,11 +65,11 @@ export const Modal = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 pt-12 text-white desktop:px-10 desktop:pt-[60px]"
+        className="relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 py-12 text-white desktop:px-10 desktop:py-[60px]"
       >
         <button
           className="absolute right-3 top-3"
-          aria-label="Close modal"
+          aria-label="Zamknij modal"
           onClick={() => setIsModalOpen(false)}
         >
           <ModalCloseIcon />
