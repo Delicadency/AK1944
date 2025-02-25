@@ -10,7 +10,7 @@ export const navData = [
 ];
 
 export const homeArmyUnionNavData = [
-  { href: "/zwiazek/o-nas", label: "O nas" },
+  { href: "/o-nas", label: "O nas" },
   { href: "/zwiazek/zarzad", label: "Zarząd" },
   { href: "/zwiazek/historia-zwiazku", label: "Historia Związku" },
   { href: "/zwiazek/kalendarz", label: "Kalendarz uroczystości" },
