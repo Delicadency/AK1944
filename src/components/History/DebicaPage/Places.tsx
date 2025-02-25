@@ -7,7 +7,11 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cn } from "@/utils";
 import Image from "next/image";
 
-export const Places = () => {
+interface PlacesProps {
+  onToggle: (state: boolean) => void;
+}
+
+export const Places: React.FC<PlacesProps> = ({ onToggle }) => {
   const { placesTitle, places, places1 } = historyData.debica ?? {};
   const isMobile = useMediaQuery("(max-width: 768px)");
 
@@ -20,6 +24,12 @@ export const Places = () => {
       ...prev,
       [id]: !prev[id],
     }));
+  };
+  const [readMore, setReadMore] = useState(false);
+  const handleClick = () => {
+    const newState = !readMore;
+    setReadMore(newState);
+    onToggle(newState);
   };
 
   return (
@@ -68,13 +78,13 @@ export const Places = () => {
           </ul>
           <p className="mt-6 text-lg contrast:text-yellowContrast">{places1}</p>
         </div>
-        {/* button todo */}
         {isMobile && (
           <Button
-            label="Czytaj więcej"
-            ariaDescription="Czytaj więcej"
+            label={readMore ? "Zwiń tekst" : "Czytaj więcej"}
+            ariaDescription={readMore ? "Zwiń tekst" : "Czytaj więcej"}
             variant={"secondary"}
             className="m-auto"
+            onClick={handleClick}
           />
         )}
         <div className="shrink-0">

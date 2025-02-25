@@ -7,9 +7,15 @@ import { Beginnings } from "@/components/History/DebicaPage/Beginnings";
 import { Places } from "@/components/History/DebicaPage/Places";
 import { Readiness } from "@/components/History/DebicaPage/Readiness";
 import { Expansion } from "@/components/History/DebicaPage/Expansion";
+import { useState } from "react";
 
 export default function DebicaDistrictPage() {
   const { title } = historyData.debica ?? {};
+  const [readMore, setReadMore] = useState(false);
+
+  const toggleReadMore = (newState: boolean) => {
+    setReadMore(newState);
+  };
 
   return (
     <div className="contrast:bg-black">
@@ -19,9 +25,9 @@ export default function DebicaDistrictPage() {
         </Heading>
         <Fortress />
         <Beginnings />
-        <Places />
-        <Readiness />
-        <Expansion />
+        <Places onToggle={toggleReadMore} />
+        {readMore && <Readiness />}
+        {readMore && <Expansion />}
       </Container>
     </div>
   );
