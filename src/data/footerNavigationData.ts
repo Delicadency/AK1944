@@ -4,7 +4,7 @@ export const navigationData = [
     links: [
       {
         label: "Związek AK",
-        href: "/o-nas",
+        href: "/zwiazek/o-nas",
         ariaLabel: "Przejdź do strony Związek AK",
         title: "Przejdź do strony Związek AK",
       },
