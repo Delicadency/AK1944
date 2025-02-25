@@ -9,6 +9,7 @@ import {
   homeArmyUnionNavData,
   historyNavData,
   partisanTrailData,
+  footerNavData,
 } from "@/data/navigationData";
 import { IconChevronDown } from "@/icons/IconChevronDown";
 
@@ -17,6 +18,7 @@ const allNavData = [
   ...homeArmyUnionNavData,
   ...historyNavData,
   ...partisanTrailData,
+  ...footerNavData,
 ];
 
 interface BreadcrumbProps {
