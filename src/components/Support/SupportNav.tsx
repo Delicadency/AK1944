@@ -1,0 +1,38 @@
+import { ContactIcon, DonationIcon, PartnerIcon, TaxIcon } from "./icons";
+import { SupportNavItem } from "./SupportNavItem";
+
+export const SupportNav = () => (
+  <nav aria-labelledby="support-nav-heading">
+    <h2 id="support-nav-heading" className="mb-10 font-lora text-2xl font-bold">
+      Formy wsparcia:
+    </h2>
+    <ul className="mx-auto grid items-end justify-center gap-x-11 gap-y-6 tablet:grid-cols-2 desktop:grid-cols-4">
+      {navItems.map((item) => (
+        <SupportNavItem key={item.label} {...item} />
+      ))}
+    </ul>
+  </nav>
+);
+
+const navItems = [
+  {
+    label: "Przekaż 1,5% podatku",
+    icon: <TaxIcon />,
+    href: "#tax-section",
+  },
+  {
+    label: "Wpłać darowiznę",
+    icon: <DonationIcon />,
+    href: "#donation-section",
+  },
+  {
+    label: "Zostań partnerem",
+    icon: <PartnerIcon />,
+    href: "#partner-section",
+  },
+  {
+    label: "Skontaktuj się",
+    icon: <ContactIcon />,
+    href: "#contact-section",
+  },
+] as const;

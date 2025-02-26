@@ -16,11 +16,14 @@ export const DonationInstructions = ({ includeHeader }: Props) => {
       <div
         className={cn(
           "text-greenMain max-md:max-w-full desktop:text-xl",
-          includeHeader ? "mt-6" : "mt-3",
+          !includeHeader && "mt-3",
         )}
       >
         <p>W swoim rocznym zeznaniu podatkowym (PIT)</p>
-        <ul className="list-disc pl-6">
+        <ul
+          aria-label="Instrukcja przekazania 1,5% podatku"
+          className="list-disc pl-6"
+        >
           <li>
             wpisz numer KRS: <strong>0000113420</strong>
           </li>
