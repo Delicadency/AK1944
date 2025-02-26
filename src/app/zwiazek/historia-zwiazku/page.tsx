@@ -2,31 +2,72 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { unionData } from "@/data/unionData";
+import IconBullet from "@/icons/IconBullet";
 
 export default function UnionPage() {
   return (
-    <section>
+    <>
       <BackgroundImage
         src="/images/hero_background.png"
         alt=""
         width="1440"
         height="641"
-        className="h-[891px] tablet:max-h-[653px]"
+        className="max-h-[1200px] tablet:max-h-[660px]"
       >
-        <Container as="article" className="text-16 leading-7 text-white">
+        <Container
+          as="article"
+          className="text-16 leading-6 text-white tablet:text-18 tablet:leading-7"
+        >
           <Breadcrumbs color="white" />
-          <h2 className="py-4 font-lora text-28 font-bold tablet:pb-10 desktop:text-32">
+          <h2 className="py-5 font-lora text-28 font-bold tablet:pb-10 desktop:text-32">
             Historia związku
           </h2>
-          <article className="flex flex-col gap-4 tablet:w-[710px] tablet:gap-8">
+          <section className="flex flex-col gap-4 pb-10 font-sourceSans tablet:w-[710px] tablet:gap-8">
             {Array.isArray(unionData.mainArticle.paragraph) ? (
               unionData.mainArticle.paragraph.map((p, i) => <p key={i}>{p}</p>)
             ) : (
               <p>{unionData.mainArticle.paragraph}</p>
             )}
-          </article>
+          </section>
         </Container>
       </BackgroundImage>
-    </section>
+
+      <Container
+        as="article"
+        className="pb-10 font-sourceSans text-16 leading-6 text-black tablet:text-18 tablet:leading-7"
+      >
+        <div className="tablet:w-[760px]">
+          {Object.keys(unionData.subsections).map((key) => {
+            const subsection =
+              unionData.subsections[key as keyof typeof unionData.subsections];
+            return (
+              <section className="pt-5" key={key}>
+                <h3 className="pb-4 font-lora text-24 font-bold leading-9 text-greenMain">
+                  {subsection.subtitle}
+                </h3>
+                <p className="pb-5">{subsection.paragraph}</p>
+                {subsection.bulletpoints && (
+                  <ul>
+                    {subsection.bulletpoints.map((point, i) => (
+                      <li className="flex flex-row gap-6 pb-5" key={i}>
+                        <IconBullet size={24} className="flex-shrink-0" />
+                        <p>{point}</p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </section>
+            );
+          })}
+        </div>
+      <section className="gap-4 pt-5 font-courier text-14 leading-5 tablet:py-[60px] tablet:mx-auto tablet:w-[710px] tablet:gap-8">
+          {Array.isArray(unionData.addendum.paragraph) ? (
+            unionData.addendum.paragraph.map((p, i) => <p key={i}>{p}</p>)
+          ) : (
+            <p>{unionData.addendum.paragraph}</p>
+          )}
+        </section>
+      </Container>
+    </>
   );
 }
