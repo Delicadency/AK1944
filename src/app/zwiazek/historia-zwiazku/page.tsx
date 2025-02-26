@@ -3,7 +3,6 @@ import Container from "@/components/shared/Container";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { unionData } from "@/data/unionData";
 
-
 export default function UnionPage() {
   return (
     <section>
@@ -16,12 +15,15 @@ export default function UnionPage() {
       >
         <Container as="article" className="text-16 leading-7 text-white">
           <Breadcrumbs color="white" />
-          <h2 className="py-4 tablet:pb-10 font-lora text-28 font-bold desktop:text-32">
+          <h2 className="py-4 font-lora text-28 font-bold tablet:pb-10 desktop:text-32">
             Historia związku
           </h2>
-          <article className="flex flex-col gap-4 tablet:gap-8 tablet:w-[710px] ">
-            <p>{unionData.mainArticle.paragraph[0]}</p>
-            <p>{unionData.mainArticle.paragraph[1]}</p>
+          <article className="flex flex-col gap-4 tablet:w-[710px] tablet:gap-8">
+            {Array.isArray(unionData.mainArticle.paragraph) ? (
+              unionData.mainArticle.paragraph.map((p, i) => <p key={i}>{p}</p>)
+            ) : (
+              <p>{unionData.mainArticle.paragraph}</p>
+            )}
           </article>
         </Container>
       </BackgroundImage>
