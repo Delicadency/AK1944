@@ -1,4 +1,3 @@
-import { cn } from "@/utils";
 import clsx from "clsx";
 
 export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
@@ -55,7 +54,7 @@ export const Heading = ({
 
   return (
     <hgroup
-      className={cn(
+      className={clsx(
         "flex flex-col",
         underline ? "items-center" : "items-start",
       )}
@@ -75,7 +74,7 @@ export const Heading = ({
       {underline && (
         <hr
           aria-hidden="true"
-          className={cn(
+          className={clsx(
             "mt-2 w-[200px] border-t-2 border-solid",
             colors[color],
             contrastStyle[contrast],
