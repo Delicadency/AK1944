@@ -13,7 +13,7 @@ interface ArticleStructure {
   };
   addendum: Section;
 }
-export const article: ArticleStructure = {
+export const unionData: ArticleStructure = {
   mainArticle: {
     paragraph: [
       "Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK) powstał w 1990 roku w Polsce z inicjatywy byłych żołnierzy Armii Krajowej, którzy pragnęli upamiętnić działalność jednej z największych podziemnych armii II wojny światowej. Głównym impulsem do założenia organizacji była chęć ochrony pamięci o AK, dbania o jej dobre imię, a także potrzeba stworzenia przestrzeni do zrzeszania kombatantów i ich potomków.",
