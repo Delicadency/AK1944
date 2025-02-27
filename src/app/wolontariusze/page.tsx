@@ -1,5 +1,5 @@
 import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
 
-export default function LiteraturePage() {
+export default function VolunteersPage() {
   return <ComingSoon />;
 }

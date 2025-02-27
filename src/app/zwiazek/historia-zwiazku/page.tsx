@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function UnionPage() {
-  return (
-    <div>
-      <p>Historia związku</p>
-    </div>
-  );
+  return <ComingSoon />;
 }

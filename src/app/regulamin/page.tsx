@@ -1,8 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function RegulationsPage() {
-    return (
-      <div>
-        <p>Regulamin</p>
-      </div>
-    );
-  }
-  
+  return <ComingSoon />;
+}

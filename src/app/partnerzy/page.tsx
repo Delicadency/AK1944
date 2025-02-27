@@ -1,7 +1,5 @@
+import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+
 export default function PartnersPage() {
-  return (
-    <div>
-      <p>Partnerzy</p>
-    </div>
-  );
+  return <ComingSoon />;
 }
