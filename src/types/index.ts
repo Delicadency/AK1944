@@ -39,7 +39,7 @@ export interface SubmenuItem {
   label: string;
 }
 
-export interface Place {
+export interface PlaceDetails {
   id: number;
   name: string;
   location: string;

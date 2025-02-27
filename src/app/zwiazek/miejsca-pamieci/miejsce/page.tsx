@@ -7,7 +7,7 @@ export default function MemorialPlacePage() {
 
     return (
         <div>
-            <h1>Strona miejsca: {slug}</h1>
+            <h1>{slug}</h1>
             <ComingSoon />
         </div>
     );

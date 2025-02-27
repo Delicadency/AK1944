@@ -1,6 +1,6 @@
-import { Place } from "@/types/index";
+import { PlaceDetails } from "@/types/index";
 
-export const memorialPlaces: Place[] = [
+export const memorialPlaces: PlaceDetails[] = [
   {
     id: 1,
     name: "Metalowy krzyż upamiętniający żołnierzy 5. Pułku Strzelców Konnych",

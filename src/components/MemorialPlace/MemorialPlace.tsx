@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Place } from "@/types/index";
+import { PlaceDetails } from "@/types/index";
 import { Button } from "@/components/shared/Button/Button";
 import IconMapPin from "@/icons/IconMapPin";
 import Image from "next/image";
 
-export const MemorialPlace = ({ place }: { place: Place }) => (
+export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
   <article className="border-b md:border-b-4 border-greenMain pb-8 font-lora w-full flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     <div className="order-2 md:order-2 lg:order-1 w-full md:flex md:flex-col md:items-end lg:items-start lg:col-start-1">
       <Image
