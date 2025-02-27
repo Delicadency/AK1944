@@ -31,4 +31,3 @@ export default function DebicaDistrictPage() {
       </Container>
     </div>
   );
-}
