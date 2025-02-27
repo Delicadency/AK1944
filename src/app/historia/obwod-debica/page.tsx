@@ -13,7 +13,7 @@ export default function DebicaDistrictPage() {
   const { title } = historyData.debica ?? {};
   const [readMore, setReadMore] = useState(false);
 
-  const toggleReadMore = (newState: boolean) => {
+  const toggleReadMore = async (newState: boolean) => {
     setReadMore(newState);
   };
 
