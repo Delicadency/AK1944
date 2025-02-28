@@ -1,23 +1,21 @@
+import { AboutUs } from "@/components/AboutUs/AboutUs";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 
-const AboutUs = () => {
-  const isWideScreen = useMediaQuery("(min-width: 1024px)");
-
+const AboutUsPage = () => {
   return (
     <section className="pb-10 tablet:pb-0">
       <BackgroundImage
         src="/images/aboutUs_bg.png"
         alt="AboutUs BackgroundImage"
-        width={1458}
-        height={643}
+        fill
         className="h-full bg-black00 object-center-100 tablet:object-[80%]"
       >
         <Container className="flex flex-col items-start justify-center tablet:px-10 desktop:pl-[104px] desktop:pr-[647px]">
           <Breadcrumbs color="white" />
+
           <Heading
             contrast="yellow"
             color="white"
@@ -26,7 +24,7 @@ const AboutUs = () => {
             O nas
           </Heading>
 
-          <article className="flex flex-col items-center justify-center gap-6 pb-[40px] text-16 text-white tablet:text-18 desktop:text-justify">
+          <article className="flex flex-col items-center justify-center gap-6 pb-10 text-16 text-white tablet:text-18 desktop:text-justify">
             <p>
               Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK) to organizacja
               skupiająca byłych żołnierzy Armii Krajowej oraz ich sympatyków.
@@ -39,46 +37,19 @@ const AboutUs = () => {
               młodzieżą, szkołami i organizacjami społecznymi, promując historię
               Armii Krajowej.
             </p>
-            {isWideScreen && (
-              <>
-                <p>
-                  Związek dba o zachowanie pamięci historycznej poprzez
-                  wydawnictwa, spotkania i współorganizowanie wydarzeń
-                  kulturalnych, takich jak wystawy i projekcje filmowe. W wielu
-                  regionach Polski działa w postaci lokalnych kół, które
-                  aktywnie włączają się w życie lokalnych społeczności.
-                </p>
-                <p>
-                  Ze względu na starzenie się kombatantów, organizacja zmienia
-                  swój charakter, coraz bardziej skupiając się na przekazywaniu
-                  wartości kolejnym pokoleniom. Wspierają ją także osoby
-                  niezwiązane bezpośrednio z AK, ale podzielające jej cele i
-                  misję.
-                </p>
-              </>
-            )}
+
+            <div className="hidden gap-6 tablet:flex tablet:flex-col">
+              <AboutUs />
+            </div>
           </article>
         </Container>
       </BackgroundImage>
-      {!isWideScreen && (
-        <Container className="gap-6text-16 mt-5 flex flex-col items-center justify-center text-black tablet:text-18 desktop:text-justify">
-          <p>
-            Związek dba o zachowanie pamięci historycznej poprzez wydawnictwa,
-            spotkania i współorganizowanie wydarzeń kulturalnych, takich jak
-            wystawy i projekcje filmowe. W wielu regionach Polski działa w
-            postaci lokalnych kół, które aktywnie włączają się w życie lokalnych
-            społeczności.
-          </p>
-          <p>
-            Ze względu na starzenie się kombatantów, organizacja zmienia swój
-            charakter, coraz bardziej skupiając się na przekazywaniu wartości
-            kolejnym pokoleniom. Wspierają ją także osoby niezwiązane
-            bezpośrednio z AK, ale podzielające jej cele i misję.
-          </p>
-        </Container>
-      )}
+
+      <Container className="mt-5 flex flex-col items-center justify-center gap-6 text-16 text-black tablet:hidden tablet:text-18 desktop:text-justify">
+        <AboutUs />
+      </Container>
     </section>
   );
 };
 
-export default AboutUs;
+export default AboutUsPage;
