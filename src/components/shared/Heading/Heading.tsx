@@ -53,7 +53,7 @@ export const Heading = ({
   };
 
   return (
-    <hgroup className="flex flex-col items-center">
+    <hgroup className="flex flex-col">
       <HeadingTag
         className={clsx(
           contrastStyle[contrast],

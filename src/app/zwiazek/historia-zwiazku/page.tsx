@@ -3,6 +3,7 @@ import Container from "@/components/shared/Container";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { unionData } from "@/data/unionData";
 import IconBullet from "@/icons/IconBullet";
+import { Heading } from "@/components/shared/Heading/Heading";
 
 export default function UnionPage() {
   return (
@@ -19,9 +20,14 @@ export default function UnionPage() {
           className="text-16 leading-6 text-white tablet:text-18 tablet:leading-7"
         >
           <Breadcrumbs color="white" />
-          <h2 className="py-5 font-lora text-28 font-bold tablet:pb-10 desktop:text-32">
+          <Heading
+            variant="h2"
+            color="white"
+            className="py-5 text-28 tablet:pb-10 desktop:text-32"
+            contrast="yellow"
+          >
             Historia związku
-          </h2>
+          </Heading>
           <section className="flex flex-col gap-4 pb-10 font-sourceSans tablet:w-[710px] tablet:gap-8">
             {Array.isArray(unionData.mainArticle.paragraph) ? (
               unionData.mainArticle.paragraph.map((p, i) => <p key={i}>{p}</p>)
@@ -60,7 +66,7 @@ export default function UnionPage() {
             );
           })}
         </div>
-      <section className="gap-4 pt-5 font-courier text-14 leading-5 tablet:py-[60px] tablet:mx-auto tablet:w-[710px] tablet:gap-8">
+        <section className="gap-4 pt-5 font-courier text-14 leading-5 tablet:mx-auto tablet:w-[710px] tablet:gap-8 tablet:py-[60px]">
           {Array.isArray(unionData.addendum.paragraph) ? (
             unionData.addendum.paragraph.map((p, i) => <p key={i}>{p}</p>)
           ) : (
