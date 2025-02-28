@@ -6,18 +6,20 @@ import IconBullet from "@/icons/IconBullet";
 import { Heading } from "@/components/shared/Heading/Heading";
 
 export default function UnionPage() {
+  const isContrastMode = () => document.documentElement.classList.contains('contrast');
   return (
-    <>
+    <div className="contrast:bg-black00 contrast:text-yellowContrast">
       <BackgroundImage
         src="/images/hero_background.png"
-        alt=""
+        alt="Zdjęcie przedstawiające strzelców konnych z biało czerwonymi proprcami"
         width="1440"
         height="641"
-        className="max-h-[1200px] tablet:max-h-[660px]"
+        className="max-h-[1200px] contrast:invisible tablet:max-h-[660px]"
+        aria-hidden={isContrastMode() ? "true" : undefined}
       >
         <Container
           as="article"
-          className="text-16 leading-6 text-white tablet:text-18 tablet:leading-7"
+          className="text-16 leading-6 text-white contrast:block tablet:text-18 tablet:leading-7"
         >
           <Breadcrumbs color="white" />
           <Heading
@@ -28,7 +30,7 @@ export default function UnionPage() {
           >
             Historia związku
           </Heading>
-          <section className="flex flex-col gap-4 pb-10 font-sourceSans tablet:w-[710px] tablet:gap-8">
+          <section className="flex flex-col gap-4 pb-10 font-sourceSans contrast:text-yellowContrast tablet:w-[710px] tablet:gap-8">
             {Array.isArray(unionData.mainArticle.paragraph) ? (
               unionData.mainArticle.paragraph.map((p, i) => <p key={i}>{p}</p>)
             ) : (
@@ -40,7 +42,7 @@ export default function UnionPage() {
 
       <Container
         as="article"
-        className="pb-10 font-sourceSans text-16 leading-6 text-black tablet:text-18 tablet:leading-7"
+        className="pb-10 font-sourceSans text-16 leading-6 text-black contrast:text-yellowContrast tablet:text-18 tablet:leading-7"
       >
         <div className="tablet:w-[760px]">
           {Object.keys(unionData.subsections).map((key) => {
@@ -48,7 +50,7 @@ export default function UnionPage() {
               unionData.subsections[key as keyof typeof unionData.subsections];
             return (
               <section className="pt-5" key={key}>
-                <h3 className="pb-4 font-lora text-24 font-bold leading-9 text-greenMain">
+                <h3 className="pb-4 font-lora text-24 font-bold leading-9 text-greenMain contrast:text-yellowContrast">
                   {subsection.subtitle}
                 </h3>
                 <p className="pb-5">{subsection.paragraph}</p>
@@ -56,7 +58,7 @@ export default function UnionPage() {
                   <ul>
                     {subsection.bulletpoints.map((point, i) => (
                       <li className="flex flex-row gap-6 pb-5" key={i}>
-                        <IconBullet size={24} className="flex-shrink-0" />
+                        <IconBullet size={24} className="flex-shrink-0 text-redMain contrast:text-yellowContrast" />
                         <p>{point}</p>
                       </li>
                     ))}
@@ -74,6 +76,6 @@ export default function UnionPage() {
           )}
         </section>
       </Container>
-    </>
+    </div>
   );
 }
