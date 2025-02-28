@@ -22,5 +22,6 @@ export enum Routes {
     SUPPORT = "/wesprzyj",
     POLICY = "/polityka-prywatnosci",
     REGULATIONS = "/regulamin",
-    VOLUNTEERS = "/wolontariusze"
+    VOLUNTEERS = "/wolontariusze",
+    ARCHIVE = "/archiwum",
 }
