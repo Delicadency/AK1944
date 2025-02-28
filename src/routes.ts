@@ -14,7 +14,7 @@ export enum Routes {
     HISTORY = "/historia",
     REGIMENT = "/historia/strzelcy",
     DEBICA_DISTRICT = "/historia/obwod-debica",
-    OPERATION = "/historia/operacja-burza",
+    OPERATION = "/historia/akcja-burza",
     LITERATURE = "/historia/literatura",
     PARTISAN_TRAIL = "/szlak-partyzancki",
     ORIGIN = "/szlak-partyzancki/geneza",

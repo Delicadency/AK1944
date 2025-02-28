@@ -24,7 +24,7 @@ export const historyNavData = [
   { href: Routes.HISTORY, label: "Historia" },
   { href: Routes.REGIMENT, label: "5. Pułk Strzelców Konnych" },
   { href: Routes.DEBICA_DISTRICT, label: "Obwód Dębica SZP-ZWZ-AK" },
-  { href: Routes.OPERATION, label: "Operacja Burza" },
+  { href: Routes.OPERATION, label: "Akcja \„Burza\”"},
   { href: Routes.LITERATURE, label: "Literatura" },
 ];
 

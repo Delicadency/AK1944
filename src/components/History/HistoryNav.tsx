@@ -24,7 +24,7 @@ export default function HistoryNav() {
         </li>
         <li className="flex items-center gap-5 desktop:flex-col">
           <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
-          <a href={Routes.OPERATION}>Akcja Burza</a>
+          <a href={Routes.OPERATION}>Akcja „Burza”</a>
         </li>
         <li className="flex items-center gap-5 desktop:flex-col">
           <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
