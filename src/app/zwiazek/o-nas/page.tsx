@@ -5,14 +5,14 @@ import { Heading } from "@/components/shared/Heading/Heading";
 
 export default function AboutUsPage() {
   return (
-    <section className="pb-10 tablet:pb-0">
+    <section>
       <BackgroundImage
         src="/images/aboutUs_bg.png"
         alt="AboutUs BackgroundImage"
         fill
         className="h-full bg-black00 object-center-100 tablet:object-[80%]"
       >
-        <Container className="flex flex-col items-start justify-center tablet:px-10 desktop:pl-[104px] desktop:pr-[647px]">
+        <Container className="flex flex-col items-start justify-center tablet:px-10 desktop:pl-24">
           <Breadcrumbs color="white" />
 
           <Heading
@@ -23,7 +23,7 @@ export default function AboutUsPage() {
             O nas
           </Heading>
 
-          <article className="flex flex-col items-center justify-center gap-6 pb-10 text-16 text-white tablet:text-18 desktop:text-justify">
+          <article className="flex max-w-2xl flex-col items-center justify-center gap-6 pb-10 text-16 text-white tablet:text-18 desktop:text-justify">
             <p>
               Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK) to organizacja
               skupiająca byłych żołnierzy Armii Krajowej oraz ich sympatyków.
@@ -44,7 +44,7 @@ export default function AboutUsPage() {
         </Container>
       </BackgroundImage>
 
-      <Container className="mt-5 flex flex-col items-center justify-center gap-6 text-16 text-black tablet:hidden tablet:text-18 desktop:text-justify">
+      <Container className="mt-5 flex flex-col items-center justify-center gap-6 pb-10 text-16 text-black tablet:hidden tablet:text-18 desktop:text-justify">
         <AboutUs />
       </Container>
     </section>
