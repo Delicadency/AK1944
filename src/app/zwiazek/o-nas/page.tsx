@@ -1,7 +1,7 @@
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
-import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
+import Container from "@/components/shared/Container";
 
 export default function AboutUsPage() {
   return (
