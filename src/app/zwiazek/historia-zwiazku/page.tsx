@@ -6,7 +6,6 @@ import IconBullet from "@/icons/IconBullet";
 import { Heading } from "@/components/shared/Heading/Heading";
 
 export default function UnionPage() {
-  const isContrastMode = () => document.documentElement.classList.contains('contrast');
   return (
     <div className="contrast:bg-black00 contrast:text-yellowContrast">
       <BackgroundImage
@@ -15,7 +14,7 @@ export default function UnionPage() {
         width="1440"
         height="641"
         className="max-h-[1200px] contrast:invisible tablet:max-h-[660px]"
-        aria-hidden={isContrastMode() ? "true" : undefined}
+        aria-hidden="true"
       >
         <Container
           as="article"
