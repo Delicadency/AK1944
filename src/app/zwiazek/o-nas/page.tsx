@@ -1,23 +1,11 @@
-"use client";
-import { useEffect, useState } from "react";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const AboutUs = () => {
-  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 767);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsWideScreen(window.innerWidth > 767);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isWideScreen = useMediaQuery("(min-width: 1024px)");
 
   return (
     <section className="pb-10 tablet:pb-0">
