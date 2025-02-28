@@ -58,7 +58,7 @@ export default function UnionPage() {
                   <ul>
                     {subsection.bulletpoints.map((point, i) => (
                       <li className="flex flex-row gap-6 pb-5" key={i}>
-                        <IconBullet size={24} className="flex-shrink-0 text-redMain contrast:text-yellowContrast" />
+                        <IconBullet size={24} className="flex-shrink-0 text-redMain contrast:text-yellowContrast" aria-hidden="true" />
                         <p>{point}</p>
                       </li>
                     ))}
