@@ -1,13 +1,18 @@
-import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
-import { Button } from "../shared/Button/Button";
-import Container from "../shared/Container";
+import { BackgroundImage } from "../BackgroundImage/BackgroundImage";
+import { Button } from "../Button/Button";
+import Container from "../Container";
 
-interface CalendarProps {
+interface CalendarCardProps {
   date: string | number;
   description: string;
+  hideButton?: boolean;
 }
 
-const Calendar = ({ date, description }: CalendarProps) => {
+export const CalendarCard = ({
+  date,
+  description,
+  hideButton = false,
+}: CalendarCardProps) => {
   const currentDate = new Date();
   const currentMonth = currentDate.toLocaleString("default", { month: "long" });
   const currentYear = currentDate.getFullYear();
@@ -18,8 +23,7 @@ const Calendar = ({ date, description }: CalendarProps) => {
       <BackgroundImage
         alt="calendar background"
         src="/images/calendar_background.png"
-        width={1920}
-        height={1080}
+        fill
       >
         <Container className="flex flex-col items-center justify-center py-4 font-lora">
           <h4 className="text-24 font-bold" aria-label="Rok i miesiąc">
@@ -39,21 +43,26 @@ const Calendar = ({ date, description }: CalendarProps) => {
             className="my-5 w-full border border-solid border-redMain contrast:border-black"
             aria-hidden
           />
-          <div className="mb-5 grid grid-cols-[auto_1fr] gap-2 font-sans">
-            <p className="text-16 font-bold">{date}</p>
-            <p className="relative text-16 before:absolute before:-left-[7px] before:content-['-']">
-              {description}
-            </p>
-          </div>
-          <Button
-            variant="primary"
-            label="Kalendarz uroczystości"
-            ariaDescription="Kalendarz uroczystości"
-          />
+          {description === "" ? (
+            ""
+          ) : (
+            <div className="mb-5 grid grid-cols-[auto_1fr] gap-2 font-sans">
+              <p className="text-16 font-bold">{date}</p>
+              <p className="relative text-16 before:absolute before:-left-[7px] before:content-['-']">
+                {description}
+              </p>
+            </div>
+          )}
+          {!hideButton && (
+            <Button
+              variant="primary"
+              label="Kalendarz uroczystości"
+              ariaDescription="Kalendarz uroczystości"
+              href="/zwiazek/kalendarz"
+            />
+          )}
         </Container>
       </BackgroundImage>
     </div>
   );
 };
-
-export default Calendar;
