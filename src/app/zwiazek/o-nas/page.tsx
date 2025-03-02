@@ -1,28 +1,30 @@
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
-import Container from "@/components/shared/Container";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { Heading } from "@/components/shared/Heading/Heading";
+import Container from "@/components/shared/Container";
 
-const AboutUs = () => {
+export default function AboutUsPage() {
   return (
-    <section className="pb-10 tablet:pb-0">
+    <section>
       <BackgroundImage
         src="/images/aboutUs_bg.png"
         alt="AboutUs BackgroundImage"
-        width={1458}
-        height={643}
-        className="-top-[105px] h-[643px] bg-black00 object-center-100 tablet:-top-0 tablet:object-[80%]"
+        fill
+        className="h-full bg-black00 object-center-100 tablet:object-[80%]"
       >
-        <Container className="flex h-full flex-col items-center justify-center tablet:px-10 desktop:pl-[104px] desktop:pr-[647px]">
+        <Container className="flex flex-col items-start justify-center tablet:px-10 desktop:pl-24">
+          <Breadcrumbs color="white" />
+
           <Heading
             contrast="yellow"
-            color="green"
-            className="mb-4 mt-[68px] self-start tablet:mb-12 tablet:text-white"
+            color="white"
+            className="my-4 self-start leading-9 tablet:mb-10 tablet:leading-10 tablet:text-white desktop:mt-5"
           >
             O nas
           </Heading>
 
-          <article className="flex flex-col items-center justify-center gap-6 desktop:text-justify">
-            <p className="text-16 text-white contrast:bg-yellowContrast tablet:text-18">
+          <article className="flex max-w-2xl flex-col items-center justify-center gap-6 pb-10 text-16 text-white tablet:text-18 desktop:text-justify">
+            <p>
               Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK) to organizacja
               skupiająca byłych żołnierzy Armii Krajowej oraz ich sympatyków.
               Powstała w 1990 roku i ma na celu upamiętnienie dziedzictwa AK,
@@ -34,24 +36,34 @@ const AboutUs = () => {
               młodzieżą, szkołami i organizacjami społecznymi, promując historię
               Armii Krajowej.
             </p>
-            <p className="text-16 text-black contrast:bg-yellowContrast tablet:text-18 tablet:text-white">
-              Związek dba o zachowanie pamięci historycznej poprzez wydawnictwa,
-              spotkania i współorganizowanie wydarzeń kulturalnych, takich jak
-              wystawy i projekcje filmowe. W wielu regionach Polski działa w
-              postaci lokalnych kół, które aktywnie włączają się w życie
-              lokalnych społeczności.
-            </p>
-            <p className="text-16 text-black contrast:bg-yellowContrast tablet:text-18 tablet:text-white">
-              Ze względu na starzenie się kombatantów, organizacja zmienia swój
-              charakter, coraz bardziej skupiając się na przekazywaniu wartości
-              kolejnym pokoleniom. Wspierają ją także osoby niezwiązane
-              bezpośrednio z AK, ale podzielające jej cele i misję.
-            </p>
+
+            <div className="hidden gap-6 tablet:flex tablet:flex-col">
+              <AboutUs />
+            </div>
           </article>
         </Container>
       </BackgroundImage>
+
+      <Container className="mt-5 flex flex-col items-center justify-center gap-6 pb-10 text-16 text-black tablet:hidden tablet:text-18 desktop:text-justify">
+        <AboutUs />
+      </Container>
     </section>
   );
-};
+}
 
-export default AboutUs;
+const AboutUs = () => (
+  <>
+    <p>
+      Związek dba o zachowanie pamięci historycznej poprzez wydawnictwa,
+      spotkania i współorganizowanie wydarzeń kulturalnych, takich jak wystawy i
+      projekcje filmowe. W wielu regionach Polski działa w postaci lokalnych
+      kół, które aktywnie włączają się w życie lokalnych społeczności.
+    </p>
+    <p>
+      Ze względu na starzenie się kombatantów, organizacja zmienia swój
+      charakter, coraz bardziej skupiając się na przekazywaniu wartości kolejnym
+      pokoleniom. Wspierają ją także osoby niezwiązane bezpośrednio z AK, ale
+      podzielające jej cele i misję.
+    </p>
+  </>
+);
