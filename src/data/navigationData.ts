@@ -10,7 +10,7 @@ export const navData = [
 ];
 
 export const homeArmyUnionNavData = [
-  { href: "/o-nas", label: "O nas" },
+  { href: "/zwiazek/o-nas", label: "O nas" },
   { href: "/zwiazek/zarzad", label: "Zarząd" },
   { href: "/zwiazek/historia-zwiazku", label: "Historia Związku" },
   { href: "/zwiazek/kalendarz", label: "Kalendarz uroczystości" },
@@ -33,7 +33,7 @@ export const partisanTrailData = [
 ];
 
 export const footerNavData = [
-  { href: "/o-nas", label: "O nas" },
+  { href: "/zwiazek/o-nas", label: "O nas" },
   { href: "/szlak-partyzancki/szlak", label: "Szlak Partyzancki" },
   { href: "/inwentarz-grobow", label: "Inwentarz grobów" },
   { href: "/partnerzy", label: "Partnerzy" },
