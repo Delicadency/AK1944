@@ -21,6 +21,7 @@ const AboutUsLanding = () => {
         </p>
         <Button
           label="Poznajmy się"
+          href="/zwiazek/o-nas"
           ariaDescription="Poznajmy się"
           variant="primary"
           className="contrast:bg-yellowContrast contrast:text-black00"
