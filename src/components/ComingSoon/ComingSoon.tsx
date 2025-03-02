@@ -4,7 +4,7 @@ import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray
 export const ComingSoon = () => (
   <section className="flex min-h-[70vh] items-center justify-center bg-white p-4">
     <article className="w-full max-w-2xl rounded-sm bg-greenMain p-4 font-lora text-white shadow-lg">
-      <header className="flex items-center justify-center p-2">
+      <header className="flex items-center justify-center p-4">
         <h2 className="text-2xl font-bold">Strona w przygotowaniu.</h2>
       </header>
 
