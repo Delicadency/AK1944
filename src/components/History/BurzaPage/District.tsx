@@ -1,0 +1,30 @@
+import { historyData } from "@/data/historyData";
+import { Heading } from "@/components/shared/Heading/Heading";
+import Image from "next/image";
+
+export const District = () => {
+  const { districtTitle, district1, district2, district3, district4 } =
+    historyData.burza ?? {};
+  return (
+    <section className="flex flex-col gap-6 desktop:flex-row">
+      <div className="flex flex-col gap-6">
+        <Heading variant="h4" color="green" contrast="yellow">
+          {districtTitle}
+        </Heading>
+        <p className="text-lg contrast:text-yellowContrast">{district1}</p>
+        <p className="text-lg contrast:text-yellowContrast">{district2}</p>
+        <p className="text-lg contrast:text-yellowContrast">{district3}</p>
+        <p className="text-lg contrast:text-yellowContrast">{district4}</p>
+      </div>
+      <Image
+        src="/images/history/burza/district.jpg"
+        alt="debica"
+        width={3470}
+        height={4670}
+        sizes="(max-width: 1279px) 35vw, 500px"
+        className="m-auto"
+        priority
+      />
+    </section>
+  );
+};

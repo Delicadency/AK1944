@@ -4,8 +4,8 @@ import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
-export default function DebicaDistrict() {
-  const { title, description } = historyData.debica;
+export const DebicaDistrict = () => {
+  const { title, description } = historyData.debica ?? {};
   return (
     <>
       <Container className="gap-[130px] desktop:flex">
@@ -17,19 +17,21 @@ export default function DebicaDistrict() {
         </div>
         <div>
           <Image
-            src="/images/history/main/debica_placeholder.jpg"
+            src="/images/history/debica/debica.jpeg"
             alt="debica"
-            width={1920}
+            width={500}
             height={1080}
-          ></Image>
+            className="justify-self-center"
+          />
         </div>
       </Container>
       <Button
         label="Zobacz więcej"
-        ariaDescription="Zobacze Więcej"
+        ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
-      ></Button>
+        href="/historia/obwod-debica"
+      />
     </>
   );
-}
+};
