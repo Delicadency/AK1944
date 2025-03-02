@@ -5,6 +5,7 @@ import IconXCircle from "@/icons/IconXCircle";
 import { HeaderLogo } from "../HeaderLogo";
 import { HeaderMobileNavigation } from "./HeaderMobileNavigation";
 import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray";
+import { Routes } from "@/routes";
 
 interface HeaderMobileMenuProps {
   onClose: () => void;
@@ -46,7 +47,7 @@ export const HeaderMobileMenu = ({ onClose }: HeaderMobileMenuProps) => {
           <Button
             label="Wesprzyj"
             ariaDescription="Kliknij, aby wesprzeć fundację"
-            href="/wesprzyj"
+            href={Routes.SUPPORT}
             className="self-center"
           />
           <ContrastSwitcher />
