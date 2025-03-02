@@ -1,7 +1,5 @@
-import * as React from "react";
 import { Button } from "../../shared/Button/Button";
 import Container from "../../shared/Container";
-import FontSwitcher from "../../Switcher/FontSwitcher";
 import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
 import IconXCircle from "@/icons/IconXCircle";
 import { HeaderLogo } from "../HeaderLogo";
@@ -12,9 +10,7 @@ interface HeaderMobileMenuProps {
   onClose: () => void;
 }
 
-export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
-  onClose,
-}) => {
+export const HeaderMobileMenu = ({ onClose }: HeaderMobileMenuProps) => {
   return (
     <Container>
       <div
@@ -26,7 +22,7 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
           <HeaderLogo />
 
           <p
-            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00 mediumFont:pb-[70px] largeFont:pb-[110px]"
+            className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00"
             aria-label="Światowy Związek Żołnierzy Armii Krajowej"
           >
             Światowy Związek Żołnierzy AK
@@ -46,18 +42,14 @@ export const HeaderMobileMenu: React.FC<HeaderMobileMenuProps> = ({
 
         <HeaderMobileNavigation />
 
-        <div className="flex flex-col gap-6 py-5">
-          <div className="flex h-[42px] flex-row justify-center">
-            <FontSwitcher />
-            <ContrastSwitcher />
-          </div>
-
+        <div className="flex items-center justify-center gap-6 py-8">
           <Button
             label="Wesprzyj"
             ariaDescription="Kliknij, aby wesprzeć fundację"
             href="/wesprzyj"
             className="self-center"
           />
+          <ContrastSwitcher />
         </div>
       </div>
     </Container>

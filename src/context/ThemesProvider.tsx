@@ -2,7 +2,6 @@
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { useEffect, useState } from "react";
-import { FontProvider } from "./FontProvider";
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [mounted, setMounted] = useState(false);
@@ -19,13 +18,10 @@ const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       value={{
         normal: "normal",
         contrast: "contrast",
-        normalFont: "normalFont",
-        mediumFont: "mediumFont",
-        largeFont: "largeFont",
       }}
       defaultTheme="normal"
     >
-      <FontProvider>{children}</FontProvider>
+      {children}
     </NextThemesProvider>
   );
 };
