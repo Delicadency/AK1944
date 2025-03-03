@@ -3,7 +3,7 @@ import { DefaultIconProps } from "@/types";
 interface Props extends DefaultIconProps {
   size?: number;
 }
-export default function IconBullet({ className, size }: Props) {
+export default function IconBullet({ className, size = 24 }: Props) {
   return (
     <svg
       className={className}
