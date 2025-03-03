@@ -8,6 +8,7 @@ export interface HeadingProps {
   contrast: "yellow" | "black";
   color: "green" | "white";
   className?: string;
+  align?: "start" | "center"; 
 }
 
 export const Heading = ({
@@ -17,6 +18,7 @@ export const Heading = ({
   contrast,
   color,
   className = "",
+  align = "start",
 }: HeadingProps) => {
   const getHeadingTag = () => {
     switch (variant) {
@@ -52,15 +54,22 @@ export const Heading = ({
     white: "text-white border-white",
   };
 
+  const alignClasses = {
+    start: "items-start",
+    center: "items-center",
+  };
+
   return (
-    <hgroup className="flex flex-col">
+    <hgroup
+      className={clsx("flex flex-col", alignClasses[align])} 
+    >
       <HeadingTag
         className={clsx(
           contrastStyle[contrast],
           variants[variant],
           colors[color],
           "font-lora font-bold",
-          className,
+          className
         )}
       >
         {children}
@@ -71,7 +80,7 @@ export const Heading = ({
           className={cn(
             "mt-2 w-[200px] border-t-2 border-solid",
             colors[color],
-            contrastStyle[contrast],
+            contrastStyle[contrast]
           )}
         />
       )}
