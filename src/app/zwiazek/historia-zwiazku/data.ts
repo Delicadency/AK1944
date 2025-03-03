@@ -1,7 +1,7 @@
 interface Paragraph {
   paragraph: string | string[];
 }
-interface Subsection extends Paragraph {
+export interface Subsection extends Paragraph {
   subtitle?: string;
   bulletpoints?: string[];
 }
@@ -48,4 +48,4 @@ export const unionData: ArticleStructure = {
     paragraph:
       "Dziś Światowy Związek Żołnierzy Armii Krajowej jest jednym z najważniejszych strażników pamięci o polskim ruchu oporu podczas II wojny światowej i Polskim Państwie Podziemnym. Działa na rzecz zachowania tej tradycji dla przyszłych pokoleń.i Krajowej jest jednym z najważniejszych strażników pamięci.",
   },
-} as const
+} as const;
