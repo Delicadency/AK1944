@@ -1,6 +1,7 @@
-import { BackgroundImage } from "../BackgroundImage/BackgroundImage";
-import { Button } from "../Button/Button";
-import Container from "../Container";
+import { Routes } from "@/routes";
+import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
+import { Button } from "../shared/Button/Button";
+import Container from "../shared/Container";
 
 interface CalendarCardProps {
   date: string | number;
@@ -58,7 +59,7 @@ export const CalendarCard = ({
               variant="primary"
               label="Kalendarz uroczystości"
               ariaDescription="Kalendarz uroczystości"
-              href="/zwiazek/kalendarz"
+              href={Routes.CALENDAR}
             />
           )}
         </Container>

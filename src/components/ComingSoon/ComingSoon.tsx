@@ -1,5 +1,6 @@
 import { Button } from "@/components/shared/Button/Button";
 import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray";
+import { Routes } from "@/routes";
 
 export const ComingSoon = () => (
   <section className="flex min-h-[70vh] items-center justify-center bg-white p-4">
@@ -32,7 +33,7 @@ export const ComingSoon = () => (
         <Button
           label="Powrót do strony głównej"
           ariaDescription="Powrót do strony głównej"
-          href="/"
+          href={Routes.HOME}
           className="text-center"
         />
       </footer>

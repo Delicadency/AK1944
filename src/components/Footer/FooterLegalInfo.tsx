@@ -1,3 +1,4 @@
+import { Routes } from "@/routes";
 import Link from "next/link";
 
 export const FooterLegalInfo = () => {
@@ -5,7 +6,7 @@ export const FooterLegalInfo = () => {
     <div className="mt-8 flex w-full flex-col gap-5 text-center">
       <p className="flex justify-center gap-5">
         <Link
-          href="/polityka-prywatnosci"
+          href={Routes.POLICY}
           className="text-16 transition-opacity hover:opacity-80"
           aria-label="Przejdź do strony Polityka prywatności"
           title="Przejdź do strony Polityka prywatności"
@@ -14,7 +15,7 @@ export const FooterLegalInfo = () => {
         </Link>
 
         <Link
-          href="/regulamin"
+          href={Routes.REGULATIONS}
           className="text-16 transition-opacity hover:opacity-80"
           aria-label="Przejdź do strony Regulamin"
           title="Przejdź do strony Regulamin"
@@ -26,7 +27,7 @@ export const FooterLegalInfo = () => {
       <p className="text-16">© 2025. All rights reserved.</p>
 
       <Link
-        href="/wolontariusze"
+        href={Routes.VOLUNTEERS}
         className="text-16 transition-opacity hover:opacity-80"
         aria-label="Przejdź do strony Wolontariuszy"
         title="Przejdź do strony Wolontariuszy"
