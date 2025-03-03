@@ -1,17 +1,19 @@
-interface Section {
-  subtitle?: string;
+interface Paragraph {
   paragraph: string | string[];
+}
+interface Subsection extends Paragraph {
+  subtitle?: string;
   bulletpoints?: string[];
 }
 
 interface ArticleStructure {
-  mainArticle: Section;
+  mainArticle: Paragraph;
   subsections: {
-    establishment: Section;
-    goals: Section;
-    development: Section;
+    establishment: Subsection;
+    goals: Subsection;
+    development: Subsection;
   };
-  addendum: Section;
+  addendum: Paragraph;
 }
 export const unionData: ArticleStructure = {
   mainArticle: {

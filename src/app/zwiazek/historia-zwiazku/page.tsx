@@ -1,7 +1,7 @@
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
-import { unionData } from "@/data/unionData";
+import { unionData } from "@/app/zwiazek/historia-zwiazku/data";
 import IconBullet from "@/icons/IconBullet";
 import { Heading } from "@/components/shared/Heading/Heading";
 
@@ -71,13 +71,14 @@ export default function UnionPage() {
             );
           })}
         </div>
-        
+
         <section className="gap-4 pt-5 font-courier text-14 leading-5 tablet:mx-auto tablet:w-[710px] tablet:gap-8 tablet:py-[60px]">
-          {Array.isArray(unionData.addendum.paragraph) ? (
-            unionData.addendum.paragraph.map((p, i) => <p key={i}>{p}</p>)
-          ) : (
-            <p>{unionData.addendum.paragraph}</p>
-          )}
+          {(Array.isArray(unionData.addendum.paragraph)
+            ? unionData.addendum.paragraph
+            : [unionData.addendum.paragraph]
+          ).map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
         </section>
       </Container>
     </div>
