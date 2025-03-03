@@ -11,9 +11,8 @@ export default function UnionPage() {
       <BackgroundImage
         src="/images/hero_background.png"
         alt="Zdjęcie przedstawiające strzelców konnych z biało czerwonymi proprcami"
-        width="1440"
-        height="641"
-        className="max-h-[1200px] contrast:invisible tablet:max-h-[660px]"
+        fill
+        className="max-h-[1200px] contrast:invisible tablet:h-[640px] tablet:max-h-[660px]"
         aria-hidden="true"
       >
         <Container
@@ -26,6 +25,7 @@ export default function UnionPage() {
             color="white"
             className="py-5 text-28 tablet:pb-10 desktop:text-32"
             contrast="yellow"
+            align="start"
           >
             Historia związku
           </Heading>
@@ -57,7 +57,11 @@ export default function UnionPage() {
                   <ul>
                     {subsection.bulletpoints.map((point, i) => (
                       <li className="flex flex-row gap-6 pb-5" key={i}>
-                        <IconBullet size={24} className="flex-shrink-0 text-redMain contrast:text-yellowContrast" aria-hidden="true" />
+                        <IconBullet
+                          size={24}
+                          className="flex-shrink-0 text-redMain contrast:text-yellowContrast"
+                          aria-hidden="true"
+                        />
                         <p>{point}</p>
                       </li>
                     ))}
@@ -67,6 +71,7 @@ export default function UnionPage() {
             );
           })}
         </div>
+        
         <section className="gap-4 pt-5 font-courier text-14 leading-5 tablet:mx-auto tablet:w-[710px] tablet:gap-8 tablet:py-[60px]">
           {Array.isArray(unionData.addendum.paragraph) ? (
             unionData.addendum.paragraph.map((p, i) => <p key={i}>{p}</p>)
