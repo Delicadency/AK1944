@@ -6,6 +6,7 @@ import IconBullet from "@/icons/IconBullet";
 import { Heading } from "@/components/shared/Heading/Heading";
 
 export default function UnionPage() {
+  const { mainArticle, subsections, addendum } = unionData;
   return (
     <div className="contrast:bg-black00 contrast:text-yellowContrast">
       <BackgroundImage
@@ -30,11 +31,12 @@ export default function UnionPage() {
             Historia związku
           </Heading>
           <section className="flex flex-col gap-4 pb-10 font-sourceSans contrast:text-yellowContrast tablet:w-[710px] tablet:gap-8">
-            {Array.isArray(unionData.mainArticle.paragraph) ? (
-              unionData.mainArticle.paragraph.map((p, i) => <p key={i}>{p}</p>)
-            ) : (
-              <p>{unionData.mainArticle.paragraph}</p>
-            )}
+            {(Array.isArray(mainArticle.paragraph)
+              ? mainArticle.paragraph
+              : [mainArticle.paragraph]
+            ).map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </section>
         </Container>
       </BackgroundImage>
@@ -44,9 +46,8 @@ export default function UnionPage() {
         className="pb-10 font-sourceSans text-16 leading-6 text-black contrast:text-yellowContrast tablet:text-18 tablet:leading-7"
       >
         <div className="tablet:w-[760px]">
-          {Object.keys(unionData.subsections).map((key) => {
-            const subsection =
-              unionData.subsections[key as keyof typeof unionData.subsections];
+          {Object.keys(subsections).map((key) => {
+            const subsection = subsections[key as keyof typeof subsections];
             return (
               <section className="pt-5" key={key}>
                 <h3 className="pb-4 font-lora text-24 font-bold leading-9 text-greenMain contrast:text-yellowContrast">
@@ -73,9 +74,9 @@ export default function UnionPage() {
         </div>
 
         <section className="gap-4 pt-5 font-courier text-14 leading-5 tablet:mx-auto tablet:w-[710px] tablet:gap-8 tablet:py-[60px]">
-          {(Array.isArray(unionData.addendum.paragraph)
-            ? unionData.addendum.paragraph
-            : [unionData.addendum.paragraph]
+          {(Array.isArray(addendum.paragraph)
+            ? addendum.paragraph
+            : [addendum.paragraph]
           ).map((p, i) => (
             <p key={i}>{p}</p>
           ))}
