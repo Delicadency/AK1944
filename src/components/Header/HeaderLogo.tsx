@@ -1,10 +1,11 @@
+import { Routes } from "@/routes";
 import Image from "next/image";
 import Link from "next/link";
 
 export const HeaderLogo = () => {
   return (
     <div className="w-[33px] tablet:w-[78px] desktop:w-[82px]">
-      <Link href="/">
+      <Link href={Routes.HOME}>
         <Image
           src="/images/logo.png"
           alt="Logo"

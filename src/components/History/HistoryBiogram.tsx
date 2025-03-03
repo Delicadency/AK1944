@@ -5,7 +5,10 @@ import { Heading } from "../shared/Heading/Heading";
 import { historyData } from "@/data/historyData";
 import Image from "next/image";
 import { Button } from "../shared/Button/Button";
+import { Routes } from "@/routes";
 // import { useMediaQuery } from "@/hooks/useMediaQuery";
+
+// ToDo: https://app.clickup.com/t/8698509d5
 
 export default function HistoryBiogram() {
   const { title, content } = historyData.history.biograms;
@@ -39,6 +42,7 @@ export default function HistoryBiogram() {
         label="Sprawdź"
         ariaDescription="Sprawdź"
         className="mt-6"
+        href={Routes.BIOGRAMS}
       ></Button>
     </Container>
     // </BackgroundImage>

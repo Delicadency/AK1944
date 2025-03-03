@@ -1,3 +1,4 @@
+import { Routes } from "@/routes";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
@@ -22,7 +23,7 @@ export const BecomeDonor = () => (
         </p>
         <Button
           variant="primary"
-          href="/wesprzyj"
+          href={Routes.SUPPORT}
           label="Wesprzyj"
           ariaDescription="Wesprzyj"
         />
