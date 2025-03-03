@@ -18,7 +18,7 @@ export const Heading = ({
   contrast,
   color,
   className = "",
-  align = "start",
+  align = "center",
 }: HeadingProps) => {
   const getHeadingTag = () => {
     switch (variant) {
