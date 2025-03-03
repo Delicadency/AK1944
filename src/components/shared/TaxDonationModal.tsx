@@ -25,7 +25,7 @@ export const TaxDonationModal = () => {
       />
       {isModalOpen && (
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
-          <div className="flex min-h-[269px] w-full flex-col justify-center overflow-hidden rounded-md bg-greenLight px-16 py-6 max-md:max-w-full max-md:px-5">
+          <div className="flex min-h-[269px] w-full flex-col justify-center gap-3 overflow-hidden rounded-md bg-greenLight px-16 py-6 max-md:max-w-full max-md:px-5">
             <Image
               src={opp}
               alt="Pomarańczowe logo organizacji pożytku publicznego (OPP) z napisem 'organizacja pożytku publicznego' oraz symbolem 1,5% w obramowanej ramce."

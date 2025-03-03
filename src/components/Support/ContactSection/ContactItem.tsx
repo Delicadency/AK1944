@@ -1,39 +1,77 @@
-interface Props {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
+import { IconMapPin } from "@/icons/IconMapPin";
+import { IconMail } from "@/icons/IconMail";
+import { IconPhone } from "@/icons/IconPhone";
+
+const enum ContactType {
+  ADDRESS = "Adres siedziby",
+  EMAIL = "E-mail",
+  PHONE = "Telefon",
 }
 
-export const ContactItem = ({ icon, label, value }: Props) => {
-  const formattedLabel = label.replace(/[^a-z0-9]/gi, "").toLowerCase();
+type ContactTypeLiteral = `${ContactType}`;
 
-  const renderValue = () => {
-    if (label.includes("E-mail")) {
-      return (
-        <a href={`mailto:${value}`}>
-          <strong>{value}</strong>
-        </a>
-      );
-    }
+interface Props {
+  contactType: ContactTypeLiteral;
+}
 
-    if (label.includes("Telefon")) {
-      return (
-        <a href={`tel:${value.replace(/\s/g, "")}`}>
-          <strong>{value}</strong>
-        </a>
-      );
-    }
+export const ContactItem = ({ contactType }: Props) => {
+  const { label, value, icon: Icon } = contacts[contactType];
 
-    return <strong>{value}</strong>;
-  };
+  const formattedLabel = formatLabel(label);
+  const href = getHref(contactType, value);
 
   return (
     <li className="flex items-center gap-x-6">
-      {icon}
+      <Icon className="size-6 tablet:size-7 desktop:size-8" />
+
       <div className="text-sm tablet:text-base desktop:text-lg">
-        <p id={`contact-${formattedLabel}`}>{label}</p>
-        <p aria-labelledby={`contact-${formattedLabel}`}>{renderValue()}</p>
+        <p id={formattedLabel}>{label}:</p>
+
+        <p aria-labelledby={formattedLabel}>
+          {href ? (
+            <a href={href}>
+              <strong>{value}</strong>
+            </a>
+          ) : (
+            <strong>{value}</strong>
+          )}
+        </p>
       </div>
     </li>
   );
 };
+
+const formatLabel = (label: string) =>
+  `contact-${label.replaceAll(/[^a-z0-9]/gi, "-").toLowerCase()}`;
+
+const getHref = (contactType: ContactTypeLiteral, value: string) => {
+  switch (contactType) {
+    case ContactType.EMAIL:
+      return `mailto:${value}`;
+
+    case ContactType.PHONE:
+      return `tel:${value.replace(/\s/g, "")}`;
+
+    case ContactType.ADDRESS:
+    default:
+      return null;
+  }
+};
+
+const contacts = {
+  [ContactType.ADDRESS]: {
+    label: ContactType.ADDRESS,
+    value: "39-200 Dębica, ul. Rzeszowska 15",
+    icon: IconMapPin,
+  },
+  [ContactType.EMAIL]: {
+    label: ContactType.EMAIL,
+    value: "ak.debica@gmail.com",
+    icon: IconMail,
+  },
+  [ContactType.PHONE]: {
+    label: ContactType.PHONE,
+    value: "+48 505 248 666",
+    icon: IconPhone,
+  },
+} as const;
