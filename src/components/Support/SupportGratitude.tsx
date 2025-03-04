@@ -1,5 +1,5 @@
-import { GratitudeIcon } from "./icons";
-import { Heading } from "../shared/Heading/Heading";
+import { Heading } from "@/components/shared/Heading/Heading";
+import { GratitudeIcon } from "./icons/GratitudeIcon";
 
 export const SupportGratitude = () => (
   <section

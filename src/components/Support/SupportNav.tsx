@@ -1,4 +1,7 @@
-import { ContactIcon, DonationIcon, PartnerIcon, TaxIcon } from "./icons";
+import { ContactIcon } from "./icons/ContactIcon";
+import { DonationIcon } from "./icons/DonationIcon";
+import { PartnerIcon } from "./icons/PartnerIcon";
+import { TaxIcon } from "./icons/TaxIcon";
 import { SupportNavItem } from "./SupportNavItem";
 
 export const SupportNav = () => (
