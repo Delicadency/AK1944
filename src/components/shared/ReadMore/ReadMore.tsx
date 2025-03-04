@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+
+import { useDisclosure } from "@/hooks/useDisclosure";
 
 interface ReadMoreProps {
   id: string;
@@ -14,7 +15,8 @@ export const ReadMore = ({
   amountOfWords = 30,
   className,
 }: ReadMoreProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const { isOpen, onToggle } = useDisclosure();
+
   const splittedText = excerpt.split(" ");
   const itCanOverflow = splittedText.length > amountOfWords;
   const beginText = itCanOverflow
@@ -24,7 +26,7 @@ export const ReadMore = ({
 
   const handleKeyboard = (e: React.KeyboardEvent) => {
     if (e.code === "Space" || e.code === "Enter") {
-      setIsExpanded(!isExpanded);
+      onToggle();
     }
   };
 
@@ -33,23 +35,20 @@ export const ReadMore = ({
       {beginText}
       {itCanOverflow && (
         <>
-          {!isExpanded && <span>... </span>}
-          <span
-            className={`${!isExpanded && "hidden"}`}
-            aria-hidden={!isExpanded}
-          >
+          {!isOpen && <span>... </span>}
+          <span className={`${!isOpen && "hidden"}`} aria-hidden={!isOpen}>
             {endText}
           </span>
           <span
             className="ml-2 underline"
             role="button"
             tabIndex={0}
-            aria-expanded={isExpanded}
+            aria-expanded={isOpen}
             aria-controls={id}
             onKeyDown={handleKeyboard}
-            onClick={() => setIsExpanded(!isExpanded)}
+            onClick={onToggle}
           >
-            {isExpanded ? "ukryj" : "czytaj więcej."}
+            {isOpen ? "ukryj" : "czytaj więcej."}
           </span>
         </>
       )}

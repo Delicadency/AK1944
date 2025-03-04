@@ -1,3 +1,4 @@
+import { AK_DATA } from "@/data/akData";
 import IconFacebook from "@/icons/IconFacebook";
 import IconInstagram from "@/icons/IconInstagram";
 import IconYoutube from "@/icons/IconYoutube";
@@ -10,7 +11,7 @@ interface Props {
 export const SocialMediaIconLink = {
   Facebook: ({ size }: Props) => (
     <a
-      href="https://www.facebook.com/Szlak.Partyzancki"
+      href={AK_DATA.socialMedia.facebook}
       title="Facebook"
       aria-label="Oficjalna strona Szlaku Partyzanckiego na Facebooku"
       target="_blank"
@@ -22,7 +23,7 @@ export const SocialMediaIconLink = {
   ),
   Instagram: ({ size }: Props) => (
     <a
-      href="https://www.instagram.com" // Todo: Update link https://app.clickup.com/t/8697u6n5a
+      href={AK_DATA.socialMedia.instagram}
       title="Instagram"
       aria-label="Oficjalna strona Szlaku Partyzanckiego na Instagramie"
       target="_blank"
@@ -34,7 +35,7 @@ export const SocialMediaIconLink = {
   ),
   YouTube: ({ size }: Props) => (
     <a
-      href="https://www.youtube.com/@armiakrajowadebica3809"
+      href={AK_DATA.socialMedia.youtube}
       title="YouTube"
       aria-label="Oficjalna strona Armii Krajowej Dębica na YouTube"
       target="_blank"
@@ -46,7 +47,7 @@ export const SocialMediaIconLink = {
   ),
   X: ({ size }: Props) => (
     <a
-      href="https://x.com/szlak"
+      href={AK_DATA.socialMedia.x}
       title="X"
       aria-label="Oficjalna strona Szlaku Partyzanckiego na X"
       target="_blank"
