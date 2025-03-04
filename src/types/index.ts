@@ -25,7 +25,12 @@ export type IconName =
   | "info"
   | "pin"
   | "send"
-  | "target";
+  | "target"
+  | "mail"
+  | "book"
+  | "briefcase"
+  | "phone"
+  | "dollar";
 
 export interface IconProps extends DefaultIconProps {
   name: IconName;
