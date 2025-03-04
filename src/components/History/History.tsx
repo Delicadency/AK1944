@@ -16,6 +16,7 @@ export default function History() {
       >
         <Container className="pb-36 pt-5 desktop:h-[912px]" as="section">
           <button>{`Domek :)`}</button>
+          {/* ToDo: https://app.clickup.com/t/869850703 */}
           <Heading
             variant="h3"
             contrast="yellow"

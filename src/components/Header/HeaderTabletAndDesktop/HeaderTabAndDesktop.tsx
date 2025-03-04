@@ -3,6 +3,7 @@ import { HeaderLogo } from "../HeaderLogo";
 import { Button } from "../../shared/Button/Button";
 import { firstNav, secondNav } from "@/data/headerData";
 import { HeaderNavigation } from "./HeaderNavigation";
+import { Routes } from "@/routes";
 
 export const HeaderTabAndDesktop = () => (
   <div className="flex items-center justify-between gap-2 py-5">
@@ -23,7 +24,7 @@ export const HeaderTabAndDesktop = () => (
       <Button
         label="Wesprzyj"
         ariaDescription="Kliknij, aby wesprzeć fundację"
-        href="/wesprzyj"
+        href={Routes.SUPPORT}
         aria-label="Kliknij, aby przejść do strony wsparcia"
       />
       <ContrastSwitcher aria-label="Przełącznik kontrastu" />

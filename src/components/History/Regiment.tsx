@@ -3,6 +3,7 @@ import Container from "../shared/Container";
 import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
+import { Routes } from "@/routes";
 
 export default function Regiment() {
   const { title, description } = historyData.regiment;
@@ -27,6 +28,7 @@ export default function Regiment() {
         ariaDescription="Zobacze Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
+        href={Routes.REGIMENT}
       ></Button>
     </>
   );
