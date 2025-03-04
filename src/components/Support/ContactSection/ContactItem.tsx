@@ -1,3 +1,4 @@
+import { AK_DATA } from "@/data/akData";
 import { IconMapPin } from "@/icons/IconMapPin";
 import { IconMail } from "@/icons/IconMail";
 import { IconPhone } from "@/icons/IconPhone";
@@ -61,17 +62,17 @@ const getHref = (contactType: ContactTypeLiteral, value: string) => {
 const contacts = {
   [ContactType.ADDRESS]: {
     label: ContactType.ADDRESS,
-    value: "39-200 Dębica, ul. Rzeszowska 15",
+    value: AK_DATA.address,
     icon: IconMapPin,
   },
   [ContactType.EMAIL]: {
     label: ContactType.EMAIL,
-    value: "ak.debica@gmail.com",
+    value: AK_DATA.email,
     icon: IconMail,
   },
   [ContactType.PHONE]: {
     label: ContactType.PHONE,
-    value: "+48 505 248 666",
+    value: AK_DATA.phone,
     icon: IconPhone,
   },
 } as const;

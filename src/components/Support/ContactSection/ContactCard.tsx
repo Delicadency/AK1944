@@ -1,5 +1,5 @@
-import { CardHeader } from "../CardHeader";
 import { SupportCard } from "../SupportCard";
+import { CardHeader } from "../SupportCard/CardHeader";
 import { ContactItem } from "./ContactItem";
 
 export const ContactCard = () => (

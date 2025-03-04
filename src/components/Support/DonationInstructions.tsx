@@ -1,3 +1,5 @@
+import { AK_DATA } from "@/data/akData";
+
 export const DonationInstructions = () => (
   <div className="text-greenMain max-md:max-w-full desktop:text-xl">
     <p>W swoim rocznym zeznaniu podatkowym (PIT)</p>
@@ -6,10 +8,10 @@ export const DonationInstructions = () => (
       className="list-disc pl-6"
     >
       <li>
-        wpisz numer KRS: <strong>0000113420</strong>
+        wpisz numer KRS: <strong>{AK_DATA.taxDonation.krs}</strong>
       </li>
       <li>
-        Podaj cel szczegółowy: <strong>Okręg Tarnów Koło Dębica</strong>
+        Podaj cel szczegółowy: <strong>{AK_DATA.taxDonation.purpose}</strong>
       </li>
       <li>Potwierdź swój wybór i złóż deklarację – to wszystko!</li>
     </ul>

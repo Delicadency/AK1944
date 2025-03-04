@@ -1,6 +1,6 @@
 import { TaxDonationModal } from "@/components/shared/TaxDonationModal";
 import LogoAK from "@/icons/LogoAK";
-import { CardHeader } from "../CardHeader";
+import { CardHeader } from "../SupportCard/CardHeader";
 import { SupportCard } from "../SupportCard";
 
 export const TaxCard = () => (

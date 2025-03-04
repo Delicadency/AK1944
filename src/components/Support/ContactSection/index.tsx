@@ -1,3 +1,4 @@
+import { AK_DATA } from "@/data/akData";
 import { SupportSection } from "../SupportSection";
 import { ContactCard } from "./ContactCard";
 
@@ -14,10 +15,10 @@ export const ContactSection = () => (
     <div>
       <p>Skontaktuj się z nami:</p>
       <p>
-        E-mail: <strong>ak.debica@gmail.com</strong>
+        E-mail: <strong>{AK_DATA.email}</strong>
       </p>
       <p>
-        Telefon: <strong>+48 505 248 666</strong>
+        Telefon: <strong>{AK_DATA.phone}</strong>
       </p>
     </div>
     <p>

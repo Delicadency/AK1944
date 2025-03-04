@@ -1,4 +1,5 @@
-import { CardHeader } from "../CardHeader";
+import { AK_DATA } from "@/data/akData";
+import { CardHeader } from "../SupportCard/CardHeader";
 import { SupportCard } from "../SupportCard";
 
 export const DonationCard = () => (
@@ -7,10 +8,10 @@ export const DonationCard = () => (
     <div className="mt-2 space-y-2 desktop:mt-4">
       <p>Nr konta bankowego:</p>
       <p>
-        <strong>Santander Bank Polska</strong>
+        <strong>{AK_DATA.bankName}</strong>
       </p>
       <p>
-        <strong>41 1090 2590 0000 0001 5299 0666</strong>
+        <strong>{AK_DATA.bankAccountNumber}</strong>
       </p>
     </div>
   </SupportCard>
