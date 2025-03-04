@@ -8,10 +8,10 @@ export const DonationCard = () => (
     <div className="mt-2 space-y-2 desktop:mt-4">
       <p>Nr konta bankowego:</p>
       <p>
-        <strong>{AK_DATA.bankName}</strong>
+        <strong>{AK_DATA.bank.name}</strong>
       </p>
       <p>
-        <strong>{AK_DATA.bankAccountNumber}</strong>
+        <strong>{AK_DATA.bank.accountNumber}</strong>
       </p>
     </div>
   </SupportCard>

@@ -8,8 +8,10 @@ export const AK_DATA = {
     youtube: "https://www.youtube.com/@armiakrajowadebica3809",
     x: "https://x.com/szlak",
   },
-  bankName: "Santander Bank Polska",
-  bankAccountNumber: "41 1090 2590 0000 0001 5299 0666",
+  bank: {
+    name: "Santander Bank Polska",
+    accountNumber: "41 1090 2590 0000 0001 5299 0666",
+  },
   taxDonation: {
     krs: "0000113420",
     purpose: "Okręg Tarnów Koło Dębica",
