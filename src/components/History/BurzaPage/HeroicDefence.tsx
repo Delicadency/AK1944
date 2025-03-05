@@ -24,6 +24,7 @@ export const HeroicDefence = () => {
         width={2000}
         height={1300}
         className="m-auto"
+        sizes="(max-width: 1279px) 50vw, 35vw"
       />
       <p className="text-lg contrast:text-yellowContrast">{heroicDefence3}</p>
       <p className="text-lg contrast:text-yellowContrast">{heroicDefence4}</p>

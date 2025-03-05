@@ -8,6 +8,7 @@ import { Places } from "@/components/History/DebicaPage/Places";
 import { Readiness } from "@/components/History/DebicaPage/Readiness";
 import { Expansion } from "@/components/History/DebicaPage/Expansion";
 import { useState } from "react";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 export default function DebicaDistrictPage() {
   const { title } = historyData.debica ?? {};
@@ -16,6 +17,7 @@ export default function DebicaDistrictPage() {
   const toggleReadMore = async (newState: boolean) => {
     setReadMore(newState);
   };
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
     <div className="contrast:bg-black">
@@ -26,8 +28,8 @@ export default function DebicaDistrictPage() {
         <Fortress />
         <Beginnings />
         <Places onToggle={toggleReadMore} />
-        {readMore && <Readiness />}
-        {readMore && <Expansion />}
+        {isMobile ? readMore && <Readiness /> : <Readiness />}
+        {isMobile ? readMore && <Expansion /> : <Expansion />}
       </Container>
     </div>
   );
