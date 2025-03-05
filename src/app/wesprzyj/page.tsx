@@ -2,12 +2,12 @@ import { Metadata } from "next";
 
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
-import { ContactSection } from "@/components/Support/ContactSection";
-import { DonationSection } from "@/components/Support/DonationSection";
-import { PartnerSection } from "@/components/Support/PartnerSection";
-import { SupportGratitude } from "@/components/Support/SupportGratitude";
-import { SupportNav } from "@/components/Support/SupportNav";
-import { TaxSection } from "@/components/Support/TaxSection";
+import { ContactSection } from "./_components/ContactSection";
+import { DonationSection } from "./_components/DonationSection";
+import { PartnerSection } from "./_components/PartnerSection";
+import { SupportGratitude } from "./_components/SupportGratitude";
+import { SupportNav } from "./_components/SupportNav";
+import { TaxSection } from "./_components/TaxSection";
 
 export const metadata: Metadata = {
   title: "Wesprzyj",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 export default function SupportPage() {
   return (
     <div className="bg-backgroundMain pb-20 text-greenMain">
-      <Container className="space-y-20">
+      <Container as="main" className="space-y-20">
         <div className="space-y-4 desktop:space-y-10">
           <Breadcrumbs />
           <SupportNav />

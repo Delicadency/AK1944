@@ -5,8 +5,8 @@ import Image from "next/image";
 
 import { AK_DATA } from "@/data/akData";
 import { useDisclosure } from "@/hooks/useDisclosure";
-import { DonationInstructions } from "../Support/DonationInstructions";
 import { Button } from "./Button/Button";
+import { DonationInstructions } from "./DonationInstructions";
 import opp from "../../../public/images/support/opp.png";
 import pit from "../../../public/images/support/pit.png";
 

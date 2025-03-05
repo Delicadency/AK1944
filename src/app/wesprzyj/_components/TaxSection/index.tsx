@@ -1,5 +1,5 @@
 import { Heading } from "@/components/shared/Heading/Heading";
-import { DonationInstructions } from "../DonationInstructions";
+import { DonationInstructions } from "@/components/shared/DonationInstructions";
 import { SupportSection } from "../SupportSection";
 import { TaxCard } from "./TaxCard";
 
