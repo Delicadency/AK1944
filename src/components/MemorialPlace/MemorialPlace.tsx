@@ -1,6 +1,6 @@
 import { PlaceDetails } from "@/types/index";
 import { Button } from "@/components/shared/Button/Button";
-import IconMapPin from "@/icons/IconMapPin";
+import { IconMapPin } from "@/icons/IconMapPin";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
@@ -37,7 +37,7 @@ export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
       <div className="desktop:grid desktop:grid-cols-2 desktop:gap-6">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2 text-greenB">
-            <IconMapPin name="pin" className="h-4 w-4" />
+            <IconMapPin className="size-4" aria-hidden="true" />
             <Heading
               variant="h4"
               className="text-[1.25rem] tablet:text-[1.75rem] desktop:text-[1.5rem]"
