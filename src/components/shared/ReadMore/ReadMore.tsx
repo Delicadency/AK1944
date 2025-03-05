@@ -15,7 +15,7 @@ export const ReadMore = ({
   amountOfWords = 30,
   className,
 }: ReadMoreProps) => {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, toggle } = useDisclosure();
 
   const splittedText = excerpt.split(" ");
   const itCanOverflow = splittedText.length > amountOfWords;
@@ -26,7 +26,7 @@ export const ReadMore = ({
 
   const handleKeyboard = (e: React.KeyboardEvent) => {
     if (e.code === "Space" || e.code === "Enter") {
-      onToggle();
+      toggle();
     }
   };
 
@@ -46,7 +46,7 @@ export const ReadMore = ({
             aria-expanded={isOpen}
             aria-controls={id}
             onKeyDown={handleKeyboard}
-            onClick={onToggle}
+            onClick={toggle}
           >
             {isOpen ? "ukryj" : "czytaj więcej."}
           </span>

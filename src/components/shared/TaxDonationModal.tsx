@@ -15,18 +15,18 @@ const Modal = dynamic(() => import("../Modal/Modal").then((mod) => mod.Modal), {
 });
 
 export const TaxDonationModal = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, open, close } = useDisclosure();
 
   return (
     <>
       <Button
         label="Przekaż podatek"
         ariaDescription="Przekaż podatek"
-        onClick={onOpen}
+        onClick={open}
       />
 
       {isOpen && (
-        <Modal isOpen={isOpen} onClose={onClose}>
+        <Modal isOpen={isOpen} onClose={close}>
           <div className="flex min-h-[269px] w-full flex-col justify-center gap-3 overflow-hidden rounded-md bg-greenLight px-16 py-6 max-md:max-w-full max-md:px-5">
             <Image
               src={opp}

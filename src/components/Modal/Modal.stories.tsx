@@ -31,12 +31,12 @@ export default {
 } as Meta;
 
 const InteractiveTemplate: StoryFn<ModalProps> = (args) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, open, close } = useDisclosure();
 
   return (
     <div>
-      <button onClick={onOpen}>Open Modal</button>
-      <Modal {...args} isOpen={isOpen} onClose={onClose} />
+      <button onClick={open}>Open Modal</button>
+      <Modal {...args} isOpen={isOpen} onClose={close} />
     </div>
   );
 };

@@ -6,11 +6,11 @@ import { HeaderLogo } from "../HeaderLogo";
 import { HeaderMobileMenu } from "./HeaderMobileMenu";
 
 export const HeaderMobile = () => {
-  const { isOpen, onToggle, onClose } = useDisclosure();
+  const { isOpen, toggle, close } = useDisclosure();
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   const handleToggle = () => {
-    onToggle();
+    toggle();
     if (!isOpen && menuButtonRef.current) {
       menuButtonRef.current.focus();
     }
@@ -43,7 +43,7 @@ export const HeaderMobile = () => {
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >
-        <HeaderMobileMenu onClose={onClose} />
+        <HeaderMobileMenu onClose={close} />
       </div>
     </div>
   );

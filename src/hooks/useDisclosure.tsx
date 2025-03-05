@@ -3,22 +3,22 @@ import { useState, useCallback } from "react";
 export const useDisclosure = (initialState = false) => {
   const [isOpen, setIsOpen] = useState(initialState);
 
-  const onOpen = useCallback(() => {
+  const open = useCallback(() => {
     setIsOpen(true);
   }, []);
 
-  const onClose = useCallback(() => {
+  const close = useCallback(() => {
     setIsOpen(false);
   }, []);
 
-  const onToggle = useCallback(() => {
+  const toggle = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);
 
   return {
     isOpen,
-    onOpen,
-    onClose,
-    onToggle,
+    open,
+    close,
+    toggle,
   };
 };
