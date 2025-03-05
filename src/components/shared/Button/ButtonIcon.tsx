@@ -6,9 +6,9 @@ import IconFileText from "@/icons/IconFileText";
 import IconGift from "@/icons/IconGift";
 import IconHelpCircle from "@/icons/IconHelpCircle";
 import IconInfo from "@/icons/IconInfo";
-import IconMapPin from "@/icons/IconMapPin";
 import IconSend from "@/icons/IconSend";
 import IconTarget from "@/icons/IconTarget";
+import { IconMapPin } from "@/icons/IconMapPin";
 import { IconProps } from "@/types";
 
 const iconMap: Record<string, React.ElementType> = {
