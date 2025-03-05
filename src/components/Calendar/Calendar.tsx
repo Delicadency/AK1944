@@ -1,3 +1,4 @@
+import { Routes } from "@/routes";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
@@ -49,6 +50,7 @@ const Calendar = ({ date, description }: CalendarProps) => {
             variant="primary"
             label="Kalendarz uroczystości"
             ariaDescription="Kalendarz uroczystości"
+            href={Routes.CALENDAR}
           />
         </Container>
       </BackgroundImage>

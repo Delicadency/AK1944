@@ -31,12 +31,17 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
     white: "fill-white",
   };
   const iconChevronColor = {
-    green: "stroke-greenMain",
-    white: "stroke-white",
+    green: "text-greenMain",
+    white: "text-white",
   };
   const textColor = {
     green: "text-greenMain",
-    white: "text-white",
+    white: "text-white ",
+  };
+
+  const houseIconColor = {
+    green: "white",
+    white: "#163020", // greenMain,
   };
 
   const pathname = usePathname();
@@ -55,7 +60,10 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
       <ol className="flex flex-row items-center gap-2">
         <li className="flex flex-row items-center justify-center">
           <Link href="/" className="flex items-center justify-center gap-2">
-            <IconBackHome className={clsx(iconFillColor[color])} />
+            <IconBackHome
+              className={clsx(iconFillColor[color])}
+              house={houseIconColor[color]}
+            />
             <IconChevronDown
               className={clsx(iconChevronColor[color], "-rotate-90")}
             />

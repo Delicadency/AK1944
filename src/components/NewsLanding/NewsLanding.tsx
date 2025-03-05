@@ -4,6 +4,7 @@ import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
 import { NewsItem } from "../shared/NewsItem/NewsItem";
 import { getPosts } from "@/dataAccess/posts";
+import { Routes } from "@/routes";
 
 const NewsLanding = async () => {
   const [posts, error] = await getPosts(2);
@@ -41,6 +42,7 @@ const NewsLanding = async () => {
           label="Przejdź do archiwum"
           ariaDescription="Przejdź do archiwum"
           className="bg-transparent py-0 underline shadow-none contrast:bg-transparent contrast:text-black"
+          href={Routes.ARCHIVE}
         />
       </div>
     </section>
