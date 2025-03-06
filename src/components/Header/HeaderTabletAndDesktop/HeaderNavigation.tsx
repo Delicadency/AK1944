@@ -15,9 +15,6 @@ export const HeaderNavigation = ({
   navItems,
   baseIndex = 0,
 }: HeaderNavigationProps) => {
-  const classes =
-    "contrast:text-black00 hover:text-yellowVintage leading-6 transition duration-300 ease-in-out active:text-blue";
-
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -50,11 +47,9 @@ export const HeaderNavigation = ({
             >
               <ActiveLink
                 className={cn(
-                  classes,
-                  "text-16 text-white",
-                  [0, 4, 5].includes(actualIndex)
-                    ? "flex items-center gap-2 tablet:relative"
-                    : "",
+                  "text-16 leading-6 text-white",
+                  [0, 4, 5].includes(actualIndex) &&
+                    "flex items-center gap-2 tablet:relative",
                 )}
                 href={href}
                 onClick={(e) => {
@@ -75,7 +70,7 @@ export const HeaderNavigation = ({
                 {subMenuData && (
                   <IconChevronDown
                     className={cn(
-                      "h-4 w-4 transition-transform duration-300 ease-in-out desktop:h-5 desktop:w-5",
+                      "size-4 transition-transform duration-300 ease-in-out desktop:size-5",
                       openIndex === actualIndex ? "rotate-180" : "rotate-0",
                     )}
                     aria-hidden="true"
@@ -96,7 +91,6 @@ export const HeaderNavigation = ({
                       >
                         <ActiveLink
                           href={subHref}
-                          className="text-16 text-white transition duration-300 ease-in-out hover:text-yellowVintage active:text-blue contrast:text-black00"
                           onClick={handleSubMenuLinkClick}
                           aria-label={`Przejdź do ${subLabel}`}
                         >
