@@ -12,6 +12,7 @@ interface Props<T extends string> extends LinkProps<T> {
   exact?: boolean;
   className?: string;
   activeClassName?: string;
+  title?: string;
 }
 
 export const ActiveLink = <T extends string>({
@@ -19,13 +20,15 @@ export const ActiveLink = <T extends string>({
   children,
   exact = true,
   className,
-  activeClassName,
+  activeClassName = "font-bold text-yellowVintage",
+  title,
   ...rest
 }: Props<T>) => {
   const pathname = usePathname();
 
-  const url = typeof href === "object" ? href.pathname : href;
-  const query = typeof href === "object" ? href.query : {};
+  const isHrefObject = typeof href === "object";
+  const url = isHrefObject ? href.pathname : href;
+  const query = isHrefObject ? href.query : {};
   const isActive = exact ? pathname === url : pathname.includes(url!);
 
   return (
@@ -35,7 +38,12 @@ export const ActiveLink = <T extends string>({
         query,
       }}
       aria-current={isActive ? "page" : undefined}
-      className={cn(className, isActive && activeClassName)}
+      title={title}
+      className={cn(
+        "text-white transition duration-300 ease-in-out hover:text-yellowVintage contrast:text-black00",
+        className,
+        isActive && activeClassName,
+      )}
       {...rest}
     >
       {children}
