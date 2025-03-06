@@ -29,5 +29,3 @@ export const IconArrowCircle = ({ className }: DefaultIconProps) => (
     />
   </svg>
 );
-
-export default IconArrowCircle;

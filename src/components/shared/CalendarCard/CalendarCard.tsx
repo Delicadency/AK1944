@@ -1,7 +1,7 @@
 import { Routes } from "@/routes";
-import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
-import { Button } from "../shared/Button/Button";
-import Container from "../shared/Container";
+import { BackgroundImage } from "../BackgroundImage/BackgroundImage";
+import { Button } from "../Button/Button";
+import Container from "../Container";
 
 interface CalendarCardProps {
   date: string | number;
