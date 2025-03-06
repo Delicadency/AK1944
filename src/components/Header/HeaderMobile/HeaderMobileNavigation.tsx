@@ -1,11 +1,9 @@
-import * as React from "react";
-import { useState } from "react";
-import { cn } from "@/utils";
-import { SubmenuItem } from "@/types";
+import { Fragment, useState } from "react";
 import { ActiveLink } from "@/components/shared/ActiveLink";
 import { customOrder, submenuData } from "@/data/headerData";
 import { navData } from "@/data/navigationData";
 import { IconChevronDown } from "@/icons/IconChevronDown";
+import { cn } from "@/utils";
 
 export const HeaderMobileNavigation = () => {
   const [openSubmenuIndex, setOpenSubmenuIndex] = useState<number | null>(null);
@@ -23,7 +21,7 @@ export const HeaderMobileNavigation = () => {
     <nav aria-label="Główna nawigacja">
       <ul className="flex flex-col gap-5">
         {orderedNavData.map(({ href, label }, index) => (
-          <React.Fragment key={index}>
+          <Fragment key={index}>
             <li className="text-backgroundMain">
               {submenuData[index] ? (
                 <button
@@ -39,9 +37,10 @@ export const HeaderMobileNavigation = () => {
                 >
                   <span>{label}</span>
                   <IconChevronDown
-                    className={`ml-1 h-5 w-5 transform transition duration-300 ease-in-out ${
-                      openSubmenuIndex === index ? "rotate-180" : ""
-                    }`}
+                    className={cn(
+                      "ml-1 size-5 transform transition duration-300 ease-in-out",
+                      openSubmenuIndex === index && "rotate-180",
+                    )}
                   />
                 </button>
               ) : (
@@ -56,9 +55,10 @@ export const HeaderMobileNavigation = () => {
               {submenuData[index] && (
                 <ul
                   id={`submenu-${index}`}
-                  className={`ml-4 flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${
-                    openSubmenuIndex === index ? "max-h-screen" : "max-h-0"
-                  }`}
+                  className={cn(
+                    "ml-4 flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out",
+                    openSubmenuIndex === index ? "max-h-screen" : "max-h-0",
+                  )}
                   data-testid={`submenu-${index}`}
                   aria-hidden={openSubmenuIndex !== index}
                   style={{
@@ -66,10 +66,7 @@ export const HeaderMobileNavigation = () => {
                   }}
                 >
                   {submenuData[index]?.map(
-                    (
-                      { href: subHref, label: subLabel }: SubmenuItem,
-                      subIndex: number,
-                    ) => (
+                    ({ href: subHref, label: subLabel }, subIndex: number) => (
                       <li key={subIndex} className="first:mt-2">
                         <ActiveLink
                           href={subHref}
@@ -91,7 +88,7 @@ export const HeaderMobileNavigation = () => {
                 data-testid="separator"
               />
             )}
-          </React.Fragment>
+          </Fragment>
         ))}
       </ul>
     </nav>
