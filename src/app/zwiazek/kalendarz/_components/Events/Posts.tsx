@@ -1,16 +1,18 @@
-"use client";
-import { useState } from "react";
-import { cardsPlaceholder } from "@/components/Calendar/Events/List";
-import { Card } from "@/components/Calendar/Events/Card";
+import { cardsPlaceholder } from "@/app/zwiazek/kalendarz/_components/Events/List";
+import { Card } from "@/app/zwiazek/kalendarz/_components/Events/Card";
 import { Button } from "@/components/shared/Button/Button";
 
-export const Posts = () => {
- const [postsToShow, setPostsToShow] = useState(3);
+interface PostsProps {
+  currentDate: Date;
+  handleShowMore: () => void;
+  postsToShow: number;
+}
 
-  const handleShowMore = () => {
-    setPostsToShow((prev) => prev + 3);
-  };
-
+export const Posts = ({
+  currentDate,
+  handleShowMore,
+  postsToShow,
+}: PostsProps) => {
   const showMoreButton =
     postsToShow <
     cardsPlaceholder.filter((card) => {
@@ -19,7 +21,7 @@ export const Posts = () => {
     }).length;
 
   return (
-    <article className="flex w-full flex-col items-center gap-5">
+    <article className="flex w-full flex-col items-center gap-5 tablet:gap-10">
       {cardsPlaceholder
         .filter((card) => {
           const [, month] = card.date.split(".").map(Number);

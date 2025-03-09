@@ -1,36 +1,24 @@
-"use client";
-
-import { IconArrowCircle } from "@/icons/IconArrowCircle";
-import { addMonth, months } from "@/components/Calendar/Dates/Dates";
-import { useState } from "react";
 import clsx from "clsx";
+import { IconArrowCircle } from "@/icons/IconArrowCircle";
+import { months } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
 
 interface CalendarHeaderProps {
-  date: Date;
+  currentDate: Date;
   className?: string;
   iconClassName?: string;
+  handlePrevMonth: () => void;
+  handleNextMonth: () => void;
 }
 
 export const CalendarHeader = ({
-  date,
+  currentDate,
   className,
   iconClassName,
+  handlePrevMonth,
+  handleNextMonth,
 }: CalendarHeaderProps) => {
-  const [currentDate, setCurrentDate] = useState(date);
-  const [, setPostsToShow] = useState(3);
-
-  const handleNextMonth = () => {
-    setCurrentDate(addMonth(currentDate, 1));
-    setPostsToShow(3);
-  };
-
-  const handlePrevMonth = () => {
-    setCurrentDate(addMonth(currentDate, -1));
-    setPostsToShow(3);
-  };
-
   return (
-    <div className={clsx("flex items-center gap-5", className)}>
+    <div className={clsx("flex items-center gap-5 font-lora", className)}>
       <button onClick={handlePrevMonth} aria-label="Poprzedni miesiąc">
         <IconArrowCircle className={clsx("rotate-180", iconClassName)} />
       </button>
