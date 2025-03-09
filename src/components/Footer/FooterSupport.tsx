@@ -8,7 +8,7 @@ export const FooterSupport = () => (
     <p>Nr konta:</p>
     <p>{AK_DATA.bank.accountNumber}</p>
 
-    <Link href={`${Routes.SUPPORT}#donation-section`}>
+    <Link href={Routes.SUPPORT_DONATION}>
       <Image src="/images/Blik.png" alt="Logo Blik" width={68} height={32} />
     </Link>
   </article>
