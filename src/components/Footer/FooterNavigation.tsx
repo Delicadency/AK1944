@@ -1,5 +1,6 @@
 import { ActiveLink } from "@/components/shared/ActiveLink";
 import { navigationData } from "@/data/footerNavigationData";
+import { type NavItem } from "@/types";
 
 export const FooterNavigation = () => (
   <nav className="flex w-full flex-1 flex-col justify-center gap-8 md:flex-row md:items-center md:justify-around lg:justify-center lg:space-x-6 xl:space-x-8">
@@ -10,7 +11,7 @@ export const FooterNavigation = () => (
 );
 
 interface NavigationSectionProps {
-  links: (typeof navigationData)[number]["links"];
+  links: NavItem[];
 }
 
 const NavigationSection = ({ links }: NavigationSectionProps) => (

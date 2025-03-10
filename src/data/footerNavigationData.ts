@@ -1,6 +1,10 @@
 import { Routes } from "@/routes";
+import { NavItem } from "@/types";
 
-export const navigationData = [
+export const navigationData: {
+  section: string;
+  links: NavItem[];
+}[] = [
   {
     section: "Główna",
     links: [
