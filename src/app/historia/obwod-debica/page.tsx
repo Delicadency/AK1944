@@ -9,6 +9,7 @@ import { Readiness } from "@/components/History/DebicaPage/Readiness";
 import { Expansion } from "@/components/History/DebicaPage/Expansion";
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function DebicaDistrictPage() {
   const { title } = historyData.debica ?? {};
@@ -22,6 +23,7 @@ export default function DebicaDistrictPage() {
   return (
     <div className="contrast:bg-black">
       <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+        <Breadcrumbs />
         <Heading variant="h3" color="green" contrast="yellow" className="mb-6">
           {title}
         </Heading>

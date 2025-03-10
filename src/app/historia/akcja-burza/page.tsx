@@ -11,6 +11,7 @@ import { Partisan } from "@/components/History/BurzaPage/Partisan";
 import { Evacuation } from "@/components/History/BurzaPage/Evacuation";
 import { Epilog } from "@/components/History/BurzaPage/Epilog";
 import { Footnotes } from "@/components/History/BurzaPage/Footnotes";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function OperationBurzaPage() {
   const { title } = historyData.burza ?? {};
@@ -18,6 +19,7 @@ export default function OperationBurzaPage() {
   return (
     <div className="contrast:bg-black">
       <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+        <Breadcrumbs />
         <Heading variant="h3" color="green" contrast="yellow" className="mb-6">
           {title}
         </Heading>

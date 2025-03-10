@@ -2,6 +2,7 @@ import { Heading } from "../shared/Heading/Heading";
 import { historyData as txt } from "@/data/historyData";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
+import { Breadcrumbs } from "../shared/Breadcrumbs/Breadcrumbs";
 
 export const History = () => {
   const { title, description1, description2, description3, description4 } =
@@ -16,7 +17,7 @@ export const History = () => {
         className="absolute z-0 w-full object-cover desktop:h-[912px] desktop:object-fill"
       >
         <Container className="pb-36 pt-5 desktop:h-[912px]" as="section">
-          <button>{`Domek :)`}</button>
+          <Breadcrumbs />
           {/* ToDo: https://app.clickup.com/t/869850703 */}
           <Heading
             variant="h3"
