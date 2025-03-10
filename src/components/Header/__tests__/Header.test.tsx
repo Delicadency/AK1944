@@ -8,7 +8,7 @@ describe("Header component", () => {
     expect(screen.getByRole("banner")).toBeInTheDocument();
   });
 
-  it("renders HeaderMobile when on a mobile screen", async () => {
+  it("renders HeaderMobile when on a mobile screen", () => {
     render(<Header />);
 
     expect(screen.getByTestId("header-mobile")).toBeInTheDocument();
