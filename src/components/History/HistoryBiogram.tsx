@@ -6,11 +6,12 @@ import { historyData } from "@/data/historyData";
 import Image from "next/image";
 import { Button } from "../shared/Button/Button";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Routes } from "@/routes";
 
 export const HistoryBiogram = () => {
   const { title, content } = historyData.history.biograms ?? {};
   const isSmallScreen = useMediaQuery("(max-width: 1280px)");
-
+  // ToDo: https://app.clickup.com/t/8698509d5
   return (
     <BackgroundImage
       alt=""
@@ -42,7 +43,7 @@ export const HistoryBiogram = () => {
           label="Sprawdź"
           ariaDescription="Sprawdź"
           className="mt-6"
-          href="/biogramy"
+          href={Routes.BIOGRAMS}
         ></Button>
       </Container>
     </BackgroundImage>

@@ -8,6 +8,7 @@ interface AboutUsLandingCardProps {
   heading: string;
   description: string;
   buttonLabel: string;
+  href?: string;
 }
 
 const AboutUsLandingCard = ({
@@ -15,6 +16,7 @@ const AboutUsLandingCard = ({
   heading,
   description,
   buttonLabel,
+  href,
 }: AboutUsLandingCardProps) => {
   return (
     <Container className="flex w-[320px] flex-col items-center gap-6 rounded bg-greenMain py-5 contrast:bg-yellowContrast tablet:w-[395px] tablet:flex-shrink-0 tablet:snap-start tablet:gap-3 tablet:px-6 desktop:snap-none">
@@ -36,7 +38,7 @@ const AboutUsLandingCard = ({
       <p className="text-white contrast:text-black tablet:mb-1">
         {description}
       </p>
-      <Button label={buttonLabel} ariaDescription={buttonLabel} />
+      <Button label={buttonLabel} ariaDescription={buttonLabel} href={href}/>
     </Container>
   );
 };

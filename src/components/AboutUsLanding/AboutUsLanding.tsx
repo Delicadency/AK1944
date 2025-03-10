@@ -2,6 +2,7 @@ import { Button } from "../shared/Button/Button";
 import Container from "../shared/Container";
 import { Heading } from "../shared/Heading/Heading";
 import AboutUsLandingCard from "../shared/AboutUsLandingCard/AboutUsLandingCard";
+import { Routes } from "@/routes";
 
 const AboutUsLanding = () => {
   return (
@@ -21,6 +22,7 @@ const AboutUsLanding = () => {
         </p>
         <Button
           label="Poznajmy się"
+          href={Routes.ABOUT}
           ariaDescription="Poznajmy się"
           variant="primary"
           className="contrast:bg-yellowContrast contrast:text-black00"
@@ -33,6 +35,7 @@ const AboutUsLanding = () => {
             Armii Krajowej, którzy pragnęli upamiętnić działalność jednej z
             największych podziemnych armii II wojny światowej."
           buttonLabel="Poznaj historię"
+          href={Routes.HISTORY}
           image={{
             src: "/images/history_AK.png",
             alt: "Historia AK. Zdjęcie grupy żołnierzy: Grupa żołnierzy w mundurach polowych, ustawionych w szeregu. Żołnierze noszą zielone berety, a jeden z nich trzyma sztandar wojskowy i flagę. Tło to miejskie budynki.",
@@ -44,6 +47,7 @@ const AboutUsLanding = () => {
           heading="Szlak Partyzancki"
           description="Jest propozycją dla Wszystkich rozmiłowanych w pieszych wędrówkach i historii oraz cenną pomocą dydaktyczną dla nauczycieli i rodziców w wychowaniu patriotycznym dzieci i młodzieży."
           buttonLabel="Czytaj więcej"
+          href={Routes.PARTISAN_TRAIL}
           image={{
             src: "/images/partisan_trail.png",
             alt: "Szlak Partyzancki. Zdjęcie mapy: Zbliżenie na starą, szczegółową mapę topograficzną z oznaczeniami rzek, dróg i granic.",
@@ -55,6 +59,7 @@ const AboutUsLanding = () => {
           heading="Inwentarz grobów"
           description="Dbamy o zachowanie pamięci o żołnierzach AK, dokumentując miejsca ich spoczynku. Tworzymy szczegółowy rejestr grobów kombatantów, umożliwiający ich odnalezienie i upamiętnienie."
           buttonLabel="Znajdź grób"
+          href={Routes.GRAVES_INVENTORY}
           image={{
             src: "/images/graves.png",
             alt: "Inwentarz grobów. Zdjęcie krzyża pamiątkowego: Metalowy krzyż na pomniku w otoczeniu drzew. Krzyż zdobią polskie flagi, a w tle widać zalesiony krajobraz.",

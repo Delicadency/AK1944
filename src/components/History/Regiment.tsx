@@ -3,6 +3,7 @@ import Container from "../shared/Container";
 import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
+import { Routes } from "@/routes";
 
 export const Regiment = () => {
   const { title, description } = historyData.regiment ?? {};
@@ -28,8 +29,8 @@ export const Regiment = () => {
         ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
-        href="/historia/strzelcy"
-      />
+        href={Routes.REGIMENT}
+      ></Button>
     </>
   );
 };

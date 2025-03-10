@@ -3,6 +3,7 @@ import Container from "../shared/Container";
 import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import Image from "next/image";
+import { Routes } from "@/routes";
 
 export const OperationBurza = () => {
   const { title, description } = historyData.burza ?? {};
@@ -28,8 +29,8 @@ export const OperationBurza = () => {
         ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
-        href="/historia/operacja-burza"
-      />
+        href={Routes.OPERATION}
+      ></Button>
     </>
   );
 };

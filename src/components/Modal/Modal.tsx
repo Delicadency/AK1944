@@ -1,31 +1,29 @@
-import ModalCloseIcon from "@/icons/ModalCloseIcon";
+"use client";
+
 import { useEffect, useCallback, useRef } from "react";
+import ModalCloseIcon from "@/icons/ModalCloseIcon";
 
 export type ModalProps = {
-  isModalOpen: boolean;
-  setIsModalOpen: (isOpen: boolean) => void;
+  isOpen: boolean;
+  onClose: () => void;
   children: React.ReactNode;
 };
 
-export const Modal = ({
-  children,
-  isModalOpen,
-  setIsModalOpen,
-}: ModalProps) => {
+export const Modal = ({ children, isOpen, onClose }: ModalProps) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const lastActiveElement = useRef<HTMLElement | null>(null);
 
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        setIsModalOpen(false);
+        onClose();
       }
     },
-    [setIsModalOpen],
+    [onClose],
   );
 
   useEffect(() => {
-    if (isModalOpen) {
+    if (isOpen) {
       lastActiveElement.current = document.activeElement as HTMLElement;
 
       document.body.style.overflow = "hidden";
@@ -48,13 +46,13 @@ export const Modal = ({
       document.body.style.overflow = "auto";
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isModalOpen, handleKeyDown]);
+  }, [isOpen, handleKeyDown]);
 
-  if (!isModalOpen) return null;
+  if (!isOpen) return null;
 
   return (
     <div
-      onClick={() => setIsModalOpen(false)}
+      onClick={onClose}
       className="fixed inset-0 z-50 flex h-screen items-center justify-center bg-slate-900/20 backdrop-blur"
       role="dialog"
       aria-modal="true"
@@ -63,12 +61,12 @@ export const Modal = ({
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 pt-12 text-white desktop:px-10 desktop:pt-[60px]"
+        className="desktop:py-15 relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 py-12 text-white desktop:px-10"
       >
         <button
           className="absolute right-3 top-3"
-          aria-label="Close modal"
-          onClick={() => setIsModalOpen(false)}
+          aria-label="Zamknij modal"
+          onClick={onClose}
         >
           <ModalCloseIcon />
         </button>

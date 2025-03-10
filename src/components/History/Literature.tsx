@@ -2,6 +2,7 @@ import Container from "../shared/Container";
 import { Heading } from "../shared/Heading/Heading";
 import { historyData as txt } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
+import { Routes } from "@/routes";
 
 export const Literature = () => {
   const { title, content } = txt.history.literature ?? {};
@@ -15,7 +16,7 @@ export const Literature = () => {
         label="Sprawdź"
         ariaDescription="Sprawdź"
         className="mt-6"
-        href="/historia/literatura"
+        href={Routes.LITERATURE}
       ></Button>
     </Container>
   );
