@@ -14,14 +14,16 @@ export const Regiment = () => {
           <Heading variant="h3" contrast="yellow" color="green">
             {title}
           </Heading>
-          <p className="my-6 text-greenMain">{description}</p>
+          <p className="my-6 font-sourceSans text-lg text-greenMain">
+            {description}
+          </p>
         </div>
         <Image
           src="/images/history/main/regiment.jpg"
           alt="Defilada 5. Pułku Strzelców Konnych z okazji święta pułku w Dębicy. Pluton ckm na jukach, 9 czerwca 1938 r."
           width={500}
           height={1080}
-          className="justify-self-center"
+          className="m-auto"
         />
       </Container>
       <Button

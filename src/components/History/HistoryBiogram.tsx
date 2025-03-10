@@ -25,12 +25,12 @@ export const HistoryBiogram = () => {
       className="absolute object-fill"
       aria-hidden="true"
     >
-      <Container className="relative justify-items-center py-10 contrast:bg-yellowContrast">
-        <Heading variant="h3" contrast="yellow" color="green">
+      <Container className="relative py-10 contrast:bg-yellowContrast">
+        <Heading variant="h3" contrast="black" color="green">
           {title}
         </Heading>
         <div className="desktop:flex">
-          <p className="my-6 text-greenMain">{content}</p>
+          <p className="my-6 font-courier text-lg text-greenMain">{content}</p>
           <Image
             src="/images/history/main/veteran.png"
             alt="Zdjęcie weterana Armii Krajowej"
@@ -42,7 +42,7 @@ export const HistoryBiogram = () => {
         <Button
           label="Sprawdź"
           ariaDescription="Sprawdź"
-          className="mt-6"
+          className="m-auto mt-6"
           href={Routes.BIOGRAMS}
         ></Button>
       </Container>

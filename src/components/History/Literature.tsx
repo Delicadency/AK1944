@@ -7,15 +7,15 @@ import { Routes } from "@/routes";
 export const Literature = () => {
   const { title, content } = txt.history.literature ?? {};
   return (
-    <Container className="mt-10 justify-items-center bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">
+    <Container className="mt-10 bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">
       <Heading variant="h3" contrast="black" color="white">
         {title}
       </Heading>
-      <p className="my-6 text-white">{content}</p>
+      <p className="my-6 font-courier text-lg text-white">{content}</p>
       <Button
         label="Sprawdź"
         ariaDescription="Sprawdź"
-        className="mt-6"
+        className="m-auto mt-6"
         href={Routes.LITERATURE}
       ></Button>
     </Container>

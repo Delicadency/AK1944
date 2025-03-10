@@ -2,6 +2,7 @@ import { Heading } from "../shared/Heading/Heading";
 import { historyData as txt } from "@/data/historyData";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
+
 export const History = () => {
   const { title, description1, description2, description3, description4 } =
     txt.history ?? {};
@@ -25,7 +26,7 @@ export const History = () => {
           >
             {title}
           </Heading>
-          <div className="max-w-[709px] text-white desktop:flex desktop:flex-col desktop:gap-6">
+          <div className="max-w-[700px] font-sourceSans text-lg text-white desktop:flex desktop:flex-col desktop:gap-6">
             <p>{description1}</p>
             <p>{description2}</p>
             <p className="mobile:mt-6 desktop:mt-0">{description3}</p>

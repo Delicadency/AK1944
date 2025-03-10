@@ -32,7 +32,7 @@ export const Footnotes = () => {
         <ul className="flex flex-col gap-4">
           {footnotes.map((note, index) => (
             <li key={index}>
-              <p className="font-mono">{note}</p>
+              <p className="font-courier">{note}</p>
             </li>
           ))}
         </ul>

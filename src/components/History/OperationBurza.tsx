@@ -14,7 +14,9 @@ export const OperationBurza = () => {
           <Heading variant="h3" contrast="yellow" color="green">
             {title}
           </Heading>
-          <p className="my-6 text-greenMain">{description}</p>
+          <p className="my-6 font-sourceSans text-lg text-greenMain">
+            {description}
+          </p>
         </div>
         <Image
           src="/images/history/main/burza.jpg"

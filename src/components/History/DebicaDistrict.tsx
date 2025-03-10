@@ -14,17 +14,17 @@ export const DebicaDistrict = () => {
           <Heading variant="h3" contrast="yellow" color="green">
             {title}
           </Heading>
-          <p className="my-6 text-greenMain">{description}</p>
+          <p className="my-6 font-sourceSans text-lg text-greenMain">
+            {description}
+          </p>
         </div>
-        <div>
-          <Image
-            src="/images/history/main/debica.jpg"
-            alt="Pokazy musztry w koszarach 5. Pułku Strzelców Konnych w Dębicy. Na czele plutonu ppor. Mieczysław Rakoczy."
-            width={500}
-            height={1080}
-            className="m-auto"
-          />
-        </div>
+        <Image
+          src="/images/history/main/debica.jpg"
+          alt="Pokazy musztry w koszarach 5. Pułku Strzelców Konnych w Dębicy. Na czele plutonu ppor. Mieczysław Rakoczy."
+          width={500}
+          height={1080}
+          className="m-auto"
+        />
       </Container>
       <Button
         label="Zobacz więcej"

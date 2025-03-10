@@ -18,7 +18,7 @@ export const HistoryNav = () => {
       ) : (
         <IconArrowVertical className="z-[-1] translate-x-10" />
       )}
-      <ul className="mb-[60px] flex flex-col gap-10 desktop:w-full desktop:-translate-y-10 desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
+      <ul className="mb-[60px] flex flex-col gap-10 font-courier desktop:w-full desktop:-translate-y-10 desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
         <li className="flex items-center gap-5 desktop:flex-col">
           <div className="h-[50px] w-[50px] rounded-full bg-yellowVintage" />
           <Link href={Routes.REGIMENT}>5.Pułk Strzelców Konnych</Link>
