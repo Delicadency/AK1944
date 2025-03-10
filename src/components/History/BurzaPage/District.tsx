@@ -18,7 +18,7 @@ export const District = () => {
       </div>
       <Image
         src="/images/history/burza/district.jpg"
-        alt="debica"
+        alt="Msza św. polowa odprawiana przez ks. Stanisława Bartosza ps. Mieczyk dla żołnierzy II Zgrupowaniu 5. Pułku Strzelców Konnych. Sierpień 1944 r."
         width={3470}
         height={4670}
         className="m-auto desktop:max-w-[600px]"

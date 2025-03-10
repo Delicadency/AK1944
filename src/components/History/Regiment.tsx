@@ -16,8 +16,8 @@ export const Regiment = () => {
           <p className="my-6 text-greenMain">{description}</p>
         </div>
         <Image
-          src="/images/history/main/regiment_placeholder.jpg"
-          alt="regiment"
+          src="/images/history/main/regiment.jpg"
+          alt="Defilada 5. Pułku Strzelców Konnych z okazji święta pułku w Dębicy. Pluton ckm na jukach, 9 czerwca 1938 r."
           width={500}
           height={1080}
           className="justify-self-center"

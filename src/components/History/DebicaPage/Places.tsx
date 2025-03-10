@@ -90,7 +90,7 @@ export const Places: React.FC<PlacesProps> = ({ onToggle }) => {
         <div className="shrink-0">
           <Image
             src="/images/history/debica/people.jpg"
-            alt="debica"
+            alt="Ewakuacja rannych żołnierzy II Zgrupowania 5. Pułku Strzelców Konnych AK po bitwie na Kałużówce. Sierpień 1944 r."
             width={500}
             height={810}
             className="m-auto"

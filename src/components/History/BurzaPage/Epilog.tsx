@@ -27,7 +27,7 @@ export const Epilog = () => {
       {!isDesktop && (
         <Image
           src="/images/history/burza/epilog.jpg"
-          alt="debica"
+          alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r."
           width={3500}
           height={2500}
           className="m-auto desktop:max-w-[600px]"
@@ -45,7 +45,7 @@ export const Epilog = () => {
         {isDesktop && (
           <Image
             src="/images/history/burza/epilog.jpg"
-            alt="debica"
+            alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r."
             width={3500}
             height={2500}
             className="desktop:max-w-[600px]"
@@ -53,7 +53,7 @@ export const Epilog = () => {
         )}
         <Image
           src="/images/history/burza/epilog2.jpg"
-          alt="debica"
+          alt="Kwatermistrzostwo II Zgrupowania 5. Pułku Strzelców Konnych AK na Kałużówce. Od lewej siedzą: sierż. Adam Zdeb, Mieczysław Szczygieł, Andrzej Szumliński ps. Rdzawy, NN. Stoją NN."
           width={600}
           height={350}
           className="desktop:max-w-[600px]"

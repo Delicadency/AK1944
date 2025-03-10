@@ -29,15 +29,15 @@ export const FirstDays = () => {
       <div className="m-auto flex gap-6">
         <Image
           src="/images/history/burza/first-days.jpg"
-          alt="debica"
+          alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Kondukt pogrzebowy z trumną poległego żołnierza AK w drodze z Gołęczyny na Kałużówkę, 21 sierpnia 1944 r."
           width={2000}
           height={1300}
           className="desktop:max-w-[600px]"
         />
         {isDesktop && (
           <Image
-            src="/images/history/burza/gumniska.jpg"
-            alt="debica"
+            src="/images/history/burza/kaluzowka.jpg"
+            alt="Punkt sanitarny na Kałużówce. Od lewej: dr Kazimierz Gradziński, Maria Szewczyk, Teresa Langer, dr Jan Szymaszek, Władysława Gubernat, Lucyna Dykier."
             width={2000}
             height={1300}
             className="max-w-[600px]"
