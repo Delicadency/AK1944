@@ -2,13 +2,9 @@ import Image from "next/image";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
-import IconBook from "@/icons/IconBook";
-import IconBriefcase from "@/icons/IconBriefcase";
-import { IconMail } from "@/icons/IconMail";
-import { IconPhone } from "@/icons/IconPhone";
-import { IconMapPin } from "@/icons/IconMapPin";
-import IconDollar from "@/icons/IconDollar";
 import { TaxCard } from "@/components/shared/TaxCard/TaxCard";
+import ContactInfo from "./components/ContactInfo";
+import LegalInfo from "./components/LegalInfo";
 
 
 export default function ContactPage() {
@@ -24,7 +20,7 @@ export default function ContactPage() {
         />
       </div>
       <div className="absolute min-h-screen hidden tablet:block inset-0 bg-no-repeat bg-contain bg-right tablet:bg-[url('/images/contact-bg.png')] desktop:hidden"></div>
-      <div className="absolute inset-0 bg-backgroundB/50"></div>
+      <div className="absolute inset-0 bg-backgroundB/50 desktop:bg-backgroundB/10"></div>
 
 
       <Container className="relative z-10 desktop:max-w-[85%]">
@@ -60,82 +56,15 @@ export default function ContactPage() {
           </p>
         </section>
 
-        <div className="tablet:flex tablet:flex-row tablet:gap-28 desktop:gap-52 tablet:mb-28">
+        <div className="tablet:flex tablet:flex-row tablet:gap-28 desktop:gap-42 tablet:mb-28">
 
-          <section aria-labelledby="contact-info" className="mb-10 text-[1.125rem] text-greenMain font-source-sans">
-
-            {/* Adres */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 desktop:gap-8 desktop:mb-8">
-                <IconMapPin className="w-8 h-8" />
-                <div>
-                  <p className="desktop:mb-4">Adres siedziby:</p>
-                  <p className="font-medium">39-200 Dębica, ul. Rzeszowska 15</p>
-                </div>
-              </div>
-
-              {/* E-mail */}
-              <div className="flex items-center gap-3 desktop:gap-8 desktop:mb-8">
-                <IconMail className="w-8 h-8" />
-                <div>
-                  <p className="desktop:mb-4">E-mail:</p>
-                  <a href="mailto:ak.debica@gmail.com" className="font-medium">
-                    ak.debica@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              {/* Telefon */}
-              <div className="flex items-center gap-3 desktop:gap-8 desktop:mb-8">
-                <IconPhone className="w-8 h-8" />
-                <div>
-                  <p className="desktop:mb-4">Telefon:</p>
-                  <a href="tel:+48505248666" className="font-medium">
-                    +48 505 248 666
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
+          <ContactInfo />
 
           <hr className="border-t-[1px] border-black my-6 tablet:hidden" />
+          <div className="hidden desktop:block h-auto border-l border-black mx-10"></div>
 
-          {/* Dane prawne */}
+          <LegalInfo />
 
-          <section aria-labelledby="informacje prawne" className="space-y-4 text-left max-w-[260px] mt-8 tablet:mt-0">
-
-            {/* NIP */}
-            <div className="flex gap-5 items-center desktop:gap-8 desktop:mb-8">
-              <div className="w-6 flex-shrink-0">
-                <IconBriefcase name="briefcase" className="w-8 h-8" />
-              </div>
-              <div>
-                <p className="desktop:mb-4">NIP:</p>
-                <p className="font-medium">5261710045</p>
-              </div>
-            </div>
-            {/* KRS */}
-            <div className="flex items-center gap-5 desktop:gap-8 desktop:mb-8 tablet:hidden desktop:flex">
-              <div className="w-6 flex-shrink-0">
-                <IconBook name="book" className="w-8 h-8" />
-              </div>
-              <div>
-                <p className="desktop:mb-4">KRS:</p>
-                <p className="font-medium">5261710045</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-5 desktop:gap-8 desktop:mb-8">
-              <div className="w-6 flex-shrink-0">
-                <IconDollar name="dollar" className="w-8 h-8" />
-              </div>
-              <div className="flex flex-col flex-wrap break-words">
-                <p className="desktop:mb-4">Nr konta bankowego:</p>
-                <p className="font-medium tablet:hidden desktop:block">Santander Bank Polska</p>
-                <p className="font-medium">41 1090 2590 0000 0001 5299 0666</p>
-              </div>
-            </div>
-          </section>
         </div>
         <div className="mt-[2.5rem] tablet:hidden desktop:flex desktop:justify-start desktop:max-w-[55%]">
           <TaxCard />
