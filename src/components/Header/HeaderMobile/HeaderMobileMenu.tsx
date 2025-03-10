@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/shared/Button/Button";
 import Container from "@/components/shared/Container";
 import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray";
