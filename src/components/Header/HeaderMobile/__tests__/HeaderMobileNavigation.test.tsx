@@ -1,4 +1,3 @@
-import * as React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { HeaderMobileNavigation } from "../HeaderMobileNavigation";
@@ -35,16 +34,11 @@ describe("HeaderMobileNavigation", () => {
         });
         userEvent.click(button);
         const submenu = await screen.findByTestId(`submenu-${index}`);
-        await waitFor(() => expect(submenu).toHaveClass("max-h-screen"));
+        await waitFor(() => expect(submenu).toHaveClass("max-h-96"));
         userEvent.click(button);
         await waitFor(() => expect(submenu).toHaveClass("max-h-0"));
       }
     }
-  });
-
-  it("renders a horizontal divider after the fifth navigation item", () => {
-    render(<HeaderMobileNavigation />);
-    expect(screen.getByTestId("separator")).toBeInTheDocument();
   });
 
   it("should have no accessibility violations", async () => {

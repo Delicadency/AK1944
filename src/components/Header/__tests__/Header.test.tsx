@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Header from "../Header";
+import { Header } from "../Header";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 jest.mock("@/hooks/useMediaQuery", () => ({
@@ -10,11 +10,14 @@ jest.mock("@/components/Header/HeaderMobile/HeaderMobile", () => ({
   HeaderMobile: () => <div data-testid="header-mobile">Header Mobile</div>,
 }));
 
-jest.mock("@/components/Header/HeaderTabletAndDesktop/HeaderTabAndDesktop", () => ({
-  HeaderTabAndDesktop: () => (
-    <div data-testid="header-tab-desktop">Header Tablet/Desktop</div>
-  ),
-}));
+jest.mock(
+  "@/components/Header/HeaderTabletAndDesktop/HeaderTabAndDesktop",
+  () => ({
+    HeaderTabAndDesktop: () => (
+      <div data-testid="header-tab-desktop">Header Tablet/Desktop</div>
+    ),
+  }),
+);
 
 describe("Header component", () => {
   it("renders the header container", () => {

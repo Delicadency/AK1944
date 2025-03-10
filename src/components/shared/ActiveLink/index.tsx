@@ -19,13 +19,15 @@ export const ActiveLink = <T extends string>({
   children,
   exact = true,
   className,
-  activeClassName,
+  activeClassName = "font-bold text-yellowVintage contrast:text-black00",
   ...rest
 }: Props<T>) => {
   const pathname = usePathname();
 
-  const url = typeof href === "object" ? href.pathname : href;
-  const query = typeof href === "object" ? href.query : {};
+  const isUrlObject = typeof href === "object";
+  const url = isUrlObject ? href.pathname : href;
+  const query = isUrlObject ? href.query : {};
+
   const isActive = exact ? pathname === url : pathname.includes(url!);
 
   return (
@@ -35,7 +37,11 @@ export const ActiveLink = <T extends string>({
         query,
       }}
       aria-current={isActive ? "page" : undefined}
-      className={cn(className, isActive && activeClassName)}
+      className={cn(
+        "text-white transition duration-300 ease-in-out hover:text-yellowVintage contrast:text-black00",
+        className,
+        isActive && activeClassName,
+      )}
       {...rest}
     >
       {children}
