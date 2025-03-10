@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 import ThemeProvider from "@/context/ThemesProvider";
-import Header from "@/components/Header/Header";
+import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { cn } from "@/utils";
 import "./globals.css";

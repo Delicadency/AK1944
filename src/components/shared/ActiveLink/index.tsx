@@ -19,7 +19,7 @@ export const ActiveLink = <T extends string>({
   children,
   exact = true,
   className,
-  activeClassName = "font-bold text-yellowVintage",
+  activeClassName = "font-bold text-yellowVintage contrast:text-black00",
   ...rest
 }: Props<T>) => {
   const pathname = usePathname();

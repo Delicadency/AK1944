@@ -1,11 +1,11 @@
-import { Button } from "../../shared/Button/Button";
-import Container from "../../shared/Container";
-import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
+import { Button } from "@/components/shared/Button/Button";
+import Container from "@/components/shared/Container";
+import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray";
+import ContrastSwitcher from "@/components/Switcher/ContrastSwitcher";
 import IconXCircle from "@/icons/IconXCircle";
+import { Routes } from "@/routes";
 import { HeaderLogo } from "../HeaderLogo";
 import { HeaderMobileNavigation } from "./HeaderMobileNavigation";
-import { SocialMediaTray } from "@/components/shared/SocialMedia/SocialMediaTray";
-import { Routes } from "@/routes";
 
 interface HeaderMobileMenuProps {
   onClose: () => void;
@@ -14,7 +14,7 @@ interface HeaderMobileMenuProps {
 export const HeaderMobileMenu = ({ onClose }: HeaderMobileMenuProps) => (
   <Container>
     <div
-      className="relative h-full w-full bg-greenB contrast:bg-yellowContrast"
+      className="relative size-full bg-greenB contrast:bg-yellowContrast"
       aria-label="Menu"
       aria-roledescription="Menu"
     >
@@ -29,12 +29,12 @@ export const HeaderMobileMenu = ({ onClose }: HeaderMobileMenuProps) => (
         </p>
 
         <button
-          className="h-6 w-6"
+          className="size-6"
           type="button"
           aria-label="Zamknij menu"
           onClick={onClose}
         >
-          <IconXCircle className="text-greenC transition duration-300 active:scale-110 active:text-backgroundMain contrast:text-black00" />
+          <IconXCircle className="text-greenC transition duration-300 hover:text-backgroundMain active:scale-110 contrast:text-black00" />
         </button>
       </div>
 

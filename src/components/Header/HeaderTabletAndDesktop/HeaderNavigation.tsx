@@ -1,110 +1,111 @@
-import { useRef, useState } from "react";
-import { cn } from "@/utils";
-import { ActiveLink } from "../../shared/ActiveLink";
-import { navData } from "@/data/navigationData";
+"use client";
+
+import { useRef } from "react";
 import { submenuTabDeskData } from "@/data/headerData";
 import { useClickOutside } from "@/hooks/useClickOutside";
-import { IconChevronDown } from "@/icons/IconChevronDown";
+import { type NavItem } from "@/types";
+import { useSubmenuState } from "../useSubmenuState";
+import { NavLink } from "../NavLink";
+import { SubmenuToggle } from "../SubmenuToggle";
 
-type HeaderNavigationProps = {
-  navItems: typeof navData;
+interface HeaderNavigationProps {
+  navItems: NavItem[];
   baseIndex?: number;
-};
+}
 
 export const HeaderNavigation = ({
   navItems,
   baseIndex = 0,
 }: HeaderNavigationProps) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const { toggleSubmenu, closeSubmenu, isSubmenuOpen } = useSubmenuState();
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const handleToggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const handleSubMenuLinkClick = () => {
-    setOpenIndex(null);
-  };
-
-  useClickOutside(menuRef, () => setOpenIndex(null));
+  useClickOutside(menuRef, closeSubmenu);
 
   return (
-    <nav aria-label="Główna nawigacja">
+    <nav aria-label="Główna nawigacja" ref={menuRef}>
       <ul
-        className="flex flex-row justify-center gap-6 desktop:gap-[80px]"
+        className="flex flex-row justify-center gap-6 desktop:gap-20"
         aria-label="Lista głównych linków nawigacyjnych"
       >
         {navItems.map((item, index) => {
-          const { label, href } = item;
           const actualIndex = baseIndex + index;
-          const subMenuData = submenuTabDeskData[actualIndex] || null;
-
           return (
-            <li
+            <NavItem
               key={actualIndex}
-              className="relative"
-              aria-label={`Element menu: ${label}`}
-            >
-              <ActiveLink
-                className={cn(
-                  "text-16 leading-6 text-white",
-                  [0, 4, 5].includes(actualIndex) &&
-                    "flex items-center gap-2 tablet:relative",
-                )}
-                href={href}
-                onClick={(e) => {
-                  if (subMenuData) {
-                    e.preventDefault();
-                    handleToggle(actualIndex);
-                  } else {
-                    setOpenIndex(null);
-                  }
-                }}
-                aria-label={`Przejdź do ${label}`}
-                aria-expanded={
-                  subMenuData ? openIndex === actualIndex : undefined
-                }
-                aria-haspopup={subMenuData ? "menu" : undefined}
-              >
-                {label}
-                {subMenuData && (
-                  <IconChevronDown
-                    className={cn(
-                      "size-4 transition-transform duration-300 ease-in-out desktop:size-5",
-                      openIndex === actualIndex ? "rotate-180" : "rotate-0",
-                    )}
-                    aria-hidden="true"
-                  />
-                )}
-              </ActiveLink>
-              {subMenuData && openIndex === actualIndex && (
-                <ul
-                  className="absolute z-50 mt-2 flex w-[243px] flex-col gap-5 bg-greenB p-4 shadow-lg contrast:bg-yellowContrast"
-                  aria-label={`Podmenu dla ${label}`}
-                >
-                  {subMenuData.map(
-                    ({ label: subLabel, href: subHref }, subIndex) => (
-                      <li
-                        key={subIndex}
-                        className="mb-2"
-                        aria-label={`Podmenu: ${subLabel}`}
-                      >
-                        <ActiveLink
-                          href={subHref}
-                          onClick={handleSubMenuLinkClick}
-                          aria-label={`Przejdź do ${subLabel}`}
-                        >
-                          {subLabel}
-                        </ActiveLink>
-                      </li>
-                    ),
-                  )}
-                </ul>
-              )}
-            </li>
+              item={item}
+              index={index}
+              baseIndex={baseIndex}
+              isSubmenuOpen={isSubmenuOpen(actualIndex)}
+              toggleSubmenu={() => toggleSubmenu(actualIndex)}
+              closeSubmenu={closeSubmenu}
+            />
           );
         })}
       </ul>
     </nav>
   );
 };
+
+interface NavItemProps {
+  item: NavItem;
+  index: number;
+  baseIndex: number;
+  isSubmenuOpen: boolean;
+  toggleSubmenu: () => void;
+  closeSubmenu: () => void;
+}
+
+const NavItem = ({
+  item: { label, href },
+  index,
+  baseIndex,
+  isSubmenuOpen,
+  toggleSubmenu,
+  closeSubmenu,
+}: NavItemProps) => {
+  const actualIndex = baseIndex + index;
+  const subMenuData = submenuTabDeskData[actualIndex] || null;
+  const hasSubmenu = !!subMenuData;
+
+  return (
+    <li className="relative text-white" aria-label={`Element menu: ${label}`}>
+      {hasSubmenu ? (
+        <SubmenuToggle
+          label={label}
+          isOpen={isSubmenuOpen}
+          onClick={toggleSubmenu}
+        />
+      ) : (
+        <NavLink href={href} label={label} onClick={closeSubmenu} />
+      )}
+
+      {hasSubmenu && isSubmenuOpen && (
+        <Submenu
+          items={subMenuData}
+          parentLabel={label}
+          onLinkClick={closeSubmenu}
+        />
+      )}
+    </li>
+  );
+};
+
+interface SubmenuProps {
+  items: NavItem[];
+  parentLabel: string;
+  onLinkClick: () => void;
+}
+
+const Submenu = ({ items, parentLabel, onLinkClick }: SubmenuProps) => (
+  <ul
+    className="absolute z-50 mt-2 flex w-[243px] flex-col gap-5 bg-greenB p-4 shadow-lg contrast:bg-yellowContrast"
+    aria-label={`Podmenu dla ${parentLabel}`}
+  >
+    {items.map(({ label, href }, index) => (
+      <li key={index} className="mb-2" aria-label={`Podmenu: ${label}`}>
+        <NavLink href={href} label={label} onClick={onLinkClick} />
+      </li>
+    ))}
+  </ul>
+);
