@@ -1,3 +1,4 @@
+"use client";
 import Container from "@/components/shared/Container";
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
@@ -13,6 +14,7 @@ import { Footnotes } from "@/components/History/BurzaPage/Footnotes";
 
 export default function OperationBurzaPage() {
   const { title } = historyData.burza ?? {};
+
   return (
     <div className="contrast:bg-black">
       <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">

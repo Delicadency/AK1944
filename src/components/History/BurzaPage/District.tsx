@@ -21,8 +21,7 @@ export const District = () => {
         alt="debica"
         width={3470}
         height={4670}
-        sizes="(max-width: 1279px) 35vw, 500px"
-        className="m-auto"
+        className="m-auto desktop:max-w-[600px]"
         priority
       />
     </section>
