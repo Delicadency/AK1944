@@ -7,7 +7,6 @@ export const FooterLegalInfo = () => (
       <ActiveLink
         href={Routes.POLICY}
         aria-label="Przejdź do strony Polityka prywatności"
-        title="Przejdź do strony Polityka prywatności"
       >
         Polityka prywatności
       </ActiveLink>
@@ -15,7 +14,6 @@ export const FooterLegalInfo = () => (
       <ActiveLink
         href={Routes.REGULATIONS}
         aria-label="Przejdź do strony Regulamin"
-        title="Przejdź do strony Regulamin"
       >
         Regulamin
       </ActiveLink>
@@ -26,7 +24,6 @@ export const FooterLegalInfo = () => (
     <ActiveLink
       href={Routes.VOLUNTEERS}
       aria-label="Przejdź do strony Wolontariuszy"
-      title="Przejdź do strony Wolontariuszy"
     >
       Strona powstała dzięki pracy wolontariuszy.
     </ActiveLink>
