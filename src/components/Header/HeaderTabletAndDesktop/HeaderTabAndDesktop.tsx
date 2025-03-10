@@ -1,12 +1,15 @@
-import ContrastSwitcher from "../../Switcher/ContrastSwitcher";
-import { HeaderLogo } from "../HeaderLogo";
-import { Button } from "../../shared/Button/Button";
+import { Button } from "@/components/shared/Button/Button";
+import ContrastSwitcher from "@/components/Switcher/ContrastSwitcher";
 import { firstNav, secondNav } from "@/data/headerData";
-import { HeaderNavigation } from "./HeaderNavigation";
 import { Routes } from "@/routes";
+import { HeaderLogo } from "../HeaderLogo";
+import { HeaderNavigation } from "./HeaderNavigation";
 
 export const HeaderTabAndDesktop = () => (
-  <div className="flex items-center justify-between gap-2 py-5">
+  <div
+    className="hidden items-center justify-between gap-2 py-5 tablet:flex"
+    data-testid="header-tab-desktop"
+  >
     <HeaderLogo aria-label="Logo strony głównej" />
 
     <div
@@ -17,10 +20,7 @@ export const HeaderTabAndDesktop = () => (
       <HeaderNavigation navItems={secondNav} baseIndex={4} />
     </div>
 
-    <div
-      className="flex flex-col-reverse gap-4 desktop:flex-row desktop:items-center desktop:gap-10"
-      aria-label="Przełącznik kontrastu i przycisku wsparcia"
-    >
+    <div className="flex flex-col-reverse gap-4 desktop:flex-row desktop:items-center desktop:gap-10">
       <Button
         label="Wesprzyj"
         ariaDescription="Kliknij, aby wesprzeć fundację"
