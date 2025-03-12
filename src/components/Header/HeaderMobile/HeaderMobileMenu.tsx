@@ -9,11 +9,11 @@ import { Routes } from "@/routes";
 import { HeaderLogo } from "../HeaderLogo";
 import { HeaderMobileNavigation } from "./HeaderMobileNavigation";
 
-interface HeaderMobileMenuProps {
+interface Props {
   onClose: () => void;
 }
 
-export const HeaderMobileMenu = ({ onClose }: HeaderMobileMenuProps) => (
+export const HeaderMobileMenu = ({ onClose }: Props) => (
   <Container>
     <div
       className="relative size-full bg-greenB contrast:bg-yellowContrast"
