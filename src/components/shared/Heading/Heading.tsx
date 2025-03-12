@@ -1,7 +1,6 @@
-import { cn } from "@/utils";
 import clsx from "clsx";
 
-export interface HeadingProps {
+export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   children: React.ReactNode;
   variant?: "h1" | "h2" | "h3" | "h4";
   underline?: boolean;
@@ -18,7 +17,7 @@ export const Heading = ({
   contrast,
   color,
   className = "",
-  align = "center",
+  ...rest
 }: HeadingProps) => {
   const getHeadingTag = () => {
     switch (variant) {
@@ -61,7 +60,11 @@ export const Heading = ({
 
   return (
     <hgroup
-      className={clsx("flex flex-col", alignClasses[align])} 
+      className={clsx(
+        "flex flex-col",
+        underline ? "items-center" : "items-start",
+      )}
+      {...rest}
     >
       <HeadingTag
         className={clsx(
@@ -77,7 +80,7 @@ export const Heading = ({
       {underline && (
         <hr
           aria-hidden="true"
-          className={cn(
+          className={clsx(
             "mt-2 w-[200px] border-t-2 border-solid",
             colors[color],
             contrastStyle[contrast]

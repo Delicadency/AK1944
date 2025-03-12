@@ -39,6 +39,15 @@ export interface SubmenuItem {
   label: string;
 }
 
+export interface PlaceDetails {
+  id: number;
+  name: string;
+  location: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
 export interface ContainerProps {
   children: ReactNode;
   className?: string;

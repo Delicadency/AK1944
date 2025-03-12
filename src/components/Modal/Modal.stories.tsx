@@ -1,6 +1,6 @@
 import { StoryFn, Meta } from "@storybook/react";
-import { useState } from "react";
 import { Modal, ModalProps } from "./Modal";
+import { useDisclosure } from "@/hooks/useDisclosure";
 
 export default {
   title: "Components/Modal",
@@ -15,13 +15,13 @@ export default {
     },
   },
   argTypes: {
-    isModalOpen: {
+    isOpen: {
       control: "boolean",
       description: "Controls the visibility of the modal",
     },
-    setIsModalOpen: {
-      action: "setIsModalOpen",
-      description: "Callback function to control modal state",
+    onClose: {
+      action: "onClose",
+      description: "Callback function to close the modal",
     },
     children: {
       control: "text",
@@ -31,12 +31,12 @@ export default {
 } as Meta;
 
 const InteractiveTemplate: StoryFn<ModalProps> = (args) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, open, close } = useDisclosure();
 
   return (
     <div>
-      <button onClick={() => setIsOpen(true)}>Open Modal</button>
-      <Modal {...args} isModalOpen={isOpen} setIsModalOpen={setIsOpen} />
+      <button onClick={open}>Open Modal</button>
+      <Modal {...args} isOpen={isOpen} onClose={close} />
     </div>
   );
 };
@@ -55,7 +55,7 @@ Interactive.args = {
 
 export const Default = StaticTemplate.bind({});
 Default.args = {
-  isModalOpen: true,
+  isOpen: true,
   children: (
     <div className="p-4">
       <h2 className="mb-4 text-xl">Default Modal</h2>
@@ -66,7 +66,7 @@ Default.args = {
 
 export const WithCustomContent = StaticTemplate.bind({});
 WithCustomContent.args = {
-  isModalOpen: true,
+  isOpen: true,
   children: (
     <div className="p-8">
       <h1 className="mb-4 text-2xl">Custom Content Modal</h1>
@@ -80,7 +80,7 @@ WithCustomContent.args = {
 
 export const LongContent = StaticTemplate.bind({});
 LongContent.args = {
-  isModalOpen: true,
+  isOpen: true,
   children: (
     <div className="p-4">
       <h2 className="mb-4 text-xl">Scrollable Content</h2>
