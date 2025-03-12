@@ -1,8 +1,9 @@
 "use client";
 
-import { useRef } from "react";
+import { useCallback, useRef } from "react";
 import { submenuTabDeskData } from "@/data/headerData";
 import { useClickOutside } from "@/hooks/useClickOutside";
+import { useKeyPress } from "@/hooks/useKeyPress";
 import { type NavItem } from "@/types";
 import { NavLink } from "../NavLink";
 import { SubmenuToggle } from "../SubmenuToggle";
@@ -21,6 +22,12 @@ export const HeaderNavigation = ({
   const menuRef = useRef<HTMLDivElement>(null);
 
   useClickOutside(menuRef, closeSubmenu);
+
+  const handleEscapeKey = useCallback(() => {
+    closeSubmenu();
+  }, [closeSubmenu]);
+
+  useKeyPress("Escape", handleEscapeKey);
 
   return (
     <nav aria-label="Główna nawigacja" ref={menuRef}>

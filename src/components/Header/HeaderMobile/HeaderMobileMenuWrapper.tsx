@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { useDisclosure } from "@/hooks/useDisclosure";
+import { useKeyPress } from "@/hooks/useKeyPress";
 import HeaderMenuIcon from "@/icons/HeaderMenuIcon";
 import { cn } from "@/utils";
 
@@ -15,6 +16,12 @@ export const HeaderMobileMenuWrapper = () => {
   const { isOpen, toggle, close } = useDisclosure();
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
+
+  const handleEscapeKey = useCallback(() => {
+    close();
+  }, [close]);
+
+  useKeyPress("Escape", handleEscapeKey);
 
   useEffect(() => {
     close();
