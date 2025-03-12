@@ -1,10 +1,12 @@
 import { Routes } from "@/routes";
-import { NavItem } from "@/types";
+import { type NavItem } from "@/types";
 
-export const navigationData: {
+interface NavigationSection {
   section: string;
   links: NavItem[];
-}[] = [
+}
+
+export const navigationData: NavigationSection[] = [
   {
     section: "Główna",
     links: [
