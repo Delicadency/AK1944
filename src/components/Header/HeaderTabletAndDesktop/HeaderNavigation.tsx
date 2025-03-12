@@ -4,9 +4,9 @@ import { useRef } from "react";
 import { submenuTabDeskData } from "@/data/headerData";
 import { useClickOutside } from "@/hooks/useClickOutside";
 import { type NavItem } from "@/types";
-import { useSubmenuState } from "../useSubmenuState";
 import { NavLink } from "../NavLink";
 import { SubmenuToggle } from "../SubmenuToggle";
+import { useSubmenuState } from "../useSubmenuState";
 
 interface HeaderNavigationProps {
   navItems: NavItem[];
@@ -67,6 +67,7 @@ const NavItem = ({
   const actualIndex = baseIndex + index;
   const subMenuData = submenuTabDeskData[actualIndex] || null;
   const hasSubmenu = !!subMenuData;
+  const submenuId = `submenu-${label.toLowerCase().replace(/\s+/g, "-")}`;
 
   return (
     <li className="relative text-white" aria-label={`Element menu: ${label}`}>
@@ -75,6 +76,7 @@ const NavItem = ({
           label={label}
           isOpen={isSubmenuOpen}
           onClick={toggleSubmenu}
+          controlsId={submenuId}
         />
       ) : (
         <NavLink href={href} label={label} onClick={closeSubmenu} />
@@ -85,6 +87,7 @@ const NavItem = ({
           items={subMenuData}
           parentLabel={label}
           onLinkClick={closeSubmenu}
+          id={submenuId}
         />
       )}
     </li>
@@ -95,10 +98,12 @@ interface SubmenuProps {
   items: NavItem[];
   parentLabel: string;
   onLinkClick: () => void;
+  id?: string;
 }
 
-const Submenu = ({ items, parentLabel, onLinkClick }: SubmenuProps) => (
+const Submenu = ({ items, parentLabel, onLinkClick, id }: SubmenuProps) => (
   <ul
+    id={id}
     className="absolute z-50 mt-2 flex w-[243px] flex-col gap-5 bg-greenB p-4 shadow-lg contrast:bg-yellowContrast"
     aria-label={`Podmenu dla ${parentLabel}`}
   >
