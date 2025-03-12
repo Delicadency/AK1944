@@ -1,21 +1,24 @@
 interface Paragraph {
-  paragraph: string | string[];
+  paragraph: string[];
 }
-export interface Subsection extends Paragraph {
-  subtitle?: string;
-  bulletpoints?: string[];
+interface SubsectionWithTitle extends Paragraph {
+  subtitle: string;
+}
+
+interface SubsectionWithBulletpoints extends SubsectionWithTitle {
+  bulletpoints: string[];
 }
 
 interface ArticleStructure {
   mainArticle: Paragraph;
   subsections: {
-    establishment: Subsection;
-    goals: Subsection;
-    development: Subsection;
+    establishment: SubsectionWithTitle;
+    goals: SubsectionWithBulletpoints;
+    development: SubsectionWithTitle;
   };
   addendum: Paragraph;
 }
-export const unionData: ArticleStructure = {
+const unionData: ArticleStructure = {
   mainArticle: {
     paragraph: [
       "Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK) powstał w 1990 roku w Polsce z inicjatywy byłych żołnierzy Armii Krajowej, którzy pragnęli upamiętnić działalność jednej z największych podziemnych armii II wojny światowej. Głównym impulsem do założenia organizacji była chęć ochrony pamięci o AK, dbania o jej dobre imię, a także potrzeba stworzenia przestrzeni do zrzeszania kombatantów i ich potomków.",
@@ -25,27 +28,32 @@ export const unionData: ArticleStructure = {
   subsections: {
     establishment: {
       subtitle: "Założenie organizacji",
-      paragraph:
+      paragraph: [
         "Światowy Związek Żołnierzy Armii Krajowej został powołany 12 marca 1990 roku. Na pierwszym zjeździe założycielskim przyjęto statut i określono główne cele organizacji. Była to pierwsza tego typu instytucja, która mogła działać legalnie, swobodnie rozwijając swoją działalność na terenie całego kraju i poza jego granicami.",
-    },
+      ],
+    } as SubsectionWithTitle,
     goals: {
       subtitle: "Cele i zadania związku",
-      paragraph: "Od samego początku Związek skupił się na:",
+      paragraph: ["Od samego początku Związek skupił się na:"],
       bulletpoints: [
         "Upamiętnianiu Armii Krajowej: poprzez organizację obchodów rocznicowych, opiekę nad miejscami pamięci, tablicami i pomnikami związanymi z AK.",
         "Edukacji patriotycznej: Związek prowadził działania w szkołach, publikował książki i wspomnienia żołnierzy AK oraz współpracował z instytucjami naukowymi i kulturalnymi.",
         "Ochronie praw kombatantów: organizacja dążyła do poprawy sytuacji życiowej byłych żołnierzy AK, zwłaszcza weteranów potrzebujących pomocy materialnej lub opieki medycznej.",
         "Budowaniu wspólnoty pamięci: Związek integrował środowisko kombatantów i ich rodzin oraz wspierał współpracę z młodzieżą.",
       ],
-    },
+    } as SubsectionWithBulletpoints,
     development: {
       subtitle: "Dalszy rozwój",
-      paragraph:
+      paragraph: [
         "Z czasem Związek rozwinął strukturę regionalną, tworząc koła w różnych miastach Polski i zagranicą. Było to ważne, ponieważ wielu żołnierzy AK po wojnie wyemigrowało. W miarę starzenia się kombatantów priorytety organizacji zaczęły przesuwać się w stronę działalności edukacyjnej i dokumentacyjnej. Światowy Związek Żołnierzy AK współpracuje z Muzeum Powstania Warszawskiego, Instytutem Pamięci Narodowej oraz innymi instytucjami zajmującymi się historią II wojny światowej.",
-    },
+      ],
+    } as SubsectionWithTitle,
   },
   addendum: {
-    paragraph:
+    paragraph: [
       "Dziś Światowy Związek Żołnierzy Armii Krajowej jest jednym z najważniejszych strażników pamięci o polskim ruchu oporu podczas II wojny światowej i Polskim Państwie Podziemnym. Działa na rzecz zachowania tej tradycji dla przyszłych pokoleń.i Krajowej jest jednym z najważniejszych strażników pamięci.",
+    ],
   },
 } as const;
+
+export const { mainArticle, subsections, addendum } = unionData;
