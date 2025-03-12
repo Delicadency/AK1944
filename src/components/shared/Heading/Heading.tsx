@@ -53,11 +53,6 @@ export const Heading = ({
     white: "text-white border-white",
   };
 
-  const alignClasses = {
-    start: "items-start",
-    center: "items-center",
-  };
-
   return (
     <hgroup
       className={clsx(
