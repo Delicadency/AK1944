@@ -41,3 +41,6 @@ next-env.d.ts
 
 *storybook.log
 .vscode
+
+# cursor
+.cursorrules
