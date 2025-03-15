@@ -5,8 +5,8 @@ import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 import { Routes } from "@/routes";
 
-export default function DebicaDistrict() {
-  const { title, description } = historyData.debica;
+export const DebicaDistrict = () => {
+  const { title, description } = historyData.debica ?? {};
   return (
     <>
       <Container className="gap-[130px] desktop:flex">
@@ -14,24 +14,25 @@ export default function DebicaDistrict() {
           <Heading variant="h3" contrast="yellow" color="green">
             {title}
           </Heading>
-          <p className="my-6 text-greenMain">{description}</p>
+          <p className="my-6 font-sourceSans text-lg text-greenMain">
+            {description}
+          </p>
         </div>
-        <div>
-          <Image
-            src="/images/history/main/debica_placeholder.jpg"
-            alt="debica"
-            width={1920}
-            height={1080}
-          ></Image>
-        </div>
+        <Image
+          src="/images/history/main/debica.jpg"
+          alt="Pokazy musztry w koszarach 5. Pułku Strzelców Konnych w Dębicy. Na czele plutonu ppor. Mieczysław Rakoczy."
+          width={500}
+          height={1080}
+          className="m-auto"
+        />
       </Container>
       <Button
         label="Zobacz więcej"
-        ariaDescription="Zobacze Więcej"
+        ariaDescription="Zobacz Więcej"
         variant={"secondary"}
         className="mt-6 justify-self-center"
         href={Routes.DEBICA_DISTRICT}
       ></Button>
     </>
   );
-}
+};
