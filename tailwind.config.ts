@@ -29,6 +29,7 @@ export default {
         blue: "#0080FF",
         violet: "#C589F9",
         grayDate: "#8E8E8E",
+        border: "#D9D9D9",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
