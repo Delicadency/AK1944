@@ -5,22 +5,33 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { TaxCard } from "@/components/shared/TaxCard/TaxCard";
 import ContactInfo from "./components/ContactInfo";
 import LegalInfo from "./components/LegalInfo";
-
+import BackgroundImage from "./components/BackgroundImage"
 
 export default function ContactPage() {
   return (
-    <div className="relative min-h-screen">
-      <div className="hidden desktop:block absolute right-0 top-1/2 -translate-y-1/2">
-        <Image
-          src="/images/contact-bg-desktop.png"
-          alt="Obrazek przedstawiający retro telefon"
-          width={595}
-          height={739}
-          className="object-contain items-center w-full h-full"
+    <div className="relative min-h-screen isolate overflow-hidden">
+      {/* Desktop */}
+      <div className="hidden desktop:block absolute inset-y-0 right-0 w-[40vw] h-full">
+        <BackgroundImage
+          className=""
+          sizes="(max-width: 1280px) 40vw, 595px"
+          quality={85}
         />
       </div>
-      <div className="absolute min-h-screen hidden tablet:block inset-0 bg-no-repeat bg-contain bg-right tablet:bg-[url('/images/contact-bg.png')] desktop:hidden"></div>
-      <div className="absolute inset-0 bg-backgroundB/50 desktop:bg-backgroundB/10"></div>
+
+      {/* Tablet */}
+      <div className="hidden desktop:hidden tablet:flex absolute inset-0 justify-end pointer-events-none">
+        <div className="relative h-full overflow-hidden w-[80vw]">
+          <BackgroundImage
+            sizes="80vw"
+
+            className="object-cover object-left h-full translate-x-[40%]"
+            quality={70}
+          />
+        </div>
+      </div>
+
+      <div className="absolute inset-0  bg-backgroundB/50 tablet:bg-backgroundB/70"></div>
 
 
       <Container className="relative z-10 desktop:max-w-[85%]">
@@ -51,7 +62,7 @@ export default function ContactPage() {
             Światowy Związek Żołnierzy Armii Krajowej <br></br>
             Środowisko 5. Pułku Strzelców Konnych Armii Krajowej w Dębicy
           </Heading>
-          <p id="organization-info" className="mb-6 font-semibold tablet:hidden desktop:blockh">
+          <p id="organization-info" className="mb-6 font-semibold tablet:hidden desktop:block">
             Światowy Związek Żołnierzy Armii Krajowej – Środowisko 5. Pułku Strzelców Konnych Armii Krajowej w Dębicy
           </p>
         </section>
