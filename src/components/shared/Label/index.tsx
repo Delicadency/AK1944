@@ -1,30 +1,24 @@
 import { type ComponentProps } from "react";
-import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/utils";
 
-const labelVariants = cva("", {
-  variants: {
-    color: {
-      primary: "text-greenMain",
-      error: "text-redError",
-    },
-    visibility: {
-      shown: "block text-sm/6 font-medium",
-      hidden: "sr-only",
-    },
-  },
-  defaultVariants: {
-    color: "primary",
-    visibility: "shown",
-  },
-});
+const labelVariants = {
+  primary: "text-greenMain",
+  error: "text-redError",
+} as const;
 
-export type LabelProps = ComponentProps<"label"> &
-  VariantProps<typeof labelVariants>;
+const labelVisibility = {
+  shown: "block text-sm/6 font-medium",
+  hidden: "sr-only",
+} as const;
+
+export type LabelProps = ComponentProps<"label"> & {
+  color?: keyof typeof labelVariants;
+  visibility?: keyof typeof labelVisibility;
+};
 
 export const Label = ({
-  color,
-  visibility,
+  color = "primary",
+  visibility = "shown",
   className,
   htmlFor,
   ...rest
@@ -32,7 +26,7 @@ export const Label = ({
   <label
     id={htmlFor ? `${htmlFor}-label` : undefined}
     htmlFor={htmlFor}
-    className={cn(labelVariants({ color, visibility, className }))}
+    className={cn(labelVariants[color], labelVisibility[visibility], className)}
     {...rest}
   />
 );
