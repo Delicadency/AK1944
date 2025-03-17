@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useCallback, useRef } from "react";
-import ModalCloseIcon from "@/icons/ModalCloseIcon";
+import { ModalCloseIcon } from "@/icons/ModalCloseIcon";
 import { cn } from "@/utils";
 
 export type ModalProps = {
@@ -73,7 +73,7 @@ export const Modal = ({ children, isOpen, onClose, className }: ModalProps) => {
           aria-label="Zamknij modal"
           onClick={onClose}
         >
-          <ModalCloseIcon />
+          <ModalCloseIcon className="text-inherit" />
         </button>
         {children}
       </div>

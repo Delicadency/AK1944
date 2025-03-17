@@ -63,6 +63,9 @@ export const StripeElementsWrapper = ({ clientSecret, children }: Props) => {
           lineHeight: "1.5rem",
           marginTop: "0.25rem",
         },
+        ".Tab": {
+          backgroundColor: "#D9D9D9",
+        },
       },
     },
   } satisfies StripeElementsOptions;

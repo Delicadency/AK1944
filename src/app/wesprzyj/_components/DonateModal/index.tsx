@@ -30,7 +30,11 @@ export const DonateModal = () => {
         onClick={open}
       />
       {isOpen && (
-        <Modal isOpen={isOpen} onClose={close} className="bg-backgroundB px-10">
+        <Modal
+          isOpen={isOpen}
+          onClose={close}
+          className="bg-backgroundB px-10 text-greenMain"
+        >
           <DonateForm />
         </Modal>
       )}
