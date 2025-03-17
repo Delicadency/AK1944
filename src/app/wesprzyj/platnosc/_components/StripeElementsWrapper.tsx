@@ -2,16 +2,14 @@
 
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe, type StripeElementsOptions } from "@stripe/stripe-js";
-import { invariant } from "@/utils";
 
-invariant(
-  !!process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
-  "Missing NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY env variable",
-);
+const stripePublishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
-const stripePromise = loadStripe(
-  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
-);
+if (!stripePublishableKey) {
+  throw new Error("Missing NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY env variable");
+}
+
+const stripePromise = loadStripe(stripePublishableKey);
 
 interface Props {
   clientSecret: string;

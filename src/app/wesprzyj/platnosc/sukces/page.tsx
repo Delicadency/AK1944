@@ -1,6 +1,5 @@
 import { redirect } from "next/navigation";
 import Container from "@/components/shared/Container";
-import { invariant } from "@/utils";
 import { stripe } from "@/utils/stripe";
 import { PaymentError } from "./_components/PaymentError";
 import { PaymentSuccess } from "./_components/PaymentSuccess";
@@ -12,7 +11,9 @@ interface Props {
 }
 
 export default async function SuccessPage({ searchParams }: Props) {
-  invariant(!!process.env.STRIPE_SECRET_KEY, "STRIPE_SECRET_KEY is not set");
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error("STRIPE_SECRET_KEY is not set");
+  }
 
   const paymentIntent = await stripe.paymentIntents.retrieve(
     (await searchParams).intentId,

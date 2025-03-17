@@ -3,7 +3,6 @@
 import { redirect } from "next/navigation";
 import { z } from "zod";
 import { type ActionState } from "@/types";
-import { invariant } from "@/utils";
 import { stripe } from "@/utils/stripe";
 
 const paymentSchema = z.object({
@@ -31,7 +30,9 @@ export const donateAction = async (
   _prevState: ActionState,
   formData: FormData,
 ): Promise<ActionState> => {
-  invariant(formData instanceof FormData, "Nieprawidłowe dane formularza");
+  if (!(formData instanceof FormData)) {
+    throw new Error("Nieprawidłowe dane formularza");
+  }
 
   const data = Object.fromEntries(formData.entries());
   const result = paymentSchema.safeParse({ amount: formAmount, ...data });
