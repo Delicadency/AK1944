@@ -1,28 +1,31 @@
-import Link from "next/link";
-import { navigationData } from "../../data/footerNavigationData";
+import { ActiveLink } from "@/components/shared/ActiveLink";
+import { navigationData } from "@/data/footerNavigationData";
+import { type NavItem } from "@/types";
 
-export const FooterNavigation = () => {
-  return (
-    <nav className="flex w-full flex-1 flex-col justify-center gap-8 md:flex-row md:items-center md:justify-around">
-      {navigationData.map((sectionData, index) => (
-        <ul
-          key={index}
-          className="flex flex-col gap-8 lg:flex-row lg:space-x-6"
+export const FooterNavigation = () => (
+  <nav className="flex w-full flex-1 flex-col justify-center gap-8 md:flex-row md:items-center md:justify-around lg:justify-center lg:space-x-6 xl:space-x-8">
+    {navigationData.map(({ links }, index) => (
+      <NavigationSection key={index} links={links} />
+    ))}
+  </nav>
+);
+
+interface NavigationSectionProps {
+  links: NavItem[];
+}
+
+const NavigationSection = ({ links }: NavigationSectionProps) => (
+  <ul className="flex flex-col gap-8 lg:flex-row lg:space-x-6 xl:space-x-8">
+    {links.map(({ label, href }, index) => (
+      <li key={index} className="lg:text-center">
+        <ActiveLink
+          href={href}
+          aria-label={`Przejdź do strony ${label}`}
+          className="md:text-lg lg:text-xl"
         >
-          {sectionData.links.map((link, linkIndex) => (
-            <li key={linkIndex} className="lg:text-center">
-              <Link
-                href={link.href}
-                aria-label={link.ariaLabel}
-                title={link.title}
-                className="text-base font-normal transition-opacity hover:opacity-80 md:text-18 lg:text-20"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      ))}
-    </nav>
-  );
-};
+          {label}
+        </ActiveLink>
+      </li>
+    ))}
+  </ul>
+);
