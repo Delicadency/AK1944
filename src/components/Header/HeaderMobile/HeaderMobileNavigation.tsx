@@ -1,99 +1,92 @@
-import * as React from "react";
-import { useState } from "react";
-import { cn } from "@/utils";
-import { SubmenuItem } from "@/types";
-import { ActiveLink } from "@/components/shared/ActiveLink";
 import { customOrder, submenuData } from "@/data/headerData";
 import { navData } from "@/data/navigationData";
-import { IconChevronDown } from "@/icons/IconChevronDown";
+import { cn } from "@/utils";
+import { NavLink } from "../NavLink";
+import { SubmenuToggle } from "../SubmenuToggle";
+import { useSubmenuState } from "../useSubmenuState";
 
 export const HeaderMobileNavigation = () => {
-  const [openSubmenuIndex, setOpenSubmenuIndex] = useState<number | null>(null);
-
+  const { toggleSubmenu, isSubmenuOpen } = useSubmenuState();
   const orderedNavData = customOrder.map((index) => navData[index]);
-
-  const toggleSubmenu = (index: number) => {
-    setOpenSubmenuIndex(openSubmenuIndex === index ? null : index);
-  };
-
-  const navClasses =
-    "text-16 text-backgroundMain transition duration-300 ease-in-out active:text-blue contrast:text-black00";
 
   return (
     <nav aria-label="Główna nawigacja">
       <ul className="flex flex-col gap-5">
         {orderedNavData.map(({ href, label }, index) => (
-          <React.Fragment key={index}>
-            <li className="text-backgroundMain">
-              {submenuData[index] ? (
-                <button
-                  className={cn(
-                    navClasses,
-                    "flex w-full items-center text-left",
-                  )}
-                  onClick={() => toggleSubmenu(index)}
-                  aria-expanded={openSubmenuIndex === index}
-                  aria-controls={`submenu-${index}`}
-                  aria-label={`Rozwiń menu ${label}`}
-                  aria-haspopup="menu"
-                >
-                  <span>{label}</span>
-                  <IconChevronDown
-                    className={`ml-1 h-5 w-5 transform transition duration-300 ease-in-out ${
-                      openSubmenuIndex === index ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-              ) : (
-                <ActiveLink
-                  href={href}
-                  className={navClasses}
-                  aria-label={`Przejdź do ${label}`}
-                >
-                  {label}
-                </ActiveLink>
-              )}
-              {submenuData[index] && (
-                <ul
-                  id={`submenu-${index}`}
-                  className={`ml-4 flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${
-                    openSubmenuIndex === index ? "max-h-screen" : "max-h-0"
-                  }`}
-                  data-testid={`submenu-${index}`}
-                  aria-hidden={openSubmenuIndex !== index}
-                  style={{
-                    pointerEvents: openSubmenuIndex === index ? "auto" : "none",
-                  }}
-                >
-                  {submenuData[index]?.map(
-                    (
-                      { href: subHref, label: subLabel }: SubmenuItem,
-                      subIndex: number,
-                    ) => (
-                      <li key={subIndex} className="first:mt-2">
-                        <ActiveLink
-                          href={subHref}
-                          className={navClasses}
-                          aria-label={`Przejdź do ${subLabel}`}
-                        >
-                          {subLabel}
-                        </ActiveLink>
-                      </li>
-                    ),
-                  )}
-                </ul>
-              )}
-            </li>
-            {index === 4 && (
-              <hr
-                className="-translate-y-2 border-t border-backgroundMain contrast:border-black00"
-                aria-hidden="true"
-                data-testid="separator"
-              />
-            )}
-          </React.Fragment>
+          <NavItem
+            key={index}
+            href={href}
+            label={label}
+            index={index}
+            isSubmenuOpen={isSubmenuOpen(index)}
+            toggleSubmenu={() => toggleSubmenu(index)}
+          />
         ))}
       </ul>
     </nav>
   );
 };
+
+interface NavItemProps {
+  href: string;
+  label: string;
+  index: number;
+  isSubmenuOpen: boolean;
+  toggleSubmenu: () => void;
+}
+
+const NavItem = ({
+  href,
+  label,
+  index,
+  isSubmenuOpen,
+  toggleSubmenu,
+}: NavItemProps) => {
+  const hasSubmenu = !!submenuData[index];
+
+  return (
+    <li className="text-backgroundMain">
+      {hasSubmenu ? (
+        <>
+          <SubmenuToggle
+            label={label}
+            isOpen={isSubmenuOpen}
+            onClick={toggleSubmenu}
+            controlsId={`submenu-${index}`}
+            className="w-full text-16"
+          />
+          <Submenu
+            items={submenuData[index]}
+            index={index}
+            isOpen={isSubmenuOpen}
+          />
+        </>
+      ) : (
+        <NavLink href={href} label={label} />
+      )}
+    </li>
+  );
+};
+
+interface SubmenuProps {
+  items: { href: string; label: string }[];
+  index: number;
+  isOpen: boolean;
+}
+
+const Submenu = ({ items, index, isOpen }: SubmenuProps) => (
+  <ul
+    id={`submenu-${index}`}
+    data-testid={`submenu-${index}`}
+    className={cn(
+      "ml-4 mt-2 space-y-3 overflow-hidden transition-all duration-300",
+      isOpen ? "max-h-96" : "mt-0 max-h-0",
+    )}
+  >
+    {items.map((item, subIndex) => (
+      <li key={subIndex}>
+        <NavLink href={item.href} label={item.label} />
+      </li>
+    ))}
+  </ul>
+);

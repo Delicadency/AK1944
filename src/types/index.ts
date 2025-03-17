@@ -58,3 +58,8 @@ export interface ContainerProps {
   className?: string;
   as?: ElementType;
 }
+
+export interface NavItem {
+  href: string;
+  label: string;
+}
