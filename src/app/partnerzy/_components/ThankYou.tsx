@@ -1,5 +1,5 @@
-import { GratitudeIcon } from "@/app/wesprzyj/_components/icons/GratitudeIcon";
 import { Heading } from "@/components/shared/Heading/Heading";
+import { GratitudeIcon } from "@/icons/GratitudeIcon";
 
 export const ThankYou = () => (
   <section
