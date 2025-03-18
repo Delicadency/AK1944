@@ -1,11 +1,14 @@
 import Image from "next/image";
 
-interface Props {}
+interface Props {
+  items?: number[]; // Todo: Remove optional. Or make it composable component.
+}
 
 // Mock of partners cards props. Will be injected via props to the Carousel component. (prolly static data)
-const items = Array.from({ length: 3 }, (_, i) => i);
+const mockedItems = Array.from({ length: 3 }, (_, i) => i);
 
-export const Carousel = ({}: Props) => {
+// Todo: Move to shared?
+export const Carousel = ({ items = mockedItems }: Props) => {
   return (
     <ul className="flex items-center gap-4 overflow-x-scroll tablet:gap-6 desktop:gap-10">
       {items.map((item) => (
