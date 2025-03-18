@@ -29,7 +29,7 @@ export const HeroicDefence = () => {
           alt="debica"
           width={2000}
           height={1300}
-          className="m-auto"
+          className="m-auto max-w-[600px]"
         />
       )}
       <p className="text-lg contrast:text-yellowContrast">{heroicDefence3}</p>

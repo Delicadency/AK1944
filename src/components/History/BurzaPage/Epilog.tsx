@@ -30,7 +30,7 @@ export const Epilog = () => {
           alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r."
           width={3500}
           height={2500}
-          className="m-auto desktop:max-w-[600px]"
+          className="m-auto max-w-[600px]"
         />
       )}
       <p className="text-lg contrast:text-yellowContrast">{epilog1}</p>

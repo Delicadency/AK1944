@@ -32,7 +32,7 @@ export const FirstDays = () => {
           alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Kondukt pogrzebowy z trumną poległego żołnierza AK w drodze z Gołęczyny na Kałużówkę, 21 sierpnia 1944 r."
           width={2000}
           height={1300}
-          className="desktop:max-w-[600px]"
+          className="max-w-[600px]"
         />
         {isDesktop && (
           <Image

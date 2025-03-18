@@ -16,7 +16,7 @@ export const Partisan = () => {
           alt="Ostatnie pożegnanie jednego z poległych żołnierzy AK. Gumniska, 1944 r."
           width={2120}
           height={2950}
-          className="m-auto desktop:max-w-[450px]"
+          className="m-auto max-w-[450px]"
         />
         <div className="flex flex-col gap-6">
           <p className="text-lg contrast:text-yellowContrast">{partisan1}</p>

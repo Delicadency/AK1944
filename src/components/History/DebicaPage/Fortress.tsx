@@ -14,12 +14,11 @@ export const Fortress = () => {
         <p className="text-lg contrast:text-yellowContrast">{fortress2}</p>
       </div>
       <Image
-        src="/images/history/debica/debica.jpeg"
+        src="/images/history/main/debica.jpg"
         alt="debica"
         width={1600}
         height={980}
-        sizes="(max-width: 1279px) 50vw, 35vw"
-        className="m-auto"
+        className="m-auto desktop:max-w-[500px]"
         priority
       />
     </section>
