@@ -8,6 +8,8 @@ import { OurPartners } from "./_components/OurPartners";
 import { ThankYou } from "./_components/ThankYou";
 import { AK_DATA } from "@/data/akData";
 
+// Todo: Add meta for partners for SEO? Carousel is client-side.
+
 export default function PartnersPage() {
   return (
     <div className="bg-backgroundMain pb-20 text-greenMain">
