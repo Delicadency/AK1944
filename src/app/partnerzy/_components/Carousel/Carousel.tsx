@@ -5,13 +5,14 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
 interface Props {
-  items: string[]; // Todo: Add { id, name, href }
+  items: string[]; // Todo: Add { id, name, href }, Maybe extract <CarouselItem /> ?
 }
 
 export const Carousel = ({ items }: Props) => {
-  const [emblaRef] = useEmblaCarousel({ loop: true, axis: "x" }, [
-    Autoplay({ playOnInit: true, delay: 2_000 }),
-  ]);
+  const [emblaRef] = useEmblaCarousel(
+    { loop: true, dragFree: true, slidesToScroll: "auto", align: "start" },
+    [Autoplay({ playOnInit: true, delay: 3_000, stopOnInteraction: false })],
+  );
 
   return (
     <div className="overflow-hidden" ref={emblaRef}>
