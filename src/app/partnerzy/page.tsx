@@ -16,7 +16,7 @@ export default function PartnersPage() {
       <Container as="main" className="space-y-10">
         <Navigation />
 
-        <div className="flex flex-col items-center desktop:flex-row">
+        <div className="flex flex-col items-center desktop:flex-row desktop:gap-20">
           <div className="space-y-8">
             <Paragraph title="Dziękujemy za wsparcie">
               Nasza misja –{" "}
