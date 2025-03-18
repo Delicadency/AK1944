@@ -2,10 +2,7 @@ import clsx from "clsx";
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
 import { formatDate } from "@/utils";
 import { cardsPlaceholder } from "@/app/zwiazek/kalendarz/_components/Events/List";
-import {
-  daysOfWeek,
-  today,
-} from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
+import { daysOfWeek } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
 
 type CalendarTableProps = {
   currentDate: Date;
@@ -18,27 +15,6 @@ export const CalendarTable = ({
   prevMonth,
   nextMonth,
 }: CalendarTableProps) => {
-  const generateCalendar = (date: Date) => {
-    const year = date.getFullYear();
-    const month = date.getMonth();
-    const currentDate = new Date(year, month, 1);
-    const calendarDays = [];
-    const dayOfWeek = currentDate.getDay(); // Numer dnia tygodnia
-    const daysToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
-    currentDate.setDate(currentDate.getDate() + daysToMonday);
-
-    for (let i = 0; i < 6; i++) {
-      const week = [];
-      for (let j = 0; j < 7; j++) {
-        week.push(formatDate(currentDate.toString()));
-        currentDate.setDate(currentDate.getDate() + 1);
-      }
-      calendarDays.push(week);
-    }
-
-    return calendarDays;
-  };
-
   const calendarDays = generateCalendar(currentDate);
 
   const eventsDates = cardsPlaceholder.map((card) => card.date);
@@ -82,7 +58,7 @@ export const CalendarTable = ({
                       formatDate(currentDate.toString()).split(".")[1]
                       ? "text-white"
                       : "text-greenC",
-                    day === formatDate(today.toString()) &&
+                    day === formatDate(new Date().toString()) &&
                       "rounded border-2 border-yellowVintage",
                     eventsDates.find(
                       (date) =>
@@ -100,4 +76,27 @@ export const CalendarTable = ({
       </table>
     </div>
   );
+};
+
+const generateCalendar = (date: Date) => {
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const currentDate = new Date(year, month, 1);
+  const calendarDays = [];
+  const dayOfWeek = currentDate.getDay(); // Numer dnia tygodnia
+  const daysToMonday = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
+  currentDate.setDate(currentDate.getDate() + daysToMonday);
+  const rowsNumber = 6;
+  const daysInWeek = 7;
+
+  for (let i = 0; i < rowsNumber; i++) {
+    const week = [];
+    for (let j = 0; j < daysInWeek; j++) {
+      week.push(formatDate(currentDate.toString()));
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+    calendarDays.push(week);
+  }
+
+  return calendarDays;
 };

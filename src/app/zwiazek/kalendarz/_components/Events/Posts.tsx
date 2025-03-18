@@ -2,17 +2,20 @@ import { cardsPlaceholder } from "@/app/zwiazek/kalendarz/_components/Events/Lis
 import { Card } from "@/app/zwiazek/kalendarz/_components/Events/Card";
 import { Button } from "@/components/shared/Button/Button";
 
-interface PostsProps {
+interface Props {
   currentDate: Date;
   handleShowMore: () => void;
   postsToShow: number;
 }
 
-export const Posts = ({
-  currentDate,
-  handleShowMore,
-  postsToShow,
-}: PostsProps) => {
+// const currentMonthPosts = getPostsForCurrentMonth(args);
+// const areMorePostsAvailable = postsToShow < currentMonthPosts.length;
+
+// const displayedPosts = currentMonthPosts.slice(0, postsToShow);
+
+// return <jsx />;
+
+export const Posts = ({ currentDate, handleShowMore, postsToShow }: Props) => {
   const showMoreButton =
     postsToShow <
     cardsPlaceholder.filter((card) => {
@@ -21,7 +24,7 @@ export const Posts = ({
     }).length;
 
   return (
-    <article className="flex w-full flex-col items-center gap-5 tablet:gap-10">
+    <article className="flex w-full flex-col items-start gap-5 tablet:gap-10">
       {cardsPlaceholder
         .filter((card) => {
           const [, month] = card.date.split(".").map(Number);
@@ -40,6 +43,7 @@ export const Posts = ({
         ))}
       {showMoreButton && (
         <Button
+          className="self-center"
           label="Pokaż więcej"
           ariaDescription="Pokaż więcej"
           variant="inversion"

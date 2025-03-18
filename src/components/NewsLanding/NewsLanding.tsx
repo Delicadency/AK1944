@@ -30,6 +30,7 @@ const NewsLanding = async () => {
             <CalendarCard
               date={1942}
               description="Związek Walki Zbrojnej (ZWZ) został przekształcony w Armię Krajową (AK)"
+              withButton
             />
           </div>
           <div className="flex flex-col items-center justify-center gap-5 tablet:gap-10">

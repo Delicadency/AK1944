@@ -1,19 +1,18 @@
 import { Routes } from "@/routes";
-import { BackgroundImage } from "../BackgroundImage/BackgroundImage";
-import { Button } from "../Button/Button";
-import Container from "../Container";
-
-interface CalendarCardProps {
-  date: string | number;
-  description: string;
-  hideButton?: boolean;
+import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
+import { Button } from "@/components/shared/Button/Button";
+import Container from "@/components/shared/Container";
+interface Props {
+  date?: string | number;
+  description?: string;
+  withButton?: boolean;
 }
 
 export const CalendarCard = ({
   date,
   description,
-  hideButton = false,
-}: CalendarCardProps) => {
+  withButton = false,
+}: Props) => {
   const currentDate = new Date();
   const currentMonth = currentDate.toLocaleString("default", { month: "long" });
   const currentYear = currentDate.getFullYear();
@@ -44,9 +43,7 @@ export const CalendarCard = ({
             className="my-5 w-full border border-solid border-redMain contrast:border-black"
             aria-hidden
           />
-          {description === "" ? (
-            ""
-          ) : (
+          {description && (
             <div className="mb-5 grid grid-cols-[auto_1fr] gap-2 font-sans">
               <p className="text-16 font-bold">{date}</p>
               <p className="relative text-16 before:absolute before:-left-[7px] before:content-['-']">
@@ -54,7 +51,7 @@ export const CalendarCard = ({
               </p>
             </div>
           )}
-          {!hideButton && (
+          {withButton && (
             <Button
               variant="primary"
               label="Kalendarz uroczystości"

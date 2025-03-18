@@ -2,10 +2,7 @@
 
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
 import { CalendarTable } from "@/app/zwiazek/kalendarz/_components/CalendarTable";
-import {
-  addMonth,
-  today,
-} from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
+import { addMonth } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
 import { cardsPlaceholder } from "@/app/zwiazek/kalendarz/_components/Events/List";
 import { Posts } from "@/app/zwiazek/kalendarz/_components/Events/Posts";
 import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
@@ -25,33 +22,22 @@ export const CalendarMain = () => {
     setPostsToShow(3);
   };
 
-  const getEventForToday = () => {
-    const todayMonthDay = `${today.getDate().toString().padStart(2, "0")}.${(today.getMonth() + 1).toString().padStart(2, "0")}`;
-    const event = cardsPlaceholder.find((card) =>
-      card.date.startsWith(todayMonthDay),
-    );
-    return event
-      ? { year: event.date.split(".")[2], title: event.title }
-      : null;
-  };
-
   const eventForToday = getEventForToday();
+  console.log(eventForToday);
 
   return (
     <>
-      <section className="flex w-full flex-col items-center gap-10 self-center bg-greenMain py-9 tablet:flex-row tablet:justify-center tablet:gap-52 tablet:px-10">
+      <section className="flex w-full flex-col items-center gap-10 self-center bg-greenMain py-9 tablet:justify-center tablet:gap-52 tablet:px-10 desktop:flex-row">
         <CalendarTable
           currentDate={currentDate}
           prevMonth={handlePrevMonth}
           nextMonth={handleNextMonth}
         />
         <CalendarCard
-          date={eventForToday ? eventForToday.year : "1234"}
-          description={eventForToday ? eventForToday.title : ""}
-          hideButton
+          date={eventForToday?.date.split(".")[2]}
+          description={eventForToday?.title}
         />
       </section>
-
       <section className="flex flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-24">
         <CalendarHeader
           className="items-center justify-center text-24 text-greenMain tablet:w-full tablet:justify-between tablet:text-32"
@@ -68,4 +54,16 @@ export const CalendarMain = () => {
       </section>
     </>
   );
+};
+
+const getEventForToday = () => {
+  const pad = (value: number) => value.toString().padStart(2, "0");
+  const todayMonthDay = `${pad(new Date().getDate())}.${pad(new Date().getMonth() + 1)}`;
+
+  // Return first event or array of events that matches today's date??
+
+  const event = cardsPlaceholder.find((card) =>
+    card.date.startsWith(todayMonthDay),
+  );
+  return event;
 };
