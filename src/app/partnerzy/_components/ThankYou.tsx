@@ -11,7 +11,7 @@ export const ThankYou = () => (
       variant="h3"
       color="green"
       contrast="yellow"
-      className="text-2xl tablet:text-26 desktop:text-28"
+      className="text-center text-2xl tablet:text-26 desktop:text-28"
     >
       Serdecznie dziękujemy za owocną współpracę!
     </Heading>
