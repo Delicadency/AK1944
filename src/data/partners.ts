@@ -1,3 +1,4 @@
+// Todo: Fill with Partners links & images (logos)
 export const partners = [
   {
     id: "1",
