@@ -10,7 +10,7 @@ export const OurPartners = () => (
       contrast="yellow"
       className="text-center text-2xl tablet:text-26 desktop:text-28"
     >
-      Wspieraj nas:
+      Wspierają nas:
     </Heading>
 
     <Carousel />
