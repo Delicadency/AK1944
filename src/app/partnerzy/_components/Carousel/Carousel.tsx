@@ -8,6 +8,7 @@ interface Props {
   items: string[]; // Todo: Add { id, name, href }, Maybe extract <CarouselItem /> ?
 }
 
+// Todo: Adjust spacings for viewports.
 export const Carousel = ({ items }: Props) => {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, slidesToScroll: "auto", align: "start" },
