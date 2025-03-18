@@ -1,19 +1,12 @@
 import Container from "@/components/shared/Container";
 import { Navigation } from "./_components/Navigation";
+import { Paragraph } from "./_components/Paragraph";
+import { BulletList } from "./_components/BulletList/BulletList";
 import { Partnership } from "./_components/Partnership";
 import { Thread } from "./_components/Thread";
 import { OurPartners } from "./_components/OurPartners";
 import { ThankYou } from "./_components/ThankYou";
-import { BulletList } from "./_components/BulletList/BulletList";
-import { Paragraph } from "./_components/Paragraph";
 import { AK_DATA } from "@/data/akData";
-
-const points = [
-  "Wsparcie wydarzeń edukacyjnych i historycznych.",
-  "Patronaty medialne i promowanie inicjatyw związanych z historią AK.",
-  "Wspólne projekty badawcze i publikacje.",
-  "Wsparcie finansowe lub rzeczowe na cele upamiętnienia i edukacji.",
-];
 
 export default function PartnersPage() {
   return (
@@ -66,3 +59,10 @@ export default function PartnersPage() {
     </div>
   );
 }
+
+const points = [
+  "Wsparcie wydarzeń edukacyjnych i historycznych.",
+  "Patronaty medialne i promowanie inicjatyw związanych z historią AK.",
+  "Wspólne projekty badawcze i publikacje.",
+  "Wsparcie finansowe lub rzeczowe na cele upamiętnienia i edukacji.",
+];
