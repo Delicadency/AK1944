@@ -1,5 +1,8 @@
-export const ThreadIcon = () => (
+import { DefaultIconProps } from "@/types";
+
+export const ThreadIcon = ({ className }: DefaultIconProps) => (
   <svg
+    className={className}
     width="669"
     height="137"
     viewBox="0 0 669 137"
