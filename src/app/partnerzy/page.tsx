@@ -28,6 +28,10 @@ export default function PartnersPage() {
           kolejnych pokoleń o historii Polski i jej bohaterach.
         </Paragraph>
 
+        <div className="tablet:hidden">
+          <Partnership />
+        </div>
+
         <Paragraph title="Jak zostać partnerem?">
           Jeśli chcesz dołączyć do grona naszych partnerów i wspólnie działać na
           rzecz upamiętnienia historii Armii Krajowej, zapraszamy do kontaktu.
@@ -44,7 +48,9 @@ export default function PartnersPage() {
           skontaktuj się telefonicznie <strong>{AK_DATA.phone}</strong>.
         </Paragraph>
 
-        <Partnership />
+        <div className="hidden tablet:block">
+          <Partnership />
+        </div>
 
         <Thread />
 

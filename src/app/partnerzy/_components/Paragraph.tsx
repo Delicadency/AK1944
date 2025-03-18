@@ -5,14 +5,18 @@ interface Props {
   children: React.ReactNode;
 }
 
-const slufigy = (text?: string) => text?.replaceAll(/[^a-z0-9 ]/g, "");
+const slugify = (text?: string) =>
+  text?.replaceAll(/[^\S]/g, "-")?.toLowerCase();
 
 export const Paragraph = ({ title, children }: Props) => {
+  const slug = slugify(title);
+  const id = slug ? `${slug}-heading` : undefined;
+
   return (
-    <section className="space-y-6" aria-labelledby={slufigy(title)}>
+    <article className="space-y-6" aria-labelledby={id}>
       {title ? (
         <Heading
-          id="gratitude-heading"
+          id={id}
           color="green"
           contrast="yellow"
           className="text-center text-2xl tablet:text-26 desktop:text-28"
@@ -23,6 +27,6 @@ export const Paragraph = ({ title, children }: Props) => {
       ) : null}
 
       <p>{children}</p>
-    </section>
+    </article>
   );
 };

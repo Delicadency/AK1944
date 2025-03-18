@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const BulletList = ({ points }: Props) => (
-  <section className="space-y-6">
+  <article className="space-y-6">
     <p>Oferujemy różne formy współpracy, takie jak</p>
 
     <ul className="flex flex-col justify-center gap-6">
@@ -20,5 +20,5 @@ export const BulletList = ({ points }: Props) => (
         </li>
       ))}
     </ul>
-  </section>
+  </article>
 );
