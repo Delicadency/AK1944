@@ -1,5 +1,6 @@
 import { PartnerIcon } from "@/icons/PartnerIcon";
 
+// Todo: Replace PartnerIcon with less padding vector.
 export const Partnership = () => (
   <section className="m-auto flex max-w-lg flex-col items-center p-2">
     <PartnerIcon
