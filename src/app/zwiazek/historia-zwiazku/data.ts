@@ -31,7 +31,7 @@ const unionData: ArticleStructure = {
       paragraph: [
         "Światowy Związek Żołnierzy Armii Krajowej został powołany 12 marca 1990 roku. Na pierwszym zjeździe założycielskim przyjęto statut i określono główne cele organizacji. Była to pierwsza tego typu instytucja, która mogła działać legalnie, swobodnie rozwijając swoją działalność na terenie całego kraju i poza jego granicami.",
       ],
-    } as SubsectionWithTitle,
+    },
     goals: {
       subtitle: "Cele i zadania związku",
       paragraph: ["Od samego początku Związek skupił się na:"],
@@ -41,13 +41,13 @@ const unionData: ArticleStructure = {
         "Ochronie praw kombatantów: organizacja dążyła do poprawy sytuacji życiowej byłych żołnierzy AK, zwłaszcza weteranów potrzebujących pomocy materialnej lub opieki medycznej.",
         "Budowaniu wspólnoty pamięci: Związek integrował środowisko kombatantów i ich rodzin oraz wspierał współpracę z młodzieżą.",
       ],
-    } as SubsectionWithBulletpoints,
+    },
     development: {
       subtitle: "Dalszy rozwój",
       paragraph: [
         "Z czasem Związek rozwinął strukturę regionalną, tworząc koła w różnych miastach Polski i zagranicą. Było to ważne, ponieważ wielu żołnierzy AK po wojnie wyemigrowało. W miarę starzenia się kombatantów priorytety organizacji zaczęły przesuwać się w stronę działalności edukacyjnej i dokumentacyjnej. Światowy Związek Żołnierzy AK współpracuje z Muzeum Powstania Warszawskiego, Instytutem Pamięci Narodowej oraz innymi instytucjami zajmującymi się historią II wojny światowej.",
       ],
-    } as SubsectionWithTitle,
+    },
   },
   addendum: {
     paragraph: [

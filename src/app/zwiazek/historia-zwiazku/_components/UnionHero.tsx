@@ -3,11 +3,11 @@ import Container from "@/components/shared/Container";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-interface UnionHeroProps {
+interface Props {
   paragraph: string[];
 }
 
-export const UnionHero = ({ paragraph }: UnionHeroProps) => (
+export const UnionHero = ({ paragraph }: Props) => (
   <BackgroundImage
     src="/images/hero_background.png"
     alt="Zdjęcie przedstawiające strzelców konnych z biało czerwonymi proporcami"

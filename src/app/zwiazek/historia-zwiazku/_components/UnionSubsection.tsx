@@ -20,12 +20,6 @@ export const UnionSubsection = ({
         {text}
       </p>
     ))}
-    {bulletpoints && (
-      <ul>
-        {bulletpoints.map((point, i) => (
-          <BulletpointList key={i} text={point} />
-        ))}
-      </ul>
-    )}
+    {bulletpoints ? <BulletpointList bulletpoints={bulletpoints} /> : null}
   </section>
 );
