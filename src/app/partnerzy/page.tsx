@@ -18,38 +18,43 @@ const points = [
 export default function PartnersPage() {
   return (
     <div className="bg-backgroundMain pb-20 text-greenMain">
-      <Container as="main" className="space-y-8">
+      <Container as="main" className="space-y-10">
         <Navigation />
 
-        <Paragraph title="Dziękujemy za wsparcie">
-          Nasza misja – <strong>upamiętnianie bohaterów Armii Krajowej</strong>{" "}
-          – nie byłaby możliwa bez wsparcia naszych partnerów. Dziękujemy
-          instytucjom, organizacjom i firmom, które pomagają nam w edukowaniu
-          kolejnych pokoleń o historii Polski i jej bohaterach.
-        </Paragraph>
+        <div className="flex flex-col items-center desktop:flex-row">
+          <div className="space-y-8">
+            <Paragraph title="Dziękujemy za wsparcie">
+              Nasza misja –{" "}
+              <strong>upamiętnianie bohaterów Armii Krajowej</strong> – nie
+              byłaby możliwa bez wsparcia naszych partnerów. Dziękujemy
+              instytucjom, organizacjom i firmom, które pomagają nam w
+              edukowaniu kolejnych pokoleń o historii Polski i jej bohaterach.
+            </Paragraph>
 
-        <div className="tablet:hidden">
-          <Partnership />
-        </div>
+            <div className="tablet:hidden">
+              <Partnership />
+            </div>
 
-        <Paragraph title="Jak zostać partnerem?">
-          Jeśli chcesz dołączyć do grona naszych partnerów i wspólnie działać na
-          rzecz upamiętnienia historii Armii Krajowej, zapraszamy do kontaktu.
-          Współpracujemy z instytucjami, organizacjami, firmami oraz osobami
-          prywatnymi, które podzielają naszą misję pielęgnowania pamięci o
-          bohaterach walczących o wolność Polski.
-        </Paragraph>
+            <Paragraph title="Jak zostać partnerem?">
+              Jeśli chcesz dołączyć do grona naszych partnerów i wspólnie
+              działać na rzecz upamiętnienia historii Armii Krajowej, zapraszamy
+              do kontaktu. Współpracujemy z instytucjami, organizacjami, firmami
+              oraz osobami prywatnymi, które podzielają naszą misję
+              pielęgnowania pamięci o bohaterach walczących o wolność Polski.
+            </Paragraph>
 
-        <BulletList points={points} />
+            <BulletList points={points} />
 
-        <Paragraph>
-          Jeśli masz pomysł na współpracę lub chcesz dowiedzieć się więcej,
-          napisz do nas na adres e-mail <strong>{AK_DATA.email}</strong> lub
-          skontaktuj się telefonicznie <strong>{AK_DATA.phone}</strong>.
-        </Paragraph>
+            <Paragraph>
+              Jeśli masz pomysł na współpracę lub chcesz dowiedzieć się więcej,
+              napisz do nas na adres e-mail <strong>{AK_DATA.email}</strong> lub
+              skontaktuj się telefonicznie <strong>{AK_DATA.phone}</strong>.
+            </Paragraph>
+          </div>
 
-        <div className="hidden tablet:block">
-          <Partnership />
+          <div className="hidden tablet:block">
+            <Partnership />
+          </div>
         </div>
 
         <Thread />

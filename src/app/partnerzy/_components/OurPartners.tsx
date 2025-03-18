@@ -2,7 +2,7 @@ import { Heading } from "@/components/shared/Heading/Heading";
 import { Carousel } from "./Carousel/Carousel";
 
 export const OurPartners = () => (
-  <section aria-labelledby="our-partners-heading" className="space-y-6">
+  <section aria-labelledby="our-partners-heading" className="space-y-6 py-10">
     <Heading
       id="our-partners-heading"
       variant="h4"

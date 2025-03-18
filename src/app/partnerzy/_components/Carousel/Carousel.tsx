@@ -5,7 +5,7 @@ interface Props {
 }
 
 // Mock of partners cards props. Will be injected via props to the Carousel component. (prolly static data)
-const mockedItems = Array.from({ length: 3 }, (_, i) => i);
+const mockedItems = Array.from({ length: 5 }, (_, i) => i);
 
 // Todo: Move to shared?
 export const Carousel = ({ items = mockedItems }: Props) => {
