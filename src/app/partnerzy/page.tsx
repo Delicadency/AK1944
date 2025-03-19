@@ -1,10 +1,12 @@
 import Container from "@/components/shared/Container";
-import { Navigation } from "./_components/Navigation";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
+import { ThankYou } from "@/components/shared/ThankYou";
+
 import { Paragraph } from "./_components/Paragraph";
 import { BulletList } from "./_components/BulletList/BulletList";
 import { Partnership } from "./_components/Partnership";
 import { OurPartners } from "./_components/OurPartners";
-import { ThankYou } from "@/components/shared/ThankYou";
+
 import { ThreadIcon } from "@/icons/ThreadIcon";
 
 import { AK_DATA } from "@/data/akData";
@@ -15,7 +17,11 @@ export default function PartnersPage() {
   return (
     <div className="bg-backgroundMain pb-20 text-greenMain contrast:bg-black00 contrast:text-yellowContrast">
       <Container as="main" className="space-y-10">
-        <Navigation />
+        <Breadcrumbs />
+
+        <h2 className="mb-10 mt-5 font-lora text-2xl font-bold desktop:mt-10">
+          Partnerzy
+        </h2>
 
         <div className="flex flex-col items-center desktop:flex-row desktop:gap-20">
           <div className="space-y-8">
