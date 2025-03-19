@@ -13,7 +13,7 @@ import { AK_DATA } from "@/data/akData";
 
 export default function PartnersPage() {
   return (
-    <div className="bg-backgroundMain pb-20 text-greenMain">
+    <div className="bg-backgroundMain pb-20 text-greenMain contrast:bg-black00 contrast:text-yellowContrast">
       <Container as="main" className="space-y-10">
         <Navigation />
 
