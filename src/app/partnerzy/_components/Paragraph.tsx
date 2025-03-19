@@ -1,12 +1,10 @@
 import { Heading } from "@/components/shared/Heading/Heading";
+import { slugify } from "@/utils";
 
 interface Props {
   title?: string;
   children: React.ReactNode;
 }
-
-const slugify = (text?: string) =>
-  text?.replaceAll(/[^\S]/g, "-")?.toLowerCase();
 
 export const Paragraph = ({ title, children }: Props) => {
   const slug = slugify(title);
