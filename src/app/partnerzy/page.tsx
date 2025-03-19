@@ -3,9 +3,9 @@ import { Navigation } from "./_components/Navigation";
 import { Paragraph } from "./_components/Paragraph";
 import { BulletList } from "./_components/BulletList/BulletList";
 import { Partnership } from "./_components/Partnership";
-import { Thread } from "./_components/Thread";
 import { OurPartners } from "./_components/OurPartners";
 import { ThankYou } from "@/components/shared/ThankYou";
+import { ThreadIcon } from "@/icons/ThreadIcon";
 
 import { AK_DATA } from "@/data/akData";
 
@@ -53,7 +53,7 @@ export default function PartnersPage() {
           </div>
         </div>
 
-        <Thread />
+        <ThreadIcon className="mx-auto overflow-hidden p-2" />
 
         <OurPartners />
 
