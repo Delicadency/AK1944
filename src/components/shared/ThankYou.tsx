@@ -1,7 +1,11 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import { GratitudeIcon } from "@/icons/GratitudeIcon";
 
-export const ThankYou = () => (
+interface Props {
+  title: string;
+}
+
+export const ThankYou = ({ title }: Props) => (
   <section
     aria-labelledby="gratitude-heading"
     className="flex flex-col items-center justify-center gap-y-6 tablet:gap-y-8 desktop:gap-y-10"
@@ -13,7 +17,7 @@ export const ThankYou = () => (
       contrast="yellow"
       className="text-center text-2xl tablet:text-26 desktop:text-28"
     >
-      Serdecznie dziękujemy za owocną współpracę!
+      {title}
     </Heading>
 
     <GratitudeIcon />

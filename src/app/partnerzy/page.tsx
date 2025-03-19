@@ -5,7 +5,8 @@ import { BulletList } from "./_components/BulletList/BulletList";
 import { Partnership } from "./_components/Partnership";
 import { Thread } from "./_components/Thread";
 import { OurPartners } from "./_components/OurPartners";
-import { ThankYou } from "./_components/ThankYou";
+import { ThankYou } from "@/components/shared/ThankYou";
+
 import { AK_DATA } from "@/data/akData";
 
 // Todo: Add meta for partners for SEO? Carousel is client-side.
@@ -56,7 +57,7 @@ export default function PartnersPage() {
 
         <OurPartners />
 
-        <ThankYou />
+        <ThankYou title="Serdecznie dziękujemy za owocną współpracę!" />
       </Container>
     </div>
   );
