@@ -8,14 +8,13 @@ interface Partner {
   id: string;
   name: string;
   href: string;
-  image: string; // Optional?
+  image: string;
 }
 
 interface Props {
   items: Partner[];
 }
 
-// Todo: Adjust spacings for viewports. Maybe extract <CarouselItem /> ?
 export const Carousel = ({ items }: Props) => {
   const [emblaRef] = useEmblaCarousel(
     { loop: true, dragFree: true, slidesToScroll: "auto", align: "start" },

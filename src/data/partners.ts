@@ -1,4 +1,4 @@
-// Todo: Fill with Partners links & images (logos)
+// Todo: Fill with Partners links & images (logos) - what in case of the non-existing images/links?
 export const partners = [
   {
     id: "1",
