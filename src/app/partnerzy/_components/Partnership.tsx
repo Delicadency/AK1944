@@ -9,7 +9,7 @@ export const Partnership = () => (
       height={286}
     />
 
-    <p className="text-center font-courier text-18 leading-5">
+    <p className="text-center font-courier text-lg/5">
       Po nitce wspólnej pamięci – razem zadbajmy, aby historia Armii Krajowej
       nigdy nie zostanie zapomniana!
     </p>
