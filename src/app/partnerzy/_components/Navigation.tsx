@@ -1,17 +1,11 @@
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export const Navigation = () => (
-  <nav
-    aria-labelledby="partners-nav-heading"
-    className="space-y-5 desktop:space-y-10"
-  >
+  <>
     <Breadcrumbs />
 
-    <h2
-      id="partners-nav-heading"
-      className="mb-10 font-lora text-2xl font-bold"
-    >
+    <h2 className="mb-10 mt-5 font-lora text-2xl font-bold desktop:mt-10">
       Partnerzy
     </h2>
-  </nav>
+  </>
 );
