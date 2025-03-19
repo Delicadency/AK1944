@@ -1,4 +1,3 @@
-"use client";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Container from "../shared/Container";
 import IconArrowVertical from "@/icons/IconArrowVertical";
@@ -14,7 +13,7 @@ export const HistoryNav = () => {
       className="flex justify-center desktop:flex-col desktop:items-center"
     >
       {isDesktop ? (
-        <IconArrowHorizontal className="z-[-10]" />
+        <IconArrowHorizontal className="z-[-10] translate-x-10" />
       ) : (
         <IconArrowVertical className="z-[-1] translate-x-10" />
       )}

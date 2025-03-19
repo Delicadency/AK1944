@@ -1,4 +1,3 @@
-"use client";
 import Container from "../shared/Container";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Heading } from "../shared/Heading/Heading";
@@ -36,7 +35,7 @@ export const HistoryBiogram = () => {
             alt="Zdjęcie weterana Armii Krajowej"
             width={500}
             height={1920}
-            className="justify-self-center"
+            className="m-auto"
           ></Image>
         </div>
         <Button
@@ -44,7 +43,7 @@ export const HistoryBiogram = () => {
           ariaDescription="Sprawdź"
           className="m-auto mt-6"
           href={Routes.BIOGRAMS}
-        ></Button>
+        />
       </Container>
     </BackgroundImage>
   );
