@@ -1,4 +1,4 @@
-// Todo: Fill with Partners links & images (logos) - what in case of the non-existing images/links?
+// Todo: https://app.clickup.com/t/8698cqvh8
 export const partners = [
   {
     id: "1",
