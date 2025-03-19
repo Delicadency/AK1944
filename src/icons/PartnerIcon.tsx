@@ -1,8 +1,20 @@
-export const PartnerIcon = () => (
+import { DefaultIconProps } from "@/types";
+
+interface Props extends DefaultIconProps {
+  width?: number;
+  height?: number;
+}
+
+export const PartnerIcon = ({
+  className,
+  width = 207,
+  height = 138,
+}: Props) => (
   <svg
+    className={className}
+    width={width}
+    height={height}
     xmlns="http://www.w3.org/2000/svg"
-    width="207"
-    height="138"
     viewBox="0 0 207 138"
     fill="none"
     aria-hidden="true"
