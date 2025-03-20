@@ -9,10 +9,10 @@ export const DonationCard = () => (
     <div className="mt-3 space-y-2 desktop:mt-4">
       <p>Nr konta bankowego:</p>
       <p>
-        <strong>{AK_DATA.bank.name}</strong>
+        <strong className="select-all">{AK_DATA.bank.name}</strong>
       </p>
       <p>
-        <strong>{AK_DATA.bank.accountNumber}</strong>
+        <strong className="select-all">{AK_DATA.bank.accountNumber}</strong>
       </p>
     </div>
     <DonateModal />
