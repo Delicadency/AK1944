@@ -14,7 +14,8 @@ export const PaymentSuccess = ({ signature, amount }: Props) => (
         {signature}, dziękujemy za wsparcie!
       </h1>
       <p className="text-lg text-gray-600">
-        Twoja wpłata w wysokości {amount} zł została zrealizowana pomyślnie.
+        Twoja wpłata w wysokości {amount.toFixed(2).replace(".", ",")} zł
+        została zrealizowana pomyślnie.
       </p>
       <p className="text-gray-600">
         Dzięki Twojemu wsparciu możemy kontynuować naszą misję upamiętniania
