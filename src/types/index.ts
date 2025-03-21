@@ -1,4 +1,4 @@
-import { ElementType, ReactNode } from "react";
+import type { ComponentProps, ElementType, ReactNode } from "react";
 
 export interface Post {
   id: number;
@@ -31,9 +31,8 @@ export interface IconProps extends DefaultIconProps {
   name: IconName;
 }
 
-export interface DefaultIconProps {
-  className?: string;
-}
+export type DefaultIconProps = ComponentProps<"svg">;
+
 export interface SubmenuItem {
   href: string;
   label: string;
@@ -58,3 +57,7 @@ export interface NavItem {
   href: string;
   label: string;
 }
+
+export type ActionState =
+  | { status: "idle" | "success"; message?: string }
+  | { status: "error"; message?: string; issues?: Record<string, string[]> };
