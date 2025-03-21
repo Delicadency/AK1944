@@ -66,11 +66,19 @@ export const DonateForm = () => {
         {customAmount && (
           <FormField
             placeholder="Wpisz kwotę"
-            type="number"
-            step="0.01"
+            type="text"
+            inputMode="decimal"
             min="2"
             required
-            onChange={(e) => setAmount(Number(e.target.value))}
+            onChange={(e) => {
+              const value = e.target.value.replace(",", ".");
+              const numValue = parseFloat(value);
+              if (!isNaN(numValue)) {
+                setAmount(numValue);
+              } else {
+                setAmount(0);
+              }
+            }}
             issues={isError ? state.issues?.amount : undefined}
           />
         )}
@@ -107,8 +115,10 @@ export const DonateForm = () => {
         label="Wpłać teraz"
         ariaDescription="Przejdź do płatności"
         className="mx-auto"
-        disabled={!amount || isPending}
-        title={!amount ? "Wprowadź kwotę, aby przejść do płatności" : undefined}
+        disabled={amount <= 0 || isPending}
+        title={
+          amount <= 0 ? "Wprowadź kwotę, aby przejść do płatności" : undefined
+        }
         leadingIcon={
           isPending ? () => <LoaderIcon className="animate-spin" /> : undefined
         }
