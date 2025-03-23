@@ -1,43 +1,49 @@
-// ContactInfo.js
+import { AK_DATA } from "@/data/akData";
+import { InfoItem } from "@/app/kontakt/components/InfoItem";
+import { InfoList } from "@/app/kontakt/components/InfoList";
 import { IconMapPin } from "@/icons/IconMapPin";
 import { IconMail } from "@/icons/IconMail";
 import { IconPhone } from "@/icons/IconPhone";
 
-export default function ContactInfo() {
-    return (
-        <section aria-labelledby="contact-info" className="mb-10 text-[1.125rem] text-greenMain font-source-sans">
-            {/* Adres */}
-            <div className="space-y-4">
-                <div className="flex items-center gap-3 desktop:gap-8 desktop:mb-8">
-                    <IconMapPin className="w-8 h-8" />
-                    <div>
-                        <p className="desktop:mb-4">Adres siedziby:</p>
-                        <p className="font-medium">39-200 Dębica, ul. Rzeszowska 15</p>
-                    </div>
-                </div>
+export const ContactInfo = () => (
+  <section
+    aria-labelledby="contact-info"
+    className="font-source-sans mb-10 text-lg text-greenMain"
+  >
+    <h2 id="contact-info" className="sr-only">
+      Informacje kontaktowe
+    </h2>
 
-                {/* E-mail */}
-                <div className="flex items-center gap-3 desktop:gap-8 desktop:mb-8">
-                    <IconMail className="w-8 h-8" />
-                    <div>
-                        <p className="desktop:mb-4">E-mail:</p>
-                        <a href="mailto:ak.debica@gmail.com" className="font-medium">
-                            ak.debica@gmail.com
-                        </a>
-                    </div>
-                </div>
+    <InfoList>
+      <InfoItem
+        icon={<IconMapPin className="h-8 w-8" />}
+        label="Adres siedziby:"
+        content={AK_DATA.address}
+      />
 
-                {/* Telefon */}
-                <div className="flex items-center gap-3 desktop:gap-8 desktop:mb-8">
-                    <IconPhone className="w-8 h-8" />
-                    <div>
-                        <p className="desktop:mb-4">Telefon:</p>
-                        <a href="tel:+48505248666" className="font-medium">
-                            +48 505 248 666
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-}
+      <InfoItem
+        icon={<IconMail className="h-8 w-8" />}
+        label="E-mail:"
+        content={
+          <a href={`mailto:${AK_DATA.email}`} className="font-medium">
+            {AK_DATA.email}
+          </a>
+        }
+      />
+
+      <InfoItem
+        icon={<IconPhone className="h-8 w-8" />}
+        label="Telefon:"
+        content={
+          <a
+            href={`tel:${AK_DATA.phone.replace(/\s+/g, "")}`}
+            className="font-medium"
+          >
+            {AK_DATA.phone}
+          </a>
+        }
+      />
+    </InfoList>
+    <div className="mt-2 rounded-sm bg-red-500 p-4 text-center text-white"></div>
+  </section>
+);

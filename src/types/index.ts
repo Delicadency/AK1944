@@ -23,14 +23,8 @@ export type IconName =
   | "gift"
   | "help"
   | "info"
-  | "pin"
   | "send"
-  | "target"
-  | "mail"
-  | "book"
-  | "briefcase"
-  | "phone"
-  | "dollar";
+  | "target";
 
 export interface IconProps extends DefaultIconProps {
   name: IconName;
