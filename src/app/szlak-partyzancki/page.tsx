@@ -2,6 +2,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Article } from "./_components/Article";
+import { Map } from "./_components/Map";
 
 export default function PartisanTrailPage() {
   return (
@@ -15,6 +16,7 @@ export default function PartisanTrailPage() {
           <span className="hidden desktop:inline">Szlak Partyzancki</span>
         </Heading>
         <Article />
+        <Map />
       </Container>
     </>
   );
