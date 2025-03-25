@@ -1,20 +1,23 @@
-"use client"
-import dynamic from 'next/dynamic';
+"use client";
+import dynamic from "next/dynamic";
 
-const LazyIframe = dynamic(() => import('./LazyIFrame').then((mod) => mod.LazyIframe), { ssr: false });
+const LazyIframe = dynamic(
+  () => import("./LazyIFrame").then((mod) => mod.LazyIframe),
+  { ssr: false },
+);
 
 export const Map = () => {
   return (
-    <>
+    <section className="pb-12 pt-6 desktop:pb-20 desktop:pt-10">
       <LazyIframe />
-      <div style={{ padding: '5px 0', width: '100%' }}>
+      <div className="w-full py-1">
         <a
-          style={{ fontSize: '11px', color: '#888', opacity: 0.7 }}
+          className="text-12 text-grayDate"
           href="https://dawne.traseo.pl/trasa/szlak-partyzantow-ii-zgrupowania-ak-obwodu-debica"
         >
           Zobacz trasę w Traseo
         </a>
       </div>
-    </>
+    </section>
   );
 };
