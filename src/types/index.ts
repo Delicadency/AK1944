@@ -59,5 +59,6 @@ export interface NavItem {
 }
 
 export type ActionState =
-  | { status: "idle" | "success"; message?: string }
+  | { status: "idle"; message?: string }
+  | { status: "success"; message?: string }
   | { status: "error"; message?: string; issues?: Record<string, string[]> };
