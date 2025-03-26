@@ -10,7 +10,7 @@ export const HistoryNav = () => {
   return (
     <Container
       as="nav"
-      className="flex justify-center desktop:flex-col desktop:items-center"
+      className="flex justify-center desktop:mt-10 desktop:flex-col desktop:items-center"
     >
       {isDesktop ? (
         <IconArrowHorizontal className="z-[-10] translate-x-10" />

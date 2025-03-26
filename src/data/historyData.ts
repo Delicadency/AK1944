@@ -1,14 +1,52 @@
+import { Routes } from "@/routes";
+
 export const historyData = {
   history: {
     title: "Historia",
     description1:
       "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
     description2:
-      'Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji \"Burza\", będącej symbolem odwagi i determinacji Armii Krajowej, a także odkryjesz historię Obwodu Dębica SZP-ZWZ-AK, którego członkowie z honorem i poświęceniem walczyli w czasie największej próby.',
+      "Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji „Burza”, symbolu odwagi i determinacji Armii Krajowej, a także odkryjesz historię członków Obwodu Dębica SZP-ZWZ-AK, walczących z honorem i poświęceniem w czasie największej próby.",
     description3:
-      "Na stronie znajdziesz również przejście do sekcji poświęconej literaturze i biogramom bohaterów, gdzie możesz zgłębić osobiste historie ludzi, którzy stali na straży ojczyzny, oddając jej swoje życie i serce.",
+      "Znajdziesz tu także przejście do sekcji mieszczącej bibliografię oraz biogramy bohaterów, gdzie zgłębisz osobiste historie oddanych obrońców ojczyzny o wielkich sercach.",
     description4:
-      "Zapraszamy do podróży w czasie, która ożywi wspomnienia i wzbudzi refleksję nad siłą ducha polskiego żołnierza i patrioty.",
+      "Zapraszamy do podróży w czasie, ożywienia wspomnień i refleksji nad siłą ducha polskiego żołnierza i patrioty.",
+    list: {
+      regiment: {
+        id: "1",
+        title: "5. Pułk Strzelców Konnych",
+        description:
+          "Prześledź historię jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie Akcji „Burza” na ziemi dębickiej. Poznaj strukturę pułku, życie dowódców i zadania realizowane podczas walk z okupantem. To nie tylko podział organizacji na rejony czy wykaz najważniejszych działań bojowych i dywersyjnych. Przed Tobą opowieść o odwadze, zgraniu, a przede wszystkim o niezłomnym duchu żołnierzy oddanych walce za wolną Polskę. Oto historia jednostki, której nic nie nie wymaże z kart dziejów.",
+        image: {
+          path: "/images/history/main/regiment.jpg",
+          alt: "Defilada 5. Pułku Strzelców Konnych z okazji święta pułku w Dębicy. Pluton ckm na jukach, 9 czerwca 1938 r.",
+        },
+        route: Routes.REGIMENT,
+      },
+
+      burza: {
+        id: "2",
+        title: "Akcja „Burza”",
+        description:
+          "To opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przenieś się w czasy dramatycznych walk w rejonie Dębicy, poznaj bohaterów w nierównej walce z okupantem i dowiedz się, jak przebiegała bitwa na polanie Kałużówka. Zobacz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacją. Przed Tobą świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia.",
+        image: {
+          path: "/images/history/main/burza.jpg",
+          alt: "Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r.",
+        },
+        route: Routes.OPERATION,
+      },
+      debica: {
+        id: "3",
+        title: "Obwód Dębica SZP-ZWZ-AK",
+        description:
+          "Lokalne struktury konspiracyjne odegrały kluczową rolę w walce z okupantem na ziemi dębickiej. Poznaj rozwój organizacji od początków Służby Zwycięstwu Polski, przez Związek Walki Zbrojnej, aż po przekształcenie jej w Armię Krajową. Sprawdź, jak wyglądała działalność wywiadowcza, dywersyjna i szkoleniowa, a także jak Obwód przygotowywał się do operacji „Burza”. Żołnierze AK Dębica, mimo ogromnego ryzyka, stawili opór okupantom.",
+        image: {
+          path: "/images/history/main/debica.jpg",
+          alt: "Pokazy musztry w koszarach 5. Pułku Strzelców Konnych w Dębicy. Na czele plutonu ppor. Mieczysław Rakoczy.",
+        },
+        route: Routes.DEBICA_DISTRICT,
+      },
+    },
     literature: {
       title: "Literatura",
       content:
@@ -17,13 +55,11 @@ export const historyData = {
     biograms: {
       title: "Biogramy",
       content:
-        "Poznaj sylwetki bohaterów Armii Krajowej - ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
+        "Poznaj sylwetki bohaterów Armii Krajowej – ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
     },
   },
   regiment: {
     title: "5. Pułk Strzelców Konnych",
-    description:
-      "5. Pułk Strzelców Konnych to historia jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie „Akcji Burza” na ziemi dębickiej. Dowiesz się, jak wyglądała struktura pułku, kim byli jego dowódcy oraz jakie zadania realizowali w trakcie walk z okupantem. Poznasz szczegóły organizacji, podziału na rejony oraz najważniejszych działań bojowych i dywersyjnych. To opowieść o odwadze, zgraniu i niezłomnym duchu żołnierzy, którzy walczyli o wolną Polskę. Zapraszamy do zgłębienia tej niezwykłej historii jednostki, która zapisała się na kartach dziejów AK.",
     genesisTitle: "Geneza powstania",
     genesis1:
       "Historia powstania 5. Pułku Strzelców Konnych wiąże się z okresem napoleońskim, kiedy to w Kościanie na przełomie 1806 i 1807 r. Franciszek Garczyński sformował pułk, który w czerwcu 1807 r. otrzymał nazwę 5. PSK. Dowódcą tegoż pułku został płk Kazimierz Turno. Po burzliwych perypetiach okresu napoleońskiego, udziale w wojnie z Austrią w 1809 r. i zdziesiątkowaniu pułku w wielkiej wyprawie Napoleona na Moskwę w 1812 r. pułk uległ naturalnemu rozwiązaniu. Warto dodać, że w wyprawie w roku 1812 w szeregach pułku walczył Aleksander Fredro, który okres ten opisał w pamiętniku ”Trzy po trzy”.",
@@ -122,8 +158,6 @@ export const historyData = {
   },
   burza: {
     title: "Akcja „Burza”",
-    description:
-      "„Akcja Burza” to opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przeniesiesz się w czasy dramatycznych walk w rejonie Dębicy, poznasz bohaterów, którzy stanęli do nierównej walki z okupantem, i dowiesz się, jak przebiegała bitwa na polanie Kałużówka. Zobaczysz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacjami. Te wydarzenia to świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia. Wejdź i poznaj szczegóły tej niezwykłej historii.",
     districtTitle: "Obwód AK Dębica w Operacji „Burza” - Struktura i Działania",
     district1:
       "Obwód AK Dębica, wchodzący w skład 24. Dywizji Piechoty, odtwarzał w okresie „Burzy” - 5. Pułk Strzelców Konnych Armii Krajowej. Dowództwo nad całością objął zastępca inspektora rejonowego w Rzeszowie, kpt. Adam Lazarowicz „Klamra”, natomiast komendant Obwodu Dębica, kpt. Ludwik Marszałek „Zbroja”, został na czas „Burzy” - zastępcą „Klamry”. Teren Obwodu podzielono na trzy rejony walki zwane także zgrupowaniami [1].",
@@ -240,8 +274,6 @@ export const historyData = {
   },
   debica: {
     title: "Obwód Dębica SZP-ZWZ-AK",
-    description:
-      "Obwód Dębica SZP-ZWZ-AK to historia lokalnych struktur konspiracyjnych, które odegrały kluczową rolę w walce z okupantem na ziemi dębickiej. W tej części poznasz rozwój organizacji od początków Służby Zwycięstwu Polski, przez Związek Walki Zbrojnej, aż po przekształcenie w Armię Krajową. Dowiesz się, jak wyglądała działalność wywiadowcza, dywersyjna i szkoleniowa, a także jak Obwód przygotowywał się do operacji „Burza”. To opowieść o ludziach, którzy, mimo ogromnego ryzyka, tworzyli fundamenty oporu wobec okupacji. Zapraszamy do odkrycia tej fascynującej części historii Dębicy i jej bohaterów!",
     fortressTitle: "Obwód SZP-ZWZ-AK Dębica - Twierdza Polskiego Podziemia",
     fortress1:
       "Na tle Polskiego Podziemia szczególną rolę odegrał Obwod SZP - ZWZ - AK Dębica krypt. „Dziekania”, „Deser”, odnosząc sukcesy m.in. na płaszczyźnie sabotażowo-dywersyjnej oraz wywiadowczej. Kiedy trwały jeszcze walki polskich armii z Niemcami m.in. pod Kockiem, w twierdzy Modlin oraz w Warszawie, 27 września 1939 roku powstała w stolicy tajna organizacja pn. Służba Zwycięstwu Polski (SZP), na czele której stanął gen. Michał Karaszewicz-Tokarzewski. Jej zadaniem było „prowadzenie dalszej walki o utrzymanie niepodległości i całości granic”.",
