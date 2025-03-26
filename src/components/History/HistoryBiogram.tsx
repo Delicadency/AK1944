@@ -1,3 +1,4 @@
+"use client";
 import Container from "../shared/Container";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Heading } from "../shared/Heading/Heading";

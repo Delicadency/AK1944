@@ -12,16 +12,16 @@ export const Evacuation = () => {
     evacuation6,
   } = historyData.burza ?? {};
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
       <Heading variant="h4" color="green" contrast="yellow">
         {evacuationTitle}
       </Heading>
-      <p className="text-lg contrast:text-yellowContrast">{evacuation1}</p>
-      <p className="text-lg contrast:text-yellowContrast">{evacuation2}</p>
-      <p className="text-lg contrast:text-yellowContrast">{evacuation3}</p>
-      <p className="text-lg contrast:text-yellowContrast">{evacuation4}</p>
-      <p className="text-lg contrast:text-yellowContrast">{evacuation5}</p>
-      <p className="text-lg contrast:text-yellowContrast">{evacuation6}</p>
+      <p>{evacuation1}</p>
+      <p>{evacuation2}</p>
+      <p>{evacuation3}</p>
+      <p>{evacuation4}</p>
+      <p>{evacuation5}</p>
+      <p>{evacuation6}</p>
     </section>
   );
 };

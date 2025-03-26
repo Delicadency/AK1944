@@ -10,7 +10,7 @@ export const Partisan = () => {
       <Heading variant="h4" color="green" contrast="yellow">
         {partisanTitle}
       </Heading>
-      <div className="flex flex-col gap-6 desktop:flex-row-reverse">
+      <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row-reverse">
         <Image
           src="/images/history/burza/battles.webp"
           alt="Ostatnie pożegnanie jednego z poległych żołnierzy AK. Gumniska, 1944 r."
@@ -19,9 +19,9 @@ export const Partisan = () => {
           className="m-auto max-w-[450px]"
         />
         <div className="flex flex-col gap-6">
-          <p className="text-lg contrast:text-yellowContrast">{partisan1}</p>
-          <p className="text-lg contrast:text-yellowContrast">{partisan2}</p>
-          <p className="text-lg contrast:text-yellowContrast">{partisan3}</p>
+          <p>{partisan1}</p>
+          <p>{partisan2}</p>
+          <p>{partisan3}</p>
         </div>
       </div>
     </section>

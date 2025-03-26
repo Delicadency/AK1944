@@ -1,4 +1,3 @@
-"use client";
 import { History } from "@/components/History/History";
 import { HistoryNav } from "@/components/History/HistoryNav";
 import { HistoryList } from "@/components/History/HistoryList";

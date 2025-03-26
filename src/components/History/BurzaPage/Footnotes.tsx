@@ -1,3 +1,4 @@
+"use client";
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { useState } from "react";
@@ -29,10 +30,10 @@ export const Footnotes = () => {
         onClick={handleClick}
       />
       {toggleFootnotes && (
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-4 font-courier">
           {footnotes.map((note, index) => (
             <li key={index}>
-              <p className="font-courier">{note}</p>
+              <p>{note}</p>
             </li>
           ))}
         </ul>

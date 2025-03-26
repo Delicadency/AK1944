@@ -1,4 +1,3 @@
-"use client";
 import Container from "@/components/shared/Container";
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";

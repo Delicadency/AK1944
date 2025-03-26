@@ -7,14 +7,14 @@ export const District = () => {
     historyData.burza ?? {};
   return (
     <section className="flex flex-col gap-6 desktop:flex-row">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
         <Heading variant="h4" color="green" contrast="yellow">
           {districtTitle}
         </Heading>
-        <p className="text-lg contrast:text-yellowContrast">{district1}</p>
-        <p className="text-lg contrast:text-yellowContrast">{district2}</p>
-        <p className="text-lg contrast:text-yellowContrast">{district3}</p>
-        <p className="text-lg contrast:text-yellowContrast">{district4}</p>
+        <p>{district1}</p>
+        <p>{district2}</p>
+        <p>{district3}</p>
+        <p>{district4}</p>
       </div>
       <Image
         src="/images/history/burza/district.webp"

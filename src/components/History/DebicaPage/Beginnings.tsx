@@ -8,9 +8,9 @@ export const Beginnings = () => {
       <Heading variant="h4" color="green" contrast="yellow">
         {beginningsTitle}
       </Heading>
-      <div className="flex flex-col gap-6 desktop:flex-row">
-        <p className="text-lg contrast:text-yellowContrast">{beginnings1}</p>
-        <p className="text-lg contrast:text-yellowContrast">{beginnings2}</p>
+      <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
+        <p>{beginnings1}</p>
+        <p>{beginnings2}</p>
       </div>
     </section>
   );
