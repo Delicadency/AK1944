@@ -28,7 +28,7 @@ export const FirstDays = () => {
       </div>
       <div className="m-auto flex gap-6">
         <Image
-          src="/images/history/burza/first-days.jpg"
+          src="/images/history/burza/first-days.webp"
           alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Kondukt pogrzebowy z trumną poległego żołnierza AK w drodze z Gołęczyny na Kałużówkę, 21 sierpnia 1944 r."
           width={2000}
           height={1300}
@@ -36,7 +36,7 @@ export const FirstDays = () => {
         />
         {isDesktop && (
           <Image
-            src="/images/history/burza/kaluzowka.jpg"
+            src="/images/history/burza/kaluzowka.webp"
             alt="Punkt sanitarny na Kałużówce. Od lewej: dr Kazimierz Gradziński, Maria Szewczyk, Teresa Langer, dr Jan Szymaszek, Władysława Gubernat, Lucyna Dykier."
             width={2000}
             height={1300}

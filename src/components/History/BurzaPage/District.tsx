@@ -17,7 +17,7 @@ export const District = () => {
         <p className="text-lg contrast:text-yellowContrast">{district4}</p>
       </div>
       <Image
-        src="/images/history/burza/district.jpg"
+        src="/images/history/burza/district.webp"
         alt="Msza św. polowa odprawiana przez ks. Stanisława Bartosza ps. Mieczyk dla żołnierzy II Zgrupowaniu 5. Pułku Strzelców Konnych. Sierpień 1944 r."
         width={3470}
         height={4670}

@@ -16,8 +16,8 @@ export const HistoryBiogram = () => {
       alt=""
       src={
         isSmallScreen
-          ? "/images/history/main/paper_mobile_bg.png"
-          : "/images/history/main/paper_desktop_bg.png"
+          ? "/images/history/main/paper_mobile_bg.webp"
+          : "/images/history/main/paper_desktop_bg.webp"
       }
       width="768"
       height="948"
@@ -31,7 +31,7 @@ export const HistoryBiogram = () => {
         <div className="desktop:flex">
           <p className="my-6 font-courier text-lg text-greenMain">{content}</p>
           <Image
-            src="/images/history/main/veteran.png"
+            src="/images/history/main/veteran.webp"
             alt="Zdjęcie weterana Armii Krajowej"
             width={500}
             height={1920}

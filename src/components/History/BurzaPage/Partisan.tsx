@@ -12,7 +12,7 @@ export const Partisan = () => {
       </Heading>
       <div className="flex flex-col gap-6 desktop:flex-row-reverse">
         <Image
-          src="/images/history/burza/battles.jpg"
+          src="/images/history/burza/battles.webp"
           alt="Ostatnie pożegnanie jednego z poległych żołnierzy AK. Gumniska, 1944 r."
           width={2120}
           height={2950}

@@ -10,7 +10,7 @@ export const History = () => {
   return (
     <BackgroundImage
       alt="Historyczne zdjęcie 5. Pułku Strzelców Konnych"
-      src="/images/history/main/history_bg.jpg"
+      src="/images/history/main/history_bg.webp"
       width="1920"
       height="912"
       className="absolute z-0 w-full object-cover desktop:h-[912px] desktop:object-fill"

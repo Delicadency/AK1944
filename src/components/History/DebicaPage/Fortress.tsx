@@ -14,7 +14,7 @@ export const Fortress = () => {
         <p className="text-lg contrast:text-yellowContrast">{fortress2}</p>
       </div>
       <Image
-        src="/images/history/main/debica.jpg"
+        src="/images/history/main/debica.webp"
         alt="debica"
         width={1600}
         height={980}

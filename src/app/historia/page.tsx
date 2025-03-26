@@ -17,7 +17,7 @@ export default function HistoryPage() {
       <section className="overflow-hidden bg-greenB pb-10 pt-6">
         <Container className="relative">
           <Image
-            src="/images/history/main/stamp.png"
+            src="/images/history/main/stamp.webp"
             alt="Stamp"
             width={160}
             height={160}

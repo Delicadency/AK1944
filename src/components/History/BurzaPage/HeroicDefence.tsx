@@ -25,7 +25,7 @@ export const HeroicDefence = () => {
       <p className="text-lg contrast:text-yellowContrast">{heroicDefence2}</p>
       {!isDesktop && (
         <Image
-          src="/images/history/burza/gumniska.jpg"
+          src="/images/history/burza/gumniska.webp"
           alt="debica"
           width={2000}
           height={1300}

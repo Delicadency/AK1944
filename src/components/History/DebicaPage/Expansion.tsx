@@ -24,7 +24,7 @@ export const Expansion = () => {
       <div className="flex flex-col gap-6 desktop:flex-row">
         {!isDesktop && (
           <Image
-            src="/images/history/debica/officer-school.jpg"
+            src="/images/history/debica/officer-school.webp"
             alt="debica"
             width={500}
             height={310}
@@ -39,7 +39,7 @@ export const Expansion = () => {
           </div>
           {!isDesktop && (
             <Image
-              src="/images/history/debica/attention.jpg"
+              src="/images/history/debica/attention.webp"
               alt="debica"
               width={500}
               height={310}
@@ -59,13 +59,13 @@ export const Expansion = () => {
         {isDesktop && (
           <div className="flex shrink-0 flex-col justify-center gap-6">
             <Image
-              src="/images/history/debica/officer-school.jpg"
+              src="/images/history/debica/officer-school.webp"
               alt="debica"
               width={500}
               height={310}
             />
             <Image
-              src="/images/history/debica/attention.jpg"
+              src="/images/history/debica/attention.webp"
               alt="debica"
               width={500}
               height={310}
