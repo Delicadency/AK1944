@@ -31,7 +31,7 @@ export const HistoryList = () => {
               alt={item.image.alt}
               width={500}
               height={1080}
-              className="m-auto mobile:h-[203px] desktop:h-[352px]"
+              className="m-auto mobile:max-h-[290px] desktop:h-[352px] desktop:max-h-[352px]"
             />
             <Button
               label="Zobacz więcej"
