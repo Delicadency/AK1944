@@ -1,16 +1,16 @@
 "use client";
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { useState } from "react";
 import { Button } from "@/components/shared/Button/Button";
+import { useDisclosure } from "@/hooks/useDisclosure";
 
 export const Footnotes = () => {
   const { footnotesTitle, footnotes } = historyData.burza ?? {};
 
-  const [toggleFootnotes, setToggleFootnotes] = useState(false);
+  const { isOpen, toggle } = useDisclosure();
 
   const handleClick = () => {
-    setToggleFootnotes(!toggleFootnotes);
+    toggle();
   };
   return (
     <>
@@ -23,13 +23,13 @@ export const Footnotes = () => {
         {footnotesTitle}
       </Heading>
       <Button
-        label={toggleFootnotes ? "Zwiń tekst" : "Czytaj więcej"}
-        ariaDescription={toggleFootnotes ? "Zwiń tekst" : "Czytaj więcej"}
+        label={isOpen ? "Zwiń tekst" : "Czytaj więcej"}
+        ariaDescription={isOpen ? "Zwiń tekst" : "Czytaj więcej"}
         variant={"secondary"}
         className="m-auto"
         onClick={handleClick}
       />
-      {toggleFootnotes && (
+      {isOpen && (
         <ul className="flex flex-col gap-4 font-courier">
           {footnotes.map((note, index) => (
             <li key={index}>

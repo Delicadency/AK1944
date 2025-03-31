@@ -7,16 +7,16 @@ import { Beginnings } from "@/components/History/DebicaPage/Beginnings";
 import { Places } from "@/components/History/DebicaPage/Places";
 import { Readiness } from "@/components/History/DebicaPage/Readiness";
 import { Expansion } from "@/components/History/DebicaPage/Expansion";
-import { useState } from "react";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
+import { useDisclosure } from "@/hooks/useDisclosure";
 
 export default function DebicaDistrictPage() {
   const { title } = historyData.debica ?? {};
-  const [readMore, setReadMore] = useState(false);
+  const { isOpen, toggle } = useDisclosure();
 
-  const toggleReadMore = async (newState: boolean) => {
-    setReadMore(newState);
+  const handleToggle = async () => {
+    toggle();
   };
   const isMobile = useMediaQuery("(max-width: 768px)");
 
@@ -29,9 +29,9 @@ export default function DebicaDistrictPage() {
         </Heading>
         <Fortress />
         <Beginnings />
-        <Places onToggle={toggleReadMore} />
-        {isMobile ? readMore && <Readiness /> : <Readiness />}
-        {isMobile ? readMore && <Expansion /> : <Expansion />}
+        <Places onToggle={handleToggle} />
+        {isMobile ? isOpen && <Readiness /> : <Readiness />}
+        {isMobile ? isOpen && <Expansion /> : <Expansion />}
       </Container>
     </div>
   );
