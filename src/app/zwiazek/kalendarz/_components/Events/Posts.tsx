@@ -1,4 +1,4 @@
-import { cardsPlaceholder } from "@/app/zwiazek/kalendarz/_components/Events/List";
+import { historicalEventList } from "@/app/zwiazek/kalendarz/_components/Events/List";
 import { Card } from "@/app/zwiazek/kalendarz/_components/Events/Card";
 import { Button } from "@/components/shared/Button/Button";
 
@@ -8,24 +8,17 @@ interface Props {
   postsToShow: number;
 }
 
-// const currentMonthPosts = getPostsForCurrentMonth(args);
-// const areMorePostsAvailable = postsToShow < currentMonthPosts.length;
-
-// const displayedPosts = currentMonthPosts.slice(0, postsToShow);
-
-// return <jsx />;
-
 export const Posts = ({ currentDate, handleShowMore, postsToShow }: Props) => {
   const showMoreButton =
     postsToShow <
-    cardsPlaceholder.filter((card) => {
+    historicalEventList.filter((card) => {
       const [, month] = card.date.split(".").map(Number);
       return month - 1 === currentDate.getMonth();
     }).length;
 
   return (
     <article className="flex w-full flex-col items-start gap-5 tablet:gap-10">
-      {cardsPlaceholder
+      {historicalEventList
         .filter((card) => {
           const [, month] = card.date.split(".").map(Number);
           return month - 1 === currentDate.getMonth();
@@ -33,7 +26,7 @@ export const Posts = ({ currentDate, handleShowMore, postsToShow }: Props) => {
         .slice(0, postsToShow)
         .map((card, index, filteredCards) => (
           <Card
-            key={index}
+            key={card.id}
             title={card.title}
             image={card.image}
             date={card.date}

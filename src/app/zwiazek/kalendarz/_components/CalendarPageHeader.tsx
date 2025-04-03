@@ -2,7 +2,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { Heading } from "@/components/shared/Heading/Heading";
 
 export const CalendarPageHeader = () => (
-  <section className="flex flex-col items-start gap-4 px-4 tablet:px-10 desktop:px-24">
+  <section className="flex max-w-[1440px] flex-col items-start gap-4 px-4 tablet:px-10 desktop:px-24">
     <Breadcrumbs />
     <Heading variant="h2" color="green" contrast="yellow">
       Kalendarz uroczystości

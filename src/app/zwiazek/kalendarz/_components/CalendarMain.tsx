@@ -3,27 +3,28 @@
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
 import { CalendarTable } from "@/app/zwiazek/kalendarz/_components/CalendarTable";
 import { addMonth } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
-import { cardsPlaceholder } from "@/app/zwiazek/kalendarz/_components/Events/List";
+import { GetEventForToday } from "@/app/zwiazek/kalendarz/_components/Events/GetEventsForToday";
 import { Posts } from "@/app/zwiazek/kalendarz/_components/Events/Posts";
 import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
 import { useState } from "react";
 
+const DEFAULT_NUMBER_OF_POSTS = 3;
+
 export const CalendarMain = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [postsToShow, setPostsToShow] = useState(3);
+  const [postsToShow, setPostsToShow] = useState(DEFAULT_NUMBER_OF_POSTS);
 
   const handleNextMonth = () => {
     setCurrentDate(addMonth(currentDate, 1));
-    setPostsToShow(3);
+    setPostsToShow(DEFAULT_NUMBER_OF_POSTS);
   };
 
   const handlePrevMonth = () => {
     setCurrentDate(addMonth(currentDate, -1));
-    setPostsToShow(3);
+    setPostsToShow(DEFAULT_NUMBER_OF_POSTS);
   };
 
-  const eventForToday = getEventForToday();
-  console.log(eventForToday);
+  const eventForToday = GetEventForToday();
 
   return (
     <>
@@ -38,7 +39,7 @@ export const CalendarMain = () => {
           description={eventForToday?.title}
         />
       </section>
-      <section className="flex flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-24">
+      <section className="flex max-w-[1440px] flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-24">
         <CalendarHeader
           className="items-center justify-center text-24 text-greenMain tablet:w-full tablet:justify-between tablet:text-32"
           iconClassName="stroke-greenMain h-7 w-7 tablet:h-10 tablet:w-10"
@@ -54,16 +55,4 @@ export const CalendarMain = () => {
       </section>
     </>
   );
-};
-
-const getEventForToday = () => {
-  const pad = (value: number) => value.toString().padStart(2, "0");
-  const todayMonthDay = `${pad(new Date().getDate())}.${pad(new Date().getMonth() + 1)}`;
-
-  // Return first event or array of events that matches today's date??
-
-  const event = cardsPlaceholder.find((card) =>
-    card.date.startsWith(todayMonthDay),
-  );
-  return event;
 };
