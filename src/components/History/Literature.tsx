@@ -4,7 +4,7 @@ import { historyData as txt } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import { Routes } from "@/routes";
 
-export const Literature = () => {
+export const LiteratureComponent = () => {
   const { title, content } = txt.history.literature ?? {};
   return (
     <Container className="mt-10 flex flex-col bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">

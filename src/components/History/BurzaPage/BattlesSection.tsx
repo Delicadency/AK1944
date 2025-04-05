@@ -1,7 +1,7 @@
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-export const Battles = () => {
+export const BattlesSection = () => {
   const { battlesTitle, battles1, battles2, battles3 } =
     historyData.burza ?? {};
   return (

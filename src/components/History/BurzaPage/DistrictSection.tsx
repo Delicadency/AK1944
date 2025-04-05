@@ -2,7 +2,7 @@ import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-export const District = () => {
+export const DistrictSection = () => {
   const { districtTitle, district1, district2, district3, district4 } =
     historyData.burza ?? {};
   return (

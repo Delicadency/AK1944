@@ -2,7 +2,7 @@ import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-export const Fortress = () => {
+export const FortressSection = () => {
   const { fortressTitle, fortress1, fortress2 } = historyData.debica ?? {};
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">

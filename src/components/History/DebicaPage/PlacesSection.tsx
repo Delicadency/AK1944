@@ -7,11 +7,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cn } from "@/utils";
 import Image from "next/image";
 
-interface PlacesProps {
-  onToggle: (state: boolean) => void;
-}
-
-export const Places: React.FC<PlacesProps> = () => {
+export const PlacesSection = () => {
   const { placesTitle, places, places1 } = historyData.debica ?? {};
 
   const isMobile = useMediaQuery("(max-width: 767px)");

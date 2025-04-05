@@ -1,7 +1,7 @@
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-export const Evacuation = () => {
+export const EvacuationSection = () => {
   const {
     evacuationTitle,
     evacuation1,

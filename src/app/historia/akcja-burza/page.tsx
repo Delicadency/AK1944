@@ -1,15 +1,15 @@
 import Container from "@/components/shared/Container";
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { District } from "@/components/History/BurzaPage/District";
-import { FirstDays } from "@/components/History/BurzaPage/FirstDays";
-import { HeroicDefence } from "@/components/History/BurzaPage/HeroicDefence";
-import { CommandTransfer } from "@/components/History/BurzaPage/CommandTransfer";
-import { Battles } from "@/components/History/BurzaPage/Battles";
-import { Partisan } from "@/components/History/BurzaPage/Partisan";
-import { Evacuation } from "@/components/History/BurzaPage/Evacuation";
-import { Epilog } from "@/components/History/BurzaPage/Epilog";
-import { Footnotes } from "@/components/History/BurzaPage/Footnotes";
+import { DistrictSection } from "@/components/History/BurzaPage/DistrictSection";
+import { FirstDaysSection } from "@/components/History/BurzaPage/FirstDaysSection";
+import { HeroicDefenceSection } from "@/components/History/BurzaPage/HeroicDefenceSection";
+import { CommandTransferSection } from "@/components/History/BurzaPage/CommandTransferSection";
+import { BattlesSection } from "@/components/History/BurzaPage/BattlesSection";
+import { PartisanSection } from "@/components/History/BurzaPage/PartisanSection";
+import { EvacuationSection } from "@/components/History/BurzaPage/EvacuationSection";
+import { EpilogSection } from "@/components/History/BurzaPage/EpilogSection";
+import { FootnotesSection } from "@/components/History/BurzaPage/FootnotesSection";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function OperationBurzaPage() {
@@ -22,15 +22,15 @@ export default function OperationBurzaPage() {
         <Heading variant="h3" color="green" contrast="yellow" className="mb-6">
           {title}
         </Heading>
-        <District />
-        <FirstDays />
-        <HeroicDefence />
-        <CommandTransfer />
-        <Battles />
-        <Partisan />
-        <Evacuation />
-        <Epilog />
-        <Footnotes />
+        <DistrictSection />
+        <FirstDaysSection />
+        <HeroicDefenceSection />
+        <CommandTransferSection />
+        <BattlesSection />
+        <PartisanSection />
+        <EvacuationSection />
+        <EpilogSection />
+        <FootnotesSection />
       </Container>
     </div>
   );

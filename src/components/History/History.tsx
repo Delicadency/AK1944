@@ -4,7 +4,7 @@ import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
 import { Breadcrumbs } from "../shared/Breadcrumbs/Breadcrumbs";
 
-export const History = () => {
+export const HistoryBanner = () => {
   const { title, description1, description2, description3, description4 } =
     txt.history ?? {};
   return (

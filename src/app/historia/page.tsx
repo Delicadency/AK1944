@@ -1,8 +1,8 @@
-import { History } from "@/components/History/History";
+import { HistoryBanner } from "@/components/History/History";
 import { HistoryNav } from "@/components/History/HistoryNav";
 import { HistoryList } from "@/components/History/HistoryList";
-import { Literature } from "@/components/History/Literature";
-import { HistoryBiogram } from "@/components/History/HistoryBiogram";
+import { LiteratureComponent } from "@/components/History/Literature";
+import { HistoryBiogramComponent } from "@/components/History/HistoryBiogram";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 import Container from "@/components/shared/Container";
@@ -10,7 +10,7 @@ import Container from "@/components/shared/Container";
 export default function HistoryPage() {
   return (
     <div className="flex flex-col gap-10">
-      <History />
+      <HistoryBanner />
       <HistoryNav />
       <HistoryList />
       <section className="overflow-hidden bg-greenB pb-10 pt-6">
@@ -26,8 +26,8 @@ export default function HistoryPage() {
             Zobacz także
           </Heading>
           <div className="mt-5 flex flex-col desktop:flex-row desktop:gap-[104px]">
-            <HistoryBiogram />
-            <Literature />
+            <HistoryBiogramComponent />
+            <LiteratureComponent />
           </div>
         </Container>
       </section>

@@ -1,7 +1,7 @@
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-export const CommandTransfer = () => {
+export const CommandTransferSection = () => {
   const {
     commandTransferTitle,
     commandTransfer1,

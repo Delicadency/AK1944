@@ -1,11 +1,11 @@
 import Container from "@/components/shared/Container";
 import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { Fortress } from "@/components/History/DebicaPage/Fortress";
-import { Beginnings } from "@/components/History/DebicaPage/Beginnings";
-import { Places } from "@/components/History/DebicaPage/Places";
-import { Readiness } from "@/components/History/DebicaPage/Readiness";
-import { Expansion } from "@/components/History/DebicaPage/Expansion";
+import { FortressSection } from "@/components/History/DebicaPage/FortressSection";
+import { BeginningsSection } from "@/components/History/DebicaPage/BeginningsSection";
+import { PlacesSection } from "@/components/History/DebicaPage/PlacesSection";
+import { ReadinessSection } from "@/components/History/DebicaPage/ReadinessSection";
+import { ExpansionSection } from "@/components/History/DebicaPage/ExpansionSection";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function DebicaDistrictPage() {
@@ -18,11 +18,11 @@ export default function DebicaDistrictPage() {
         <Heading variant="h3" color="green" contrast="yellow" className="mb-6">
           {title}
         </Heading>
-        <Fortress />
-        <Beginnings />
-        <Places />
-        <Readiness />
-        <Expansion />
+        <FortressSection />
+        <BeginningsSection />
+        <PlacesSection />
+        <ReadinessSection />
+        <ExpansionSection />
       </Container>
     </div>
   );

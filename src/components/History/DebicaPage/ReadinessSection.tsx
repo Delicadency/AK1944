@@ -1,6 +1,7 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import { historyData } from "@/data/historyData";
-export const Readiness = () => {
+
+export const ReadinessSection = () => {
   const { readinessTitle, readiness1, readiness2 } = historyData.debica ?? {};
   return (
     <section className="flex flex-col gap-6">

@@ -1,7 +1,8 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 import { historyData } from "@/data/historyData";
-export const Expansion = () => {
+
+export const ExpansionSection = () => {
   const {
     expansionTitle,
     expansion1,

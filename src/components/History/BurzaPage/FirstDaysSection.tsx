@@ -2,7 +2,7 @@ import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-export const FirstDays = () => {
+export const FirstDaysSection = () => {
   const { firstDaysTitle, firstDays1, firstDays2, firstDays3, firstDays4 } =
     historyData.burza ?? {};
 
