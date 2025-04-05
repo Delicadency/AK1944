@@ -4,20 +4,22 @@ import { historyData as txt } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import { Routes } from "@/routes";
 
-export default function Literature() {
-  const { title, content } = txt.history.literature;
+export const LiteratureComponent = () => {
+  const { title, content } = txt.history.literature ?? {};
   return (
-    <Container className="justify-items-center bg-greenMain py-6 contrast:bg-yellowContrast desktop:max-w-[420px]">
+    <Container className="mt-10 flex flex-col bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">
       <Heading variant="h3" contrast="black" color="white">
         {title}
       </Heading>
-      <p className="my-6 text-white">{content}</p>
+      <p className="my-6 font-courier text-lg text-white desktop:text-base">
+        {content}
+      </p>
       <Button
         label="Sprawdź"
         ariaDescription="Sprawdź"
-        className="mt-6"
+        className="m-auto mb-6"
         href={Routes.LITERATURE}
-      ></Button>
+      />
     </Container>
   );
-}
+};
