@@ -1,7 +1,6 @@
 "use client";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { historyData } from "@/data/historyData";
-import { Button } from "@/components/shared/Button/Button";
 import { useState } from "react";
 import { IconChevronDown } from "@/icons/IconChevronDown";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
@@ -12,8 +11,9 @@ interface PlacesProps {
   onToggle: (state: boolean) => void;
 }
 
-export const Places: React.FC<PlacesProps> = ({ onToggle }) => {
+export const Places: React.FC<PlacesProps> = () => {
   const { placesTitle, places, places1 } = historyData.debica ?? {};
+
   const isMobile = useMediaQuery("(max-width: 767px)");
 
   const [openDescription, setOpenDescription] = useState<{
@@ -25,13 +25,6 @@ export const Places: React.FC<PlacesProps> = ({ onToggle }) => {
       ...prev,
       [id]: !prev[id],
     }));
-  };
-
-  const [readMore, setReadMore] = useState(false);
-  const handleClick = () => {
-    const newState = !readMore;
-    setReadMore(newState);
-    onToggle(newState);
   };
 
   return (
@@ -55,7 +48,7 @@ export const Places: React.FC<PlacesProps> = ({ onToggle }) => {
                   <div className="h-4 w-4 flex-shrink-0 rounded-full bg-redMain" />
                   <p className="text-start text-lg contrast:text-yellowContrast">
                     {place.name}
-                    {!isMobile && place.description}
+                    {!isMobile && " " + place.description}
                   </p>
                   <IconChevronDown
                     className={cn(
@@ -77,15 +70,6 @@ export const Places: React.FC<PlacesProps> = ({ onToggle }) => {
             ))}
           </ul>
           <p className="mt-6 text-lg contrast:text-yellowContrast">{places1}</p>
-          <Button
-            label={readMore ? "Zwiń tekst" : "Czytaj więcej"}
-            variant={"secondary"}
-            className="m-auto desktop:hidden"
-            onClick={handleClick}
-            ariaDescription={readMore ? "Zwiń tekst" : "Czytaj więcej"}
-            aria-expanded={readMore ? "true" : "false"}
-            aria-controls="readMore-text"
-          />
         </div>
         <div className="shrink-0">
           <Image
