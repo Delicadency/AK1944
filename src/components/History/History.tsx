@@ -1,12 +1,12 @@
 import { Heading } from "../shared/Heading/Heading";
-import { historyData as txt } from "@/data/historyData";
+import { historyData } from "@/data/historyData";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
 import { Breadcrumbs } from "../shared/Breadcrumbs/Breadcrumbs";
 
 export const HistoryBanner = () => {
   const { title, description1, description2, description3, description4 } =
-    txt.history ?? {};
+    historyData.history ?? {};
   return (
     <BackgroundImage
       alt="Historyczne zdjęcie 5. Pułku Strzelców Konnych"

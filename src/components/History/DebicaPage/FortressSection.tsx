@@ -14,11 +14,11 @@ export const FortressSection = () => {
         <p>{fortress2}</p>
       </div>
       <Image
-        src="/images/history/main/debica.webp"
-        alt="debica"
+        src="/images/history/debica/map.webp"
+        alt="Mapa Obwodu Dębica z wyszczególnieniem poszczególnych placówek."
         width={1600}
         height={980}
-        className="m-auto desktop:max-w-[500px]"
+        className="m-auto tablet:max-w-[800px] desktop:max-w-[700px]"
         priority
       />
     </section>

@@ -1,11 +1,11 @@
 import Container from "../shared/Container";
 import { Heading } from "../shared/Heading/Heading";
-import { historyData as txt } from "@/data/historyData";
+import { historyData } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import { Routes } from "@/routes";
 
 export const LiteratureComponent = () => {
-  const { title, content } = txt.history.literature ?? {};
+  const { title, content } = historyData.history.literature ?? {};
   return (
     <Container className="mt-10 flex flex-col bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">
       <Heading variant="h3" contrast="black" color="white">

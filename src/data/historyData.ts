@@ -41,8 +41,8 @@ export const historyData = {
         description:
           "Lokalne struktury konspiracyjne odegrały kluczową rolę w walce z okupantem na ziemi dębickiej. Poznaj rozwój organizacji od początków Służby Zwycięstwu Polski, przez Związek Walki Zbrojnej, aż po przekształcenie jej w Armię Krajową. Sprawdź, jak wyglądała działalność wywiadowcza, dywersyjna i szkoleniowa, a także jak Obwód przygotowywał się do operacji „Burza”. Żołnierze AK Dębica, mimo ogromnego ryzyka, stawili opór okupantom.",
         image: {
-          path: "/images/history/main/debica.webp",
-          alt: "Pokazy musztry w koszarach 5. Pułku Strzelców Konnych w Dębicy. Na czele plutonu ppor. Mieczysław Rakoczy.",
+          path: "/images/history/debica/school.webp",
+          alt: "Szkoła w Gumniskach - siedziba komendy Obwodu ZWZ-AK Dębica.",
         },
         route: Routes.DEBICA_DISTRICT,
       },

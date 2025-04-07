@@ -21,8 +21,8 @@ export const ExpansionSection = () => {
       </Heading>
       <div className="flex flex-col gap-6 desktop:flex-row">
         <Image
-          src="/images/history/debica/officer-school.webp"
-          alt="debica"
+          src="/images/history/debica/school.webp"
+          alt="Szkoła w Gumniskach - siedziba komendy Obwodu ZWZ-AK Dębica."
           width={500}
           height={310}
           className="m-auto desktop:hidden"
@@ -34,8 +34,8 @@ export const ExpansionSection = () => {
             <p>{expansion3}</p>
           </div>
           <Image
-            src="/images/history/debica/attention.webp"
-            alt="debica"
+            src="/images/history/debica/1.webp"
+            alt="Uśmiechnięci mężczyźni"
             width={500}
             height={310}
             sizes="(max-width: 767px) 200px"
@@ -50,14 +50,14 @@ export const ExpansionSection = () => {
         </div>
         <div className="hidden shrink-0 flex-col justify-center gap-6 desktop:flex">
           <Image
-            src="/images/history/debica/officer-school.webp"
-            alt="debica"
+            src="/images/history/debica/school.webp"
+            alt="Szkoła w Gumniskach - siedziba komendy Obwodu ZWZ-AK Dębica."
             width={500}
             height={310}
           />
           <Image
-            src="/images/history/debica/attention.webp"
-            alt="debica"
+            src="/images/history/debica/1.webp"
+            alt="Uśmiechnięci mężczyźni"
             width={500}
             height={310}
           />
