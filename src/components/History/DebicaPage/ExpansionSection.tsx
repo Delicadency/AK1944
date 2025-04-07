@@ -34,7 +34,7 @@ export const ExpansionSection = () => {
             <p>{expansion3}</p>
           </div>
           <Image
-            src="/images/history/debica/1.webp"
+            src="/images/history/debica/people.webp"
             alt="Uśmiechnięci mężczyźni"
             width={500}
             height={310}
@@ -56,7 +56,7 @@ export const ExpansionSection = () => {
             height={310}
           />
           <Image
-            src="/images/history/debica/1.webp"
+            src="/images/history/debica/people.webp"
             alt="Uśmiechnięci mężczyźni"
             width={500}
             height={310}

@@ -69,7 +69,7 @@ export const PlacesSection = () => {
         </div>
         <div className="shrink-0">
           <Image
-            src="/images/history/debica/people.webp"
+            src="/images/history/debica/kaluzowka.webp"
             alt="Ewakuacja rannych żołnierzy II Zgrupowania 5. Pułku Strzelców Konnych AK po bitwie na Kałużówce. Sierpień 1944 r."
             width={500}
             height={810}
