@@ -1,5 +1,19 @@
-import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+import Container from "@/components/shared/Container";
+import { historyData } from "@/data/historyData";
+import { Heading } from "@/components/shared/Heading/Heading";
+import { GenesisSection } from "@/components/History/RegimentPage/GenesisSection";
 
 export default function RegimentPage() {
-  return <ComingSoon />;
+  const { title } = historyData.regiment ?? {};
+
+  return (
+    <div className="contrast:bg-black">
+      <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+        <Heading variant="h3" color="green" contrast="yellow">
+          {title}
+        </Heading>
+        <GenesisSection />
+      </Container>
+    </div>
+  );
 }

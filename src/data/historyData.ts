@@ -60,7 +60,7 @@ export const historyData = {
   },
   regiment: {
     title: "5. Pułk Strzelców Konnych",
-    genesisTitle: "Geneza powstania",
+    genesisTitle: "Geneza powstania pułku",
     genesis1:
       "Historia powstania 5. Pułku Strzelców Konnych wiąże się z okresem napoleońskim, kiedy to w Kościanie na przełomie 1806 i 1807 r. Franciszek Garczyński sformował pułk, który w czerwcu 1807 r. otrzymał nazwę 5. PSK. Dowódcą tegoż pułku został płk Kazimierz Turno. Po burzliwych perypetiach okresu napoleońskiego, udziale w wojnie z Austrią w 1809 r. i zdziesiątkowaniu pułku w wielkiej wyprawie Napoleona na Moskwę w 1812 r. pułk uległ naturalnemu rozwiązaniu. Warto dodać, że w wyprawie w roku 1812 w szeregach pułku walczył Aleksander Fredro, który okres ten opisał w pamiętniku ”Trzy po trzy”.",
     genesis2:
@@ -70,15 +70,36 @@ export const historyData = {
     commanders: {
       title: "Dowódcy Pułku w okresie międzywojennym",
       persons: [
-        { name: "ppłk Aleksander Ehrbar", date: "(19.06.1919 - 22.02.1924)" },
-        { name: "płk Adam Rozwadowski", date: "(22.02.1924 - 22.02.1927)" },
-        { name: "ppłk Jan Kanty Olszewski", date: "(22.02.1927-28.01.1928)" },
+        {
+          name: "ppłk Aleksander Ehrbar",
+          date: "(19.06.1919 - 22.02.1924)",
+          id: 1,
+        },
+        {
+          name: "płk Adam Rozwadowski",
+          date: "(22.02.1924 - 22.02.1927)",
+          id: 2,
+        },
+        {
+          name: "ppłk Jan Kanty Olszewski",
+          date: "(22.02.1927-28.01.1928)",
+          id: 3,
+        },
         {
           name: "płk dypl. Juliusz Kleeberg",
           date: "(28.01.1928 - 31.01.1930)",
+          id: 4,
         },
-        { name: "ppłk Ignacy Kowalczewski", date: "(31.01.1930 - 04.1938)" },
-        { name: "płk Kazimierz Kosiarski", date: "(04.1938 - 20.09.1939)" },
+        {
+          name: "ppłk Ignacy Kowalczewski",
+          date: "(31.01.1930 - 04.1938)",
+          id: 5,
+        },
+        {
+          name: "płk Kazimierz Kosiarski",
+          date: "(04.1938 - 20.09.1939)",
+          id: 6,
+        },
       ],
     },
     regimentTitle: "5. Pułk Strzelców Konnych w Dębicy",
