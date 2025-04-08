@@ -13,7 +13,7 @@ export const Map = () => {
       <div className="w-full py-1">
         <a
           className="text-12 text-grayDate"
-          href="https://dawne.traseo.pl/trasa/szlak-partyzantow-ii-zgrupowania-ak-obwodu-debica"
+          href="https://traseo.pl/trasa/szlak-partyzantow-ii-zgrupowania-ak-obwodu-debica"
         >
           Zobacz trasę w Traseo
         </a>
