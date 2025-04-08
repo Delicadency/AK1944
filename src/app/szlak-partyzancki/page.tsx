@@ -3,6 +3,7 @@ import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Article } from "./_components/Article";
 import { Map } from "./_components/Map";
+import { Partners } from "./_components/Partners";
 
 export default function PartisanTrailPage() {
   return (
@@ -17,6 +18,7 @@ export default function PartisanTrailPage() {
         </Heading>
         <Article />
         <Map />
+        <Partners/>
       </Container>
     </>
   );

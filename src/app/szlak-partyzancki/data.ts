@@ -8,10 +8,6 @@ interface TrailPoints {
   description: string;
 }
 
-interface Partner {
-  partner: string;
-}
-
 interface Quote {
   quote: string;
   emphasis: string;
@@ -83,24 +79,18 @@ export const trailPoints: TrailPoints[] = [
   },
 ] as const;
 
-export const partners: Partner[] = [
-  { partner: "Powiat Dębicki" },
-  { partner: "Miasto Dębica" },
-  { partner: "Gmina Dębica, Gmina Pilzno" },
-  { partner: "Miejski Zarząd Oświaty w Dębicy" },
-  { partner: "Centrum Kultury i Bibliotek Gminy Dębica" },
-  { partner: "Lasy Państwowe – Nadleśnictwo Dębica" },
-  { partner: "Katolickie Centrum Edukacji „KANA” w Dębicy" },
-  { partner: "Miejska Komunikacja Samochodowa Sp. z o.o. w Dębicy" },
-  {
-    partner:
-      "Hufiec Dębica Związku Harcerstwa Polskiego im. Dębickich Szarych Szeregów",
-  },
-  {
-    partner:
-      "Hufiec Pilzno Związku Harcerstwa Polskiego im. Aleksandra Kamińskiego ps. „Kamyk”",
-  },
-  { partner: "Związek Strzelecki „Strzelec” JS 2017" },
+export const partners: string[] = [
+  "Powiat Dębicki",
+  "Miasto Dębica",
+  "Gmina Dębica, Gmina Pilzno",
+  "Miejski Zarząd Oświaty w Dębicy",
+  "Centrum Kultury i Bibliotek Gminy Dębica",
+  "Lasy Państwowe – Nadleśnictwo Dębica",
+  "Katolickie Centrum Edukacji „KANA” w Dębicy",
+  "Miejska Komunikacja Samochodowa Sp. z o.o. w Dębicy",
+  "Hufiec Dębica Związku Harcerstwa Polskiego im. Dębickich Szarych Szeregów",
+  "Hufiec Pilzno Związku Harcerstwa Polskiego im. Aleksandra Kamińskiego ps. „Kamyk”",
+  "Związek Strzelecki „Strzelec” JS 2017",
 ] as const;
 
 export const quotes: Quote[] = [
