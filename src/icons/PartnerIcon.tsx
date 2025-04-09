@@ -20,7 +20,6 @@ export const PartnerIcon = ({
     aria-hidden="true"
   >
     <g clipPath="url(#clip0_1649_7410)">
-      <path d="M206.437 0H0V137.625H206.437V0Z" fill="#FFFCF5" />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -28,10 +27,5 @@ export const PartnerIcon = ({
         fill="#304D30"
       />
     </g>
-    <defs>
-      <clipPath id="clip0_1649_7410">
-        <rect width="206.437" height="137.625" fill="white" />
-      </clipPath>
-    </defs>
   </svg>
 );
