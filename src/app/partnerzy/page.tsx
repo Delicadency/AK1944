@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 import Container from "@/components/shared/Container";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { ThankYou } from "@/components/shared/ThankYou";
@@ -10,8 +12,15 @@ import { OurPartners } from "./_components/OurPartners";
 import { ThreadIcon } from "@/icons/ThreadIcon";
 
 import { AK_DATA } from "@/data/akData";
+import { partners } from "@/data/partners";
 
-// Todo: Add meta for partners for SEO? Carousel is client-side.
+const partnersList = partners
+  .map(({ name, href }) => `- ${name}${href ? `: ${href}` : ""}`)
+  .join("\n");
+
+export const metadata: Metadata = {
+  description: `Dziękujemy partnerom Armii Krajowej:\n${partnersList}`,
+};
 
 export default function PartnersPage() {
   return (
