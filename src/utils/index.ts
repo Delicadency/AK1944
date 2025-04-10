@@ -15,3 +15,15 @@ export const cleanHTML = (html: string): string =>
 
 export const truncateText = (text: string, maxLength: number): string =>
   text.length > maxLength ? `${text.substring(0, maxLength - 3)}...` : text;
+
+export const slugify = (text?: string): string | undefined =>
+  !text?.trim()
+    ? undefined
+    : text
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^\w\s-]/g, "")
+        .trim()
+        .replace(/[\s_]+/g, "-")
+        .replace(/-+/g, "-")
+        .toLowerCase();

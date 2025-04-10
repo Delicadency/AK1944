@@ -5,9 +5,9 @@ import Container from "@/components/shared/Container";
 import { ContactSection } from "./_components/ContactSection";
 import { DonationSection } from "./_components/DonationSection";
 import { PartnerSection } from "./_components/PartnerSection";
-import { SupportGratitude } from "./_components/SupportGratitude";
 import { SupportNav } from "./_components/SupportNav";
 import { TaxSection } from "./_components/TaxSection";
+import { ThankYou } from "@/components/shared/ThankYou";
 
 export const metadata: Metadata = {
   title: "Wesprzyj",
@@ -26,7 +26,7 @@ export default function SupportPage() {
         <DonationSection />
         <PartnerSection />
         <ContactSection />
-        <SupportGratitude />
+        <ThankYou title="Z głębi serca dziękujemy za okazane wsparcie!" />
       </Container>
     </div>
   );

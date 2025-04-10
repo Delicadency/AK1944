@@ -23,3 +23,15 @@ img {
 a {
   color: inherit;
 }
+
+:root {
+  --stroke: black;
+  --fill: #304d30;
+  --fill-secondary: #8f0000;
+}
+
+.contrast {
+  --stroke: rgb(255, 242, 5);
+  --fill: rgb(255, 242, 5);
+  --fill-secondary: #0080ff;
+}
