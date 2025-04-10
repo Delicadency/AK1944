@@ -33,5 +33,5 @@ a {
 .contrast {
   --stroke: rgb(255, 242, 5);
   --fill: rgb(255, 242, 5);
-  --fill-secondary: hotpink;
+  --fill-secondary: #0080ff;
 }
