@@ -6,8 +6,10 @@ interface Props {
   image?: string;
 }
 
+const SIZE = 320;
+
 export const PartnerCard = ({ name, href, image }: Props) => (
-  <article className="flex h-full w-full items-center justify-center px-3 py-1 contrast:bg-white">
+  <article className="flex h-full w-full items-center justify-center overflow-hidden p-2 contrast:bg-white">
     <a
       href={href}
       target="_blank"
@@ -20,8 +22,8 @@ export const PartnerCard = ({ name, href, image }: Props) => (
           src={image}
           alt={name}
           title={name}
-          width={304}
-          height={304}
+          width={SIZE}
+          height={SIZE}
         />
       ) : (
         <h5 className="text-center text-xl font-bold text-greenMain">{name}</h5>

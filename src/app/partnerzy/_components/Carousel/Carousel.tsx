@@ -24,8 +24,7 @@ export const Carousel = ({ items }: Props) => {
 
   return (
     <div className="overflow-hidden" ref={emblaRef}>
-      <ul className="flex gap-4 tablet:gap-6 desktop:gap-10">
-        <div id="spacer" className="w-4 tablet:w-6 desktop:w-10" />
+      <ul className="flex gap-4">
         {items.map(({ id, name, href, image }) => (
           <li
             key={id}
@@ -35,6 +34,8 @@ export const Carousel = ({ items }: Props) => {
             <PartnerCard name={name} href={href} image={image} />
           </li>
         ))}
+
+        <div id="spacer" className="w-4" />
       </ul>
     </div>
   );
