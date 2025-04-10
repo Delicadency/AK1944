@@ -35,7 +35,7 @@ export const Carousel = ({ items }: Props) => {
           </li>
         ))}
 
-        <div id="spacer" className="w-4" />
+        <li id="spacer" className="w-4" />
       </ul>
     </div>
   );

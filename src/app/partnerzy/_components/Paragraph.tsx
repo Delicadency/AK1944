@@ -18,7 +18,7 @@ export const Paragraph = ({ title, children }: Props) => {
           color="green"
           contrast="yellow"
           className="text-center text-2xl tablet:text-26 desktop:text-28"
-          variant="h4"
+          variant="h3"
         >
           {title}
         </Heading>
