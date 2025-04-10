@@ -1,28 +1,37 @@
 import { Button } from "@/components/shared/Button/Button";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { Routes } from "@/routes";
+import { SectionType, sections } from "../data";
+import Image from "next/image";
 
 type SectionProps = {
-  headingTitle: string;
-  text: string;
-  sectionName: "Geneza" | "Rajdy";
+  sectionName: SectionType;
 };
 
-export const Section = ({ headingTitle, text, sectionName }: SectionProps) => {
-  const link = sectionName === "Geneza" ? Routes.ORIGIN : Routes.RAIDS;
+export const Section = ({ sectionName }: SectionProps) => {
+  const { text, route, image, alt } = sections[sectionName];
 
   return (
-    <section>
-      <Heading color="green" contrast="yellow">
-        {headingTitle}
+    <section className="flex flex-col pb-10 desktop:pb-0">
+      <Heading color="green" contrast="yellow" className="pb-2">
+        {sectionName}
       </Heading>
       <p>{text}</p>
       <Button
         label="Sprawdź"
         ariaDescription={`Przejdź do strony ${sectionName}`}
         variant="secondary"
-        href={link}
+        href={route}
+        className="my-6 self-center tablet:self-start"
       />
+      <div className="relative h-[300px] w-full max-w-[592px] justify-center self-center tablet:self-start desktop:w-[592px]">
+        <Image
+          src={image}
+          alt={alt}
+          fill
+          priority
+          className="rounded-md object-cover"
+        />
+      </div>
     </section>
   );
 };
