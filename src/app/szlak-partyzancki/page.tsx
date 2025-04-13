@@ -14,13 +14,10 @@ export default function PartisanTrailPage() {
     <div className="contrast:bg-black00 contrast:text-yellowContrast">
       <Container as="section">
         <Breadcrumbs />
-        <Heading color="green" contrast="yellow" className="pt-5">
-          <span className="inline desktop:hidden">
-            Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica
-          </span>
-          <span className="hidden desktop:inline">Szlak Partyzancki</span>
-        </Heading>
-        <Article paragraphs={activeTrail.paragraphs} />
+        <Article
+          paragraphs={activeTrail.paragraphs}
+          displayName={activeTrail.displayName}
+        />
         <Map map={activeTrail.map} />
         <div className="flex flex-col justify-between desktop:flex-row desktop:pb-20">
           <Section sectionName="Geneza" />

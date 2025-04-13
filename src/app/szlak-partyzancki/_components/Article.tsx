@@ -4,18 +4,19 @@ import { Paragraph } from "../data/trails";
 
 type ArticleProps = {
   paragraphs: Paragraph[];
+  displayName: string;
 };
 
-export const Article = ({ paragraphs }: ArticleProps) => {
+export const Article = ({ paragraphs, displayName }: ArticleProps) => {
   return (
     <article className="flex flex-col gap-5 desktop:flex-row desktop:gap-[86px]">
       <section className="flex flex-col gap-5 desktop:gap-9">
         <Heading
           color="green"
           contrast="yellow"
-          className="hidden max-w-[520px] pt-7 desktop:block"
+          className="pt-7 desktop:max-w-[600px]"
         >
-          „Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica”
+          {displayName}
         </Heading>
         <p className="text-18 desktop:max-w-[521px]">
           jest propozycją dla Wszystkich rozmiłowanych w pieszych wędrówkach
@@ -32,7 +33,7 @@ export const Article = ({ paragraphs }: ArticleProps) => {
 
       <section className="flex flex-col gap-5 desktop:gap-9">
         {paragraphs.map((paragraph, index) => (
-          <div key={index} className="desktop:max-w-[800px]">
+          <div key={index} className="desktop:max-w-[700px]">
             <strong>{paragraph.title}</strong>
             <p>{paragraph.content}</p>
           </div>
