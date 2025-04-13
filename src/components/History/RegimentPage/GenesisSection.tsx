@@ -42,7 +42,7 @@ export const GenesisSection = () => {
           <p className="hidden desktop:block">
             W okresie międzywojennym dowódcami pułku byli kolejno:
           </p>
-          <ol className="relative flex flex-col gap-2 desktop:-translate-x-5">
+          <ul className="relative flex flex-col gap-2 desktop:-translate-x-5">
             {commandersList.map((commander, index) => (
               <li
                 key={commander.id}
@@ -56,7 +56,7 @@ export const GenesisSection = () => {
                 <p>{commander.date}</p>
               </li>
             ))}
-          </ol>
+          </ul>
         </aside>
       </div>
     </section>
