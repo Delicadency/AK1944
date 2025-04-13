@@ -5,8 +5,11 @@ import { Article } from "./_components/Article";
 import { Map } from "./_components/Map";
 import { Partners } from "./_components/Partners";
 import { Section } from "./_components/Section";
+import { trails } from "./data/trails";
 
 export default function PartisanTrailPage() {
+  const activeTrail = trails.pierwszy;
+
   return (
     <div className="contrast:bg-black00 contrast:text-yellowContrast">
       <Container as="section">
@@ -17,7 +20,7 @@ export default function PartisanTrailPage() {
           </span>
           <span className="hidden desktop:inline">Szlak Partyzancki</span>
         </Heading>
-        <Article />
+        <Article paragraphs={activeTrail.paragraphs} />
         <Map />
         <div className="flex flex-col justify-between desktop:flex-row desktop:pb-20">
           <Section sectionName="Geneza" />

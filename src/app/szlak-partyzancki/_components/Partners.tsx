@@ -1,5 +1,5 @@
 import { Heading } from "@/components/shared/Heading/Heading";
-import { partners } from "../data";
+import { partners } from "../data/partners";
 
 export const Partners = () => {
   return (

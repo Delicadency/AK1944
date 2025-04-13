@@ -1,8 +1,12 @@
 import { Button } from "@/components/shared/Button/Button";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { paragraphs } from "../data";
+import { Paragraph } from "../data/trails"; // typ, opcjonalnie
 
-export const Article = () => {
+type ArticleProps = {
+  paragraphs: Paragraph[];
+};
+
+export const Article = ({ paragraphs }: ArticleProps) => {
   return (
     <article className="flex flex-col gap-5 desktop:flex-row desktop:gap-[86px]">
       <section className="flex flex-col gap-5 desktop:gap-9">

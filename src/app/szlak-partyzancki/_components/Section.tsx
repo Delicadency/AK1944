@@ -1,6 +1,6 @@
 import { Button } from "@/components/shared/Button/Button";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { SectionType, sections } from "../data";
+import { SectionType, sections } from "../data/sections";
 import Image from "next/image";
 
 type SectionProps = {
