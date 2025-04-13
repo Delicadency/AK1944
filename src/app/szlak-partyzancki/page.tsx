@@ -1,23 +1,29 @@
+"use client"
+
+import { useState } from "react";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Article } from "./_components/Article";
 import { Map } from "./_components/Map";
 import { Partners } from "./_components/Partners";
 import { Section } from "./_components/Section";
-import { trails } from "./data/trails";
+import { TrailSlug, trails } from "./data/trails";
+import { TrailSwitcher } from "./_components/TrailSwitcher";
 
 export default function PartisanTrailPage() {
-  const activeTrail = trails.second;
+  const [activeTrail, setActiveTrail] = useState<TrailSlug>("second");
+  const trailData = trails[activeTrail];
 
   return (
     <div className="contrast:bg-black00 contrast:text-yellowContrast">
       <Container as="section">
         <Breadcrumbs />
+        <TrailSwitcher active={activeTrail} onChange={setActiveTrail} />
         <Article
-          paragraphs={activeTrail.paragraphs}
-          displayName={activeTrail.displayName}
+          paragraphs={trailData.paragraphs}
+          displayName={trailData.displayName}
         />
-        <Map map={activeTrail.map} />
+        <Map map={trailData.map} />
         <div className="flex flex-col justify-between desktop:flex-row desktop:pb-20">
           <Section sectionName="Geneza" />
           <Section sectionName="Rajdy" />

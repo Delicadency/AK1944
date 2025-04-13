@@ -26,12 +26,15 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const variants = {
-    primary:
-      "contrast:bg-black00 contrast:text-yellowContrast bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
-    inversion:
-      "contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
-    secondary:
-      "contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
+    primary: `
+    contrast:bg-black00 contrast:text-yellowContrast bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] desktop:hover:text-white active:bg-redMain
+  `,
+    inversion: `
+    contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] desktop:hover:text-[#A60000] active:bg-backgroundMain
+  `,
+    secondary: `
+    contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] desktop:hover:text-[#333] active:bg-greenLight
+  `,
   };
   const sizes = {
     medium: "text-16",
@@ -39,7 +42,7 @@ export const Button = ({
   };
 
   const commonClassNames = clsx(
-    "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all",
+    "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all  duration-200 ease-in-out active:scale-95",
     variants[variant],
     sizes[size],
     className,

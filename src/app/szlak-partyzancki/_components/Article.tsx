@@ -14,7 +14,7 @@ export const Article = ({ paragraphs, displayName }: ArticleProps) => {
         <Heading
           color="green"
           contrast="yellow"
-          className="pt-7 desktop:max-w-[600px]"
+          className="desktop:max-w-[600px]"
         >
           {displayName}
         </Heading>
