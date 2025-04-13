@@ -21,7 +21,7 @@ export default function PartisanTrailPage() {
           <span className="hidden desktop:inline">Szlak Partyzancki</span>
         </Heading>
         <Article paragraphs={activeTrail.paragraphs} />
-        <Map />
+        <Map map={activeTrail.map} />
         <div className="flex flex-col justify-between desktop:flex-row desktop:pb-20">
           <Section sectionName="Geneza" />
           <Section sectionName="Rajdy" />

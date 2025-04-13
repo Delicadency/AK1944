@@ -1,6 +1,6 @@
 import { Button } from "@/components/shared/Button/Button";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { Paragraph } from "../data/trails"; // typ, opcjonalnie
+import { Paragraph } from "../data/trails";
 
 type ArticleProps = {
   paragraphs: Paragraph[];
