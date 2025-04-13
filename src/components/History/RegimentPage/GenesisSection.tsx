@@ -3,7 +3,7 @@ import { historyData } from "@/data/historyData";
 import Image from "next/image";
 
 export const GenesisSection = () => {
-  const { genesisTitle, genesis1, genesis2, genesis3, commanders } =
+  const { genesisTitle, genesis1, genesis2, genesis3, genesis4, commanders } =
     historyData.regiment ?? {};
   const commandersList = commanders.persons;
 
@@ -25,6 +25,7 @@ export const GenesisSection = () => {
           />
           <p>{genesis2}</p>
           <p>{genesis3}</p>
+          <p>{genesis4}</p>
         </div>
         <aside className="flex flex-shrink-0 flex-col gap-6">
           <Image
