@@ -8,7 +8,7 @@ import { Section } from "./_components/Section";
 import { trails } from "./data/trails";
 
 export default function PartisanTrailPage() {
-  const activeTrail = trails.pierwszy;
+  const activeTrail = trails.second;
 
   return (
     <div className="contrast:bg-black00 contrast:text-yellowContrast">

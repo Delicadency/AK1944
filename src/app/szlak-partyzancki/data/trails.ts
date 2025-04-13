@@ -1,5 +1,4 @@
-export type TrailSlug = "pierwszy" | "drugi" | "trzeci";
-//slugs may change, still waiting for detailed data from Maciej
+export type TrailSlug = "first" | "second" | "third";
 
 export type Paragraph = {
   title: string;
@@ -17,7 +16,6 @@ type MapData = {
 };
 
 type TrailData = {
-  name: string;
   displayName: string;
   enabled: boolean;
   paragraphs: Paragraph[];
@@ -26,8 +24,15 @@ type TrailData = {
 };
 
 export const trails: Record<TrailSlug, TrailData> = {
-  pierwszy: {
-    name: "Szlak Pierwszy",
+  first: {
+    displayName:
+      "Szlak Partyzancki I Zgrupowania Armii Krajowej Obwodu Dębica",
+    enabled: false,
+    paragraphs: [],
+    trailPoints: [],
+    map: { iframeUrl: "", externalUrl: "" },
+  },
+  second: {
     displayName:
       "Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica",
     enabled: true,
@@ -102,19 +107,9 @@ export const trails: Record<TrailSlug, TrailData> = {
         "https://traseo.pl/trasa/szlak-partyzantow-ii-zgrupowania-ak-obwodu-debica",
     },
   },
-  drugi: {
-    name: "Szlak Drugi",
+  third: {
     displayName:
-      "Drugi Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica",
-    enabled: false,
-    paragraphs: [],
-    trailPoints: [],
-    map: { iframeUrl: "", externalUrl: "" },
-  },
-  trzeci: {
-    name: "Szlak Trzeci",
-    displayName:
-      "Trzeci Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica",
+      "Szlak Partyzancki III Zgrupowania Armii Krajowej Obwodu Dębica",
     enabled: false,
     paragraphs: [],
     trailPoints: [],
