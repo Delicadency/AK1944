@@ -16,7 +16,7 @@ export const CracowBrigadeSection = () => {
         {cracowBrigadeTitle}
       </Heading>
       <div className="flex flex-col gap-6 desktop:flex-row">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 desktop:w-1/2">
           <p>{cracowBrigade1}</p>
           <Image
             src="/images/history/regiment/regiment.webp"
@@ -27,7 +27,7 @@ export const CracowBrigadeSection = () => {
           />
           <p>{cracowBrigade2}</p>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 desktop:w-1/2">
           <p>{cracowBrigade3}</p>
           <p>{cracowBrigade4}</p>
         </div>
