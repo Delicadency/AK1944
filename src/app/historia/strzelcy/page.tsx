@@ -5,6 +5,7 @@ import { GenesisSection } from "@/components/History/RegimentPage/GenesisSection
 import { RegimentSection } from "@/components/History/RegimentPage/RegimentSection";
 import { CracowBrigadeSection } from "@/components/History/RegimentPage/CracowBrigadeSection";
 import { SeparationSection } from "@/components/History/RegimentPage/SeparationSection";
+import { WoznikiSection } from "@/components/History/RegimentPage/WoznikiSection";
 
 export default function RegimentPage() {
   const { title } = historyData.regiment ?? {};
@@ -19,6 +20,7 @@ export default function RegimentPage() {
         <RegimentSection />
         <CracowBrigadeSection />
         <SeparationSection />
+        <WoznikiSection />
       </Container>
     </div>
   );
