@@ -68,7 +68,9 @@ export default function PartnersPage() {
           </div>
         </div>
 
-        <ThreadIcon className="mx-auto overflow-hidden p-2" />
+        <div className="overflow-hidden">
+          <ThreadIcon className="mx-auto p-2" />
+        </div>
 
         <OurPartners />
 
