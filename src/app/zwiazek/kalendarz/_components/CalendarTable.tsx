@@ -1,7 +1,7 @@
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
 import { historicalEventList } from "@/app/zwiazek/kalendarz/_components/Events/List";
-import { daysOfWeek } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
-import { GenerateCalendar } from "@/app/zwiazek/kalendarz/GenerateCalendar";
+import { weekdays } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
+import { generateCalendar } from "@/app/zwiazek/kalendarz/_utils/generateCalendar";
 import { CalendarTableCell } from "@/app/zwiazek/kalendarz/_components/CalendarTableCell";
 
 type CalendarTableProps = {
@@ -15,7 +15,7 @@ export const CalendarTable = ({
   prevMonth,
   nextMonth,
 }: CalendarTableProps) => {
-  const calendarDays = GenerateCalendar(currentDate);
+  const calendarDays = generateCalendar(currentDate);
 
   const eventsDates = historicalEventList.map((card) => card.date);
 
@@ -31,7 +31,7 @@ export const CalendarTable = ({
       <table className="flex flex-col items-center gap-5">
         <thead>
           <tr className="flex items-center border-b-2 border-greenC text-greenC tablet:gap-6">
-            {daysOfWeek.map((day) => (
+            {weekdays.map((day) => (
               <td
                 key={day}
                 aria-label={day}

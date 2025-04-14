@@ -1,6 +1,6 @@
 import { formatDate } from "@/utils";
 
-export const GenerateCalendar = (date: Date) => {
+export const generateCalendar = (date: Date) => {
   const year = date.getFullYear();
   const month = date.getMonth();
   const currentDate = new Date(year, month, 1);

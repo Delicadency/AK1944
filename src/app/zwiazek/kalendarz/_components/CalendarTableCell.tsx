@@ -1,4 +1,3 @@
-import { formatDate } from "@/utils";
 import clsx from "clsx";
 
 interface Props {
@@ -14,18 +13,16 @@ export const CalendarTableCell = ({
   currentDate,
   eventsDates,
 }: Props) => {
-  const today = formatDate(new Date().toString());
-  const dayNumber = day.split(".")[0];
-  const monthNumber = day.split(".")[1];
-  const isToday = day === today;
+  const [days, month] = day.split(".");
 
   const isCurrentMonth =
-    monthNumber === formatDate(currentDate.toString()).split(".")[1];
+    month === (currentDate.getMonth() + 1).toString().padStart(2, "0");
+  const isToday = currentDate.getDate().toString() === days;
 
-  const isEventDate = eventsDates.find(
-    (date) =>
-      date.split(".")[0] === dayNumber && date.split(".")[1] === monthNumber,
-  );
+  const isEventDate = eventsDates.find((eventDate) => {
+    const [eventDay, eventMonth] = eventDate.split(".");
+    return eventDay === days && eventMonth === month;
+  });
 
   return (
     <td
@@ -38,7 +35,7 @@ export const CalendarTableCell = ({
         isEventDate && "rounded border-2 border-backgroundMain",
       )}
     >
-      {dayNumber}
+      {days}
     </td>
   );
 };

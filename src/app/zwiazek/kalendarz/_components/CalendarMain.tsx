@@ -3,7 +3,7 @@
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
 import { CalendarTable } from "@/app/zwiazek/kalendarz/_components/CalendarTable";
 import { addMonth } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
-import { GetEventForToday } from "@/app/zwiazek/kalendarz/_components/Events/GetEventsForToday";
+import { getEventForToday } from "@/app/zwiazek/kalendarz/_utils/getEventsForToday";
 import { Posts } from "@/app/zwiazek/kalendarz/_components/Events/Posts";
 import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export const CalendarMain = () => {
     setPostsToShow(DEFAULT_NUMBER_OF_POSTS);
   };
 
-  const eventForToday = GetEventForToday();
+  const eventForToday = getEventForToday();
 
   return (
     <>
