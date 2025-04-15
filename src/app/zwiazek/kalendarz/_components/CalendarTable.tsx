@@ -1,6 +1,6 @@
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
-import { historicalEventList } from "@/app/zwiazek/kalendarz/_components/Events/List";
-import { weekdays } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
+import { data } from "@/app/zwiazek/kalendarz/_components/Events/data";
+import { weekdays } from "@/app/zwiazek/kalendarz/_utils/Dates/Dates";
 import { generateCalendar } from "@/app/zwiazek/kalendarz/_utils/generateCalendar";
 import { CalendarTableCell } from "@/app/zwiazek/kalendarz/_components/CalendarTableCell";
 
@@ -17,7 +17,7 @@ export const CalendarTable = ({
 }: CalendarTableProps) => {
   const calendarDays = generateCalendar(currentDate);
 
-  const eventsDates = historicalEventList.map((card) => card.date);
+  const eventsDates = data.map((card) => card.date);
 
   return (
     <div className="flex flex-col items-center gap-5 font-lora tablet:rounded tablet:border-2 tablet:border-greenC tablet:px-16 tablet:py-10">

@@ -1,15 +1,4 @@
-interface Card {
-  id: string;
-  title: string;
-  image: {
-    src: string;
-    alt: string;
-  };
-  date: string;
-  description: string;
-}
-
-export const historicalEventList: Card[] = [
+export const data = [
   {
     id: "1",
     title:

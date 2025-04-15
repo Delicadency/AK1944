@@ -1,23 +1,22 @@
 import { Routes } from "@/routes";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { Button } from "@/components/shared/Button/Button";
+import { getEventForToday } from "@/app/zwiazek/kalendarz/_utils/getEventsForToday";
 import Container from "@/components/shared/Container";
+
 interface Props {
-  date?: string | number;
-  description?: string;
   withButton?: boolean;
 }
 
-export const CalendarCard = ({
-  date,
-  description,
-  withButton = false,
-}: Props) => {
+export const CalendarCard = ({ withButton = false }: Props) => {
+  const eventForToday = getEventForToday();
+  const [, , eventYear] = eventForToday?.date.split(".") || [""];
   const currentDate = new Date();
   const currentMonth = currentDate.toLocaleString("default", { month: "long" });
   const currentYear = currentDate.getFullYear();
   const dayInNumbers = currentDate.getDate();
   const dayInWords = currentDate.toLocaleString("default", { weekday: "long" });
+
   return (
     <div className="flex w-[284px] items-center justify-center overflow-hidden px-0 tablet:px-0 desktop:px-0">
       <BackgroundImage
@@ -43,11 +42,11 @@ export const CalendarCard = ({
             className="my-5 w-full border border-solid border-redMain contrast:border-black"
             aria-hidden
           />
-          {description && (
+          {eventForToday?.title && (
             <div className="mb-5 grid grid-cols-[auto_1fr] gap-2 font-sans">
-              <p className="text-16 font-bold">{date}</p>
+              <p className="text-16 font-bold">{eventYear}</p>
               <p className="relative text-16 before:absolute before:-left-[7px] before:content-['-']">
-                {description}
+                {eventForToday?.title}
               </p>
             </div>
           )}

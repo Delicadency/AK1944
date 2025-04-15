@@ -12,7 +12,7 @@ interface CardProps {
   isLast: boolean;
 }
 
-export const Card = ({
+export const EventCard = ({
   title,
   image,
   date,

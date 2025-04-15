@@ -1,4 +1,5 @@
-import clsx from "clsx";
+import { pad } from "@/app/zwiazek/kalendarz/_utils/pad";
+import { cn } from "@/utils";
 
 interface Props {
   day: string;
@@ -13,11 +14,13 @@ export const CalendarTableCell = ({
   currentDate,
   eventsDates,
 }: Props) => {
+  const today = new Date();
   const [days, month] = day.split(".");
 
-  const isCurrentMonth =
-    month === (currentDate.getMonth() + 1).toString().padStart(2, "0");
-  const isToday = currentDate.getDate().toString() === days;
+  const isCurrentMonth = month === pad(currentDate.getMonth() + 1);
+  // month === (currentDate.getMonth() + 1).toString().padStart(2, "0");
+  const isToday =
+    today.getDate() === Number(days) && today.getMonth() + 1 === Number(month);
 
   const isEventDate = eventsDates.find((eventDate) => {
     const [eventDay, eventMonth] = eventDate.split(".");
@@ -28,10 +31,10 @@ export const CalendarTableCell = ({
     <td
       key={dayIndex}
       aria-label={day}
-      className={clsx(
+      className={cn(
         `flex h-10 w-10 items-center justify-center text-18 tablet:my-3 tablet:w-11 tablet:text-32`,
         isCurrentMonth ? "text-white" : "text-greenC",
-        isToday && "rounded border-2 border-yellowVintage",
+        isToday && "rounded border-2 bg-white text-greenMain",
         isEventDate && "rounded border-2 border-backgroundMain",
       )}
     >

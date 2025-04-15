@@ -2,9 +2,8 @@
 
 import { CalendarHeader } from "@/app/zwiazek/kalendarz/_components/CalendarHeader";
 import { CalendarTable } from "@/app/zwiazek/kalendarz/_components/CalendarTable";
-import { addMonth } from "@/app/zwiazek/kalendarz/_components/Dates/Dates";
-import { getEventForToday } from "@/app/zwiazek/kalendarz/_utils/getEventsForToday";
-import { Posts } from "@/app/zwiazek/kalendarz/_components/Events/Posts";
+import { EventsList } from "@/app/zwiazek/kalendarz/_components/Events/EventsList";
+import { addMonth } from "@/app/zwiazek/kalendarz/_utils/Dates/Dates";
 import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
 import { useState } from "react";
 
@@ -24,8 +23,6 @@ export const CalendarMain = () => {
     setPostsToShow(DEFAULT_NUMBER_OF_POSTS);
   };
 
-  const eventForToday = getEventForToday();
-
   return (
     <>
       <section className="flex w-full flex-col items-center gap-10 self-center bg-greenMain py-9 tablet:justify-center tablet:gap-52 tablet:px-10 desktop:flex-row">
@@ -34,10 +31,7 @@ export const CalendarMain = () => {
           prevMonth={handlePrevMonth}
           nextMonth={handleNextMonth}
         />
-        <CalendarCard
-          date={eventForToday?.date.split(".")[2]}
-          description={eventForToday?.title}
-        />
+        <CalendarCard />
       </section>
       <section className="flex max-w-[1440px] flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-24">
         <CalendarHeader
@@ -47,7 +41,7 @@ export const CalendarMain = () => {
           handleNextMonth={handleNextMonth}
           handlePrevMonth={handlePrevMonth}
         />
-        <Posts
+        <EventsList
           currentDate={currentDate}
           handleShowMore={() => setPostsToShow(postsToShow + 3)}
           postsToShow={postsToShow}
