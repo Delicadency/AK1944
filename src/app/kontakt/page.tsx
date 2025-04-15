@@ -10,7 +10,7 @@ import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundI
 export default function ContactPage() {
   return (
     <div className="relative isolate min-h-screen overflow-hidden">
-      {/* Desktop */}
+
       <div className="absolute inset-y-0 right-0 hidden h-full w-[40vw] desktop:block">
         <BackgroundImage
           src="/images/contact-bg.png"
@@ -18,11 +18,10 @@ export default function ContactPage() {
           sizes="(max-width: 1280px) 40vw, 595px"
           quality={85}
           fill
-          className=""
         />
       </div>
 
-      {/* Tablet */}
+
       <div className="pointer-events-none absolute inset-0 hidden justify-end tablet:flex desktop:hidden">
         <div className="relative h-full w-[80vw] overflow-hidden">
           <BackgroundImage
@@ -105,7 +104,6 @@ export default function ContactPage() {
           <TaxCard />
         </div>
 
-        {/* Sekcja Partner */}
         <section className="mb-[2.5rem] hidden text-left tablet:block desktop:hidden">
           <Heading
             variant="h3"

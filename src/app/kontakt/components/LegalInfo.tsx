@@ -17,20 +17,20 @@ export const LegalInfo = () => (
     <InfoList className="font-source-sans text-lg text-greenMain">
       <InfoItem
         icon={<IconBriefcase className="h-8 w-8" />}
-        label="NIP:"
-        content={AK_DATA.NIP}
-      />
+        label="NIP:">
+        {AK_DATA.NIP}
+      </InfoItem>
 
       <InfoItem
         icon={<IconBook className="h-8 w-8" />}
-        label="KRS:"
-        content={AK_DATA.taxDonation.krs}
-      />
+        label="KRS:">
+        {AK_DATA.taxDonation.krs}
+      </InfoItem>
 
       <InfoItem
         icon={<IconDollar className="h-8 w-8" />}
-        label="Nr konta bankowego:"
-        content={
+        label="Nr konta bankowego:">
+        {
           <>
             <p className="font-medium tablet:hidden desktop:block">
               {AK_DATA.bank.name}
@@ -38,7 +38,7 @@ export const LegalInfo = () => (
             <p className="font-medium">{AK_DATA.bank.accountNumber}</p>
           </>
         }
-      />
+      </InfoItem>
     </InfoList>
   </section>
 );

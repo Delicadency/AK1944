@@ -1,4 +1,5 @@
 import { PropsWithChildren } from "react";
+import { cn } from "@/utils/index"
 
 interface InfoListProps {
   className?: string;
@@ -8,5 +9,5 @@ export const InfoList = ({
   children,
   className,
 }: PropsWithChildren<InfoListProps>) => (
-  <div className={`space-y-10 ${className ?? ""}`}>{children}</div>
+  <ul className={cn("space-y-10", className)}>{children}</ul>
 );

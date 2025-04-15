@@ -17,24 +17,24 @@ export const ContactInfo = () => (
         <InfoList>
             <InfoItem
                 icon={<IconMapPin className="h-8 w-8" />}
-                label="Adres siedziby:"
-                content={AK_DATA.address}
-            />
+                label="Adres siedziby:">
+                {AK_DATA.address}
+            </InfoItem>
 
             <InfoItem
                 icon={<IconMail className="h-8 w-8" />}
-                label="E-mail:"
-                content={
+                label="E-mail:">
+                {
                     <a href={`mailto:${AK_DATA.email}`} className="font-medium">
                         {AK_DATA.email}
                     </a>
                 }
-            />
+            </InfoItem>
 
             <InfoItem
                 icon={<IconPhone className="h-8 w-8" />}
-                label="Telefon:"
-                content={
+                label="Telefon:">
+                {
                     <a
                         href={`tel:${AK_DATA.phone.replace(/\s+/g, "")}`}
                         className="font-medium"
@@ -42,7 +42,7 @@ export const ContactInfo = () => (
                         {AK_DATA.phone}
                     </a>
                 }
-            />
+            </InfoItem>
         </InfoList>
     </section>
 );
