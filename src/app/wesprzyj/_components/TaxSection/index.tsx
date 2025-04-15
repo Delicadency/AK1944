@@ -1,7 +1,7 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import { DonationInstructions } from "@/components/shared/DonationInstructions";
 import { SupportSection } from "../SupportSection";
-import { TaxCard } from "./TaxCard";
+import { TaxCard } from "../../../../components/shared/TaxCard/TaxCard";
 
 export const TaxSection = () => (
   <SupportSection
