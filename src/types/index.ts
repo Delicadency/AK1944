@@ -23,7 +23,6 @@ export type IconName =
   | "gift"
   | "help"
   | "info"
-  | "pin"
   | "send"
   | "target";
 
