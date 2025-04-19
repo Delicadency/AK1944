@@ -25,12 +25,103 @@ type TrailData = {
 
 export const trails: Record<TrailSlug, TrailData> = {
   first: {
-    displayName:
-      "Szlak Partyzancki I Zgrupowania Armii Krajowej Obwodu Dębica",
-    enabled: false,
-    paragraphs: [],
-    trailPoints: [],
-    map: { iframeUrl: "", externalUrl: "" },
+    displayName: "Szlak Partyzancki I Zgrupowania Armii Krajowej Obwodu Dębica",
+    enabled: true,
+    paragraphs: [
+      {
+        title: "Trasa wiedzie malowniczym wzgórzami na terenie gmin:",
+        content:
+          "Sędziszów Małopolski, Ropczyce, Wielopole Skrzyńskie i Iwierzyce. Szlak rozpoczyna się w Górze Ropczyckiej w punkcie, gdzie 28 lipca 1944 r. dowództwo AK zarządziło mobilizację. Trasa zatacza pętlę nad Gnojnicą i w Zagorzycach, następnie przez las Budzisz w Nawsiu biegnie ku Bystrzycy. Stamtąd wzgórzami pomiędzy Olimpowem, Zagorzycami Górnymi, Wiercanami, Zagorzycami Dolnymi a Iwierzycami biegnie w kierunku Sielca Podlasku, Sędziszowa Młp., aby dotrzeć na Poręby I w Krzywej do miejsca, gdzie kiedyś była leśniczówka. Trasa przechodzi przez lasy Nadleśnictw Strzyżów i Głogów. Szlak wyznacza 15 punktów oznakowanych tablicami. 47-kilometrową Trasę oznakowano kolorem żółtym, kotwicą Polski Walczącej oraz tabliczkami kierunkowymi.",
+      },
+      {
+        title:
+          "O walorach Szlaku decyduje nie tylko wartość historyczna miejsc...",
+        content:
+          "...ale również urzekające krajobrazy ziemi ropczycko-sędziszowskiej. Nie brakuje tu otwartych przestrzeni i polnych dróg, a prawdziwe bogactwo przyrodnicze szlaku stanowią lasy wysrebrzone karpacką buczyną, urocze polany i strumienie wijące się serpentynami wśród przepastnych jarów. Wszystko to sprawia, że Szlak Partyzancki I Zgrupowania Armii Krajowej Obwodu Dębica jest opcją nie tylko dla miłośników historii, ale amatorów mocniejszych wyzwań terenowych.",
+      },
+    ],
+    trailPoints: [
+      {
+        point: "Punkt Mobilizacja",
+        description:
+          "Rozkaz rozpoczęcia akcji „Burza”, dotarł do dowódcy Podobwodu AK Sędziszów-Ropczyce porucznika Mieczysława Stachowskiego „Sępa”, „Macieja” rano, 28 lipca 1944 r. i natychmiast został wprowadzony w życie. Koncentracja części oddziałów nastąpiła w rejonie Góry Ropczyckiej. Punktem zbornym były zabudowania Andrzeja Roga. Po częściowym uzbrojeniu oddziału, przeglądzie i sprawdzeniu gotowości bojowej błogosławieństwa udzielił ksiądz kapelan Wojciech Święs. Następnie pluton pod dowództwem Adama Misia „Zakopiańskiego” wyruszył w kierunku Gnojnicy Woli.",
+      },
+      {
+        point: "Punkt Koncentracja",
+        description:
+          "28 lipca 1944 r. dom rodzinny porucznika Ludwika Kubika „Lucjana” zamieniono na kwaterę dowództwa I Zgrupowania Obwodu AK Dębica. Na budynku zawieszono biało-czerwone flagi. Koncentrujący się akowcy rozbili obóz, zaciągnęli straże, ubezpieczenia i przystąpili do realizacji działań bojowych. Ustalono najdogodniejsze miejsca do ataku na szosę Ropczyce-Sędziszów. Małymi patrolami przeprowadzano dalekie rozpoznanie. Wykonano kilka wypadów, by zdobyć broń. Nocą z 31 lipca na 1 sierpnia 1944 r. zrealizowano akcję „Lena”, wysadzając w powietrze oba tory kolejowe na odcinku Ropczyce-Brzezówka.",
+      },
+      {
+        point: "Punkt Las Trzemeczna",
+        description:
+          "Latem 1944 r. las w rejonie Gnojnicy Lipnicy stał się bazą żołnierzy AK I Zgrupowania Obwodu Dębica, realizujących akcję „Burza”. Po walkach stoczonych w dniu 4 sierpnia i kontrataku Niemców, akowcy musieli się wycofać. Stąd przeprowadzali wypady na samochody nieprzyjaciela, ułatwiali też działania nacierającym oddziałom Armii Czerwonej. Podczas jednej z akcji zginęli Władysław Jarząb i Czesław Mikowski. Duże zaangażowanie wykazywali zaprzysiężeni w szeregi AK leśnicy. Opiekowali się organizacyjną radiostacją i magazynowali rzeczy ewakuowane z Zakładów Przemysłowych w Sędziszowie Młp. i majątków ziemskich.",
+      },
+      {
+        point: "Punkt Dom Kowalskich",
+        description:
+          "4 sierpnia 1944 r. żołnierze AK zaatakowali pozycje niemieckie w rejonie lasu Lipnica. Zaskoczony nieprzyjaciel wycofał się w popłochu. Nocą tego samego dnia w rejon Gnojnicy Woli kontratakując, dotarły pancerne oddziały niemieckie. Okupant zastosował terror, paląc domy i mordując cywilów. Spalono dom Kubików, zginął też ojciec Ludwika Kubika „Lucjana”. W konsekwencji sztab I Zgrupowania Obwodu AK Dębica zmienił miejsce kwaterowania. Przez kolejne tygodnie działań akcji „Burza” dowództwo kwaterowało w domu państwa Kowalskich w pobliżu przysiółka Poręby Chechelskie.",
+      },
+      {
+        point: "Punkt Sztandar AK",
+        description:
+          "Sztandar bojowy Inspektoratu AK Rzeszów brał udział w akcji „Burza”. Szczęśliwie ocalał, wyniesiony z płonących zabudowań domu rodzinnego Ludwika Kubika „Lucjana”. Po ustaniu walk akcji „Burza” „Lucjan” przekazał sztandar księdzu Eugeniuszowi Piechowi „Szymonowi”, z poleceniem przechowania go w kościele w Zagorzycach Górnych. Ukrycia sztandaru AK w wieży kościelnej na prośbę „Szymona”, podjął się Ludwik Maciołek „Raban”. Od tej chwili sztandar został związany z osobą księdza Eugeniusza Piecha i miejscowym kościołem. Sztandar szczęśliwie ocalał, pomimo intensywnych poszukiwań przez Urząd Bezpieczeństwa Publicznego.",
+      },
+      {
+        point: "Punkt Chmielówka",
+        description:
+          "Dom rodzinny Karola Chmiela „Groma”, „Katonowicza”. Tu mieszkał z rodziną podczas okupacji niemieckiej. Zaangażowany w konspirację na początku 1940 r. stał się organizatorem i dowódcą plutonu, a następnie kompanii ZWZ-AK oraz BCh. Dysponując osobnym pokojem, organizował narady i odprawy organizacyjne, w których między innymi uczestniczyli: Ludwik Kubik „Lucjan”, Józef Łotocki „Łata”, Ludwik Marszałek „Zbroja”, Kazimierz Charchut „Grzmot” czy Franciszek Mazek „Krogulec”. W tym domu powstawały raporty polityczne dotyczące okolicznej komuny. Stąd w lipcu 1944 r. „Grom” wyruszył do działań akcji „Burza”.",
+      },
+      {
+        point: "Punkt Krzyż pod bukiem",
+        description:
+          "30 lipca 1944 r. w pierwszą niedzielę po rozpoczęciu akcji „Burza” ksiądz Eugeniusz Piech „Szymon”, na polanie w lesie Budzisz odprawił mszę świętą dla żołnierzy AK I Zgrupowania Obwodu AK Dębica. Na honorowym miejscu przy ołtarzu ustawiono sztandar Inspektoratu AK Rzeszów. W trakcie nabożeństwa Niemcy z czołgów ostrzelali polanę. Dowódca zgrupowania wydał rozkaz rozproszenia. Po kilku dniach I Zgrupowanie uległo podziałowi. Pluton Mieczysława Stachowskiego „Sępa” znalazł się za sowiecką linią frontu. Kwatermistrzostwo było na zapleczu Niemców. Po przejściu frontu w miejscu mszy świętej na pamiątkę tych wydarzeń żołnierz AK, leśniczy Jan Siewierski „Buk”, ustawił krzyż.",
+      },
+      {
+        point: "Punkt Potyczka z czołgami",
+        description:
+          "W pierwszych dniach sierpnia 1944 r. pluton I Zgrupowania Obwodu AK Dębica dowodzony przez Mariana Stanka „Rydla” starł się z niemieckimi czołgami. Informację o jadących szosą od Strzyżowa wozach pancernych przekazała miejscowa ludność. Żołnierze AK przy pomocy leśników zatarasowali przejazd, ścinając na drogę drzewa. Gdy pojazdy zbliżyły się do barykady, akowcy obrzucili je granatami i butelkami z benzyną, nie wyrządzając większych szkód. Niemcy odpowiedzieli ogniem z działek i karabinów maszynowych. Wywiązała się ponad godzinna walka. W jej trakcie zaginął pochodzący z Borku Wielkiego Józef Feret „Piorun”. Po tej akcji pluton wycofał się do lasu Budzisz.",
+      },
+      {
+        point: "Punkt Czerwonek",
+        description:
+          "2 sierpnia 1944 r. powiększony pluton I Zgrupowania Obwodu AK Dębica dowodzony przez podporucznika Mieczysława Stachowskiego „Sępa”, który wówczas  przeprowadzał dalekie wypady w kierunku Zagorzyc Dolnych i Góry Ropczyckiej, starł się z dużym oddziałem niemieckim. W trakcie potyczki w niewyjaśnionych okolicznościach zginęli dwaj żołnierze AK Czesław Motyka „Burza” i Józef Zawisza „Szczęk”, którzy jako szperacze szli w przedniej straży. Nieco później ta sama grupa uderzyła na inny oddział niemiecki, kierujący się w stronę linii frontu. Atak z zaskoczenia okazał się skuteczny i zmusił nieprzyjaciela do odwrotu.",
+      },
+      {
+        point: "Punkt OP „Dzwon”",
+        description:
+          "6 sierpnia 1944 r. w rejonie Wiercan dowódca wycofującego się zza Sanu Oddziału Partyzanckiego „Dzwon” Zygmunt Pawlus „Turek” nawiązał kontakt z oficerami sztabu Armii Czerwonej. Przekazał im wówczas szczegółowe plany umocnień niemieckich w rejonie Góry Ropczyckiej, Checheł, Ropczyc oraz SS-Truppen Übungs Platz Heidelager w Pustkowie. 9 sierpnia OP „Dzwon” przekraczając linię frontu otrzymał zaświadczenie potwierdzające, że oficerowie AK Zygmunt Pawlus, Józef Szmid i Zygmunt Basara wypełniają zadanie specjalne na tyłach nieprzyjaciela. ...Po zakończeniu misji wyżej wymienieni udadzą się do miejsca postoju swojego dowództwa...",
+      },
+      {
+        point: "Punkt Las Cichany",
+        description:
+          "3 sierpnia 1944 r. Niemcy ostrzelali pięcioosobowy patrol żołnierzy I Zgrupowania Obwodu AK Dębica wracający z rozpoznania w Zagorzycach Dolnych. Wywiązała się walka. Akowcy odpowiedzieli ogniem z karabinów, a następnie obrzucili stanowisko CKM granatami, doprowadzając do jego likwidacji. W ten sam sposób unieszkodliwili drugi CKM. Po tym patrol bez przeszkód dołączył do reszty oddziału Mieczysława Stachowskiego „Sępa”. Tego samego dnia Ak-owcy przechodzący przez las Cichany, w najwyższym jego punkcie obserwowali, jak Niemcy wysadzali stację kolejową w Sędziszowie Młp.",
+      },
+      {
+        point: "Punkt Sośnina",
+        description:
+          "28 lipca 1944 r. przed wyruszeniem do działań akcji „Burza” na polanie leśnej w „Sośninie” Helena Eugenia Kozek „Myszka” członkini Wojskowej Służby Kobiet wręczyła żołnierzom AK opaski biało-czerwone oraz środki opatrunkowe wykonane przez nią i jej koleżanki. Komendantką WSK w Podobwodzie AK Sędziszów „Sława” była Józefa Depa Fitoł „Horpyna”, a jej zastępczynią  Apolonia Pondo „Justyna”. Dziewczęta z WSK latem 1944 r. były nieocenionym wsparciem dla akowców walczących w akcji „Burza”. Dbały o prowiant i wyżywienie. Pełniły służbę kurierską i sanitarną, niosąc doraźną pomoc rannym kolegom, wielokrotnie transportowały ich do szpitali.",
+      },
+      {
+        point: "Punkt Podlasek",
+        description:
+          "4 sierpnia 1944 r. pluton Mieczysława Stachowskiego „Sępa” po przebiciu się za sowiecką linię frontu w celu uniknięcia dalszych strat, wycofał się. Akowcy skrajem lasu przemieszczali się przez Podlasek w kierunku Sędziszowa Młp. Wychodząca na otwarty teren szpica oddziału została zaatakowana ogniem niemieckich karabinów maszynowych i granatników. W tym samym czasie z tyłu omyłkowo ostrzelali ich Sowieci. Po wycofaniu się do lasu akowcy przemaszerowali do szkoły w Iwierzycach, gdzie umyli się i przespali. W konsekwencji ostrzału ranny został Ludwik Baran „Most”, którego koledzy zdołali bezpiecznie wynieść i opatrzyć.",
+      },
+      {
+        point: "Punkt Dom Władysława Prokopa",
+        description:
+          "27 lipca 1944 r. w pobliżu domu rusznikarza Władysława Prokopa „Sprężyny” doszło do starcia plutonu dywersyjnego Tadeusza Szczurowskiego „Śmiałego” z oddziałem niemieckim. Akowcy po niezrealizowanej akcji zdobycia broni na załodze tartaku w Krzywej maszerowali na koncentrację w kierunku lasu Budzisz. W zabudowaniach „Sprężyny” żołnierze AK mieli punkt zbiorczy i spoczynku. W trakcie walki poległ Mieczysław Saj „Mściwy”, a ciężko ranny od postrzału w płuca został dowódca plutonu „Śmiały”. Oddział AK uległ rozproszeniu. Niemcy po rewizji w domu „Sprężyny” wycofali się samochodami na zachód w kierunku Dębicy.",
+      },
+      {
+        point: "Punkt Leśniczówka „Kabla”",
+        description:
+          "5 sierpnia 1944 r. pluton Mieczysława Stachowskiego „Sępa” dotarł do leśniczówki Edwarda Dubiela „Kabla” w Krzywej. „Sęp” nawiązał łączność z kwaterującym tam oddziałem artylerii sowieckiej, przekazując im plany umocnień SS-Truppen Übungs Platz Heidelager w Pustkowie i poligonu artyleryjskiego w Bliźnie. Mając łączność telefoniczną z kwatermistrzostwem przebywającym w Gnojnicy Lipnicy, przy użyciu nieczynnej linii wysokiego napięcia, dostarczał aktualne rozpoznanie stanowisk niemieckich w rejonie Sędziszowa Młp. 11 sierpnia, po nakazaniu przez Sowietów wcielenia do armii Berlinga oraz obawiając się aresztowań przez NKWD, „Sęp” zamelinował broń i rozwiązał oddział.",
+      },
+    ],
+    map: {
+      iframeUrl: "https://traseo.pl/mapa/331242/m/0/hd/1/",
+      externalUrl:
+        "https://traseo.pl/trasa/szlak-partyzancki-i-zgrupowania-ak-obwodu-debica",
+    },
   },
   second: {
     displayName:
