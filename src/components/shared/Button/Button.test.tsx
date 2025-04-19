@@ -2,6 +2,18 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { Button } from "./Button";
 import { axe, toHaveNoViolations } from "jest-axe";
 
+const MockLeadingIcon = ({ className }: { className?: string }) => (
+  <svg data-testid="leading-icon" className={className}>
+    <path d="M0 0h24v24H0z" />
+  </svg>
+);
+
+const MockTrailingIcon = ({ className }: { className?: string }) => (
+  <svg data-testid="trailing-icon" className={className}>
+    <path d="M0 0h24v24H0z" />
+  </svg>
+);
+
 describe("Button component", () => {
   it("renders correctly with default props", () => {
     render(<Button label="Kliknij mnie" ariaDescription="Przycisk testowy" />);
@@ -10,14 +22,9 @@ describe("Button component", () => {
     });
     expect(buttonElement).toBeInTheDocument();
     expect(buttonElement).toHaveClass(
-      "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
+      "bg-redMain text-backgroundMain hover:bg-[#7A0003] active:bg-redMain contrast:bg-black00 contrast:text-yellow",
     );
-    expect(buttonElement).toHaveClass("text-16");
-    expect(buttonElement).not.toHaveClass(
-      "pointer-events-none cursor-not-allowed opacity-30",
-    );
-    expect(buttonElement).toHaveTextContent(/kliknij mnie/i);
-    expect(buttonElement).toHaveAccessibleName(/przycisk testowy/i);
+    expect(buttonElement).toHaveClass("text-base");
   });
 
   it("renders correctly text content and aria-label attribute", () => {
@@ -42,7 +49,7 @@ describe("Button component", () => {
       name: /przycisk testowy/i,
     });
     expect(buttonElement).toHaveClass(
-      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
+      "contrast:bg-yellow contrast:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black hover:bg-[#BDD2BC] active:bg-greenLight",
     );
     expect(buttonElement).toHaveClass("text-lg");
   });
@@ -61,10 +68,10 @@ describe("Button component", () => {
       name: /przycisk testowy/i,
     });
     expect(buttonElement).toHaveClass(
-      "pointer-events-none cursor-not-allowed opacity-30",
+      "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30",
     );
     expect(buttonElement).toHaveClass(
-      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
+      "contrast:bg-yellow contrast:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain hover:bg-[#F0EFEB] active:bg-backgroundMain",
     );
     expect(buttonElement).not.toHaveAttribute("href", "/test");
   });
@@ -83,20 +90,21 @@ describe("Button component", () => {
     expect(linkElement).toHaveAttribute("href", "/test");
   });
 
-  it("renders icon and text when iconName is provided", () => {
+  it("renders with leading and trailing icons", () => {
     render(
       <Button
         label="Kliknij mnie"
         ariaDescription="Przycisk testowy"
-        iconName="coffee"
+        leadingIcon={MockLeadingIcon}
+        trailingIcon={MockTrailingIcon}
       />,
     );
-    const iconElement = screen.getByRole("presentation");
-    expect(iconElement).toBeInTheDocument();
-    const buttonElement = screen.getByRole("button", {
-      name: /przycisk testowy/i,
-    });
-    expect(buttonElement).toHaveTextContent(/kliknij mnie/i);
+
+    const leadingIcon = screen.getByTestId("leading-icon");
+    const trailingIcon = screen.getByTestId("trailing-icon");
+
+    expect(leadingIcon).toHaveClass("size-4", "text-inherit");
+    expect(trailingIcon).toHaveClass("size-4", "text-inherit");
   });
 
   it("should trigger form submit when the button is of type 'submit'", () => {

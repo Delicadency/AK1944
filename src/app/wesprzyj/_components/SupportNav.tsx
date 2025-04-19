@@ -10,8 +10,8 @@ export const SupportNav = () => (
       Formy wsparcia:
     </h2>
     <ul className="mx-auto grid items-end justify-center gap-x-11 gap-y-6 tablet:grid-cols-2 desktop:grid-cols-4">
-      {navItems.map((item) => (
-        <SupportNavItem key={item.label} {...item} />
+      {navItems.map(({ label, icon, href }) => (
+        <SupportNavItem key={label} href={href} label={label} icon={icon} />
       ))}
     </ul>
   </nav>
