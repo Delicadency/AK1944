@@ -12,6 +12,7 @@ export interface ButtonProps
   href?: string;
   ariaDescription: string;
   disabled?: boolean;
+  align?: "start" | "center";
 }
 
 export const Button = ({
@@ -19,32 +20,51 @@ export const Button = ({
   size = "medium",
   iconName,
   disabled = false,
+  align = "center",
   label,
   href,
   ariaDescription,
   className,
   ...props
 }: ButtonProps) => {
-  const variants = {
+  const variantStyles = {
     primary: `
-    contrast:bg-black00 contrast:text-yellowContrast bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] desktop:hover:text-white active:bg-redMain
-  `,
+      contrast:bg-black00 contrast:text-yellowContrast
+      bg-redMain text-backgroundMain
+      desktop:hover:bg-[#7A0003] desktop:hover:text-white
+      active:bg-redMain
+    `,
     inversion: `
-    contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] desktop:hover:text-[#A60000] active:bg-backgroundMain
-  `,
+      contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C]
+      contrast:text-black00
+      bg-backgroundMain text-redMain
+      desktop:hover:bg-[#F0EFEB] desktop:hover:text-[#A60000]
+      active:bg-backgroundMain
+    `,
     secondary: `
-    contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] desktop:hover:text-[#333] active:bg-greenLight
-  `,
+      contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C]
+      contrast:text-black00
+      bg-greenLight text-black
+      desktop:hover:bg-[#BDD2BC] desktop:hover:text-[#333]
+      active:bg-greenLight
+    `,
   };
-  const sizes = {
+
+  const sizeStyles = {
     medium: "text-16",
     large: "text-lg",
   };
 
+  const alignStyles = {
+    start: "justify-start text-start",
+    center: "justify-center text-center",
+  };
+
   const commonClassNames = clsx(
-    "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all  duration-200 ease-in-out active:scale-95",
-    variants[variant],
-    sizes[size],
+    "flex h-fit w-fit items-center gap-[16px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all duration-200 ease-in-out active:scale-95",
+    variantStyles[variant],
+    sizeStyles[size],
+    alignStyles[align],
     className,
   );
 

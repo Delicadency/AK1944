@@ -44,6 +44,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
             ariaDescription={`Zobacz opis punktu ${point.point}`}
             onClick={() => openModal(index)}
             className="h-[85px] w-full font-bold text-redMain tablet:w-[270px]"
+            align="start"
           />
         ))}
       </div>
