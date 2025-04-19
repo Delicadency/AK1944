@@ -24,7 +24,7 @@ export const TrailSwitcher = ({ active, onChange }: TrailSwitcherProps) => {
             size={isActive ? "large" : "medium"}
             onClick={() => onChange(typedSlug)}
             disabled={!trail.enabled}
-            className="w-[350px]"
+            className="w-[360px]"
           />
         );
       })}

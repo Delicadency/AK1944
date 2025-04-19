@@ -50,7 +50,9 @@ export const Button = ({
 
   const renderContent = () => (
     <>
-      {iconName && <ButtonIcon name={iconName} className="text-inherit" />}
+      {iconName && (
+        <ButtonIcon name={iconName} className="shrink-0 text-inherit" />
+      )}
       {label}
     </>
   );
