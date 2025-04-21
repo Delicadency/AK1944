@@ -12,7 +12,7 @@ import { TrailSwitcher } from "./_components/TrailSwitcher";
 import { TrailPoints } from "./_components/TrailPoints";
 
 export default function PartisanTrailPage() {
-  const [activeTrail, setActiveTrail] = useState<TrailSlug>("second");
+  const [activeTrail, setActiveTrail] = useState<TrailSlug>("first");
   const trailData = trails[activeTrail];
 
   return (
