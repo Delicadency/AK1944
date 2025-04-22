@@ -6,7 +6,7 @@ import { Breadcrumbs } from "../shared/Breadcrumbs/Breadcrumbs";
 
 export const HistoryBanner = () => {
   const { title, description1, description2, description3, description4 } =
-    historyData.history ?? {};
+    historyData.history;
   return (
     <BackgroundImage
       alt="Historyczne zdjęcie 5. Pułku Strzelców Konnych"
@@ -17,7 +17,6 @@ export const HistoryBanner = () => {
     >
       <Container className="pb-36 pt-5 desktop:h-[912px]" as="section">
         <Breadcrumbs />
-        {/* ToDo: https://app.clickup.com/t/869850703 */}
         <Heading
           variant="h3"
           contrast="yellow"

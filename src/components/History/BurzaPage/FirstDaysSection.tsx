@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const FirstDaysSection = () => {
   const { firstDaysTitle, firstDays1, firstDays2, firstDays3, firstDays4 } =
-    historyData.burza ?? {};
+    historyData.burza;
 
   return (
     <section className="flex flex-col gap-6">

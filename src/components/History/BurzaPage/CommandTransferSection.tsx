@@ -7,7 +7,7 @@ export const CommandTransferSection = () => {
     commandTransfer1,
     commandTransfer2,
     commandTransfer3,
-  } = historyData.burza ?? {};
+  } = historyData.burza;
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
       <Heading variant="h4" color="green" contrast="yellow">

@@ -13,7 +13,7 @@ export const EpilogSection = () => {
     epilog6,
     epilog7,
     epilog8,
-  } = historyData.burza ?? {};
+  } = historyData.burza;
 
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">

@@ -13,7 +13,7 @@ import { FootnotesSection } from "@/components/History/BurzaPage/FootnotesSectio
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function OperationBurzaPage() {
-  const { title } = historyData.burza ?? {};
+  const { title } = historyData.burza;
 
   return (
     <div className="contrast:bg-black">

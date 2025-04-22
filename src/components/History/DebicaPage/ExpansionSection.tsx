@@ -12,7 +12,7 @@ export const ExpansionSection = () => {
     expansion5,
     expansion6,
     expansion7,
-  } = historyData.debica ?? {};
+  } = historyData.debica;
 
   return (
     <section className="flex flex-col gap-6">

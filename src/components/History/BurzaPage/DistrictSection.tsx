@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const DistrictSection = () => {
   const { districtTitle, district1, district2, district3, district4 } =
-    historyData.burza ?? {};
+    historyData.burza;
   return (
     <section className="flex flex-col gap-6 desktop:flex-row">
       <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">

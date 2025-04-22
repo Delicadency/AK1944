@@ -10,7 +10,7 @@ export const HeroicDefenceSection = () => {
     heroicDefence3,
     heroicDefence4,
     heroicDefence5,
-  } = historyData.burza ?? {};
+  } = historyData.burza;
 
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">

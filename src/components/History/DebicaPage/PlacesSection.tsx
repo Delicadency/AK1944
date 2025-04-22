@@ -8,19 +8,24 @@ import { cn } from "@/utils";
 import Image from "next/image";
 
 export const PlacesSection = () => {
-  const { placesTitle, places, places1 } = historyData.debica ?? {};
+  const { placesTitle, places, places1 } = historyData.debica;
 
   const isMobile = useMediaQuery("(max-width: 767px)");
 
-  const [openDescription, setOpenDescription] = useState<{
-    [key: string]: boolean;
-  }>({});
+  const [openDescription, setOpenDescription] = useState<Set<string>>(
+    new Set(),
+  );
 
   const toggleDescription = (id: string) => {
-    setOpenDescription((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
+    setOpenDescription((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
+      return newSet;
+    });
   };
 
   return (
@@ -38,7 +43,9 @@ export const PlacesSection = () => {
                   className="flex items-center gap-3 desktop:cursor-default desktop:items-baseline"
                   onClick={() => isMobile && toggleDescription(place.id)}
                   aria-label={`Rozwiń opis dla: ${place.name}`}
-                  aria-expanded={openDescription[place.id] ? "true" : "false"}
+                  aria-expanded={
+                    openDescription.has(place.id) ? "true" : "false"
+                  }
                   aria-controls={`place-description-${place.id}`}
                 >
                   <div className="h-4 w-4 flex-shrink-0 rounded-full bg-redMain" />
@@ -49,7 +56,7 @@ export const PlacesSection = () => {
                   <IconChevronDown
                     className={cn(
                       "size-7 transition-transform tablet:hidden desktop:hidden",
-                      openDescription[place.id] ? "rotate-180" : "rotate-0",
+                      openDescription.has(place.id) ? "rotate-180" : "rotate-0",
                     )}
                     aria-hidden="true"
                   />
@@ -57,7 +64,9 @@ export const PlacesSection = () => {
                 <p
                   className={cn(
                     "mt-2 text-lg contrast:text-yellowContrast",
-                    isMobile && !openDescription[place.id] ? "hidden" : "block",
+                    isMobile && !openDescription.has(place.id)
+                      ? "hidden"
+                      : "block",
                   )}
                 >
                   {isMobile && place.description}

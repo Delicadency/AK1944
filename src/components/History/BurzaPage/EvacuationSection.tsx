@@ -10,7 +10,7 @@ export const EvacuationSection = () => {
     evacuation4,
     evacuation5,
     evacuation6,
-  } = historyData.burza ?? {};
+  } = historyData.burza;
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
       <Heading variant="h4" color="green" contrast="yellow">

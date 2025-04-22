@@ -3,8 +3,7 @@ import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
 export const PartisanSection = () => {
-  const { partisanTitle, partisan1, partisan2, partisan3 } =
-    historyData.burza ?? {};
+  const { partisanTitle, partisan1, partisan2, partisan3 } = historyData.burza;
   return (
     <section className="flex flex-col gap-6">
       <Heading variant="h4" color="green" contrast="yellow">

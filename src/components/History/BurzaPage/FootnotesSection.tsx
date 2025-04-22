@@ -2,7 +2,7 @@ import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
 export const FootnotesSection = () => {
-  const { footnotesTitle, footnotes } = historyData.burza ?? {};
+  const { footnotesTitle, footnotes } = historyData.burza;
 
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">

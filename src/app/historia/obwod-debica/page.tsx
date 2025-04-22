@@ -9,7 +9,7 @@ import { ExpansionSection } from "@/components/History/DebicaPage/ExpansionSecti
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function DebicaDistrictPage() {
-  const { title } = historyData.debica ?? {};
+  const { title } = historyData.debica;
 
   return (
     <div className="contrast:bg-black">

@@ -9,7 +9,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { Routes } from "@/routes";
 
 export const HistoryBiogramComponent = () => {
-  const { title, content } = historyData.history.biograms ?? {};
+  const { title, content } = historyData.history.biograms;
   const isSmallScreen = useMediaQuery("(max-width: 1279px)");
   // ToDo: https://app.clickup.com/t/8698509d5
   return (
