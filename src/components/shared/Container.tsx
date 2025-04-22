@@ -1,13 +1,7 @@
-import { ElementType, ReactNode } from "react";
 import { cn } from "@/utils";
+import { ContainerProps } from "@/types";
 
-interface Props {
-  children: ReactNode;
-  className?: string;
-  as?: ElementType;
-}
-
-const Container: React.FC<Props> = ({
+const Container: React.FC<ContainerProps> = ({
   children,
   className = "",
   as: Container = "div",
