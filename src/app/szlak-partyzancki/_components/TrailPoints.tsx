@@ -33,7 +33,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
         Punkty Szlaku Partyzanckiego:
       </Heading>
 
-      <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(270px,1fr))]">
+      <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">
         {points.map((point, index) => (
           <Button
             key={index}
@@ -43,7 +43,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
             size="large"
             ariaDescription={`Zobacz opis punktu ${point.point}`}
             onClick={() => openModal(index)}
-            className="h-[85px] w-full font-bold text-redMain tablet:w-[270px]"
+            className="min-h-[108px] h-auto w-full font-bold text-redMain"
             align="start"
           />
         ))}
@@ -69,7 +69,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
               <Button
                 label="Następny punkt"
                 ariaDescription="Zobacz następny punkt szlaku"
-                variant="primary"
+                variant="primaryBlue"
                 onClick={goToNext}
                 disabled={activeIndex === points.length - 1}
               />
