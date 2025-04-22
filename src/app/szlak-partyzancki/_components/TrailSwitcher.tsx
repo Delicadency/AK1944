@@ -10,7 +10,7 @@ type TrailSwitcherProps = {
 
 export const TrailSwitcher = ({ active, onChange }: TrailSwitcherProps) => {
   return (
-    <div className="flex flex-wrap items-center justify-evenly gap-4 pb-16 pt-7">
+    <div className="flex flex-wrap items-center justify-center gap-4 justify-self-center pb-16 pt-7 tablet:w-[400px] desktop:w-full desktop:justify-evenly">
       {Object.entries(trails).map(([slug, trail]) => {
         const typedSlug = slug as TrailSlug;
         const isActive = typedSlug === active;
@@ -24,7 +24,7 @@ export const TrailSwitcher = ({ active, onChange }: TrailSwitcherProps) => {
             size={isActive ? "large" : "medium"}
             onClick={() => onChange(typedSlug)}
             disabled={!trail.enabled}
-            className="w-[360px]"
+            className="h-fit max-w-[360px]"
           />
         );
       })}
