@@ -29,7 +29,7 @@ export const Button = ({
 }: ButtonProps) => {
   const variantStyles = {
     primary: `
-      contrast:bg-black00 contrast:text-yellowContrast
+      contrast:bg-black00 contrast:text-yellowContrast contrast:hover:bg-[#1A1A1A]
       bg-redMain text-backgroundMain
       desktop:hover:bg-[#7A0003] desktop:hover:text-white
       active:bg-redMain
