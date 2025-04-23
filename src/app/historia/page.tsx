@@ -1,6 +1,6 @@
 import { HistoryBanner } from "@/components/History/History";
 import { HistoryNav } from "@/components/History/HistoryNav";
-import { HistoryList } from "@/components/History/HistoryList";
+import { HistoryChapters } from "@/components/History/HistoryChapters";
 import { LiteratureComponent } from "@/components/History/Literature";
 import { HistoryBiogramComponent } from "@/components/History/HistoryBiogram";
 import { SeeAlsoSection } from "@/components/History/SeeAlsoSection";
@@ -10,7 +10,7 @@ export default function HistoryPage() {
     <div className="flex flex-col gap-10">
       <HistoryBanner />
       <HistoryNav />
-      <HistoryList />
+      <HistoryChapters />
       <SeeAlsoSection>
         <HistoryBiogramComponent />
         <LiteratureComponent />
