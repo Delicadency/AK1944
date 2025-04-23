@@ -3,7 +3,6 @@ import { Button } from "../shared/Button/Button";
 import Image from "next/image";
 
 interface Props {
-  id: string;
   title: string;
   description: string;
   route: string;
