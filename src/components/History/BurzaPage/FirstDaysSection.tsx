@@ -1,9 +1,8 @@
-import { historyData } from "@/data/historyData";
+import { firstDays } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { firstDaysTitle, firstDays1, firstDays2, firstDays3, firstDays4 } =
-  historyData.burza;
+const { firstDaysTitle, firstDays: content } = firstDays;
 
 export const FirstDaysSection = () => (
   <section className="flex flex-col gap-6">
@@ -11,14 +10,16 @@ export const FirstDaysSection = () => (
       <Heading variant="h4" color="green" contrast="yellow">
         {firstDaysTitle}
       </Heading>
-      <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
+      <div className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast desktop:flex-row">
         <div className="flex flex-col gap-6 desktop:w-[50%]">
-          <p>{firstDays1}</p>
-          <p>{firstDays2}</p>
+          {content[0].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
         <div className="flex flex-col gap-6 desktop:w-[50%]">
-          <p>{firstDays3}</p>
-          <p>{firstDays4}</p>
+          {content[1].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </div>
     </div>
@@ -28,7 +29,7 @@ export const FirstDaysSection = () => (
         alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Kondukt pogrzebowy z trumną poległego żołnierza AK w drodze z Gołęczyny na Kałużówkę, 21 sierpnia 1944 r."
         width={2000}
         height={1300}
-        className="max-w-[600px]"
+        className="w-full max-w-[600px]"
       />
       <Image
         src="/images/history/burza/kaluzowka.webp"

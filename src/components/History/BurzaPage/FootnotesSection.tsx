@@ -1,7 +1,7 @@
-import { historyData } from "@/data/historyData";
+import { footnotes } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-const { footnotesTitle, footnotes } = historyData.burza;
+const { footnotesTitle, footnotes: notes } = footnotes;
 
 export const FootnotesSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
@@ -14,9 +14,9 @@ export const FootnotesSection = () => (
       {footnotesTitle}
     </Heading>
     <ul className="flex flex-col gap-4 font-courier">
-      {footnotes.map((note, index) => (
+      {notes.map((footnote, index) => (
         <li key={index}>
-          <p>{note}</p>
+          <p>{footnote}</p>
         </li>
       ))}
     </ul>

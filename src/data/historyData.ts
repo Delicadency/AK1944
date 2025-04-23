@@ -120,122 +120,6 @@ export const historyData = {
       "Sukcesy oddziałów i pododdziałów KBK, nie tylko obronne, ale i wielokrotnie zaczepne - niestety, z powodu ogólnej sytuacji wojennej niewykorzystane - to dumna karta wkładu żołnierzy 5. Pułku strzelców konnych w historię Września 1939 roku, karta pisana w rozpaczliwej obronie przez cały Naród Polski.",
     author: "Autor: Maciej Małozięć",
   },
-  burza: {
-    title: "Akcja „Burza”",
-    districtTitle: "Obwód AK Dębica w Operacji „Burza” - Struktura i Działania",
-    district1:
-      "Obwód AK Dębica, wchodzący w skład 24. Dywizji Piechoty, odtwarzał w okresie „Burzy” - 5. Pułk Strzelców Konnych Armii Krajowej. Dowództwo nad całością objął zastępca inspektora rejonowego w Rzeszowie, kpt. Adam Lazarowicz „Klamra”, natomiast komendant Obwodu Dębica, kpt. Ludwik Marszałek „Zbroja”, został na czas „Burzy” - zastępcą „Klamry”. Teren Obwodu podzielono na trzy rejony walki zwane także zgrupowaniami [1].",
-    district2:
-      "Rozkaz o rozpoczęciu „Burzy” przywiózł z Rzeszowa do Gumnisk k. Dębicy Ludwik Marszałek „Zbroja” i dostarczył go Adamowi Lazarowiczowi „Klamrze” o świcie 28 lipca 1944 roku. Dowódca pułku niezwłocznie zaalarmował całość Obwodu i zarządził koncentracje oddziałów w ramach zgrupowań w trzech rejonach. Miejsce postoju dowództwa pułku oraz dowodzenia całością sił znajdowało się w leśniczówce Berdech (na wzgórzu otaczającym wieś Braciejowa, w parafii Gumniska), gdzie zarządzono także koncentrację oddziałów II Zgrupowania [2].",
-    district3:
-      "W skład II Rejonu wchodziło pięć placówek Obwodu „Deser”: Brzeziny „Bomba”, Dębica „Działo”, Korzeniew „Kartacz”, Łączki Kucharskie „Ławka”, Ropczyce I „Rakieta”. Terytorialnie zasięg działania Zgrupowania był największy i rozciągał się od Ropczyc po Podgrodzie. Przez teren ten wiodła linia kolejowa Rzeszów - Kraków (od Ropczyc po Grabiny) oraz drogi Rzeszów - Kraków, Dębica - Wielopole.",
-    district4:
-      "Po ogłoszonym alarmie, o świcie 28 lipca, oddziały II Zgrupowania przed  godziną 10 skoncentrowały się w leśnictwie Berdech, gdzie po zameldowaniu żołnierze otrzymywali uzbrojenie. W pierwszym dniu koncentracji na Berdech dotarły kompanie z trzech placówek: „Bomba” pod dowództwem Stanisława Lachmana „Wielkiego”, „Działo” pod dowództwem Leona Kloca „Jasnego” i kompania z placówki „Ławka” dowodzona przez Franciszka Szarę „Pęka”. Ponadto na Berdechu znajdował się oddział dyspozycyjny dowodzony przez Władysława Strumskiego „Brutusa” i pluton „Gumniska” pod dowództwem Zbigniewa Lazarowicza „Bratka”.",
-    firstDaysTitle:
-      "Działania oddziałów II Zgrupowania w pierwszych dniach „Burzy”",
-    firstDays1:
-      "Początkowy okres „wzmożonej działalności dywersyjnej” we wszystkich zgrupowaniach 5. PSK AK, cechowała duża aktywność bojowo-dywersyjna poszczególnych plutonów i kompanii, charakteryzująca się przeprowadzeniem licznych akcji zaczepnych na drogach, rozbijaniem mniejszych patroli nieprzyjacielskich oraz rozbrajaniem posterunków policji i dozbrajaniem plutonów w zdobyczną broń.",
-    firstDays2:
-      "Tymczasem w pierwszych dniach sierpnia „Klamra” wraz ze swym sztabem zmienił dotychczasowe miejsce postoju przenosząc się z Berdechu w rejon Południka (do gajówki Władysława Klabachy). Decyzja ta była podyktowana faktem, iż Berdech znajdował się w bliskim sąsiedzkie drogi Niedźwiada - Mała, która stwarzała niebezpieczeństwo dekonspiracji.",
-    firstDays3:
-      "Wśród wielu akcji wykonanych przez oddziały II Rejonu należy wymienić kilka o większym znaczeniu. W nocy z 30 na 31 lipca dywersja Obwodu (pluton dywersyjny Władysława Strumskiego „Brutusa” [3] oraz pluton dywersyjny „Cebuli”) pod dowództwem Jerzego Wosia „Farysa” wysadziły tory kolejowe w miejscowości Głowaczowa, efektem czego było przerwanie łączności kolejowej na linii Dębica - Tarnów, na okres 10 godzin [4].",
-    firstDays4:
-      "Pluton Wilhelma Jakiego „Koraba” z kompani „Pęka” w dniu 30 sierpnia zorganizował zasadzkę na 3 samochody niemieckie na drodze Dębica - Wielopole w rejonie gajówki Sewerówka w rejonie Kamieńca. Zupełnie zaskoczony oddział niemiecki, pomimo prób obrony, był bezradny wobec atakujących. W wyniku akcji zginęło 32 Niemców, zdobyto broń, samochody oraz duże zapasy żywności [5].",
-    heroicDefenceTitle:
-      "Heroiczna Obrona Ludności Cywilnej w Gumniskach - Akcja 12 sierpnia 1944 r.",
-    heroicDefence1:
-      "Drużyna dyspozycyjna Władysława Strumskiego „Brutusa” skutecznie przeprowadziła (w pierwszych dniach sierpnia), dwie akcje na kolumny samochodów nieprzyjaciela w miejscowości Podgrodzie. W akcjach tych brał udział kpt. Józef Lutak „Dyzma”, dowódca dywersji w Inspektoracie AK Rzeszów. Istotnym elementem działań prowadzonych przez Armię Krajową w ramach „Burzy” była ochrona ludności przed represjami i pacyfikacjami. Na terenie II Rejonu nieprzyjaciel planował przeprowadzenie kilku tego rodzaju akcji, jednak każdorazowa próba pacyfikacji kończyła się fiaskiem. Doskonale zorganizowane patrole II Zgrupowania uniemożliwiły okupantowi przeprowadzenie pacyfikacji w miejscowościach: Mała, Niedźwiada i Gumniska.",
-    heroicDefence2:
-      "Najbardziej spektakularną akcję odbicia ludności w dniu 12 sierpnia, przeprowadziła bojówka dyspozycyjna Władysława Strumskiego „Brutusa” dowodzona przez Józefa Lutaka „Dyzmę” oraz wspomagana przez kilku żołnierzy z drużyny Jana Murgrabiego „Pieca” z kompanii Dębica „Działo”. Planowana przez Niemców pacyfikacja wsi była pokłosiem zlikwidowania sześciu hitlerowców grasujących po Gumniskach i Braciejowej dwa dni wcześniej.",
-    heroicDefence3:
-      "Rankiem 12 sierpnia do Gumnisk ściągnął batalion niemiecki. Zaczęło się spędzanie mieszkańców wsi (starców i dzieci) na drogę prowadzącą w kierunku Dębicy.",
-    heroicDefence4:
-      "Informacja o poczynaniach nieprzyjaciela dotarła do sztabu II Zgrupowania. Dowódca 5. PSK AK, Adam Lazarowicz „Klamra” posłał Józefa Lutaka „Dyzmę”, który miał ocenić zagrożenie, jednakże dowódca pułku wyraźnie apelował o nie podejmowanie pochopnych działań. Po przybyciu na miejsce „Dyzma” mając do dyspozycji drużynę dyspozycyjną i drużynę z plutonu „Gumniska” postanowił uderzyć na nieprzyjaciela, który prowadził już około trzystuosobową grupę bezbronnych mieszkańców w kierunku Dębicy.",
-    heroicDefence5:
-      "Całość (łącznie 23 + 1) „Dyzma” podzielił  na trzy grupy: grupa główna 17+1 zajęła stanowiska na wzgórzu za rzeką Ostrą, w odległości około 40 metrów od drogi; grupa Władysława Strumskiego „Brutusa” w trzyosobowym składzie rozlokowała się na górze po prawej stronie; grupa Kazimierza Strumskiego „Tyrana” - trzy osoby, rozlokowała się na lewym skrzydle. W ten sposób „Dyzma” chciał osiągnąć przewagę optyczną i wzbudzić wśród Niemców przekonanie o znacznej liczebności atakujących. Zamysł ten powiódł się i kiedy na rozkaz „Dyzmy” dywersanci otworzyli ogień do prowadzących ludność Niemców, ci w panice zaczęli kryć się w rowach. W tym czasie ludność rzuciła się do ucieczki. Kiedy jednak Niemcy spostrzegli liczebność atakujących, przystąpili do kontruderzenia. „Dyzma” dał wówczas rozkaz wycofania. Gdy oddział śmiałków wycofywał się pod górę, w kierunku lasu (miejsca zgrupowania), z lizjery lasu odezwały się karabiny oddziałów II Zgrupowania, które na wniosek „Klamry” wyruszyły wesprzeć atakujących [6].",
-    commandTransferTitle:
-      "Akcja w Gumniskach i Przeniesienie Dowództwa na Polanę Kałużówka",
-    commandTransfer1:
-      "Brawurowa akcja zakończyła się sukcesem. Na placu boju poległo około 20 Niemców, a kilkunastu zostało rannych. Podczas wycofywania poległ jeden żołnierz z oddziału dyspozycyjnego. Był nim Stanisław Mroczka „Miecz”. Niemcy zdołali zabrać około 20 cywilów (głównie starców oraz miejscowego proboszcza), którzy zostali w większości wypuszczeni w Dębicy, natomiast reszta została zagarnięta do prac przyfrontowych, skąd po kilku dniach powróciła do domów [7].",
-    commandTransfer2:
-      "Tymczasem „Klamra” jeszcze przed pacyfikacją Gumnisk (na przełomie pierwszej i drugiej dekady sierpnia), zarządził po raz drugi przeniesienie dowództwa pułku i sztabu II Zgrupowania.",
-    commandTransfer3:
-      "Nowe miejsce postoju znajdowało się w rejonie leśnej polany Kałużówka, położonej pośrodku rozległego kompleksu leśnego Braciejowa - Gumniska - Gołęczyna. Tutaj „Klamra” postanowił ściągnąć oddziały pozostające w terenie, tzn. kompanie i plutony wchodzące w skład II Zgrupowania, które walczyły dotąd w rejonach swoich placówek. Kontrowersje wśród dowództwa wzbudził projekt Romana Kani „Rygla” i Franciszka Ciszka „Cisa”, aby uczynić z Kałużówki partyzancki obóz [8]. „Klamra” przewidywał jednak, że front szybko przejdzie przez powiat dębicki, a ewentualny opór niemiecki zostanie postawiony dopiero na linii rzeki Wisłoki, a więc kilka kilometrów na zachód od samej Kałużówki [9].",
-    battlesTitle: "Walki na Kałużówce",
-    battles1:
-      "Na leśnej polanie nastąpiła reorganizacja oddziałów II Rejonu, które następnie wykonały umocnione szałasy i okopy. Na Kałużówkę przybył także pluton zwiadowczy Armii Czerwonej, z której dowództwem nawiązano współpracę. Bieg wypadków i założenia szybkiego przejścia frontu nie sprawdziły się. Już 21 sierpnia front zaczął w błyskawicznym tempie przesuwać się spod Ropczyc w kierunku Dębicy. Naprzeciw wojskom radzieckim wyruszył pluton Józefa Naroga „Strzały” (wchodzący uprzednio w skład I Zgrupowania). Pluton ten po złożeniu deklaracji o chęci współpracy AK z oddziałami Armii Czerwonej został przez Sowietów rozbrojony. „Strzała” zdołał jedynie wysłać gońca, który poinformował „Klamrę” o zdarzeniu. Sam musiał rozwiązać oddział i pod eskortą Rosjan został przeprowadzony do lasu w okolicy miejscowości Stasiówka, gdzie wszystkich wypuszczono [10].",
-    battles2:
-      "Następnego dnia pluton Karola Kubika z kompanii „Pęka” przeprowadził atak na kolumnę czterech samochodów niemieckich w rejonie Południka. Jeden samochód został spalony a jego trzyosobowa załoga zlikwidowana. Pozostałe wozy (w których znajdowali się prawdopodobnie wyżsi wojskowi niemieccy), zdołały uciec. W „uchwyconym” samochodzie oddział „Wichra” zdołał odnaleźć m.in. teczkę z cennymi dokumentami wojskowymi, w której (poza innymi materiałami) znalazły się tajne rozkazy dowództwa niemieckiego. Z samochodu zabrano także dowody osobiste zabitych oraz ich broń [11].",
-    battles3:
-      "Zbigniew Lazarowicz, dowódca plutonu „Gumniska” a zarazem syn dowódcy pułku, ze szczegółami opisał moment ukształtowania się frontu w rejonie Braciejowej i Gumnisk: „Sowieci wkroczyli do Gumnisk i Braciejowej 22 sierpnia i zajęli stanowiska po wschodniej stronie kotliny. Niemcy początkowo nie zaciągnęli linii, mieli widocznie wycofać się dalej na zachód, ale gdy Sowieci stanęli, nie posuwając się dalej, rozciągnęli i oni linię obronną na lizjerze lasu, w którym myśmy się kryli. W ten sposób znaleźliśmy się w bezpośrednim zapleczu frontu niemieckiego, pomiędzy pierwszą linią, a stanowiskami artylerii. W tej sytuacji musieliśmy zamknąć ściśle naszą bazę i wzmocnić czujność i ubezpieczenie. Przygotowaliśmy się do obrony w okrążeniu. Stanowiska ogniowe umocniliśmy dołami strzeleckimi. Wysunięto placówki na przedpolu w kierunku frontu. Oddziały zajmowały następujące stanowiska: od południa pluton »Cebuli« [Jan Dec] na jego prawym skrzydle kompania »Pęka« [Franciszek Szara], a dalej drużyna sowiecka. Od zachodu pluton »Bratka«, czyli mój, w sile dwóch drużyn, bo trzecia drużyna pod dowództwem kpr. »Sokoła« [Michał Jędrzejczyk] została skierowana na wzmocnienie wschodniego odcinka od strony Gumnisk. Od północy kompania »Jasnego« [Leon Kloc], a od wschodu oddział dyspozycyjny »Klamry«, saperzy, sekcja Piata, pluton łączności oraz wspomniana drużyna »Sokoła«. Na tym też odcinku wysunięta została w kierunku frontu silna placówka. Drogi dojazdowe zabezpieczono dodatkowymi zawałami” [12].",
-    partisanTitle:
-      "Obóz Partyzancki w Okrążeniu i Dylematy Strategiczne Dowództwa II Rejonu",
-    partisan1:
-      "Linia frontu ukształtowała się na linii Wiewiórka - Straszęcin - Grabiny - Latoszyn, a następnie wzdłuż doliny rzeki Ostrej, przez Gumniska i Braciejową. Na wzgórzach po wschodniej stronie rzeki Ostrej znalazły się oddziały sowieckie, natomiast po przeciwległej stronie, na wzgórzach od zachodu, formacje niemieckie. Bezpośrednio za pasem wzniesień między linią Latoszyn - Gumniska - Braciejowa, w Dolinie Dolnej Wisłoki, w rejonie Jaworza Dolnego znalazły się oddziały niemieckiej artylerii. W tej sytuacji obóz partyzancki II Rejonu znalazł się w okrążeniu, mając po stronie zachodniej niemiecką artylerię, zaś po stronie wschodniej - linię frontu.",
-    partisan2:
-      "Tymczasem dowództwo pułku i II Zgrupowania, przystąpiło do opracowania koncepcji wycofania się z terenu objętego działaniami wojennymi. W ustnej rozmowie z Ludwikiem Marszałkiem „Zbroją” (przebywającym w III Rejonie) - „Klamra” wydał rozkaz rozwiązania III Zgrupowania, dowodzonego przez Edmunda Mateckiego „Lisa”. Rozmowa telefoniczna obu dowódców została jednak przerwana. Do dowództwa napłynęły nowe meldunki o zajęciu drogi Południk - Gołęczyna (na skraju miejscowości Gołęczyna), gdzie znajdowało się dowództwo III Zgrupowania. W tej sytuacji pojawiły się dwie koncepcje rozwiązania II Rejonu: pierwsza mówiła o próbie przebicia się na stronę sowiecką, druga zaś dotyczyła przejścia na zachód w rejon lasów Gołęczyny lub ewentualnie Jaworza, gdzie miało nastąpić rozwiązanie oddziałów. Mówiło się także o próbie przejścia w rejon Jodłowej (za Wisłoką), jeśli zaszłaby taka konieczność.",
-    partisan3:
-      "Wobec wiadomości które dostarczył goniec posłany przez Józefa Naroga „Strzałę” oraz z uwagi na inne okoliczności mówiące o zdradzieckim postępowaniu Rosjan, zwyciężyła koncepcja przebijania się na zachód [13].",
-    evacuationTitle:
-      "Bitwa na Polanie Kałużówka - Heroiczny Opór i Ewakuacja II Zgrupowania",
-    evacuation1:
-      "Jednak rankiem 23 sierpnia Niemcy skierowali silny ogień dwóch baterii artylerii na stanowiska II Zgrupowania w rejonie Kałużówki. Następnie od strony Południka wyszło rozpoznanie patroli bojowych skutecznie odpartych przez kompanię „Pęka”. Przez cały dzień i noc z 23 na 24 sierpnia Niemcy kładli silny ogień artylerii na niewielki stosunkowo teren na którym znajdowało się II Zgrupowanie [14]. Pod wpływem tego ognia pojawiły się pierwsze straty w szeregach II Zgrupowania 5. PSK AK. W tej sytuacji „Klamra”, celem uniknięcia dalszych strat, podjął ryzykowną decyzję próby przebicia się na stronę radziecką. W tym celu nawiązał przez radiostację kontakt z dowództwem radzieckim, aby Sowieci położyli ogień na wskazany skraj lasu, celem upozorowania natarcia na stanowiska niemieckie, co pomogłoby oddziałom II Rejonu opuścić las i wydostać się z okrążenia. Rosjanie wyrazili zgodę, jednakże w oznaczonym czasie położyli ogień, który został skierowany nie na wyznaczony przez „Klamrę” odcinek, lecz wprost na stanowiska II Zgrupowania. Wprawdzie Sowieci przepraszali później za tę pomyłkę, jednakże „Klamra” nie zdecydował się na powtórzenie manewru [15].",
-    evacuation2:
-      "Około godziny 5 rano, w czwartek 24 sierpnia od wschodu tzn. od strony drogi Braciejowa - Południk oraz od południowego-wschodu, tzn. od strony miejscowości Południk wyszło główne natarcie batalionu piechoty niemieckiej. Atak wspierał silny ogień artylerii i moździerzy, skierowany na polskie stanowiska. Jako pierwszy wycofał się oddział „rozwiedki”, której brakło amunicji. Pod silnym naporem nieprzyjaciela na skrzydło kompanii Franciszka Szary „Pęka”, stanowiącej pierwszą linię obrony od strony Południka, dowódca kompanii wydał rozkaz cofnięcia na zapasowe stanowiska. Skuteczny opór w tym rejonie stawiła drużyna saperów Zdzisława Chodackiego „Migdała”, drużyna dyspozycyjna „Brutusa” oraz pluton Artura Cwena „Rena”. Jednakże i te oddziały musiały się wycofać w głąb polany na wzgórze oznakowane na mapie: 426 m. n.p.m. [16].",
-    evacuation3:
-      "Teren w rejonie Kałużówki jest mocno górzysty, a w 1944 roku porośnięty był gęstym lasem (głównie bukowym), poszczególne wzniesienia przecinały strome jary, w których płynęły potoki biorące swe źródła w rejonie okalających wzgórz. Warunki terenowe przemawiały na korzyść atakujących, którzy po wycofaniu się oddziałów II Zgrupowania w rejon wzgórza 426, mogli wejść na samą polanę.",
-    evacuation4:
-      "W godzinach popołudniowych, kiedy oddziały niemieckie zaczęły się wdzierać na otwartą przestrzeń polany, grupa przeciwuderzeniowa pod dowództwem samego dowódcy 5. PSK AK kpt. Lazarowicza „Klamry” zepchnęła nieprzyjaciela z Kałużówki. W czasie ataku ranny został dowódca niemiecki w randze majora, który zmarł następnego dnia. Po tym odparciu, około godziny 19.30, Niemcy wycofali się z rejonu Kałużówki w kierunku północno-wschodnim[17]. W walce na Kałużówce poległo jedenastu żołnierzy II Zgrupowania, natomiast sześciu zostało ciężko rannych. Niemcy stracili swojego dowódcę, około dwudziestu żołnierzy (w tym oficerów) i mieli około trzydziestu rannych [18].",
-    evacuation5:
-      "„Jak zacięte i uporczywe były walki na polanie Kałużówka świadczy fakt, że na posunięcie się w głąb o około 1,5 km Niemcy potrzebowali przeszło 14 godzin (od godziny 5 rano do godziny 19.30 wieczorem). Mając kolosalną przewagę broni i ognia zmusili partyzantów do stałego cofania się, ale kontrnatarcia partyzantów już nie byli w stanie powstrzymać i zaprzestali dalszej walki” [19].",
-    evacuation6:
-      "Pod wieczór dowódca całości zarządził zbiórkę i ewakuację Zgrupowania. „Klamra” planował przeprowadzenie przebicia przez linię frontu w rejonie Południka. Kłopotliwą okazała się kwestia transportu rannych, których umieszczono na prowizorycznych noszach. Przed nocą Zgrupowanie wycofało się z polany w kierunku północno-wschodnim w promieniu około kilometra od Kałużówki.",
-    epilogTitle: "Rozwiązanie oddziałów i tragiczny epilog",
-    epilog1:
-      "W dniu 25 sierpnia Zgrupowanie przeszło w rejon spalonej przez Niemców leśniczówki Władysława Klabachy [20]. Przejście przez front okazało się niemożliwe. Teren był już mocno obsadzony przez oddziały niemieckie, a na przedpolu Niemcy zastawili sidła w postaci pola minowego. Sytuacja oddziałów II Rejonu stawała się coraz bardziej dramatyczna. Żołnierze od kilku dni nie mieli w ustach żadnego pożywienia. Kontrowersyjna stała się kwestia związana z transportem rannych.",
-    epilog2:
-      "Po trzech dniach pobytu w jarze na Południku  dowództwo podjęło decyzję wymarszu w kierunku zachodnim, a więc w rejon gdzie uprzednio znajdowały się oddziały III Zgrupowania (rozwiązanego 23 sierpnia). Późnym wieczorem 28 sierpnia, gdy zapadł już całkowity zmrok Zgrupowanie wyruszyło w rejon lasów Gołęczyny [21].",
-    epilog3:
-      "Po dotarciu w rejon Gołęczyny, 29 sierpnia nastąpiło częściowe rozwiązanie oddziałów II Zgrupowania. Jako pierwsza odeszła kompania „Pęka” (bez plutonu dowódcy kompanii, który pozostał z pozostałymi oddziałami), część kompanii „Jasnego” oraz pluton Ludwika Wolaka „Orlika”.",
-    epilog4:
-      "Następnego dnia pozostałe oddziały przeszły w rejon Jaworza, gdzie zwolniono kolejną grupę żołnierzy. Rozwiązywane oddziały składały broń, którą owinięto w koce i zakopano w lesie z dokładnym oznaczeniem miejsca zakopania [22].",
-    epilog5:
-      "We wrześniu grupa, która pozostała z „Klamrą” liczyła około sześćdziesiąt osób. Oddział ten krążył po lasach celem uniknięcia zorganizowanej na niego obławy. Z tym oddziałem „Klamra” powrócił na Kałużówkę, a następnie z powrotem w rejon lasów Gołęczyna - Jaworze.",
-    epilog6:
-      "W dniu 12 września oddział uniknął zorganizowanej obławy niemieckiej przygotowanej przez Rzeszowską Dywizję Opóźniającą - Reichschofspeerdywizion i tego samego dnia w rejonie Jaworza „Klamra” rozwiązał oddział, nakazując żołnierzom aby na własną rękę podjęli próbę rozejścia się do domów [23].",
-    epilog7:
-      "Wśród żołnierzy, którzy pozostali w lesie nie wszyscy mieli szczęście przeżyć. Wielu zginęło z rąk niemieckich oddziałów „czyszczących” teren z pozostałych w lesie partyzantów, byli także tacy, którzy dostali się do niemieckiej niewoli i zostali osadzeni w obozach w Gross-Rosen i Ravensbrűck. Grupa około czterdziestu partyzantów wyszła z lasów dopiero w trzeciej dekadzie października. W grupie tej był m.in. kapelan Obwodu ZWZ - AK Dębica i II Zgrupowania, ks. Stanisław Bartosz „Mieczyk”. Bez dachu nad głową, oddział ten w okresie jesieni przetrwał posilając się w desperacji nawet zabłąkanym w lesie psem [24].",
-    epilog8:
-      "W okresie września i października zginęło ponad czterdziestu żołnierzy II Zgrupowania, zaś piętnastu dostało się do niemieckiej niewoli [25].",
-    footnotesTitle: "Przypisy",
-    footnotes: [
-      "[1] Przygotowany był także czwarty, zapasowy rejon walki pod dowództwem ppor. Stanisława Lachmana „Zan”. Rejon ten stanowiła jedna kompania placówki Brzeziny wchodząca de facto w skład Zgrupowania II, dowodzonego przez Romana Kanię ps. „Rygiel”. IV Rejon pozostał przez cały okres „Burzy” w odwodzie pułku i wykonywał ograniczone działania. Por.: J. Niedziela, F. Sagan, Inspektorat Rejonowy ZWZ- AK Rzeszów, Rzeszów 2005, s. 200-201; Sam „Klamra” omawiając „Burzę” (Rys historyczny oddziałów AK w rejonie Dębicy- akcja „Burza”; spisany przez „Szyszkę”, Maszynopis w zbiorach autora), wymienia tylko trzy rejony (zgrupowania) walki.",
-      "[2] Leśnictwo Berdech położone było na skraju kompleksu leśnego, dokąd prowadziła kiepska leśna droga dochodząca do traktu leśnego łączącego wsie Mała - Niedźwiada (na drodze prowadzącej z Dębicy do Wielopola Skrzyńskiego).",
-      "[3] „Burzowe” dzieje drużyny dyspozycyjnej Komendy Obwodu, zostały opisane barwnym językiem w zbeletryzowanej powieści, przez dowódcę tej drużyny zwanej także „bojówką” - „Brutusa”. Zob.: W. Strumski, Dziesiątka w akcji, wyd. II, Dębica 2004.",
-      "[4] Meldunek sytuacyjny z 31 lipca 1944 r. dowódcy II Rejonu Walki Romana Kani „Rygla” 31 lipca 1944 r. [w:] G. Ostasz, A. Zagórski, Akcja „Burza” w Inspektoracie AK Rzeszów, Kraków 2003, s. 380-381.",
-      "[5] A. Stańko, Gdzie Karpat progi, wyd. III, Tuchów 1997, s. 270.",
-      "[6] W. Strumski, dz. cyt., s. 61-70.",
-      "[7] Z. Lazarowicz, „Klamra” - mój Ojciec, „Zeszyty Historyczne WiN-u” nr 4, 1993, s. 95.",
-      "[8] Władysław Strumski (Dziesiątka…, dz. cyt., s. 45) pisze: „Plutony strzeleckie kopią stanowiska bojowe, tak jakbyśmy mieli rozpocząć wojnę pozycyjną. Ponieważ wszystkie instrukcje traktujące o partyzantce kategorycznie zabraniają zakładanie warownych obozów, więc te poczynania dziwią mnie bardzo i w końcu idę do »Dyzmy« i pytam, kto wpadł na ten głupi pomysł. Odpowiedź »Dyzmy« była tak nieparlamentarna, że nie można jej powtórzyć drukiem. Dopiero »Szyszka« wyjaśnił mi, że rozkaz okopywania się wyszedł od kapitana »Rygla«, którego poparł porucznik »Cis« - de facto stary partyzant. Próżno »Dyzma«, urodzony i przygotowany wszechstronnie oficer partyzancki, przeciwstawiał się temu pomysłowi tłumacząc, że partyzantom nie wolno przyjmować walki pozycyjnej, jeżeli nie chcą się narażać na całkowite zniszczenia. Oddział partyzancki musi być ruchomy, musi zmieniać miejsce pobytu, być nieuchwytnym dla wroga. Oficerowie zawodowi wzięli górę nad nim, gdy ich sugestiom uległ »Klamra«”.",
-      "[9] Por.: A. Stańko, Gdzie Karpat…, dz. cyt., s. 279; Z. Lazarowicz, „Klamra”…, dz. cyt., „ZHW” nr 4, s. 89; Tenże, Akcja „Burza” w powiecie dębickim 1944-1994, msp., s. 12.",
-      "[10] A. Stańko, Gdzie Karpat…, dz. cyt., s. 289-290.",
-      "[11] Tamże, s. 290-291.",
-      "[12] Z. Lazarowicz, „Klamra”…, dz. cyt., „ZHW” nr 4, s. 99.",
-      "[13] A. Stańko, Gdzie Karpat…, dz. cyt., s. 295.",
-      "[14] Rys historyczny oddziałów AK…, dz. cyt., s. 14. Omawiając tę sytuację, „Klamra” (tamże, s. 14-15) pisze: „Ogień ten spowodował straty w oddziale w zabitych i rannych. Żołnierz konspiracyjny pod pierwszym ogniem artylerii zaczął się denerwować, a nawet kilkunastu zbiegło ze stanowisk. Co gorsze niektórzy dowódcy zamiast pozostać wówczas przy żołnierzu, zwłaszcza, że spodziewane było natarcie piechoty nieprzyjaciela, szukali miejsca w schronach i nie umieli ukryć swego zastraszenia. Zastępca dowódcy kompanii rej. por. służby stałej „Cis” oddalił się ze swojego odcinka na tyły oddziału zaraz po rozpoczęciu ostrzeliwania przez artylerię, w następnym dniu zbiegł”.",
-      "[15] A. Stańko, Gdzie Karpat…, dz. cyt., s. 296.",
-      "[16] Walki na Kałużówce wg relacji Cwena [w:] Zbiory autora - Kolekcja archiwalna Antoniego Stańki [dalej KS] 37-II, s. 5-7.",
-      "[17] Tamże, s. 7-8; Rys historyczny oddziałów AK…, dz. cyt., s. 15.",
-      "[18] Antoni Stańko (Gdzie Karpat…, dz. cyt., s. 302), posiłkując się tekstem sporządzonym przez „Szyszkę” w imieniu „Klamry” w 1944 roku, podaje: „straty nieprzyjaciela: zabitych 4 oficerów, 22 żołnierzy i 4 agentów Gestapo, rannych około 30 żołnierzy, wziętych do niewoli - 12 żołnierzy. Straty nieprzyjaciela spowodowane przez artylerię radziecką, której ogniem kierowali partyzanci: zabitych - 20, rannych około 30, zniszczono 5 dział, a uszkodzono 4 oraz uszkodzono bądź zniszczono kilkanaście samochodów ciężarowych”. Do tego opisu należy dodać, że nie jest to bilans samej bitwy na Kałużówce, albowiem podając te dane „Klamra” miał na myśli cały okres tzw. 2 fazy walk, a więc od zajęcia Dębicy i rozwiązania I i III Zgrupowania w dniu 23 sierpnia, do rozwiązania II Zgrupowania w ostatnim dniu sierpnia 1944 roku.",
-      "[19] Tamże, s. 301.",
-      "[20] W czasie porannego marszu (podczas pokonywania drogi Braciejowa- Południk) poległ od serii z karabinu maszynowego Andrzej Jabłonowski „Śmigło” oraz ciężko ranny na Kałużówce Tadeusz Ciszek „Jahura”.",
-      "[21] Z. Lazarowicz, „Klamra”…, dz. cyt., „ZHW” nr 4, s. 109-110",
-      "[22] Wg relacji Tadeusza Kubicy (Relacje naocznych świadków AK [w:] KS sygn. 121-IV, t. I, s. 133), Niemcy torturując małoletniego chłopca aresztowanego prawdopodobnie w rejonie lasów Gołęczyny na przełomie września i października 1944 roku, uzyskali informacje o zakopanej broni. Tadeusz Kubica wspomina: „Wiem że tego chłopca Niemcy wozili trzykrotnie do lasów Południka i prawdopodobnie odkopali całą naszą broń”. Zdanie Tadeusza Kubicy potwierdza Antoni Stańko (Gdzie Karpat…, dz. cyt., s. 331), który na podstawie relacji mieszkańców okolicznych miejscowości pisze, że „Niemcy wywieźli broń na chłopskiej furmance”.",
-      "[23] A. Stańko, Gdzie Karpat…, dz. cyt., s. 308; Zbrodnie niemieckie w powiecie dębickim [w:] KS sygn. 131-IV.",
-      "[24] Losy żołnierzy, którzy po rozwiązaniu oddziałów pozostali w lesie, szerzej opisuje A. Stańko (tamże, s. 309-340).",
-      "[25] Tamże, s. 339-340",
-    ],
-  },
   debica: {
     title: "Obwód Dębica SZP-ZWZ-AK",
     fortressTitle: "Obwód SZP-ZWZ-AK Dębica - Twierdza Polskiego Podziemia",
@@ -329,7 +213,6 @@ export const historyData = {
 
 export const chapters = [
   {
-    id: "1",
     title: "5. Pułk Strzelców Konnych",
     description:
       "Prześledź historię jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie Akcji „Burza” na ziemi dębickiej. Poznaj strukturę pułku, życie dowódców i zadania realizowane podczas walk z okupantem. To nie tylko podział organizacji na rejony czy wykaz najważniejszych działań bojowych i dywersyjnych. Przed Tobą opowieść o odwadze, zgraniu, a przede wszystkim o niezłomnym duchu żołnierzy oddanych walce za wolną Polskę. Oto historia jednostki, której nic nie nie wymaże z kart dziejów.",
@@ -341,7 +224,6 @@ export const chapters = [
   },
 
   {
-    id: "2",
     title: "Akcja „Burza”",
     description:
       "To opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przenieś się w czasy dramatycznych walk w rejonie Dębicy, poznaj bohaterów w nierównej walce z okupantem i dowiedz się, jak przebiegała bitwa na polanie Kałużówka. Zobacz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacją. Przed Tobą świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia.",
@@ -353,7 +235,6 @@ export const chapters = [
   },
 
   {
-    id: "3",
     title: "Obwód Dębica SZP-ZWZ-AK",
     description:
       "Lokalne struktury konspiracyjne odegrały kluczową rolę w walce z okupantem na ziemi dębickiej. Poznaj rozwój organizacji od początków Służby Zwycięstwu Polski, przez Związek Walki Zbrojnej, aż po przekształcenie jej w Armię Krajową. Sprawdź, jak wyglądała działalność wywiadowcza, dywersyjna i szkoleniowa, a także jak Obwód przygotowywał się do operacji „Burza”. Żołnierze AK Dębica, mimo ogromnego ryzyka, stawili opór okupantom.",
@@ -364,3 +245,131 @@ export const chapters = [
     route: Routes.DEBICA_DISTRICT,
   },
 ] as const;
+
+export const district = {
+  districtTitle: "Obwód AK Dębica w Operacji „Burza” - Struktura i Działania",
+  district: [
+    "Obwód AK Dębica, wchodzący w skład 24. Dywizji Piechoty, odtwarzał w okresie „Burzy” - 5. Pułk Strzelców Konnych Armii Krajowej. Dowództwo nad całością objął zastępca inspektora rejonowego w Rzeszowie, kpt. Adam Lazarowicz „Klamra”, natomiast komendant Obwodu Dębica, kpt. Ludwik Marszałek „Zbroja”, został na czas „Burzy” - zastępcą „Klamry”. Teren Obwodu podzielono na trzy rejony walki zwane także zgrupowaniami [1].",
+    "Rozkaz o rozpoczęciu „Burzy” przywiózł z Rzeszowa do Gumnisk k. Dębicy Ludwik Marszałek „Zbroja” i dostarczył go Adamowi Lazarowiczowi „Klamrze” o świcie 28 lipca 1944 roku. Dowódca pułku niezwłocznie zaalarmował całość Obwodu i zarządził koncentracje oddziałów w ramach zgrupowań w trzech rejonach. Miejsce postoju dowództwa pułku oraz dowodzenia całością sił znajdowało się w leśniczówce Berdech (na wzgórzu otaczającym wieś Braciejowa, w parafii Gumniska), gdzie zarządzono także koncentrację oddziałów II Zgrupowania [2].",
+    "W skład II Rejonu wchodziło pięć placówek Obwodu „Deser”: Brzeziny „Bomba”, Dębica „Działo”, Korzeniew „Kartacz”, Łączki Kucharskie „Ławka”, Ropczyce I „Rakieta”. Terytorialnie zasięg działania Zgrupowania był największy i rozciągał się od Ropczyc po Podgrodzie. Przez teren ten wiodła linia kolejowa Rzeszów - Kraków (od Ropczyc po Grabiny) oraz drogi Rzeszów - Kraków, Dębica - Wielopole.",
+    "Po ogłoszonym alarmie, o świcie 28 lipca, oddziały II Zgrupowania przed  godziną 10 skoncentrowały się w leśnictwie Berdech, gdzie po zameldowaniu żołnierze otrzymywali uzbrojenie. W pierwszym dniu koncentracji na Berdech dotarły kompanie z trzech placówek: „Bomba” pod dowództwem Stanisława Lachmana „Wielkiego”, „Działo” pod dowództwem Leona Kloca „Jasnego” i kompania z placówki „Ławka” dowodzona przez Franciszka Szarę „Pęka”. Ponadto na Berdechu znajdował się oddział dyspozycyjny dowodzony przez Władysława Strumskiego „Brutusa” i pluton „Gumniska” pod dowództwem Zbigniewa Lazarowicza „Bratka”.",
+  ],
+} as const;
+
+export const firstDays = {
+  firstDaysTitle:
+    "Działania oddziałów II Zgrupowania w pierwszych dniach „Burzy”",
+  firstDays: [
+    [
+      "Początkowy okres „wzmożonej działalności dywersyjnej” we wszystkich zgrupowaniach 5. PSK AK, cechowała duża aktywność bojowo-dywersyjna poszczególnych plutonów i kompanii, charakteryzująca się przeprowadzeniem licznych akcji zaczepnych na drogach, rozbijaniem mniejszych patroli nieprzyjacielskich oraz rozbrajaniem posterunków policji i dozbrajaniem plutonów w zdobyczną broń.",
+      "Tymczasem w pierwszych dniach sierpnia „Klamra” wraz ze swym sztabem zmienił dotychczasowe miejsce postoju przenosząc się z Berdechu w rejon Południka (do gajówki Władysława Klabachy). Decyzja ta była podyktowana faktem, iż Berdech znajdował się w bliskim sąsiedzkie drogi Niedźwiada - Mała, która stwarzała niebezpieczeństwo dekonspiracji.",
+    ],
+    [
+      "Wśród wielu akcji wykonanych przez oddziały II Rejonu należy wymienić kilka o większym znaczeniu. W nocy z 30 na 31 lipca dywersja Obwodu (pluton dywersyjny Władysława Strumskiego „Brutusa” [3] oraz pluton dywersyjny „Cebuli”) pod dowództwem Jerzego Wosia „Farysa” wysadziły tory kolejowe w miejscowości Głowaczowa, efektem czego było przerwanie łączności kolejowej na linii Dębica - Tarnów, na okres 10 godzin [4].",
+      "Pluton Wilhelma Jakiego „Koraba” z kompani „Pęka” w dniu 30 sierpnia zorganizował zasadzkę na 3 samochody niemieckie na drodze Dębica - Wielopole w rejonie gajówki Sewerówka w rejonie Kamieńca. Zupełnie zaskoczony oddział niemiecki, pomimo prób obrony, był bezradny wobec atakujących. W wyniku akcji zginęło 32 Niemców, zdobyto broń, samochody oraz duże zapasy żywności [5].",
+    ],
+  ],
+} as const;
+
+export const heroicDefence = {
+  heroicDefenceTitle:
+    "Heroiczna Obrona Ludności Cywilnej w Gumniskach - Akcja 12 sierpnia 1944 r.",
+  heroicDefence: [
+    [
+      "Drużyna dyspozycyjna Władysława Strumskiego „Brutusa” skutecznie przeprowadziła (w pierwszych dniach sierpnia), dwie akcje na kolumny samochodów nieprzyjaciela w miejscowości Podgrodzie. W akcjach tych brał udział kpt. Józef Lutak „Dyzma”, dowódca dywersji w Inspektoracie AK Rzeszów. Istotnym elementem działań prowadzonych przez Armię Krajową w ramach „Burzy” była ochrona ludności przed represjami i pacyfikacjami. Na terenie II Rejonu nieprzyjaciel planował przeprowadzenie kilku tego rodzaju akcji, jednak każdorazowa próba pacyfikacji kończyła się fiaskiem. Doskonale zorganizowane patrole II Zgrupowania uniemożliwiły okupantowi przeprowadzenie pacyfikacji w miejscowościach: Mała, Niedźwiada i Gumniska.",
+      "Najbardziej spektakularną akcję odbicia ludności w dniu 12 sierpnia, przeprowadziła bojówka dyspozycyjna Władysława Strumskiego „Brutusa” dowodzona przez Józefa Lutaka „Dyzmę” oraz wspomagana przez kilku żołnierzy z drużyny Jana Murgrabiego „Pieca” z kompanii Dębica „Działo”. Planowana przez Niemców pacyfikacja wsi była pokłosiem zlikwidowania sześciu hitlerowców grasujących po Gumniskach i Braciejowej dwa dni wcześniej.",
+      "Rankiem 12 sierpnia do Gumnisk ściągnął batalion niemiecki. Zaczęło się spędzanie mieszkańców wsi (starców i dzieci) na drogę prowadzącą w kierunku Dębicy.",
+    ],
+    [
+      "Informacja o poczynaniach nieprzyjaciela dotarła do sztabu II Zgrupowania. Dowódca 5. PSK AK, Adam Lazarowicz „Klamra” posłał Józefa Lutaka „Dyzmę”, który miał ocenić zagrożenie, jednakże dowódca pułku wyraźnie apelował o nie podejmowanie pochopnych działań. Po przybyciu na miejsce „Dyzma” mając do dyspozycji drużynę dyspozycyjną i drużynę z plutonu „Gumniska” postanowił uderzyć na nieprzyjaciela, który prowadził już około trzystuosobową grupę bezbronnych mieszkańców w kierunku Dębicy.",
+      "Całość (łącznie 23 + 1) „Dyzma” podzielił  na trzy grupy: grupa główna 17+1 zajęła stanowiska na wzgórzu za rzeką Ostrą, w odległości około 40 metrów od drogi; grupa Władysława Strumskiego „Brutusa” w trzyosobowym składzie rozlokowała się na górze po prawej stronie; grupa Kazimierza Strumskiego „Tyrana” - trzy osoby, rozlokowała się na lewym skrzydle. W ten sposób „Dyzma” chciał osiągnąć przewagę optyczną i wzbudzić wśród Niemców przekonanie o znacznej liczebności atakujących. Zamysł ten powiódł się i kiedy na rozkaz „Dyzmy” dywersanci otworzyli ogień do prowadzących ludność Niemców, ci w panice zaczęli kryć się w rowach. W tym czasie ludność rzuciła się do ucieczki. Kiedy jednak Niemcy spostrzegli liczebność atakujących, przystąpili do kontruderzenia. „Dyzma” dał wówczas rozkaz wycofania. Gdy oddział śmiałków wycofywał się pod górę, w kierunku lasu (miejsca zgrupowania), z lizjery lasu odezwały się karabiny oddziałów II Zgrupowania, które na wniosek „Klamry” wyruszyły wesprzeć atakujących [6].",
+    ],
+  ],
+} as const;
+
+export const commandTransfer = {
+  commandTransferTitle:
+    "Akcja w Gumniskach i Przeniesienie Dowództwa na Polanę Kałużówka",
+  commandTransfer: [
+    "Brawurowa akcja zakończyła się sukcesem. Na placu boju poległo około 20 Niemców, a kilkunastu zostało rannych. Podczas wycofywania poległ jeden żołnierz z oddziału dyspozycyjnego. Był nim Stanisław Mroczka „Miecz”. Niemcy zdołali zabrać około 20 cywilów (głównie starców oraz miejscowego proboszcza), którzy zostali w większości wypuszczeni w Dębicy, natomiast reszta została zagarnięta do prac przyfrontowych, skąd po kilku dniach powróciła do domów [7].",
+    "Tymczasem „Klamra” jeszcze przed pacyfikacją Gumnisk (na przełomie pierwszej i drugiej dekady sierpnia), zarządził po raz drugi przeniesienie dowództwa pułku i sztabu II Zgrupowania.",
+    "Nowe miejsce postoju znajdowało się w rejonie leśnej polany Kałużówka, położonej pośrodku rozległego kompleksu leśnego Braciejowa - Gumniska - Gołęczyna. Tutaj „Klamra” postanowił ściągnąć oddziały pozostające w terenie, tzn. kompanie i plutony wchodzące w skład II Zgrupowania, które walczyły dotąd w rejonach swoich placówek. Kontrowersje wśród dowództwa wzbudził projekt Romana Kani „Rygla” i Franciszka Ciszka „Cisa”, aby uczynić z Kałużówki partyzancki obóz [8]. „Klamra” przewidywał jednak, że front szybko przejdzie przez powiat dębicki, a ewentualny opór niemiecki zostanie postawiony dopiero na linii rzeki Wisłoki, a więc kilka kilometrów na zachód od samej Kałużówki [9].",
+  ],
+} as const;
+
+export const battles = {
+  battlesTitle: "Walki na Kałużówce",
+  battles: [
+    "Na leśnej polanie nastąpiła reorganizacja oddziałów II Rejonu, które następnie wykonały umocnione szałasy i okopy. Na Kałużówkę przybył także pluton zwiadowczy Armii Czerwonej, z której dowództwem nawiązano współpracę. Bieg wypadków i założenia szybkiego przejścia frontu nie sprawdziły się. Już 21 sierpnia front zaczął w błyskawicznym tempie przesuwać się spod Ropczyc w kierunku Dębicy. Naprzeciw wojskom radzieckim wyruszył pluton Józefa Naroga „Strzały” (wchodzący uprzednio w skład I Zgrupowania). Pluton ten po złożeniu deklaracji o chęci współpracy AK z oddziałami Armii Czerwonej został przez Sowietów rozbrojony. „Strzała” zdołał jedynie wysłać gońca, który poinformował „Klamrę” o zdarzeniu. Sam musiał rozwiązać oddział i pod eskortą Rosjan został przeprowadzony do lasu w okolicy miejscowości Stasiówka, gdzie wszystkich wypuszczono [10].",
+    "Następnego dnia pluton Karola Kubika z kompanii „Pęka” przeprowadził atak na kolumnę czterech samochodów niemieckich w rejonie Południka. Jeden samochód został spalony a jego trzyosobowa załoga zlikwidowana. Pozostałe wozy (w których znajdowali się prawdopodobnie wyżsi wojskowi niemieccy), zdołały uciec. W „uchwyconym” samochodzie oddział „Wichra” zdołał odnaleźć m.in. teczkę z cennymi dokumentami wojskowymi, w której (poza innymi materiałami) znalazły się tajne rozkazy dowództwa niemieckiego. Z samochodu zabrano także dowody osobiste zabitych oraz ich broń [11].",
+    "Zbigniew Lazarowicz, dowódca plutonu „Gumniska” a zarazem syn dowódcy pułku, ze szczegółami opisał moment ukształtowania się frontu w rejonie Braciejowej i Gumnisk: „Sowieci wkroczyli do Gumnisk i Braciejowej 22 sierpnia i zajęli stanowiska po wschodniej stronie kotliny. Niemcy początkowo nie zaciągnęli linii, mieli widocznie wycofać się dalej na zachód, ale gdy Sowieci stanęli, nie posuwając się dalej, rozciągnęli i oni linię obronną na lizjerze lasu, w którym myśmy się kryli. W ten sposób znaleźliśmy się w bezpośrednim zapleczu frontu niemieckiego, pomiędzy pierwszą linią, a stanowiskami artylerii. W tej sytuacji musieliśmy zamknąć ściśle naszą bazę i wzmocnić czujność i ubezpieczenie. Przygotowaliśmy się do obrony w okrążeniu. Stanowiska ogniowe umocniliśmy dołami strzeleckimi. Wysunięto placówki na przedpolu w kierunku frontu. Oddziały zajmowały następujące stanowiska: od południa pluton »Cebuli« [Jan Dec] na jego prawym skrzydle kompania »Pęka« [Franciszek Szara], a dalej drużyna sowiecka. Od zachodu pluton »Bratka«, czyli mój, w sile dwóch drużyn, bo trzecia drużyna pod dowództwem kpr. »Sokoła« [Michał Jędrzejczyk] została skierowana na wzmocnienie wschodniego odcinka od strony Gumnisk. Od północy kompania »Jasnego« [Leon Kloc], a od wschodu oddział dyspozycyjny »Klamry«, saperzy, sekcja Piata, pluton łączności oraz wspomniana drużyna »Sokoła«. Na tym też odcinku wysunięta została w kierunku frontu silna placówka. Drogi dojazdowe zabezpieczono dodatkowymi zawałami” [12].",
+  ],
+} as const;
+
+export const partisan = {
+  partisanTitle:
+    "Obóz Partyzancki w Okrążeniu i Dylematy Strategiczne Dowództwa II Rejonu",
+  partisan: [
+    "Linia frontu ukształtowała się na linii Wiewiórka - Straszęcin - Grabiny - Latoszyn, a następnie wzdłuż doliny rzeki Ostrej, przez Gumniska i Braciejową. Na wzgórzach po wschodniej stronie rzeki Ostrej znalazły się oddziały sowieckie, natomiast po przeciwległej stronie, na wzgórzach od zachodu, formacje niemieckie. Bezpośrednio za pasem wzniesień między linią Latoszyn - Gumniska - Braciejowa, w Dolinie Dolnej Wisłoki, w rejonie Jaworza Dolnego znalazły się oddziały niemieckiej artylerii. W tej sytuacji obóz partyzancki II Rejonu znalazł się w okrążeniu, mając po stronie zachodniej niemiecką artylerię, zaś po stronie wschodniej - linię frontu.",
+    "Tymczasem dowództwo pułku i II Zgrupowania, przystąpiło do opracowania koncepcji wycofania się z terenu objętego działaniami wojennymi. W ustnej rozmowie z Ludwikiem Marszałkiem „Zbroją” (przebywającym w III Rejonie) - „Klamra” wydał rozkaz rozwiązania III Zgrupowania, dowodzonego przez Edmunda Mateckiego „Lisa”. Rozmowa telefoniczna obu dowódców została jednak przerwana. Do dowództwa napłynęły nowe meldunki o zajęciu drogi Południk - Gołęczyna (na skraju miejscowości Gołęczyna), gdzie znajdowało się dowództwo III Zgrupowania. W tej sytuacji pojawiły się dwie koncepcje rozwiązania II Rejonu: pierwsza mówiła o próbie przebicia się na stronę sowiecką, druga zaś dotyczyła przejścia na zachód w rejon lasów Gołęczyny lub ewentualnie Jaworza, gdzie miało nastąpić rozwiązanie oddziałów. Mówiło się także o próbie przejścia w rejon Jodłowej (za Wisłoką), jeśli zaszłaby taka konieczność.",
+    "Wobec wiadomości które dostarczył goniec posłany przez Józefa Naroga „Strzałę” oraz z uwagi na inne okoliczności mówiące o zdradzieckim postępowaniu Rosjan, zwyciężyła koncepcja przebijania się na zachód [13].",
+  ],
+} as const;
+
+export const evacuation = {
+  evacuationTitle:
+    "Bitwa na Polanie Kałużówka - Heroiczny Opór i Ewakuacja II Zgrupowania",
+  evacuation: [
+    "Jednak rankiem 23 sierpnia Niemcy skierowali silny ogień dwóch baterii artylerii na stanowiska II Zgrupowania w rejonie Kałużówki. Następnie od strony Południka wyszło rozpoznanie patroli bojowych skutecznie odpartych przez kompanię „Pęka”. Przez cały dzień i noc z 23 na 24 sierpnia Niemcy kładli silny ogień artylerii na niewielki stosunkowo teren na którym znajdowało się II Zgrupowanie [14]. Pod wpływem tego ognia pojawiły się pierwsze straty w szeregach II Zgrupowania 5. PSK AK. W tej sytuacji „Klamra”, celem uniknięcia dalszych strat, podjął ryzykowną decyzję próby przebicia się na stronę radziecką. W tym celu nawiązał przez radiostację kontakt z dowództwem radzieckim, aby Sowieci położyli ogień na wskazany skraj lasu, celem upozorowania natarcia na stanowiska niemieckie, co pomogłoby oddziałom II Rejonu opuścić las i wydostać się z okrążenia. Rosjanie wyrazili zgodę, jednakże w oznaczonym czasie położyli ogień, który został skierowany nie na wyznaczony przez „Klamrę” odcinek, lecz wprost na stanowiska II Zgrupowania. Wprawdzie Sowieci przepraszali później za tę pomyłkę, jednakże „Klamra” nie zdecydował się na powtórzenie manewru [15].",
+    "Około godziny 5 rano, w czwartek 24 sierpnia od wschodu tzn. od strony drogi Braciejowa - Południk oraz od południowego-wschodu, tzn. od strony miejscowości Południk wyszło główne natarcie batalionu piechoty niemieckiej. Atak wspierał silny ogień artylerii i moździerzy, skierowany na polskie stanowiska. Jako pierwszy wycofał się oddział „rozwiedki”, której brakło amunicji. Pod silnym naporem nieprzyjaciela na skrzydło kompanii Franciszka Szary „Pęka”, stanowiącej pierwszą linię obrony od strony Południka, dowódca kompanii wydał rozkaz cofnięcia na zapasowe stanowiska. Skuteczny opór w tym rejonie stawiła drużyna saperów Zdzisława Chodackiego „Migdała”, drużyna dyspozycyjna „Brutusa” oraz pluton Artura Cwena „Rena”. Jednakże i te oddziały musiały się wycofać w głąb polany na wzgórze oznakowane na mapie: 426 m. n.p.m. [16].",
+    "Teren w rejonie Kałużówki jest mocno górzysty, a w 1944 roku porośnięty był gęstym lasem (głównie bukowym), poszczególne wzniesienia przecinały strome jary, w których płynęły potoki biorące swe źródła w rejonie okalających wzgórz. Warunki terenowe przemawiały na korzyść atakujących, którzy po wycofaniu się oddziałów II Zgrupowania w rejon wzgórza 426, mogli wejść na samą polanę.",
+    "W godzinach popołudniowych, kiedy oddziały niemieckie zaczęły się wdzierać na otwartą przestrzeń polany, grupa przeciwuderzeniowa pod dowództwem samego dowódcy 5. PSK AK kpt. Lazarowicza „Klamry” zepchnęła nieprzyjaciela z Kałużówki. W czasie ataku ranny został dowódca niemiecki w randze majora, który zmarł następnego dnia. Po tym odparciu, około godziny 19.30, Niemcy wycofali się z rejonu Kałużówki w kierunku północno-wschodnim[17]. W walce na Kałużówce poległo jedenastu żołnierzy II Zgrupowania, natomiast sześciu zostało ciężko rannych. Niemcy stracili swojego dowódcę, około dwudziestu żołnierzy (w tym oficerów) i mieli około trzydziestu rannych [18].",
+    "„Jak zacięte i uporczywe były walki na polanie Kałużówka świadczy fakt, że na posunięcie się w głąb o około 1,5 km Niemcy potrzebowali przeszło 14 godzin (od godziny 5 rano do godziny 19.30 wieczorem). Mając kolosalną przewagę broni i ognia zmusili partyzantów do stałego cofania się, ale kontrnatarcia partyzantów już nie byli w stanie powstrzymać i zaprzestali dalszej walki” [19].",
+    "Pod wieczór dowódca całości zarządził zbiórkę i ewakuację Zgrupowania. „Klamra” planował przeprowadzenie przebicia przez linię frontu w rejonie Południka. Kłopotliwą okazała się kwestia transportu rannych, których umieszczono na prowizorycznych noszach. Przed nocą Zgrupowanie wycofało się z polany w kierunku północno-wschodnim w promieniu około kilometra od Kałużówki.",
+  ],
+} as const;
+
+export const epilog = {
+  epilogTitle: "Rozwiązanie oddziałów i tragiczny epilog",
+  epilog: [
+    "W dniu 25 sierpnia Zgrupowanie przeszło w rejon spalonej przez Niemców leśniczówki Władysława Klabachy [20]. Przejście przez front okazało się niemożliwe. Teren był już mocno obsadzony przez oddziały niemieckie, a na przedpolu Niemcy zastawili sidła w postaci pola minowego. Sytuacja oddziałów II Rejonu stawała się coraz bardziej dramatyczna. Żołnierze od kilku dni nie mieli w ustach żadnego pożywienia. Kontrowersyjna stała się kwestia związana z transportem rannych.",
+    "Po trzech dniach pobytu w jarze na Południku  dowództwo podjęło decyzję wymarszu w kierunku zachodnim, a więc w rejon gdzie uprzednio znajdowały się oddziały III Zgrupowania (rozwiązanego 23 sierpnia). Późnym wieczorem 28 sierpnia, gdy zapadł już całkowity zmrok Zgrupowanie wyruszyło w rejon lasów Gołęczyny [21].",
+    "Po dotarciu w rejon Gołęczyny, 29 sierpnia nastąpiło częściowe rozwiązanie oddziałów II Zgrupowania. Jako pierwsza odeszła kompania „Pęka” (bez plutonu dowódcy kompanii, który pozostał z pozostałymi oddziałami), część kompanii „Jasnego” oraz pluton Ludwika Wolaka „Orlika”.",
+    "Następnego dnia pozostałe oddziały przeszły w rejon Jaworza, gdzie zwolniono kolejną grupę żołnierzy. Rozwiązywane oddziały składały broń, którą owinięto w koce i zakopano w lesie z dokładnym oznaczeniem miejsca zakopania [22].",
+    "We wrześniu grupa, która pozostała z „Klamrą” liczyła około sześćdziesiąt osób. Oddział ten krążył po lasach celem uniknięcia zorganizowanej na niego obławy. Z tym oddziałem „Klamra” powrócił na Kałużówkę, a następnie z powrotem w rejon lasów Gołęczyna - Jaworze.",
+    "W dniu 12 września oddział uniknął zorganizowanej obławy niemieckiej przygotowanej przez Rzeszowską Dywizję Opóźniającą - Reichschofspeerdywizion i tego samego dnia w rejonie Jaworza „Klamra” rozwiązał oddział, nakazując żołnierzom aby na własną rękę podjęli próbę rozejścia się do domów [23].",
+    "Wśród żołnierzy, którzy pozostali w lesie nie wszyscy mieli szczęście przeżyć. Wielu zginęło z rąk niemieckich oddziałów „czyszczących” teren z pozostałych w lesie partyzantów, byli także tacy, którzy dostali się do niemieckiej niewoli i zostali osadzeni w obozach w Gross-Rosen i Ravensbrűck. Grupa około czterdziestu partyzantów wyszła z lasów dopiero w trzeciej dekadzie października. W grupie tej był m.in. kapelan Obwodu ZWZ - AK Dębica i II Zgrupowania, ks. Stanisław Bartosz „Mieczyk”. Bez dachu nad głową, oddział ten w okresie jesieni przetrwał posilając się w desperacji nawet zabłąkanym w lesie psem [24].",
+    "W okresie września i października zginęło ponad czterdziestu żołnierzy II Zgrupowania, zaś piętnastu dostało się do niemieckiej niewoli [25].",
+  ],
+} as const;
+
+export const footnotes = {
+  footnotesTitle: "Przypisy",
+  footnotes: [
+    "[1] Przygotowany był także czwarty, zapasowy rejon walki pod dowództwem ppor. Stanisława Lachmana „Zan”. Rejon ten stanowiła jedna kompania placówki Brzeziny wchodząca de facto w skład Zgrupowania II, dowodzonego przez Romana Kanię ps. „Rygiel”. IV Rejon pozostał przez cały okres „Burzy” w odwodzie pułku i wykonywał ograniczone działania. Por.: J. Niedziela, F. Sagan, Inspektorat Rejonowy ZWZ- AK Rzeszów, Rzeszów 2005, s. 200-201; Sam „Klamra” omawiając „Burzę” (Rys historyczny oddziałów AK w rejonie Dębicy- akcja „Burza”; spisany przez „Szyszkę”, Maszynopis w zbiorach autora), wymienia tylko trzy rejony (zgrupowania) walki.",
+    "[2] Leśnictwo Berdech położone było na skraju kompleksu leśnego, dokąd prowadziła kiepska leśna droga dochodząca do traktu leśnego łączącego wsie Mała - Niedźwiada (na drodze prowadzącej z Dębicy do Wielopola Skrzyńskiego).",
+    "[3] „Burzowe” dzieje drużyny dyspozycyjnej Komendy Obwodu, zostały opisane barwnym językiem w zbeletryzowanej powieści, przez dowódcę tej drużyny zwanej także „bojówką” - „Brutusa”. Zob.: W. Strumski, Dziesiątka w akcji, wyd. II, Dębica 2004.",
+    "[4] Meldunek sytuacyjny z 31 lipca 1944 r. dowódcy II Rejonu Walki Romana Kani „Rygla” 31 lipca 1944 r. [w:] G. Ostasz, A. Zagórski, Akcja „Burza” w Inspektoracie AK Rzeszów, Kraków 2003, s. 380-381.",
+    "[5] A. Stańko, Gdzie Karpat progi, wyd. III, Tuchów 1997, s. 270.",
+    "[6] W. Strumski, dz. cyt., s. 61-70.",
+    "[7] Z. Lazarowicz, „Klamra” - mój Ojciec, „Zeszyty Historyczne WiN-u” nr 4, 1993, s. 95.",
+    "[8] Władysław Strumski (Dziesiątka…, dz. cyt., s. 45) pisze: „Plutony strzeleckie kopią stanowiska bojowe, tak jakbyśmy mieli rozpocząć wojnę pozycyjną. Ponieważ wszystkie instrukcje traktujące o partyzantce kategorycznie zabraniają zakładanie warownych obozów, więc te poczynania dziwią mnie bardzo i w końcu idę do »Dyzmy« i pytam, kto wpadł na ten głupi pomysł. Odpowiedź »Dyzmy« była tak nieparlamentarna, że nie można jej powtórzyć drukiem. Dopiero »Szyszka« wyjaśnił mi, że rozkaz okopywania się wyszedł od kapitana »Rygla«, którego poparł porucznik »Cis« - de facto stary partyzant. Próżno »Dyzma«, urodzony i przygotowany wszechstronnie oficer partyzancki, przeciwstawiał się temu pomysłowi tłumacząc, że partyzantom nie wolno przyjmować walki pozycyjnej, jeżeli nie chcą się narażać na całkowite zniszczenia. Oddział partyzancki musi być ruchomy, musi zmieniać miejsce pobytu, być nieuchwytnym dla wroga. Oficerowie zawodowi wzięli górę nad nim, gdy ich sugestiom uległ »Klamra«”.",
+    "[9] Por.: A. Stańko, Gdzie Karpat…, dz. cyt., s. 279; Z. Lazarowicz, „Klamra”…, dz. cyt., „ZHW” nr 4, s. 89; Tenże, Akcja „Burza” w powiecie dębickim 1944-1994, msp., s. 12.",
+    "[10] A. Stańko, Gdzie Karpat…, dz. cyt., s. 289-290.",
+    "[11] Tamże, s. 290-291.",
+    "[12] Z. Lazarowicz, „Klamra”…, dz. cyt., „ZHW” nr 4, s. 99.",
+    "[13] A. Stańko, Gdzie Karpat…, dz. cyt., s. 295.",
+    "[14] Rys historyczny oddziałów AK…, dz. cyt., s. 14. Omawiając tę sytuację, „Klamra” (tamże, s. 14-15) pisze: „Ogień ten spowodował straty w oddziale w zabitych i rannych. Żołnierz konspiracyjny pod pierwszym ogniem artylerii zaczął się denerwować, a nawet kilkunastu zbiegło ze stanowisk. Co gorsze niektórzy dowódcy zamiast pozostać wówczas przy żołnierzu, zwłaszcza, że spodziewane było natarcie piechoty nieprzyjaciela, szukali miejsca w schronach i nie umieli ukryć swego zastraszenia. Zastępca dowódcy kompanii rej. por. służby stałej „Cis” oddalił się ze swojego odcinka na tyły oddziału zaraz po rozpoczęciu ostrzeliwania przez artylerię, w następnym dniu zbiegł”.",
+    "[15] A. Stańko, Gdzie Karpat…, dz. cyt., s. 296.",
+    "[16] Walki na Kałużówce wg relacji Cwena [w:] Zbiory autora - Kolekcja archiwalna Antoniego Stańki [dalej KS] 37-II, s. 5-7.",
+    "[17] Tamże, s. 7-8; Rys historyczny oddziałów AK…, dz. cyt., s. 15.",
+    "[18] Antoni Stańko (Gdzie Karpat…, dz. cyt., s. 302), posiłkując się tekstem sporządzonym przez „Szyszkę” w imieniu „Klamry” w 1944 roku, podaje: „straty nieprzyjaciela: zabitych 4 oficerów, 22 żołnierzy i 4 agentów Gestapo, rannych około 30 żołnierzy, wziętych do niewoli - 12 żołnierzy. Straty nieprzyjaciela spowodowane przez artylerię radziecką, której ogniem kierowali partyzanci: zabitych - 20, rannych około 30, zniszczono 5 dział, a uszkodzono 4 oraz uszkodzono bądź zniszczono kilkanaście samochodów ciężarowych”. Do tego opisu należy dodać, że nie jest to bilans samej bitwy na Kałużówce, albowiem podając te dane „Klamra” miał na myśli cały okres tzw. 2 fazy walk, a więc od zajęcia Dębicy i rozwiązania I i III Zgrupowania w dniu 23 sierpnia, do rozwiązania II Zgrupowania w ostatnim dniu sierpnia 1944 roku.",
+    "[19] Tamże, s. 301.",
+    "[20] W czasie porannego marszu (podczas pokonywania drogi Braciejowa- Południk) poległ od serii z karabinu maszynowego Andrzej Jabłonowski „Śmigło” oraz ciężko ranny na Kałużówce Tadeusz Ciszek „Jahura”.",
+    "[21] Z. Lazarowicz, „Klamra”…, dz. cyt., „ZHW” nr 4, s. 109-110",
+    "[22] Wg relacji Tadeusza Kubicy (Relacje naocznych świadków AK [w:] KS sygn. 121-IV, t. I, s. 133), Niemcy torturując małoletniego chłopca aresztowanego prawdopodobnie w rejonie lasów Gołęczyny na przełomie września i października 1944 roku, uzyskali informacje o zakopanej broni. Tadeusz Kubica wspomina: „Wiem że tego chłopca Niemcy wozili trzykrotnie do lasów Południka i prawdopodobnie odkopali całą naszą broń”. Zdanie Tadeusza Kubicy potwierdza Antoni Stańko (Gdzie Karpat…, dz. cyt., s. 331), który na podstawie relacji mieszkańców okolicznych miejscowości pisze, że „Niemcy wywieźli broń na chłopskiej furmance”.",
+    "[23] A. Stańko, Gdzie Karpat…, dz. cyt., s. 308; Zbrodnie niemieckie w powiecie dębickim [w:] KS sygn. 131-IV.",
+    "[24] Losy żołnierzy, którzy po rozwiązaniu oddziałów pozostali w lesie, szerzej opisuje A. Stańko (tamże, s. 309-340).",
+    "[25] Tamże, s. 339-340",
+  ],
+} as const;
