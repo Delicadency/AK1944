@@ -1,17 +1,8 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
-import { historyData } from "@/data/historyData";
+import { expansionSection } from "@/data/historyData";
 
-const {
-  expansionTitle,
-  expansion1,
-  expansion2,
-  expansion3,
-  expansion4,
-  expansion5,
-  expansion6,
-  expansion7,
-} = historyData.debica;
+const { expansionTitle, content } = expansionSection;
 
 export const ExpansionSection = () => (
   <section className="flex flex-col gap-6">
@@ -28,9 +19,9 @@ export const ExpansionSection = () => (
       />
       <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
         <div>
-          <p>{expansion1}</p>
-          <p>{expansion2}</p>
-          <p>{expansion3}</p>
+          {content[0].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
         <Image
           src="/images/history/debica/people.webp"
@@ -41,10 +32,9 @@ export const ExpansionSection = () => (
           className="m-auto desktop:hidden"
         />
         <div>
-          <p className="mb-6">{expansion4}</p>
-          <p>{expansion5}</p>
-          <p>{expansion6}</p>
-          <p>{expansion7}</p>
+          {content[1].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </div>
       <div className="hidden shrink-0 flex-col justify-center gap-6 desktop:flex">

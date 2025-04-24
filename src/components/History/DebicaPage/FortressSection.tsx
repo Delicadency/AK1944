@@ -1,8 +1,8 @@
-import { historyData } from "@/data/historyData";
+import { fortressSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { fortressTitle, fortress1, fortress2 } = historyData.debica;
+const { fortressTitle, fortress } = fortressSection;
 
 export const FortressSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
@@ -10,8 +10,9 @@ export const FortressSection = () => (
       <Heading variant="h4" color="green" contrast="yellow">
         {fortressTitle}
       </Heading>
-      <p>{fortress1}</p>
-      <p>{fortress2}</p>
+      {fortress.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
     </div>
     <Image
       src="/images/history/debica/map.webp"

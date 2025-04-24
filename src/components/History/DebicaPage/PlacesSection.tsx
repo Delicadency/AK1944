@@ -1,6 +1,6 @@
 "use client";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { historyData } from "@/data/historyData";
+import { placesSection } from "@/data/historyData";
 import { useState } from "react";
 import { IconChevronDown } from "@/icons/IconChevronDown";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
@@ -8,7 +8,7 @@ import { cn } from "@/utils";
 import Image from "next/image";
 
 export const PlacesSection = () => {
-  const { placesTitle, places, places1 } = historyData.debica;
+  const { placesTitle, places, paragraph } = placesSection;
 
   const isMobile = useMediaQuery("(max-width: 767px)");
 
@@ -74,7 +74,9 @@ export const PlacesSection = () => {
               </li>
             ))}
           </ul>
-          <p className="mt-6 text-lg contrast:text-yellowContrast">{places1}</p>
+          <p className="mt-6 text-lg contrast:text-yellowContrast">
+            {paragraph}
+          </p>
         </div>
         <div className="shrink-0">
           <Image

@@ -15,7 +15,7 @@ export const PartisanSection = () => (
         alt="Ostatnie pożegnanie jednego z poległych żołnierzy AK. Gumniska, 1944 r."
         width={2120}
         height={2950}
-        className="m-auto max-w-[450px]"
+        className="m-auto w-full max-w-[450px]"
       />
       <div className="flex flex-col gap-6">
         {content.map((paragraph, index) => (

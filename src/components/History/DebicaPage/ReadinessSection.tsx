@@ -1,7 +1,7 @@
 import { Heading } from "@/components/shared/Heading/Heading";
-import { historyData } from "@/data/historyData";
+import { readinessSection } from "@/data/historyData";
 
-const { readinessTitle, readiness1, readiness2 } = historyData.debica;
+const { readinessTitle, content } = readinessSection;
 
 export const ReadinessSection = () => (
   <section className="flex flex-col gap-6">
@@ -9,8 +9,9 @@ export const ReadinessSection = () => (
       {readinessTitle}
     </Heading>
     <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
-      <p>{readiness1}</p>
-      <p>{readiness2}</p>
+      {content.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
     </div>
   </section>
 );

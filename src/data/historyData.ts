@@ -3,14 +3,12 @@ import { Routes } from "@/routes";
 export const historyData = {
   history: {
     title: "Historia",
-    description1:
+    description: [
       "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
-    description2:
       "Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji „Burza”, symbolu odwagi i determinacji Armii Krajowej, a także odkryjesz historię członków Obwodu Dębica SZP-ZWZ-AK, walczących z honorem i poświęceniem w czasie największej próby.",
-    description3:
       "Znajdziesz tu także przejście do sekcji mieszczącej bibliografię oraz biogramy bohaterów, gdzie zgłębisz osobiste historie oddanych obrońców ojczyzny o wielkich sercach.",
-    description4:
       "Zapraszamy do podróży w czasie, ożywienia wspomnień i refleksji nad siłą ducha polskiego żołnierza i patrioty.",
+    ],
     literature: {
       title: "Literatura",
       content:
@@ -119,95 +117,6 @@ export const historyData = {
     finalClash5:
       "Sukcesy oddziałów i pododdziałów KBK, nie tylko obronne, ale i wielokrotnie zaczepne - niestety, z powodu ogólnej sytuacji wojennej niewykorzystane - to dumna karta wkładu żołnierzy 5. Pułku strzelców konnych w historię Września 1939 roku, karta pisana w rozpaczliwej obronie przez cały Naród Polski.",
     author: "Autor: Maciej Małozięć",
-  },
-  debica: {
-    title: "Obwód Dębica SZP-ZWZ-AK",
-    fortressTitle: "Obwód SZP-ZWZ-AK Dębica - Twierdza Polskiego Podziemia",
-    fortress1:
-      "Na tle Polskiego Podziemia szczególną rolę odegrał Obwod SZP - ZWZ - AK Dębica krypt. „Dziekania”, „Deser”, odnosząc sukcesy m.in. na płaszczyźnie sabotażowo-dywersyjnej oraz wywiadowczej. Kiedy trwały jeszcze walki polskich armii z Niemcami m.in. pod Kockiem, w twierdzy Modlin oraz w Warszawie, 27 września 1939 roku powstała w stolicy tajna organizacja pn. Służba Zwycięstwu Polski (SZP), na czele której stanął gen. Michał Karaszewicz-Tokarzewski. Jej zadaniem było „prowadzenie dalszej walki o utrzymanie niepodległości i całości granic”.",
-    fortress2:
-      "Pod koniec września i z początkiem października w rodzinne strony zaczęli powracać żołnierze polskich formacji walczących z Niemcami, którym udało się uniknąć niemieckiej bądź sowieckiej niewoli. To oni mieli stanowić elitę tworzącego się polskiego podziemia niepodległościowego.",
-    beginningsTitle:
-      "Kształtowanie się Obwodu ZWZ Dębica - Bohaterstwo i Determinacja",
-    beginnings1:
-      "Powstający Obwód ZWZ Dębica, w kwietniu 1940 roku, został dotknięty falą aresztowań. W wyniku rozpracowania struktur rzeszowskich ZWZ aresztowano członków Komendy Obwodu Dębica: Jana Artura Towarnickiego „Tura”, Mariana Skwiruta „Szpaka” oraz Piotra Klamuta „Pietrzaka”. Wszystkich przewieziono do Rzeszowa, gdzie przeszli ciężkie śledztwo nie ujawniając przed okupantem żadnych kontaktów oraz zachowując bohaterską postawę. W więzieniu zastrzelony został Towarnicki.",
-    beginnings2:
-      "Wobec zaistniałej sytuacji Komenda Okręgu, nie znając bliżej realiów lokalnych, poleciła organizację obwodu kpt. Dąbrowskiemu z Krakowa, mianując go następcą Towarnickiego na stanowisku komendanta. Z uwagi na brak kontaktów w lokalnym środowisku, bliżej nieznany w Dębicy kpt. Dąbrowski musiał zrezygnować z pełnienia funkcji. Wówczas z rekomendacji Mieczysława Rakoczego „Soplicy” komendantem został Antoni Cwen „Maszynowski”.",
-    placesTitle:
-      "Od 1941 do 1943 roku w ramach obwodu funkcjonowało 8 placówek:",
-    places: [
-      {
-        id: "1",
-        name: "Placówka Dębica",
-        description:
-          "(„Działo”, „62”), którą dowodzili kolejno: Adam Lazarowicz, ppor. Antoni Szlachta „Kornicz” oraz ppor. Leon Kloc „Jasny” (od grudnia 1941 roku);",
-      },
-      {
-        id: "2",
-        name: "Placówka Korzeniów",
-        description:
-          "(„Kartacz”, „68”), została zorganizowana w połowie 1941 roku. Jej komendantem był pchor. Franciszek Podraza „Nałęcz”;",
-      },
-      {
-        id: "3",
-        name: "Placówka Brzeziny",
-        description:
-          "(„Bomba”, „69”, „74”), której organizatorem i pierwszym komendantem był por. Ludwik Marszałek „Wilk”. W maju 1941 roku „Wilka” zastąpił Stanisław Lachman „Wielki”, „Zan”;",
-      },
-      {
-        id: "4",
-        name: "Placówka Sędziszów",
-        description:
-          "(„Sława”, „72”), którą wpierw dowodził ppor. Mieczysław Szczurowski „Bączek”, a od 1941 roku por. Mieczysław Stachowski „Sęp”, „Maciej”;",
-      },
-      {
-        id: "5",
-        name: "Placówka Ropczyce",
-        description:
-          " („Rakieta”, „76”), zorganizowana wpierw przez ppor. Wojciecha Passowicza „Karpa”, a następnie od 1940 roku dowodzona przez por. Władysława Grzegorskiego „Grzmota”;",
-      },
-      {
-        id: "6",
-        name: "Placówka Łączki Kucharskie ",
-        description:
-          "(„Ławka”, „Ładunek”, „78”), została zorganizowana w 1941 roku. Jej komendantem był pchor. Piotr Passowicz „Klon”, „Olcha”, a od stycznia 1943 roku pchor. Franciszek Szara „Pęk”;",
-      },
-      {
-        id: "7",
-        name: "Placówka Pilzno",
-        description:
-          "(„Pocisk”, „Piwonia”, „64”), której organizatorem i komendantem do lipca 1940 roku był sierż. Walenty Kula „Gater”. Po nim prowadzeniem placówki zajął się ppor. Zygmunt Pawlus „Turek”, a w lipcu 1942 roku zastąpił go ppor. Edmund Matecki „Lis”;",
-      },
-      {
-        id: "8",
-        name: "Placówka Zassów",
-        description:
-          "(„Zapalnik”, Zawilec”, „66”), została zorganizowana przez harcmistrza Pawła Barana „Wytrwał”, który kierował nią do grudnia 1941 roku. Po nim funkcję komendanta objął pchor. Alfred Łubieński „Iwo”.",
-      },
-    ],
-    places1:
-      "14 lutego 1942 roku rozkazem gen. Władysława Sikorskiego zniesiono nazwę ZWZ. Odtąd wszyscy żołnierze w czynnej służbie wojskowej stanowili Armię Krajową (AK).",
-    readinessTitle: "Siła i Gotowość do Walki",
-    readiness1:
-      "Obwód ZWZ-AK Dębica, funkcjonujący w granicach przedwojennego powiatu dębickiego, wyrósł do rangi najsilniejszego i najlepiej przygotowanego do akcji „Burza” spośród wszystkich obwodów w rzeszowskim Inspektoracie AK. W dowód uznania 1 stycznia 1944 roku otrzymał z rąk inspektora rejonowego Łukasza Cieplińskiego „Pługa” przechodni sztandar inspektoratu. Złożyło się na to wiele czynników. Najważniejsze z nich to: patriotyczna postawa mieszkańców regionu, właściwy dobór kadry na poszczególnych szczeblach organizacyjnych oraz zaangażowanie i zapał do pracy konspiracyjnej widoczny szczególnie wśród najmłodszych członków organizacji. W okresie bezpośrednio poprzedzającym „Burzę” obwód odebrał dwa zrzuty broni.",
-    readiness2:
-      "Pierwszy, w nocy z 31 maja na 1 czerwca 1944 roku na placówce „Raszka I” w rejonie Niedźwiady i Małej oraz drugi, w nocy z 30 na 31 lipca 1944 (już w czasie „Burzy”) na placówce „Papuga II” w rejonie Starej Jastrząbki. Jak podaje Antoni Stańko, ogółem w chwili przystąpienia do „Burzy” (licząc broń zrzutową z placówki „Papuga II”), obwód dysponował liczbą około 1500 sztuk broni, 4650 sztuk granatów oraz około 160 000 sztuk amunicji różnego kalibru. W 1943 roku przystąpiono do finalizacji akcji scaleniowej. W sierpniu 1943 r. do Armii Krajowej wstąpiły oddziały Narodowej Organizacji Wojskowej w liczbie blisko 150 osób. Jeden pluton włączony został do Obwodu AK Tarnów i brał udział w akcji „Burza” w I Batalionie 16. PP AK „Barbara” na ziemi tarnowskiej.",
-    expansionTitle:
-      "Rozbudowa struktur AK i przygotowania do akcji „Burza” w Obwodzie Dębica",
-    expansion1:
-      "W styczniu 1944 roku z AK scaliły się oddziały Batalionów Chłopskich. W ten sposób obwód wzmocnił się batalionem 500 żołnierzy BCh. Zgodnie z postanowieniami akcji scaleniowej Karol Chmiel „Grom” z Zagorzyc został zastępcą komendanta obwodu.",
-    expansion2:
-      "Ponadto, wiosną 1944 roku doszło do zmian personalnych w Inspektoracie Rzeszów, których następstwem były zmiany w Obwodzie Dębica. Pierwszym zastępcą inspektora Łukasza Cieplińskiego „Pługa” został dotychczasowy komendant obwodu Dębica Adam Lazarowicz „Klamra”. Na stanowisku komendanta w Dębicy zastąpił go Ludwik Marszałek „Zbroja”.",
-    expansion3:
-      "Lazarowicz obejmując funkcję w inspektoracie prosił, aby na czas powstania lub „Burzy” mógł powrócić do Gumnisk by dowodzić oddziałami obwodu „Deser”, co stało się faktem latem 1944 roku. W wyniku wspomnianej akcji scaleniowej obwodowi przybyło 6 nowych plutonów, 644 żołnierzy, w tym 12 oficerów rezerwy, 3 podchorążych, 52 podoficerów i 577 szeregowych.",
-    expansion4:
-      "Aby ułatwić dowodzenie na obszarze rozległego obwodu, komendant zdecydował się podzielić cały obszar początkowo na dwa, a następnie na trzy podobwody. W pierwszym rzucie utworzono Podobwód Sędziszów „70”, a w maju 1944 roku z terenu Podobwodu Dębica wyodrębniono Podobwód Pilzno „Płoza”. W rozkazie z 15 lutego 1944 roku „Pług” wnioskuje o utworzenie Podobwodu „Sława” w skład którego miałyby wejść placówki: Sędziszów, Ropczyce oraz „dwie placówki wielopolskie. Razem 22 plutony bojowe”. Podział na podobwody - rejony walki, znalazł praktyczne zastosowanie dopiero w okresie akcji „Burza”.",
-    expansion5:
-      "W skład I rejonu walki - I Zgrupowania dowodzonego przez por. Mieczysława Stachowskiego „Sępa” weszły placówki „Sława”, Strzała” i „Ropa”.",
-    expansion6:
-      "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
-    expansion7:
-      "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
   },
 } as const;
 
@@ -371,5 +280,104 @@ export const footnotes = {
     "[23] A. Stańko, Gdzie Karpat…, dz. cyt., s. 308; Zbrodnie niemieckie w powiecie dębickim [w:] KS sygn. 131-IV.",
     "[24] Losy żołnierzy, którzy po rozwiązaniu oddziałów pozostali w lesie, szerzej opisuje A. Stańko (tamże, s. 309-340).",
     "[25] Tamże, s. 339-340",
+  ],
+} as const;
+
+export const fortressSection = {
+  fortressTitle: "Obwód SZP-ZWZ-AK Dębica - Twierdza Polskiego Podziemia",
+  fortress: [
+    "Na tle Polskiego Podziemia szczególną rolę odegrał Obwod SZP - ZWZ - AK Dębica krypt. „Dziekania”, „Deser”, odnosząc sukcesy m.in. na płaszczyźnie sabotażowo-dywersyjnej oraz wywiadowczej. Kiedy trwały jeszcze walki polskich armii z Niemcami m.in. pod Kockiem, w twierdzy Modlin oraz w Warszawie, 27 września 1939 roku powstała w stolicy tajna organizacja pn. Służba Zwycięstwu Polski (SZP), na czele której stanął gen. Michał Karaszewicz-Tokarzewski. Jej zadaniem było „prowadzenie dalszej walki o utrzymanie niepodległości i całości granic”.",
+    "Pod koniec września i z początkiem października w rodzinne strony zaczęli powracać żołnierze polskich formacji walczących z Niemcami, którym udało się uniknąć niemieckiej bądź sowieckiej niewoli. To oni mieli stanowić elitę tworzącego się polskiego podziemia niepodległościowego.",
+  ],
+} as const;
+
+export const beginningsSection = {
+  beginningsTitle:
+    "Kształtowanie się Obwodu ZWZ Dębica - Bohaterstwo i Determinacja",
+  beginnings: [
+    "Powstający Obwód ZWZ Dębica, w kwietniu 1940 roku, został dotknięty falą aresztowań. W wyniku rozpracowania struktur rzeszowskich ZWZ aresztowano członków Komendy Obwodu Dębica: Jana Artura Towarnickiego „Tura”, Mariana Skwiruta „Szpaka” oraz Piotra Klamuta „Pietrzaka”. Wszystkich przewieziono do Rzeszowa, gdzie przeszli ciężkie śledztwo nie ujawniając przed okupantem żadnych kontaktów oraz zachowując bohaterską postawę. W więzieniu zastrzelony został Towarnicki.",
+    "Wobec zaistniałej sytuacji Komenda Okręgu, nie znając bliżej realiów lokalnych, poleciła organizację obwodu kpt. Dąbrowskiemu z Krakowa, mianując go następcą Towarnickiego na stanowisku komendanta. Z uwagi na brak kontaktów w lokalnym środowisku, bliżej nieznany w Dębicy kpt. Dąbrowski musiał zrezygnować z pełnienia funkcji. Wówczas z rekomendacji Mieczysława Rakoczego „Soplicy” komendantem został Antoni Cwen „Maszynowski”.",
+  ],
+} as const;
+
+export const placesSection = {
+  placesTitle: "Od 1941 do 1943 roku w ramach obwodu funkcjonowało 8 placówek:",
+  places: [
+    {
+      id: "1",
+      name: "Placówka Dębica",
+      description:
+        "(„Działo”, „62”), którą dowodzili kolejno: Adam Lazarowicz, ppor. Antoni Szlachta „Kornicz” oraz ppor. Leon Kloc „Jasny” (od grudnia 1941 roku);",
+    },
+    {
+      id: "2",
+      name: "Placówka Korzeniów",
+      description:
+        "(„Kartacz”, „68”), została zorganizowana w połowie 1941 roku. Jej komendantem był pchor. Franciszek Podraza „Nałęcz”;",
+    },
+    {
+      id: "3",
+      name: "Placówka Brzeziny",
+      description:
+        "(„Bomba”, „69”, „74”), której organizatorem i pierwszym komendantem był por. Ludwik Marszałek „Wilk”. W maju 1941 roku „Wilka” zastąpił Stanisław Lachman „Wielki”, „Zan”;",
+    },
+    {
+      id: "4",
+      name: "Placówka Sędziszów",
+      description:
+        "(„Sława”, „72”), którą wpierw dowodził ppor. Mieczysław Szczurowski „Bączek”, a od 1941 roku por. Mieczysław Stachowski „Sęp”, „Maciej”;",
+    },
+    {
+      id: "5",
+      name: "Placówka Ropczyce",
+      description:
+        " („Rakieta”, „76”), zorganizowana wpierw przez ppor. Wojciecha Passowicza „Karpa”, a następnie od 1940 roku dowodzona przez por. Władysława Grzegorskiego „Grzmota”;",
+    },
+    {
+      id: "6",
+      name: "Placówka Łączki Kucharskie ",
+      description:
+        "(„Ławka”, „Ładunek”, „78”), została zorganizowana w 1941 roku. Jej komendantem był pchor. Piotr Passowicz „Klon”, „Olcha”, a od stycznia 1943 roku pchor. Franciszek Szara „Pęk”;",
+    },
+    {
+      id: "7",
+      name: "Placówka Pilzno",
+      description:
+        "(„Pocisk”, „Piwonia”, „64”), której organizatorem i komendantem do lipca 1940 roku był sierż. Walenty Kula „Gater”. Po nim prowadzeniem placówki zajął się ppor. Zygmunt Pawlus „Turek”, a w lipcu 1942 roku zastąpił go ppor. Edmund Matecki „Lis”;",
+    },
+    {
+      id: "8",
+      name: "Placówka Zassów",
+      description:
+        "(„Zapalnik”, Zawilec”, „66”), została zorganizowana przez harcmistrza Pawła Barana „Wytrwał”, który kierował nią do grudnia 1941 roku. Po nim funkcję komendanta objął pchor. Alfred Łubieński „Iwo”.",
+    },
+  ],
+  paragraph:
+    "14 lutego 1942 roku rozkazem gen. Władysława Sikorskiego zniesiono nazwę ZWZ. Odtąd wszyscy żołnierze w czynnej służbie wojskowej stanowili Armię Krajową (AK).",
+} as const;
+
+export const readinessSection = {
+  readinessTitle: "Siła i Gotowość do Walki",
+  content: [
+    "Obwód ZWZ-AK Dębica, funkcjonujący w granicach przedwojennego powiatu dębickiego, wyrósł do rangi najsilniejszego i najlepiej przygotowanego do akcji „Burza” spośród wszystkich obwodów w rzeszowskim Inspektoracie AK. W dowód uznania 1 stycznia 1944 roku otrzymał z rąk inspektora rejonowego Łukasza Cieplińskiego „Pługa” przechodni sztandar inspektoratu. Złożyło się na to wiele czynników. Najważniejsze z nich to: patriotyczna postawa mieszkańców regionu, właściwy dobór kadry na poszczególnych szczeblach organizacyjnych oraz zaangażowanie i zapał do pracy konspiracyjnej widoczny szczególnie wśród najmłodszych członków organizacji. W okresie bezpośrednio poprzedzającym „Burzę” obwód odebrał dwa zrzuty broni.",
+    "Pierwszy, w nocy z 31 maja na 1 czerwca 1944 roku na placówce „Raszka I” w rejonie Niedźwiady i Małej oraz drugi, w nocy z 30 na 31 lipca 1944 (już w czasie „Burzy”) na placówce „Papuga II” w rejonie Starej Jastrząbki. Jak podaje Antoni Stańko, ogółem w chwili przystąpienia do „Burzy” (licząc broń zrzutową z placówki „Papuga II”), obwód dysponował liczbą około 1500 sztuk broni, 4650 sztuk granatów oraz około 160 000 sztuk amunicji różnego kalibru. W 1943 roku przystąpiono do finalizacji akcji scaleniowej. W sierpniu 1943 r. do Armii Krajowej wstąpiły oddziały Narodowej Organizacji Wojskowej w liczbie blisko 150 osób. Jeden pluton włączony został do Obwodu AK Tarnów i brał udział w akcji „Burza” w I Batalionie 16. PP AK „Barbara” na ziemi tarnowskiej.",
+  ],
+} as const;
+
+export const expansionSection = {
+  expansionTitle:
+    "Rozbudowa struktur AK i przygotowania do akcji „Burza” w Obwodzie Dębica",
+  content: [
+    [
+      "W styczniu 1944 roku z AK scaliły się oddziały Batalionów Chłopskich. W ten sposób obwód wzmocnił się batalionem 500 żołnierzy BCh. Zgodnie z postanowieniami akcji scaleniowej Karol Chmiel „Grom” z Zagorzyc został zastępcą komendanta obwodu.",
+      "Ponadto, wiosną 1944 roku doszło do zmian personalnych w Inspektoracie Rzeszów, których następstwem były zmiany w Obwodzie Dębica. Pierwszym zastępcą inspektora Łukasza Cieplińskiego „Pługa” został dotychczasowy komendant obwodu Dębica Adam Lazarowicz „Klamra”. Na stanowisku komendanta w Dębicy zastąpił go Ludwik Marszałek „Zbroja”.",
+      "Lazarowicz obejmując funkcję w inspektoracie prosił, aby na czas powstania lub „Burzy” mógł powrócić do Gumnisk by dowodzić oddziałami obwodu „Deser”, co stało się faktem latem 1944 roku. W wyniku wspomnianej akcji scaleniowej obwodowi przybyło 6 nowych plutonów, 644 żołnierzy, w tym 12 oficerów rezerwy, 3 podchorążych, 52 podoficerów i 577 szeregowych.",
+    ],
+    [
+      "Aby ułatwić dowodzenie na obszarze rozległego obwodu, komendant zdecydował się podzielić cały obszar początkowo na dwa, a następnie na trzy podobwody. W pierwszym rzucie utworzono Podobwód Sędziszów „70”, a w maju 1944 roku z terenu Podobwodu Dębica wyodrębniono Podobwód Pilzno „Płoza”. W rozkazie z 15 lutego 1944 roku „Pług” wnioskuje o utworzenie Podobwodu „Sława” w skład którego miałyby wejść placówki: Sędziszów, Ropczyce oraz „dwie placówki wielopolskie. Razem 22 plutony bojowe”. Podział na podobwody - rejony walki, znalazł praktyczne zastosowanie dopiero w okresie akcji „Burza”.",
+      "W skład I rejonu walki - I Zgrupowania dowodzonego przez por. Mieczysława Stachowskiego „Sępa” weszły placówki „Sława”, Strzała” i „Ropa”.",
+      "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
+      "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
+    ],
   ],
 } as const;

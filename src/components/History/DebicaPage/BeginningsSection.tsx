@@ -1,7 +1,7 @@
 import { Heading } from "@/components/shared/Heading/Heading";
-import { historyData } from "@/data/historyData";
+import { beginningsSection } from "@/data/historyData";
 
-const { beginningsTitle, beginnings1, beginnings2 } = historyData.debica;
+const { beginningsTitle, beginnings } = beginningsSection;
 
 export const BeginningsSection = () => (
   <section className="flex flex-col gap-6">
@@ -9,8 +9,9 @@ export const BeginningsSection = () => (
       {beginningsTitle}
     </Heading>
     <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
-      <p>{beginnings1}</p>
-      <p>{beginnings2}</p>
+      {beginnings.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
     </div>
   </section>
 );

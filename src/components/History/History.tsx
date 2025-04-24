@@ -4,8 +4,7 @@ import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import Container from "../shared/Container";
 import { Breadcrumbs } from "../shared/Breadcrumbs/Breadcrumbs";
 
-const { title, description1, description2, description3, description4 } =
-  historyData.history;
+const { title, description } = historyData.history;
 
 export const HistoryBanner = () => (
   <BackgroundImage
@@ -26,10 +25,9 @@ export const HistoryBanner = () => (
         {title}
       </Heading>
       <div className="max-w-[700px] font-sourceSans text-lg text-white desktop:flex desktop:flex-col desktop:gap-6">
-        <p>{description1}</p>
-        <p>{description2}</p>
-        <p className="mobile:mt-6 desktop:mt-0">{description3}</p>
-        <p>{description4}</p>
+        {description.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
       </div>
     </Container>
   </BackgroundImage>
