@@ -3,14 +3,11 @@ import { Heading } from "@/components/shared/Heading/Heading";
 import { placesSection } from "@/data/historyData";
 import { useState } from "react";
 import { IconChevronDown } from "@/icons/IconChevronDown";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { cn } from "@/utils";
 import Image from "next/image";
 
 export const PlacesSection = () => {
   const { placesTitle, places, paragraph } = placesSection;
-
-  const isMobile = useMediaQuery("(max-width: 767px)");
 
   const [openDescription, setOpenDescription] = useState<Set<string>>(
     new Set(),
@@ -40,8 +37,8 @@ export const PlacesSection = () => {
               <li key={place.id}>
                 <button
                   type="button"
-                  className="flex items-center gap-3 desktop:cursor-default desktop:items-baseline"
-                  onClick={() => isMobile && toggleDescription(place.id)}
+                  className="flex items-center gap-3 md:pointer-events-none desktop:items-baseline"
+                  onClick={() => toggleDescription(place.id)}
                   aria-label={`Rozwiń opis dla: ${place.name}`}
                   aria-expanded={
                     openDescription.has(place.id) ? "true" : "false"
@@ -51,7 +48,9 @@ export const PlacesSection = () => {
                   <div className="h-4 w-4 flex-shrink-0 rounded-full bg-redMain" />
                   <p className="text-start text-lg contrast:text-yellowContrast">
                     {place.name}
-                    {!isMobile && " " + place.description}
+                    <span className="hidden md:inline">
+                      {" " + place.description}
+                    </span>
                   </p>
                   <IconChevronDown
                     className={cn(
@@ -64,12 +63,10 @@ export const PlacesSection = () => {
                 <p
                   className={cn(
                     "mt-2 text-lg contrast:text-yellowContrast",
-                    isMobile && !openDescription.has(place.id)
-                      ? "hidden"
-                      : "block",
+                    !openDescription.has(place.id) ? "hidden" : "inline",
                   )}
                 >
-                  {isMobile && place.description}
+                  <span className="md:hidden">{place.description}</span>
                 </p>
               </li>
             ))}
