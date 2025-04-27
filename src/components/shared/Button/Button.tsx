@@ -1,64 +1,68 @@
-import clsx from "clsx";
+import type { ComponentProps, ElementType } from "react";
 import Link from "next/link";
-import ButtonIcon from "./ButtonIcon";
-import { IconName } from "@/types";
+import { cn } from "@/utils";
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "inversion" | "secondary";
-  size?: "medium" | "large";
-  iconName?: IconName;
+const buttonVariants = {
+  primary:
+    "bg-redMain text-backgroundMain hover:bg-[#7A0003] active:bg-redMain contrast:bg-black00 contrast:text-yellow",
+  inversion:
+    "contrast:bg-yellow contrast:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain hover:bg-[#F0EFEB] active:bg-backgroundMain",
+  secondary:
+    "contrast:bg-yellow contrast:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black hover:bg-[#BDD2BC] active:bg-greenLight",
+} as const;
+
+const buttonSizes = {
+  medium: "text-base",
+  large: "text-lg",
+} as const;
+
+const commonButtonStyles =
+  "flex size-fit items-center justify-center gap-2 rounded px-8 py-3 font-sourceSans shadow-inner transition-all disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30";
+
+export interface ButtonProps extends ComponentProps<"button"> {
+  variant?: keyof typeof buttonVariants;
+  size?: keyof typeof buttonSizes;
   label: string;
   href?: string;
   ariaDescription: string;
-  disabled?: boolean;
+  leadingIcon?: ElementType;
+  trailingIcon?: ElementType;
 }
 
 export const Button = ({
   variant = "primary",
   size = "medium",
-  iconName,
   disabled = false,
   label,
   href,
   ariaDescription,
   className,
+  leadingIcon: LeadingIcon,
+  trailingIcon: TrailingIcon,
   ...props
 }: ButtonProps) => {
-  const variants = {
-    primary:
-      "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
-    inversion:
-      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
-    secondary:
-      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
-  };
-  const sizes = {
-    medium: "text-16",
-    large: "text-lg",
-  };
-
-  const commonClassNames = clsx(
-    "flex h-fit w-fit items-center justify-center gap-[10px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all",
-    variants[variant],
-    sizes[size],
-    className,
-  );
-
   const renderContent = () => (
     <>
-      {iconName && <ButtonIcon name={iconName} className="text-inherit" />}
+      {LeadingIcon && (
+        <LeadingIcon aria-hidden className="size-4 text-inherit" />
+      )}
       {label}
+      {TrailingIcon && (
+        <TrailingIcon aria-hidden className="size-4 text-inherit" />
+      )}
     </>
+  );
+
+  const buttonClasses = cn(
+    commonButtonStyles,
+    buttonVariants[variant],
+    buttonSizes[size],
+    className,
   );
 
   if (href && !disabled) {
     return (
-      <Link
-        href={href}
-        aria-label={ariaDescription}
-        className={commonClassNames}
-      >
+      <Link href={href} aria-label={ariaDescription} className={buttonClasses}>
         {renderContent()}
       </Link>
     );
@@ -68,10 +72,7 @@ export const Button = ({
     <button
       aria-label={ariaDescription}
       disabled={disabled}
-      className={clsx(
-        commonClassNames,
-        disabled && "pointer-events-none cursor-not-allowed opacity-30",
-      )}
+      className={buttonClasses}
       {...props}
     >
       {renderContent()}
