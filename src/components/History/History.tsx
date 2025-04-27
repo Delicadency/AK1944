@@ -12,7 +12,8 @@ export const HistoryBanner = () => (
     src="/images/history/main/history_bg.webp"
     width="1920"
     height="912"
-    className="absolute z-0 w-full object-cover desktop:h-[912px] desktop:object-fill"
+    className="absolute z-0 h-full w-full object-cover desktop:h-[912px] desktop:object-fill"
+    priority
   >
     <Container className="pb-36 pt-5 desktop:h-[912px]" as="section">
       <Breadcrumbs />

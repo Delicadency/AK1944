@@ -12,7 +12,7 @@ interface Props {
   };
 }
 
-export const HistoryItem = ({ item }: { item: Props }) => (
+export const HistoryChapter = ({ item }: { item: Props }) => (
   <li className="gap-[130px] desktop:flex">
     <div className="relative">
       <Heading variant="h3" contrast="yellow" color="green">
@@ -34,7 +34,7 @@ export const HistoryItem = ({ item }: { item: Props }) => (
       alt={item.image.alt}
       width={500}
       height={1080}
-      className="m-auto mobile:max-h-[290px] desktop:h-[352px] desktop:max-h-[352px]"
+      className="m-auto h-[203px] w-[288px] mobile:max-h-[290px] md:h-[352px] md:max-h-[352px] md:w-[500px]"
     />
     <Button
       label="Zobacz więcej"

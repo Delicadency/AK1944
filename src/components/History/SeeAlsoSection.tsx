@@ -14,7 +14,7 @@ export const SeeAlsoSection = ({ children }: SeeAlsoSectionProps) => (
         alt=""
         width={160}
         height={160}
-        className="absolute -top-14 right-1 z-10 desktop:-right-20"
+        className="absolute -top-14 right-1 z-10 h-[160px] w-[160px] desktop:-right-20"
         aria-hidden="true"
       />
       <Heading variant="h4" color="white" contrast="black">

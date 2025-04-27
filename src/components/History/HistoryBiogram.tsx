@@ -12,7 +12,7 @@ const { title, content } = historyData.history.biograms;
 export const HistoryBiogramComponent = () => (
   <BackgroundImage
     alt=""
-    src="/images/history/main/paper_desktop_bg.webp"
+    src="/images/history/main/paper_bg.webp"
     width="768"
     height="948"
     className="absolute object-fill"
