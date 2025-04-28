@@ -9,7 +9,7 @@ export default function BoardPage() {
   return (
     <section className="flex flex-col justify-center">
       <Container as="section" className="pt-5 tablet:pb-[64px] desktop:py-10">
-        <Breadcrumbs />
+        <Breadcrumbs contrastVariant="black" />
         <ShowOnMobile className="flex justify-center py-10">
           <LogoAK className="h-[64px] w-[176px]" />
         </ShowOnMobile>
