@@ -1,45 +1,66 @@
-"use client";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import Container from "../shared/Container";
 import IconArrowVertical from "@/icons/IconArrowVertical";
 import IconArrowHorizontal from "@/icons/IconArrowHorizontal";
 import { Routes } from "@/routes";
 import Link from "next/link";
 
-export default function HistoryNav() {
-  const isMobile = useMediaQuery("(max-width: 767px)");
-  return (
-    <Container
-      as="nav"
-      className="flex justify-center desktop:flex-col desktop:items-center"
-    >
-      {isMobile ? (
-        <IconArrowVertical className="z-[-1] translate-x-10" />
-      ) : (
-        <IconArrowHorizontal className="z-[-1]" />
-      )}
-      <ul className="mb-[60px] flex -translate-y-10 flex-col gap-10 desktop:w-full desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
-        <li className="flex items-center gap-5 desktop:flex-col">
-          <div className="h-[50px] w-[50px] rounded-full bg-yellowVintage" />
-          <Link href={Routes.REGIMENT}>5.Pułk Strzelców Konnych</Link>
-        </li>
-        <li className="flex items-center gap-5 desktop:flex-col">
+export const HistoryNav = () => (
+  <Container
+    as="nav"
+    className="flex justify-center desktop:mt-20 desktop:flex-col desktop:items-center"
+  >
+    <IconArrowHorizontal className="z-[-10] hidden desktop:block" />
+    <IconArrowVertical className="z-[-1] translate-x-10 desktop:hidden" />
+    <ul className="flex flex-col gap-10 font-courier desktop:w-full desktop:-translate-x-10 desktop:-translate-y-10 desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
+      <li>
+        <Link
+          href={Routes.REGIMENT}
+          className="inline-flex items-center gap-5 desktop:-translate-y-11 desktop:flex-col"
+        >
+          <div className="h-[50px] w-[50px] rounded-full bg-yellowVintage desktop:hidden" />
+          <span>5.Pułk Strzelców Konnych</span>
+          <div className="hidden h-[50px] w-[50px] rounded-full bg-yellowVintage desktop:block" />
+        </Link>
+      </li>
+      <li>
+        <Link
+          href={Routes.OPERATION}
+          className="inline-flex items-center gap-5 desktop:flex-col"
+        >
           <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
-          <Link href={Routes.OPERATION}>Akcja „Burza”</Link>
-        </li>
-        <li className="flex items-center gap-5 desktop:flex-col">
+          <span>Akcja „Burza”</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          href={Routes.DEBICA_DISTRICT}
+          className="inline-flex items-center gap-5 desktop:-translate-y-11 desktop:flex-col"
+        >
+          <div className="h-[50px] w-[50px] rounded-full bg-greenC desktop:hidden" />
+          <span>Obwód Dębica SZP-ZWZ-AK</span>
+          <div className="hidden h-[50px] w-[50px] rounded-full bg-greenC desktop:block" />
+        </Link>
+      </li>
+      <li>
+        {" "}
+        <Link
+          href={Routes.LITERATURE}
+          className="inline-flex items-center gap-5 desktop:flex-col"
+        >
           <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
-          <Link href={Routes.DEBICA_DISTRICT}>Obwód Dębica SZP-ZWZ-AK</Link>
-        </li>
-        <li className="flex items-center gap-5 desktop:flex-col">
-          <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
-          <Link href={Routes.LITERATURE}>Literatura</Link>
-        </li>
-        <li className="flex items-center gap-5 desktop:flex-col">
-          <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
-          <Link href={Routes.BIOGRAMS}>Biogramy</Link>
-        </li>
-      </ul>
-    </Container>
-  );
-}
+          <span>Literatura</span>
+        </Link>
+      </li>
+      <li>
+        <Link
+          href={Routes.BIOGRAMS}
+          className="inline-flex items-center gap-5 desktop:-translate-y-11 desktop:flex-col"
+        >
+          <div className="h-[50px] w-[50px] rounded-full bg-greenC desktop:hidden" />
+          <span>Biogramy</span>
+          <div className="hidden h-[50px] w-[50px] rounded-full bg-greenC desktop:block" />
+        </Link>
+      </li>
+    </ul>
+  </Container>
+);
