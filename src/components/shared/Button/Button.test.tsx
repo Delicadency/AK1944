@@ -10,7 +10,7 @@ describe("Button component", () => {
     });
     expect(buttonElement).toBeInTheDocument();
     expect(buttonElement).toHaveClass(
-      "contrast:bg-black00 contrast:text-yellow bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
+      "contrast:bg-black00 contrast:text-yellowContrast bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
     );
     expect(buttonElement).toHaveClass("text-16");
     expect(buttonElement).not.toHaveClass(
@@ -42,7 +42,7 @@ describe("Button component", () => {
       name: /przycisk testowy/i,
     });
     expect(buttonElement).toHaveClass(
-      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
+      "contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
     );
     expect(buttonElement).toHaveClass("text-lg");
   });
@@ -64,7 +64,7 @@ describe("Button component", () => {
       "pointer-events-none cursor-not-allowed opacity-30",
     );
     expect(buttonElement).toHaveClass(
-      "contrast:bg-yellow contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
+      "contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
     );
     expect(buttonElement).not.toHaveAttribute("href", "/test");
   });
