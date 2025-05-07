@@ -29,13 +29,15 @@ export const HistoryChapter = ({ item }: { item: Props }) => (
         href={item.route}
       />
     </div>
-    <Image
-      src={item.image.path}
-      alt={item.image.alt}
-      width={500}
-      height={1080}
-      className="m-auto h-[203px] w-[288px] mobile:max-h-[290px] md:h-[352px] md:max-h-[352px] md:w-[500px]"
-    />
+    <div className="relative m-auto aspect-[1.41] h-[203px] w-[288px] mobile:max-h-[290px] md:h-[352px] md:max-h-[352px] md:w-[500px]">
+      <Image
+        src={item.image.path}
+        alt={item.image.alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 500px"
+        className="object-cover"
+      />
+    </div>
     <Button
       label="Zobacz więcej"
       ariaDescription="Zobacz Więcej"

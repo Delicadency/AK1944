@@ -26,13 +26,15 @@ export const HistoryBiogramComponent = () => (
         <p className="my-6 font-courier text-lg text-greenMain md:w-2/3">
           {content}
         </p>
-        <Image
-          src="/images/history/main/veteran.webp"
-          alt="Zdjęcie weterana Armii Krajowej"
-          width={290}
-          height={354}
-          className="m-auto w-[300px] max-w-[300px]"
-        ></Image>
+        <div className="relative m-auto aspect-[0.89] w-[300px] max-w-[300px]">
+          <Image
+            src="/images/history/main/veteran.webp"
+            alt="Zdjęcie weterana Armii Krajowej"
+            fill
+            sizes="(max-width: 768px) 100vw, 300px"
+            className="object-cover"
+          />
+        </div>
       </div>
       <Button
         label="Sprawdź"

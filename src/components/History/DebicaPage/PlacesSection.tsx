@@ -22,13 +22,13 @@ export const PlacesSection = () => {
             {paragraph}
           </p>
         </div>
-        <div className="shrink-0">
+        <div className="relative m-auto aspect-[0.74] w-full max-w-[500px] shrink-0">
           <Image
             src="/images/history/debica/kaluzowka.webp"
             alt="Ewakuacja rannych żołnierzy II Zgrupowania 5. Pułku Strzelców Konnych AK po bitwie na Kałużówce. Sierpień 1944 r."
-            width={500}
-            height={810}
-            className="m-auto"
+            fill
+            sizes="(max-width: 768px) 100vw, 500px"
+            className="object-cover"
           />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { HistoryBanner } from "@/components/History/History";
+import { HistoryBanner } from "@/components/History/HistoryBanner";
 import { HistoryNav } from "@/components/History/HistoryNav";
 import { HistoryChapters } from "@/components/History/HistoryChapters";
 import { LiteratureComponent } from "@/components/History/Literature";
