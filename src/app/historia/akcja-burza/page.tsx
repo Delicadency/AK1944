@@ -14,7 +14,10 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 export default function OperationBurzaPage() {
   return (
     <div className="contrast:bg-black">
-      <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+      <Container
+        as="article"
+        className="flex flex-col gap-10 pb-6 md:gap-14 md:pb-36"
+      >
         <Breadcrumbs />
         <Heading variant="h3" color="green" contrast="yellow" className="mb-6">
           Akcja „Burza”

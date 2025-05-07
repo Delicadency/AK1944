@@ -22,8 +22,8 @@ export const HistoryBiogramComponent = () => (
       <Heading variant="h3" contrast="black" color="green">
         {title}
       </Heading>
-      <div className="desktop:flex">
-        <p className="my-6 font-courier text-lg text-greenMain desktop:w-2/3">
+      <div className="md:flex">
+        <p className="my-6 font-courier text-lg text-greenMain md:w-2/3">
           {content}
         </p>
         <Image
