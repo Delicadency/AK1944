@@ -13,12 +13,12 @@ export const FootnotesSection = () => (
     >
       {footnotesTitle}
     </Heading>
-    <ul className="flex flex-col gap-4 font-courier">
+    <ol className="flex flex-col gap-4 font-courier">
       {notes.map((footnote, index) => (
         <li key={index}>
           <p>{footnote}</p>
         </li>
       ))}
-    </ul>
+    </ol>
   </section>
 );

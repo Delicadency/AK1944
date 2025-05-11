@@ -23,7 +23,7 @@ export const CracowBrigadeSection = () => {
             alt="Musztra paradna podczas święta 5. Pułku Strzelców Konnych w Dębicy w 1938 r."
             width={604}
             height={428}
-            className="m-auto tablet:hidden"
+            className="m-auto desktop:hidden"
           />
           <p>{cracowBrigade2}</p>
         </div>

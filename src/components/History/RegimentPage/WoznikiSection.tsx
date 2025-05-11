@@ -66,14 +66,16 @@ export const WoznikiSection = () => {
           <p>{wozniki8}</p>
           <p>{wozniki9}</p>
         </div>
-        <Image
-          src="/images/history/regiment/cheers.webp"
-          alt="„Strzemienny” na pożegnanie ppłk. Bronisława Mokrzyckiego. Od lewej: ppłk dypl. Bronisław Mokrzycki, rtm. Mieczysław Chwaliński, rtm. Aleksander Jodkiewicz, rtm. Jarosław Chodań, płk Ignacy Kowalczewski, rtm. Antoni Dębski, p. Mokrzycka, por. Tadeusz Gawrzycki, p. Jodkiewiczowi, p. Piotrowska, p. Łopuska i p. Dębska. Dębica, 1937 r."
-          width={604}
-          height={430}
-          className="m-auto desktop:hidden"
-        />
-        <p className="desktop:w-1/2">{wozniki10}</p>
+        <div className="flex flex-col gap-6 desktop:w-1/2">
+          <Image
+            src="/images/history/regiment/cheers.webp"
+            alt="„Strzemienny” na pożegnanie ppłk. Bronisława Mokrzyckiego. Od lewej: ppłk dypl. Bronisław Mokrzycki, rtm. Mieczysław Chwaliński, rtm. Aleksander Jodkiewicz, rtm. Jarosław Chodań, płk Ignacy Kowalczewski, rtm. Antoni Dębski, p. Mokrzycka, por. Tadeusz Gawrzycki, p. Jodkiewiczowi, p. Piotrowska, p. Łopuska i p. Dębska. Dębica, 1937 r."
+            width={604}
+            height={430}
+            className="m-auto desktop:hidden"
+          />
+          <p>{wozniki10}</p>
+        </div>
       </div>
     </section>
   );

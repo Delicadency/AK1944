@@ -24,7 +24,7 @@ export const RegimentSection = () => {
           alt="Musztra paradna podczas święta 5. Pułku Strzelców Konnych w Dębicy w 1938 r."
           width={604}
           height={428}
-          className="mobile:hidden tablet:block"
+          className="mobile:hidden desktop:block"
         />
       </div>
     </section>
