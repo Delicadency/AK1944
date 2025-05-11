@@ -1,68 +1,65 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
-import { historyData } from "@/data/historyData";
+import { expansionSection } from "@/data/historyData";
 
-export const ExpansionSection = () => {
-  const {
-    expansionTitle,
-    expansion1,
-    expansion2,
-    expansion3,
-    expansion4,
-    expansion5,
-    expansion6,
-    expansion7,
-  } = historyData.debica;
+const { expansionTitle, content } = expansionSection;
 
-  return (
-    <section className="flex flex-col gap-6">
-      <Heading variant="h4" color="green" contrast="yellow">
-        {expansionTitle}
-      </Heading>
-      <div className="flex flex-col gap-6 desktop:flex-row">
+export const ExpansionSection = () => (
+  <section className="flex flex-col gap-6">
+    <Heading variant="h4" color="green" contrast="yellow">
+      {expansionTitle}
+    </Heading>
+    <div className="flex flex-col gap-6 desktop:flex-row">
+      <div className="relative m-auto aspect-[1.6] w-full max-w-[500px] desktop:hidden">
         <Image
           src="/images/history/debica/school.webp"
           alt="Szkoła w Gumniskach - siedziba komendy Obwodu ZWZ-AK Dębica."
-          width={500}
-          height={310}
-          className="m-auto desktop:hidden"
+          fill
+          sizes="(max-width: 768px) 100vw, 500px"
+          className="object-cover"
         />
-        <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
-          <div>
-            <p>{expansion1}</p>
-            <p>{expansion2}</p>
-            <p>{expansion3}</p>
-          </div>
+      </div>
+      <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+        <div>
+          {content[0].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+        <div className="relative m-auto aspect-[1.6] w-full max-w-[500px] desktop:hidden">
           <Image
             src="/images/history/debica/people.webp"
             alt="Uśmiechnięci mężczyźni"
-            width={500}
-            height={310}
-            sizes="(max-width: 767px) 200px"
-            className="m-auto desktop:hidden"
+            fill
+            sizes="(max-width: 768px) 100vw, 500px"
+            className="object-cover"
           />
-          <div>
-            <p className="mb-6">{expansion4}</p>
-            <p>{expansion5}</p>
-            <p>{expansion6}</p>
-            <p>{expansion7}</p>
-          </div>
         </div>
-        <div className="hidden shrink-0 flex-col justify-center gap-6 desktop:flex">
+        <div>
+          {content[1].map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+      <div className="hidden w-full max-w-[500px] shrink-0 flex-col justify-center gap-6 desktop:flex">
+        <div className="relative m-auto aspect-[1.6] w-full">
           <Image
             src="/images/history/debica/school.webp"
             alt="Szkoła w Gumniskach - siedziba komendy Obwodu ZWZ-AK Dębica."
-            width={500}
-            height={310}
+            fill
+            sizes="(max-width: 768px) 100vw, 500px"
+            className="object-cover"
           />
+        </div>
+        <div className="relative m-auto aspect-[1.6] w-full">
           <Image
             src="/images/history/debica/people.webp"
             alt="Uśmiechnięci mężczyźni"
-            width={500}
-            height={310}
+            fill
+            sizes="(max-width: 768px) 100vw, 500px"
+            className="object-cover"
           />
         </div>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
