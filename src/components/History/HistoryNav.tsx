@@ -24,15 +24,6 @@ export const HistoryNav = () => (
       </li>
       <li>
         <Link
-          href={Routes.OPERATION}
-          className="inline-flex items-center gap-5 desktop:flex-col"
-        >
-          <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
-          <span>Akcja „Burza”</span>
-        </Link>
-      </li>
-      <li>
-        <Link
           href={Routes.DEBICA_DISTRICT}
           className="inline-flex items-center gap-5 desktop:-translate-y-11 desktop:flex-col"
         >
@@ -42,7 +33,15 @@ export const HistoryNav = () => (
         </Link>
       </li>
       <li>
-        {" "}
+        <Link
+          href={Routes.OPERATION}
+          className="inline-flex items-center gap-5 desktop:flex-col"
+        >
+          <div className="h-[50px] w-[50px] rounded-full bg-greenC" />
+          <span>Akcja „Burza”</span>
+        </Link>
+      </li>
+      <li>
         <Link
           href={Routes.LITERATURE}
           className="inline-flex items-center gap-5 desktop:flex-col"

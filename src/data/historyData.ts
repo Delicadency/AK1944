@@ -174,17 +174,6 @@ export const chapters = [
   },
 
   {
-    title: "Akcja „Burza”",
-    description:
-      "To opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przenieś się w czasy dramatycznych walk w rejonie Dębicy, poznaj bohaterów w nierównej walce z okupantem i dowiedz się, jak przebiegała bitwa na polanie Kałużówka. Zobacz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacją. Przed Tobą świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia.",
-    image: {
-      path: "/images/history/main/burza.webp",
-      alt: "Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r.",
-    },
-    route: Routes.OPERATION,
-  },
-
-  {
     title: "Obwód Dębica SZP-ZWZ-AK",
     description:
       "Lokalne struktury konspiracyjne odegrały kluczową rolę w walce z okupantem na ziemi dębickiej. Poznaj rozwój organizacji od początków Służby Zwycięstwu Polski, przez Związek Walki Zbrojnej, aż po przekształcenie jej w Armię Krajową. Sprawdź, jak wyglądała działalność wywiadowcza, dywersyjna i szkoleniowa, a także jak Obwód przygotowywał się do operacji „Burza”. Żołnierze AK Dębica, mimo ogromnego ryzyka, stawili opór okupantom.",
@@ -193,6 +182,17 @@ export const chapters = [
       alt: "Szkoła w Gumniskach - siedziba komendy Obwodu ZWZ-AK Dębica.",
     },
     route: Routes.DEBICA_DISTRICT,
+  },
+
+  {
+    title: "Akcja „Burza”",
+    description:
+      "To opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przenieś się w czasy dramatycznych walk w rejonie Dębicy, poznaj bohaterów w nierównej walce z okupantem i dowiedz się, jak przebiegała bitwa na polanie Kałużówka. Zobacz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacją. Przed Tobą świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia.",
+    image: {
+      path: "/images/history/main/burza.webp",
+      alt: "Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r.",
+    },
+    route: Routes.OPERATION,
   },
 ] as const;
 
