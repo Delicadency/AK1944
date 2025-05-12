@@ -51,14 +51,14 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
 
       <Modal isOpen={activeIndex !== null} onClose={closeModal}>
         {activeIndex !== null && (
-          <div className="max-w-[600px]">
+          <div className="desktop:min-h-[400px] min-h-[500px] max-w-[600px]">
             <Heading variant="h3" color="white" contrast="yellow">
               {points[activeIndex].point}
             </Heading>
             <p className="pb-6 pt-4 text-white">
               {points[activeIndex].description}
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between absolute bottom-10 left-10 right-10 pt-5">
               <Button
                 label="Poprzedni punkt"
                 ariaDescription="Zobacz poprzedni punkt szlaku"

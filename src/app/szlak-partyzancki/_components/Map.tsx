@@ -7,7 +7,7 @@ type MapProps = {
 
 export const Map = ({ map }: MapProps) => {
   return (
-    <section className="pb-12 pt-6 desktop:pb-20 desktop:pt-10">
+    <section className="pb-12 pt-6 desktop:pb-20 desktop:pt-10 ">
       <iframe
         className="h-[50vh] w-full desktop:h-[816px]"
         src={map.iframeUrl}

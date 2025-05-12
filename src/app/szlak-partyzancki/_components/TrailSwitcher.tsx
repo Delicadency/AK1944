@@ -20,7 +20,7 @@ export const TrailSwitcher = ({ active, onChange }: TrailSwitcherProps) => {
             key={slug}
             label={trail.displayName}
             ariaDescription={`Zmień na ${trail.displayName}`}
-            variant="secondary"
+            variant={isActive ? "primaryBlue" : "secondary"}
             size={isActive ? "large" : "medium"}
             onClick={() => onChange(typedSlug)}
             disabled={!trail.enabled}
