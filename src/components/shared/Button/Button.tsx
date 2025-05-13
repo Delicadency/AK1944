@@ -37,22 +37,10 @@ export const Button = ({
   href,
   ariaDescription,
   className,
-  leadingIcon: LeadingIcon,
-  trailingIcon: TrailingIcon,
+  leadingIcon,
+  trailingIcon,
   ...props
 }: ButtonProps) => {
-  const renderContent = () => (
-    <>
-      {LeadingIcon && (
-        <LeadingIcon aria-hidden className="size-4 text-inherit" />
-      )}
-      {label}
-      {TrailingIcon && (
-        <TrailingIcon aria-hidden className="size-4 text-inherit" />
-      )}
-    </>
-  );
-
   const buttonClasses = cn(
     commonButtonStyles,
     buttonVariants[variant],
@@ -63,7 +51,11 @@ export const Button = ({
   if (href && !disabled) {
     return (
       <Link href={href} aria-label={ariaDescription} className={buttonClasses}>
-        {renderContent()}
+        <ButtonContent
+          label={label}
+          leadingIcon={leadingIcon}
+          trailingIcon={trailingIcon}
+        />
       </Link>
     );
   }
@@ -75,7 +67,35 @@ export const Button = ({
       className={buttonClasses}
       {...props}
     >
-      {renderContent()}
+      <ButtonContent
+        label={label}
+        leadingIcon={leadingIcon}
+        trailingIcon={trailingIcon}
+      />
     </button>
+  );
+};
+
+interface ButtonContentProps {
+  label: string;
+  leadingIcon?: ElementType;
+  trailingIcon?: ElementType;
+}
+
+const ButtonContent = ({
+  label,
+  leadingIcon: LeadingIcon,
+  trailingIcon: TrailingIcon,
+}: ButtonContentProps) => {
+  return (
+    <>
+      {LeadingIcon && (
+        <LeadingIcon aria-hidden className="size-4 text-inherit" />
+      )}
+      {label}
+      {TrailingIcon && (
+        <TrailingIcon aria-hidden className="size-4 text-inherit" />
+      )}
+    </>
   );
 };
