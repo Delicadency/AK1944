@@ -10,6 +10,12 @@ export const formatDate = (isoDate: string): string =>
     year: "numeric",
   }).format(new Date(isoDate));
 
+export const formatPrice = (price: number) =>
+  new Intl.NumberFormat("pl-PL", {
+    style: "currency",
+    currency: "PLN",
+  }).format(price);
+
 export const cleanHTML = (html: string): string =>
   html.replace(/<[^>]+>/g, "").trim();
 

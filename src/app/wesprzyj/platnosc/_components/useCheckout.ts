@@ -2,6 +2,19 @@ import { type FormEvent, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useElements, useStripe } from "@stripe/react-stripe-js";
 
+const PaymentStatus = {
+  SUCCEEDED:
+    "Płatność została zrealizowana pomyślnie. Dziękujemy za Twoje wsparcie!",
+  PROCESSING:
+    "Trwa przetwarzanie Twojej płatności. Prosimy o chwilę cierpliwości.",
+  REQUIRES_PAYMENT_METHOD:
+    "Płatność nie powiodła się. Prosimy o sprawdzenie danych karty i ponowną próbę.",
+  CARD_ERROR:
+    "Wystąpił błąd podczas weryfikacji danych płatności. Prosimy sprawdzić wprowadzone informacje.",
+  UNKNOWN_ERROR:
+    "Wystąpił nieoczekiwany błąd podczas przetwarzania płatności. Prosimy spróbować ponownie lub skontaktować się z nami.",
+} as const;
+
 export const useCheckout = () => {
   const stripe = useStripe();
   const elements = useElements();
@@ -25,24 +38,16 @@ export const useCheckout = () => {
       .then(({ paymentIntent }) => {
         switch (paymentIntent?.status) {
           case "succeeded":
-            setMessage(
-              "Płatność została zrealizowana pomyślnie. Dziękujemy za Twoje wsparcie!",
-            );
+            setMessage(PaymentStatus.SUCCEEDED);
             break;
           case "processing":
-            setMessage(
-              "Trwa przetwarzanie Twojej płatności. Prosimy o chwilę cierpliwości.",
-            );
+            setMessage(PaymentStatus.PROCESSING);
             break;
           case "requires_payment_method":
-            setMessage(
-              "Płatność nie powiodła się. Prosimy o sprawdzenie danych karty i ponowną próbę.",
-            );
+            setMessage(PaymentStatus.REQUIRES_PAYMENT_METHOD);
             break;
           default:
-            setMessage(
-              "Wystąpił nieoczekiwany błąd podczas przetwarzania płatności. Prosimy spróbować ponownie.",
-            );
+            setMessage(PaymentStatus.UNKNOWN_ERROR);
             break;
         }
       })
@@ -63,16 +68,12 @@ export const useCheckout = () => {
       },
     });
 
-    if (error.type === "card_error" || error.type === "validation_error") {
-      setMessage(
-        error.message ??
-          "Wystąpił błąd podczas weryfikacji danych płatności. Prosimy sprawdzić wprowadzone informacje.",
-      );
-    } else {
-      setMessage(
-        "Wystąpił nieoczekiwany błąd podczas przetwarzania płatności. Prosimy spróbować ponownie lub skontaktować się z nami.",
-      );
-    }
+    const errorMessage =
+      error.type === "card_error" || error.type === "validation_error"
+        ? (error.message ?? PaymentStatus.CARD_ERROR)
+        : PaymentStatus.UNKNOWN_ERROR;
+
+    setMessage(errorMessage);
 
     setIsLoading(false);
   };

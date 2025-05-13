@@ -14,23 +14,6 @@ export interface Image {
   title: string;
 }
 
-export type IconName =
-  | "award"
-  | "check"
-  | "coffee"
-  | "compass"
-  | "file"
-  | "gift"
-  | "help"
-  | "info"
-  | "pin"
-  | "send"
-  | "target";
-
-export interface IconProps extends DefaultIconProps {
-  name: IconName;
-}
-
 export type DefaultIconProps = ComponentProps<"svg">;
 
 export interface SubmenuItem {

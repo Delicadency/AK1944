@@ -31,7 +31,10 @@ export const donateAction = async (
   formData: FormData,
 ): Promise<ActionState> => {
   if (!(formData instanceof FormData)) {
-    throw new Error("Nieprawidłowe dane formularza");
+    return {
+      status: "error",
+      message: "Nieprawidłowe dane formularza",
+    };
   }
 
   const data = Object.fromEntries(formData.entries());
