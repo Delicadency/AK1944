@@ -2,12 +2,26 @@ import { render, screen } from "@testing-library/react";
 import { FormField } from ".";
 
 describe("FormField", () => {
-  it("renders input with label", () => {
+  it("renders input with name as label when label prop is not provided", () => {
     render(<FormField name="email" />);
 
     const input = screen.getByRole("textbox", { name: /email/i });
+    const label = screen.getByText("email");
+
     expect(input).toBeInTheDocument();
     expect(screen.getByLabelText(/email/i)).toBe(input);
+    expect(label).toBeInTheDocument();
+  });
+
+  it("renders input with custom label when label prop is provided", () => {
+    render(<FormField name="email" label="Email Address" />);
+
+    const input = screen.getByRole("textbox", { name: /Email Address/i });
+    const label = screen.getByText("Email Address");
+
+    expect(input).toBeInTheDocument();
+    expect(screen.getByLabelText(/Email Address/i)).toBe(input);
+    expect(label).toBeInTheDocument();
   });
 
   it("displays error message when issues are provided", () => {
