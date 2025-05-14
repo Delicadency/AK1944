@@ -13,22 +13,22 @@ const Hero = () => {
         height={1080}
         priority
       >
-        <Container className="flex h-full flex-col items-center gap-6 pb-5 pt-20 tablet:pt-32 desktop:pt-28">
+        <Container className="mx-auto flex h-full flex-col items-center justify-center gap-6 pb-5 pt-20 text-center text-white tablet:pt-32 desktop:pt-28">
           <Heading
             contrast="yellow"
             color="white"
             underline
-            className="mb-5 text-center text-white tablet:text-[40px]"
+            className="mb-5 w-[70%] mobile:text-24 tablet:text-32 desktop:text-40"
           >
-            Armia Krajowa Dębica
+            Światowy Związek Żołnierzy Armii Krajowej
           </Heading>
           <Heading
             variant="h4"
             contrast="yellow"
             color="white"
-            className="text-center text-white tablet:text-32"
+            className="mx-auto w-[65%] mobile:text-20 tablet:text-28 desktop:text-32"
           >
-            Pamięć o Nas nie zginie
+            Środowisko 5. Pułku Strzelców Konnych Armii Krajowej w Dębicy
           </Heading>
           <LogoAK className="mt-auto h-[32px] w-[88px] opacity-[33%]" />
         </Container>
