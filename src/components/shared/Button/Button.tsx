@@ -86,16 +86,12 @@ const ButtonContent = ({
   label,
   leadingIcon: LeadingIcon,
   trailingIcon: TrailingIcon,
-}: ButtonContentProps) => {
-  return (
-    <>
-      {LeadingIcon && (
-        <LeadingIcon aria-hidden className="size-4 text-inherit" />
-      )}
-      {label}
-      {TrailingIcon && (
-        <TrailingIcon aria-hidden className="size-4 text-inherit" />
-      )}
-    </>
-  );
-};
+}: ButtonContentProps) => (
+  <>
+    {LeadingIcon && <LeadingIcon aria-hidden className="size-4 text-inherit" />}
+    {label}
+    {TrailingIcon && (
+      <TrailingIcon aria-hidden className="size-4 text-inherit" />
+    )}
+  </>
+);

@@ -1,13 +1,9 @@
 import { FormField } from "@/components/shared/FormField";
 import { AmountButton } from "./AmountButton";
-import {
-  PREDEFINED_AMOUNTS,
-  type DonationAmount,
-  type PredefinedAmount,
-} from "./types";
+import { PREDEFINED_AMOUNTS, type PredefinedAmount } from "./types";
 
 interface Props {
-  amount: DonationAmount;
+  amount: number;
   customAmount: boolean;
   onPredefinedAmountClick: (value: PredefinedAmount) => void;
   onCustomAmountClick: () => void;

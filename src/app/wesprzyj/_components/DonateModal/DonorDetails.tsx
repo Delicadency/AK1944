@@ -1,10 +1,10 @@
 import { FormField } from "@/components/shared/FormField";
 
+type FieldName = "signature" | "email";
+type FieldErrors = Record<FieldName, string[]>;
+
 interface Props {
-  issues?: {
-    signature?: string[];
-    email?: string[];
-  };
+  issues?: Partial<FieldErrors>;
 }
 
 export const DonorDetails = ({ issues }: Props) => (

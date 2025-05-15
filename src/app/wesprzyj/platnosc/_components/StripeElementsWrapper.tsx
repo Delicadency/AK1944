@@ -89,15 +89,11 @@ interface Props {
   children: ReactNode;
 }
 
-export const StripeElementsWrapper = ({ clientSecret, children }: Props) => {
-  const options: StripeElementsOptions = {
-    clientSecret,
-    appearance: STRIPE_APPEARANCE,
-  };
-
-  return (
-    <Elements stripe={getStripePromise()} options={options}>
-      {children}
-    </Elements>
-  );
-};
+export const StripeElementsWrapper = ({ clientSecret, children }: Props) => (
+  <Elements
+    stripe={getStripePromise()}
+    options={{ clientSecret, appearance: STRIPE_APPEARANCE }}
+  >
+    {children}
+  </Elements>
+);

@@ -19,18 +19,14 @@ describe("initializeStripe", () => {
     jest.clearAllMocks();
   });
 
-  it("throws an error when secret key is undefined", () => {
-    expect(() => initializeStripe(undefined)).toThrow(
-      "Stripe secret key is not set",
-    );
-  });
-
-  it("throws an error when secret key is empty", () => {
-    expect(() => initializeStripe("")).toThrow("Stripe secret key is not set");
-    expect(() => initializeStripe("   ")).toThrow(
-      "Stripe secret key is not set",
-    );
-  });
+  test.each([undefined, "", "   "])(
+    "throws an error when secret key is missing",
+    (secretKey) => {
+      expect(() => initializeStripe(secretKey)).toThrow(
+        "Stripe secret key is not set",
+      );
+    },
+  );
 
   it("initializes Stripe with correct configuration", () => {
     const mockSecretKey = "mock_secret_key";

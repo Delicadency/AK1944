@@ -6,15 +6,11 @@ import { AmountSelector } from "./AmountSelector";
 import { DonorDetails } from "./DonorDetails";
 import { SubmitButton } from "./SubmitButton";
 import { donateAction } from "./donateAction";
-import {
-  PREDEFINED_AMOUNTS,
-  type DonationAmount,
-  type PredefinedAmount,
-} from "./types";
+import { PREDEFINED_AMOUNTS, type PredefinedAmount } from "./types";
 
 export const DonateForm = () => {
   const [customAmount, setCustomAmount] = useState(false);
-  const [amount, setAmount] = useState<DonationAmount>(PREDEFINED_AMOUNTS[0]);
+  const [amount, setAmount] = useState<number>(PREDEFINED_AMOUNTS[0]);
   const [state, formAction, isPending] = useActionState(
     donateAction.bind(null, amount),
     {
