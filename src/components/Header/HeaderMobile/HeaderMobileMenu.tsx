@@ -50,7 +50,7 @@ export const HeaderMobileMenu = ({ onClose }: Props) => (
           ariaDescription="Kliknij, aby wesprzeć fundację"
           href={Routes.SUPPORT}
           className="self-center"
-          variant="primaryBlue"
+          variant="primary"
         />
         <ContrastSwitcher />
       </div>

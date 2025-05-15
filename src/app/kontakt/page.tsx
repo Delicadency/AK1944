@@ -10,7 +10,6 @@ import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundI
 export default function ContactPage() {
   return (
     <div className="relative isolate min-h-screen overflow-hidden">
-
       <div className="absolute inset-y-0 right-0 hidden h-full w-[40vw] desktop:block">
         <BackgroundImage
           src="/images/contact-bg.png"
@@ -20,7 +19,6 @@ export default function ContactPage() {
           fill
         />
       </div>
-
 
       <div className="pointer-events-none absolute inset-0 hidden justify-end tablet:flex desktop:hidden">
         <div className="relative h-full w-[80vw] overflow-hidden">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";

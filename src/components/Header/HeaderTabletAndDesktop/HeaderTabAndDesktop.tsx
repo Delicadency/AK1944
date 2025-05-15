@@ -26,7 +26,7 @@ export const HeaderTabAndDesktop = () => (
         ariaDescription="Kliknij, aby wesprzeć fundację"
         href={Routes.SUPPORT}
         aria-label="Kliknij, aby przejść do strony wsparcia"
-        variant="primaryBlue"
+        variant="primary"
       />
       <ContrastSwitcher aria-label="Przełącznik kontrastu" />
     </div>
