@@ -29,7 +29,6 @@ export interface PlaceDetails {
   image: string;
   link: string;
 }
-
 export interface ContainerProps {
   children: ReactNode;
   className?: string;

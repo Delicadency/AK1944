@@ -16,4 +16,5 @@ export const AK_DATA = {
     krs: "0000113420",
     purpose: "Okręg Tarnów Koło Dębica",
   },
+  NIP: "5261710045",
 } as const;

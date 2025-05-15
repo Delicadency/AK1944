@@ -55,7 +55,7 @@ export const Modal = ({ children, isOpen, onClose, className }: ModalProps) => {
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 flex h-screen items-center justify-center bg-slate-900/20 backdrop-blur"
+      className="fixed inset-0 z-50 flex h-screen items-center justify-center overflow-y-auto bg-slate-900/20 backdrop-blur"
       role="dialog"
       aria-modal="true"
       ref={modalRef}

@@ -16,7 +16,7 @@ interface Props {
 export const HeaderMobileMenu = ({ onClose }: Props) => (
   <Container>
     <div
-      className="relative size-full bg-greenB contrast:bg-yellowContrast"
+      className="relative size-full w-screen bg-greenB contrast:bg-yellowContrast"
       aria-label="Menu"
       aria-roledescription="Menu"
     >
@@ -50,6 +50,7 @@ export const HeaderMobileMenu = ({ onClose }: Props) => (
           ariaDescription="Kliknij, aby wesprzeć fundację"
           href={Routes.SUPPORT}
           className="self-center"
+          variant="primaryBlue"
         />
         <ContrastSwitcher />
       </div>
