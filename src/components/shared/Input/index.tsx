@@ -35,8 +35,8 @@ export const Input = ({
           commonInputStyles,
           inputVariants[color],
           {
-            "pl-8": LeadingIcon,
-            "pr-8": TrailingIcon,
+            "pl-8": Boolean(LeadingIcon),
+            "pr-8": Boolean(TrailingIcon),
           },
           className,
         )}

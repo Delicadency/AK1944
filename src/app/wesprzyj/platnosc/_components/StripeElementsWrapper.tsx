@@ -1,78 +1,99 @@
 "use client";
 
+import { type ReactNode } from "react";
 import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe, type StripeElementsOptions } from "@stripe/stripe-js";
+import {
+  loadStripe,
+  type Stripe,
+  type StripeElementsOptions,
+} from "@stripe/stripe-js";
 
-const stripePublishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+const COLORS = {
+  primary: "#163020",
+  danger: "#D31828",
+  background: "#FFFFFF",
+  placeholder: "#D9D9D9",
+} as const;
 
-if (!stripePublishableKey) {
-  throw new Error("Missing NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY env variable");
-}
+const TYPOGRAPHY = {
+  fontFamily: "figtree, sans-serif",
+  fontSizeSm: "0.875rem",
+} as const;
 
-const stripePromise = loadStripe(stripePublishableKey);
+const STRIPE_APPEARANCE: StripeElementsOptions["appearance"] = {
+  labels: "above",
+  theme: "flat",
+  variables: {
+    colorText: COLORS.primary,
+    colorDanger: COLORS.danger,
+    colorBackground: COLORS.background,
+    colorPrimary: COLORS.primary,
+    colorTextPlaceholder: COLORS.placeholder,
+    fontFamily: TYPOGRAPHY.fontFamily,
+    fontSizeSm: TYPOGRAPHY.fontSizeSm,
+    borderRadius: "0.375rem",
+    focusOutline: "none",
+    focusBoxShadow: "none",
+  },
+  rules: {
+    ".Input": {
+      border: "none",
+      padding: "0.375rem 0.75rem",
+      transition: "color 200ms ease-in-out",
+      boxShadow: `inset 0 0 0 1px ${COLORS.placeholder}`,
+    },
+    ".Input:focus": {
+      boxShadow: `inset 0 0 0 2px ${COLORS.primary}`,
+    },
+    ".Input--invalid": {
+      color: COLORS.danger,
+      boxShadow: `inset 0 0 0 1px ${COLORS.danger}`,
+    },
+    ".Input--invalid:focus": {
+      boxShadow: `inset 0 0 0 2px ${COLORS.danger}`,
+    },
+    ".Label": {
+      color: COLORS.primary,
+      fontSize: TYPOGRAPHY.fontSizeSm,
+      lineHeight: "1.5rem",
+      fontWeight: "500",
+    },
+    ".Error": {
+      color: COLORS.danger,
+      fontSize: TYPOGRAPHY.fontSizeSm,
+      lineHeight: "1.5rem",
+      marginTop: "0.25rem",
+    },
+    ".Tab": {
+      backgroundColor: COLORS.placeholder,
+    },
+  },
+};
+
+let stripePromise: Promise<Stripe | null>;
+const getStripePromise = () => {
+  const STRIPE_PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+
+  if (!STRIPE_PUBLISHABLE_KEY) {
+    throw new Error("Missing NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY env variable");
+  }
+
+  if (!stripePromise) {
+    stripePromise = loadStripe(STRIPE_PUBLISHABLE_KEY);
+  }
+  return stripePromise;
+};
 
 interface Props {
   clientSecret: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
-export const StripeElementsWrapper = ({ clientSecret, children }: Props) => {
-  const options = {
-    clientSecret,
-    appearance: {
-      labels: "above",
-      theme: "flat",
-      variables: {
-        colorText: "#163020",
-        colorDanger: "#D31828",
-        colorBackground: "#FFFFFF",
-        colorPrimary: "#163020",
-        colorTextPlaceholder: "#D9D9D9",
-        fontFamily: "figtree, sans-serif",
-        fontSizeSm: "0.875rem",
-        borderRadius: "0.375rem",
-        focusOutline: "none",
-        focusBoxShadow: "none",
-      },
-      rules: {
-        ".Input": {
-          border: "none",
-          padding: "0.375rem 0.75rem",
-          transition: "color 200ms ease-in-out",
-          boxShadow: "inset 0 0 0 1px #D9D9D9",
-        },
-        ".Input:focus": {
-          boxShadow: "inset 0 0 0 2px #163020",
-        },
-        ".Input--invalid": {
-          color: "#D31828",
-          boxShadow: "inset 0 0 0 1px #D31828",
-        },
-        ".Input--invalid:focus": {
-          boxShadow: "inset 0 0 0 2px #D31828",
-        },
-        ".Label": {
-          color: "#163020",
-          fontSize: "0.875rem",
-          lineHeight: "1.5rem",
-          fontWeight: "500",
-        },
-        ".Error": {
-          color: "#D31828",
-          fontSize: "0.875rem",
-          lineHeight: "1.5rem",
-          marginTop: "0.25rem",
-        },
-        ".Tab": {
-          backgroundColor: "#D9D9D9",
-        },
-      },
-    },
-  } satisfies StripeElementsOptions;
-
-  return (
-    <Elements stripe={stripePromise} options={options}>
-      {children}
-    </Elements>
-  );
-};
+export const StripeElementsWrapper = ({ clientSecret, children }: Props) => (
+  <Elements
+    stripe={getStripePromise()}
+    options={{ clientSecret, appearance: STRIPE_APPEARANCE }}
+  >
+    {children}
+  </Elements>
+);

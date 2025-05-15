@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { ExclamationIcon } from "@/icons/ExclamationIcon";
-import IconCheckSquare from "@/icons/IconCheckSquare";
+import { IconCheckSquare } from "@/icons/IconCheckSquare";
 import { Input } from ".";
 
 const meta: Meta<typeof Input> = {

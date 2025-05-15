@@ -4,10 +4,11 @@ import { Input, type InputProps } from "../Input";
 import { Label } from "../Label";
 
 interface Props extends InputProps {
+  label?: string;
   issues?: string[];
 }
 
-export const FormField = ({ issues, name, id, ...rest }: Props) => {
+export const FormField = ({ issues, name, id, label, ...rest }: Props) => {
   const inputId = id || `field-${name}`;
   const errorId = `${name}-error`;
   const hasIssues = !!issues?.length;
@@ -19,7 +20,7 @@ export const FormField = ({ issues, name, id, ...rest }: Props) => {
         color={hasIssues ? "error" : "primary"}
         className="capitalize"
       >
-        {name}
+        {label || name}
       </Label>
       <Input
         id={inputId}

@@ -31,7 +31,7 @@ export default async function SuccessPage({ searchParams }: Props) {
       {paymentIntent.status === "succeeded" ? (
         <PaymentSuccess
           signature={paymentIntent.metadata.signature}
-          amount={paymentIntent.amount / 100}
+          amount={paymentIntent.amount}
         />
       ) : (
         <PaymentError />

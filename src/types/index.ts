@@ -14,23 +14,6 @@ export interface Image {
   title: string;
 }
 
-export type IconName =
-  | "award"
-  | "check"
-  | "coffee"
-  | "compass"
-  | "file"
-  | "gift"
-  | "help"
-  | "info"
-  | "pin"
-  | "send"
-  | "target";
-
-export interface IconProps extends DefaultIconProps {
-  name: IconName;
-}
-
 export type DefaultIconProps = ComponentProps<"svg">;
 
 export interface SubmenuItem {
@@ -59,5 +42,6 @@ export interface NavItem {
 }
 
 export type ActionState =
-  | { status: "idle" | "success"; message?: string }
+  | { status: "idle"; message?: string }
+  | { status: "success"; message?: string }
   | { status: "error"; message?: string; issues?: Record<string, string[]> };
