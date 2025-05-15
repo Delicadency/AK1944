@@ -88,10 +88,8 @@ const ButtonContent = ({
   trailingIcon: TrailingIcon,
 }: ButtonContentProps) => (
   <>
-    {LeadingIcon && <LeadingIcon aria-hidden className="size-4 text-inherit" />}
+    {LeadingIcon && <LeadingIcon className="shrink-0" aria-hidden />}
     {label}
-    {TrailingIcon && (
-      <TrailingIcon aria-hidden className="size-4 text-inherit" />
-    )}
+    {TrailingIcon && <TrailingIcon className="shrink-0" aria-hidden />}
   </>
 );

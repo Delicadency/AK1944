@@ -3,6 +3,7 @@ import { trails, TrailSlug } from "../data/trails";
 import { Button } from "@/components/shared/Button/Button";
 import { Modal } from "@/components/Modal/Modal";
 import { Heading } from "@/components/shared/Heading/Heading";
+import { IconInfo } from "@/icons/IconInfo";
 
 interface TrailPointsProps {
   activeTrail: TrailSlug;
@@ -38,13 +39,12 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
           <Button
             key={index}
             label={point.point}
-            iconName="info"
             variant="secondary"
             size="large"
             ariaDescription={`Zobacz opis punktu ${point.point}`}
             onClick={() => openModal(index)}
             className="h-auto min-h-[108px] w-full font-bold text-redMain"
-            align="start"
+            leadingIcon={IconInfo}
           />
         ))}
       </div>
@@ -69,7 +69,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
               <Button
                 label="Następny punkt"
                 ariaDescription="Zobacz następny punkt szlaku"
-                variant="primaryBlue"
+                variant="primary"
                 onClick={goToNext}
                 disabled={activeIndex === points.length - 1}
               />
