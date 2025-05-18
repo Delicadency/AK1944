@@ -28,8 +28,8 @@ export const boardData : BoardData = {
         "Andrzej Żylicz – przewodniczący KR",
         "Tadeusz Garstka – członek KR",
         "Stanisław Nylec* – członek KR",
-        "Grzegorz Kloc* – zastępca członka",
-        "Krystian Tumiński* – zastępca członka",
+        "Grzegorz Kloc* – zastępca członka KR",
+        "Krystian Tumiński* – zastępca członka KR",
       ],
     },
     {

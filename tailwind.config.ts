@@ -64,6 +64,9 @@ export default {
         tablet: "768px",
         desktop: "1280px",
       },
+      spacing: {
+        '150': '150px'
+      },
       borderRadius: {
         // niestandardowe zaokrąglenia
       },
