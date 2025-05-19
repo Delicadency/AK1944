@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { cn } from "@/utils/index"
+import { cn } from "@/utils/index";
 
 interface InfoListProps {
   className?: string;

@@ -3,6 +3,7 @@ import { trails, TrailSlug } from "../data/trails";
 import { Button } from "@/components/shared/Button/Button";
 import { Modal } from "@/components/Modal/Modal";
 import { Heading } from "@/components/shared/Heading/Heading";
+import { IconInfo } from "@/icons/IconInfo";
 
 interface TrailPointsProps {
   activeTrail: TrailSlug;
@@ -38,27 +39,26 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
           <Button
             key={index}
             label={point.point}
-            iconName="info"
             variant="secondary"
             size="large"
             ariaDescription={`Zobacz opis punktu ${point.point}`}
             onClick={() => openModal(index)}
-            className="min-h-[108px] h-auto w-full font-bold text-redMain"
-            align="start"
+            className="h-auto min-h-[108px] w-full font-bold text-redMain"
+            leadingIcon={IconInfo}
           />
         ))}
       </div>
 
       <Modal isOpen={activeIndex !== null} onClose={closeModal}>
         {activeIndex !== null && (
-          <div className="desktop:min-h-[400px] min-h-[500px] max-w-[600px]">
+          <div className="min-h-[500px] max-w-[600px] desktop:min-h-[400px]">
             <Heading variant="h3" color="white" contrast="yellow">
               {points[activeIndex].point}
             </Heading>
             <p className="pb-6 pt-4 text-white">
               {points[activeIndex].description}
             </p>
-            <div className="flex justify-between absolute bottom-10 left-10 right-10 pt-5">
+            <div className="absolute bottom-10 left-10 right-10 flex justify-between pt-5">
               <Button
                 label="Poprzedni punkt"
                 ariaDescription="Zobacz poprzedni punkt szlaku"
@@ -69,7 +69,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
               <Button
                 label="Następny punkt"
                 ariaDescription="Zobacz następny punkt szlaku"
-                variant="primaryBlue"
+                variant="primary"
                 onClick={goToNext}
                 disabled={activeIndex === points.length - 1}
               />
