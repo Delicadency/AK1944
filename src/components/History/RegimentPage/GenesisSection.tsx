@@ -12,8 +12,8 @@ export const GenesisSection = () => {
       <Heading variant="h4" color="green" contrast="yellow">
         {genesisTitle}
       </Heading>
-      <div className="flex flex-col gap-6 desktop:flex-row desktop:gap-[128px]">
-        <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+      <div className="flex flex-col gap-6 contrast:text-yellowContrast desktop:flex-row desktop:gap-[128px]">
+        <div className="flex flex-col gap-6 text-lg">
           <p>{genesis1}</p>
           <Image
             src="/images/history/regiment/officers.webp"
