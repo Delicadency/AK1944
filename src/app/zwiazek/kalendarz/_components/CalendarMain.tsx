@@ -7,33 +7,30 @@ import { addMonth } from "@/app/zwiazek/kalendarz/_utils/Dates/Dates";
 import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
 import { useState } from "react";
 
-const DEFAULT_NUMBER_OF_POSTS = 3;
-
 export const CalendarMain = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
-  const [postsToShow, setPostsToShow] = useState(DEFAULT_NUMBER_OF_POSTS);
 
   const handleNextMonth = () => {
     setCurrentDate(addMonth(currentDate, 1));
-    setPostsToShow(DEFAULT_NUMBER_OF_POSTS);
   };
 
   const handlePrevMonth = () => {
     setCurrentDate(addMonth(currentDate, -1));
-    setPostsToShow(DEFAULT_NUMBER_OF_POSTS);
   };
 
   return (
     <>
-      <section className="flex w-full flex-col items-center gap-10 self-center bg-greenMain py-9 tablet:justify-center tablet:gap-52 tablet:px-10 desktop:flex-row">
-        <CalendarTable
-          currentDate={currentDate}
-          prevMonth={handlePrevMonth}
-          nextMonth={handleNextMonth}
-        />
-        <CalendarCard />
+      <section className="flex w-full items-center justify-center bg-greenMain">
+        <div className="flex w-full max-w-[1440px] flex-col items-center gap-10 py-9 tablet:justify-center tablet:px-10 lg:flex-row desktop:justify-between desktop:px-28">
+          <CalendarTable
+            currentDate={currentDate}
+            prevMonth={handlePrevMonth}
+            nextMonth={handleNextMonth}
+          />
+          <CalendarCard />
+        </div>
       </section>
-      <section className="flex max-w-[1440px] flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-24">
+      <section className="flex w-full max-w-[1440px] flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-28">
         <CalendarHeader
           className="items-center justify-center text-24 text-greenMain tablet:w-full tablet:justify-between tablet:text-32"
           iconClassName="stroke-greenMain h-7 w-7 tablet:h-10 tablet:w-10"
@@ -41,11 +38,7 @@ export const CalendarMain = () => {
           handleNextMonth={handleNextMonth}
           handlePrevMonth={handlePrevMonth}
         />
-        <EventsList
-          currentDate={currentDate}
-          handleShowMore={() => setPostsToShow(postsToShow + 3)}
-          postsToShow={postsToShow}
-        />
+        <EventsList currentDate={currentDate} />
       </section>
     </>
   );

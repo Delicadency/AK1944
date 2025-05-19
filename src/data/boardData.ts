@@ -1,11 +1,11 @@
 type BoardData = {
-  members: { title: string; names: string[]; }[];
+  members: { title: string; names: string[] }[];
   note: string;
   announcement: string;
   electionInfo: string;
 };
 
-export const boardData : BoardData = {
+export const boardData: BoardData = {
   members: [
     { title: "Prezes Honorowy:", names: ["kpt. Edmund Książek"] },
     { title: "Prezes:", names: ["Maciej Małozięć*"] },
