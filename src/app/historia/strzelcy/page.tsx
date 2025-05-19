@@ -9,6 +9,7 @@ import { WoznikiSection } from "@/components/History/RegimentPage/WoznikiSection
 import { EscapeSection } from "@/components/History/RegimentPage/EscapeSection";
 import { RegroupSection } from "@/components/History/RegimentPage/RegroupSection";
 import { BilgorajSection } from "@/components/History/RegimentPage/BilgorajSection";
+import { FinalClashSection } from "@/components/History/RegimentPage/FinalClashSection";
 
 export default function RegimentPage() {
   const { title } = historyData.regiment;
@@ -27,6 +28,7 @@ export default function RegimentPage() {
         <EscapeSection />
         <RegroupSection />
         <BilgorajSection />
+        <FinalClashSection />
       </Container>
     </div>
   );
