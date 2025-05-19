@@ -15,30 +15,30 @@ export const sideImages: Images[] = [
   },
   {
     id: "placeholder-1",
-    src: "/images/placeholder_image.jpg",
+    src: "/images/placeholder_image.png",
     alt: "Placeholder",
     mobileOrder: 2,
   },
   {
     id: "placeholder-2",
-    src: "/images/placeholder_image.jpg",
+    src: "/images/placeholder_image.png",
     alt: "Placeholder",
     mobileOrder: 3,
   },
   {
     id: "placeholder-3",
-    src: "/images/placeholder_image.jpg",
+    src: "/images/placeholder_image.png",
     alt: "Placeholder",
     mobileOrder: 4,
   },
   {
     id: "placeholder-4",
-    src: "/images/placeholder_image.jpg",
+    src: "/images/placeholder_image.png",
     alt: "Placeholder",
   },
   {
     id: "placeholder-5",
-    src: "/images/placeholder_image.jpg",
+    src: "/images/placeholder_image.png",
     alt: "Placeholder",
   },
 ];
