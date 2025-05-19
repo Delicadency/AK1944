@@ -59,6 +59,9 @@ export default {
         "50": "3.125rem",
         "96": "6rem",
       },
+      padding: {
+        "18": "4.5rem",
+      },
       screens: {
         mobile: "320px",
         tablet: "768px",
