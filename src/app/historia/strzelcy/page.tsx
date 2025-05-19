@@ -7,9 +7,10 @@ import { CracowBrigadeSection } from "@/components/History/RegimentPage/CracowBr
 import { SeparationSection } from "@/components/History/RegimentPage/SeparationSection";
 import { WoznikiSection } from "@/components/History/RegimentPage/WoznikiSection";
 import { EscapeSection } from "@/components/History/RegimentPage/EscapeSection";
+import { RegroupSection } from "@/components/History/RegimentPage/RegroupSection";
 
 export default function RegimentPage() {
-  const { title } = historyData.regiment ?? {};
+  const { title } = historyData.regiment;
 
   return (
     <div className="contrast:bg-black">
@@ -23,6 +24,7 @@ export default function RegimentPage() {
         <SeparationSection />
         <WoznikiSection />
         <EscapeSection />
+        <RegroupSection />
       </Container>
     </div>
   );

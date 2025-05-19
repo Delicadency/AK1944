@@ -3,7 +3,7 @@ import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
 export const SeparationSection = () => {
-  const { separationTitle, separation1 } = historyData.regiment ?? {};
+  const { separationTitle, separation1 } = historyData.regiment;
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
       <Heading variant="h4" color="green" contrast="yellow">

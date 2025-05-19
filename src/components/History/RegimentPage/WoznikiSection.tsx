@@ -15,7 +15,7 @@ export const WoznikiSection = () => {
     wozniki8,
     wozniki9,
     wozniki10,
-  } = historyData.regiment ?? {};
+  } = historyData.regiment;
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
       <Heading variant="h4" color="green" contrast="yellow">
@@ -45,20 +45,20 @@ export const WoznikiSection = () => {
           <p>{wozniki7}</p>
         </div>
       </div>
-      <div className="flex">
+      <div className="m-auto flex gap-6">
         <Image
           src="/images/history/regiment/color_guard.webp"
           alt="Pułkowy poczet sztandarowy i szwadron honorowy 5. Pułku Strzelców Konnych oczekują w Dębicy na przejazd króla Rumunii Karola II. Przez tory przechodzi płk Ignacy Kowalczewski."
           width={604}
           height={430}
-          className="m-auto"
+          className=""
         />
         <Image
           src="/images/history/regiment/cheers.webp"
           alt="„Strzemienny” na pożegnanie ppłk. Bronisława Mokrzyckiego. Od lewej: ppłk dypl. Bronisław Mokrzycki, rtm. Mieczysław Chwaliński, rtm. Aleksander Jodkiewicz, rtm. Jarosław Chodań, płk Ignacy Kowalczewski, rtm. Antoni Dębski, p. Mokrzycka, por. Tadeusz Gawrzycki, p. Jodkiewiczowi, p. Piotrowska, p. Łopuska i p. Dębska. Dębica, 1937 r."
           width={604}
           height={430}
-          className="m-auto hidden desktop:block"
+          className="hidden desktop:block"
         />
       </div>
       <div className="flex flex-col gap-6 desktop:flex-row">

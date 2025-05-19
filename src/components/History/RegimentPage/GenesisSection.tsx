@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const GenesisSection = () => {
   const { genesisTitle, genesis1, genesis2, genesis3, genesis4, commanders } =
-    historyData.regiment ?? {};
+    historyData.regiment;
   const commandersList = commanders.persons;
 
   return (

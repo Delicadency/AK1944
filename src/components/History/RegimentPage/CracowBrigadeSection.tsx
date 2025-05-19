@@ -9,7 +9,7 @@ export const CracowBrigadeSection = () => {
     cracowBrigade2,
     cracowBrigade3,
     cracowBrigade4,
-  } = historyData.regiment ?? {};
+  } = historyData.regiment;
   return (
     <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
       <Heading variant="h4" color="green" contrast="yellow">
