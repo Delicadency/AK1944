@@ -8,6 +8,7 @@ import { SeparationSection } from "@/components/History/RegimentPage/SeparationS
 import { WoznikiSection } from "@/components/History/RegimentPage/WoznikiSection";
 import { EscapeSection } from "@/components/History/RegimentPage/EscapeSection";
 import { RegroupSection } from "@/components/History/RegimentPage/RegroupSection";
+import { BilgorajSection } from "@/components/History/RegimentPage/BilgorajSection";
 
 export default function RegimentPage() {
   const { title } = historyData.regiment;
@@ -25,6 +26,7 @@ export default function RegimentPage() {
         <WoznikiSection />
         <EscapeSection />
         <RegroupSection />
+        <BilgorajSection />
       </Container>
     </div>
   );
