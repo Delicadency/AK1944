@@ -6,8 +6,8 @@ import { Heading } from "../shared/Heading/Heading";
 export const BecomeDonor = () => (
   <section className="h-[569px] w-full tablet:h-[465px]">
     <BackgroundImage
-      src="/images/become-donor-bg.png"
-      alt="Starszy mężczyzna siedzący na ławce nad morzem, czytający gazetę pod zachmurzonym niebem."
+      src="/images/become_donor_bg_1.webp"
+      alt="Starszy mężczyzna wręcza starszej kobiecie ważne odznaczenie."
       width={1920}
       height={1080}
       priority
