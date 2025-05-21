@@ -18,8 +18,8 @@ export default function GenezaPage() {
   const mobileImages = getMobileOrderedImages();
 
   return (
-    <Container as="main" >
-      <Breadcrumbs />
+    <Container as="main" className="leading-7 text-18" >
+      <Breadcrumbs color="green"/>
       <Heading contrast="yellow" color="green" className="pt-8">Geneza</Heading>
 
       <article className="hidden tablet:block">
