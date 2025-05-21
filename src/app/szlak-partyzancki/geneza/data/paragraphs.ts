@@ -1,5 +1,5 @@
 type ContentElement =
-  | { type: "paragraph"; text: string }
+  | { type: "paragraph"; text: string; spacerAfter?: boolean }
   | { type: "list"; items: string[]; ordered?: boolean };
 
 export type Paragraph = {
@@ -14,6 +14,7 @@ export const paragraphs: Paragraph[] = [
       {
         type: "paragraph",
         text: "Pomysł na wytyczenie Szlaku Partyzanckiego zrodził się w 2003 roku. Pierwotnie Szlak miał połączyć miejsca związane z działalnością AK w powiecie dębickim (od Pustkowa, przez Dębicę po Kałużówkę). Idea przeszła jednak szereg przeobrażeń, głównie pod wpływem środowiska weteranów AK i w ostatecznym kształcie wytyczona została ścieżka II Zgrupowania AK Obwodu Dębica. Inicjatorem przedsięwzięcia był Maciej Małozięć, który zachęcił harcerzy z 13. Drużyny Harcerzy Wędrowników ”Kałużacy”, aby włączyli się w realizację projektu.",
+        spacerAfter: true,
       },
       {
         type: "paragraph",
@@ -29,12 +30,11 @@ export const paragraphs: Paragraph[] = [
         text: "Etap ten trwał najdłużej i składał się z kilku faz:",
       },
       {
-        type: "paragraph",
-        text: "– sprecyzowanie tematu Szlaku i określenie zasięgu: kwestia ta była przedmiotem licznych dyskusji w środowisku weteranów AK oraz wśród harcerzy 13. Drużyny Harcerzy Wędrowników “Kałużacy”. Ostatecznie ustalono, że Szlak przebiega przez teren działań II Rejonu AK Obwodu Dębica w granicach gmin Dębica i Pilzno, a jego pełna nazwa brzmi: Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica.",
-      },
-      {
-        type: "paragraph",
-        text: "– pozyskanie partnerów: w Księdze Mądrości Syracha napisano: „Wierny przyjaciel potężną obroną, kto go znalazł, skarb znalazł”. Przy realizacji pomysłu Szlaku udało się spotkać wielu życzliwych ludzi, którzy wsparli tą ideę cenną radą, pomocą merytoryczną oraz finansową.",
+        type: "list",
+        items: [
+          "sprecyzowanie tematu Szlaku i określenie zasięgu: kwestia ta była przedmiotem licznych dyskusji w środowisku weteranów AK oraz wśród harcerzy 13. Drużyny Harcerzy Wędrowników “Kałużacy”. Ostatecznie ustalono, że Szlak przebiega przez teren działań II Rejonu AK Obwodu Dębica w granicach gmin Dębica i Pilzno, a jego pełna nazwa brzmi: Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica.",
+          "pozyskanie partnerów: w Księdze Mądrości Syracha napisano: „Wierny przyjaciel potężną obroną, kto go znalazł, skarb znalazł”. Przy realizacji pomysłu Szlaku udało się spotkać wielu życzliwych ludzi, którzy wsparli tą ideę cenną radą, pomocą merytoryczną oraz finansową.",
+        ],
       },
       { type: "paragraph", text: "Główni mecenasi projektu to:" },
       {
@@ -58,9 +58,9 @@ export const paragraphs: Paragraph[] = [
       {
         type: "list",
         items: [
-          "koordynacja działań: w realizację pomysłu Szlaku sensu stricto w 2004 roku zaangażowali się harcerze 13. Drużyny Harcerzy Wędrowników „Kałużacy”.",
-          "opracowanie projektu technicznego dotyczącego przebiegu Szlaku w terenie: audyt historyczny w konsultacji z partnerami projektu.",
-          "zaprojektowanie trasy Szlaku: połączenie wytypowanych punktów z zachowaniem spójności i użyteczności trasy.",
+          "koordynacja działań: w realizację pomysłu Szlaku sensu stricto w 2004 roku zaangażowali się harcerze 13. Drużyny Harcerzy Wędrowników „Kałużacy”: drużynowy podharcmistrz Tomasz Czapla, Łukasz Grabowy, Grzegorz Duś, Mateusz Kania, Renata Blezień, Piotr Gorczyca, Maria Gawlik, Kacper Momola, Mariusz Gancarz, Magdalena Wójcik, Katarzyna Mazur, Patrycja Mazur, Marcin Strzyż, Anna Rochmalska, Inez Radwańska i inni. Koordynatorem i opiekunem działań był Maciej Małozięć.",
+          "opracowanie projektu technicznego dotyczącego przebiegu Szlaku w terenie, wytypowanie miejsc historycznych: zrealizowane na drodze audytu historycznego w konsultacji z partnerami projektu przy szczegółowej inwentaryzacji atrakcji przyrodniczych, turystycznych oraz lokalnych inicjatyw.",
+          "zaprojektowanie trasy Szlaku: niełatwo było połączyć wytypowane uprzednio punkty Szlaku w sposób logiczny, zachowując chronologię historycznych wydarzeń. Aby zatem nie nadkładać niepotrzebnie drogi, przebieg Szlaku został wytyczony z lekkimi naruszeniami chronologii i jest trasą jednokierunkową. Dodatkowo jeden z punktów Szlaku, Punkt Zborżilówka, jest punktem specjalnym, przez który nie przebiega oznakowana ścieżka",
         ],
       },
     ],
@@ -75,10 +75,10 @@ export const paragraphs: Paragraph[] = [
       {
         type: "list",
         items: [
-          "pozyskanie środków finansowych: pomoc Lasów Państwowych, Nadleśnictwa Dębica – pokrycie kosztów tablic i słupków.",
-          "uzyskanie pozwoleń: przeprowadzenie Szlaku przez tereny prywatne i publiczne.",
-          "oznakowanie Szlaku: oznaczenia białymi lilijkami, tablice informacyjne, fragmenty poezji.",
-          "opieka nad Szlakiem: najpierw 13. Drużyna Harcerzy Wędrowników „Kałużacy”, później Środowisko 5. Pułku Strzelców Konnych AK.",
+          " pozyskanie środków finansowych: pomoc w tym zakresie okazały Lasy Państwowe, Nadleśnictwo Dębica - instytucja która w całości pokryła koszty wykonania i montażu tablic oraz słupków mocujących.",
+          "uzyskanie pozwoleń na poprowadzenie Szlaku: ścieżka wiedzie głównie przez teren nadzorowany przez Nadleśnictwo Dębica, a także drogami gminnymi i drogą powiatową. W kilku przypadkach zgody na przejście szlaku udzielili prywatni właściciele.",
+          "oznakowanie głównej nitki szlaku: Szlak Partyzancki został oznakowany za pomocą białych lilijek. Prace przy oznaczeniu trasy były prowadzone we wrześniu 2004 roku, przed oficjalną inauguracją, która miała miejsce 27 września tego samego roku. We wszystkich punktach przejściowych szlaku umieszczone zostały duże tablice z informacjami historycznymi, fragmentami poezji, a często także z ikonografią historyczną.",
+          "opieka nad Szlakiem: od początku powstania Szlaku opiekę nad nim sprawowała 13. Drużyna Harcerzy Wędrowników „Kałużacy” z Hufca ZHP Dębica. Gdy drużyna zawiesiła swoją działalność, obowiązki opieki nad szlakiem przejęło Środowisko 5. Pułku Strzelców Konnych AK – Światowego Związku Żołnierzy AK w Dębicy, przy którym nieformalnie funkcjonuje Krąg Przewodników Szlaku Partyzanckiego. W przyszłości planowane jest powołanie stowarzyszenia będącego jednostką prowadzącą i opiekującą się Szlakiem.",
         ],
       },
     ],
@@ -104,8 +104,8 @@ export const paragraphs: Paragraph[] = [
         items: [
           "służbę na rzecz środowiska weteranów Armii Krajowej",
           "ukazanie ciekawych form przeżycia historii regionalnej oraz umocnienie międzypokoleniowych więzi",
-          "kształtowanie u młodzieży postaw opartych na wartościach duchowych",
-          "ukazanie piękna krajobrazu ziemi dębickiej",
+          "kształtowanie u młodzieży postaw opartych na wartościach duchowych przez odnajdywanie i wskazywanie wzorców moralnych",
+          "ukazanie dzieciom i młodzieży piękna krajobrazu i bogactwa przyrody ziemi dębickiej",
           "zachęta do zdrowego, aktywnego spędzania czasu",
         ],
       },
@@ -118,7 +118,7 @@ export const paragraphs: Paragraph[] = [
         items: [
           "organizacja imprez historyczno-turystycznych",
           "przygotowanie i dystrybucja materiałów informacyjno-promocyjnych",
-          "organizacja wystaw, spotkań, prelekcji i pokazów związanych ze Szlakiem",
+          "organizacja wystaw, spotkań, prelekcji i pokazów związanych ze Szlakiem i jego tematyką.",
         ],
       },
     ],

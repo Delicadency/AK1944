@@ -12,9 +12,10 @@ export const Section = ({ title, content }: Paragraph) => {
       {content.map((block, index) => {
         if (block.type === "paragraph") {
           return (
-            <p key={index}>
-              {block.text}
-            </p>
+             <>
+      <p key={`p-${index}`}>{block.text}</p>
+      {block.spacerAfter && <div key={`spacer-${index}`} className="h-4" />}
+    </>
           );
         }
         if (block.type === "list") {
