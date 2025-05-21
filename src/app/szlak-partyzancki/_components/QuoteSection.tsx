@@ -27,7 +27,7 @@ export const QuoteSection = ({
         <p className="italic">“{quote.content}”</p>
 
         {layout === "content-first" && quote.emphasis && (
-          <footer className="font-bold">{quote.emphasis}</footer>
+          <p className="font-bold">{quote.emphasis}</p>
         )}
       </blockquote>
     </section>

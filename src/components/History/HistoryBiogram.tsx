@@ -1,50 +1,47 @@
 "use client";
 import Container from "../shared/Container";
-// import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
+import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Heading } from "../shared/Heading/Heading";
 import { historyData } from "@/data/historyData";
 import Image from "next/image";
 import { Button } from "../shared/Button/Button";
 import { Routes } from "@/routes";
-// import { useMediaQuery } from "@/hooks/useMediaQuery";
 
-// ToDo: https://app.clickup.com/t/8698509d5
+const { title, content } = historyData.history.biograms;
 
-export default function HistoryBiogram() {
-  const { title, content } = historyData.history.biograms;
-  // const isDesktop = useMediaQuery("(max-width: 1280px)");
-  return (
-    // <BackgroundImage
-    //   alt="tło imitujące kartkę"
-    //   src={
-    //     isDesktop
-    //       ? "/images/history/main/paper_mobile_bg.png"
-    //       : "/images/history/main/paper_desktop_bg.png"
-    //   }
-    //   width="768"
-    //   height="948"
-    //   className="absolute -top-5"
-    // >
-    <Container className="relative justify-items-center py-10 contrast:bg-yellowContrast">
-      <Heading variant="h3" contrast="yellow" color="green">
+export const HistoryBiogramComponent = () => (
+  <BackgroundImage
+    alt=""
+    src="/images/history/main/paper_bg.webp"
+    width="768"
+    height="948"
+    className="absolute object-fill"
+    aria-hidden="true"
+  >
+    <Container className="relative py-10 contrast:bg-yellowContrast">
+      <Heading variant="h3" contrast="black" color="green">
         {title}
       </Heading>
-      <div className="desktop:flex">
-        <p className="my-6 text-greenMain">{content}</p>
-        <Image
-          src="/images/history/main/veteran.png"
-          alt="Zdjęcie weterana Armii Krajowej"
-          width={500}
-          height={1920}
-        ></Image>
+      <div className="md:flex">
+        <p className="my-6 font-courier text-lg text-greenMain md:w-2/3">
+          {content}
+        </p>
+        <div className="relative m-auto aspect-[0.89] w-[300px] max-w-[300px]">
+          <Image
+            src="/images/history/main/veteran.webp"
+            alt="Zdjęcie weterana Armii Krajowej"
+            fill
+            sizes="(max-width: 768px) 100vw, 300px"
+            className="object-cover"
+          />
+        </div>
       </div>
       <Button
         label="Sprawdź"
         ariaDescription="Sprawdź"
-        className="mt-6"
+        className="m-auto mt-6"
         href={Routes.BIOGRAMS}
-      ></Button>
+      />
     </Container>
-    // </BackgroundImage>
-  );
-}
+  </BackgroundImage>
+);

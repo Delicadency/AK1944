@@ -9,7 +9,7 @@ import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundI
 
 export default function ContactPage() {
   return (
-    <div className="relative isolate min-h-screen overflow-hidden">
+    <div className="relative isolate min-h-screen overflow-hidden tablet:pb-20 desktop:pb-150">
 
       <div className="absolute inset-y-0 right-0 hidden h-full w-[40vw] desktop:block">
         <BackgroundImage

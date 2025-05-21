@@ -1,5 +1,6 @@
 import { pad } from "@/app/zwiazek/kalendarz/_utils/pad";
 import { cn } from "@/utils";
+import Link from "next/link";
 
 interface Props {
   day: string;
@@ -18,13 +19,12 @@ export const CalendarTableCell = ({
   const [days, month] = day.split(".");
 
   const isCurrentMonth = month === pad(currentDate.getMonth() + 1);
-  // month === (currentDate.getMonth() + 1).toString().padStart(2, "0");
   const isToday =
     today.getDate() === Number(days) && today.getMonth() + 1 === Number(month);
 
   const isEventDate = eventsDates.find((eventDate) => {
     const [eventDay, eventMonth] = eventDate.split(".");
-    return eventDay === days && eventMonth === month;
+    return eventDay === days && eventMonth === month && isCurrentMonth;
   });
 
   return (
@@ -32,13 +32,23 @@ export const CalendarTableCell = ({
       key={dayIndex}
       aria-label={day}
       className={cn(
-        `flex h-10 w-10 items-center justify-center text-18 tablet:my-3 tablet:w-11 tablet:text-32`,
+        `desktop: flex h-10 w-10 items-center justify-center text-18 tablet:w-11 tablet:text-32`,
         isCurrentMonth ? "text-white" : "text-greenC",
         isToday && "rounded border-2 bg-white text-greenMain",
         isEventDate && "rounded border-2 border-backgroundMain",
       )}
     >
-      {days}
+      {isEventDate ? (
+        <Link
+          href={`#event-${days}-${month}`}
+          aria-label={`Przejdź do wydarzenia z dnia ${days}.${month}`}
+          tabIndex={0}
+        >
+          {days}
+        </Link>
+      ) : (
+        days
+      )}
     </td>
   );
 };

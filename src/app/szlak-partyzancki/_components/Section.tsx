@@ -27,7 +27,8 @@ export const Section = ({ sectionName }: SectionProps) => {
         <Image
           src={image}
           alt={alt}
-          fill
+          width={592}
+          height={300}
           priority
           className="rounded-md object-cover"
         />

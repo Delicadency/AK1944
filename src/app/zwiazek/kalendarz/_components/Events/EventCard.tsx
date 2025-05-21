@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Heading } from "@/components/shared/Heading/Heading";
 
 interface CardProps {
+  anchorId?: string;
   title: string;
   image: {
     src: string;
@@ -13,6 +14,7 @@ interface CardProps {
 }
 
 export const EventCard = ({
+  anchorId,
   title,
   image,
   date,
@@ -20,23 +22,24 @@ export const EventCard = ({
   isLast,
 }: CardProps) => (
   <div
-    className={`flex flex-col items-start gap-2 bg-white pb-10 tablet:grid tablet:grid-flow-col tablet:gap-11 ${isLast ? "last:border-b-0" : "border-b-4 border-b-greenMain"}`}
+    id={anchorId}
+    className={`flex w-full flex-col items-start gap-2 bg-white pb-10 tablet:flex-row tablet:gap-11 ${isLast ? "last:border-b-0" : "border-b-4 border-b-greenMain"} `}
   >
-    <div className="relative flex h-60 w-72 items-center justify-center self-center tablet:h-52 tablet:w-52">
+    <div className="relative flex aspect-square h-52 w-52 items-center justify-center self-center tablet:h-52 tablet:w-52">
       <Image
         alt={image.alt}
         src={image.src}
         fill
-        className="rounded"
+        className="rounded object-cover"
         objectFit="cover"
       />
     </div>
-    <div className="flex flex-col items-start gap-2">
+    <div className="col-span-2 flex flex-col items-start gap-2">
       <Heading
         color="green"
         contrast="yellow"
         variant="h4"
-        className="tablet:text-32"
+        className="tracking-tight tablet:text-32"
       >
         {title}
       </Heading>

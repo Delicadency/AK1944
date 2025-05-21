@@ -23,25 +23,79 @@ const allNavData = [
 
 interface BreadcrumbProps {
   color?: "green" | "white";
+  contrastVariant?: "yellow" | "black";
 }
 
-export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
-  const iconFillColor = {
-    green: "fill-greenMain",
-    white: "fill-white",
-  };
-  const iconChevronColor = {
-    green: "text-greenMain",
-    white: "text-white",
-  };
-  const textColor = {
-    green: "text-greenMain",
-    white: "text-white ",
+export const Breadcrumbs = ({
+  color = "green",
+  contrastVariant = "yellow",
+}: BreadcrumbProps) => {
+  const getCircleColor = (
+    color: "green" | "white",
+    contrastVariant: "yellow" | "black",
+  ) => {
+    const base = {
+      green: "fill-greenMain",
+      white: "fill-white",
+    };
+
+    const contrast = {
+      yellow: "contrast:fill-yellowContrast",
+      black: "contrast:fill-black00",
+    };
+
+    return clsx(base[color], contrast[contrastVariant]);
   };
 
-  const houseIconColor = {
-    green: "white",
-    white: "#163020", // greenMain,
+  const getHouseStrokeColor = (
+    color: "green" | "white",
+    contrastVariant: "yellow" | "black",
+  ) => {
+    const base = {
+      green: "stroke-white",
+      white: "stroke-greenMain",
+    };
+
+    const contrast = {
+      yellow: "contrast:stroke-black00",
+      black: "contrast:stroke-yellowContrast",
+    };
+
+    return clsx(base[color], contrast[contrastVariant]);
+  };
+
+  const getIconChevronColor = (
+    color: "green" | "white",
+    contrastVariant: "yellow" | "black",
+  ) => {
+    const base = {
+      green: "text-greenMain",
+      white: "text-white",
+    };
+
+    const contrast = {
+      yellow: "contrast:text-yellowContrast",
+      black: "contrast:text-black00",
+    };
+
+    return clsx(base[color], contrast[contrastVariant]);
+  };
+
+  const getTextColor = (
+    color: "green" | "white",
+    contrastVariant: "yellow" | "black",
+  ) => {
+    const base = {
+      green: "text-greenMain",
+      white: "text-white",
+    };
+
+    const contrast = {
+      yellow: "contrast:text-yellowContrast",
+      black: "contrast:text-black00",
+    };
+
+    return clsx(base[color], contrast[contrastVariant]);
   };
 
   const pathname = usePathname();
@@ -61,11 +115,14 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
         <li className="flex flex-row items-center justify-center">
           <Link href="/" className="flex items-center justify-center gap-2">
             <IconBackHome
-              className={clsx(iconFillColor[color])}
-              house={houseIconColor[color]}
+              circleClassName={getCircleColor(color, contrastVariant)}
+              houseClassName={getHouseStrokeColor(color, contrastVariant)}
             />
             <IconChevronDown
-              className={clsx(iconChevronColor[color], "-rotate-90")}
+              className={clsx(
+                getIconChevronColor(color, contrastVariant),
+                "-rotate-90",
+              )}
             />
           </Link>
         </li>
@@ -85,7 +142,7 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
                     : previousPath
                 }
                 className={clsx(
-                  textColor[color],
+                  getTextColor(color, contrastVariant),
                   "flex items-center justify-center gap-2",
                 )}
               >
@@ -93,7 +150,10 @@ export const Breadcrumbs = ({ color = "green" }: BreadcrumbProps) => {
                   ? "Światowy Związek Żołnierzy AK"
                   : getLabelForPath(previousPath.replace("-", " "))}
                 <IconChevronDown
-                  className={clsx(iconChevronColor[color], "-rotate-90")}
+                  className={clsx(
+                    getIconChevronColor(color, contrastVariant),
+                    "-rotate-90",
+                  )}
                 />
               </Link>
             </li>

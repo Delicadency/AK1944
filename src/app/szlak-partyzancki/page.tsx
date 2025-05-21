@@ -16,7 +16,7 @@ export default function PartisanTrailPage() {
   const trailData = trails[activeTrail];
 
   return (
-    <div className="contrast:bg-black00 contrast:text-yellowContrast">
+    <main className="contrast:bg-black00 contrast:text-yellowContrast tablet:pb-20 desktop:pb-150">
       <Container as="section">
         <Breadcrumbs />
         <TrailSwitcher active={activeTrail} onChange={setActiveTrail} />
@@ -32,6 +32,6 @@ export default function PartisanTrailPage() {
         </div>
         <Partners />
       </Container>
-    </div>
+    </main>
   );
 }
