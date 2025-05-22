@@ -1,8 +1,8 @@
-import { epilog } from "@/data/historyData";
+import { epilogSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { epilogTitle, epilog: content } = epilog;
+const { epilogTitle, content } = epilogSection;
 
 export const EpilogSection = () => (
   <section className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast">

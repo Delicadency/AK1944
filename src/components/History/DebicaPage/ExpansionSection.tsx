@@ -3,6 +3,8 @@ import Image from "next/image";
 import { expansionSection } from "@/data/historyData";
 
 const { expansionTitle, content } = expansionSection;
+const firstPart = content.slice(0, 3);
+const secondPart = content.slice(3);
 
 export const ExpansionSection = () => (
   <section className="flex flex-col gap-6">
@@ -21,7 +23,7 @@ export const ExpansionSection = () => (
       </div>
       <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
         <div>
-          {content[0].map((paragraph, index) => (
+          {firstPart.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
@@ -35,7 +37,7 @@ export const ExpansionSection = () => (
           />
         </div>
         <div>
-          {content[1].map((paragraph, index) => (
+          {secondPart.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>

@@ -1,9 +1,8 @@
 import { Heading } from "@/components/shared/Heading/Heading";
-import { historyData } from "@/data/historyData";
+import { finalClashSection } from "@/data/historyData";
 import Image from "next/image";
 
-const { finalClashTitle, finalClash1, finalClash2, finalClash3 } =
-  historyData.regiment;
+const { finalClashTitle, content } = finalClashSection;
 
 export const FinalClashSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
@@ -12,9 +11,9 @@ export const FinalClashSection = () => (
     </Heading>
     <div className="flex flex-col gap-6 desktop:flex-row">
       <div className="flex flex-col gap-6 desktop:w-1/2">
-        <p>{finalClash1}</p>
-        <p>{finalClash2}</p>
-        <p>{finalClash3}</p>
+        {content.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
       </div>
       <Image
         src="/images/history/regiment/communication.webp"

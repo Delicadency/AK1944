@@ -1,8 +1,8 @@
-import { partisan } from "@/data/historyData";
+import { partisanSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { partisanTitle, partisan: content } = partisan;
+const { partisanTitle, content } = partisanSection;
 
 export const PartisanSection = () => (
   <section className="flex flex-col gap-6">

@@ -1,13 +1,14 @@
-import { historyData } from "@/data/historyData";
+import { summarySection } from "@/data/historyData";
 
-const { summary1, summary2 } = historyData.regiment;
+const { content, author } = summarySection;
 
 export const SummarySection = () => (
-  <div className="mt-8 contrast:text-yellowContrast desktop:mt-24">
-    <div className="flex flex-col gap-6">
-      <p>{summary1}</p>
-      <p>{summary2}</p>
+  <div className="m-auto mt-8 max-w-[918px] contrast:text-yellowContrast desktop:mt-12">
+    <div className="flex flex-col gap-6 text-lg">
+      {content.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
     </div>
-    <p className="mt-6 justify-self-end font-courier">Autor: Maciej Małozięć</p>
+    <p className="mt-4 justify-self-end font-courier">{author}</p>
   </div>
 );

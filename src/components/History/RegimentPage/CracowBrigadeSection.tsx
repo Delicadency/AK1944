@@ -1,14 +1,11 @@
-import { historyData } from "@/data/historyData";
+import { cracowBrigadeSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const {
-  cracowBrigadeTitle,
-  cracowBrigade1,
-  cracowBrigade2,
-  cracowBrigade3,
-  cracowBrigade4,
-} = historyData.regiment;
+const { cracowBrigadeTitle, content } = cracowBrigadeSection;
+
+const firstColumn = content.slice(0, 2);
+const secondColumn = content.slice(2);
 
 export const CracowBrigadeSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
@@ -17,7 +14,9 @@ export const CracowBrigadeSection = () => (
     </Heading>
     <div className="flex flex-col gap-6 desktop:flex-row">
       <div className="flex flex-col gap-6 desktop:w-1/2">
-        <p>{cracowBrigade1}</p>
+        {firstColumn.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
         <Image
           src="/images/history/regiment/regiment.webp"
           alt="Musztra paradna podczas święta 5. Pułku Strzelców Konnych w Dębicy w 1938 r."
@@ -25,11 +24,11 @@ export const CracowBrigadeSection = () => (
           height={428}
           className="m-auto desktop:hidden"
         />
-        <p>{cracowBrigade2}</p>
       </div>
       <div className="flex flex-col gap-6 desktop:w-1/2">
-        <p>{cracowBrigade3}</p>
-        <p>{cracowBrigade4}</p>
+        {secondColumn.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
       </div>
     </div>
   </section>

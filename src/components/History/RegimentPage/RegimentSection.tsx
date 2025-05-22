@@ -1,8 +1,8 @@
-import { historyData } from "@/data/historyData";
+import { regimentSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { regimentTitle, regiment1 } = historyData.regiment;
+const { regimentTitle, content } = regimentSection;
 
 export const RegimentSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
@@ -10,7 +10,7 @@ export const RegimentSection = () => (
       {regimentTitle}
     </Heading>
     <div className="flex flex-col gap-6">
-      <p>{regiment1}</p>
+      <p>{content}</p>
     </div>
     <div className="flex justify-center gap-6">
       <Image

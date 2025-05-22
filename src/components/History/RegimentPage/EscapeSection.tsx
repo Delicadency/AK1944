@@ -1,9 +1,10 @@
-import { historyData } from "@/data/historyData";
+import { escapeSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { escapeTitle, escape1, escape2, escape3, escape4, escape5 } =
-  historyData.regiment;
+const { escapeTitle, content } = escapeSection;
+const firstColumn = content.slice(0, 3);
+const secondColumn = content.slice(3);
 
 export const EscapeSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
@@ -13,9 +14,9 @@ export const EscapeSection = () => (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-6 desktop:flex-row">
         <div className="flex flex-col gap-6 desktop:w-1/2">
-          <p>{escape1}</p>
-          <p>{escape2}</p>
-          <p>{escape3}</p>
+          {firstColumn.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
         <Image
           src="/images/history/regiment/shooters.webp"
@@ -25,8 +26,9 @@ export const EscapeSection = () => (
           className="m-auto desktop:hidden"
         />
         <div className="flex flex-col gap-6 desktop:w-1/2">
-          <p>{escape4}</p>
-          <p>{escape5}</p>
+          {secondColumn.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
         </div>
       </div>
       <div className="flex justify-center gap-6">
