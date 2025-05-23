@@ -1,10 +1,10 @@
-import Calendar from "../Calendar/Calendar";
 import Container from "../shared/Container";
 import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
 import { NewsItem } from "../shared/NewsItem/NewsItem";
 import { getPosts } from "@/dataAccess/posts";
 import { Routes } from "@/routes";
+import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
 
 const NewsLanding = async () => {
   const [posts, error] = await getPosts(2);
@@ -27,10 +27,7 @@ const NewsLanding = async () => {
       <div className="flex flex-col items-center justify-center gap-10 bg-greenMain py-10 contrast:bg-yellowContrast">
         <Container className="flex flex-col items-center justify-center gap-10 tablet:px-11 desktop:flex-row-reverse desktop:gap-36 desktop:px-44">
           <div>
-            <Calendar
-              date={1942}
-              description="Związek Walki Zbrojnej (ZWZ) został przekształcony w Armię Krajową (AK)"
-            />
+            <CalendarCard withButton />
           </div>
           <div className="flex flex-col items-center justify-center gap-5 tablet:gap-10">
             {posts.map((post) => (

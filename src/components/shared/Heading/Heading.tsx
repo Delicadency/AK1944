@@ -7,6 +7,7 @@ export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   contrast: "yellow" | "black";
   color: "green" | "white";
   className?: string;
+  align?: "start" | "center"; 
 }
 
 export const Heading = ({
@@ -66,7 +67,7 @@ export const Heading = ({
           variants[variant],
           colors[color],
           "font-lora font-bold",
-          className,
+          className
         )}
       >
         {children}
@@ -77,7 +78,7 @@ export const Heading = ({
           className={clsx(
             "mt-2 w-[200px] border-t-2 border-solid",
             colors[color],
-            contrastStyle[contrast],
+            contrastStyle[contrast]
           )}
         />
       )}

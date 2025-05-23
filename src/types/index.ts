@@ -23,7 +23,6 @@ export type IconName =
   | "gift"
   | "help"
   | "info"
-  | "pin"
   | "send"
   | "target";
 
@@ -51,4 +50,9 @@ export interface ContainerProps {
   children: ReactNode;
   className?: string;
   as?: ElementType;
+}
+
+export interface NavItem {
+  href: string;
+  label: string;
 }

@@ -9,7 +9,7 @@ export default function BoardPage() {
   return (
     <section className="flex flex-col justify-center">
       <Container as="section" className="pt-5 tablet:pb-[64px] desktop:py-10">
-        <Breadcrumbs />
+        <Breadcrumbs contrastVariant="black" />
         <ShowOnMobile className="flex justify-center py-10">
           <LogoAK className="h-[64px] w-[176px]" />
         </ShowOnMobile>
@@ -42,7 +42,7 @@ export default function BoardPage() {
 
       <Container
         as="section"
-        className="font-16 flex flex-col gap-10 pb-10 pt-6 leading-6 text-black tablet:px-6 desktop:mx-auto desktop:w-[1022px] desktop:px-0 desktop:pb-[150px]"
+        className="font-16 flex flex-col gap-10 pb-10 pt-6 leading-6 text-black tablet:px-6 tablet:pb-20 desktop:mx-auto desktop:w-[1022px] desktop:px-0 desktop:pb-150"
       >
         <p>{boardData.announcement}</p>
         <p>{boardData.electionInfo}</p>
