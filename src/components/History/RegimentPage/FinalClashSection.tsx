@@ -15,13 +15,15 @@ export const FinalClashSection = () => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
-      <Image
-        src="/images/history/regiment/communication.webp"
-        alt="Taczanka plutonu łączności 5. Pulku Strzelców Konnych z centralą telefoniczną."
-        width={604}
-        height={452}
-        className="m-auto"
-      />
+      <div className="relative m-auto aspect-[1.4] w-full max-w-[600px]">
+        <Image
+          src="/images/history/regiment/communication.webp"
+          alt="Taczanka plutonu łączności 5. Pulku Strzelców Konnych z centralą telefoniczną."
+          fill
+          sizes="(max-width: 768px) 100vw, 600px"
+          className="object-cover"
+        />
+      </div>
     </div>
   </section>
 );

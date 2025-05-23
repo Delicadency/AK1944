@@ -16,27 +16,31 @@ export const GenesisSection = () => (
     <div className="flex flex-col gap-6 contrast:text-yellowContrast desktop:flex-row desktop:gap-[128px]">
       <div className="flex flex-col gap-6 text-lg">
         <p>{firstPart}</p>
-        <Image
-          src="/images/history/regiment/officers.webp"
-          alt="Obraz przedstawiający żołnierza salutującego oficerom."
-          width={394}
-          height={486}
-          className="m-auto desktop:hidden"
-          priority
-        />
+        <div className="relative m-auto aspect-[0.81] w-full max-w-[350px] desktop:hidden">
+          <Image
+            src="/images/history/regiment/officers.webp"
+            alt="Obraz przedstawiający żołnierza salutującego oficerom."
+            fill
+            sizes="(max-width: 768px) 100vw, 288px"
+            className="object-cover"
+            priority
+          />
+        </div>
         {secondPart.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
       <aside className="flex flex-shrink-0 flex-col gap-6">
-        <Image
-          src="/images/history/regiment/officers.webp"
-          alt="Obraz przedstawiający żołnierza salutującego oficerom."
-          width={394}
-          height={486}
-          className="m-auto mobile:hidden desktop:block"
-          priority
-        />
+        <div className="relative m-auto aspect-[1] w-full mobile:hidden desktop:block">
+          <Image
+            src="/images/history/regiment/officers.webp"
+            alt="Obraz przedstawiający żołnierza salutującego oficerom."
+            fill
+            sizes="(max-width: 768px) 100vw, 394px"
+            className="object-cover"
+            priority
+          />
+        </div>
         <Heading variant="h4" color="green" contrast="yellow">
           {commandersTitle}
         </Heading>
