@@ -1,6 +1,8 @@
 import React from "react";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Paragraph } from "../data/paragraphs";
+import { QuoteSection } from "../../_components/QuoteSection";
+import { quotes } from "../../data/quotes";
 import clsx from "clsx";
 
 export const OriginsSection = ({ title, content }: Paragraph) => {
@@ -52,6 +54,17 @@ export const OriginsSection = ({ title, content }: Paragraph) => {
                 </li>
               ))}
             </ListTag>
+          );
+        }
+
+        if (block.type === "quote") {
+          return (
+            <QuoteSection
+              key={i}
+              quote={quotes.find((q) => q.id === "intro")!}
+              layout="no-emphasis"
+              className="my-5"
+            />
           );
         }
 

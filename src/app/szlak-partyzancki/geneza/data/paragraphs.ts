@@ -1,6 +1,7 @@
 type ContentElement =
   | { type: "paragraph"; text: string; spacerAfter?: boolean }
-  | { type: "list"; items: string[]; ordered?: boolean; dashBullet?: boolean; };
+  | { type: "list"; items: string[]; ordered?: boolean; dashBullet?: boolean }
+  | { type: "quote" };
 
 export type Paragraph = {
   title: string;
@@ -55,6 +56,9 @@ export const paragraphs: Paragraph[] = [
       {
         type: "paragraph",
         text: "Dlaczego wytypowane zostały właśnie te punkty? Aby „ocalić od zapomnienia” oraz upamiętnić miejsca historycznych wydarzeń związanych z działalnością II Zgrupowania AK Obwodu Dębica. To także społeczna odpowiedź na apel Antoniego Stańko, żołnierza AK i historyka Komendy Obwodu „Deser”. Powody są następujące:",
+      },
+      {
+        type: "quote",
       },
       {
         type: "list",
@@ -127,4 +131,4 @@ export const paragraphs: Paragraph[] = [
       },
     ],
   },
-];
+] as const;
