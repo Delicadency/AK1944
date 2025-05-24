@@ -11,10 +11,11 @@ export const LiteratureComponent = () => (
     <Heading variant="h3" contrast="black" color="white">
       {title}
     </Heading>
-    <p className="my-6 font-courier text-lg text-white desktop:text-base">
+    <p className="my-6 font-courier text-lg text-white contrast:text-black00 desktop:text-base">
       {content}
     </p>
     <Button
+      variant="primaryBlue"
       label="Sprawdź"
       ariaDescription="Sprawdź"
       className="m-auto mb-6"

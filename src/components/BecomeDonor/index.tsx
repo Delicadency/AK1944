@@ -22,7 +22,7 @@ export const BecomeDonor = () => (
           rozwój projektów edukacyjnych i historycznych.
         </p>
         <Button
-          variant="primary"
+          variant="primaryBlue"
           href={Routes.SUPPORT}
           label="Wesprzyj"
           ariaDescription="Wesprzyj"
