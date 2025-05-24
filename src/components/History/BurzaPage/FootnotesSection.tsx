@@ -1,7 +1,7 @@
-import { footnotes } from "@/data/historyData";
+import { footnotesSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-const { footnotesTitle, footnotes: notes } = footnotes;
+const { footnotesTitle, footnotes } = footnotesSection;
 
 export const FootnotesSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
@@ -13,12 +13,12 @@ export const FootnotesSection = () => (
     >
       {footnotesTitle}
     </Heading>
-    <ul className="flex flex-col gap-4 font-courier">
-      {notes.map((footnote, index) => (
+    <ol className="flex flex-col gap-4 font-courier">
+      {footnotes.map((footnote, index) => (
         <li key={index}>
           <p>{footnote}</p>
         </li>
       ))}
-    </ul>
+    </ol>
   </section>
 );

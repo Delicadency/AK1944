@@ -1,5 +1,37 @@
-import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+import Container from "@/components/shared/Container";
+import { historyData } from "@/data/historyData";
+import { Heading } from "@/components/shared/Heading/Heading";
+import { GenesisSection } from "@/components/History/RegimentPage/GenesisSection";
+import { RegimentSection } from "@/components/History/RegimentPage/RegimentSection";
+import { CracowBrigadeSection } from "@/components/History/RegimentPage/CracowBrigadeSection";
+import { SeparationSection } from "@/components/History/RegimentPage/SeparationSection";
+import { WoznikiSection } from "@/components/History/RegimentPage/WoznikiSection";
+import { EscapeSection } from "@/components/History/RegimentPage/EscapeSection";
+import { RegroupSection } from "@/components/History/RegimentPage/RegroupSection";
+import { BilgorajSection } from "@/components/History/RegimentPage/BilgorajSection";
+import { FinalClashSection } from "@/components/History/RegimentPage/FinalClashSection";
+import { SummarySection } from "@/components/History/RegimentPage/SummarySection";
 
 export default function RegimentPage() {
-  return <ComingSoon />;
+  const { title } = historyData.regiment;
+
+  return (
+    <div className="contrast:bg-black">
+      <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+        <Heading variant="h3" color="green" contrast="yellow">
+          {title}
+        </Heading>
+        <GenesisSection />
+        <RegimentSection />
+        <CracowBrigadeSection />
+        <SeparationSection />
+        <WoznikiSection />
+        <EscapeSection />
+        <RegroupSection />
+        <BilgorajSection />
+        <FinalClashSection />
+        <SummarySection />
+      </Container>
+    </div>
+  );
 }

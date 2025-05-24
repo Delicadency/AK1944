@@ -1,7 +1,7 @@
-import { commandTransfer } from "@/data/historyData";
+import { commandTransferSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 
-const { commandTransferTitle, commandTransfer: content } = commandTransfer;
+const { commandTransferTitle, content } = commandTransferSection;
 
 export const CommandTransferSection = () => (
   <section className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast">

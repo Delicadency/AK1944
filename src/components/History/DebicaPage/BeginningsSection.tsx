@@ -1,7 +1,7 @@
 import { Heading } from "@/components/shared/Heading/Heading";
 import { beginningsSection } from "@/data/historyData";
 
-const { beginningsTitle, beginnings } = beginningsSection;
+const { beginningsTitle, content } = beginningsSection;
 
 export const BeginningsSection = () => (
   <section className="flex flex-col gap-6">
@@ -9,7 +9,7 @@ export const BeginningsSection = () => (
       {beginningsTitle}
     </Heading>
     <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
-      {beginnings.map((paragraph, index) => (
+      {content.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
     </div>

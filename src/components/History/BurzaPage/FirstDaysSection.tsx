@@ -1,8 +1,10 @@
-import { firstDays } from "@/data/historyData";
+import { firstDaysSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { firstDaysTitle, firstDays: content } = firstDays;
+const { firstDaysTitle, content } = firstDaysSection;
+const firstPart = content.slice(0, 2);
+const secondPart = content.slice(2);
 
 export const FirstDaysSection = () => (
   <section className="flex flex-col gap-6">
@@ -12,12 +14,12 @@ export const FirstDaysSection = () => (
       </Heading>
       <div className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast desktop:flex-row">
         <div className="flex flex-col gap-6 desktop:w-[50%]">
-          {content[0].map((paragraph, index) => (
+          {firstPart.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>
         <div className="flex flex-col gap-6 desktop:w-[50%]">
-          {content[1].map((paragraph, index) => (
+          {secondPart.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
         </div>

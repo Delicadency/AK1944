@@ -2,7 +2,7 @@ import { fortressSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { fortressTitle, fortress } = fortressSection;
+const { fortressTitle, content } = fortressSection;
 
 export const FortressSection = () => (
   <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
@@ -10,7 +10,7 @@ export const FortressSection = () => (
       <Heading variant="h4" color="green" contrast="yellow">
         {fortressTitle}
       </Heading>
-      {fortress.map((paragraph, index) => (
+      {content.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}
     </div>

@@ -1,8 +1,10 @@
-import { heroicDefence } from "@/data/historyData";
+import { heroicDefenceSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { heroicDefenceTitle, heroicDefence: content } = heroicDefence;
+const { heroicDefenceTitle, content } = heroicDefenceSection;
+const firstPart = content.slice(0, 3);
+const secondPart = content.slice(3);
 
 export const HeroicDefenceSection = () => (
   <section className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast">
@@ -11,7 +13,7 @@ export const HeroicDefenceSection = () => (
     </Heading>
     <div className="flex flex-col gap-6 desktop:flex-row">
       <div className="flex flex-col gap-6">
-        {content[0].map((paragraph, index) => (
+        {firstPart.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
@@ -23,7 +25,7 @@ export const HeroicDefenceSection = () => (
         className="m-auto w-full max-w-[600px] desktop:hidden"
       />
       <div className="flex flex-col gap-6">
-        {content[1].map((paragraph, index) => (
+        {secondPart.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>

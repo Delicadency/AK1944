@@ -1,8 +1,8 @@
-import { district } from "@/data/historyData";
+import { districtSection } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
-const { districtTitle, district: content } = district;
+const { districtTitle, content } = districtSection;
 
 export const DistrictSection = () => (
   <section className="flex flex-col gap-6 font-sourceSans text-lg desktop:flex-row">
