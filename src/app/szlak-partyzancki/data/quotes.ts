@@ -1,4 +1,5 @@
 type Quote = {
+  type?: string;
   id: string;
   content: string;
   emphasis?: string;
