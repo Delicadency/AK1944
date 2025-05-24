@@ -24,8 +24,8 @@ export default function PartisanTrailPage() {
           paragraphs={trailData.paragraphs}
           displayName={trailData.displayName}
         />
-        <Map map={trailData.map} />
         <TrailPoints activeTrail={activeTrail} />
+        <Map map={trailData.map} />
         <div className="flex flex-col justify-between desktop:flex-row desktop:pb-20">
           <Section sectionName="Geneza" />
           <Section sectionName="Rajdy" />
