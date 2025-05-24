@@ -63,7 +63,7 @@ export const OriginsSection = ({ title, content }: Paragraph) => {
               key={i}
               quote={quotes.find((q) => q.id === "intro")!}
               layout="no-emphasis"
-              className="my-5"
+              className="my-5 max-w-full"
             />
           );
         }

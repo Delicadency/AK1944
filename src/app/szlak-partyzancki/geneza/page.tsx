@@ -8,6 +8,8 @@ import { OriginsSection } from "./_components/OriginsSection";
 import Container from "@/components/shared/Container";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { Heading } from "@/components/shared/Heading/Heading";
+import { Button } from "@/components/shared/Button/Button";
+import { Routes } from "@/routes";
 
 const getMobileOrderedImages = () => {
   return sideImages
@@ -32,11 +34,17 @@ export default function GenezaPage() {
         Geneza
       </Heading>
 
-      <article className="mb-20 hidden tablet:grid tablet:grid-cols-2 tablet:gap-20">
+      <article className="mb-[150px] hidden  tablet:grid tablet:grid-cols-2 tablet:gap-20">
         <div className="flex flex-col gap-6">
           {paragraphs.map((section) => (
             <OriginsSection key={section.title} {...section} />
           ))}
+          <Button
+            ariaDescription="Kliknij, aby przejść do podstrony Rajdy"
+            label="Weź udział w Rajdzie"
+            href={Routes.RAIDS}
+            variant="primaryBlue"
+          />
         </div>
 
         <div className="flex flex-col gap-8">
@@ -54,14 +62,14 @@ export default function GenezaPage() {
         </div>
       </article>
 
-      <article className="tablet:hidden">
+      <article className="tablet:hidden mb-[120px]">
         {paragraphs.map((section, index) => {
           const matchingImage = mobileImages.find(
             (img) => img.mobileOrder === index + 1,
           );
 
           return (
-            <div key={section.title} className="mb-12">
+            <div key={section.title}>
               <OriginsSection {...section} />
               {matchingImage && (
                 <div className="mt-4">
@@ -78,6 +86,13 @@ export default function GenezaPage() {
             </div>
           );
         })}
+        <Button
+            ariaDescription="Kliknij, aby przejść do podstrony Rajdy"
+            label="Weź udział w Rajdzie"
+            href={Routes.RAIDS}
+            variant="primaryBlue"
+            className="m-auto my-5"
+          />
       </article>
     </Container>
   );
