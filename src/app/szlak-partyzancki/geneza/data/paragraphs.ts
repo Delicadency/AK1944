@@ -1,6 +1,6 @@
 type ContentElement =
   | { type: "paragraph"; text: string; spacerAfter?: boolean }
-  | { type: "list"; items: string[]; ordered?: boolean };
+  | { type: "list"; items: string[]; ordered?: boolean; dashBullet?: boolean; };
 
 export type Paragraph = {
   title: string;
@@ -35,6 +35,7 @@ export const paragraphs: Paragraph[] = [
           "sprecyzowanie tematu Szlaku i określenie zasięgu: kwestia ta była przedmiotem licznych dyskusji w środowisku weteranów AK oraz wśród harcerzy 13. Drużyny Harcerzy Wędrowników “Kałużacy”. Ostatecznie ustalono, że Szlak przebiega przez teren działań II Rejonu AK Obwodu Dębica w granicach gmin Dębica i Pilzno, a jego pełna nazwa brzmi: Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica.",
           "pozyskanie partnerów: w Księdze Mądrości Syracha napisano: „Wierny przyjaciel potężną obroną, kto go znalazł, skarb znalazł”. Przy realizacji pomysłu Szlaku udało się spotkać wielu życzliwych ludzi, którzy wsparli tą ideę cenną radą, pomocą merytoryczną oraz finansową.",
         ],
+        dashBullet: true,
       },
       { type: "paragraph", text: "Główni mecenasi projektu to:" },
       {
@@ -62,6 +63,7 @@ export const paragraphs: Paragraph[] = [
           "opracowanie projektu technicznego dotyczącego przebiegu Szlaku w terenie, wytypowanie miejsc historycznych: zrealizowane na drodze audytu historycznego w konsultacji z partnerami projektu przy szczegółowej inwentaryzacji atrakcji przyrodniczych, turystycznych oraz lokalnych inicjatyw.",
           "zaprojektowanie trasy Szlaku: niełatwo było połączyć wytypowane uprzednio punkty Szlaku w sposób logiczny, zachowując chronologię historycznych wydarzeń. Aby zatem nie nadkładać niepotrzebnie drogi, przebieg Szlaku został wytyczony z lekkimi naruszeniami chronologii i jest trasą jednokierunkową. Dodatkowo jeden z punktów Szlaku, Punkt Zborżilówka, jest punktem specjalnym, przez który nie przebiega oznakowana ścieżka",
         ],
+        dashBullet: true,
       },
     ],
   },
@@ -80,6 +82,7 @@ export const paragraphs: Paragraph[] = [
           "oznakowanie głównej nitki szlaku: Szlak Partyzancki został oznakowany za pomocą białych lilijek. Prace przy oznaczeniu trasy były prowadzone we wrześniu 2004 roku, przed oficjalną inauguracją, która miała miejsce 27 września tego samego roku. We wszystkich punktach przejściowych szlaku umieszczone zostały duże tablice z informacjami historycznymi, fragmentami poezji, a często także z ikonografią historyczną.",
           "opieka nad Szlakiem: od początku powstania Szlaku opiekę nad nim sprawowała 13. Drużyna Harcerzy Wędrowników „Kałużacy” z Hufca ZHP Dębica. Gdy drużyna zawiesiła swoją działalność, obowiązki opieki nad szlakiem przejęło Środowisko 5. Pułku Strzelców Konnych AK – Światowego Związku Żołnierzy AK w Dębicy, przy którym nieformalnie funkcjonuje Krąg Przewodników Szlaku Partyzanckiego. W przyszłości planowane jest powołanie stowarzyszenia będącego jednostką prowadzącą i opiekującą się Szlakiem.",
         ],
+        dashBullet: true,
       },
     ],
   },
@@ -120,6 +123,7 @@ export const paragraphs: Paragraph[] = [
           "przygotowanie i dystrybucja materiałów informacyjno-promocyjnych",
           "organizacja wystaw, spotkań, prelekcji i pokazów związanych ze Szlakiem i jego tematyką.",
         ],
+        dashBullet: true,
       },
     ],
   },
