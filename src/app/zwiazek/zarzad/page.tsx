@@ -1,4 +1,4 @@
-import { boardData } from "@/data/boardData";
+import { boardData } from "@/app/zwiazek/zarzad/data/boardData";
 import LogoAK from "@/icons/LogoAK";
 import Container from "@/components/shared/Container";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
