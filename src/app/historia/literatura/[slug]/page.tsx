@@ -1,19 +1,19 @@
 import { BookDetails } from "@/app/historia/literatura/[slug]/_components/BookDetails";
 import { Chapters } from "@/app/historia/literatura/[slug]/_components/Chapters";
-import { data } from "@/app/historia/literatura/_components/data";
+import { bookMap, data } from "@/app/historia/literatura/_components/data";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export default async function LiteraturePage({ params }: Props) {
   const { slug } = await params;
   const decodedSlug = decodeURIComponent(slug);
-  const book = data.find((b) => b.title.toLocaleLowerCase() === decodedSlug);
+  const book = bookMap.get(decodedSlug);
 
   if (!book) {
     return (

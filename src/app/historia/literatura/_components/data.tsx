@@ -267,3 +267,7 @@ export const data: Book[] = [
     ],
   },
 ];
+
+export const bookMap = new Map(
+  data.map((book) => [book.title.toLowerCase(), book]),
+);
