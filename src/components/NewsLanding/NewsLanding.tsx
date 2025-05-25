@@ -6,16 +6,12 @@ import { getPosts } from "@/dataAccess/posts";
 import { Routes } from "@/routes";
 import { CalendarCard } from "@/components/shared/CalendarCard/CalendarCard";
 
-const NewsLanding = async () => {
+export const NewsLanding = async () => {
   const [posts, error] = await getPosts(2);
 
-  if (error) {
-    return <p>{`Wystąpił błąd podczas ładowania danych. ${error.message}`}</p>;
-  }
+  const noData = error || !posts || posts.length === 0;
 
-  if (!posts || posts.length === 0) {
-    return <p>Brak danych</p>;
-  }
+  if (noData) return null;
 
   return (
     <section>
@@ -45,5 +41,3 @@ const NewsLanding = async () => {
     </section>
   );
 };
-
-export default NewsLanding;
