@@ -1,6 +1,6 @@
 import { BookDetails } from "@/app/historia/literatura/[slug]/_components/BookDetails";
 import { Chapters } from "@/app/historia/literatura/[slug]/_components/Chapters";
-import { bookMap, data } from "@/app/historia/literatura/_components/data";
+import { bookMap } from "@/app/historia/literatura/_components/data";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
