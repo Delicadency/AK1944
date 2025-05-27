@@ -32,6 +32,7 @@ export const NewsLanding = async () => {
           </div>
         </Container>
         <Button
+          variant="primaryBlue"
           label="Przejdź do archiwum"
           ariaDescription="Przejdź do archiwum"
           className="bg-transparent py-0 underline shadow-none contrast:bg-transparent contrast:text-black"

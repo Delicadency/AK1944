@@ -54,7 +54,7 @@ export const CalendarCard = ({ withButton = false }: Props) => {
           )}
           {withButton && (
             <Button
-              variant="primary"
+              variant="primaryBlue"
               label="Kalendarz uroczystości"
               ariaDescription="Kalendarz uroczystości"
               href={Routes.CALENDAR}
