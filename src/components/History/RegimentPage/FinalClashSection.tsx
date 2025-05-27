@@ -15,7 +15,7 @@ export const FinalClashSection = () => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>
-      <div className="relative m-auto aspect-[1.4] w-full max-w-[600px]">
+      <div className="relative m-auto aspect-[1.4] w-full max-w-[684px]">
         <Image
           src="/images/history/regiment/communication.webp"
           alt="Taczanka plutonu łączności 5. Pulku Strzelców Konnych z centralą telefoniczną."

@@ -13,14 +13,14 @@ export const FirstDaysSection = () => (
         {firstDaysTitle}
       </Heading>
       <div className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast desktop:flex-row">
-        <div className="flex flex-col gap-6 desktop:w-[50%]">
-          {firstPart.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+        <div className="flex flex-col gap-6 desktop:w-1/2">
+          {firstPart.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
-        <div className="flex flex-col gap-6 desktop:w-[50%]">
-          {secondPart.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+        <div className="flex flex-col gap-6 desktop:w-1/2">
+          {secondPart.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
       </div>
@@ -31,14 +31,14 @@ export const FirstDaysSection = () => (
         alt="Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Kondukt pogrzebowy z trumną poległego żołnierza AK w drodze z Gołęczyny na Kałużówkę, 21 sierpnia 1944 r."
         width={2000}
         height={1300}
-        className="w-full max-w-[600px]"
+        className="w-full max-w-[684px]"
       />
       <Image
         src="/images/history/burza/kaluzowka.webp"
         alt="Punkt sanitarny na Kałużówce. Od lewej: dr Kazimierz Gradziński, Maria Szewczyk, Teresa Langer, dr Jan Szymaszek, Władysława Gubernat, Lucyna Dykier."
         width={2000}
         height={1300}
-        className="hidden max-w-[600px] desktop:block"
+        className="hidden max-w-[684px] desktop:block"
       />
     </div>
   </section>

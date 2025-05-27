@@ -1,6 +1,6 @@
 import Container from "@/components/shared/Container";
-import { historyData } from "@/data/historyData";
 import { Heading } from "@/components/shared/Heading/Heading";
+import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { GenesisSection } from "@/components/History/RegimentPage/GenesisSection";
 import { RegimentSection } from "@/components/History/RegimentPage/RegimentSection";
 import { CracowBrigadeSection } from "@/components/History/RegimentPage/CracowBrigadeSection";
@@ -13,13 +13,15 @@ import { FinalClashSection } from "@/components/History/RegimentPage/FinalClashS
 import { SummarySection } from "@/components/History/RegimentPage/SummarySection";
 
 export default function RegimentPage() {
-  const { title } = historyData.regiment;
-
   return (
     <div className="contrast:bg-black">
-      <Container as="article" className="flex flex-col gap-10 pb-6 pt-4">
+      <Container
+        as="article"
+        className="flex flex-col gap-10 pb-6 tablet:gap-14 tablet:pb-20 desktop:pb-150"
+      >
+        <Breadcrumbs />
         <Heading variant="h3" color="green" contrast="yellow">
-          {title}
+          5. Pułk Strzelców Konnych{" "}
         </Heading>
         <GenesisSection />
         <RegimentSection />

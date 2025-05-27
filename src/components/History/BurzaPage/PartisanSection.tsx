@@ -10,14 +10,16 @@ export const PartisanSection = () => (
       {partisanTitle}
     </Heading>
     <div className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast desktop:flex-row-reverse">
-      <Image
-        src="/images/history/burza/battles.webp"
-        alt="Ostatnie pożegnanie jednego z poległych żołnierzy AK. Gumniska, 1944 r."
-        width={2120}
-        height={2950}
-        className="m-auto w-full max-w-[450px]"
-      />
-      <div className="flex flex-col gap-6">
+      <div className="relative aspect-[0.78] w-full desktop:w-1/2">
+        <Image
+          src="/images/history/burza/battles.webp"
+          alt="Ostatnie pożegnanie jednego z poległych żołnierzy AK. Gumniska, 1944 r."
+          fill
+          sizes="(max-width: 768px) 100vw, 600px"
+          className="object-cover"
+        />
+      </div>
+      <div className="flex flex-col gap-6 desktop:w-1/2">
         {content.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

@@ -26,12 +26,12 @@ export const GenesisSection = () => (
             priority
           />
         </div>
-        {secondPart.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+        {secondPart.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
       <aside className="flex flex-shrink-0 flex-col gap-6">
-        <div className="relative m-auto aspect-[1] w-full mobile:hidden desktop:block">
+        <div className="relative m-auto aspect-[1.1] w-full mobile:hidden desktop:block">
           <Image
             src="/images/history/regiment/officers.webp"
             alt="Obraz przedstawiający żołnierza salutującego oficerom."

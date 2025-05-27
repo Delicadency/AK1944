@@ -23,8 +23,8 @@ export const ExpansionSection = () => (
       </div>
       <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
         <div>
-          {firstPart.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+          {firstPart.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
         <div className="relative m-auto aspect-[1.6] w-full max-w-[500px] desktop:hidden">
@@ -37,8 +37,8 @@ export const ExpansionSection = () => (
           />
         </div>
         <div>
-          {secondPart.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+          {secondPart.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
       </div>

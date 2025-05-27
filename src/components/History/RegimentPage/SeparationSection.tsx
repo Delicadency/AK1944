@@ -11,7 +11,7 @@ export const SeparationSection = () => (
     </Heading>
     <div className="flex gap-6 mobile:flex-col desktop:flex-row">
       <p className="desktop:w-1/2">{content}</p>
-      <div className="relative m-auto aspect-[1.44] w-full max-w-[600px] desktop:w-1/2">
+      <div className="relative m-auto aspect-[1.4] w-full max-w-[684px] desktop:w-1/2">
         <Image
           src="/images/history/regiment/independence.webp"
           alt="Obchody Święta Niepodległości w Dębicy. Ppor. Mieczysław Rakoczy na czele II plutonu 3. szwadronu 5. Pułku Strzelców Konnych. Dębica, 11 listopada 1938 r."

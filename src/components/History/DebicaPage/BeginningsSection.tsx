@@ -10,7 +10,9 @@ export const BeginningsSection = () => (
     </Heading>
     <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
       {content.map((paragraph, index) => (
-        <p key={index}>{paragraph}</p>
+        <p key={index} className="w-1/2">
+          {paragraph}
+        </p>
       ))}
     </div>
   </section>

@@ -12,9 +12,9 @@ export const HeroicDefenceSection = () => (
       {heroicDefenceTitle}
     </Heading>
     <div className="flex flex-col gap-6 desktop:flex-row">
-      <div className="flex flex-col gap-6">
-        {firstPart.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+      <div className="flex flex-col gap-6 desktop:w-1/2">
+        {firstPart.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
       <Image
@@ -24,9 +24,9 @@ export const HeroicDefenceSection = () => (
         height={1300}
         className="m-auto w-full max-w-[600px] desktop:hidden"
       />
-      <div className="flex flex-col gap-6">
-        {secondPart.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+      <div className="flex flex-col gap-6 desktop:w-1/2">
+        {secondPart.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
     </div>
