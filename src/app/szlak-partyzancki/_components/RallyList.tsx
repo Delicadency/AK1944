@@ -17,7 +17,8 @@ export default function RallyList() {
     <div className="max-w-[1400px]">
       {rallies.map((rally, index) => (
         <div
-          key={rally.id}
+          key={index}
+          
           className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 "
         >
           {/* Zdjęcie */}
