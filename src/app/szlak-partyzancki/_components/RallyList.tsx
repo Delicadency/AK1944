@@ -14,7 +14,7 @@ export type Rally = {
 
 export default function RallyList() {
   return (
-    <div className="max-w-[1400px]">
+    <div className="px-2 desktop:px-8">
       {rallies.map((rally, index) => (
         <div
           key={index}
@@ -22,7 +22,7 @@ export default function RallyList() {
           className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 "
         >
           {/* Zdjęcie */}
-          <div className="relative h-96 w-[80%] mx-auto order-2 md:order-2">
+          <div className="relative h-96 w-[85%] desktop:w-[100%] mx-auto order-2 md:order-2">
             <Image
               src={rally.imageUrl}
               alt={rally.title}
