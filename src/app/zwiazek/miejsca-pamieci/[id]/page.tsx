@@ -7,13 +7,19 @@ import { IconMapPin } from "@/icons/IconMapPin";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Link from "next/link";
 
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
 export async function generateStaticParams() {
   return memorialPlaces.map((place) => ({
     id: place.id.toString(),
   }));
 }
 
-export default function Page({ params }: { params: { id: string } }) {
+export default function Page({ params }: PageProps) {
   const place = memorialPlaces.find((p) => p.id === Number(params.id));
 
   if (!place) {
@@ -101,7 +107,7 @@ export default function Page({ params }: { params: { id: string } }) {
           color="green"
           className="mb-10 text-2xl font-bold"
         >
-          Inne miejsca pamięci
+          Inne miejsca pamięci:
         </Heading>
         <div className="grid grid-cols-1 gap-6 tablet:grid-cols-3">
           {otherPlaces.slice(0, 3).map((item) => (
@@ -114,8 +120,8 @@ export default function Page({ params }: { params: { id: string } }) {
                 <Image
                   src={item.image}
                   alt={item.name}
-                  width={290}
-                  height={244}
+                  width={300}
+                  height={200}
                   className="rounded-desktop w-full object-cover"
                 />
               )}
