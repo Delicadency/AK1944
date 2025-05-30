@@ -24,11 +24,13 @@ const allNavData = [
 interface BreadcrumbProps {
   color?: "green" | "white";
   contrastVariant?: "yellow" | "black";
+  currentPageLabel?: string;
 }
 
 export const Breadcrumbs = ({
   color = "green",
   contrastVariant = "yellow",
+  currentPageLabel,
 }: BreadcrumbProps) => {
   const getCircleColor = (
     color: "green" | "white",
@@ -159,6 +161,13 @@ export const Breadcrumbs = ({
             </li>
           );
         })}
+        {currentPageLabel && (
+          <li className="text-14 font-semibold capitalize leading-4 tablet:text-18">
+            <span className={getTextColor(color, contrastVariant)}>
+              {currentPageLabel}
+            </span>
+          </li>
+        )}
       </ol>
     </nav>
   );

@@ -8,8 +8,10 @@ export const memorialPlaces = [
     location: "Cmentarz Parafialny w Dębicy",
     description:
       "Krzyż upamiętniający zakończenie II wojny światowej oraz rozwiązanie Armii Krajowej. Poświęcony w 1975 roku, z okazji 30. rocznicy tych wydarzeń.",
+    highlight: "Wyróżniony fragment, który trafi do zielonego pola.",
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
     image: "/images/place1.jpg",
-    link: "/zwiazek/miejsca-pamieci/miejsce",
+    link: "/zwiazek/miejsca-pamieci/1",
   },
   {
     id: 2,
@@ -17,8 +19,10 @@ export const memorialPlaces = [
     location: "Lokalizacja miejsca 2",
     description:
       "Lorem ipsum dolor sit amet consectetur. Tristique purus vehicula a mollis condimentum non.",
+    highlight: "Wyróżniony fragment, który trafi do zielonego pola.",
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
     image: "/images/place2.jpg",
-    link: "/zwiazek/miejsca-pamieci/miejsce",
+    link: "/zwiazek/miejsca-pamieci/2",
   },
   {
     id: 3,
@@ -26,8 +30,10 @@ export const memorialPlaces = [
     location: "Lokalizacja miejsca 3",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: "Wyróżniony fragment, który trafi do zielonego pola.",
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
     image: "/images/place3.jpg",
-    link: "/zwiazek/miejsca-pamieci/miejsce",
+    link: "/zwiazek/miejsca-pamieci/3",
   },
   {
     id: 4,
@@ -35,8 +41,10 @@ export const memorialPlaces = [
     location: "Lokalizacja miejsca 3",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: "Wyróżniony fragment, który trafi do zielonego pola.",
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
     image: "/images/place4.jpg",
-    link: "/zwiazek/miejsca-pamieci/miejsce",
+    link: "/zwiazek/miejsca-pamieci/4",
   },
   {
     id: 5,
@@ -44,8 +52,10 @@ export const memorialPlaces = [
     location: "Lokalizacja miejsca 5",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: "Wyróżniony fragment, który trafi do zielonego pola.",
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
     image: "/images/place5.jpg",
-    link: "/zwiazek/miejsca-pamieci/miejsce",
+    link: "/zwiazek/miejsca-pamieci/5",
   },
   {
     id: 6,
@@ -53,7 +63,9 @@ export const memorialPlaces = [
     location: "Lokalizacja miejsca 6",
     description:
       "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: "Wyróżniony fragment, który trafi do zielonego pola.",
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
     image: "/images/place6.jpg",
-    link: "/zwiazek/miejsca-pamieci/miejsce",
+    link: "/zwiazek/miejsca-pamieci/6",
   },
 ];
