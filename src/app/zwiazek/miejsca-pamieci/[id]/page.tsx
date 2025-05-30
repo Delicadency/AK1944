@@ -7,15 +7,16 @@ import { IconMapPin } from "@/icons/IconMapPin";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Link from "next/link";
 
+type PageProps = { params: Promise<{ id: string }> };
+
 export async function generateStaticParams() {
   return memorialPlaces.map((place) => ({
     id: place.id.toString(),
   }));
 }
 
-export default async function Page(props: { params: { id: string } }) {
-  const { params } = props;
-  const { id } = await params; // <-- WAŻNE: awaitujemy params!
+export default async function Page({ params }: PageProps) {
+  const { id } = await params;
   const numericId = Number(id);
   const place = memorialPlaces.find((p) => p.id === numericId);
 
