@@ -43,6 +43,8 @@ export interface PlaceDetails {
   name: string;
   location: string;
   description: string;
+  highlight?: string;
+  descriptionContinuation?: string;
   image: string;
   link: string;
 }
