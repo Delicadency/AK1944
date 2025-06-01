@@ -41,7 +41,7 @@ export const HistoryChapter = ({ item }: { item: Props }) => (
     <Button
       label="Zobacz więcej"
       ariaDescription="Zobacz Więcej"
-      variant={"secondaryBlue"}
+      variant={"secondary"}
       className="m-auto mt-6 desktop:hidden"
       href={item.route}
     />
