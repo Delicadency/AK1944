@@ -43,7 +43,7 @@ export interface PlaceDetails {
   name: string;
   location: string;
   description: string;
-  highlight: string | { text: string; align: "left" | "center" | "right" }[];
+  highlight?: string | { text: string; align: "left" | "center" | "right" }[];
   descriptionContinuation?: string;
   image: string;
   link: string;
