@@ -1,6 +1,6 @@
 import { Button } from "@/components/shared/Button/Button";
 import Image from "next/image";
-import { allRallies } from "../data/rallyPageData";
+import { allRallies } from "../../data/rallyPageData";
 import { RallyPagination } from "./RallyPagination";
 
 export type Rally = {
@@ -57,8 +57,8 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
               <div className="flex flex-wrap gap-5">
                 <Button
                   label="Zasady uczestnictwa"
-                  href={""}
-                  ariaDescription="Zasady uczestnictwa"
+                  href={`/szlak-partyzancki/rajdy/${rally.id}`}
+                  ariaDescription={`Zasady uczestnictwa dla ${rally.title}`}
                   variant="lightGreen"
                 />
                 <Button

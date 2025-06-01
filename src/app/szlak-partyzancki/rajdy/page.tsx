@@ -4,7 +4,7 @@ import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Suspense } from "react";
 import React from "react";
-import { RallyList } from "../_components/RallyList";
+import { RallyList } from "../_components/rajdy/RallyList";
 
 type PageProps = {
   searchParams: Promise<{ [key: string]: string | undefined}>;
@@ -60,6 +60,3 @@ export default function RalliesPage({ searchParams }: PageProps) {
     </div>
   );
 }
-
-// robic zadanie na dopisanie tekstu
-// dawac komentarz w kodzie ze tutaj trzeba cos dolozyc
