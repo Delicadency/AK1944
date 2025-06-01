@@ -1,24 +1,22 @@
 import { Routes } from "@/routes";
 
-export const historyData = {
-  history: {
-    title: "Historia",
-    description: [
-      "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
-      "Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji „Burza”, symbolu odwagi i determinacji Armii Krajowej, a także odkryjesz historię członków Obwodu Dębica SZP-ZWZ-AK, walczących z honorem i poświęceniem w czasie największej próby.",
-      "Znajdziesz tu także przejście do sekcji mieszczącej bibliografię oraz biogramy bohaterów, gdzie zgłębisz osobiste historie oddanych obrońców ojczyzny o wielkich sercach.",
-      "Zapraszamy do podróży w czasie, ożywienia wspomnień i refleksji nad siłą ducha polskiego żołnierza i patrioty.",
-    ],
-    literature: {
-      title: "Literatura",
-      content:
-        "Chcesz zgłębić wiedzę o Armii Krajowej i jej działalności? Odkryj polecaną literaturę, która przybliża historię największej organizacji podziemnej w okupowanej Europie. Znajdziesz tu książki i wspomnienia, które pozwolą lepiej zrozumieć heroizm i poświęcenie żołnierzy AK. To doskonałe źródło wiedzy dla pasjonatów historii oraz tych, którzy chcą poznać kulisy walk o niepodległość. Poznaj opowieści, które na zawsze zapisały się w dziejach Polski.",
-    },
-    biograms: {
-      title: "Biogramy",
-      content:
-        "Poznaj sylwetki bohaterów Armii Krajowej – ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
-    },
+export const history = {
+  title: "Historia",
+  description: [
+    "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
+    "Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji „Burza”, symbolu odwagi i determinacji Armii Krajowej, a także odkryjesz historię członków Obwodu Dębica SZP-ZWZ-AK, walczących z honorem i poświęceniem w czasie największej próby.",
+    "Znajdziesz tu także przejście do sekcji mieszczącej bibliografię oraz biogramy bohaterów, gdzie zgłębisz osobiste historie oddanych obrońców ojczyzny o wielkich sercach.",
+    "Zapraszamy do podróży w czasie, ożywienia wspomnień i refleksji nad siłą ducha polskiego żołnierza i patrioty.",
+  ],
+  literature: {
+    title: "Literatura",
+    content:
+      "Chcesz zgłębić wiedzę o Armii Krajowej i jej działalności? Odkryj polecaną literaturę, która przybliża historię największej organizacji podziemnej w okupowanej Europie. Znajdziesz tu książki i wspomnienia, które pozwolą lepiej zrozumieć heroizm i poświęcenie żołnierzy AK. To doskonałe źródło wiedzy dla pasjonatów historii oraz tych, którzy chcą poznać kulisy walk o niepodległość. Poznaj opowieści, które na zawsze zapisały się w dziejach Polski.",
+  },
+  biograms: {
+    title: "Biogramy",
+    content:
+      "Poznaj sylwetki bohaterów Armii Krajowej – ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
   },
 } as const;
 

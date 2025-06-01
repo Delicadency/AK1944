@@ -1,10 +1,10 @@
 import Container from "../shared/Container";
 import { Heading } from "../shared/Heading/Heading";
-import { historyData } from "@/data/historyData";
+import { history } from "@/data/historyData";
 import { Button } from "../shared/Button/Button";
 import { Routes } from "@/routes";
 
-const { title, content } = historyData.history.literature;
+const { title, content } = history.literature;
 
 export const LiteratureComponent = () => (
   <Container className="mt-10 flex flex-col bg-greenMain py-6 contrast:bg-yellowContrast desktop:mt-0 desktop:max-w-[420px]">
