@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { participationInRallyRulesData } from "../../data/participationInRallyRulesData";
 
 type PageProps = {
-  params: { id: string };
+  params: Promise<{ id: string }>
 };
 
 export async function generateStaticParams() {
