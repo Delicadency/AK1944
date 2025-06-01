@@ -2,12 +2,12 @@
 import Container from "../shared/Container";
 import { BackgroundImage } from "../shared/BackgroundImage/BackgroundImage";
 import { Heading } from "../shared/Heading/Heading";
-import { historyData } from "@/data/historyData";
+import { history } from "@/data/historyData";
 import Image from "next/image";
 import { Button } from "../shared/Button/Button";
 import { Routes } from "@/routes";
 
-const { title, content } = historyData.history.biograms;
+const { title, content } = history.biograms;
 
 export const HistoryBiogramComponent = () => (
   <BackgroundImage

@@ -7,7 +7,7 @@ import { SeeAlsoSection } from "@/components/History/SeeAlsoSection";
 
 export default function HistoryPage() {
   return (
-    <div className="flex flex-col gap-10 md:gap-14">
+    <div className="flex flex-col gap-10 contrast:bg-black00 md:gap-14">
       <HistoryBanner />
       <HistoryNav />
       <HistoryChapters />
