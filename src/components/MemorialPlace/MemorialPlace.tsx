@@ -47,7 +47,7 @@ export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
               {place.location}
             </Heading>
           </div>
-          <p className="font-sourceSans text-xl text-black">
+          <p className="line-clamp-3 font-sourceSans text-xl text-black">
             {place.description}
           </p>
         </div>

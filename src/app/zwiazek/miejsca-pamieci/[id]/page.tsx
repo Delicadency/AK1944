@@ -27,25 +27,25 @@ export default async function Page({ params }: PageProps) {
   const otherPlaces = memorialPlaces.filter((p) => p.id !== place.id);
 
   return (
-    <Container className="mx-auto max-w-5xl p-4 pb-20 pt-12">
-      <div className="mb-6">
+    <Container className="mx-auto max-w-5xl p-4 pb-20">
+      <div className="mb-10">
         <Breadcrumbs currentPageLabel={place.name} />
       </div>
       <Heading
-        variant="h1"
+        variant="h2"
         contrast="black"
         color="green"
-        className="text-greenDark mb-8 mt-4 text-3xl font-bold"
+        className="mb-8 mt-16"
       >
         {place.name}
       </Heading>
 
       <div className="mb-8 flex items-center gap-2 text-greenB">
         <IconMapPin className="size-5" />
-        <span className="text-lg font-medium">{place.location}</span>
+        <span className="font-lora text-24 font-bold">{place.location}</span>
       </div>
 
-      <div className="grid grid-cols-1 gap-8 tablet:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-8 font-sourceSans text-16 tablet:grid-cols-3">
         <div className="tablet:col-span-2">
           {place.description && (
             <p className="mb-4 font-sourceSans text-lg text-black">
@@ -53,22 +53,30 @@ export default async function Page({ params }: PageProps) {
             </p>
           )}
 
-          {place.highlight && (
-            <div className="mx-auto mb-8 max-w-[510px] rounded-xl bg-greenLight p-4 text-center">
-              <p
-                className="text-[18px] font-bold text-greenB"
-                style={{
-                  fontFamily: "Courier New, Courier, monospace",
-                  textTransform: "uppercase",
-                }}
-              >
-                {place.highlight}
-              </p>
+          {Array.isArray(place.highlight) && (
+            <div className="mx-auto mb-1.5 max-w-[510px] space-y-8 rounded-md bg-greenLight p-4 px-8 py-5">
+              {place.highlight.map((block, idx) => (
+                <p
+                  key={idx}
+                  className={`whitespace-pre-line text-18 font-bold text-greenB ${
+                    block.align === "left"
+                      ? "text-left"
+                      : block.align === "right"
+                        ? "text-right"
+                        : "text-center"
+                  }`}
+                  style={{
+                    fontFamily: "Courier New, Courier, monospace",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {block.text}
+                </p>
+              ))}
             </div>
           )}
-
           {place.descriptionContinuation && (
-            <p className="font-sourceSans text-lg text-black">
+            <p className="font-sourceSans text-lg text-greenMain">
               {place.descriptionContinuation}
             </p>
           )}
@@ -76,7 +84,7 @@ export default async function Page({ params }: PageProps) {
           {!place.description &&
             !place.descriptionContinuation &&
             !place.highlight && (
-              <p className="font-sourceSans text-lg text-black">
+              <p className="text-4 font-lora text-greenMain">
                 Opis zostanie uzupełniony wkrótce.
               </p>
             )}
@@ -112,7 +120,7 @@ export default async function Page({ params }: PageProps) {
             <Link
               key={item.id}
               href={item.link}
-              className="flex flex-col items-start gap-4 transition hover:opacity-80"
+              className="flex flex-col items-center gap-4 transition hover:opacity-80"
             >
               {item.image && (
                 <Image
@@ -123,7 +131,7 @@ export default async function Page({ params }: PageProps) {
                   className="rounded-desktop w-full object-cover"
                 />
               )}
-              <span className="text-base font-bold text-greenMain">
+              <span className="text-center font-lora font-bold text-greenMain">
                 {item.name}
               </span>
             </Link>
