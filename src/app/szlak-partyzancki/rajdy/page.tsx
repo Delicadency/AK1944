@@ -2,17 +2,16 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { Button } from "@/components/shared/Button/Button";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
-
 import { Suspense } from "react";
 import React from "react";
 import { RallyList } from "../_components/RallyList";
 
 type PageProps = {
-  searchParams: any;
+  searchParams: Promise<{ [key: string]: string | undefined}>;
 };
 
 export default function RalliesPage({ searchParams }: PageProps) {
-  const params: any = React.use(searchParams);
+  const params = React.use(searchParams);
   const page = parseInt(params.page || "1", 10);
   const currentPage = isNaN(page) || page < 1 ? 1 : page;
 
