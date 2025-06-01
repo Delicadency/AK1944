@@ -2,9 +2,20 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { Button } from "@/components/shared/Button/Button";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
-import RallyList from "../_components/RallyList";
 
-export default function RalliesPage() {
+import { Suspense } from "react";
+import React from "react";
+import { RallyList } from "../_components/RallyList";
+
+type PageProps = {
+  searchParams: any;
+};
+
+export default function RalliesPage({ searchParams }: PageProps) {
+  const params: any = React.use(searchParams);
+  const page = parseInt(params.page || "1", 10);
+  const currentPage = isNaN(page) || page < 1 ? 1 : page;
+
   return (
     <div className="bg-backgroundMain pb-20 text-greenMain">
       <Container
@@ -43,9 +54,9 @@ export default function RalliesPage() {
           ariaDescription="Zapisz się na rajd"
           variant="primaryBlue"
         />
-        {/* <div> */}
-        <RallyList />
-        {/* </div> */}
+        <Suspense fallback={<p>Ładowanie listy rajdów...</p>}>
+          <RallyList currentPage={currentPage} />
+        </Suspense>
       </Container>
     </div>
   );

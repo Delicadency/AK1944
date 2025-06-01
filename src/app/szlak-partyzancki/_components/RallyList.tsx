@@ -1,8 +1,7 @@
-"use client";
-
 import { Button } from "@/components/shared/Button/Button";
 import Image from "next/image";
-import { rallies } from "../data/rallyData";
+import { allRallies } from "../data/rallyPageData";
+import { RallyPagination } from "./RallyPagination";
 
 export type Rally = {
   id: number;
@@ -12,17 +11,24 @@ export type Rally = {
   imageUrl: string;
 };
 
-export default function RallyList() {
+type RallyListProps = {
+  currentPage: number;
+};
+
+export const RallyList = ({ currentPage }: RallyListProps) => {
+  const ITEMS_PER_PAGE = 4;
+  const start = (currentPage - 1) * ITEMS_PER_PAGE;
+  const paginatedRallies = allRallies.slice(start, start + ITEMS_PER_PAGE);
+
   return (
     <div className="px-2 desktop:px-8">
-      {rallies.map((rally, index) => (
+      {paginatedRallies.map((rally) => (
         <div
-          key={index}
-          
-          className="grid grid-cols-1 items-center gap-6 md:grid-cols-2 "
+          key={rally.id}
+          className="grid grid-cols-1 items-center gap-6 md:grid-cols-2"
         >
           {/* Zdjęcie */}
-          <div className="relative h-96 w-[85%] desktop:w-[100%] mx-auto order-2 md:order-2">
+          <div className="relative order-2 mx-auto h-96 w-[85%] md:order-2 desktop:w-[100%]">
             <Image
               src={rally.imageUrl}
               alt={rally.title}
@@ -32,13 +38,11 @@ export default function RallyList() {
           </div>
 
           {/* Blok tekstowy z linią */}
-          <div className="relative flex order-1 md:order-1">
+          <div className="relative order-1 flex md:order-1">
             {/* Linia z kropką */}
-            <div className="absolute left-0 top-0 bottom-0 flex flex-col items-center desktop:ml-[-20px]">
-              <div className="w-1 h-full bg-greenMain" />
-              <div
-                className="w-4 h-4 bg-black rounded-full absolute top-[20px] desktop:top-[0.8rem]"
-              />
+            <div className="absolute bottom-0 left-0 top-0 flex flex-col items-center desktop:ml-[-20px]">
+              <div className="h-full w-1 bg-greenMain" />
+              <div className="absolute top-[20px] h-4 w-4 rounded-full bg-black desktop:top-[0.8rem]" />
             </div>
 
             {/* Treść */}
@@ -46,8 +50,10 @@ export default function RallyList() {
               <h2 className="text-3xl font-bold text-greenB xl:text-3xl">
                 {rally.title}
               </h2>
-              <p className="text-2xl desktop:text-xl font-bold text-greenB pt-1">{rally.date}</p>
-              <p className="text-gray-700 pb-4 pt-1">{rally.description}</p>
+              <p className="pt-1 text-2xl font-bold text-greenB desktop:text-xl">
+                {rally.date}
+              </p>
+              <p className="pb-4 pt-1 text-gray-700">{rally.description}</p>
               <div className="flex flex-wrap gap-5">
                 <Button
                   label="Zasady uczestnictwa"
@@ -66,7 +72,10 @@ export default function RallyList() {
           </div>
         </div>
       ))}
+      <RallyPagination
+        currentPage={currentPage}
+        totalPages={Math.ceil(allRallies.length / ITEMS_PER_PAGE)}
+      />
     </div>
   );
 }
-

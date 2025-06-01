@@ -1,0 +1,37 @@
+"use client";
+
+import { useRouter, useSearchParams } from "next/navigation";
+
+type Props = {
+  currentPage: number;
+  totalPages: number;
+};
+
+export const RallyPagination = ({ currentPage, totalPages }: Props) => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const handlePageChange = (page: number) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("page", page.toString());
+
+    // Upewniamy się, że ścieżka jest poprawna
+    router.push(`/szlak-partyzancki/rajdy?${params.toString()}`);
+  };
+
+  return (
+    <div className="mx-auto mt-6 flex justify-center gap-2">
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+        <button
+          key={page}
+          onClick={() => handlePageChange(page)}
+          className={`rounded px-2 py-2 ${
+            page === currentPage ? "font-bold text-greenMain" : "font-normal"
+          }`}
+        >
+          {page}
+        </button>
+      ))}
+    </div>
+  );
+}

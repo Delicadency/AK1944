@@ -1,6 +1,6 @@
 import { Rally } from "../_components/RallyList";
 
-export const rallies: Rally[] = [
+export const allRallies: Rally[] = [
   {
     id: 1,
     title: "Rajd rowerowy na Kałużówkę 2018",
