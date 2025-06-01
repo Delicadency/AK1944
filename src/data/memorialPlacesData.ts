@@ -1,7 +1,8 @@
 // TODO: Add places images and descriptions
 // ClickUp Task: https://app.clickup.com/t/86985cryt
+import type { PlaceDetails } from "@/types";
 
-export const memorialPlaces = [
+export const memorialPlaces: PlaceDetails[] = [
   {
     id: 1,
     name: "Metalowy krzyż upamiętniający żołnierzy 5. Pułku Strzelców Konnych",
