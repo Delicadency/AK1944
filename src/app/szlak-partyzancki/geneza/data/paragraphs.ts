@@ -1,7 +1,13 @@
 type ContentElement =
-  | { type: "paragraph"; text: string; spacerAfter?: boolean }
-  | { type: "list"; items: string[]; ordered?: boolean; dashBullet?: boolean }
-  | { type: "quote" };
+  | { type: "paragraph"; key: string; text: string; spacerAfter?: boolean }
+  | {
+      type: "list";
+      key: string;
+      items: string[];
+      ordered?: boolean;
+      dashBullet?: boolean;
+    }
+  | { type: "quote"; key: string };
 
 export type Paragraph = {
   title: string;
@@ -14,11 +20,13 @@ export const paragraphs: Paragraph[] = [
     content: [
       {
         type: "paragraph",
+        key: "idea",
         text: "Pomysł na wytyczenie Szlaku Partyzanckiego zrodził się w 2003 roku. Pierwotnie Szlak miał połączyć miejsca związane z działalnością AK w powiecie dębickim (od Pustkowa, przez Dębicę po Kałużówkę). Idea przeszła jednak szereg przeobrażeń, głównie pod wpływem środowiska weteranów AK i w ostatecznym kształcie wytyczona została ścieżka II Zgrupowania AK Obwodu Dębica. Inicjatorem przedsięwzięcia był Maciej Małozięć, który zachęcił harcerzy z 13. Drużyny Harcerzy Wędrowników ”Kałużacy”, aby włączyli się w realizację projektu.",
         spacerAfter: true,
       },
       {
         type: "paragraph",
+        key: "funding",
         text: "W 2015 roku Katolickie Centrum Edukacji KANA otrzymało dofinansowanie z programu “Tu mieszkam, tu zmieniam” Fundacji Banku Zachodniego WBK na realizację projektu “Szlak Partyzancki — historia utrwalona w czasie i przestrzeni”. Projekt ten zakładał ponowne wytyczenie Szlaku, jego oznakowanie oraz utworzenie wariantu rowerowego.",
       },
     ],
@@ -28,19 +36,26 @@ export const paragraphs: Paragraph[] = [
     content: [
       {
         type: "paragraph",
+        key: "organization",
         text: "Etap ten trwał najdłużej i składał się z kilku faz:",
       },
       {
         type: "list",
+        key: "topic",
         items: [
           "sprecyzowanie tematu Szlaku i określenie zasięgu: kwestia ta była przedmiotem licznych dyskusji w środowisku weteranów AK oraz wśród harcerzy 13. Drużyny Harcerzy Wędrowników “Kałużacy”. Ostatecznie ustalono, że Szlak przebiega przez teren działań II Rejonu AK Obwodu Dębica w granicach gmin Dębica i Pilzno, a jego pełna nazwa brzmi: Szlak Partyzancki II Zgrupowania Armii Krajowej Obwodu Dębica.",
           "pozyskanie partnerów: w Księdze Mądrości Syracha napisano: „Wierny przyjaciel potężną obroną, kto go znalazł, skarb znalazł”. Przy realizacji pomysłu Szlaku udało się spotkać wielu życzliwych ludzi, którzy wsparli tą ideę cenną radą, pomocą merytoryczną oraz finansową.",
         ],
         dashBullet: true,
       },
-      { type: "paragraph", text: "Główni mecenasi projektu to:" },
+      {
+        type: "paragraph",
+        key: "patrons",
+        text: "Główni mecenasi projektu to:",
+      },
       {
         type: "list",
+        key: "patrons-list",
         items: [
           "Lasy Państwowe – Nadleśnictwo Dębica (osobisty wkład Nadleśniczego Wacława Pankiewicza oraz leśniczych Bogdana Puty i Ryszarda Lejawki)",
           "Zespół Szkół w Gumniskach (pomoc ze strony dyrektora szkoły Włodzimierza Jaźwińskiego oraz nauczycieli: śp. Lucyny Bomby i Eugeniusza Bomby)",
@@ -51,17 +66,21 @@ export const paragraphs: Paragraph[] = [
       },
       {
         type: "paragraph",
+        key: "renewal",
         text: "Odnowienie Szlaku Partyzanckiego było możliwe dzięki realizacji przez Katolickie Centrum Edukacji KANA w Dębicy projektu “Szlak Partyzancki – historia utrwalona w przestrzeni” w ramach programu Fundacji Banku Zachodniego WBK.",
       },
       {
         type: "paragraph",
+        key: "justification",
         text: "Dlaczego wytypowane zostały właśnie te punkty? Aby „ocalić od zapomnienia” oraz upamiętnić miejsca historycznych wydarzeń związanych z działalnością II Zgrupowania AK Obwodu Dębica. To także społeczna odpowiedź na apel Antoniego Stańko, żołnierza AK i historyka Komendy Obwodu „Deser”. Powody są następujące:",
       },
       {
         type: "quote",
+        key: "quote",
       },
       {
         type: "list",
+        key: "coordination",
         items: [
           "koordynacja działań: w realizację pomysłu Szlaku sensu stricto w 2004 roku zaangażowali się harcerze 13. Drużyny Harcerzy Wędrowników „Kałużacy”: drużynowy podharcmistrz Tomasz Czapla, Łukasz Grabowy, Grzegorz Duś, Mateusz Kania, Renata Blezień, Piotr Gorczyca, Maria Gawlik, Kacper Momola, Mariusz Gancarz, Magdalena Wójcik, Katarzyna Mazur, Patrycja Mazur, Marcin Strzyż, Anna Rochmalska, Inez Radwańska i inni. Koordynatorem i opiekunem działań był Maciej Małozięć.",
           "opracowanie projektu technicznego dotyczącego przebiegu Szlaku w terenie, wytypowanie miejsc historycznych: zrealizowane na drodze audytu historycznego w konsultacji z partnerami projektu przy szczegółowej inwentaryzacji atrakcji przyrodniczych, turystycznych oraz lokalnych inicjatyw.",
@@ -76,10 +95,12 @@ export const paragraphs: Paragraph[] = [
     content: [
       {
         type: "paragraph",
+        key: "visualization",
         text: "Etap ten, podobnie jak poprzedzający go etap II, składał się również z kilku faz:",
       },
       {
         type: "list",
+        key: "visualization-list",
         items: [
           " pozyskanie środków finansowych: pomoc w tym zakresie okazały Lasy Państwowe, Nadleśnictwo Dębica - instytucja która w całości pokryła koszty wykonania i montażu tablic oraz słupków mocujących.",
           "uzyskanie pozwoleń na poprowadzenie Szlaku: ścieżka wiedzie głównie przez teren nadzorowany przez Nadleśnictwo Dębica, a także drogami gminnymi i drogą powiatową. W kilku przypadkach zgody na przejście szlaku udzielili prywatni właściciele.",
@@ -95,18 +116,22 @@ export const paragraphs: Paragraph[] = [
     content: [
       {
         type: "paragraph",
+        key: "promotion",
         text: "Od samego początku prowadzone były działania promocyjne w zakresie popularyzacji Szlaku, a także wydarzeń historycznych z którymi jest on związany.",
       },
       {
         type: "paragraph",
+        key: "goals",
         text: "Wszelkiego rodzaju wcześniejsze, kontynuowane lub przyszłe inicjatywy powinny być zbieżne z podstawowymi celami misji: troska o historię, tradycję i dziedzictwo Armii Krajowej oraz upamiętnienie miejsc historycznych.",
       },
       {
         type: "paragraph",
+        key: "strategic-goals",
         text: "Do celów strategicznych zalicza się natomiast:",
       },
       {
         type: "list",
+        key: "strategic-goals-list",
         ordered: true,
         items: [
           "służbę na rzecz środowiska weteranów Armii Krajowej",
@@ -118,10 +143,12 @@ export const paragraphs: Paragraph[] = [
       },
       {
         type: "paragraph",
+        key: "promotion-goals",
         text: "Szeroko pojęta promocja produktu, wiąże się zatem z realizacją tych celów. Do głównych działań należą:",
       },
       {
         type: "list",
+        key: "promotion-goals-list",
         items: [
           "organizacja imprez historyczno-turystycznych",
           "przygotowanie i dystrybucja materiałów informacyjno-promocyjnych",
