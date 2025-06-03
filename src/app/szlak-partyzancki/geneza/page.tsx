@@ -1,25 +1,10 @@
-"use client";
-
-import React from "react";
-import Image from "next/image";
-import { paragraphs } from "./data/paragraphs";
-import { sideImages } from "./data/images";
-import { OriginsSection } from "./_components/OriginsSection";
 import Container from "@/components/shared/Container";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import { Heading } from "@/components/shared/Heading/Heading";
-import { Button } from "@/components/shared/Button/Button";
-import { Routes } from "@/routes";
-
-const getMobileOrderedImages = () => {
-  return sideImages
-    .filter((img) => img.mobileOrder)
-    .sort((a, b) => a.mobileOrder! - b.mobileOrder!);
-};
+import { OriginContent } from "./_components/OriginsContent";
+import { OriginContentMobile } from "./_components/OriginsContentMobile";
 
 export default function GenezaPage() {
-  const mobileImages = getMobileOrderedImages();
-
   return (
     <Container
       as="main"
@@ -33,67 +18,8 @@ export default function GenezaPage() {
       >
         Geneza
       </Heading>
-
-      <article className="mb-[150px] hidden  tablet:grid tablet:grid-cols-2 tablet:gap-20">
-        <div className="flex flex-col gap-6">
-          {paragraphs.map((section) => (
-            <OriginsSection key={section.title} {...section} />
-          ))}
-          <Button
-            ariaDescription="Kliknij, aby przejść do podstrony Rajdy"
-            label="Weź udział w Rajdzie"
-            href={Routes.RAIDS}
-            variant="primaryBlue"
-          />
-        </div>
-
-        <div className="flex flex-col gap-8">
-          {sideImages.map((image) => (
-            <Image
-              key={image.id}
-              src={image.src}
-              alt={image.alt}
-              priority
-              width={600}
-              height={600}
-              className="aspect-square h-auto w-[600px] object-cover"
-            />
-          ))}
-        </div>
-      </article>
-
-      <article className="tablet:hidden mb-[120px]">
-        {paragraphs.map((section, index) => {
-          const matchingImage = mobileImages.find(
-            (img) => img.mobileOrder === index + 1,
-          );
-
-          return (
-            <div key={section.title}>
-              <OriginsSection {...section} />
-              {matchingImage && (
-                <div className="mt-4">
-                  <Image
-                    src={matchingImage.src}
-                    alt={matchingImage.alt}
-                    priority
-                    width={600}
-                    height={600}
-                    className="w-max-[600px] aspect-square h-auto object-cover"
-                  />
-                </div>
-              )}
-            </div>
-          );
-        })}
-        <Button
-            ariaDescription="Kliknij, aby przejść do podstrony Rajdy"
-            label="Weź udział w Rajdzie"
-            href={Routes.RAIDS}
-            variant="primaryBlue"
-            className="m-auto my-5"
-          />
-      </article>
+      <OriginContent />
+      <OriginContentMobile />
     </Container>
   );
 }
