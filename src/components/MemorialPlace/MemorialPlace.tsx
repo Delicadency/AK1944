@@ -7,13 +7,21 @@ import Image from "next/image";
 export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
   <article className="flex w-full flex-col gap-6 border-b border-greenMain pb-8 font-lora tablet:grid tablet:grid-cols-2 tablet:border-b-4 desktop:grid-cols-3">
     <div className="order-2 w-full tablet:order-2 tablet:flex tablet:flex-col tablet:items-end desktop:order-1 desktop:col-start-1 desktop:items-start">
-      <Image
-        src={place.image}
-        alt={place.name}
-        width={288}
-        height={191}
-        className="rounded-desktop size-[191px] w-full object-cover transition-all duration-300 tablet:size-[200px] desktop:size-[250px]"
-      />
+      {place.image ? (
+        <Image
+          src={place.image}
+          alt={place.name}
+          width={288}
+          height={191}
+          className="rounded-desktop size-[191px] w-full object-cover transition-all duration-300 tablet:size-[200px] desktop:size-[250px]"
+        />
+      ) : (
+        <figure className="rounded-desktop flex h-[200px] items-center justify-center bg-gray-200 text-gray-600">
+          <figcaption className="text-center text-sm italic">
+            zdjęcie nie jest dostępne
+          </figcaption>
+        </figure>
+      )}
       {/* BUTTON */}
       <div className="mt-4 flex w-full justify-center desktop:hidden">
         <Button
@@ -21,7 +29,7 @@ export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
           variant="secondary"
           className="rounded-desktop min-w-[150px]"
           ariaDescription={`Przejdź do szczegółów miejsca: ${place.name}`}
-          href={place.link}
+          href={`/zwiazek/miejsca-pamieci/${place.slug}`}
         />
       </div>
     </div>
@@ -58,7 +66,7 @@ export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
             variant="secondary"
             className="rounded-desktop min-w-[150px]"
             ariaDescription={`Przejdź do szczegółów miejsca: ${place.name}`}
-            href={place.link}
+            href={`/zwiazek/miejsca-pamieci/${place.slug}`}
           />
         </div>
       </div>
