@@ -6,7 +6,7 @@ import { MemorialContentSection } from "@/components/MemorialPlace/MemorialConte
 import { MemorialRelatedPlaces } from "@/components/MemorialPlace/MemorialRelatedPlaces";
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -16,7 +16,8 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }: PageProps) {
-  const place = memorialPlaces.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const place = memorialPlaces.find((p) => p.slug === slug);
 
   if (!place) {
     notFound();
