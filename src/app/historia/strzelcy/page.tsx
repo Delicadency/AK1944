@@ -21,7 +21,7 @@ export default function RegimentPage() {
       >
         <Breadcrumbs />
         <Heading variant="h3" color="green" contrast="yellow">
-          5. Pułk Strzelców Konnych{" "}
+          5. Pułk Strzelców Konnych
         </Heading>
         <GenesisSection />
         <RegimentSection />

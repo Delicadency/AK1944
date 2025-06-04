@@ -17,7 +17,7 @@ export const SeeAlsoSection = ({ children }: SeeAlsoSectionProps) => (
         className="absolute -top-14 right-1 z-10 h-[160px] w-[160px] desktop:-right-20"
         aria-hidden="true"
       />
-      <Heading variant="h4" color="white" contrast="black">
+      <Heading variant="h4" color="white" contrast="yellow">
         Zobacz także
       </Heading>
       <div className="mt-5 flex flex-col desktop:flex-row desktop:gap-28">
