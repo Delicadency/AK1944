@@ -5,19 +5,22 @@ import { MemorialHeadingSection } from "@/components/MemorialPlace/MemorialHeadi
 import { MemorialContentSection } from "@/components/MemorialPlace/MemorialContentSection";
 import { MemorialRelatedPlaces } from "@/components/MemorialPlace/MemorialRelatedPlaces";
 
+type PageProps = {
+  params: { slug: string };
+};
+
 export async function generateStaticParams() {
   return memorialPlaces.map((place) => ({
     slug: place.slug,
   }));
 }
 
-export default async function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: PageProps) {
   const place = memorialPlaces.find((p) => p.slug === params.slug);
 
   if (!place) {
     notFound();
   }
-
   const otherPlaces = memorialPlaces.filter((p) => p.slug !== place.slug);
 
   return (
