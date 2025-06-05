@@ -19,7 +19,6 @@ export default {
         greenLight: "#D4E0D3",
         greenB: "#304D30",
         greenC: "#6F8E6E",
-        lightGreen: "#D4E0D3",
         backgroundMain: "#FFFCF5",
         backgroundB: "#FFF9ED",
         redMain: "#8F0000",

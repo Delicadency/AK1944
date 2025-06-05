@@ -4,10 +4,11 @@ import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Suspense } from "react";
 import React from "react";
-import { RallyList } from "../_components/RallyList";
+import { RallyList } from "./_components/RallyList";
+import { mainText } from "./data/rallyTextData";
 
 type PageProps = {
-  searchParams: Promise<{ [key: string]: string | undefined}>;
+  searchParams: Promise<{ [key: string]: string | undefined }>;
 };
 
 export default function RalliesPage({ searchParams }: PageProps) {
@@ -25,28 +26,9 @@ export default function RalliesPage({ searchParams }: PageProps) {
         <Heading variant="h3" color="green" contrast="yellow">
           Rajdy
         </Heading>
-        <div className="py-3">
-          <p>
-            Rajdy na Szlaku Partyzanckim II Zgrupowania AK Obwodu Dębica
-            odbywają się regularnie od września 2004 roku. Organizowane są w
-            celu ocalenia od zapomnienia i upamiętnienia bohaterskiej
-            działalności żołnierzy Armii Krajowej. Cyklicznie odbywają się 3
-            rajdy – w styczniu Pieszy Rajd Zimowy, jako rajd otwarty z okazji
-            rocznicy rozwiązania Armii Krajowej; w czerwcu Rajd Gwiaździsty
-            Kałużówka dla uczniów szkół podstawowych z okazji Święta 5. Pułku
-            Strzelców Konnych oraz na przełomie września i października dla
-            uczniów szkół ponadpodstawowych z okazji Dnia Polskiego Państwa
-            Podziemnego. Organizatorem rajdów jest Światowy Związek Żołnierzy AK
-            w Dębicy przy wsparciu partnerów. Wraz z powstaniem Szlaku
-            Partyzanckiego I Zgrupowania AK Obwodu Dębica, którego realizatorem
-            było Powiatowe Centrum Edukacji Regionalnej w Ropczycach,
-            organizowane są rajdy turystyczne w powiecie
-            ropczycko-sędziszowskim. Każdy rajd na Szlaku Partyzanckim to nie
-            tylko okazja do aktywnego spędzenia czasu, ale także głęboka lekcja
-            historii, przypominająca o bohaterstwie i poświęceniu żołnierzy
-            Armii Krajowej.
-          </p>
-        </div>
+        <p className="py-3">
+          {mainText}
+        </p>
         <Button
           label="Zapisz się na rajd"
           href={""}
@@ -60,6 +42,3 @@ export default function RalliesPage({ searchParams }: PageProps) {
     </div>
   );
 }
-
-// robic zadanie na dopisanie tekstu
-// dawac komentarz w kodzie ze tutaj trzeba cos dolozyc

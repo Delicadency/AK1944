@@ -55,8 +55,9 @@ export const Button = ({
       active:bg-redMain
     `,
     lightGreen:  `
-    bg-lightGreen
-    text-greenMain`
+    contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C]
+    contrast:text-black00
+    bg-greenLight text-greenMain`
   };
 
   const sizeStyles = {
