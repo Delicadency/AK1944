@@ -9,7 +9,7 @@ export default function MiejscaPamieci() {
       <Breadcrumbs />
       <div className="mt-10 space-y-10">
         {memorialPlaces.map((miejsce) => (
-          <MemorialPlace key={miejsce.id} place={miejsce} />
+          <MemorialPlace key={miejsce.slug} place={miejsce} />
         ))}
       </div>
     </Container>
