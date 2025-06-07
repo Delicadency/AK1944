@@ -7,7 +7,7 @@ type BoardData = {
 
 export const boardData: BoardData = {
   members: [
-    { title: "Prezes Honorowy:", names: ["kpt. Edmund Książek"] },
+    { title: "Prezes Honorowy:", names: ["Wiesława Pawlus"] },
     { title: "Prezes:", names: ["Maciej Małozięć*"] },
     {
       title: "Skład zarządu:",
@@ -23,19 +23,8 @@ export const boardData: BoardData = {
       ],
     },
     {
-      title: "Komisja Rewizyjna:",
-      names: [
-        "Andrzej Żylicz – przewodniczący KR",
-        "Tadeusz Garstka – członek KR",
-        "Stanisław Nylec* – członek KR",
-        "Grzegorz Kloc* – zastępca członka KR",
-        "Krystian Tumiński* – zastępca członka KR",
-      ],
-    },
-    {
       title: "Delegaci na Walny Zjazd Okręgu:",
       names: [
-        "Bronisław Ćwik – delegat",
         "Elżbieta Jarzębska* – delegat",
         "Małgorzata Grzybowska* – zastępca delegata",
         "Andrzej Lis* – zastępca delegata",

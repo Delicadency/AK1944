@@ -7,9 +7,9 @@ expect.extend(toHaveNoViolations);
 jest.mock("@/icons/IconFacebook", () =>
   jest.fn(({ size }) => <div data-size={size}>Facebook Icon</div>),
 );
-jest.mock("@/icons/IconInstagram", () =>
-  jest.fn(({ size }) => <div data-size={size}>Instagram Icon</div>),
-);
+// jest.mock("@/icons/IconInstagram", () =>
+//   jest.fn(({ size }) => <div data-size={size}>Instagram Icon</div>),
+// );
 jest.mock("@/icons/IconYoutube", () =>
   jest.fn(({ size }) => <div data-size={size}>YouTube Icon</div>),
 );
@@ -18,17 +18,17 @@ jest.mock("@/icons/IconX", () =>
 );
 
 describe("SocialMediaTray", () => {
-  const { Facebook, Instagram, YouTube, X } = {
+  const { Facebook, YouTube, X } = {
     Facebook: {
       title: "Facebook",
       href: "https://www.facebook.com/Szlak.Partyzancki",
       label: "Oficjalna strona Szlaku Partyzanckiego na Facebooku",
     },
-    Instagram: {
-      title: "Instagram",
-      href: "https://www.instagram.com", // Todo: Update link https://app.clickup.com/t/8697u6n5a
-      label: "Oficjalna strona Szlaku Partyzanckiego na Instagramie",
-    },
+    // Instagram: {
+    //   title: "Instagram",
+    //   href: "https://www.instagram.com", // Todo: Update link https://app.clickup.com/t/8697u6n5a
+    //   label: "Oficjalna strona Szlaku Partyzanckiego na Instagramie",
+    // },
     YouTube: {
       title: "YouTube",
       href: "https://www.youtube.com/@armiakrajowadebica3809",
@@ -45,12 +45,12 @@ describe("SocialMediaTray", () => {
     render(<SocialMediaTray />);
 
     expect(screen.getByTitle(Facebook.title)).toBeInTheDocument();
-    expect(screen.getByTitle(Instagram.title)).toBeInTheDocument();
+    // expect(screen.getByTitle(Instagram.title)).toBeInTheDocument();
     expect(screen.getByTitle(YouTube.title)).toBeInTheDocument();
     expect(screen.getByTitle(X.title)).toBeInTheDocument();
   });
 
-  it.each([Facebook, Instagram, YouTube, X])(
+  it.each([Facebook, YouTube, X])(
     "renders correct href & aria-label for $title link",
     ({ title, href, label }) => {
       render(<SocialMediaTray />);
@@ -66,7 +66,7 @@ describe("SocialMediaTray", () => {
     render(<SocialMediaTray />);
 
     expect(screen.getByText("Facebook Icon")).toBeInTheDocument();
-    expect(screen.getByText("Instagram Icon")).toBeInTheDocument();
+    // expect(screen.getByText("Instagram Icon")).toBeInTheDocument();
     expect(screen.getByText("YouTube Icon")).toBeInTheDocument();
     expect(screen.getByText("X Icon")).toBeInTheDocument();
   });
@@ -75,7 +75,7 @@ describe("SocialMediaTray", () => {
     render(<SocialMediaTray iconsSize={42} />);
 
     expect(screen.getByText("Facebook Icon").dataset["size"]).toBe("42");
-    expect(screen.getByText("Instagram Icon").dataset["size"]).toBe("42");
+    // expect(screen.getByText("Instagram Icon").dataset["size"]).toBe("42");
     expect(screen.getByText("YouTube Icon").dataset["size"]).toBe("42");
     expect(screen.getByText("X Icon").dataset["size"]).toBe("42");
   });

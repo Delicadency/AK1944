@@ -7,7 +7,7 @@ export default function AboutUsPage() {
   return (
     <section>
       <BackgroundImage
-        src="/images/aboutUs_bg.png"
+        src="/images/become_donor_bg_1.webp"
         alt="AboutUs BackgroundImage"
         fill
         className="h-full bg-black00 object-center-100 tablet:object-[80%]"
