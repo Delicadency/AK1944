@@ -1,4 +1,4 @@
-import { Rally } from "../_components/rajdy/RallyList";
+import { Rally } from "../_components/RallyList";
 
 export const allRallies: Rally[] = [
   {

@@ -1,6 +1,6 @@
-import { ParticipationRules } from "@/app/szlak-partyzancki/_components/rajdy/ParticipationRules";
 import { notFound } from "next/navigation";
-import { participationInRallyRulesData } from "../../data/participationInRallyRulesData";
+import { participationInRallyRulesData } from "../data/participationInRallyRulesData";
+import { ParticipationRules } from "../_components/ParticipationRules";
 
 type PageProps = {
   params: Promise<{ id: string }>

@@ -1,4 +1,4 @@
-import { RallyData } from "../_components/rajdy/ParticipationRules";
+import { RallyData } from "../_models/rallyData";
 
 export const participationInRallyRulesData: RallyData[] = [
   {

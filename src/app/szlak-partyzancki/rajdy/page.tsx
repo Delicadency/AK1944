@@ -23,10 +23,10 @@ export default function RalliesPage({ searchParams }: PageProps) {
         className="flex flex-col gap-10 pb-6 md:gap-14 md:pb-36"
       >
         <Breadcrumbs />
-        <Heading variant="h3" color="green" contrast="yellow">
+        <Heading variant="h2" color="green" contrast="yellow">
           Rajdy
         </Heading>
-        <p className="py-3">
+        <p className="py-3 text-18 font-sourceSans">
           {mainText}
         </p>
         <Button
