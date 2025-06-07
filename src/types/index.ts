@@ -1,4 +1,4 @@
-import type { ComponentProps, ElementType, ReactNode } from "react";
+import { type ElementType, type ReactNode } from "react";
 
 export interface Post {
   id: number;
@@ -14,20 +14,38 @@ export interface Image {
   title: string;
 }
 
-export type DefaultIconProps = ComponentProps<"svg">;
+export type IconName =
+  | "award"
+  | "check"
+  | "coffee"
+  | "compass"
+  | "file"
+  | "gift"
+  | "help"
+  | "info"
+  | "send"
+  | "target";
 
+export interface IconProps extends DefaultIconProps {
+  name: IconName;
+}
+
+export interface DefaultIconProps {
+  className?: string;
+}
 export interface SubmenuItem {
   href: string;
   label: string;
 }
 
 export interface PlaceDetails {
-  id: number;
+  slug: string;
   name: string;
   location: string;
   description: string;
-  image: string;
-  link: string;
+  highlight?: string | { text: string; align: "left" | "center" | "right" }[];
+  descriptionContinuation?: string;
+  image?: string;
 }
 export interface ContainerProps {
   children: ReactNode;

@@ -1,10 +1,8 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { ExclamationIcon } from "@/icons/ExclamationIcon";
-import { IconCheckSquare } from "@/icons/IconCheckSquare";
 import { Button } from "./Button";
 
 const meta: Meta<typeof Button> = {
-  title: "Components/Shared/Button",
+  title: "Components/Button",
   component: Button,
   tags: ["autodocs"],
   argTypes: {
@@ -24,15 +22,25 @@ const meta: Meta<typeof Button> = {
       description:
         "Manage button size based on text size - medium 16px or large 18px. Padding inside the button is fixed.",
     },
-    leadingIcon: {
-      control: false,
+    iconName: {
+      control: {
+        type: "select",
+        options: [
+          "award",
+          "check",
+          "coffee",
+          "compass",
+          "file",
+          "gift",
+          "help",
+          "info",
+          "pin",
+          "send",
+          "target",
+        ],
+      },
       description:
-        "Optional icon component to be displayed before the label. The icon inherits the text color of the button.",
-    },
-    trailingIcon: {
-      control: false,
-      description:
-        "Optional icon component to be displayed after the label. The icon inherits the text color of the button.",
+        "If you specify one of the listed icon names, an svg element on the left side of the button will be generated. The icon takes on the text color used in the selected variant.",
     },
     disabled: {
       control: "boolean",
@@ -41,26 +49,24 @@ const meta: Meta<typeof Button> = {
     },
     label: {
       control: "text",
-      description: "The text displayed inside the button.",
+      description: "Allows you to enter the text displayed inside the button.",
     },
     href: {
       control: "text",
       description:
-        "If provided with a URL path, a Next.js Link element will be generated, styled like a button. Otherwise, a button element will be generated.",
+        "If completed with a URL path, a Next.js Link element will be generated, ostylated like a button. Otherwise, a button element will be generated.",
     },
     ariaDescription: {
       control: "text",
       description:
-        "Required. The text used for the aria-label attribute to provide accessible description of the button's action.",
-      required: true,
+        "The element responsible for the text displayed in the aria-label attribute.",
     },
   },
   parameters: {
-    layout: "centered",
     docs: {
       description: {
         component:
-          "Universal button with a choice of color variants and sizes, with support for leading and trailing icons. Can be rendered as a button or link, and supports disabled state.",
+          "Universal button with a choice of color variants and sizes, with an option to select an icon. Can be deactivated.",
       },
     },
   },
@@ -75,7 +81,6 @@ export const Primary: Story = {
     size: "medium",
     label: "Primary Button",
     href: "/",
-    ariaDescription: "Navigate to home page",
   },
   parameters: {
     docs: {
@@ -87,20 +92,18 @@ export const Primary: Story = {
   },
 };
 
-export const PrimaryWithIcons: Story = {
+export const PrimaryWithIcon: Story = {
   args: {
     variant: "primary",
     size: "large",
     label: "Primary Button",
-    leadingIcon: IconCheckSquare,
-    trailingIcon: ExclamationIcon,
-    ariaDescription: "Continue to next step",
+    iconName: "gift",
   },
   parameters: {
     docs: {
       description: {
         story:
-          "Button element with trailing arrow icon, in the default **primary** variant and **large** size",
+          "Button element with gift icon, in the default **primary** variant and **large** size",
       },
     },
   },
@@ -111,7 +114,6 @@ export const Inversion: Story = {
     variant: "inversion",
     size: "medium",
     label: "Inversion Button",
-    ariaDescription: "Alternative action button",
   },
   parameters: {
     docs: {
@@ -123,21 +125,19 @@ export const Inversion: Story = {
   },
 };
 
-export const InversionWithIcons: Story = {
+export const InversionWithIcon: Story = {
   args: {
     variant: "inversion",
     size: "large",
     label: "Inversion Button",
     href: "/",
-    leadingIcon: IconCheckSquare,
-    trailingIcon: ExclamationIcon,
-    ariaDescription: "Confirm and proceed to next step",
+    iconName: "check",
   },
   parameters: {
     docs: {
       description: {
         story:
-          "Link element with both leading and trailing icons, in **inversion** variant and **large** size",
+          "Link element with **check** icon, in **inversion** variant and **large** size",
       },
     },
   },
@@ -149,7 +149,6 @@ export const Secondary: Story = {
     size: "medium",
     label: "Secondary Button",
     href: "/",
-    ariaDescription: "Navigate to secondary action",
   },
   parameters: {
     docs: {
@@ -165,27 +164,23 @@ export const SecondaryWithIcon: Story = {
     variant: "secondary",
     size: "medium",
     label: "Secondary Button",
-    leadingIcon: IconCheckSquare,
-    trailingIcon: ExclamationIcon,
-    ariaDescription: "Send form",
+    iconName: "send",
   },
   parameters: {
     docs: {
       description: {
         story:
-          "Button element with send icon, in the **secondary** variant and **medium** size",
+          "Button element with **send** icon, in the **secondary** variant and **medium** size",
       },
     },
   },
 };
-
 export const PrimaryDisabled: Story = {
   args: {
     variant: "primary",
     size: "medium",
     label: "Primary Button",
     disabled: true,
-    ariaDescription: "Button is disabled",
   },
   parameters: {
     docs: {
@@ -203,14 +198,14 @@ export const InversionDisabled: Story = {
     size: "large",
     label: "Inversion Button",
     href: "/",
+    iconName: "check",
     disabled: true,
-    ariaDescription: "Disabled confirmation button",
   },
   parameters: {
     docs: {
       description: {
         story:
-          "**Disabled** link element with check icon, in the **inversion** variant and **large** size",
+          "**Disabled** link element with **check** icon, in the **inversion** variant and **large** size",
       },
     },
   },
@@ -223,7 +218,6 @@ export const SecondaryDisabled: Story = {
     label: "Secondary Button",
     href: "/",
     disabled: true,
-    ariaDescription: "Disabled secondary action",
   },
   parameters: {
     docs: {

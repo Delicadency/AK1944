@@ -17,7 +17,6 @@ export const PaymentError = () => (
     <div className="flex gap-4">
       <Button
         href="/wesprzyj"
-        variant="primary"
         label="Spróbuj ponownie"
         ariaDescription="Spróbuj dokonać wpłaty ponownie"
       />

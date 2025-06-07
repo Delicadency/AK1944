@@ -26,13 +26,11 @@ export const PaymentForm = () => {
           size="large"
           label="Zapłać"
           ariaDescription="Zapłać"
-          leadingIcon={
-            isLoading
-              ? () => <LoaderIcon className="animate-spin" />
-              : undefined
-          }
           className="mx-auto"
-        />
+        >
+          {isLoading && <LoaderIcon className="animate-spin" />}
+          {isLoading ? "Przetwarzanie..." : "Zapłać"}
+        </Button>
 
         {message && <ErrorMessage>{message}</ErrorMessage>}
       </form>

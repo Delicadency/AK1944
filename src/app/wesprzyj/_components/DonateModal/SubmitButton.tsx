@@ -12,13 +12,12 @@ export const SubmitButton = ({ isAmountValid, isPending }: Props) => (
     size="large"
     label="Wpłać teraz"
     ariaDescription="Przejdź do płatności"
-    className="mx-auto"
     disabled={!isAmountValid || isPending}
     title={
       !isAmountValid ? "Wprowadź kwotę, aby przejść do płatności" : undefined
     }
-    leadingIcon={
-      isPending ? () => <LoaderIcon className="animate-spin" /> : undefined
-    }
-  />
+  >
+    {isPending && <LoaderIcon className="animate-spin" />}
+    {isPending ? "Przetwarzanie..." : "Wpłać teraz"}
+  </Button>
 );

@@ -48,12 +48,12 @@ export default function RootLayout({
           figtree.variable,
           lora.variable,
           sourceSans.variable,
-          "flex min-h-screen flex-col antialiased",
+          "bg-backgroundMain text-greenMain antialiased contrast:bg-black00 contrast:text-yellowContrast",
         )}
       >
         <ThemeProvider>
           <Header />
-          <main className="flex-1">{children}</main>
+          {children}
           <Footer />
         </ThemeProvider>
         <Analytics />
