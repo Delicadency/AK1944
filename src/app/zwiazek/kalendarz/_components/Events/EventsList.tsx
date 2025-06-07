@@ -1,11 +1,8 @@
 import { data } from "@/app/zwiazek/kalendarz/_components/Events/data";
 import { EventCard } from "@/app/zwiazek/kalendarz/_components/Events/EventCard";
-import { Button } from "@/components/shared/Button/Button";
 
 interface Props {
   currentDate: Date;
-  handleShowMore: () => void;
-  postsToShow: number;
 }
 
 const getHistoricalEvents = (currentMonth: number) =>
@@ -14,35 +11,22 @@ const getHistoricalEvents = (currentMonth: number) =>
     return month - 1 === currentMonth;
   });
 
-export const EventsList = ({
-  currentDate,
-  handleShowMore,
-  postsToShow,
-}: Props) => {
+export const EventsList = ({ currentDate }: Props) => {
   const historicalEvents = getHistoricalEvents(currentDate.getMonth());
 
-  const showMoreButton = postsToShow < historicalEvents.length;
-
   return (
-    <article className="flex w-full flex-col items-start gap-5 tablet:gap-10">
-      {historicalEvents
-        .slice(0, postsToShow)
-        .map((card, index, filteredCards) => (
+    <article className="flex w-full flex-col items-center gap-10">
+      {historicalEvents.map((card, index, filteredCards) => {
+        const [day, month] = card.date.split(".");
+        return (
           <EventCard
             key={index}
+            anchorId={`event-${day}-${month}`}
             {...card}
             isLast={index === filteredCards.length - 1}
           />
-        ))}
-      {showMoreButton && (
-        <Button
-          className="self-center"
-          label="Pokaż więcej"
-          ariaDescription="Pokaż więcej"
-          variant="inversion"
-          onClick={handleShowMore}
-        />
-      )}
+        );
+      })}
     </article>
   );
 };

@@ -1,43 +1,32 @@
 type BoardData = {
-  members: { title: string; names: string[]; }[];
+  members: { title: string; names: string[] }[];
   note: string;
   announcement: string;
   electionInfo: string;
 };
 
-export const boardData : BoardData = {
+export const boardData: BoardData = {
   members: [
-    { title: "Prezes Honorowy:", names: ["kpt. Edmund Książek"] },
+    { title: "Prezes Honorowy:", names: ["Wiesława Pawlus"] },
     { title: "Prezes:", names: ["Maciej Małozięć*"] },
     {
       title: "Skład zarządu:",
       names: [
-        "Elżbieta Jarzębska* – wiceprezes",
         "Tomasz Czapla* – wiceprezes",
         "Małgorzata Grzybowska* – sekretarz",
         "Artur Lis* – skarbnik",
-        "Stanisława Książek* – księgowa",
-        "Wiesława Pawlus",
-        "Bronisław Ćwik",
-        "Stanisław Garstka",
-      ],
-    },
-    {
-      title: "Komisja Rewizyjna:",
-      names: [
-        "Andrzej Żylicz – przewodniczący KR",
-        "Tadeusz Garstka – członek KR",
-        "Stanisław Nylec* – członek KR",
-        "Grzegorz Kloc* – zastępca członka",
-        "Krystian Tumiński* – zastępca członka",
+        "Elżbieta Jarzębska* – członek zarządu",
+        "Stanisław Nylec - członek zarządu",
+        "Andrzej Lis - członek zarządu",
+        "Ewa Książek - członek zarządu",
+        "Grzegorz Kloc - członek zarządu",
       ],
     },
     {
       title: "Delegaci na Walny Zjazd Okręgu:",
       names: [
-        "Bronisław Ćwik – delegat",
         "Elżbieta Jarzębska* – delegat",
-        " Małgorzata Grzybowska* – zastępca delegata",
+        "Małgorzata Grzybowska* – zastępca delegata",
         "Andrzej Lis* – zastępca delegata",
       ],
     },

@@ -111,6 +111,16 @@ export const data = [
   },
   {
     id: "11",
+    title: "Święto Pracy",
+    image: {
+      src: "/images/news_placeholder.png",
+      alt: "placeholder",
+    },
+    date: "01.05.1890",
+    description: "Święto Pracy",
+  },
+  {
+    id: "12",
     title: "Dzień Flagi Rzeczypospolitej Polskiej",
     image: {
       src: "/images/news_placeholder.png",
@@ -120,7 +130,7 @@ export const data = [
     description: "Dzień Flagi Rzeczypospolitej Polskiej",
   },
   {
-    id: "12",
+    id: "13",
     title: "Święto Narodowe Trzeciego Maja",
     image: {
       src: "/images/news_placeholder.png",
@@ -130,7 +140,7 @@ export const data = [
     description: "Święto Narodowe Trzeciego Maja",
   },
   {
-    id: "13",
+    id: "14",
     title: "Święto 5. Pułku Strzelców Konnych",
     image: {
       src: "/images/news_placeholder.png",
@@ -140,7 +150,7 @@ export const data = [
     description: "Święto 5. Pułku Strzelców Konnych",
   },
   {
-    id: "14",
+    id: "15",
     title:
       "Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Koncentracyjnych i Obozów Zagłady",
     image: {
@@ -152,7 +162,7 @@ export const data = [
       "Narodowy Dzień Pamięci Ofiar Niemieckich Nazistowskich Obozów Koncentracyjnych i Obozów Zagłady",
   },
   {
-    id: "15",
+    id: "16",
     title: "Narodowy Dzień Powstań Śląskich",
     image: {
       src: "/images/news_placeholder.png",
@@ -162,7 +172,7 @@ export const data = [
     description: "Narodowy Dzień Powstań Śląskich",
   },
   {
-    id: "16",
+    id: "17",
     title:
       "Rocznica publicznej egzekucji na żołnierzach Narodowych Sił Zbrojnych na rynku w Dębicy w 1946 roku",
     image: {
@@ -174,7 +184,7 @@ export const data = [
       "Rocznica publicznej egzekucji na żołnierzach Narodowych Sił Zbrojnych na rynku w Dębicy w 1946 roku",
   },
   {
-    id: "17",
+    id: "18",
     title:
       "Narodowy Dzień Pamięci Ofiar Ludobójstwa dokonanego przez ukraińskich nacjonalistów na obywatelach II Rzeczypospolitej Polskiej",
     image: {
@@ -186,7 +196,7 @@ export const data = [
       "Narodowy Dzień Pamięci Ofiar Ludobójstwa dokonanego przez ukraińskich nacjonalistów na obywatelach II Rzeczypospolitej Polskiej",
   },
   {
-    id: "18",
+    id: "19",
     title: "Dzień Walki i Męczeństwa Wsi Polskiej",
     image: {
       src: "/images/news_placeholder.png",
@@ -196,7 +206,7 @@ export const data = [
     description: "Dzień Walki i Męczeństwa Wsi Polskiej",
   },
   {
-    id: "19",
+    id: "20",
     title:
       "Rocznica rozpoczęcia akcji „Burza” w Okręgu Krakowskim AK w 1944 roku",
     image: {
@@ -208,7 +218,7 @@ export const data = [
       "Rocznica rozpoczęcia akcji „Burza” w Okręgu Krakowskim AK w 1944 roku",
   },
   {
-    id: "20",
+    id: "21",
     title:
       "Rocznica koncentracji zgrupowań 5. Pułku Strzelców Konnych AK Obwodu Dębica do akcji „Burza” w 1944 roku",
     image: {
@@ -220,7 +230,7 @@ export const data = [
       "Rocznica koncentracji zgrupowań 5. Pułku Strzelców Konnych AK Obwodu Dębica do akcji „Burza” w 1944 roku",
   },
   {
-    id: "21",
+    id: "22",
     title: "Narodowy Dzień Pamięci Powstania Warszawskiego",
     image: {
       src: "/images/news_placeholder.png",
@@ -230,7 +240,7 @@ export const data = [
     description: "Narodowy Dzień Pamięci Powstania Warszawskiego",
   },
   {
-    id: "22",
+    id: "23",
     title:
       "Rocznica spektakularnego odbicia ludności Gumnisk przez żołnierzy AK Obwodu Dębica podczas pacyfikacji miejscowości w 1944 roku",
     image: {
@@ -242,7 +252,7 @@ export const data = [
       "Rocznica spektakularnego odbicia ludności Gumnisk przez żołnierzy AK Obwodu Dębica podczas pacyfikacji miejscowości w 1944 roku",
   },
   {
-    id: "23",
+    id: "24",
     title: "Święto Wojska Polskiego",
     image: {
       src: "/images/news_placeholder.png",
@@ -252,7 +262,7 @@ export const data = [
     description: "Święto Wojska Polskiego",
   },
   {
-    id: "24",
+    id: "25",
     title:
       "Rocznica niemieckiego ataku na sztab III Zgrupowania AK Obwodu Dębica w Gołęczynie",
     image: {
@@ -264,7 +274,7 @@ export const data = [
       "Rocznica niemieckiego ataku na sztab III Zgrupowania AK Obwodu Dębica w Gołęczynie",
   },
   {
-    id: "25",
+    id: "26",
     title: "Rocznica niemieckiego natarcia na polanę Kałużówka w 1944 roku",
     image: {
       src: "/images/news_placeholder.png",
@@ -275,7 +285,7 @@ export const data = [
       "Rocznica niemieckiego natarcia na polanę Kałużówka w 1944 roku",
   },
   {
-    id: "26",
+    id: "27",
     title: "Rocznica bitwy na polanie Kałużówka w 1944 roku",
     image: {
       src: "/images/news_placeholder.png",
@@ -285,7 +295,7 @@ export const data = [
     description: "Rocznica bitwy na polanie Kałużówka w 1944 roku",
   },
   {
-    id: "27",
+    id: "28",
     title: "Dzień Solidarności i Wolności",
     image: {
       src: "/images/news_placeholder.png",
@@ -295,32 +305,32 @@ export const data = [
     description: "Dzień Solidarności i Wolności",
   },
   {
-    id: "28",
-    title:
-      "Rocznica wybuchu II wojny światowej; Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej",
-    image: {
-      src: "/images/news_placeholder.png",
-      alt: "placeholder",
-    },
-    date: "01.09.1939",
-    description:
-      "Rocznica wybuchu II wojny światowej; Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej",
-  },
-  {
     id: "29",
     title:
-      "Rocznica bitwy stoczonej przez żołnierzy 5. Pułku Strzelców Konnych z Niemcami pod Woźnikami w 1939 roku",
+      "Rocznica wybuchu II wojny światowej; Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej",
     image: {
       src: "/images/news_placeholder.png",
       alt: "placeholder",
     },
     date: "01.09.1939",
     description:
-      "Rocznica bitwy stoczonej przez żołnierzy 5. Pułku Strzelców Konnych z Niemcami pod Woźnikami w 1939 roku",
+      "Rocznica wybuchu II wojny światowej; Dzień Weterana Walk o Niepodległość Rzeczypospolitej Polskiej",
   },
   {
     id: "30",
     title:
+      "Rocznica bitwy stoczonej przez żołnierzy 5. Pułku Strzelców Konnych z Niemcami pod Woźnikami w 1939 roku",
+    image: {
+      src: "/images/news_placeholder.png",
+      alt: "placeholder",
+    },
+    date: "01.09.1939",
+    description:
+      "Rocznica bitwy stoczonej przez żołnierzy 5. Pułku Strzelców Konnych z Niemcami pod Woźnikami w 1939 roku",
+  },
+  {
+    id: "31",
+    title:
       "Rocznica walk stoczonych przez żołnierzy 5. Pułku Strzelców Konnych z Niemcami pod Tarnawatką w 1939 roku",
     image: {
       src: "/images/news_placeholder.png",
@@ -331,7 +341,7 @@ export const data = [
       "Rocznica walk stoczonych przez żołnierzy 5. Pułku Strzelców Konnych z Niemcami pod Tarnawatką w 1939 roku",
   },
   {
-    id: "31",
+    id: "32",
     title:
       "Rocznica rozwiązania oddziałów Armii Kraków, w tym 5. Pułku Strzelców Konnych w 1939 roku",
     image: {
@@ -343,7 +353,7 @@ export const data = [
       "Rocznica rozwiązania oddziałów Armii Kraków, w tym 5. Pułku Strzelców Konnych w 1939 roku",
   },
   {
-    id: "32",
+    id: "33",
     title: "Narodowy Dzień Polskich Dzieci Wojny",
     image: {
       src: "/images/news_placeholder.png",
@@ -353,7 +363,7 @@ export const data = [
     description: "Narodowy Dzień Polskich Dzieci Wojny",
   },
   {
-    id: "33",
+    id: "34",
     title: "Dzień Sybiraka",
     image: {
       src: "/images/news_placeholder.png",
@@ -363,7 +373,7 @@ export const data = [
     description: "Dzień Sybiraka",
   },
   {
-    id: "34",
+    id: "35",
     title: "Dzień Polskiego Państwa Podziemnego",
     image: {
       src: "/images/news_placeholder.png",
@@ -373,7 +383,7 @@ export const data = [
     description: "Dzień Polskiego Państwa Podziemnego",
   },
   {
-    id: "35",
+    id: "36",
     title:
       "Narodowy Dzień Pamięci Ofiar Niemieckiej Zbrodni Pomorskiej 1939 r.",
     image: {
@@ -385,7 +395,7 @@ export const data = [
       "Narodowy Dzień Pamięci Ofiar Niemieckiej Zbrodni Pomorskiej 1939 r.",
   },
   {
-    id: "36",
+    id: "37",
     title: "Narodowy Dzień Pamięci Duchownych Niezłomnych",
     image: {
       src: "/images/news_placeholder.png",
@@ -395,7 +405,7 @@ export const data = [
     description: "Narodowy Dzień Pamięci Duchownych Niezłomnych",
   },
   {
-    id: "37",
+    id: "38",
     title: "Narodowe Święto Niepodległości",
     image: {
       src: "/images/news_placeholder.png",
@@ -405,7 +415,7 @@ export const data = [
     description: "Narodowe Święto Niepodległości",
   },
   {
-    id: "38",
+    id: "39",
     title:
       "Rocznica zamordowania Ludwika Marszałka oraz działaczy dolnośląskich struktur Zrzeszenia „Wolność i Niezawisłość”",
     image: {
@@ -417,7 +427,7 @@ export const data = [
       "Rocznica zamordowania Ludwika Marszałka oraz działaczy dolnośląskich struktur Zrzeszenia „Wolność i Niezawisłość”",
   },
   {
-    id: "39",
+    id: "40",
     title: "Rocznica wybuchu powstania listopadowego",
     image: {
       src: "/images/news_placeholder.png",
@@ -427,7 +437,7 @@ export const data = [
     description: "Rocznica wybuchu powstania listopadowego",
   },
   {
-    id: "40",
+    id: "41",
     title: "Dzień Pamięci Ofiar Stanu Wojennego",
     image: {
       src: "/images/news_placeholder.png",
@@ -437,7 +447,7 @@ export const data = [
     description: "Dzień Pamięci Ofiar Stanu Wojennego",
   },
   {
-    id: "41",
+    id: "42",
     title: "Narodowy Dzień Zwycięskiego Powstania Wielkopolskiego",
     image: {
       src: "/images/news_placeholder.png",

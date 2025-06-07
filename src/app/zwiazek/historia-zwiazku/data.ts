@@ -51,7 +51,7 @@ const unionData: ArticleStructure = {
   },
   addendum: {
     paragraph: [
-      "Dziś Światowy Związek Żołnierzy Armii Krajowej jest jednym z najważniejszych strażników pamięci o polskim ruchu oporu podczas II wojny światowej i Polskim Państwie Podziemnym. Działa na rzecz zachowania tej tradycji dla przyszłych pokoleń.i Krajowej jest jednym z najważniejszych strażników pamięci.",
+      "Dziś Światowy Związek Żołnierzy Armii Krajowej jest jednym z najważniejszych strażników pamięci o polskim ruchu oporu podczas II wojny światowej i Polskim Państwie Podziemnym. Działa na rzecz zachowania tej tradycji dla przyszłych pokoleń.",
     ],
   },
 } as const;

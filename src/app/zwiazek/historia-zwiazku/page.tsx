@@ -15,7 +15,7 @@ export default function UnionPage() {
 
       <Container
         as="article"
-        className="pb-10 font-sourceSans text-16 leading-6 text-black contrast:text-yellowContrast tablet:text-18 tablet:leading-7"
+        className="pb-10 font-sourceSans text-16 leading-6 text-black contrast:text-yellowContrast tablet:pb-20 tablet:text-18 tablet:leading-7 desktop:pb-150"
       >
         <div className="tablet:w-[760px]">
           {Object.entries(subsections).map(([key, subsection]) => (

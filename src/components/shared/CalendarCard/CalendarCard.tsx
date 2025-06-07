@@ -12,19 +12,19 @@ export const CalendarCard = ({ withButton = false }: Props) => {
   const eventForToday = getEventForToday();
   const [, , eventYear] = eventForToday?.date.split(".") || [""];
   const currentDate = new Date();
-  const currentMonth = currentDate.toLocaleString("default", { month: "long" });
+  const currentMonth = currentDate.toLocaleString("pl-PL", { month: "long" });
   const currentYear = currentDate.getFullYear();
   const dayInNumbers = currentDate.getDate();
-  const dayInWords = currentDate.toLocaleString("default", { weekday: "long" });
+  const dayInWords = currentDate.toLocaleString("pl-PL", { weekday: "long" });
 
   return (
-    <div className="flex w-[284px] items-center justify-center overflow-hidden px-0 tablet:px-0 desktop:px-0">
+    <div className="flex items-center justify-center overflow-hidden px-0 tablet:px-0 desktop:px-0">
       <BackgroundImage
         alt="calendar background"
         src="/images/calendar_background.png"
         fill
       >
-        <Container className="flex flex-col items-center justify-center py-4 font-lora">
+        <Container className="flex w-[284px] flex-col items-center justify-center py-4 font-lora">
           <h4 className="text-24 font-bold" aria-label="Rok i miesiąc">
             {currentMonth} {currentYear}
           </h4>
@@ -32,7 +32,10 @@ export const CalendarCard = ({ withButton = false }: Props) => {
             className="mt-5 w-full border border-solid border-redMain contrast:border-black"
             aria-hidden
           />
-          <p className="text-96 font-bold" aria-label="Dzień miesiąca">
+          <p
+            className="my-4 text-96 font-bold leading-none"
+            aria-label="Dzień miesiąca"
+          >
             {dayInNumbers}
           </p>
           <p className="text-24 font-bold" aria-label="Dzień tygodnia">
@@ -43,16 +46,15 @@ export const CalendarCard = ({ withButton = false }: Props) => {
             aria-hidden
           />
           {eventForToday?.title && (
-            <div className="mb-5 grid grid-cols-[auto_1fr] gap-2 font-sans">
-              <p className="text-16 font-bold">{eventYear}</p>
-              <p className="relative text-16 before:absolute before:-left-[7px] before:content-['-']">
-                {eventForToday?.title}
+            <div className="flex flex-col items-center">
+              <p className="relative mb-5 font-sans text-16 leading-normal tracking-tight">
+                <b>{eventYear}</b> - {eventForToday?.title}
               </p>
             </div>
           )}
           {withButton && (
             <Button
-              variant="primary"
+              variant="primaryBlue"
               label="Kalendarz uroczystości"
               ariaDescription="Kalendarz uroczystości"
               href={Routes.CALENDAR}

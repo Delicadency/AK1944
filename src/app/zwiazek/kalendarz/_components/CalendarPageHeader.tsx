@@ -7,7 +7,7 @@ export const CalendarPageHeader = () => (
     <Heading variant="h2" color="green" contrast="yellow">
       Kalendarz uroczystości
     </Heading>
-    <p className="text-18 text-greenMain">
+    <p className="mb-5 text-18 tracking-tight text-greenMain tablet:mt-5 desktop:mb-10 desktop:max-w-[65%]">
       Przedstawiamy harmonogram uroczystości patriotyczno-religijnych, świąt
       oraz wydarzeń organizowanych lub współorganizowanych przez Światowy
       Związek Żołnierzy AK Środowisko 5. Pułku Strzelców Konnych AK w Dębicy.
@@ -15,8 +15,8 @@ export const CalendarPageHeader = () => (
       Związku.
     </p>
     <p className="text-18 text-greenMain">
-      <strong>Uwaga:</strong> Terminy uroczystości ustalanych przez Związek mają
-      charakter orientacyjny i mogą ulec zmianie.
+      <b>Uwaga:</b> Terminy uroczystości ustalanych przez Związek mają charakter
+      orientacyjny i mogą ulec zmianie.
     </p>
   </section>
 );

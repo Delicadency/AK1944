@@ -8,7 +8,7 @@ interface Props {
 export const SocialMediaTray = ({ className, iconsSize }: Props) => (
   <nav className={className}>
     <SocialMediaIconLink.Facebook size={iconsSize} />
-    <SocialMediaIconLink.Instagram size={iconsSize} />
+    {/* <SocialMediaIconLink.Instagram size={iconsSize} /> */}
     <SocialMediaIconLink.YouTube size={iconsSize} />
     <SocialMediaIconLink.X size={iconsSize} />
   </nav>

@@ -21,7 +21,7 @@ export const CalendarHeader = ({
       <IconArrowCircle className={clsx("rotate-180", iconClassName)} />
     </button>
 
-    <h2 className="font-bold">{`${currentDate.toLocaleDateString("default", { month: "long" })} ${currentDate.getFullYear()}`}</h2>
+    <h2 className="font-bold capitalize">{`${currentDate.toLocaleDateString("pl-PL", { month: "long" })} ${currentDate.getFullYear()}`}</h2>
 
     <button onClick={handleNextMonth} aria-label="Następny miesiąc">
       <IconArrowCircle className={iconClassName} />

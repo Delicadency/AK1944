@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function PartnersPage() {
   return (
-    <div className="bg-backgroundMain pb-20 text-greenMain contrast:bg-black00 contrast:text-yellowContrast">
+    <div className="bg-backgroundMain text-greenMain contrast:bg-black00 contrast:text-yellowContrast tablet:pb-20 desktop:pb-150">
       <Container as="main" className="space-y-10">
         <Breadcrumbs />
 

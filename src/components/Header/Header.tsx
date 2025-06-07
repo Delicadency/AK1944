@@ -14,5 +14,5 @@ export const Header = () => (
 );
 
 const Spacer = ({ children }: { children: React.ReactNode }) => (
-  <div className="h-[80px] tablet:h-[135px]">{children}</div>
+  <div className="h-[80px] tablet:h-[112px]">{children}</div>
 );

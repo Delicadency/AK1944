@@ -7,7 +7,7 @@ describe("HeaderLogo", () => {
     const logo = screen.getByAltText("Logo") as HTMLImageElement;
     expect(logo).toBeInTheDocument();
     expect(logo).toHaveAttribute("src");
-    expect(logo.src).toContain("%2Fimages%2Flogo.png");
+    expect(logo.src).toContain("SZZAK.png");
   });
 
   it("links to the homepage", () => {
@@ -19,7 +19,7 @@ describe("HeaderLogo", () => {
   it("has appropriate width based on screen size", () => {
     render(<HeaderLogo />);
     const logoContainer = screen.getByRole("link").parentElement;
-    expect(logoContainer).toHaveClass("w-[33px]");
+    expect(logoContainer).toHaveClass("w-[54px]");
   });
 
   it("should be accessible by keyboard navigation", () => {
