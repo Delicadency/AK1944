@@ -28,7 +28,7 @@ export default function PartnersPage() {
       <Container as="main" className="space-y-10">
         <Breadcrumbs />
 
-        <h2 className="mb-10 mt-5 font-lora text-2xl font-bold desktop:mt-10">
+        <h2 className="mb-10 mt-5 font-lora text-4xl font-bold desktop:mt-10">
           Partnerzy
         </h2>
 
