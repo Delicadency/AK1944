@@ -12,6 +12,8 @@ export const RallyPagination = ({ currentPage, totalPages }: Props) => {
   const searchParams = useSearchParams();
 
   const handlePageChange = (page: number) => {
+    if (page === currentPage) return;
+
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", page.toString());
 
@@ -25,6 +27,7 @@ export const RallyPagination = ({ currentPage, totalPages }: Props) => {
         <button
           key={page}
           onClick={() => handlePageChange(page)}
+          aria-current={page === currentPage ? "page" : undefined}
           className={`rounded px-2 py-2 ${
             page === currentPage ? "font-bold text-greenMain" : "font-normal"
           }`}
@@ -34,4 +37,4 @@ export const RallyPagination = ({ currentPage, totalPages }: Props) => {
       ))}
     </div>
   );
-}
+};

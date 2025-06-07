@@ -12,14 +12,14 @@ export const boardData: BoardData = {
     {
       title: "Skład zarządu:",
       names: [
-        "Elżbieta Jarzębska* – wiceprezes",
         "Tomasz Czapla* – wiceprezes",
         "Małgorzata Grzybowska* – sekretarz",
         "Artur Lis* – skarbnik",
-        "Stanisława Książek* – księgowa",
-        "Wiesława Pawlus",
-        "Bronisław Ćwik",
-        "Stanisław Garstka",
+        "Elżbieta Jarzębska* – członek zarządu",
+        "Stanisław Nylec - członek zarządu",
+        "Andrzej Lis - członek zarządu",
+        "Ewa Książek - członek zarządu",
+        "Grzegorz Kloc - członek zarządu",
       ],
     },
     {
@@ -37,7 +37,7 @@ export const boardData: BoardData = {
       names: [
         "Bronisław Ćwik – delegat",
         "Elżbieta Jarzębska* – delegat",
-        " Małgorzata Grzybowska* – zastępca delegata",
+        "Małgorzata Grzybowska* – zastępca delegata",
         "Andrzej Lis* – zastępca delegata",
       ],
     },

@@ -18,7 +18,7 @@ export const HistoryChapter = ({ item }: { item: Props }) => (
       <Heading variant="h3" contrast="yellow" color="green">
         {item.title}
       </Heading>
-      <p className="my-6 font-sourceSans text-lg text-greenMain">
+      <p className="my-6 font-sourceSans text-lg text-greenMain contrast:text-yellowContrast">
         {item.description}
       </p>
       <Button
@@ -29,7 +29,7 @@ export const HistoryChapter = ({ item }: { item: Props }) => (
         href={item.route}
       />
     </div>
-    <div className="relative m-auto aspect-[1.41] h-[203px] w-[288px] mobile:max-h-[290px] md:h-[352px] md:max-h-[352px] md:w-[500px]">
+    <div className="relative m-auto aspect-[1.4] h-[203px] w-[288px] mobile:max-h-[290px] md:h-[352px] md:max-h-[352px] md:w-[500px]">
       <Image
         src={item.image.path}
         alt={item.image.alt}

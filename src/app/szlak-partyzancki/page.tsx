@@ -16,7 +16,7 @@ export default function PartisanTrailPage() {
   const trailData = trails[activeTrail];
 
   return (
-    <main className="contrast:bg-black00 contrast:text-yellowContrast">
+    <main className="contrast:bg-black00 contrast:text-yellowContrast tablet:pb-20 desktop:pb-150">
       <Container as="section">
         <Breadcrumbs />
         <TrailSwitcher active={activeTrail} onChange={setActiveTrail} />
@@ -24,8 +24,8 @@ export default function PartisanTrailPage() {
           paragraphs={trailData.paragraphs}
           displayName={trailData.displayName}
         />
-        <Map map={trailData.map} />
         <TrailPoints activeTrail={activeTrail} />
+        <Map map={trailData.map} />
         <div className="flex flex-col justify-between desktop:flex-row desktop:pb-20">
           <Section sectionName="Geneza" />
           <Section sectionName="Rajdy" />

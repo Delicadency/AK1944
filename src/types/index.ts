@@ -39,12 +39,13 @@ export interface SubmenuItem {
 }
 
 export interface PlaceDetails {
-  id: number;
+  slug: string;
   name: string;
   location: string;
   description: string;
-  image: string;
-  link: string;
+  highlight?: string | { text: string; align: "left" | "center" | "right" }[];
+  descriptionContinuation?: string;
+  image?: string;
 }
 export interface ContainerProps {
   children: ReactNode;

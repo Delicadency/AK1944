@@ -19,7 +19,6 @@ export default {
         greenLight: "#D4E0D3",
         greenB: "#304D30",
         greenC: "#6F8E6E",
-        lightGreen: "#D4E0D3",
         backgroundMain: "#FFFCF5",
         backgroundB: "#FFF9ED",
         redMain: "#8F0000",
@@ -67,6 +66,9 @@ export default {
         mobile: "320px",
         tablet: "768px",
         desktop: "1280px",
+      },
+      spacing: {
+        '150': '150px'
       },
       borderRadius: {
         // niestandardowe zaokrąglenia

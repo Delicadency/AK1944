@@ -1,122 +1,22 @@
 import { Routes } from "@/routes";
 
-export const historyData = {
-  history: {
-    title: "Historia",
-    description: [
-      "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
-      "Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji „Burza”, symbolu odwagi i determinacji Armii Krajowej, a także odkryjesz historię członków Obwodu Dębica SZP-ZWZ-AK, walczących z honorem i poświęceniem w czasie największej próby.",
-      "Znajdziesz tu także przejście do sekcji mieszczącej bibliografię oraz biogramy bohaterów, gdzie zgłębisz osobiste historie oddanych obrońców ojczyzny o wielkich sercach.",
-      "Zapraszamy do podróży w czasie, ożywienia wspomnień i refleksji nad siłą ducha polskiego żołnierza i patrioty.",
-    ],
-    literature: {
-      title: "Literatura",
-      content:
-        "Chcesz zgłębić wiedzę o Armii Krajowej i jej działalności? Odkryj polecaną literaturę, która przybliża historię największej organizacji podziemnej w okupowanej Europie. Znajdziesz tu książki i wspomnienia, które pozwolą lepiej zrozumieć heroizm i poświęcenie żołnierzy AK. To doskonałe źródło wiedzy dla pasjonatów historii oraz tych, którzy chcą poznać kulisy walk o niepodległość. Poznaj opowieści, które na zawsze zapisały się w dziejach Polski.",
-    },
-    biograms: {
-      title: "Biogramy",
-      content:
-        "Poznaj sylwetki bohaterów Armii Krajowej – ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
-    },
+export const history = {
+  title: "Historia",
+  description: [
+    "Wybierz zakładkę z wykresu lub przejdź do jednej z sekcji poniżej, by zanurzyć się w bogate dzieje naszej przeszłości. Każdy fragment opowieści skrywa bohaterskie czyny i niezłomną wolę walki o wolność.",
+    "Dowiesz się tu o losach 5. Pułku Strzelców Konnych, który zapisał się złotymi zgłoskami na kartach historii, poznasz szczegóły Akcji „Burza”, symbolu odwagi i determinacji Armii Krajowej, a także odkryjesz historię członków Obwodu Dębica SZP-ZWZ-AK, walczących z honorem i poświęceniem w czasie największej próby.",
+    "Znajdziesz tu także przejście do sekcji mieszczącej bibliografię oraz biogramy bohaterów, gdzie zgłębisz osobiste historie oddanych obrońców ojczyzny o wielkich sercach.",
+    "Zapraszamy do podróży w czasie, ożywienia wspomnień i refleksji nad siłą ducha polskiego żołnierza i patrioty.",
+  ],
+  literature: {
+    title: "Literatura",
+    content:
+      "Chcesz zgłębić wiedzę o Armii Krajowej i jej działalności? Odkryj polecaną literaturę, która przybliża historię największej organizacji podziemnej w okupowanej Europie. Znajdziesz tu książki i wspomnienia, które pozwolą lepiej zrozumieć heroizm i poświęcenie żołnierzy AK. To doskonałe źródło wiedzy dla pasjonatów historii oraz tych, którzy chcą poznać kulisy walk o niepodległość. Poznaj opowieści, które na zawsze zapisały się w dziejach Polski.",
   },
-  regiment: {
-    title: "5. Pułk Strzelców Konnych",
-    genesisTitle: "Geneza powstania",
-    genesis1:
-      "Historia powstania 5. Pułku Strzelców Konnych wiąże się z okresem napoleońskim, kiedy to w Kościanie na przełomie 1806 i 1807 r. Franciszek Garczyński sformował pułk, który w czerwcu 1807 r. otrzymał nazwę 5. PSK. Dowódcą tegoż pułku został płk Kazimierz Turno. Po burzliwych perypetiach okresu napoleońskiego, udziale w wojnie z Austrią w 1809 r. i zdziesiątkowaniu pułku w wielkiej wyprawie Napoleona na Moskwę w 1812 r. pułk uległ naturalnemu rozwiązaniu. Warto dodać, że w wyprawie w roku 1812 w szeregach pułku walczył Aleksander Fredro, który okres ten opisał w pamiętniku ”Trzy po trzy”.",
-    genesis2:
-      "Ponowna organizacja 5. PSK nastąpiła w okresie powstania listopadowego. 19 stycznia 1930 r. Pułk Strzelców Gwardii został przemianowany na 5. Pułk Strzelców Konnych. Dowódcą tegoż pułku został mianowany płk Benedykt Zielonka. Odtwarzany w tym okresie 5. PSK brał udział m.in. w bitwach pod Wawrem, Grochowem, Nurem, Ostrołęką i Raciążem. Po klęsce powstania część żołnierzy opuściła tereny Królestwa Polskiego szukając schronienia w Prusach, do Kongresówki powrócili po uzyskaniu amnestii u cara Mikołaja I.",
-    genesis3:
-      "Trzecie z kolei odtwarzanie jednostki, miało miejsce w latach 1919-1921. Wówczas pułk powstawał z mniejszych oddziałów (szwadronów i dywizjonów), przejmując ich historię i tradycje. We wrześniu 1919 r. 3. Pułk Dragonów został przemianowany na 3. Pułk Strzelców Konnych, zaś ten, rozkazem z 6 października 1920 r. został przemianowany na 5. Pułk Strzelców Konnych. Nazewnictwo związane z numerem jednostki, wiąże się z faktem, iż pułk stacjonując w Tarnowie, przynależał administracyjnie pod Okręg Korpusu nr V w Krakowie. Początkowo 5. PSK wchodził w skład V Brygady Jazdy, która została przemianowana kolejno na 5. Samodzielną Brygadę Kawalerii (w 1924 r.) i Krakowską Brygadę Kawalerii (w 1937 r.).",
-    commanders: {
-      title: "Dowódcy Pułku w okresie międzywojennym",
-      persons: [
-        { name: "ppłk Aleksander Ehrbar", date: "(19.06.1919 - 22.02.1924)" },
-        { name: "płk Adam Rozwadowski", date: "(22.02.1924 - 22.02.1927)" },
-        { name: "ppłk Jan Kanty Olszewski", date: "(22.02.1927-28.01.1928)" },
-        {
-          name: "płk dypl. Juliusz Kleeberg",
-          date: "(28.01.1928 - 31.01.1930)",
-        },
-        { name: "ppłk Ignacy Kowalczewski", date: "(31.01.1930 - 04.1938)" },
-        { name: "płk Kazimierz Kosiarski", date: "(04.1938 - 20.09.1939)" },
-      ],
-    },
-    regimentTitle: "5. Pułk Strzelców Konnych w Dębicy",
-    regiment1:
-      "15 grudnia 1934 r. Tarnowianie pożegnali uroczyście 5. PSK, który został przeniesiony do koszar przy ulicy Kościuszki w Dębicy. Zresztą na ten temat istniało kilka kawaleryjskich żurawiejek, m.in. ”Brakło rowów w okolicy, przenieśli ich do Dębicy” lub ”Tak się błąkał w okolicy, aż go wzięli do Dębicy”. Jak się okazało Dębica była ostatnim miejscem postoju pułku, który stąd wyruszył na wojnę obronną we wrześniu 1939 r.",
-    cracowBrigadeTitle:
-      "Teren obrony i struktura Krakowskiej Brygady Kawalerii",
-    cracowBrigade1:
-      "Zgodnie z planami podjętymi przez dowództwo Armii „Kraków” podczas narad i ćwiczeń sztabowych wiosną 1938 r., Krakowska Brygada Kawalerii (która wchodziła w skład Armii „Kraków” gen. Antoniego Szyllinga) miała, na wypadek wybuchu wojny, bronić rejonu Kalety - Koszęcin oraz Woźniki - Ligota Woźnicka. Dla szerszego zobrazowania jest to teren szerokości około 15 km, między Tarnowskimi Górami a Częstochową.",
-    cracowBrigade2:
-      "Warto dodać że poza 5. PSK w skład Krakowskiej BK we wrześniu 1939 r. wchodził: 3. Pułk Ułanów Śląskich z Tarnowskich Gór, 8. Pułk Ułanów Księcia Poniatowskiego z Krakowa, 3. Dywizjon Artylerii Konnej z Oświęcimia, a także własne jednostki wspierające (szwadron kolarzy, szwadron pionierów, szwadron łączności) oraz jednostki przydzielone: batalion Obrony Narodowej „Lubliniec” i 51. Dywizjon Pancerny.",
-    cracowBrigade3:
-      "W lecie 1939 r. nie było możliwości zorganizowania tzw. letniej koncentracji całej KBK, dlatego poszczególne jednostki wchodzące w skład brygady samodzielnie przeprowadziły ćwiczenia terenowe. Przez cały miesiąc - od 15 lipca pułk prowadził manewry ćwiczebne w okolicach Rzemienia i Tuszymy, a następnie od 15 sierpnia manewry ruchome, zachowując promień działania 20 km od Dębicy. 24 sierpnia 1939 r. nastąpiła koncentracja pułku, a w niedzielę 27 sierpnia 5. PSK wyruszył pociągiem z Dębicy do Zawiercia. Po dotarciu na miejsce, dębickich strzelców przywitali licznie zgromadzeni mieszkańcy Zawiercia i okolic. Żołnierze ustawieni w szyku bojowym ruszyli ze śpiewem piosenki „Wojenko, wojenko cóż żeś ty za pani, że za tobą idą chłopcy malowani…”. Miejscowa ludność ze łzami w oczach patrzyła na żołnierzy zmierzających na wojnę by powstrzymać niemieckiego agresora. Panowała atmosfera wzruszenia i wiary w pogodne jutro.",
-    separationTitle: "Podział Pułku na dwa dywizjony",
-    separation1:
-      "Z Zawiercia pułk wyruszył w rejon miejscowości Ogrodzieniec, a następnie do miejscowości Podzamcze i docelowo do Woźnik. Tam pułk został podzielony na dwie części - na dwa dywizjony, co było sprzeczne z wcześniejszymi ustaleniami, które mówiły że pułk całością sił będzie bronił rejonu Woźnik. Zgodnie z nowymi wytycznymi pierwszy dywizjon pozostał w Woźnikach zaś drugi został skierowany do miejscowości Rudnik Mały. Według dowódcy, płk. Kazimierza Kosiarskiego, podział ten nie dawał szans na skuteczną realizację działań na głównej pozycji obronnej w Woźnikach. Zresztą Kosiarski swoje spostrzeżenia przedstawił dowódcy brygady gen. Zygmuntowi Piaseckiemu. Słowa Kosiarskiego okazały się prorocze w skutkach, gdyż trudno dostępny Rudnik Mały, którego bronił dywizjon mjr. Franciszka Rekuckiego (1. i 2. Szwadron), został niejako pominięty w niemieckim planie uderzeniowym.",
-    woznikiTitle: "Bitwa pod Woźnikami i Ligotą Woźnicką - wrzesień 1939",
-    wozniki1:
-      "1 września o godzinie 4:50 sześć niemieckich dywizji przekroczyło polsko-niemiecką granicę i uderzyło równocześnie na 7. Dywizję Piechoty i Krakowską BK. Batalion „Lubliniec” bronił się w okolicach Koszęcina trzema kompaniami. Opór batalionu, którym dowodził mjr Franciszek Żak był niezwykle zacięty, niemniej oddziały niemieckie zaczęły okrążać pozycje batalionu, który będąc w bardzo ciężkim położeniu, musiał się wycofać w godzinach południowych. Podczas wycofywania wysuniętych jednostek, powstały szerokie luki między Krakowską BK, 7. DP, a GO „Śląsk”. Rankiem 2 września pancerno-motorowe jednostki nieprzyjaciela skoncentrowały swoje uderzenie na główną pozycję obronną brygady w rejonie Woźnik (gdzie obronę zapewniał 5. Pułk Strzelców Konnych i 3. Pułk Ułanów) oraz na rejon Ligoty Woźnickiej (broniony przez 8. Pułk Ułanów).",
-    wozniki2:
-      "W czasie ponad pięciogodzinnej walki 2 września, dwie niemieckie dywizje (2. i 3. Dywizja Lekka) przełamały linię obronną Woźniki - Ligota, robiąc tym samym pierwszy wyłom w głównym froncie obronnym Armii „Kraków”.",
-    wozniki3:
-      "Trzeba w tym miejscu nadmienić, że w końcowej fazie walk 2 września, szwadrony 5. PSK broniące Woźnik zostały niejako osamotnione, bowiem jako pierwszy ze swych pozycji został wyparty pułk ułanów z Krakowa, zaś ułani z Tarnowskich Gór po kilku przeprowadzonych kontratakach, jako pierwsi w Woźnikach przystąpili do wycofania. Teren nie został utrzymany nawet mimo wprowadzenia do walki sił odwodowych (3. DAK i szwadronów odwodowych 3. P. Uł.).",
-    wozniki4:
-      "Bohaterska, a czasem wręcz heroiczna, była obrona Woźnik przez strzelców 5. Pułku, którzy kilkukrotnie podczas tych zaciętych walk odpierali niemieckie natarcie. Pomimo beznadziejnego położenia oraz dysproporcji sił i posiadanego sprzętu, nie brakowało ofiarnych prób powstrzymania Niemców. Strzelec nazwiskiem Rosa z 5. Pułku zdołał unieruchomić w rejonie Woźnik trzy niemieckie czołgi, co w tych warunkach było nie lada wyczynem.",
-    wozniki5:
-      "Około godziny 11 ostatni pluton 5. PSK opuścił rejon Woźnik. W godzinach wieczornych nastąpiło połączenie I i II dywizjonu 5. PSK. Wskutek niekorzystnej sytuacji w nocy z 2 na 3 września, brygada została skierowana w rejon miejscowości Pradła, gdzie następnego dnia 5. PSK z powodzeniem odpierał niemieckie natarcie ze wzgórza Góry Berkowej, utrzymując broniony teren do godzin popołudniowych 3 września.",
-    wozniki6:
-      "W dalszej kolejności pułk został przerzucony w rejon Rokitna, gdzie zapewniał ubezpieczenie ataku brygady celem opanowania miejscowości Szczekocin. Po całodniowych, ciężkich zmaganiach z przeważającymi siłami niemieckimi, przy braku współdziałania ze strony 7. DP, Krakowska BK została odrzucona na wschodni brzeg Pilicy.",
-    wozniki7:
-      "4 września pułk przeszedł do Sędziszowa, gdzie otrzymał zadanie obrony miejscowości i osłony zgrupowania brygady. Nieprzyjaciel tego dnia nie wykazywał większej aktywności na lądzie, co pomogło dębickim strzelcom należycie wykonać powierzone im zadanie. Wieczorem do sztabu brygady powrócił oficer łącznikowy wysłany uprzednio do dowództwa armii, który przedstawił świeże informacje o położeniu i nowe wytyczne względem Krakowskiej BK. Brygada wobec nowego zadania miała nie dopuścić nieprzyjaciela do przekroczenia Nidy na kierunku Sędziszów - Pińczów - Busko i utrzymać za wszelką cenę Pińczów.",
-    wozniki8:
-      "Wczesnym świtem 5 września pułk wyruszył z Mstyczowa i przed południem dotarł do Pińczowa, gdzie do godzin wieczornych podzielony na szwadrony, bronił miejscowości z kierunku północnego i zachodniego, skutecznie powstrzymując nieprzyjaciela w rejonie Brześcia.",
-    wozniki9:
-      "W wyniku dużej aktywności wojsk niemieckich Krakowska BK otrzymała zadanie wycofania się w rejon Bogucic (między Pińczowem a Buskiem). Po nocnym, ciężkim marszu, brygada dotarła wczesnym świtem w rejon Bogucic. Tego dnia pułk otrzymał zadanie dozorowania drogi Chmielnik - Busko.",
-    wozniki10:
-      "Około południa elementy rozpoznawcze nieprzyjaciela podeszły pod Busko od strony północnej, jednak przytomne zachowanie żołnierzy 5. Pułku doprowadziło do odrzucenia tych oddziałów.  Wskutek niekorzystnego położenia całej armii, Krakowska BK zmuszona została do wycofania się w kierunku Nowego Korczyna. 5. Pułk zatrzymał się w rejonie miejscowości Pasek Wielki, gdzie na strzelców z Dębicy czekało zadanie osłony przegrupowania Grupy Operacyjnej „Jagmin” („Śląsk”) dowodzonej przez gen. Jana Jagmina-Sadowskiego.",
-    escapeTitle: "Obrona Baranowa Sandomierskiego i ewakuacja Krakowskiej BK",
-    escape1:
-      "W związku z faktem, iż oddziały Armii „Kraków” nie dotarły 7 września do Nowego Korczyna, przedłużono zadanie dla oddziałów KBK, które stojąc na dotychczasowych stanowiskach, miały zapewnić osłonę Korczyna oraz zgrupowania Armii „Kraków” od strony północy.",
-    escape2:
-      "Nocą z 7 na 8 września pułk został zluzowany i zwolniony z dotychczasowego zadania, a w godzinach popołudniowych 8 września, wyruszył wzdłuż prawego brzegu Wisły w kierunku Szczucina. Miejscowość tą osiągnięto około 20. Niedługo jednak pułk przebywał w Szczucinie,  bowiem już w nocy płk Kazimierz Kosiarski otrzymał rozkaz kontynuowania marszu wzdłuż Wisły i przechwycenia mostu na Wiśle w Baranowie Sandomierskim, czego, pomimo wyczerpującego marszu, nie udało się osiągnąć. Tuż przed przybyciem oddziałów brygady, saperzy z grupy „Sandomierz” wysadzili most na rozkaz swojego dowódcy w obawie przed nagłym wtargnięciem niemieckich sił pancerno-motorowych do Baranowa. Warto dodać, że z braku łączności nie mieli oni informacji o działaniach Krakowskiej BK i o jej marszu w celu przechwycenia mostu.",
-    escape3:
-      "Po osiągnięciu rejonu Baranowa, brygada otrzymała kolejny rozkaz. Tym razem miała ułatwić wycofanie i przejście oddziałów Armii „Kraków” przez  Wisłę w rejonie Baranowa. W tym celu 5. Pułk wraz z baterią dywizjonu artylerii konnej miał zabezpieczyć i dozorować brzeg Wisły w okolicach zniszczonego mostu, a także zapewnić ubezpieczenie od południa (z kierunku Mielca).",
-    escape4:
-      "W tym czasie do pułku dołączyły oddziały uzupełniające z Ośrodka Zapasowego Krakowskiej Brygady Kawalerii, który po ogłoszonej przez prezydenta Mościckiego powszechnej mobilizacji organizował się w Dębicy pod dowództwem mjr. Jana Sroczyńskiego. Do tego ośrodka przybywali żołnierze rezerwiści, którzy otrzymali przydział służbowy do Krakowskiej BK. Przy ośrodku zorganizowano także izbę chorych, w której opatrywano zarówno żołnierzy, jak również osoby cywilne (głównie mieszkańców Dębicy i okolic), które ucierpiały w wyniku działań Luftwaffe.",
-    escape5:
-      "Sam Ośrodek Zapasowy został ewakuowany z Dębicy w dniu 7 września i w dalszym marszu dotarł do Brodów, gdzie schronienie znalazły rodzinny żołnierzy 5. Pułku.  Wraz z ewakuacją, wywiezione zostało archiwum dokumentacyjne oraz sztandary 5. PSK i 3. P. Uł. Po wkroczeniu Sowietów, ze sztandarami próbował przedostać się do Rumunii mjr Tadeusz Plackowski, jednak przepadł bez wieści. Prawdopodobnie dotarł do miejscowości Uhrynów na Podolu, gdzie został zamordowany przez bandy ukraińskich nacjonalistów. Nieznane są więc losy sztandaru pułkowego. Istnieją dwie hipotezy. Pierwsza, że sztandar został ukryty lub spalony przez mjr. Plackowskiego zanim dostał się on w ręce ukraińskie. Druga wersja, sugerowałaby, że sztandar wpadł w ręce ukraińskie i był widziany w kijowskich muzeach już po zakończeniu wojny.",
-    escape6:
-      "16 września po uprzednim „rekonesansie” nieprzyjaciel uderzył od północy na Biłgoraj. Napór niemieckich sił pancerno - motorowych każdorazowo spotykał się z silnym oporem ze strony walecznych strzelców 5. Pułku i działającego na tym odcinku obrony, szwadronu kolarzy Krakowskiej BK pod dowództwem rtm. Antoniego Starnawskiego. Nieprzyjaciel zdołał przełamać obronę miejscowości, jednak gdy od północy niespodziewanie zjawiły się oddziały GO „Jagmin”, niemieckie dowództwo podjęło decyzję o wycofaniu.",
-    escape7:
-      "Tego dnia doszło także do połączenia Armii „Kraków” gen. Antoniego Szyllinga z Armią „Lublin” gen. Tadeusza Piskora, który objął teraz dowództwo nad całością sił nowo powstałej Armii „Południe”. Ostatnie zmagania obu połączonych armii, a tym samym ostatnie zmagania 5. Pułku, miały miejsce w rejonie Tomaszowa Lubelskiego. Podczas tych zmagań brygada miała osłaniać od północy atak Warszawskiej Brygady Pancerno-Motorowej dowodzonej przez płk. Stefana Roweckiego na Tomaszów Lubelski, w celu dalszego przebijania się całej armii w kierunku granicy z Węgrami. Jednak kilkukrotne odkładanie tego ataku doprowadziło do sytuacji, w której żołnierze byli już całkowicie otoczeni przez nieprzyjaciela.",
-    escape8:
-      "Dramatyczna stała się sytuacja Krakowskiej Brygady Kawalerii, która doznała poważnych strat. Rankiem 19 września, 3. Pułk Ułanów Śląskich w potyczce w okolicach Rogóźna nieopodal Tomaszowa, stracił ponad 70% swojego stanu co oznaczało, że 5. PSK pozostał jedynym pułkiem w całej brygadzie zdolnym do prowadzenia dalszych działań.",
-    escape9:
-      "W związku z informacjami o wykrwawieniu się 3. Pułku Ułanów, płk Kosiarski uznał, że pułk samodzielnie nie zdoła opanować rejonu Tarnawatki, co najwyżej może spróbować opóźnić nieprzyjaciela atakując jego ariergardę wzdłuż szosy Zamość - Tomaszów na wysokości Tarnawatki. Do wykonania tego zadanie skierowano 2. Szwadron 5. PSK, pod dowództwem rtm. Jarosława Chodania. Szwadron ten kilkukrotnie uderzył na poruszające się po drodze Zamość - Tomaszów oddziały nieprzyjaciela. Podczas jednego ze śmiałych ataków udało się nawet zabrać kilku jeńców, jednakże kiedy z rejonu Zamościa nadjechała większa kolumna niemieckich wojsk, szwadron rtm. Chodania został zepchnięty ze wzgórza nad Tarnawatką. Na pomoc szwadronowi rtm. Chodania ruszył 3. Szwadron Pułku pod dowództwem rtm. Wojciecha Łopuskiego, jednak został on unieruchomiony na wskutek silnej nawały niemieckiego ognia artyleryjskiego.",
-    escape10:
-      "W tym czasie nastąpiło gwałtowne uderzenie nieprzyjaciela na oddziały 2. Szwadronu dowodzonego przez rtm. Chodania. W efekcie szwadron został zepchnięty ze wzgórza, ponosząc jednocześnie duże straty w zabitych i rannych. Na placu boju zmarł rtm. Jarosław Chodań, który został ciężko raniony w pachwinę i zmarł z upływu krwi nieopodal mostku nad Wieprzem w Tarnawatce.",
-    escape11:
-      "Do wsparcia oddziałów został także skierowany 4. Szwadron rtm. Bronisława Piotrowskiego, jednak w wyniku silnego ostrzału artyleryjskiego, 4. Szwadron także poniósł duże straty. Śmiertelnie raniony został m.in. dowódca II plutonu 4. Szwadronu 5. PSK ppor. Piotr Baran. Bezskutecznie próbowano go uratować, ale przy wyrwanym boku, bez profesjonalnej interwencji chirurgicznej, ranny dowódca nie zdołał przeżyć. Trzeba dodać, że ppor. Piotr Baran wraz ze swoim II plutonem, jeszcze przed śmiertelnym zranieniem, bohatersko odparł niemieckie natarcie od strony zabudowań położonych nad stawami.",
-    escape12:
-      "Jeszcze przed wieczorem nieprzyjaciel próbował przeprowadzić rozpoznanie w rejonie Pańkowa, jednak został skutecznie odrzucony na drugi brzeg Wieprza przez Pierwszy Szwadron 5. PSK skierowany z odwodu dla osłony odcinka północnego.",
-    escape13:
-      "Po zakończonej walce, pod osłoną nocy, pułk wycofał się z rejonu Pańków - Tarnawatka.",
-    finalClashTitle: "Końcowe Starcie i Kapitulacja Armii „Południe”",
-    finalClash1:
-      "Rankiem następnego dnia, tzn. 20 września, zapadła decyzja o kapitulacji Armii „Południe”. Kiedy płk Kazimierz Kosiarski oraz pozostali dowódcy Krakowskiej Brygady pojechali na ostatnią naradę w sztabie armii, pod obóz 5. Pułku we wsi Ulów podeszły oddziały nieprzyjaciela, które zostały odrzucone przez błyskawicznie zorganizowany oddział konny 5. Pułku dowodzony przez rtm. Antoniego Dębskiego i por. Tadeusz Gawrzyckiego. Była to ostatnia walka pułku w wojnie obronnej we wrześniu 1939 roku, a zarazem ostatnia potyczka oddziałów Armii „Południe” w kampanii wrześniowej.",
-    finalClash2:
-      "Kiedy pułkownik Kosiarski informował żołnierzy o kapitulacji armii, ze łzami w oczach zaapelował do nich, aby próbowali przedostać się na własną rękę w kierunku zachodnim, gdyż po wkroczeniu Sowietów marsz na wschód według Kosiarskiego był bezzasadny. O tym jak cenne i prorocze okazały się słowa dowódcy świadczy fakt, iż na tzw. liście katyńskiej znalazło się niewielu strzelców 5. Pułku.",
-    finalClash3:
-      "Ci żołnierze, którzy zdołali uniknąć niewoli, powrócili w większości za radą Kazimierza Kosiarskiego na zachód, w swoje rodzinne strony, gdzie wielu z nich już wkrótce przystąpiło do działalności w strukturach tworzącego się Polskiego Państwa Podziemnego. Dowództwo zaś dostało się do niemieckiej niewoli, skąd powrócili dopiero po wyzwoleniu.",
-    finalClash4:
-      "Zrozumienie obowiązku, odwaga, wytrzymałość, zdawałoby się, że ponadludzka, wspaniałe koleżeństwo - bez oglądania się na stopnie i starszeństwo, jak też i wierność oddziałowi, dawały stałą zdolność bojową Krakowskiej Brygady Kawalerii na długiej drodze: od zachodniej granica Śląska, po las Pańków pod Tomaszowem Lubelskim.",
-    finalClash5:
-      "Sukcesy oddziałów i pododdziałów KBK, nie tylko obronne, ale i wielokrotnie zaczepne - niestety, z powodu ogólnej sytuacji wojennej niewykorzystane - to dumna karta wkładu żołnierzy 5. Pułku strzelców konnych w historię Września 1939 roku, karta pisana w rozpaczliwej obronie przez cały Naród Polski.",
-    author: "Autor: Maciej Małozięć",
+  biograms: {
+    title: "Biogramy",
+    content:
+      "Poznaj sylwetki bohaterów Armii Krajowej – ich życiorysy, daty urodzenia i śmierci, stopnie wojskowe oraz niezwykłe historie walki o wolną Polskę. Biogramy żołnierzy przybliżą Ci losy ludzi, którzy swoją odwagą i determinacją zapisali się na kartach historii. Odkryj, kim byli i jak wyglądała ich droga w szeregach AK. Dowiedz się, jakie wartości ich inspirowały i jak wpływali na losy lokalnej społeczności. Wejdź, by oddać hołd ich pamięci i poznać ich niezwykłe losy.",
   },
 } as const;
 
@@ -126,23 +26,11 @@ export const chapters = [
     description:
       "Prześledź historię jednego z najważniejszych oddziałów Armii Krajowej, odtworzonego w czasie Akcji „Burza” na ziemi dębickiej. Poznaj strukturę pułku, życie dowódców i zadania realizowane podczas walk z okupantem. To nie tylko podział organizacji na rejony czy wykaz najważniejszych działań bojowych i dywersyjnych. Przed Tobą opowieść o odwadze, zgraniu, a przede wszystkim o niezłomnym duchu żołnierzy oddanych walce za wolną Polskę. Oto historia jednostki, której nic nie nie wymaże z kart dziejów.",
     image: {
-      path: "/images/history/main/regiment.webp",
+      path: "/images/history/regiment/regiment.webp",
       alt: "Defilada 5. Pułku Strzelców Konnych z okazji święta pułku w Dębicy. Pluton ckm na jukach, 9 czerwca 1938 r.",
     },
     route: Routes.REGIMENT,
   },
-
-  {
-    title: "Akcja „Burza”",
-    description:
-      "To opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przenieś się w czasy dramatycznych walk w rejonie Dębicy, poznaj bohaterów w nierównej walce z okupantem i dowiedz się, jak przebiegała bitwa na polanie Kałużówka. Zobacz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacją. Przed Tobą świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia.",
-    image: {
-      path: "/images/history/main/burza.webp",
-      alt: "Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r.",
-    },
-    route: Routes.OPERATION,
-  },
-
   {
     title: "Obwód Dębica SZP-ZWZ-AK",
     description:
@@ -153,11 +41,154 @@ export const chapters = [
     },
     route: Routes.DEBICA_DISTRICT,
   },
+  {
+    title: "Akcja „Burza”",
+    description:
+      "To opowieść o największej mobilizacji Armii Krajowej podczas II wojny światowej. Przenieś się w czasy dramatycznych walk w rejonie Dębicy, poznaj bohaterów w nierównej walce z okupantem i dowiedz się, jak przebiegała bitwa na polanie Kałużówka. Zobacz, jak żołnierze AK nie tylko walczyli z wrogiem, ale także chronili ludność cywilną przed represjami i pacyfikacją. Przed Tobą świadectwo niezwykłego patriotyzmu, odwagi i poświęcenia.",
+    image: {
+      path: "/images/history/burza/funeral.webp",
+      alt: "Pogrzeb kpt. Józefa Lutaka ps. Dyzma. Trumnę niosą żołnierze oddziału dyspozycyjnego komendy Obwodu AK Dębica. Kałużówka, 21 sierpnia 1944 r.",
+    },
+    route: Routes.OPERATION,
+  },
 ] as const;
 
-export const district = {
+export const genesisSection = {
+  genesisTitle: "Geneza powstania pułku",
+  content: [
+    "Historia 5. Pułku Strzelców Konnych sięga okresu wojen napoleońskich, kiedy to Franciszek Garczyński sformował go w Kościanie na przełomie 1806 i 1807 r. Formacji nadano obecną nazwę w czerwcu 1807 r. Dowódcą mianowano pułkownika Kazimierza Turno. Po wycieńczającej wojnie z Austrią (1809 r.) żołnierze zostali zdziesiątkowani w wielkiej wyprawie Napoleona na Moskwę w 1812 r. Jednym z ocalałych był Aleksander Fredro. O przeżyciach tamtych dni opowiedział na kartach pamiętnika Trzy po trzy.",
+    "Pułk sformowano ponownie w okresie powstania listopadowego. 19 stycznia 1930 r. Pułk Strzelców Gwardii przemianowano na 5. Pułk Strzelców Konnych. Dowódcą został pułkownik Benedykt Zielonka. Dowodził formacją m.in. w bitwach pod Wawrem, Grochowem, Nurem, Ostrołęką i Raciążem. Po klęsce powstania część żołnierzy opuściła tereny Królestwa Polskiego, szukając schronienia w Prusach. Do Kongresówki powrócili dopiero po uzyskaniu amnestii od cara Mikołaja I.",
+    "Trzecie z kolei odtworzenie jednostki przypadło na lata 1919-1921. Wówczas pułk formowano z mniejszych oddziałów (szwadronów i dywizjonów), przejmując ich historie i tradycje. We wrześniu 1919 r. 3. Pułk Dragonów przemianowano na 3. Pułk Strzelców Konnych, zaś ten, rozkazem z 6 października 1920 r., otrzymał nazwę: 5. Pułk Strzelców Konnych. ",
+    "Zmiana numeracji wynika z faktu, że formacja podlegała administracyjnie pod krakowski Okręg Korpusu nr V, choć stacjonowała w Tarnowie. Później pułk włączono do V Brygady Jazdy, która zmieniła nazwę kolejno na 5. Samodzielną Brygadę Kawalerii (1924 r.) i Krakowską Brygadę Kawalerii (1937 r.).",
+  ],
+};
+
+export const commandersSection = {
+  commandersTitle: "Dowódcy Pułku w okresie międzywojennym",
+  people: [
+    {
+      name: "ppłk Aleksander Ehrbar",
+      date: "(19.06.1919 - 22.02.1924)",
+    },
+    {
+      name: "płk Adam Rozwadowski",
+      date: "(22.02.1924 - 22.02.1927)",
+    },
+    {
+      name: "ppłk Jan Kanty Olszewski",
+      date: "(22.02.1927-28.01.1928)",
+    },
+    {
+      name: "płk dypl. Juliusz Kleeberg",
+      date: "(28.01.1928 - 31.01.1930)",
+    },
+    {
+      name: "ppłk Ignacy Kowalczewski",
+      date: "(31.01.1930 - 04.1938)",
+    },
+    {
+      name: "płk Kazimierz Kosiarski",
+      date: "(04.1938 - 20.09.1939)",
+    },
+  ],
+} as const;
+
+export const regimentSection = {
+  regimentTitle: "5. Pułk Strzelców Konnych w Dębicy",
+  content:
+    "15 grudnia 1934 r. Tarnowianie pożegnali uroczyście 5. Pułk Strzelców Konnych, ponieważ za główną siedzibę formacji obrano koszary przy ulicy Kościuszki w Dębicy. Powtarzano nawet kawaleryjskie żurawiejki, m.in. „Brakło rowów w okolicy, przenieśli ich do Dębicy” lub „Tak się błąkał w okolicy, aż go wzięli do Dębicy”. Jak się okazało, Dębica to ostatnie miejsce postoju pułku. Stąd zgrupowanie wyruszyło na wojnę obronną we wrześniu 1939 r.",
+} as const;
+
+export const cracowBrigadeSection = {
+  cracowBrigadeTitle: "Teren obrony i struktura Krakowskiej Brygady Kawalerii",
+  content: [
+    "Zgodnie z planami dowództwa Armii „Kraków” podczas narad i ćwiczeń sztabowych wiosną 1938 r. Krakowska Brygada Kawalerii (w składzie Armii „Kraków” gen. Antoniego Szyllinga) miała bronić rejonu Kalety – Koszęcin oraz Woźniki – Ligota Woźnicka. Był to teren o długości około 15 km między Tarnowskimi Górami a Częstochową. ",
+    "We wrześniu 1939 r. w skład Krakowskiej Brygady Kawalerii wchodził również: 3. Pułk Ułanów Śląskich z Tarnowskich Gór, 8. Pułk Ułanów Księcia Poniatowskiego z Krakowa, 3. Dywizjon Artylerii Konnej z Oświęcimia, a także własne jednostki wspierające (szwadron kolarzy, pionierów i łączności) oraz jednostki przydzielone: Batalion Obrony Narodowej „Lubliniec” i 51. Dywizjon Pancerny.",
+    "W 1939 r. nie zdołano zorganizować tzw. letniej koncentracji całej brygady, dlatego poszczególne jednostki samodzielnie przeprowadziły ćwiczenia terenowe. Przez cały miesiąc, począwszy od 15 lipca, pułk prowadził manewry ćwiczebne niedaleko Rzemienia i Tuszymy, a następnie od 15 sierpnia manewry ruchome w promieniu 20 km od Dębicy.",
+    "Tu 24 sierpnia 1939 r.  skoncentrowano pułk, a 27 sierpnia formacja wyruszyła pociągiem do Zawiercia. Po dotarciu na miejsce dębickich strzelców przywitali licznie zgromadzeni mieszkańcy. Żołnierze ustawieni w szyku bojowym ruszyli, śpiewając Wojenko, wojenko. Miejscowa ludność ze łzami w oczach żegnała strzelców zmierzających przeciw nazistowskiemu najeźdźcy. Panowała atmosfera wzruszenia i nadziei.",
+  ],
+} as const;
+
+export const separationSection = {
+  separationTitle: "Podział Pułku na dwa dywizjony",
+  content:
+    "Z Zawiercia pułk wyruszył w rejony Ogrodzieńca, a następnie do Podzamcza i docelowo do Woźnik. Tam został podzielony na dwa dywizjony, sprzecznie z wcześniejszymi ustaleniami, według których dębicki związek taktyczny całością sił będzie bronił rejonu Woźnik. Nowa dyrektywa nakazywała podział pułku na dwa dywizjony. Pierwszy pozostał na miejscu, a drugi skierowano do Rudnika Małego. Żołnierze musieli odtąd w osłabienu realizować działania wzdłuż pozycji obronnej wokół Woźnik, gdzie spodziewano się głównego natarcia. Dowódca Strzelców Konnych, płk Kazimierz Kosiarski zameldował o tym gen. Zygmuntowi Piaseckiemu, zwierzchnikowi Krakowskiej Brygady Kawalerii. Rzeczywiście, niemieccy planiści pominęli w koncepcji uderzenia trudno dostępny Rudnik Mały broniony przez 1. i 2. szwadron mjr. Franciszka Rekuckiego. Wróg uderzył na Woźniki.",
+} as const;
+
+export const woznikiSection = {
+  woznikiTitle: "Bitwa pod Woźnikami i Ligotą Woźnicką - wrzesień 1939",
+  content: [
+    "1 września o godzinie 4:50 sześć hitlerowskich dywizji przekroczyło polsko-niemiecką granicę i uderzyło równocześnie na 7. Dywizję Piechoty i Krakowską Brygadę Kawalerii. Batalion „Lubliniec” bronił się w okolicach Koszęcina trzema kompaniami. Żołnierze pod wodzą mjr. Franciszka Żaka stawili nazistom niezwykle zacięty opór. Niemniej wrogie oddziały okrążyły batalion, który, znalazłszy się w bardzo trudnym położeniu, musiał opuścić swoje pozycje w godzinach południowych.",
+    "Odwrót wysuniętych jednostek doprowadził do pogłębienia dystansu między Krakowską Brygadą Kawalerii i 7. Dywizją Piechoty a Grupą Operacyjną „Śląsk”. Formacje rozproszyły się. Rankiem 2 września pancerno-motorowe jednostki nieprzyjaciela uderzyły jednocześnie na główną linię obrony w pobliżu Woźnik (5. Pułk Strzelców Konnych i 3. Pułk Ułanów) i rejon Ligoty Woźnickiej (8. Pułk Ułanów).",
+    "Po ponad pięciogodzinnej walce dwie niemieckie dywizje (2. i 3. Dywizja Lekka) przerwały linię obrony Woźniki – Ligota, przełamawszy tym samym front na odcinku chronionym przez Armię „Kraków”.",
+    "2 września szwadrony 5. Pułku Strzelców Konnych trwały osamotnione. Najpierw odepchnięto krakowski pułk ułanów, potem, po kilku kontratakach, wróg wyparł ułanów z Tarnowskich Gór. Pozycji wokół Woźnik nie zdołano utrzymać, mimo wprowadzenia do walk sił odwodowych (3. Dywizjonu Aryterii Konnej i szwadronów 3. Pułku Ułanów Śląskich).",
+    "Strzelcy 5. Pułku heroicznie bronili Woźnik, odpierali wielokrotnie zajadłe natarcia III Rzeszy. Pomimo beznadziejnego położenia, mniejszych liczebnie sił i mniejszej ilości sprzętu, nie brakowało ofiarnych prób powstrzymania nazistów. Strzelec o nazwisku Rosa unieruchomił trzy niemieckie czołgi, co w tych warunkach było brawurowym i bohaterskim wyczynem.",
+    "Około godziny 11:00 ostatni pluton 5. Pułku opuścił rejon Woźnik. Wieczorem I i II dywizjon połączyły się. Wskutek niekorzystnej sytuacji w nocy z 2 na 3 września dowództwo skierowało brygadę w pobliże Pradła. Tu następnego dnia pułk z powodzeniem odpierał natarcie od wzgórza Góry Berkowej, utrzymując pozycje do godzin popołudniowych.",
+    "Stąd trafił pod Rokitno, gdzie ubezpieczał Krakowską Brygadę Kawalerii, której celem było odbicie Szczekocin. Niestety żołnierzom gen. Zygmunta Piaseckiego zabrakło współdziałania 7. Dywizji Piechoty. Po całym dniu ciężkich walk wielokrotnie liczniejsze siły wroga wyparły brygadę na wschodni brzeg Pilicy.",
+    "4 września 5. Pułk Strzelców Konnych dotarł do Sędziszowa, gdzie otrzymał zadanie obrony miasteczka i osłony całego zgrupowania brygady. Tego dnia nieprzyjaciel nie wykazywał większej aktywności na lądzie, co sprzyjało dębickim strzelcom w odpieraniu ataków. Wieczorem powrócił oficer łącznikowy wysłany uprzednio do dowództwa armii z meldunkiem o położeniu oddziałów. Przekazał nowe rozkazy. Krakowska Brygada Kawalerii nie mogła dopuścić nieprzyjaciela do przekroczenia Nidy na kierunku Sędziszów – Busko. Oprócz tego za wszelką cenę musiała utrzymać Pińczów.",
+    "5 września wczesnym świtem pułk wyruszył z Mstyczowa i przed południem dotarł pod Pińczów. Podzielony na szwadrony, bronił miasteczka na kierunku północnym i zachodnim do późnych godzin wieczornych. Powstrzymał nieprzyjaciela w rejonie Brześcia.",
+    "Pod silnym naporem wojsk III Rzeszy Krakowska Brygada Kawalerii otrzymała rozkaz wycofania się w rejon Bogucic, między Pińczowem a Buskiem. Po trudnym, całonocnym marszu formacja dotarła na miejsce wczesnym świtem. 6 września pułk otrzymał zadanie dozorowania drogi z Chmielnika do Buska. Około południa jednostki rozpoznawcze nieprzyjaciela podeszły pod Busko od strony północnej, ale strzelcy 5. Pułku odparli szturm. Wskutek niekorzystnego położenia armii „Południe”, brygada musiała zejść z placu boju po raz kolejny, tym razem w kierunku Nowego Korczyna. Pułk stanął nieopodal Paska Wielkiego. Dębickich strzelców skierowano do osłony reorganizującej się Grupy Operacyjnej „Jagmin” („Śląsk”) pod dowództwem gen. Jana Jagmina-Sadowskiego.",
+  ],
+} as const;
+
+export const escapeSection = {
+  escapeTitle: "Obrona Baranowa Sandomierskiego i ewakuacja Krakowskiej BK",
+  content: [
+    "7 września oddziały Armii „Kraków” nie dotarły jednak do Nowego Korczyna. Mimo to dowództwo nie zmieniło rozkazów: utrzymać dotychczasowe pozycje, osłaniać Korczyn i zgrupowania Armii „Kraków” od północy.",
+    "Nocą z 7 na 8 września pułk zluzowano, zwolniwszy z dotychczasowego zadania. W godzinach popołudniowych strzelcy wyruszyli wzdłuż prawego brzegu Wisły ku Szczucinowi. Dotarli tam 8 września około 20:00. Formacja przebywała tu bardzo krótko. W nocy płk Kazimierz Kosiarski otrzymał rozkaz kontynuowania marszu wzdłuż Wisły i przechwycenia mostu w Baranowie Sandomierskim.  Pomimo wyczerpującego marszu, nie udało się wypełnić rozkazu. Tuż przed przybyciem oddziałów krakowskiej brygady saperzy z grupy „Sandomierz”, na rozkaz dowódcy, wysadzili most, by udeareminić atak niemieckich sił pancerno-motorowych na Baranów. Niestety wskutek braku łączności między jednostkami grupa „Sandomierz” nie była poinformowana o działaniach pułku.",
+    "Po osiągnięciu rejonu Baranowa, formacja otrzymała kolejny rozkaz – osłaniać odwrót i przeprawę oddziałów Armii „Kraków” przez  Wisłę. Tym razem 5. Pułk,  wraz z baterią dywizjonu artylerii konnej, zabezpieczał brzeg rzeki w okolicach zniszczonego mostu, stał na jego straży i zapewniał ochronę od południa (z kierunku Mielca).",
+    "W tym czasie do pułku dołączyły oddziały uzupełniające z Ośrodka Zapasowego Krakowskiej Brygady Kawalerii. Ośrodek, po ogłoszonej przez prezydenta Mościckiego powszechnej mobilizacji, zorganizowano w Dębicy (pod dowództwem mjr. Jana Sroczyńskiego). Żołnierze rezerwiści przybywali tam po otrzymaniu przydziału służbowego do Krakowskiej Brygady Kawalerii. W Dębicy zaimprowizowano także izbę chorych, gdzie opatrywano, zarówno żołnierzy, jak i cywili (głównie mieszkańców Dębicy i okolic) rannych po nalotach Luftwaffe.",
+    "7 września pozostałe oddziały Ośrodka Zapasowego ewakuowano z Dębicy pod Brodów. Tu znalazły schronienie rodziny walczących żołnierzy. Wywieziono archiwum dokumentacyjne oraz sztandary 5. Pułku Strzelców Konnych i 3. Pułku Ułanów. Po wkroczeniu Sowietów, mjr Tadeusz Plackowski usiłował przedostać się ze sztandarami do Rumunii. Niestety przepadł bez wieści. Prawdopodobnie dotarł do Uhrynowa na Podolu, gdzie mógł zostać zamordowany przez bandy ukraińskich nacjonalistów. Losy sztandaru pułkowego pozostają nieznane, ale istnieją dwie hipotezy. Według pierwszej mjr Plackowski ukrył albo spalił sztandar zanim symbol dostał się w ręce oprawców. Druga zaś sugerowałaby, że sztandar wpadł w ręce ukraińskie i spoczął w kijowskich muzeach po zakończeniu wojny.",
+  ],
+} as const;
+
+export const regroupSection = {
+  regroupTitle: "Uzupełnienia i przegrupowanie Krakowskiej Brygady Kawalerii",
+  content: [
+    "Jak wspomniano, w okolicy Baranowa Sandomierskiego do maszerujących oddziałów Krakowskiej Brygady Kawalerii dołączyli żołnierze Ośrodka Zapasowego. Z Dębicy wymaszerowano prawdopodobnie w kilku etapach, a podział jednostek nastąpił 10 września jeszcze pod Baranowem. Formację wzmocnił szwadron marszowy rezerwistów. Nadliczbowych żołnierzy 5. Pułku Strzelców Konnych przyprowadził Kazimierz Rouppert, a dowodził nimi por. Zygmunt Śmiałowski.",
+    "Przybycie dodatkowych jednostek zapewne podniosło morale żołnierzy. Pozwoliło też, choć częściowo, wyrównać straty poniesione w wyniku półtoratygodniowych walk. Brygada „zgubiła” trzy szwadrony 8. Pułku Ułanów i cały 51. Dywizjon Pancerny jeszcze podczas działań pod Szczekocinem. W niedzielę 10 września 5. Pułk oraz pozostałe oddziały Krakowskiej Brygady Kawalerii nadal realizowały zadania na pozycjach zorganizowanych dzień wcześniej. Koło południa do Suchorzewa przybył sztab Armii „Kraków” z gen. Antonim Szyllingiem na czele. Generał nie ukrywał pretensji do dowódcy Brygady, którego obarczał winą za utratę przeprawy na Wiśle w Baranowie i zaniechanie odbudowy mostu. Skrytykował też brak meldunku o bieżącej sytuacji.",
+    "Wieczorem 10 września Brygada otrzymała rozkaz: po zluzowaniu przez oddziały piechoty przejść nazajutrz do miejscowości Lipa. Na prośbę gen. Jana Jagmina-Sadowskiego, gen. Zygmunt Piasecki opóźnił wymarsz,  zapewniwszy ubezpieczenie przegrupowującej się Grupy Operacyjnej „Jagmin” aż do 12 września.",
+    "Nocą z 12 na 13 września Pułk przekroczył San i wczesnym rankiem dotarł do miejscowości Lipa. Cały dzień planowano odpoczynek, a także reorganizację i przywrócenie wartości bojowej oddziałów.",
+    "W godzinach wieczornych formacja ruszyła dalej do Janowa Lubelskiego. Kolejny nocny marsz okazał się bardzo wyczerpujący, jednak jeszcze przed świtem pułk rozlokował się w rejonie Kawęczyna (koło Janowa) i Frampolu. Po całodniowym odpoczynku Strzelcy „Piątki” nabrali sił  i motywacji do dalszej walki. Po zmroku znów wyruszyli w drogę, by rankiem 15 września dotrzeć do Biłgoraja.",
+    "Po południu dywizjon mjr. Franciszka Rekuckiego odparł atak sił rozpoznawczych nieprzyjaciela od północy. Niestety kilka godzin później, Luftwaffe zbombardowało szwadrony „Piątki” w lesie pod Korczową. 5. Pułk poniósł znaczne straty.",
+    "Tymczasem sytuacja na froncie wymagała od zdziesiątkowanych Strzelców wytrwałej walki. Oddziały Krakowskiej Brygady Kawalerii, przeprowadzające atak na Tarnogród, potrzebowały wsparcia. Pomimo sukcesów w początkowej fazie, operacja nie przyniosła spodziewanego rezultatu. Brygadę wycofano z powrotem za Tanew, a Pułk ponownie obsadził Biłgoraj.",
+  ],
+} as const;
+
+export const bilgorajSection = {
+  bilgorajTitle: "Bitwa o Biłgoraj i walki w Rejonie Tarnawatki",
+  content: [
+    "16 września nieprzyjaciel przeprowadziwszy rekonesans, uderzył od północy na Biłgoraj. Waleczni strzelcy 5. Pułku stawiali nazistowskim siłom pancerno-motorowym silny opór. W walce wspomagał ich szwadron kolarzy Krakowskiej Brygady Kawalerii pod dowództwem rtm. Antoniego Starnawskiego. Naziści zdołali ostatecznie przełamać obronę. Hitlerowskie dowództwo podjęło jednak decyzję o odwrocie, gdy od północy niespodziewanie nadciągnęły oddziały Grupy Operacyjnej „Jagmin”.",
+    "16 września połączeno Armię „Kraków” gen. Antoniego Szyllinga (w tym 5. Pułk)  z Armią „Lublin” gen. Tadeusza Piskora. Dowództwo nad całością sił nowo powstałej Armii „Południe” objął gen. Piskor. ",
+    "Do ostatnich walk złączonych armii doszło pod Tomaszowem Lubelskim. Celem działań było przebicie się wszystkich sił do granicy z Węgrami. Operację miał rozpocząć atak Warszawskiej Brygady Pancerno-Motorowej na Tomaszów Lubelski, którym dowodził płk Stefan Rowecki. Krakowska Brygada Kawalerii otrzymała zadanie osłony formacji od północy. Jednak odwlekanie ataku dało najeźdźcy czas na otoczenie polskich oddziałów.",
+    "19 września w potyczce pod Rogóźnem (nieopodal Tomaszowa) 3. Pułk Ułanów Śląskich stracił ponad 70% żołnierzy. W rezultacie 5. Pułk Strzelców Konnych pozostał jedynym pułkiem zdolnym do prowadzenia dalszych działań. Straty dramatycznie pogorszyły sytuację Krakowskiej Brygady Kawalerii. ",
+    "Po otrzymaniu informacji o wykrwawieniu się 3. Pułku Ułanów, dowódca 5. Pułku Strzelców Konnych, płk Kosiarski uznał, że Strzelcy samodzielnie nie zdołają opanować rejonu Tarnawatki. Podjął więc decyzję o opóźnieniu hitlerowców poprzez atak na ariergardę wroga (wzdłuż szosy Zamość – Tomaszów ze wzgórza nad Tarnawatką). Zadanie powierzono 2. Szwadronowi 5. Pułku Strzelców Konnych pod dowództwem rtm. Jarosława Chodania. Oddział kilkakrotnie uderzał na poruszające się po drodze oddziały nieprzyjaciela. Podczas jednego ze śmiałych ataków wzięto nawet kilku jeńców. Jednak gdy z rejonu Zamościa nadjechała większa kolumna nazistowskich wojsk, oddział rtm. Chodania zepchnięto z zajętych pozycji. Silny ogień wrogiej artylerii zatrzymał 3. Szwadron Pułku pod dowódcem rtm. Wojciecha Łopuskiego, który ruszył na pomoc.",
+    "W tym czasie oddziały 2. Szwadronu odepchnięto ze wzgórza. Zmasowane uderzenie nieprzyjaciela spodowowało duże straty: wielu żołnierzy zginęło, wielu zostało rannych. Poległ też sam rtm. Jarosław Chodań. Ciężko raniony w pachwinę, zmarł od upływu krwi w Tarnawatce nieopodal mostku nad Wieprzem.",
+    "Kolejny odddział skierowany do wsparcia 2. Szwadronu – 4. Szwadron rtm. Bronisława Piotrowskiego – również poniósł ogromne straty wskutek silnego ostrzału artylerii. Między innymi poległ ppor. Piotr Baran, dowódca 2. plutonu 4. Szwadronu 5. Pułku Strzelców Konnych. Ze względu na brak profesjonalnej pomocy chirurgicznej, poważnie ranny w bok, podporucznik nie przeżył. Zanim jednak został ranny, 2. pluton bohatersko odparł niemieckie natarcie od strony zabudowań położonych nad stawami.",
+    "Przed zmrokiem 1. Szwadron 5. Pułku Strzelców Konnych – skierowany do osłony odcinka północnego – udaremnił nazistom rozpoznanie w rejonie Pańkowa. Skutecznie odrzucono nieprzyjaciela na drugi brzeg Wieprza. Po walce, pod osłoną nocy, Pułk wycofał się z rejonu Pańków – Tarnawatka.",
+  ],
+} as const;
+
+export const finalClashSection = {
+  finalClashTitle: "Końcowe Starcie i Kapitulacja Armii „Południe”",
+  content: [
+    "Rankiem 20 września płk Kazimierz Kosiarski i pozostali dowódcy jednostek Krakowskiej Brygady Kawalerii zebrali się na ostatnią naradę w sztabie. Zapadła decyzja o kapitulacji Armii „Południe”. Pod niebecność dowódcy, do obozu 5. Pułku Strzelców Konnych we wsi Ulów zbliżył się nieprzyjaciel. Błyskawicznie zorganizowany oddział konny Pułku, dowodzony przez rtm. Antoniego Dębskiego i por. Tadeusza Gawrzyckiego, zatrzymał wroga. To ostatnia walka pułku w wojnie obronnej 1939 roku, a jednocześnie ostatnia potyczka oddziałów Armii „Południe” podczas kampanii wrześniowej.",
+    "Pułkownik Kosiarski informował żołnierzy o kapitulacji ze łzami w oczach. Zaapelował, by usiłowali przedostać się na zachód każdy samodzielnie. Marsz ku wschodowi, po ataku Sowietów, jego zdaniem był bezzasadny. Dzięki tej trafnej ocenie sytuacji, niewielu strzelców 5. Pułku odnaleziono na tzw. liście katyńskiej.",
+    "Większość żołnierzy, którzy uniknęli niewoli, powróciła na zachód. Wielu z nich rozpoczęło działalność w strukturach powstającego Polskiego Państwa Podziemnego. Dowództwo zaś trafiło do hitlerowskiej niewoli, skąd powrócili dopiero po wyzwoleniu.",
+  ],
+} as const;
+
+export const summarySection = {
+  content: [
+    "Poczucie obowiązku, odwaga, wręcz ponadludzka wytrzymałość, wspaniałe koleżeństwo – bez względu na stopnie i starszeństwo – a ponadto wierność duchowi oddziału dawały siłę do boju Krakowskiej Brygadzie Kawalerii na długiej drodze: od zachodniej granicy Śląska, aż po las Pańków pod Tomaszowem Lubelskim.",
+    "Sukcesy oddziałów i pododdziałów Krakowskiej Brygady Kawalerii, nie tylko obronne, ale i zaczepne –  niewykorzystane z powodu ogólnej sytuacji wojennej – to karta zapisana krwią żołnierzy 5. Pułku Strzelców Konnych w historii Września 1939 roku. Karta pisana w heroicznej obronie wolności przez Polski Naród.",
+  ],
+  author: "Autor: Maciej Małozięć",
+} as const;
+
+export const districtSection = {
   districtTitle: "Obwód AK Dębica w Operacji „Burza” - Struktura i Działania",
-  district: [
+  content: [
     "Obwód AK Dębica, wchodzący w skład 24. Dywizji Piechoty, odtwarzał w okresie „Burzy” - 5. Pułk Strzelców Konnych Armii Krajowej. Dowództwo nad całością objął zastępca inspektora rejonowego w Rzeszowie, kpt. Adam Lazarowicz „Klamra”, natomiast komendant Obwodu Dębica, kpt. Ludwik Marszałek „Zbroja”, został na czas „Burzy” - zastępcą „Klamry”. Teren Obwodu podzielono na trzy rejony walki zwane także zgrupowaniami [1].",
     "Rozkaz o rozpoczęciu „Burzy” przywiózł z Rzeszowa do Gumnisk k. Dębicy Ludwik Marszałek „Zbroja” i dostarczył go Adamowi Lazarowiczowi „Klamrze” o świcie 28 lipca 1944 roku. Dowódca pułku niezwłocznie zaalarmował całość Obwodu i zarządził koncentracje oddziałów w ramach zgrupowań w trzech rejonach. Miejsce postoju dowództwa pułku oraz dowodzenia całością sił znajdowało się w leśniczówce Berdech (na wzgórzu otaczającym wieś Braciejowa, w parafii Gumniska), gdzie zarządzono także koncentrację oddziałów II Zgrupowania [2].",
     "W skład II Rejonu wchodziło pięć placówek Obwodu „Deser”: Brzeziny „Bomba”, Dębica „Działo”, Korzeniew „Kartacz”, Łączki Kucharskie „Ławka”, Ropczyce I „Rakieta”. Terytorialnie zasięg działania Zgrupowania był największy i rozciągał się od Ropczyc po Podgrodzie. Przez teren ten wiodła linia kolejowa Rzeszów - Kraków (od Ropczyc po Grabiny) oraz drogi Rzeszów - Kraków, Dębica - Wielopole.",
@@ -165,70 +196,62 @@ export const district = {
   ],
 } as const;
 
-export const firstDays = {
+export const firstDaysSection = {
   firstDaysTitle:
     "Działania oddziałów II Zgrupowania w pierwszych dniach „Burzy”",
-  firstDays: [
-    [
-      "Początkowy okres „wzmożonej działalności dywersyjnej” we wszystkich zgrupowaniach 5. PSK AK, cechowała duża aktywność bojowo-dywersyjna poszczególnych plutonów i kompanii, charakteryzująca się przeprowadzeniem licznych akcji zaczepnych na drogach, rozbijaniem mniejszych patroli nieprzyjacielskich oraz rozbrajaniem posterunków policji i dozbrajaniem plutonów w zdobyczną broń.",
-      "Tymczasem w pierwszych dniach sierpnia „Klamra” wraz ze swym sztabem zmienił dotychczasowe miejsce postoju przenosząc się z Berdechu w rejon Południka (do gajówki Władysława Klabachy). Decyzja ta była podyktowana faktem, iż Berdech znajdował się w bliskim sąsiedzkie drogi Niedźwiada - Mała, która stwarzała niebezpieczeństwo dekonspiracji.",
-    ],
-    [
-      "Wśród wielu akcji wykonanych przez oddziały II Rejonu należy wymienić kilka o większym znaczeniu. W nocy z 30 na 31 lipca dywersja Obwodu (pluton dywersyjny Władysława Strumskiego „Brutusa” [3] oraz pluton dywersyjny „Cebuli”) pod dowództwem Jerzego Wosia „Farysa” wysadziły tory kolejowe w miejscowości Głowaczowa, efektem czego było przerwanie łączności kolejowej na linii Dębica - Tarnów, na okres 10 godzin [4].",
-      "Pluton Wilhelma Jakiego „Koraba” z kompani „Pęka” w dniu 30 sierpnia zorganizował zasadzkę na 3 samochody niemieckie na drodze Dębica - Wielopole w rejonie gajówki Sewerówka w rejonie Kamieńca. Zupełnie zaskoczony oddział niemiecki, pomimo prób obrony, był bezradny wobec atakujących. W wyniku akcji zginęło 32 Niemców, zdobyto broń, samochody oraz duże zapasy żywności [5].",
-    ],
+  content: [
+    "Początkowy okres „wzmożonej działalności dywersyjnej” we wszystkich zgrupowaniach 5. PSK AK, cechowała duża aktywność bojowo-dywersyjna poszczególnych plutonów i kompanii, charakteryzująca się przeprowadzeniem licznych akcji zaczepnych na drogach, rozbijaniem mniejszych patroli nieprzyjacielskich oraz rozbrajaniem posterunków policji i dozbrajaniem plutonów w zdobyczną broń.",
+    "Tymczasem w pierwszych dniach sierpnia „Klamra” wraz ze swym sztabem zmienił dotychczasowe miejsce postoju przenosząc się z Berdechu w rejon Południka (do gajówki Władysława Klabachy). Decyzja ta była podyktowana faktem, iż Berdech znajdował się w bliskim sąsiedzkie drogi Niedźwiada - Mała, która stwarzała niebezpieczeństwo dekonspiracji.",
+    "Wśród wielu akcji wykonanych przez oddziały II Rejonu należy wymienić kilka o większym znaczeniu. W nocy z 30 na 31 lipca dywersja Obwodu (pluton dywersyjny Władysława Strumskiego „Brutusa” [3] oraz pluton dywersyjny „Cebuli”) pod dowództwem Jerzego Wosia „Farysa” wysadziły tory kolejowe w miejscowości Głowaczowa, efektem czego było przerwanie łączności kolejowej na linii Dębica - Tarnów, na okres 10 godzin [4].",
+    "Pluton Wilhelma Jakiego „Koraba” z kompani „Pęka” w dniu 30 sierpnia zorganizował zasadzkę na 3 samochody niemieckie na drodze Dębica - Wielopole w rejonie gajówki Sewerówka w rejonie Kamieńca. Zupełnie zaskoczony oddział niemiecki, pomimo prób obrony, był bezradny wobec atakujących. W wyniku akcji zginęło 32 Niemców, zdobyto broń, samochody oraz duże zapasy żywności [5].",
   ],
 } as const;
 
-export const heroicDefence = {
+export const heroicDefenceSection = {
   heroicDefenceTitle:
     "Heroiczna Obrona Ludności Cywilnej w Gumniskach - Akcja 12 sierpnia 1944 r.",
-  heroicDefence: [
-    [
-      "Drużyna dyspozycyjna Władysława Strumskiego „Brutusa” skutecznie przeprowadziła (w pierwszych dniach sierpnia), dwie akcje na kolumny samochodów nieprzyjaciela w miejscowości Podgrodzie. W akcjach tych brał udział kpt. Józef Lutak „Dyzma”, dowódca dywersji w Inspektoracie AK Rzeszów. Istotnym elementem działań prowadzonych przez Armię Krajową w ramach „Burzy” była ochrona ludności przed represjami i pacyfikacjami. Na terenie II Rejonu nieprzyjaciel planował przeprowadzenie kilku tego rodzaju akcji, jednak każdorazowa próba pacyfikacji kończyła się fiaskiem. Doskonale zorganizowane patrole II Zgrupowania uniemożliwiły okupantowi przeprowadzenie pacyfikacji w miejscowościach: Mała, Niedźwiada i Gumniska.",
-      "Najbardziej spektakularną akcję odbicia ludności w dniu 12 sierpnia, przeprowadziła bojówka dyspozycyjna Władysława Strumskiego „Brutusa” dowodzona przez Józefa Lutaka „Dyzmę” oraz wspomagana przez kilku żołnierzy z drużyny Jana Murgrabiego „Pieca” z kompanii Dębica „Działo”. Planowana przez Niemców pacyfikacja wsi była pokłosiem zlikwidowania sześciu hitlerowców grasujących po Gumniskach i Braciejowej dwa dni wcześniej.",
-      "Rankiem 12 sierpnia do Gumnisk ściągnął batalion niemiecki. Zaczęło się spędzanie mieszkańców wsi (starców i dzieci) na drogę prowadzącą w kierunku Dębicy.",
-    ],
-    [
-      "Informacja o poczynaniach nieprzyjaciela dotarła do sztabu II Zgrupowania. Dowódca 5. PSK AK, Adam Lazarowicz „Klamra” posłał Józefa Lutaka „Dyzmę”, który miał ocenić zagrożenie, jednakże dowódca pułku wyraźnie apelował o nie podejmowanie pochopnych działań. Po przybyciu na miejsce „Dyzma” mając do dyspozycji drużynę dyspozycyjną i drużynę z plutonu „Gumniska” postanowił uderzyć na nieprzyjaciela, który prowadził już około trzystuosobową grupę bezbronnych mieszkańców w kierunku Dębicy.",
-      "Całość (łącznie 23 + 1) „Dyzma” podzielił  na trzy grupy: grupa główna 17+1 zajęła stanowiska na wzgórzu za rzeką Ostrą, w odległości około 40 metrów od drogi; grupa Władysława Strumskiego „Brutusa” w trzyosobowym składzie rozlokowała się na górze po prawej stronie; grupa Kazimierza Strumskiego „Tyrana” - trzy osoby, rozlokowała się na lewym skrzydle. W ten sposób „Dyzma” chciał osiągnąć przewagę optyczną i wzbudzić wśród Niemców przekonanie o znacznej liczebności atakujących. Zamysł ten powiódł się i kiedy na rozkaz „Dyzmy” dywersanci otworzyli ogień do prowadzących ludność Niemców, ci w panice zaczęli kryć się w rowach. W tym czasie ludność rzuciła się do ucieczki. Kiedy jednak Niemcy spostrzegli liczebność atakujących, przystąpili do kontruderzenia. „Dyzma” dał wówczas rozkaz wycofania. Gdy oddział śmiałków wycofywał się pod górę, w kierunku lasu (miejsca zgrupowania), z lizjery lasu odezwały się karabiny oddziałów II Zgrupowania, które na wniosek „Klamry” wyruszyły wesprzeć atakujących [6].",
-    ],
+  content: [
+    "Drużyna dyspozycyjna Władysława Strumskiego „Brutusa” skutecznie przeprowadziła (w pierwszych dniach sierpnia), dwie akcje na kolumny samochodów nieprzyjaciela w miejscowości Podgrodzie. W akcjach tych brał udział kpt. Józef Lutak „Dyzma”, dowódca dywersji w Inspektoracie AK Rzeszów. Istotnym elementem działań prowadzonych przez Armię Krajową w ramach „Burzy” była ochrona ludności przed represjami i pacyfikacjami. Na terenie II Rejonu nieprzyjaciel planował przeprowadzenie kilku tego rodzaju akcji, jednak każdorazowa próba pacyfikacji kończyła się fiaskiem. Doskonale zorganizowane patrole II Zgrupowania uniemożliwiły okupantowi przeprowadzenie pacyfikacji w miejscowościach: Mała, Niedźwiada i Gumniska.",
+    "Najbardziej spektakularną akcję odbicia ludności w dniu 12 sierpnia, przeprowadziła bojówka dyspozycyjna Władysława Strumskiego „Brutusa” dowodzona przez Józefa Lutaka „Dyzmę” oraz wspomagana przez kilku żołnierzy z drużyny Jana Murgrabiego „Pieca” z kompanii Dębica „Działo”. Planowana przez Niemców pacyfikacja wsi była pokłosiem zlikwidowania sześciu hitlerowców grasujących po Gumniskach i Braciejowej dwa dni wcześniej.",
+    "Rankiem 12 sierpnia do Gumnisk ściągnął batalion niemiecki. Zaczęło się spędzanie mieszkańców wsi (starców i dzieci) na drogę prowadzącą w kierunku Dębicy.",
+    "Informacja o poczynaniach nieprzyjaciela dotarła do sztabu II Zgrupowania. Dowódca 5. PSK AK, Adam Lazarowicz „Klamra” posłał Józefa Lutaka „Dyzmę”, który miał ocenić zagrożenie, jednakże dowódca pułku wyraźnie apelował o nie podejmowanie pochopnych działań. Po przybyciu na miejsce „Dyzma” mając do dyspozycji drużynę dyspozycyjną i drużynę z plutonu „Gumniska” postanowił uderzyć na nieprzyjaciela, który prowadził już około trzystuosobową grupę bezbronnych mieszkańców w kierunku Dębicy.",
+    "Całość (łącznie 23 + 1) „Dyzma” podzielił  na trzy grupy: grupa główna 17+1 zajęła stanowiska na wzgórzu za rzeką Ostrą, w odległości około 40 metrów od drogi; grupa Władysława Strumskiego „Brutusa” w trzyosobowym składzie rozlokowała się na górze po prawej stronie; grupa Kazimierza Strumskiego „Tyrana” - trzy osoby, rozlokowała się na lewym skrzydle. W ten sposób „Dyzma” chciał osiągnąć przewagę optyczną i wzbudzić wśród Niemców przekonanie o znacznej liczebności atakujących. Zamysł ten powiódł się i kiedy na rozkaz „Dyzmy” dywersanci otworzyli ogień do prowadzących ludność Niemców, ci w panice zaczęli kryć się w rowach. W tym czasie ludność rzuciła się do ucieczki. Kiedy jednak Niemcy spostrzegli liczebność atakujących, przystąpili do kontruderzenia. „Dyzma” dał wówczas rozkaz wycofania. Gdy oddział śmiałków wycofywał się pod górę, w kierunku lasu (miejsca zgrupowania), z lizjery lasu odezwały się karabiny oddziałów II Zgrupowania, które na wniosek „Klamry” wyruszyły wesprzeć atakujących [6].",
   ],
 } as const;
 
-export const commandTransfer = {
+export const commandTransferSection = {
   commandTransferTitle:
     "Akcja w Gumniskach i Przeniesienie Dowództwa na Polanę Kałużówka",
-  commandTransfer: [
+  content: [
     "Brawurowa akcja zakończyła się sukcesem. Na placu boju poległo około 20 Niemców, a kilkunastu zostało rannych. Podczas wycofywania poległ jeden żołnierz z oddziału dyspozycyjnego. Był nim Stanisław Mroczka „Miecz”. Niemcy zdołali zabrać około 20 cywilów (głównie starców oraz miejscowego proboszcza), którzy zostali w większości wypuszczeni w Dębicy, natomiast reszta została zagarnięta do prac przyfrontowych, skąd po kilku dniach powróciła do domów [7].",
     "Tymczasem „Klamra” jeszcze przed pacyfikacją Gumnisk (na przełomie pierwszej i drugiej dekady sierpnia), zarządził po raz drugi przeniesienie dowództwa pułku i sztabu II Zgrupowania.",
     "Nowe miejsce postoju znajdowało się w rejonie leśnej polany Kałużówka, położonej pośrodku rozległego kompleksu leśnego Braciejowa - Gumniska - Gołęczyna. Tutaj „Klamra” postanowił ściągnąć oddziały pozostające w terenie, tzn. kompanie i plutony wchodzące w skład II Zgrupowania, które walczyły dotąd w rejonach swoich placówek. Kontrowersje wśród dowództwa wzbudził projekt Romana Kani „Rygla” i Franciszka Ciszka „Cisa”, aby uczynić z Kałużówki partyzancki obóz [8]. „Klamra” przewidywał jednak, że front szybko przejdzie przez powiat dębicki, a ewentualny opór niemiecki zostanie postawiony dopiero na linii rzeki Wisłoki, a więc kilka kilometrów na zachód od samej Kałużówki [9].",
   ],
 } as const;
 
-export const battles = {
+export const battlesSection = {
   battlesTitle: "Walki na Kałużówce",
-  battles: [
+  content: [
     "Na leśnej polanie nastąpiła reorganizacja oddziałów II Rejonu, które następnie wykonały umocnione szałasy i okopy. Na Kałużówkę przybył także pluton zwiadowczy Armii Czerwonej, z której dowództwem nawiązano współpracę. Bieg wypadków i założenia szybkiego przejścia frontu nie sprawdziły się. Już 21 sierpnia front zaczął w błyskawicznym tempie przesuwać się spod Ropczyc w kierunku Dębicy. Naprzeciw wojskom radzieckim wyruszył pluton Józefa Naroga „Strzały” (wchodzący uprzednio w skład I Zgrupowania). Pluton ten po złożeniu deklaracji o chęci współpracy AK z oddziałami Armii Czerwonej został przez Sowietów rozbrojony. „Strzała” zdołał jedynie wysłać gońca, który poinformował „Klamrę” o zdarzeniu. Sam musiał rozwiązać oddział i pod eskortą Rosjan został przeprowadzony do lasu w okolicy miejscowości Stasiówka, gdzie wszystkich wypuszczono [10].",
     "Następnego dnia pluton Karola Kubika z kompanii „Pęka” przeprowadził atak na kolumnę czterech samochodów niemieckich w rejonie Południka. Jeden samochód został spalony a jego trzyosobowa załoga zlikwidowana. Pozostałe wozy (w których znajdowali się prawdopodobnie wyżsi wojskowi niemieccy), zdołały uciec. W „uchwyconym” samochodzie oddział „Wichra” zdołał odnaleźć m.in. teczkę z cennymi dokumentami wojskowymi, w której (poza innymi materiałami) znalazły się tajne rozkazy dowództwa niemieckiego. Z samochodu zabrano także dowody osobiste zabitych oraz ich broń [11].",
     "Zbigniew Lazarowicz, dowódca plutonu „Gumniska” a zarazem syn dowódcy pułku, ze szczegółami opisał moment ukształtowania się frontu w rejonie Braciejowej i Gumnisk: „Sowieci wkroczyli do Gumnisk i Braciejowej 22 sierpnia i zajęli stanowiska po wschodniej stronie kotliny. Niemcy początkowo nie zaciągnęli linii, mieli widocznie wycofać się dalej na zachód, ale gdy Sowieci stanęli, nie posuwając się dalej, rozciągnęli i oni linię obronną na lizjerze lasu, w którym myśmy się kryli. W ten sposób znaleźliśmy się w bezpośrednim zapleczu frontu niemieckiego, pomiędzy pierwszą linią, a stanowiskami artylerii. W tej sytuacji musieliśmy zamknąć ściśle naszą bazę i wzmocnić czujność i ubezpieczenie. Przygotowaliśmy się do obrony w okrążeniu. Stanowiska ogniowe umocniliśmy dołami strzeleckimi. Wysunięto placówki na przedpolu w kierunku frontu. Oddziały zajmowały następujące stanowiska: od południa pluton »Cebuli« [Jan Dec] na jego prawym skrzydle kompania »Pęka« [Franciszek Szara], a dalej drużyna sowiecka. Od zachodu pluton »Bratka«, czyli mój, w sile dwóch drużyn, bo trzecia drużyna pod dowództwem kpr. »Sokoła« [Michał Jędrzejczyk] została skierowana na wzmocnienie wschodniego odcinka od strony Gumnisk. Od północy kompania »Jasnego« [Leon Kloc], a od wschodu oddział dyspozycyjny »Klamry«, saperzy, sekcja Piata, pluton łączności oraz wspomniana drużyna »Sokoła«. Na tym też odcinku wysunięta została w kierunku frontu silna placówka. Drogi dojazdowe zabezpieczono dodatkowymi zawałami” [12].",
   ],
 } as const;
 
-export const partisan = {
+export const partisanSection = {
   partisanTitle:
     "Obóz Partyzancki w Okrążeniu i Dylematy Strategiczne Dowództwa II Rejonu",
-  partisan: [
+  content: [
     "Linia frontu ukształtowała się na linii Wiewiórka - Straszęcin - Grabiny - Latoszyn, a następnie wzdłuż doliny rzeki Ostrej, przez Gumniska i Braciejową. Na wzgórzach po wschodniej stronie rzeki Ostrej znalazły się oddziały sowieckie, natomiast po przeciwległej stronie, na wzgórzach od zachodu, formacje niemieckie. Bezpośrednio za pasem wzniesień między linią Latoszyn - Gumniska - Braciejowa, w Dolinie Dolnej Wisłoki, w rejonie Jaworza Dolnego znalazły się oddziały niemieckiej artylerii. W tej sytuacji obóz partyzancki II Rejonu znalazł się w okrążeniu, mając po stronie zachodniej niemiecką artylerię, zaś po stronie wschodniej - linię frontu.",
     "Tymczasem dowództwo pułku i II Zgrupowania, przystąpiło do opracowania koncepcji wycofania się z terenu objętego działaniami wojennymi. W ustnej rozmowie z Ludwikiem Marszałkiem „Zbroją” (przebywającym w III Rejonie) - „Klamra” wydał rozkaz rozwiązania III Zgrupowania, dowodzonego przez Edmunda Mateckiego „Lisa”. Rozmowa telefoniczna obu dowódców została jednak przerwana. Do dowództwa napłynęły nowe meldunki o zajęciu drogi Południk - Gołęczyna (na skraju miejscowości Gołęczyna), gdzie znajdowało się dowództwo III Zgrupowania. W tej sytuacji pojawiły się dwie koncepcje rozwiązania II Rejonu: pierwsza mówiła o próbie przebicia się na stronę sowiecką, druga zaś dotyczyła przejścia na zachód w rejon lasów Gołęczyny lub ewentualnie Jaworza, gdzie miało nastąpić rozwiązanie oddziałów. Mówiło się także o próbie przejścia w rejon Jodłowej (za Wisłoką), jeśli zaszłaby taka konieczność.",
     "Wobec wiadomości które dostarczył goniec posłany przez Józefa Naroga „Strzałę” oraz z uwagi na inne okoliczności mówiące o zdradzieckim postępowaniu Rosjan, zwyciężyła koncepcja przebijania się na zachód [13].",
   ],
 } as const;
 
-export const evacuation = {
+export const evacuationSection = {
   evacuationTitle:
     "Bitwa na Polanie Kałużówka - Heroiczny Opór i Ewakuacja II Zgrupowania",
-  evacuation: [
+  content: [
     "Jednak rankiem 23 sierpnia Niemcy skierowali silny ogień dwóch baterii artylerii na stanowiska II Zgrupowania w rejonie Kałużówki. Następnie od strony Południka wyszło rozpoznanie patroli bojowych skutecznie odpartych przez kompanię „Pęka”. Przez cały dzień i noc z 23 na 24 sierpnia Niemcy kładli silny ogień artylerii na niewielki stosunkowo teren na którym znajdowało się II Zgrupowanie [14]. Pod wpływem tego ognia pojawiły się pierwsze straty w szeregach II Zgrupowania 5. PSK AK. W tej sytuacji „Klamra”, celem uniknięcia dalszych strat, podjął ryzykowną decyzję próby przebicia się na stronę radziecką. W tym celu nawiązał przez radiostację kontakt z dowództwem radzieckim, aby Sowieci położyli ogień na wskazany skraj lasu, celem upozorowania natarcia na stanowiska niemieckie, co pomogłoby oddziałom II Rejonu opuścić las i wydostać się z okrążenia. Rosjanie wyrazili zgodę, jednakże w oznaczonym czasie położyli ogień, który został skierowany nie na wyznaczony przez „Klamrę” odcinek, lecz wprost na stanowiska II Zgrupowania. Wprawdzie Sowieci przepraszali później za tę pomyłkę, jednakże „Klamra” nie zdecydował się na powtórzenie manewru [15].",
     "Około godziny 5 rano, w czwartek 24 sierpnia od wschodu tzn. od strony drogi Braciejowa - Południk oraz od południowego-wschodu, tzn. od strony miejscowości Południk wyszło główne natarcie batalionu piechoty niemieckiej. Atak wspierał silny ogień artylerii i moździerzy, skierowany na polskie stanowiska. Jako pierwszy wycofał się oddział „rozwiedki”, której brakło amunicji. Pod silnym naporem nieprzyjaciela na skrzydło kompanii Franciszka Szary „Pęka”, stanowiącej pierwszą linię obrony od strony Południka, dowódca kompanii wydał rozkaz cofnięcia na zapasowe stanowiska. Skuteczny opór w tym rejonie stawiła drużyna saperów Zdzisława Chodackiego „Migdała”, drużyna dyspozycyjna „Brutusa” oraz pluton Artura Cwena „Rena”. Jednakże i te oddziały musiały się wycofać w głąb polany na wzgórze oznakowane na mapie: 426 m. n.p.m. [16].",
     "Teren w rejonie Kałużówki jest mocno górzysty, a w 1944 roku porośnięty był gęstym lasem (głównie bukowym), poszczególne wzniesienia przecinały strome jary, w których płynęły potoki biorące swe źródła w rejonie okalających wzgórz. Warunki terenowe przemawiały na korzyść atakujących, którzy po wycofaniu się oddziałów II Zgrupowania w rejon wzgórza 426, mogli wejść na samą polanę.",
@@ -238,9 +261,9 @@ export const evacuation = {
   ],
 } as const;
 
-export const epilog = {
+export const epilogSection = {
   epilogTitle: "Rozwiązanie oddziałów i tragiczny epilog",
-  epilog: [
+  content: [
     "W dniu 25 sierpnia Zgrupowanie przeszło w rejon spalonej przez Niemców leśniczówki Władysława Klabachy [20]. Przejście przez front okazało się niemożliwe. Teren był już mocno obsadzony przez oddziały niemieckie, a na przedpolu Niemcy zastawili sidła w postaci pola minowego. Sytuacja oddziałów II Rejonu stawała się coraz bardziej dramatyczna. Żołnierze od kilku dni nie mieli w ustach żadnego pożywienia. Kontrowersyjna stała się kwestia związana z transportem rannych.",
     "Po trzech dniach pobytu w jarze na Południku  dowództwo podjęło decyzję wymarszu w kierunku zachodnim, a więc w rejon gdzie uprzednio znajdowały się oddziały III Zgrupowania (rozwiązanego 23 sierpnia). Późnym wieczorem 28 sierpnia, gdy zapadł już całkowity zmrok Zgrupowanie wyruszyło w rejon lasów Gołęczyny [21].",
     "Po dotarciu w rejon Gołęczyny, 29 sierpnia nastąpiło częściowe rozwiązanie oddziałów II Zgrupowania. Jako pierwsza odeszła kompania „Pęka” (bez plutonu dowódcy kompanii, który pozostał z pozostałymi oddziałami), część kompanii „Jasnego” oraz pluton Ludwika Wolaka „Orlika”.",
@@ -252,7 +275,7 @@ export const epilog = {
   ],
 } as const;
 
-export const footnotes = {
+export const footnotesSection = {
   footnotesTitle: "Przypisy",
   footnotes: [
     "[1] Przygotowany był także czwarty, zapasowy rejon walki pod dowództwem ppor. Stanisława Lachmana „Zan”. Rejon ten stanowiła jedna kompania placówki Brzeziny wchodząca de facto w skład Zgrupowania II, dowodzonego przez Romana Kanię ps. „Rygiel”. IV Rejon pozostał przez cały okres „Burzy” w odwodzie pułku i wykonywał ograniczone działania. Por.: J. Niedziela, F. Sagan, Inspektorat Rejonowy ZWZ- AK Rzeszów, Rzeszów 2005, s. 200-201; Sam „Klamra” omawiając „Burzę” (Rys historyczny oddziałów AK w rejonie Dębicy- akcja „Burza”; spisany przez „Szyszkę”, Maszynopis w zbiorach autora), wymienia tylko trzy rejony (zgrupowania) walki.",
@@ -285,7 +308,7 @@ export const footnotes = {
 
 export const fortressSection = {
   fortressTitle: "Obwód SZP-ZWZ-AK Dębica - Twierdza Polskiego Podziemia",
-  fortress: [
+  content: [
     "Na tle Polskiego Podziemia szczególną rolę odegrał Obwod SZP - ZWZ - AK Dębica krypt. „Dziekania”, „Deser”, odnosząc sukcesy m.in. na płaszczyźnie sabotażowo-dywersyjnej oraz wywiadowczej. Kiedy trwały jeszcze walki polskich armii z Niemcami m.in. pod Kockiem, w twierdzy Modlin oraz w Warszawie, 27 września 1939 roku powstała w stolicy tajna organizacja pn. Służba Zwycięstwu Polski (SZP), na czele której stanął gen. Michał Karaszewicz-Tokarzewski. Jej zadaniem było „prowadzenie dalszej walki o utrzymanie niepodległości i całości granic”.",
     "Pod koniec września i z początkiem października w rodzinne strony zaczęli powracać żołnierze polskich formacji walczących z Niemcami, którym udało się uniknąć niemieckiej bądź sowieckiej niewoli. To oni mieli stanowić elitę tworzącego się polskiego podziemia niepodległościowego.",
   ],
@@ -294,7 +317,7 @@ export const fortressSection = {
 export const beginningsSection = {
   beginningsTitle:
     "Kształtowanie się Obwodu ZWZ Dębica - Bohaterstwo i Determinacja",
-  beginnings: [
+  content: [
     "Powstający Obwód ZWZ Dębica, w kwietniu 1940 roku, został dotknięty falą aresztowań. W wyniku rozpracowania struktur rzeszowskich ZWZ aresztowano członków Komendy Obwodu Dębica: Jana Artura Towarnickiego „Tura”, Mariana Skwiruta „Szpaka” oraz Piotra Klamuta „Pietrzaka”. Wszystkich przewieziono do Rzeszowa, gdzie przeszli ciężkie śledztwo nie ujawniając przed okupantem żadnych kontaktów oraz zachowując bohaterską postawę. W więzieniu zastrzelony został Towarnicki.",
     "Wobec zaistniałej sytuacji Komenda Okręgu, nie znając bliżej realiów lokalnych, poleciła organizację obwodu kpt. Dąbrowskiemu z Krakowa, mianując go następcą Towarnickiego na stanowisku komendanta. Z uwagi na brak kontaktów w lokalnym środowisku, bliżej nieznany w Dębicy kpt. Dąbrowski musiał zrezygnować z pełnienia funkcji. Wówczas z rekomendacji Mieczysława Rakoczego „Soplicy” komendantem został Antoni Cwen „Maszynowski”.",
   ],
@@ -368,16 +391,12 @@ export const expansionSection = {
   expansionTitle:
     "Rozbudowa struktur AK i przygotowania do akcji „Burza” w Obwodzie Dębica",
   content: [
-    [
-      "W styczniu 1944 roku z AK scaliły się oddziały Batalionów Chłopskich. W ten sposób obwód wzmocnił się batalionem 500 żołnierzy BCh. Zgodnie z postanowieniami akcji scaleniowej Karol Chmiel „Grom” z Zagorzyc został zastępcą komendanta obwodu.",
-      "Ponadto, wiosną 1944 roku doszło do zmian personalnych w Inspektoracie Rzeszów, których następstwem były zmiany w Obwodzie Dębica. Pierwszym zastępcą inspektora Łukasza Cieplińskiego „Pługa” został dotychczasowy komendant obwodu Dębica Adam Lazarowicz „Klamra”. Na stanowisku komendanta w Dębicy zastąpił go Ludwik Marszałek „Zbroja”.",
-      "Lazarowicz obejmując funkcję w inspektoracie prosił, aby na czas powstania lub „Burzy” mógł powrócić do Gumnisk by dowodzić oddziałami obwodu „Deser”, co stało się faktem latem 1944 roku. W wyniku wspomnianej akcji scaleniowej obwodowi przybyło 6 nowych plutonów, 644 żołnierzy, w tym 12 oficerów rezerwy, 3 podchorążych, 52 podoficerów i 577 szeregowych.",
-    ],
-    [
-      "Aby ułatwić dowodzenie na obszarze rozległego obwodu, komendant zdecydował się podzielić cały obszar początkowo na dwa, a następnie na trzy podobwody. W pierwszym rzucie utworzono Podobwód Sędziszów „70”, a w maju 1944 roku z terenu Podobwodu Dębica wyodrębniono Podobwód Pilzno „Płoza”. W rozkazie z 15 lutego 1944 roku „Pług” wnioskuje o utworzenie Podobwodu „Sława” w skład którego miałyby wejść placówki: Sędziszów, Ropczyce oraz „dwie placówki wielopolskie. Razem 22 plutony bojowe”. Podział na podobwody - rejony walki, znalazł praktyczne zastosowanie dopiero w okresie akcji „Burza”.",
-      "W skład I rejonu walki - I Zgrupowania dowodzonego przez por. Mieczysława Stachowskiego „Sępa” weszły placówki „Sława”, Strzała” i „Ropa”.",
-      "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
-      "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
-    ],
+    "W styczniu 1944 roku z AK scaliły się oddziały Batalionów Chłopskich. W ten sposób obwód wzmocnił się batalionem 500 żołnierzy BCh. Zgodnie z postanowieniami akcji scaleniowej Karol Chmiel „Grom” z Zagorzyc został zastępcą komendanta obwodu.",
+    "Ponadto, wiosną 1944 roku doszło do zmian personalnych w Inspektoracie Rzeszów, których następstwem były zmiany w Obwodzie Dębica. Pierwszym zastępcą inspektora Łukasza Cieplińskiego „Pługa” został dotychczasowy komendant obwodu Dębica Adam Lazarowicz „Klamra”. Na stanowisku komendanta w Dębicy zastąpił go Ludwik Marszałek „Zbroja”.",
+    "Lazarowicz obejmując funkcję w inspektoracie prosił, aby na czas powstania lub „Burzy” mógł powrócić do Gumnisk by dowodzić oddziałami obwodu „Deser”, co stało się faktem latem 1944 roku. W wyniku wspomnianej akcji scaleniowej obwodowi przybyło 6 nowych plutonów, 644 żołnierzy, w tym 12 oficerów rezerwy, 3 podchorążych, 52 podoficerów i 577 szeregowych.",
+    "Aby ułatwić dowodzenie na obszarze rozległego obwodu, komendant zdecydował się podzielić cały obszar początkowo na dwa, a następnie na trzy podobwody. W pierwszym rzucie utworzono Podobwód Sędziszów „70”, a w maju 1944 roku z terenu Podobwodu Dębica wyodrębniono Podobwód Pilzno „Płoza”. W rozkazie z 15 lutego 1944 roku „Pług” wnioskuje o utworzenie Podobwodu „Sława” w skład którego miałyby wejść placówki: Sędziszów, Ropczyce oraz „dwie placówki wielopolskie. Razem 22 plutony bojowe”. Podział na podobwody - rejony walki, znalazł praktyczne zastosowanie dopiero w okresie akcji „Burza”.",
+    "W skład I rejonu walki - I Zgrupowania dowodzonego przez por. Mieczysława Stachowskiego „Sępa” weszły placówki „Sława”, Strzała” i „Ropa”.",
+    "W skład II rejonu walki - II Zgrupowania dowodzonego przez kpt. Romana Kanię „Rygla” weszły placówki: „Działo”, „Kartacz”, „Ławka”, „Bomba” oraz „Rakieta”.",
+    "W skład III rejonu walki - III Zgrupowania dowodzonego przez ppor. Edmunda Mateckiego „Lisa” weszły placówki: „Pocisk” i „Zapalnik”.",
   ],
 } as const;
