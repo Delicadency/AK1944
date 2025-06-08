@@ -6,6 +6,7 @@ import { RallyPagination } from "./RallyPagination";
 
 export type Rally = {
   id: number;
+  slug: string;
   title: string;
   date: string;
   description: string;
@@ -67,7 +68,7 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                 {/* TODO add a valid href - task : https://app.clickup.com/t/8699ayu7n */}
                 <Button
                   label="Zasady uczestnictwa"
-                  href={`/szlak-partyzancki/rajdy/${rally.id}`}
+                  href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
                   ariaDescription={`Zasady uczestnictwa dla ${rally.title}`}
                   variant="lightGreen"
                 />

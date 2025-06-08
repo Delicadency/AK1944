@@ -1,5 +1,6 @@
 export interface RallyData {
   id: number;
+  slug: string;
   title: string;
   date: string;
   invite: string;

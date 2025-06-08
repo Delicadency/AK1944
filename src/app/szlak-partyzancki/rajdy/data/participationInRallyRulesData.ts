@@ -3,6 +3,7 @@ import { RallyData } from "../_models/rallyData";
 export const participationInRallyRulesData: RallyData[] = [
   {
     id: 1,
+    slug: "rajd-kaluzowka-2017",
     title: "Rajd rowerowy na Kałużówkę",
     date: "5 sierpnia, 2017",
     invite:
