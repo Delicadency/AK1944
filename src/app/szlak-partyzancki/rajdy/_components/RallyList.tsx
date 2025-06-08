@@ -1,11 +1,12 @@
 import { Button } from "@/components/shared/Button/Button";
+import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 import { allRallies } from "../data/rallyPageData";
 import { RallyPagination } from "./RallyPagination";
-import { Heading } from "@/components/shared/Heading/Heading";
 
 export type Rally = {
   id: number;
+  slug: string;
   title: string;
   date: string;
   description: string;
@@ -48,20 +49,27 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                 variant="h2"
                 color="green"
                 contrast="yellow"
-                className="mb-6"
+                className="mb-2"
               >
                 {rally.title}
               </Heading>
-              <p className="pt-1 text-2xl font-bold text-greenB desktop:text-xl">
+              <Heading
+                variant="h4"
+                color="green"
+                contrast="yellow"
+                className="mb-2"
+              >
                 {rally.date}
+              </Heading>
+              <p className="pb-4 pt-1 font-sourceSans text-18 text-gray-700">
+                {rally.description}
               </p>
-              <p className="pb-4 pt-1 text-gray-700">{rally.description}</p>
               <div className="flex flex-wrap gap-5">
                 {/* TODO add a valid href - task : https://app.clickup.com/t/8699ayu7n */}
                 <Button
                   label="Zasady uczestnictwa"
-                  href={""}
-                  ariaDescription="Zasady uczestnictwa"
+                  href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
+                  ariaDescription={`Zasady uczestnictwa dla ${rally.title}`}
                   variant="lightGreen"
                 />
                 <Button

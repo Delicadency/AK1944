@@ -1,5 +1,5 @@
 Old page:
-https://ak1944.pl/
+https://wp.ak1944.pl/
 
 To use Contrast simply use apropriate class name.
 
