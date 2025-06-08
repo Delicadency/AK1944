@@ -38,7 +38,12 @@ const AboutUsLandingCard = ({
       <p className="text-white contrast:text-black tablet:mb-1">
         {description}
       </p>
-      <Button variant="primaryBlue" label={buttonLabel} ariaDescription={buttonLabel} href={href}/>
+      <Button
+        variant="primaryBlue"
+        label={buttonLabel}
+        ariaDescription={buttonLabel}
+        href={href}
+      />
     </Container>
   );
 };

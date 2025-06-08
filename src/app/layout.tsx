@@ -48,7 +48,7 @@ export default function RootLayout({
           figtree.variable,
           lora.variable,
           sourceSans.variable,
-          "antialiased bg-backgroundMain text-greenMain contrast:bg-black00 contrast:text-yellowContrast",
+          "bg-backgroundMain text-greenMain antialiased contrast:bg-black00 contrast:text-yellowContrast",
         )}
       >
         <ThemeProvider>

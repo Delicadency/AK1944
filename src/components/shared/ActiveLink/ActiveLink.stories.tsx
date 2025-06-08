@@ -4,6 +4,7 @@ import { ActiveLink } from ".";
 const meta: Meta<typeof ActiveLink> = {
   title: "Components/Shared/ActiveLink",
   component: ActiveLink,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     docs: {
@@ -23,7 +24,7 @@ const meta: Meta<typeof ActiveLink> = {
       control: "boolean",
     },
     className: {
-      description: "Default styling classes",
+      description: "Additional CSS classes to apply to the link",
       control: "text",
     },
     activeClassName: {

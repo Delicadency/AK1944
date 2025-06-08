@@ -9,7 +9,7 @@ export const ComingSoon = () => (
         <h2 className="text-2xl font-bold">Strona w przygotowaniu!</h2>
       </header>
 
-      <main className="flex flex-col gap-4 p-4 text-center">
+      <div className="flex flex-col gap-4 p-4 text-center">
         <p className="text-xl text-emerald-700">
           Nasi niesamowici wolontariusze ciężko pracują nad tą stroną w tym
           momencie.
@@ -19,7 +19,7 @@ export const ComingSoon = () => (
           Doceniamy Twoją cierpliwość! Ta strona będzie wkrótce dla Was dostępna
           wraz z ekscytującą i niesamowitą treścią.
         </p>
-      </main>
+      </div>
 
       <div className="border-t border-emerald-100 p-4">
         <p className="mb-4 text-center text-emerald-600">

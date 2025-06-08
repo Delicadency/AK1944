@@ -14,7 +14,7 @@ export const FooterSupport = () => (
         alt="Logo Blik"
         width={68}
         height={32}
-        className="w-16 h-auto"
+        className="h-auto w-16"
       />
     </Link>
   </article>

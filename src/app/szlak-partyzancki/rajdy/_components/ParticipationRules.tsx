@@ -28,7 +28,9 @@ export const ParticipationRules = ({ rally }: RulesProps) => {
 
         <p className="font-lora text-xl font-bold">{rally.date}</p>
 
-        <p className="py-3 text-16 tablet:text-18 font-sourceSans">{rally.invite}</p>
+        <p className="py-3 font-sourceSans text-16 tablet:text-18">
+          {rally.invite}
+        </p>
 
         <div className="grid gap-4 tablet:flex tablet:flex-wrap">
           {buttons.map((btn) => (

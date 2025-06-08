@@ -29,6 +29,7 @@ export default {
         blue: "#0080FF",
         violet: "#C589F9",
         grayDate: "#8E8E8E",
+        border: "#D9D9D9",
       },
       fontFamily: {
         figtree: ["var(--font-figtree)", "sans-serif"],
@@ -68,7 +69,7 @@ export default {
         desktop: "1280px",
       },
       spacing: {
-        '150': '150px'
+        "150": "150px",
       },
       borderRadius: {
         // niestandardowe zaokrąglenia

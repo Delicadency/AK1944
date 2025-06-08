@@ -5,7 +5,12 @@ import { IconName } from "@/types";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "inversion" | "secondary" | "primaryBlue" | "lightGreen";
+  variant?:
+    | "primary"
+    | "inversion"
+    | "secondary"
+    | "primaryBlue"
+    | "lightGreen";
   size?: "medium" | "large";
   iconName?: IconName;
   label: string;
@@ -54,10 +59,10 @@ export const Button = ({
       desktop:hover:bg-[#7A0003] desktop:hover:text-white
       active:bg-redMain
     `,
-    lightGreen:  `
+    lightGreen: `
     contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C]
     contrast:text-black00
-    bg-greenLight text-greenMain`
+    bg-greenLight text-greenMain`,
   };
 
   const sizeStyles = {

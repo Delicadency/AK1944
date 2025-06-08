@@ -1,4 +1,4 @@
-import { ElementType, ReactNode } from "react";
+import { type ElementType, type ReactNode } from "react";
 
 export interface Post {
   id: number;
@@ -57,3 +57,8 @@ export interface NavItem {
   href: string;
   label: string;
 }
+
+export type ActionState =
+  | { status: "idle"; message?: string }
+  | { status: "success"; message?: string }
+  | { status: "error"; message?: string; issues?: Record<string, string[]> };

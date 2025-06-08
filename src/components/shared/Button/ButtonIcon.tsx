@@ -1,15 +1,15 @@
-import IconAward from "@/icons/IconAward";
-import IconCheckSquare from "@/icons/IconCheckSquare";
-import IconCoffee from "@/icons/IconCoffee";
-import IconCompass from "@/icons/IconCompass";
-import IconFileText from "@/icons/IconFileText";
-import IconGift from "@/icons/IconGift";
-import IconHelpCircle from "@/icons/IconHelpCircle";
-import IconInfo from "@/icons/IconInfo";
-import IconSend from "@/icons/IconSend";
-import IconTarget from "@/icons/IconTarget";
+import { IconAward } from "@/icons/IconAward";
+import { IconCheckSquare } from "@/icons/IconCheckSquare";
+import { IconCoffee } from "@/icons/IconCoffee";
+import { IconCompass } from "@/icons/IconCompass";
+import { IconFileText } from "@/icons/IconFileText";
+import { IconGift } from "@/icons/IconGift";
+import { IconHelpCircle } from "@/icons/IconHelpCircle";
+import { IconInfo } from "@/icons/IconInfo";
+import { IconSend } from "@/icons/IconSend";
+import { IconTarget } from "@/icons/IconTarget";
 import { IconMapPin } from "@/icons/IconMapPin";
-import { IconProps } from "@/types";
+import { type IconProps } from "@/types";
 
 const iconMap: Record<string, React.ElementType> = {
   award: IconAward,

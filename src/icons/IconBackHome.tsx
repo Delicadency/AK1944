@@ -3,7 +3,10 @@ type IconBackHomeProps = {
   houseClassName?: string;
 };
 
-const IconBackHome = ({ circleClassName, houseClassName }: IconBackHomeProps) => (
+const IconBackHome = ({
+  circleClassName,
+  houseClassName,
+}: IconBackHomeProps) => (
   <svg
     width="32"
     height="32"
@@ -30,6 +33,5 @@ const IconBackHome = ({ circleClassName, houseClassName }: IconBackHomeProps) =>
     />
   </svg>
 );
-
 
 export default IconBackHome;

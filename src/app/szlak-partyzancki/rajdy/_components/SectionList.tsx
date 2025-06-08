@@ -16,7 +16,6 @@ interface SectionListProps {
   listType?: LIST_TYPE;
 }
 
-
 export const SectionList: React.FC<SectionListProps> = ({
   href,
   title,
@@ -50,7 +49,9 @@ export const SectionList: React.FC<SectionListProps> = ({
       <Heading id={href} variant="h3" color="green" contrast="yellow">
         {title}
       </Heading>
-      {header && <p className="py-3 font-sourceSans text-16 tablet:text-18">{header}</p>}
+      {header && (
+        <p className="py-3 font-sourceSans text-16 tablet:text-18">{header}</p>
+      )}
       {items && (
         <ul className="list-none pl-0 pt-3 font-sourceSans text-16 tablet:text-18">
           {items.map(renderItem)}

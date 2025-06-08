@@ -26,9 +26,7 @@ export default function RalliesPage({ searchParams }: PageProps) {
         <Heading variant="h2" color="green" contrast="yellow">
           Rajdy
         </Heading>
-        <p className="py-3 text-18 font-sourceSans">
-          {mainText}
-        </p>
+        <p className="py-3 font-sourceSans text-18">{mainText}</p>
         <Button
           label="Zapisz się na rajd"
           href={""}

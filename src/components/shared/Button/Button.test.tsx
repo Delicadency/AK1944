@@ -91,7 +91,7 @@ describe("Button component", () => {
         iconName="coffee"
       />,
     );
-    const iconElement = screen.getByRole("presentation");
+    const iconElement = screen.getByRole("button").querySelector("svg");
     expect(iconElement).toBeInTheDocument();
     const buttonElement = screen.getByRole("button", {
       name: /przycisk testowy/i,

@@ -15,21 +15,18 @@ export const LegalInfo = () => (
     </h2>
 
     <InfoList className="font-source-sans text-lg text-greenMain">
-      <InfoItem
-        icon={<IconBriefcase className="h-8 w-8" />}
-        label="NIP:">
+      <InfoItem icon={<IconBriefcase className="h-8 w-8" />} label="NIP:">
         {AK_DATA.NIP}
       </InfoItem>
 
-      <InfoItem
-        icon={<IconBook className="h-8 w-8" />}
-        label="KRS:">
+      <InfoItem icon={<IconBook className="h-8 w-8" />} label="KRS:">
         {AK_DATA.taxDonation.krs}
       </InfoItem>
 
       <InfoItem
         icon={<IconDollar className="h-8 w-8" />}
-        label="Nr konta bankowego:">
+        label="Nr konta bankowego:"
+      >
         {
           <>
             <p className="font-medium tablet:hidden desktop:block">

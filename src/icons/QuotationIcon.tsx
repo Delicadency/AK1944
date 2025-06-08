@@ -3,14 +3,12 @@ import { DefaultIconProps } from "@/types";
 interface Props extends DefaultIconProps {
   width?: number;
   height?: number;
-  
 }
 
 export const QuotationIcon = ({
   className,
   width = 50,
   height = 45,
-
 }: Props) => {
   return (
     <svg

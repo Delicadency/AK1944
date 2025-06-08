@@ -5,11 +5,11 @@ import { BecomeDonor } from "@/components/BecomeDonor";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <NewsLanding />
       <AboutUsLanding />
       <BecomeDonor />
-    </main>
+    </>
   );
 }

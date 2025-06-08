@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useCallback, useRef } from "react";
-import ModalCloseIcon from "@/icons/ModalCloseIcon";
+import { ModalCloseIcon } from "@/icons/ModalCloseIcon";
+import { cn } from "@/utils";
 
 export type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
+  className?: string;
 };
 
-export const Modal = ({ children, isOpen, onClose }: ModalProps) => {
+export const Modal = ({ children, isOpen, onClose, className }: ModalProps) => {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const lastActiveElement = useRef<HTMLElement | null>(null);
 
@@ -61,14 +63,17 @@ export const Modal = ({ children, isOpen, onClose }: ModalProps) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="desktop:py-15 relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 py-12 text-white contrast:bg-black00 contrast:text-yellowContrast desktop:px-10"
+        className={cn(
+          "desktop:py-15 relative m-auto flex animate-modalAnimation flex-col items-center rounded bg-greenMain px-3 py-12 text-white desktop:px-10",
+          className,
+        )}
       >
         <button
           className="absolute right-3 top-3"
           aria-label="Zamknij modal"
           onClick={onClose}
         >
-          <ModalCloseIcon />
+          <ModalCloseIcon className="text-inherit" />
         </button>
         {children}
       </div>
