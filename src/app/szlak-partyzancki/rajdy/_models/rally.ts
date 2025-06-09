@@ -1,7 +1,7 @@
 export type Rally = {
   id?: number;
   slug?: string;
-  title?: string;
+  title: string;
   date?: string;
   description?: string;
   imageUrl?: string;

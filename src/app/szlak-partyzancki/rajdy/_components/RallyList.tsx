@@ -26,8 +26,8 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
           <div className="absolute top-4 z-10 h-4 w-4 rounded-full bg-greenMain mobile:left-[5px] tablet:left-[12px] desktop:left-[-30px]" />
           <div className="relative z-10 order-2 mx-auto h-96 w-[80%] mobile:ml-12 tablet:order-2 desktop:ml-0 desktop:w-[100%]">
             <Image
-              src={rally.imageUrl}
-              alt={rally.title}
+              src={rally.imageUrl ?? "/images/placeholder_image.png"}
+              alt={rally.title ?? "Brak tytułu"}
               sizes="80vw"
               fill
               className="object-cover pb-20"
