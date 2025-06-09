@@ -4,15 +4,6 @@ import Image from "next/image";
 import { allRallies } from "../data/rallyPageData";
 import { RallyPagination } from "./RallyPagination";
 
-export type Rally = {
-  id: number;
-  slug: string;
-  title: string;
-  date: string;
-  description: string;
-  imageUrl: string;
-};
-
 type RallyListProps = {
   currentPage: number;
 };
@@ -65,7 +56,6 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                 {rally.description}
               </p>
               <div className="flex flex-wrap gap-5">
-                {/* TODO add a valid href - task : https://app.clickup.com/t/8699ayu7n */}
                 <Button
                   label="Zasady uczestnictwa"
                   href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
@@ -74,8 +64,8 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                 />
                 <Button
                   label="Zobacz relację"
-                  href={""}
-                  ariaDescription="Zobacz relację"
+                  href={`/szlak-partyzancki/rajdy/relacja/${rally.slug}`}
+                  ariaDescription={`Zobacz relację dla ${rally.title}`}
                   variant="lightGreen"
                 />
               </div>
