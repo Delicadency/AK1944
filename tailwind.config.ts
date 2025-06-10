@@ -27,6 +27,7 @@ export default {
       grayDate: "rgb(var(--accent-secondary) / <alpha-value>)",
       textLight: "rgb(var(--text-light) / <alpha-value>)",
       textLightGreen: "rgb(var(--text-light-green) / <alpha-value>)",
+      textDarkGreen: "rgb(var(--text-dark-green) / <alpha-value>)",
     },
     extend: {
       fontFamily: {
