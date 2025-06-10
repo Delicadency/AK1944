@@ -4,7 +4,7 @@ import { HeaderTabAndDesktop } from "./HeaderTabletAndDesktop/HeaderTabAndDeskto
 
 export const Header = () => (
   <Spacer>
-    <header className="fixed z-20 h-auto w-screen bg-greenMain pb-5 contrast:bg-yellowContrast tablet:pb-0">
+    <header className="fixed z-20 h-auto w-screen bg-greenMain pb-5 tablet:pb-0">
       <Container>
         <HeaderMobile />
         <HeaderTabAndDesktop />
