@@ -18,6 +18,8 @@
   --accent: 244 219 190;
   --accent-primary: 0 128 255;
   --accent-secondary: 142 142 142;
+  --text-light: 255 252 245;
+  --text-light-green: 111 142 110;
 }
 
 .contrast {
@@ -36,6 +38,8 @@
   --accent: 255 242 5;
   --accent-primary: 255 242 5;
   --accent-secondary: 255 242 5;
+  --text-light: 255 242 5;
+  --text-light-green: 255 242 5;
 }
 
 * {
