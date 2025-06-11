@@ -38,11 +38,11 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
         <button
           onClick={handlePrev}
           className="rounded-sm bg-greenB p-2 hover:bg-green-800"
-          aria-label="Previous"
+          aria-label="Poprzednie zdjęcie"
         >
           <Image
             src="/images/icons/left-arrow-alt.svg"
-            alt="Previous"
+            alt="Strzałka w lewo"
             className="h-5 w-5"
             width={20}
             height={20}
@@ -54,11 +54,11 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
         <button
           onClick={handleNext}
           className="rounded-sm bg-greenB p-2 hover:bg-green-800"
-          aria-label="Next"
+          aria-label="Kolejne zdjęcie"
         >
           <Image
             src="/images/icons/right-arrow-alt.svg"
-            alt="Previous"
+            alt="Strzałka w prawo"
             className="h-5 w-5"
             width={20}
             height={20}
