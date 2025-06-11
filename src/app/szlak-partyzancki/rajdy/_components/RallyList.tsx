@@ -4,15 +4,6 @@ import Image from "next/image";
 import { allRallies } from "../data/rallyPageData";
 import { RallyPagination } from "./RallyPagination";
 
-export type Rally = {
-  id: number;
-  slug: string;
-  title: string;
-  date: string;
-  description: string;
-  imageUrl: string;
-};
-
 type RallyListProps = {
   currentPage: number;
 };
@@ -35,8 +26,8 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
           <div className="absolute top-4 z-10 h-4 w-4 rounded-full bg-greenMain mobile:left-[5px] tablet:left-[12px] desktop:left-[-30px]" />
           <div className="relative z-10 order-2 mx-auto h-96 w-[80%] mobile:ml-12 tablet:order-2 desktop:ml-0 desktop:w-[100%]">
             <Image
-              src={rally.imageUrl}
-              alt={rally.title}
+              src={rally.imageUrl ?? "/images/placeholder_image.png"}
+              alt={rally.title ?? "Brak tytułu"}
               sizes="80vw"
               fill
               className="object-cover pb-20"
@@ -65,7 +56,6 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                 {rally.description}
               </p>
               <div className="flex flex-wrap gap-5">
-                {/* TODO add a valid href - task : https://app.clickup.com/t/8699ayu7n */}
                 <Button
                   label="Zasady uczestnictwa"
                   href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
@@ -74,8 +64,8 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                 />
                 <Button
                   label="Zobacz relację"
-                  href={""}
-                  ariaDescription="Zobacz relację"
+                  href={`/szlak-partyzancki/rajdy/relacja/${rally.slug}`}
+                  ariaDescription={`Zobacz relację dla ${rally.title}`}
                   variant="lightGreen"
                 />
               </div>
