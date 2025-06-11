@@ -43,13 +43,13 @@ export const HeaderMobileMenuWrapper = () => {
         onClick={handleToggle}
         ref={menuButtonRef}
       >
-        <HeaderMenuIcon className="self-center text-white/90 transition duration-300 hover:text-white active:scale-110 contrast:text-black00" />
+        <HeaderMenuIcon className="self-center text-white/90 transition duration-300 active:scale-110" />
       </button>
       <div
         data-testid="mobile-menu"
         className={cn(
           "fixed right-0 top-0 z-50 h-full w-full transform transition-transform duration-300 ease-in-out",
-          "bg-greenB contrast:bg-yellowContrast",
+          "bg-greenB",
           isOpen ? "translate-x-0" : "translate-x-full",
         )}
       >

@@ -18,7 +18,7 @@ export const SubmenuToggle = ({
 }: Props) => (
   <button
     className={cn(
-      "flex items-center gap-2 transition duration-300 ease-in-out hover:text-yellowVintage contrast:text-black00",
+      "flex items-center gap-2 transition duration-300 ease-in-out hover:text-yellowVintage",
       className,
     )}
     onClick={onClick}

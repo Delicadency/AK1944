@@ -45,7 +45,7 @@ const NavItem = ({
   const hasSubmenu = !!submenuData[index];
 
   return (
-    <li className="text-backgroundMain">
+    <li className="text-textLight">
       {hasSubmenu ? (
         <>
           <SubmenuToggle

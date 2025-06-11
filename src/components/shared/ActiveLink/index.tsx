@@ -38,7 +38,7 @@ export const ActiveLink = <T extends string>({
       }}
       aria-current={isActive ? "page" : undefined}
       className={cn(
-        "text-white transition duration-300 ease-in-out hover:text-yellowVintage contrast:text-black00",
+        "text-white transition duration-300 ease-in-out hover:text-yellowVintage",
         className,
         isActive && activeClassName,
       )}
