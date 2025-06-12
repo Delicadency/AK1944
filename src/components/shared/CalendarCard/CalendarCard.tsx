@@ -1,7 +1,7 @@
 import { Routes } from "@/routes";
 import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundImage";
 import { Button } from "@/components/shared/Button/Button";
-import { getEventForToday } from "@/app/zwiazek/kalendarz/_utils/getEventsForToday";
+import { getEventForToday } from "@/app/(client)/zwiazek/kalendarz/_utils/getEventsForToday";
 import Container from "@/components/shared/Container";
 
 interface Props {
