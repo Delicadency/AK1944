@@ -9,6 +9,15 @@ export interface Post {
   featured_media: number;
 }
 
+export interface News {
+  id: string;
+  published: boolean;
+  title: string;
+  content: string;
+  createdAt: string;
+  heroImage: string;
+}
+
 export interface Image {
   source_url: string;
   title: string;

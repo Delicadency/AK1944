@@ -1,15 +1,14 @@
 import Image from "next/image";
 
-export const NewsImage = ({ src }: { src: string }) => {
-  return (
-    <div className="h-[191px] w-[288px] tablet:col-start-1 tablet:row-span-2 tablet:row-start-1 tablet:h-[169px] tablet:w-[262px]">
-      <Image
-        alt="news image"
-        src={src}
-        width={400}
-        height={300}
-        className="object-cover"
-      />
-    </div>
-  );
-};
+interface Props {
+  src: string;
+  alt?: string;
+}
+
+// Todo: Handle no image - default image.
+
+export const NewsImage = ({ src, alt = "Zdjęcie z artykułu" }: Props) => (
+  <div className="relative aspect-[500/300] max-h-[194px] w-[300px] min-w-[260px] overflow-hidden">
+    <Image src={src} alt={alt} layout="responsive" width={300} height={194} />
+  </div>
+);
