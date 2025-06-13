@@ -23,7 +23,7 @@ export const EventCard = ({
 }: CardProps) => (
   <div
     id={anchorId}
-    className={`flex w-full flex-col items-start gap-2 bg-white pb-10 tablet:flex-row tablet:gap-11 ${isLast ? "last:border-b-0" : "border-b-4 border-b-greenMain"} `}
+    className={`flex w-full flex-col items-start gap-2 pb-10 tablet:flex-row tablet:gap-11 ${isLast ? "last:border-b-0" : "border-b-4 border-b-greenMain"} `}
   >
     <div className="relative flex aspect-square h-52 w-52 items-center justify-center self-center tablet:h-52 tablet:w-52">
       <Image
