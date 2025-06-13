@@ -17,7 +17,8 @@
     "docker:mongodb:create": "docker run --name ak-payload-cms -d -p 27017:27017 -v $(pwd)/docker_volumes/data:/data/db mongo",
     "docker:mongodb:start": "docker start ak-payload-cms",
     "docker:mongodb:stop": "docker stop ak-payload-cms",
-    "secret:generate": "node -e \"import('crypto').then((m) => m.randomBytes(32).toString('hex')).then(console.log);\""
+    "secret:generate": "node -e \"import('crypto').then((m) => m.randomBytes(32).toString('hex')).then(console.log);\"",
+    "payload:typegen": "payload generate:types"
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "^3.42.0",

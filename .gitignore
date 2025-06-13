@@ -48,3 +48,6 @@ next-env.d.ts
 
 # docker
 docker_volumes
+
+# cms uploaded assets
+# asset # to be uncommented after CDN solution
