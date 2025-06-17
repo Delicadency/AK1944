@@ -1,0 +1,66 @@
+export const people = [
+  {
+    id: 1,
+    name: "Kloc Leon",
+    slug: "kloc-leon",
+    birthDate: "04.10.1907",
+    deathDate: "18.04.1966",
+  },
+  {
+    id: 2,
+    name: "Stawicka Marta",
+    slug: "stawicka-marta",
+    birthDate: "06.10.1920",
+    deathDate: "20.04.2017",
+  },
+  {
+    id: 3,
+    name: "Gałązka Jan",
+    slug: "galazka-jan",
+    birthDate: "12.04.1923",
+    deathDate: "05.01.1996",
+  },
+  {
+    id: 4,
+    name: "Więcek Marian",
+    slug: "wiecek-marian",
+    birthDate: "20.02.1924",
+    deathDate: "21.12.2006",
+  },
+  {
+    id: 5,
+    name: "Kloc Leon",
+    slug: "kloc-leon",
+    birthDate: "05.10.1912",
+    deathDate: "05.10.1944",
+  },
+  {
+    id: 6,
+    name: "Kloc Leon",
+    slug: "kloc-leon",
+    birthDate: "05.10.1912",
+    deathDate: "05.10.1944",
+  },
+  {
+    id: 7,
+    name: "Kloc Leon",
+    slug: "kloc-leon",
+    birthDate: "05.10.1912",
+    deathDate: "05.10.1944",
+  },
+  {
+    id: 8,
+    name: "Kloc Leon",
+    slug: "kloc-leon",
+    birthDate: "05.10.1912",
+    deathDate: "05.10.1944",
+  },
+  {
+    id: 9,
+    name: "Kloc Leon",
+    slug: "kloc-leon",
+    birthDate: "05.10.1912",
+    deathDate: "05.10.1944",
+  },
+  //TODO dopisać reszte danych
+];
