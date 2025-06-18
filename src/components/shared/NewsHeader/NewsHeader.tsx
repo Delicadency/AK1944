@@ -10,7 +10,12 @@ export const NewsHeader = ({
 }) => {
   return (
     <div className="flex flex-col items-start justify-start tablet:col-start-2 tablet:row-start-1 tablet:flex-row tablet:items-center tablet:gap-4">
-      <Heading variant="h4" color="white" contrast="black">
+      <Heading
+        variant="h4"
+        color="white"
+        contrast="black"
+        className="w-[400px]"
+      >
         {title}
       </Heading>
       <p className="font-sourceSans text-grayDate contrast:text-black">

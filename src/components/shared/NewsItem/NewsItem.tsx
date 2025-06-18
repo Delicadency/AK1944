@@ -18,7 +18,7 @@ export const NewsItem = async ({
   const image = await getImage(featured_media);
   const cleanedExcerpt = cleanHTML(excerpt);
   const decodedCleanExcerpt = parse(cleanedExcerpt).toString();
-  const truncatedExcerpt = truncateText(decodedCleanExcerpt, 230);
+  const truncatedExcerpt = truncateText(decodedCleanExcerpt, 150);
 
   return (
     <article
