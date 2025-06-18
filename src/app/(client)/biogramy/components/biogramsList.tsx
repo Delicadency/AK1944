@@ -14,13 +14,13 @@ interface BiogramsListProps {
 
 export const BiogramsList = ({ people }: BiogramsListProps) => {
   return (
-    <div className="relative mx-auto w-full max-w-md md:max-w-5xl">
+    <div className="relative mx-auto w-full max-w-md tablet:max-w-5xl">
       <div
-        className="absolute bottom-0 top-0 hidden w-[2px] bg-greenMain md:block"
+        className="absolute bottom-0 top-0 hidden w-[2px] bg-greenMain tablet:block"
         style={{ left: "calc(440px)" }}
       />
       <div
-        className="absolute bottom-0 top-0 hidden w-[2px] bg-greenMain md:block"
+        className="absolute bottom-0 top-0 hidden w-[2px] bg-greenMain tablet:block"
         style={{ left: "calc(100% - 170px - 1rem)" }}
       />
 
@@ -30,11 +30,11 @@ export const BiogramsList = ({ people }: BiogramsListProps) => {
           <span>Nazwisko i imię</span>
         </div>
 
-        <div className="hidden flex-1 justify-center font-bold md:flex">
+        <div className="hidden flex-1 justify-center font-bold tablet:flex">
           <p>Data urodzenia</p>
         </div>
 
-        <div className="hidden min-w-[120px] text-right font-bold md:flex">
+        <div className="hidden min-w-[120px] text-right font-bold tablet:flex">
           <p>Data śmierci</p>
         </div>
       </div>
@@ -49,25 +49,25 @@ export const BiogramsList = ({ people }: BiogramsListProps) => {
           <div className="flex min-w-[120px] gap-2">
             <span>{index + 1}.</span>
 
-            <span className="md:hidden">{person.name}</span>
+            <span className="tablet:hidden">{person.name}</span>
 
             <Link
               href={`/biogramy/${person.slug}`}
-              className="hidden md:inline md:underline"
+              className="hidden tablet:inline tablet:underline"
             >
               {person.name}
             </Link>
           </div>
 
-          <div className="flex items-center md:w-full md:max-w-[610px]">
+          <div className="flex items-center tablet:w-full tablet:max-w-[610px]">
             <Link
               href={`/biogramy/${person.slug}`}
-              className="mr-4 text-xl md:hidden"
+              className="mr-4 text-xl tablet:hidden"
             >
               &rsaquo;
             </Link>
 
-            <div className="hidden flex-1 justify-between md:flex">
+            <div className="hidden flex-1 justify-between tablet:flex">
               <span className="mr-10 flex-1 text-center">
                 {person.birthDate}
               </span>

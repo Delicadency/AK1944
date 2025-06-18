@@ -11,7 +11,7 @@ export const BiogramHistoryPage = ({ biogram }: BiogramHistoryProps) => {
     <div className="bg-backgroundMain pb-20 text-greenMain">
       <Container
         as="article"
-        className="flex flex-col gap-10 pb-6 md:gap-14 md:pb-36"
+        className="flex flex-col gap-10 pb-6 tablet:gap-14 tablet:pb-36"
       >
         <Breadcrumbs />
         <Heading variant="h2" color="green" contrast="yellow">
