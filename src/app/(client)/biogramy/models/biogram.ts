@@ -6,8 +6,8 @@ export interface Biogram {
   birthDate: string;
   deathDate: string;
   burialPlace: string;
-  description: Array<string | string[]>; // opis może być tablicą stringów lub tablicą tablic stringów
-  descriptionSecond?: Array<string | string[]>; // opcjonalne, ten sam typ co description
+  description: Array<string | string[]>;
+  descriptionSecond?: Array<string | string[]>;
   imageUrl: string;
 }
 

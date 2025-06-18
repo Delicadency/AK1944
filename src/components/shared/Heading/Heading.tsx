@@ -5,7 +5,7 @@ export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   variant?: "h1" | "h2" | "h3" | "h4";
   underline?: boolean;
   contrast: "yellow" | "black";
-  color: "green" | "white";
+  color: "green" | "white" | "greenB";
   className?: string;
   align?: "start" | "center";
 }
@@ -51,6 +51,7 @@ export const Heading = ({
   const colors = {
     green: "text-greenMain border-greenMain",
     white: "text-white border-white",
+    greenB: "text-greenB",
   };
 
   return (

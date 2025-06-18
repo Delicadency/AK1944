@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { BiogramHistoryProps } from "../models/biogram";
+import MorePeopleBiograms from "./moreBiograms";
 
 export const BiogramHistoryPage = ({ biogram }: BiogramHistoryProps) => {
   return (
@@ -24,6 +25,7 @@ export const BiogramHistoryPage = ({ biogram }: BiogramHistoryProps) => {
           className="m-auto mt-6"
           href={"/inwentarz-grobow"}
         />
+        <MorePeopleBiograms />
       </Container>
     </div>
   );

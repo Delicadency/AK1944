@@ -24,7 +24,7 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
           <Heading variant="h2" contrast="black" color="green">
             {biogram.title}
           </Heading>
-          <Heading className="h4" contrast="black" color="green">
+          <Heading className="h4" contrast="black" color="greenB">
             ps. {biogram.pseudonym.map((p: string) => `"${p}"`).join(", ")}
           </Heading>
 
@@ -58,10 +58,12 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
             <div className="order-2 flex w-full flex-col desktop:order-1 desktop:w-5/6">
               <div className="pt-5 font-courier text-18">
                 {biogramData.map((item, index) => (
-                  <p key={index}>
+                  <div key={index}>
                     <span>{item.label}&nbsp;</span>
-                    <span className="font-bold">{item.value}</span>
-                  </p>
+                    <span className="font-bold text-greenMain">
+                      {item.value}
+                    </span>
+                  </div>
                 ))}
               </div>
 
@@ -76,6 +78,17 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
                 ))}
               </div>
             </div>
+          </div>
+          <div>
+            {Array.isArray(biogram.descriptionSecond) &&
+              biogram.descriptionSecond.map((paragraph, idx) => (
+                <p
+                  key={idx}
+                  className="my-6 font-courier text-18 text-greenMain"
+                >
+                  {paragraph}
+                </p>
+              ))}
           </div>
         </div>
       </BackgroundImage>
