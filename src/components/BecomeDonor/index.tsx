@@ -4,7 +4,7 @@ import { Button } from "../shared/Button/Button";
 import { Heading } from "../shared/Heading/Heading";
 
 export const BecomeDonor = () => (
-  <section className="h-[569px] w-full tablet:h-[465px]">
+  <section className="h-[569px] w-full tablet:h-[465px] desktop:h-[810px]">
     <BackgroundImage
       src="/images/become_donor_bg_1.webp"
       alt="Starszy mężczyzna wręcza starszej kobiecie ważne odznaczenie."
