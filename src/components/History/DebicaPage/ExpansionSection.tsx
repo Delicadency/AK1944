@@ -21,7 +21,7 @@ export const ExpansionSection = () => (
           className="object-cover"
         />
       </div>
-      <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+      <div className="flex flex-col gap-6 text-lg">
         <div>
           {firstPart.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>

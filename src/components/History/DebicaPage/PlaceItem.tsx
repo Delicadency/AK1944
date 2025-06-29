@@ -36,7 +36,7 @@ export const PlaceItem = ({ place }: { place: Props }) => {
         aria-controls={`place-description-${place.id}`}
       >
         <div className="h-4 w-4 flex-shrink-0 rounded-full bg-redMain" />
-        <p className="text-start text-lg contrast:text-yellowContrast">
+        <p className="text-start text-lg">
           {place.name}
           <span className="hidden md:inline">{" " + place.description}</span>
         </p>
@@ -50,7 +50,7 @@ export const PlaceItem = ({ place }: { place: Props }) => {
       </button>
       <p
         className={cn(
-          "mt-2 text-lg contrast:text-yellowContrast",
+          "mt-2 text-lg",
           !openDescription.has(place.id) ? "hidden" : "inline",
         )}
       >

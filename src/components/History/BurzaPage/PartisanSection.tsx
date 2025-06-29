@@ -9,7 +9,7 @@ export const PartisanSection = () => (
     <Heading variant="h4" color="green" contrast="yellow">
       {partisanTitle}
     </Heading>
-    <div className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast desktop:flex-row-reverse">
+    <div className="flex flex-col gap-6 font-sourceSans text-lg desktop:flex-row-reverse">
       <div className="relative aspect-[0.78] w-full desktop:w-1/2">
         <Image
           src="/images/history/burza/battles.webp"

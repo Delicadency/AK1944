@@ -9,7 +9,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs/Breadcrumbs";
 
 export default function DebicaDistrictPage() {
   return (
-    <div className="contrast:bg-black00">
+    <div>
       <Container
         as="article"
         className="flex flex-col gap-10 pb-6 tablet:gap-14 tablet:pb-20 desktop:pb-150"

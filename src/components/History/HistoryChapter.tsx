@@ -18,9 +18,7 @@ export const HistoryChapter = ({ item }: { item: Props }) => (
       <Heading variant="h3" contrast="yellow" color="green">
         {item.title}
       </Heading>
-      <p className="my-6 font-sourceSans text-lg text-greenMain contrast:text-yellowContrast">
-        {item.description}
-      </p>
+      <p className="my-6 font-sourceSans text-lg">{item.description}</p>
       <Button
         label="Zobacz więcej"
         ariaDescription="Zobacz Więcej"
