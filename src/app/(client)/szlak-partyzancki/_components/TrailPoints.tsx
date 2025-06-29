@@ -43,7 +43,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
             size="large"
             ariaDescription={`Zobacz opis punktu ${point.point}`}
             onClick={() => openModal(index)}
-            className="h-auto min-h-[108px] w-full font-bold text-redMain"
+            className="mx-auto min-h-[108px] !w-[260px] font-bold text-redMain"
             align="start"
           />
         ))}

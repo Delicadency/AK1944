@@ -17,7 +17,7 @@ export default function RalliesPage({ searchParams }: PageProps) {
   const currentPage = isNaN(page) || page < 1 ? 1 : page;
 
   return (
-    <div className="bg-backgroundMain pb-20 text-greenMain">
+    <div className="pb-20">
       <Container
         as="article"
         className="flex flex-col gap-10 pb-6 md:gap-14 md:pb-36"
@@ -32,6 +32,7 @@ export default function RalliesPage({ searchParams }: PageProps) {
           href={""}
           ariaDescription="Zapisz się na rajd"
           variant="primary"
+          disabled
         />
         <Suspense fallback={<p>Ładowanie listy rajdów...</p>}>
           <RallyList currentPage={currentPage} />
