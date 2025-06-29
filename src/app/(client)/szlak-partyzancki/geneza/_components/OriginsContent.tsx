@@ -16,7 +16,7 @@ export const OriginContent = () => {
           ariaDescription="Kliknij, aby przejść do podstrony Rajdy"
           label="Weź udział w Rajdzie"
           href={Routes.RAIDS}
-          variant="primaryBlue"
+          variant="primary"
         />
       </div>
 

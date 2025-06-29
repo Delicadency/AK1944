@@ -4,7 +4,7 @@ import { Heading } from "@/components/shared/Heading/Heading";
 const { footnotesTitle, footnotes } = footnotesSection;
 
 export const FootnotesSection = () => (
-  <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+  <section className="flex flex-col gap-6 text-16">
     <Heading
       variant="h4"
       color="green"

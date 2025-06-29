@@ -20,7 +20,7 @@ export const CalendarTable = ({
   const eventsDates = data.map((card) => card.date);
 
   return (
-    <div className="flex flex-col items-center gap-5 font-lora tablet:rounded tablet:border-2 tablet:border-greenC tablet:px-10 tablet:py-10 desktop:px-18">
+    <div className="flex flex-col items-center gap-5 font-lora tablet:rounded tablet:border-2 tablet:border-textLightGreen tablet:px-10 tablet:py-10 desktop:px-18">
       <CalendarHeader
         className="w-full items-center justify-between px-1.5 text-24 text-white tablet:text-32"
         iconClassName="stroke-white tablet:w-8 tablet:h-8 "
@@ -30,7 +30,7 @@ export const CalendarTable = ({
       />
       <table className="flex flex-col items-center gap-5 desktop:gap-4">
         <thead>
-          <tr className="flex items-center border-b-2 border-greenC text-greenC tablet:gap-6">
+          <tr className="flex items-center border-b-2 border-textLightGreen text-textLightGreen tablet:gap-6">
             {weekdays.map((day) => (
               <td
                 key={day}

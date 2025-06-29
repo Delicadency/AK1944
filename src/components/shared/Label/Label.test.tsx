@@ -21,7 +21,7 @@ describe("Label", () => {
   it("applies default class names when no props are provided", () => {
     render(<Label>Label</Label>);
     expect(screen.getByText("Label")).toHaveClass(
-      "block text-sm/6 font-medium text-greenMain",
+      "block text-sm/6 font-medium text-textDarkGreen",
     );
   });
 

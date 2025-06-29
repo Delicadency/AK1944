@@ -29,7 +29,9 @@ export const RallyPagination = ({ currentPage, totalPages }: Props) => {
           onClick={() => handlePageChange(page)}
           aria-current={page === currentPage ? "page" : undefined}
           className={`rounded px-2 py-2 ${
-            page === currentPage ? "font-bold text-greenMain" : "font-normal"
+            page === currentPage
+              ? "font-bold text-textDarkGreen"
+              : "font-normal"
           }`}
         >
           {page}

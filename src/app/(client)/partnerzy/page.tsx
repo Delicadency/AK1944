@@ -24,11 +24,11 @@ export const metadata: Metadata = {
 
 export default function PartnersPage() {
   return (
-    <div className="bg-backgroundMain text-greenMain contrast:bg-black00 contrast:text-yellowContrast tablet:pb-20 desktop:pb-150">
+    <div className="text-textDarkGreen tablet:pb-20 desktop:pb-150">
       <Container as="main" className="space-y-10">
         <Breadcrumbs />
 
-        <h2 className="mb-10 mt-5 font-lora text-2xl font-bold desktop:mt-10">
+        <h2 className="mb-10 mt-5 font-lora text-3xl font-bold desktop:mt-10">
           Partnerzy
         </h2>
 

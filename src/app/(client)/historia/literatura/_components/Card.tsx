@@ -3,7 +3,7 @@ import { Button } from "@/components/shared/Button/Button";
 import Image from "next/image";
 
 export const Card = ({ book }: { book: Book }) => (
-  <li className="flex flex-col items-center gap-4 border-b-4 border-greenLight pb-10 last:border-b-0 contrast:border-yellowContrast tablet:flex-row tablet:items-start tablet:gap-10">
+  <li className="flex flex-col items-center gap-4 border-b-4 border-greenLight pb-10 last:border-b-0 tablet:flex-row tablet:items-start tablet:gap-10">
     <div className="relative flex aspect-square w-72 items-center justify-center">
       <Image
         src={book.img ? book.img : "/images/placeholder_image.png"}
@@ -18,12 +18,10 @@ export const Card = ({ book }: { book: Book }) => (
     </div>
     <div className="flex flex-col items-center gap-4 tablet:w-3/4 tablet:items-end">
       <div className="flex flex-col items-center gap-2 text-start tablet:items-start tablet:gap-4 desktop:gap-6">
-        <h2 className="font-lora text-28 font-bold leading-none text-greenMain contrast:text-yellowContrast tablet:text-32">
+        <h2 className="font-lora text-28 font-bold leading-none tablet:text-32">
           {book.title} - {book.autor}
         </h2>
-        <p className="contrast:text-yellowContrast tablet:text-18">
-          {book.aboutAutor}
-        </p>
+        <p className="tablet:text-18">{book.aboutAutor}</p>
       </div>
       <Button
         variant="secondary"

@@ -9,7 +9,7 @@ interface Props {
 const SIZE = 320;
 
 export const PartnerCard = ({ name, href, image }: Props) => (
-  <article className="flex h-full w-full items-center justify-center overflow-hidden p-2 contrast:bg-white">
+  <article className="flex h-full w-full items-center justify-center overflow-hidden p-2 contrast:bg-[#FFFFFF]">
     <a
       href={href}
       target="_blank"

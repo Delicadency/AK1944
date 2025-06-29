@@ -21,9 +21,9 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
           className="relative grid grid-cols-1 items-center gap-6 tablet:grid-cols-2"
         >
           <div className="absolute bottom-0 top-0 z-0 mt-10 mobile:left-[10px] tablet:left-[18px] desktop:left-[-24px]">
-            <div className="h-full w-1 bg-greenMain" />
+            <div className="h-full w-1 bg-textDarkGreen" />
           </div>
-          <div className="absolute top-4 z-10 h-4 w-4 rounded-full bg-greenMain mobile:left-[5px] tablet:left-[12px] desktop:left-[-30px]" />
+          <div className="absolute top-4 z-10 h-4 w-4 rounded-full bg-textDarkGreen mobile:left-[5px] tablet:left-[12px] desktop:left-[-30px]" />
           <div className="relative z-10 order-2 mx-auto h-96 w-[80%] mobile:ml-12 tablet:order-2 desktop:ml-0 desktop:w-[100%]">
             <Image
               src={rally.imageUrl ?? "/images/placeholder_image.png"}
@@ -52,7 +52,7 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
               >
                 {rally.date}
               </Heading>
-              <p className="pb-4 pt-1 font-sourceSans text-18 text-gray-700">
+              <p className="text-gray-700 pb-4 pt-1 font-sourceSans text-18">
                 {rally.description}
               </p>
               <div className="flex flex-wrap gap-5">
@@ -60,13 +60,15 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
                   label="Zasady uczestnictwa"
                   href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
                   ariaDescription={`Zasady uczestnictwa dla ${rally.title}`}
-                  variant="lightGreen"
+                  variant="secondary"
+                  className="text-textDarkGreen"
                 />
                 <Button
                   label="Zobacz relację"
                   href={`/szlak-partyzancki/rajdy/relacja/${rally.slug}`}
                   ariaDescription={`Zobacz relację dla ${rally.title}`}
-                  variant="lightGreen"
+                  variant="secondary"
+                  className="text-textDarkGreen"
                 />
               </div>
             </article>

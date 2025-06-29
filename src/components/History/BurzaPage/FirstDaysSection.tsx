@@ -12,7 +12,7 @@ export const FirstDaysSection = () => (
       <Heading variant="h4" color="green" contrast="yellow">
         {firstDaysTitle}
       </Heading>
-      <div className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast desktop:flex-row">
+      <div className="flex flex-col gap-6 font-sourceSans text-lg desktop:flex-row">
         <div className="flex flex-col gap-6 desktop:w-1/2">
           {firstPart.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>

@@ -102,7 +102,7 @@ describe("FormField", () => {
     expect(input).toHaveClass(
       "text-greenMain ring-border placeholder:text-border focus:ring-greenMain",
     );
-    expect(label).toHaveClass("text-greenMain");
+    expect(label).toHaveClass("text-textDarkGreen");
     expect(screen.queryByRole("alert")).not.toBeInTheDocument();
   });
 });

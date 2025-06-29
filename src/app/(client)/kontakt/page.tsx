@@ -9,7 +9,7 @@ import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundI
 
 export default function ContactPage() {
   return (
-    <div className="desktop:pb-150 relative isolate min-h-screen overflow-hidden tablet:pb-20">
+    <div className="relative isolate min-h-screen overflow-hidden tablet:pb-20 desktop:pb-150">
       <div className="absolute inset-y-0 right-0 hidden h-full w-[40vw] desktop:block">
         <BackgroundImage
           src="/images/contact-bg.png"
@@ -17,6 +17,7 @@ export default function ContactPage() {
           sizes="(max-width: 1280px) 40vw, 595px"
           quality={85}
           fill
+          className="contrast:hidden"
         />
       </div>
 
@@ -28,22 +29,22 @@ export default function ContactPage() {
             sizes="80vw"
             quality={70}
             fill
-            className="h-full translate-x-[40%] object-cover object-left"
+            className="h-full translate-x-[40%] object-cover object-left contrast:hidden"
           />
         </div>
       </div>
 
-      <div className="absolute inset-0 bg-backgroundB/50 tablet:bg-backgroundB/70"></div>
+      <div className="absolute inset-0 bg-backgroundB/50 contrast:bg-black00 tablet:bg-backgroundB/70"></div>
 
       <Container className="relative z-10 desktop:max-w-[85%]">
         <div className="tablet:hidden desktop:block">
-          <Breadcrumbs />
+          <Breadcrumbs color="green" />
         </div>
 
         <div className="flex items-start">
           <Heading
             variant="h3"
-            contrast="black"
+            contrast="yellow"
             color="green"
             className="text-[1.75rem] tablet:mt-5 tablet:text-[2.5rem] desktop:mb-6 desktop:text-[2rem]"
           >
@@ -53,7 +54,7 @@ export default function ContactPage() {
 
         <section
           aria-labelledby="organization-info"
-          className="font-source-sans mb-10 justify-start text-left text-greenMain tablet:flex tablet:flex-col"
+          className="font-source-sans mb-10 justify-start text-left tablet:flex tablet:flex-col"
         >
           <Image
             src="/images/Logo_SZZAK.png"
@@ -66,7 +67,7 @@ export default function ContactPage() {
           <Heading
             id="organization-info"
             variant="h3"
-            contrast="black"
+            contrast="yellow"
             color="green"
             className="mb-6 text-[1.75rem] tablet:mb-14 tablet:text-[2.5rem] desktop:hidden"
           >
@@ -74,7 +75,7 @@ export default function ContactPage() {
           </Heading>
           <Heading
             variant="h4"
-            contrast="black"
+            contrast="yellow"
             color="green"
             className="mb-6 hidden flex-col flex-wrap break-words desktop:flex"
           >
@@ -93,8 +94,8 @@ export default function ContactPage() {
         <div className="desktop:gap-42 tablet:mb-28 tablet:flex tablet:flex-row tablet:gap-28">
           <ContactInfo />
 
-          <hr className="my-6 border-t border-black tablet:hidden" />
-          <div className="mx-10 hidden h-auto border-l border-black desktop:block"></div>
+          <hr className="my-6 border-t border-textDarkGreen tablet:hidden" />
+          <div className="mx-10 hidden h-auto border-l border-textDarkGreen desktop:block"></div>
 
           <LegalInfo />
         </div>
@@ -105,13 +106,13 @@ export default function ContactPage() {
         <section className="mb-[2.5rem] hidden text-left tablet:block desktop:hidden">
           <Heading
             variant="h3"
-            contrast="black"
+            contrast="yellow"
             color="green"
             className="mb-10"
           >
             Chcesz zostać naszym partnerem?
           </Heading>
-          <p className="text-lef font-source-sans font-source-sans mb-10 text-lg text-greenMain">
+          <p className="font-source-sans font-source-sans mb-10 text-left text-lg">
             Prosimy o kontakt z Maciejem Małozięć.
           </p>
         </section>

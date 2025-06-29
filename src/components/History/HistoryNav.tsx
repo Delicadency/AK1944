@@ -9,9 +9,9 @@ export const HistoryNav = () => (
     as="nav"
     className="flex justify-center desktop:mt-20 desktop:flex-col desktop:items-center"
   >
-    <IconArrowHorizontal className="z-[1] hidden contrast:text-yellowContrast desktop:block" />
-    <IconArrowVertical className="z-[1] translate-x-10 contrast:text-yellowContrast desktop:hidden" />
-    <ul className="z-[2] flex flex-col gap-10 font-courier contrast:text-yellowContrast desktop:w-full desktop:-translate-x-10 desktop:-translate-y-10 desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
+    <IconArrowHorizontal className="z-[1] hidden desktop:block" />
+    <IconArrowVertical className="z-[1] translate-x-10 desktop:hidden" />
+    <ul className="z-[2] flex flex-col gap-10 font-courier desktop:w-full desktop:-translate-x-10 desktop:-translate-y-10 desktop:flex-row desktop:justify-evenly desktop:gap-0 desktop:px-20">
       <li>
         <Link
           href={Routes.REGIMENT}

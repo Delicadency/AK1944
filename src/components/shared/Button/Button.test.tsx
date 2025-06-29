@@ -10,7 +10,7 @@ describe("Button component", () => {
     });
     expect(buttonElement).toBeInTheDocument();
     expect(buttonElement).toHaveClass(
-      "contrast:bg-black00 contrast:text-yellowContrast bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] active:bg-redMain",
+      "flex h-fit items-center gap-[16px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all duration-200 ease-in-out active:scale-95 w-fit contrast:bg-yellowContrast contrast:text-black00 contrast:hover:bg-[#1A1A1A] bg-redMain text-backgroundMain desktop:hover:bg-[#7A0003] desktop:hover:text-white active:bg-redMain text-16 justify-center text-center",
     );
     expect(buttonElement).toHaveClass("text-16");
     expect(buttonElement).not.toHaveClass(
@@ -42,7 +42,7 @@ describe("Button component", () => {
       name: /przycisk testowy/i,
     });
     expect(buttonElement).toHaveClass(
-      "contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-greenLight text-black desktop:hover:bg-[#BDD2BC] active:bg-greenLight",
+      "contrast:bg-yellowContrast contrast:text-black00 contrast:hover:bg-[#1A1A1A] contrast:desktop:hover:text-yellowContrast bg-greenLight text-black desktop:hover:bg-[#BDD2BC] desktop:hover:text-[#333] active:bg-greenLight",
     );
     expect(buttonElement).toHaveClass("text-lg");
   });
@@ -64,7 +64,7 @@ describe("Button component", () => {
       "pointer-events-none cursor-not-allowed opacity-30",
     );
     expect(buttonElement).toHaveClass(
-      "contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C] contrast:text-black00 bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] active:bg-backgroundMain",
+      "flex h-fit items-center gap-[16px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all duration-200 ease-in-out active:scale-95 w-fit contrast:bg-yellowContrast contrast:text-black00 contrast:hover:bg-[#1A1A1A] contrast:desktop:hover:text-yellowContrast bg-backgroundMain text-redMain desktop:hover:bg-[#F0EFEB] desktop:hover:text-[#A60000] active:bg-backgroundMain text-16 justify-center text-center pointer-events-none cursor-not-allowed opacity-30",
     );
     expect(buttonElement).not.toHaveAttribute("href", "/test");
   });

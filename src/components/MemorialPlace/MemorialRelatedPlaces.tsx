@@ -11,7 +11,7 @@ export const MemorialRelatedPlaces = ({
   <section className="mt-20 pt-14">
     <Heading
       variant="h2"
-      contrast="black"
+      contrast="yellow"
       color="green"
       className="mb-10 text-2xl font-bold"
     >
@@ -34,7 +34,7 @@ export const MemorialRelatedPlaces = ({
               className="rounded-desktop w-full object-cover"
             />
           )}
-          <h3 className="text-center font-lora font-bold text-greenMain">
+          <h3 className="text-center font-lora font-bold text-textLightGreen">
             {item.name}
           </h3>
         </Link>

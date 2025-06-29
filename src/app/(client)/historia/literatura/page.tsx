@@ -5,7 +5,7 @@ import { Heading } from "@/components/shared/Heading/Heading";
 
 export default function LiteraturePage() {
   return (
-    <div className="contrast:bg-black00">
+    <div>
       <Container
         as="main"
         className="tablet:px-10 tablet:pb-10 desktop:px-24 desktop:pb-20"

@@ -33,9 +33,10 @@ export const CalendarTableCell = ({
       aria-label={day}
       className={cn(
         `desktop: flex h-10 w-10 items-center justify-center text-18 tablet:w-11 tablet:text-32`,
-        isCurrentMonth ? "text-white" : "text-greenC",
-        isToday && "rounded border-2 bg-white text-greenMain",
-        isEventDate && "rounded border-2 border-backgroundMain",
+        isCurrentMonth ? "text-textLight" : "text-textLightGreen",
+        isToday &&
+          "rounded border-2 bg-white text-textDarkGreen contrast:text-black00",
+        isEventDate && "rounded border-2 border-textLight",
       )}
     >
       {isEventDate ? (

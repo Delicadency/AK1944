@@ -6,7 +6,7 @@ const firstPart = content.slice(0, 2);
 const secondPart = content.slice(2);
 
 export const EvacuationSection = () => (
-  <section className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast">
+  <section className="flex flex-col gap-6 font-sourceSans text-lg">
     <Heading variant="h4" color="green" contrast="yellow">
       {evacuationTitle}
     </Heading>

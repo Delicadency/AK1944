@@ -17,7 +17,7 @@ export default async function LiteraturePage({ params }: Props) {
 
   if (!book) {
     return (
-      <div className="contrast:bg-black00">
+      <div>
         <Container>
           <Heading variant="h2" contrast="yellow" color="green">
             Nie znaleziono książki
@@ -27,7 +27,7 @@ export default async function LiteraturePage({ params }: Props) {
     );
   }
   return (
-    <div className="contrast:bg-black00">
+    <div>
       <Container className="relative flex flex-col gap-10 pb-10 tablet:px-10 desktop:px-24 desktop:pb-36">
         <Image
           src="/images/literature/literature-bg.png"

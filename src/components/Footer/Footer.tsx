@@ -6,7 +6,7 @@ import { FooterSupport } from "./FooterSupport";
 import { FooterLegalInfo } from "./FooterLegalInfo";
 
 export const Footer = () => (
-  <footer className="w-full bg-greenMain px-6 py-8 text-white contrast:bg-yellowContrast contrast:text-black00">
+  <footer className="w-full bg-greenMain px-6 py-8 text-white">
     <Container>
       <div className="flex flex-col gap-8 md:grid md:grid-cols-[minmax(150px,200px)_1fr] md:gap-4 desktop:grid desktop:grid-cols-[200px_1fr] desktop:items-start desktop:gap-8">
         <FooterColumn>
@@ -43,6 +43,4 @@ const Logo = () => (
   />
 );
 
-const Divider = () => (
-  <hr className="my-8 w-full border-white contrast:border-black00" />
-);
+const Divider = () => <hr className="my-8 w-full border-white" />;

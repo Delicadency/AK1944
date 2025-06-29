@@ -10,7 +10,7 @@ interface RallyRelationProps {
 
 export const RallyRelation = ({ rally }: RallyRelationProps) => {
   return (
-    <div className="bg-backgroundMain pb-20 text-greenMain">
+    <div className="pb-20">
       <Container
         as="article"
         className="flex flex-col gap-10 pb-6 tablet:gap-8 tablet:pb-36"

@@ -20,7 +20,7 @@ export const TaxDonationModal = () => {
   return (
     <>
       <Button
-        variant="primaryBlue"
+        variant="primary"
         label="Przekaż podatek"
         ariaDescription="Przekaż podatek"
         onClick={open}

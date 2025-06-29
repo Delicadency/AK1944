@@ -5,7 +5,7 @@ export const Chapters = ({ chapters }: { chapters: string[] }) => (
     <Heading variant="h3" contrast="yellow" color="green">
       Spis treści:
     </Heading>
-    <ul className="list-decimal pl-6 text-greenMain contrast:text-yellowContrast tablet:text-18 desktop:text-20">
+    <ul className="list-decimal pl-6 tablet:text-18 desktop:text-20">
       {chapters.map((chapter, index) => (
         <li key={index} className="mb-2">
           {chapter}

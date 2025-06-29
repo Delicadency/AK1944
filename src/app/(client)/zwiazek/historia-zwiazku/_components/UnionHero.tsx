@@ -29,7 +29,7 @@ export const UnionHero = ({ paragraph }: Props) => (
       >
         Historia związku
       </Heading>
-      <section className="flex flex-col gap-4 pb-10 font-sourceSans contrast:text-yellowContrast tablet:w-[710px] tablet:gap-8">
+      <section className="flex flex-col gap-4 pb-10 font-sourceSans tablet:w-[710px] tablet:gap-8">
         {paragraph.map((p, i) => (
           <p key={i}>{p}</p>
         ))}

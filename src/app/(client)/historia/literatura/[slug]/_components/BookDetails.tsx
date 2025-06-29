@@ -7,7 +7,7 @@ export const BookDetails = (book: Book) => (
     <Heading variant="h3" contrast="yellow" color="green">
       Szczegóły wydania:
     </Heading>
-    <ul className="flex flex-col gap-3 text-greenMain contrast:text-yellowContrast tablet:text-18 desktop:text-20">
+    <ul className="flex flex-col gap-3 tablet:text-18 desktop:text-20">
       <li>Autor: {book.autor}</li>
       <li>Wydawca: {book.publisher}</li>
       <li>ISBN: {book.isbn}</li>

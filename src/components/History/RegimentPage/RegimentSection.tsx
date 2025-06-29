@@ -5,7 +5,7 @@ import Image from "next/image";
 const { regimentTitle, content } = regimentSection;
 
 export const RegimentSection = () => (
-  <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+  <section className="flex flex-col gap-6 text-lg">
     <Heading variant="h4" color="green" contrast="yellow">
       {regimentTitle}
     </Heading>

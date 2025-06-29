@@ -17,6 +17,7 @@ export const DonorDetails = ({ issues }: Props) => (
       required
       autoComplete="name"
       issues={issues?.signature}
+      className="placeholder:text-greenMain"
     />
     <FormField
       id="email"
@@ -26,6 +27,7 @@ export const DonorDetails = ({ issues }: Props) => (
       required
       autoComplete="email"
       issues={issues?.email}
+      className="placeholder:text-greenMain"
     />
   </fieldset>
 );

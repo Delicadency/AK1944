@@ -32,8 +32,8 @@ export const CalendarMain = () => {
       </section>
       <section className="flex w-full max-w-[1440px] flex-col items-center gap-5 px-4 pb-10 tablet:gap-16 tablet:px-10 desktop:px-28">
         <CalendarHeader
-          className="items-center justify-center text-24 text-greenMain tablet:w-full tablet:justify-between tablet:text-32"
-          iconClassName="stroke-greenMain h-7 w-7 tablet:h-10 tablet:w-10"
+          className="items-center justify-center text-24 tablet:w-full tablet:justify-between tablet:text-32"
+          iconClassName="stroke-greenMain contrast:stroke-yellowContrast h-7 w-7 tablet:h-10 tablet:w-10"
           currentDate={currentDate}
           handleNextMonth={handleNextMonth}
           handlePrevMonth={handlePrevMonth}

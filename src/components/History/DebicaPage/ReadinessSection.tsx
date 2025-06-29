@@ -8,7 +8,7 @@ export const ReadinessSection = () => (
     <Heading variant="h4" color="green" contrast="yellow">
       {readinessTitle}
     </Heading>
-    <div className="flex flex-col gap-6 text-lg contrast:text-yellowContrast desktop:flex-row">
+    <div className="flex flex-col gap-6 text-lg desktop:flex-row">
       {content.map((paragraph, index) => (
         <p key={index}>{paragraph}</p>
       ))}

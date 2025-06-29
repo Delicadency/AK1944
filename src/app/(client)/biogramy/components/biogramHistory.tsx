@@ -19,7 +19,7 @@ export const BiogramHistoryPage = ({ biogram }: BiogramHistoryProps) => {
         </Heading>
         <BiogramHistory biogram={biogram} />
         <Button
-          variant="primaryBlue"
+          variant="primary"
           label="Znajdź grób"
           ariaDescription="Znajdź grób"
           className="m-auto mt-6"

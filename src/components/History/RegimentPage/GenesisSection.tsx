@@ -13,7 +13,7 @@ export const GenesisSection = () => (
     <Heading variant="h4" color="green" contrast="yellow">
       {genesisTitle}
     </Heading>
-    <div className="flex flex-col gap-6 contrast:text-yellowContrast desktop:flex-row desktop:gap-[128px]">
+    <div className="flex flex-col gap-6 desktop:flex-row desktop:gap-[128px]">
       <div className="flex flex-col gap-6 text-lg">
         <p>{firstPart}</p>
         <div className="relative m-auto aspect-[0.81] w-full max-w-[350px] desktop:hidden">

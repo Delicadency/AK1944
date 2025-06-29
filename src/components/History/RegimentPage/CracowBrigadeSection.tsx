@@ -8,7 +8,7 @@ const firstPart = content.slice(0, 2);
 const secondPart = content.slice(2);
 
 export const CracowBrigadeSection = () => (
-  <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+  <section className="flex flex-col gap-6 text-lg">
     <Heading variant="h4" color="green" contrast="yellow">
       {cracowBrigadeTitle}
     </Heading>

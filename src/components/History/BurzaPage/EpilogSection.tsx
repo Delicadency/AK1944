@@ -7,7 +7,7 @@ const firstPart = content.slice(0, 4);
 const secondPart = content.slice(4);
 
 export const EpilogSection = () => (
-  <section className="flex flex-col gap-6 font-sourceSans text-lg contrast:text-yellowContrast">
+  <section className="flex flex-col gap-6 font-sourceSans text-lg">
     <Heading variant="h4" color="green" contrast="yellow">
       {epilogTitle}
     </Heading>

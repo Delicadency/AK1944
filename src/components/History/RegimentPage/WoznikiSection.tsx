@@ -9,7 +9,7 @@ const thirdPart = content.slice(7, 9);
 const fourthPart = content.slice(9);
 
 export const WoznikiSection = () => (
-  <section className="flex flex-col gap-6 text-lg contrast:text-yellowContrast">
+  <section className="flex flex-col gap-6 text-lg">
     <Heading variant="h4" color="green" contrast="yellow">
       {woznikiTitle}
     </Heading>

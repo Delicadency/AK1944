@@ -6,7 +6,7 @@ const { districtTitle, content } = districtSection;
 
 export const DistrictSection = () => (
   <section className="flex flex-col gap-6 font-sourceSans text-lg desktop:flex-row">
-    <div className="flex flex-col gap-6 contrast:text-yellowContrast">
+    <div className="flex flex-col gap-6">
       <Heading variant="h4" color="green" contrast="yellow">
         {districtTitle}
       </Heading>

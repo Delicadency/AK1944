@@ -18,9 +18,7 @@ export const PlacesSection = () => {
               <PlaceItem key={index} place={place} />
             ))}
           </ul>
-          <p className="mt-6 text-lg contrast:text-yellowContrast">
-            {paragraph}
-          </p>
+          <p className="mt-6 text-lg">{paragraph}</p>
         </div>
         <div className="relative m-auto aspect-[0.74] w-full max-w-[500px] shrink-0">
           <Image

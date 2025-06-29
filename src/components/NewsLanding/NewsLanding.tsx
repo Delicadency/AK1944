@@ -15,12 +15,12 @@ export const NewsLanding = async () => {
 
   return (
     <section>
-      <div className="flex items-center justify-center bg-white py-10 contrast:bg-black00">
+      <div className="flex items-center justify-center bg-white py-10 text-textDarkGreen contrast:bg-black00">
         <Heading variant="h2" color="green" contrast="yellow" underline>
           Aktualności
         </Heading>
       </div>
-      <div className="flex flex-col items-center justify-center gap-10 bg-greenMain py-10 contrast:bg-yellowContrast">
+      <div className="flex flex-col items-center justify-center gap-10 bg-greenMain py-10">
         <Container className="flex flex-col items-center justify-center gap-10 tablet:px-11 desktop:flex-row-reverse desktop:gap-36 desktop:px-44">
           <div>
             <CalendarCard withButton />
@@ -32,10 +32,10 @@ export const NewsLanding = async () => {
           </div>
         </Container>
         <Button
-          variant="primaryBlue"
+          variant="primary"
           label="Przejdź do archiwum"
           ariaDescription="Przejdź do archiwum"
-          className="bg-transparent py-0 underline shadow-none contrast:bg-transparent contrast:text-black"
+          className="bg-transparent contrast:bg-transparent py-0 underline shadow-none"
           href={Routes.ARCHIVE}
         />
       </div>

@@ -15,13 +15,13 @@ export const MemorialHeadingSection = ({
     </div>
     <Heading
       variant="h1"
-      contrast="black"
+      contrast="yellow"
       color="green"
-      className="text-greenDark mb-8 mt-16 text-3xl font-bold"
+      className="mb-8 mt-16 text-3xl font-bold"
     >
       {name}
     </Heading>
-    <p className="mb-8 flex items-center gap-2 text-greenB">
+    <p className="mb-8 flex items-center gap-2 text-textLightGreen">
       <IconMapPin className="size-5" aria-hidden="true" />
       <strong className="font-lora text-24 font-bold">{location}</strong>
     </p>

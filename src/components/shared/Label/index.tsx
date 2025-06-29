@@ -2,7 +2,7 @@ import { type ComponentProps } from "react";
 import { cn } from "@/utils";
 
 const labelVariants = {
-  primary: "text-greenMain",
+  primary: "text-textDarkGreen",
   error: "text-redError",
 } as const;
 
