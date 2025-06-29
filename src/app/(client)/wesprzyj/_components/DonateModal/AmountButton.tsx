@@ -13,8 +13,8 @@ export const AmountButton = ({ isSelected, onClick, children }: Props) => (
     className={cn(
       "rounded-lg border-2 px-4 py-2 transition-colors",
       isSelected
-        ? "border-greenMain bg-greenMain text-white"
-        : "border-border text-greenMain hover:border-greenMain",
+        ? "border-textDarkGreen bg-greenMain text-white contrast:bg-yellowContrast contrast:text-black00"
+        : "border-border text-textDarkGreen hover:border-greenMain",
     )}
   >
     {children}

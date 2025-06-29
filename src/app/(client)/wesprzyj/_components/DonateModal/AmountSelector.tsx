@@ -20,7 +20,7 @@ export const AmountSelector = ({
   issues,
 }: Props) => (
   <div className="space-y-4">
-    <h2 className="text-xl font-bold text-greenMain">Twoje wsparcie</h2>
+    <h2 className="text-xl font-bold text-textDarkGreen">Twoje wsparcie</h2>
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
       {PREDEFINED_AMOUNTS.map((value) => (
         <AmountButton

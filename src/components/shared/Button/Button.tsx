@@ -74,7 +74,7 @@ export const Button = ({
   };
 
   const commonClassNames = clsx(
-    "flex h-fit items-center gap-[16px] rounded px-8 py-3 font-sourceSans shadow-inner transition-all duration-200 ease-in-out active:scale-95",
+    "flex h-fit items-center gap-[16px] rounded px-8 py-3 font-sourceSans shadow-inner shadow-md transition-all duration-200 ease-in-out active:scale-95",
     iconName ? "w-full tablet:w-fit" : "w-fit",
     variantStyles[variant],
     sizeStyles[size],

@@ -6,10 +6,10 @@ export const PaymentError = () => (
     <IconX className="size-16 text-redError" />
     <div className="space-y-2">
       <h1 className="text-2xl font-bold">Wystąpił błąd podczas płatności</h1>
-      <p className="text-gray-600 text-lg">
+      <p className="text-lg text-grayDate">
         Przepraszamy, ale Twoja płatność nie została zrealizowana.
       </p>
-      <p className="text-gray-600">
+      <p className="text-grayDate">
         Spróbuj ponownie lub skontaktuj się z nami, jeśli problem będzie się
         powtarzał.
       </p>

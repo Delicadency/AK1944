@@ -8,7 +8,7 @@ import { IconPhone } from "@/icons/IconPhone";
 export const ContactInfo = () => (
   <section
     aria-labelledby="contact-info"
-    className="font-source-sans mb-10 text-lg text-greenMain"
+    className="font-source-sans mb-10 text-lg"
   >
     <h2 id="contact-info" className="sr-only">
       Informacje kontaktowe
