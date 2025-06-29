@@ -35,7 +35,7 @@ export const HistoryBiogramComponent = () => (
         </div>
       </div>
       <Button
-        variant="primaryBlue"
+        variant="primary"
         label="Sprawdź"
         ariaDescription="Sprawdź"
         className="m-auto mt-6"

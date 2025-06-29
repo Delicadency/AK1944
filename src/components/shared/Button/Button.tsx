@@ -34,21 +34,19 @@ export const Button = ({
 }: ButtonProps) => {
   const variantStyles = {
     primary: `
-      contrast:bg-black00 contrast:text-yellowContrast contrast:hover:bg-[#1A1A1A]
+      contrast:bg-yellowContrast contrast:text-black00 contrast:hover:bg-[#1A1A1A]
       bg-redMain text-backgroundMain
       desktop:hover:bg-[#7A0003] desktop:hover:text-white
       active:bg-redMain
     `,
     inversion: `
-      contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C]
-      contrast:text-black00
+      contrast:bg-yellowContrast contrast:text-black00 contrast:hover:bg-[#1A1A1A] contrast:desktop:hover:text-yellowContrast
       bg-backgroundMain text-redMain
       desktop:hover:bg-[#F0EFEB] desktop:hover:text-[#A60000]
       active:bg-backgroundMain
     `,
     secondary: `
-      contrast:bg-yellowContrast contrast:desktop:hover:bg-[#DAD01C]
-      contrast:text-black00
+      contrast:bg-yellowContrast contrast:text-black00 contrast:hover:bg-[#1A1A1A] contrast:desktop:hover:text-yellowContrast
       bg-greenLight text-black
       desktop:hover:bg-[#BDD2BC] desktop:hover:text-[#333]
       active:bg-greenLight
@@ -87,7 +85,7 @@ export const Button = ({
   const renderContent = () => (
     <>
       {iconName && (
-        <ButtonIcon name={iconName} className="shrink-0 text-inherit" />
+        <ButtonIcon name={iconName} className="text-inherit shrink-0" />
       )}
       {label}
     </>

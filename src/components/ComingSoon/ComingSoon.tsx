@@ -31,7 +31,7 @@ export const ComingSoon = () => (
 
       <footer className="flex flex-col items-center justify-center gap-3 p-5">
         <Button
-          variant="primaryBlue"
+          variant="primary"
           label="Powrót do strony głównej"
           ariaDescription="Powrót do strony głównej"
           href={Routes.HOME}

@@ -31,7 +31,7 @@ export default function RalliesPage({ searchParams }: PageProps) {
           label="Zapisz się na rajd"
           href={""}
           ariaDescription="Zapisz się na rajd"
-          variant="primaryBlue"
+          variant="primary"
         />
         <Suspense fallback={<p>Ładowanie listy rajdów...</p>}>
           <RallyList currentPage={currentPage} />

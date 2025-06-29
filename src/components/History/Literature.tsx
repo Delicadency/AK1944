@@ -15,7 +15,7 @@ export const LiteratureComponent = () => (
       {content}
     </p>
     <Button
-      variant="primaryBlue"
+      variant="primary"
       label="Sprawdź"
       ariaDescription="Sprawdź"
       className="m-auto mb-6"

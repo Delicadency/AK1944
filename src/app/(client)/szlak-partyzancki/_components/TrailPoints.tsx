@@ -69,7 +69,7 @@ export const TrailPoints = ({ activeTrail }: TrailPointsProps) => {
               <Button
                 label="Następny punkt"
                 ariaDescription="Zobacz następny punkt szlaku"
-                variant="primaryBlue"
+                variant="primary"
                 onClick={goToNext}
                 disabled={activeIndex === points.length - 1}
               />

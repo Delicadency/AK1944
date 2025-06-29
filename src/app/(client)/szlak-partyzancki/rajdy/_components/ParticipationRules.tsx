@@ -48,7 +48,7 @@ export const ParticipationRules = ({ rally }: RulesProps) => {
             href={""}
             iconName="send"
             ariaDescription="Zapisz się na rajd"
-            variant="primaryBlue"
+            variant="primary"
           />
         </div>
 

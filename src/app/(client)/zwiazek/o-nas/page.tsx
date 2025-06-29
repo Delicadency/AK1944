@@ -10,7 +10,7 @@ export default function AboutUsPage() {
         src="/images/become_donor_bg_1.webp"
         alt="AboutUs BackgroundImage"
         fill
-        className="h-full bg-black00 object-center-100 tablet:object-[80%]"
+        className="h-full object-center-100 contrast:hidden tablet:object-[80%]"
       >
         <Container className="flex flex-col items-start justify-center tablet:px-10 desktop:pl-24">
           <Breadcrumbs color="white" />
