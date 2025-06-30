@@ -18,7 +18,7 @@ export const HistoryBiogramComponent = () => (
     className="absolute object-fill contrast:hidden"
     aria-hidden="true"
   >
-    <Container className="relative py-10">
+    <Container className="relative py-10 contrast:border-2 contrast:border-yellowContrast">
       <Heading variant="h3" contrast="yellow" color="green">
         {title}
       </Heading>
