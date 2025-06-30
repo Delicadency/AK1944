@@ -17,7 +17,7 @@ export default {
       greenB: "rgb(var(--bg-accent) / <alpha-value>)",
       greenC: "rgb(var(--bg-secondary) / <alpha-value>)",
       backgroundMain: "rgb(var(--bg) / <alpha-value>)",
-      backgroundB: "#FFF9ED",
+      backgroundB: "rgb(var(--bg-b) / <alpha-value>)",
       redMain: "rgb(var(--red) / <alpha-value>)",
       redError: "rgb(var(--error) / <alpha-value>)",
       yellowVintage: "rgb(var(--accent) / <alpha-value>)",

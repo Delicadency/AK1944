@@ -7,6 +7,7 @@
   --fill: #304d30;
   --fill-secondary: #8f0000;
   --bg: 255 252 245;
+  --bg-b: 255 249 237;
   --bg-primary: 22 48 32;
   --bg-secondary: 111 142 110;
   --bg-accent: 48 77 48;
@@ -28,6 +29,7 @@
   --fill: rgb(255, 242, 5);
   --fill-secondary: #0080ff;
   --bg: 0 0 0;
+  --bg-b: 255 242 5;
   --bg-primary: 0 0 0;
   --bg-secondary: 0 0 0;
   --bg-accent: 0 0 0;

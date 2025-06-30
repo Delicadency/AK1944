@@ -42,7 +42,7 @@ export const BiogramsList = ({ people }: BiogramsListProps) => {
       {people.map((person, index) => (
         <div
           key={person.id}
-          className={`flex items-center justify-between px-4 py-2 font-courier text-18 font-bold ${
+          className={`flex items-center justify-between px-4 py-2 font-courier text-18 font-bold contrast:text-black00 ${
             index % 2 === 0 ? "bg-greenLight" : "bg-backgroundB"
           }`}
         >

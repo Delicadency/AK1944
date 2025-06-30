@@ -17,7 +17,7 @@ export default function MorePeopleBiograms() {
 
   return (
     <div className="p-4">
-      <Heading variant="h2" contrast="black" color="green">
+      <Heading variant="h2" contrast="yellow" color="green">
         Sprawdź też
       </Heading>
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 pt-16 tablet:grid-cols-2 desktop:grid-cols-3 desktop:gap-14">
@@ -34,7 +34,7 @@ export default function MorePeopleBiograms() {
             </Link>
             <Heading
               variant="h4"
-              contrast="black"
+              contrast="yellow"
               color="green"
               className="pt-5"
             >
