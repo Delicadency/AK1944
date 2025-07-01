@@ -117,7 +117,7 @@ const Submenu = ({ items, parentLabel, onLinkClick, id }: SubmenuProps) => (
     {items.map(({ label, href }, index) => (
       <li
         key={index}
-        className="p-4 contrast:border-x-2 contrast:border-y-[1px] contrast:border-yellowContrast"
+        className="p-4 contrast:border-x-2 contrast:border-y-[1px] contrast:border-yellowContrast contrast:hover:bg-[#262827]"
         aria-label={`Podmenu: ${label}`}
       >
         <NavLink href={href} label={label} onClick={onLinkClick} />

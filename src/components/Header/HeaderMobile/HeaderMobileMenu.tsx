@@ -24,7 +24,7 @@ export const HeaderMobileMenu = ({ onClose }: Props) => (
         <HeaderLogo />
 
         <p
-          className="h-8 w-[135px] text-center font-courier text-14 text-white transition duration-300"
+          className="h-10 w-[135px] text-center font-courier text-14 text-white transition duration-300"
           aria-label="Światowy Związek Żołnierzy Armii Krajowej"
         >
           Światowy Związek Żołnierzy AK

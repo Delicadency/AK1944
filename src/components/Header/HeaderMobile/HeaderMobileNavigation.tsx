@@ -11,7 +11,7 @@ export const HeaderMobileNavigation = () => {
 
   return (
     <nav aria-label="Główna nawigacja">
-      <ul className="flex flex-col gap-5">
+      <ul className="flex flex-col">
         {orderedNavData.map(({ href, label }, index) => (
           <NavItem
             key={index}
@@ -45,7 +45,7 @@ const NavItem = ({
   const hasSubmenu = !!submenuData[index];
 
   return (
-    <li className="text-textLight">
+    <li className="py-3 text-textLight">
       {hasSubmenu ? (
         <>
           <SubmenuToggle
@@ -79,7 +79,7 @@ const Submenu = ({ items, index, isOpen }: SubmenuProps) => (
     id={`submenu-${index}`}
     data-testid={`submenu-${index}`}
     className={cn(
-      "ml-4 mt-2 space-y-3 overflow-hidden transition-all duration-300",
+      "ml-6 mt-2 space-y-3 overflow-hidden transition-all duration-300",
       isOpen ? "max-h-96" : "mt-0 max-h-0",
     )}
   >
