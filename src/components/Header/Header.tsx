@@ -4,7 +4,7 @@ import { HeaderTabAndDesktop } from "./HeaderTabletAndDesktop/HeaderTabAndDeskto
 
 export const Header = () => (
   <Spacer>
-    <header className="fixed z-20 h-auto w-screen bg-greenMain pb-5 tablet:pb-0">
+    <header className="fixed z-20 h-20 w-screen bg-greenMain pb-5 tablet:h-[136px] tablet:pb-0">
       <Container>
         <HeaderMobile />
         <HeaderTabAndDesktop />
@@ -14,5 +14,5 @@ export const Header = () => (
 );
 
 const Spacer = ({ children }: { children: React.ReactNode }) => (
-  <div className="h-[80px] tablet:h-[112px]">{children}</div>
+  <div className="h-[80px] tablet:h-[136px]">{children}</div>
 );

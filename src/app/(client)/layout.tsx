@@ -42,7 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" data-lt-installed="true">
+    <html
+      lang="pl"
+      data-lt-installed="true"
+      className="scroll-pt-20 scroll-smooth tablet:scroll-pt-[136px]"
+    >
       <body
         className={cn(
           figtree.variable,
