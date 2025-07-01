@@ -20,7 +20,7 @@ export const NavLink = ({
 }: Props) => (
   <ActiveLink
     href={href}
-    className={cn("text-base text-backgroundMain", className)}
+    className={cn("block text-base text-textLight", className)}
     onClick={onClick}
     aria-label={`Przejdź do strony ${label}`}
     aria-expanded={ariaExpanded}

@@ -15,17 +15,15 @@ export const HistoryBiogramComponent = () => (
     src="/images/history/main/paper_bg.webp"
     width="768"
     height="948"
-    className="absolute object-fill"
+    className="absolute object-fill contrast:hidden"
     aria-hidden="true"
   >
-    <Container className="relative py-10 contrast:bg-yellowContrast">
-      <Heading variant="h3" contrast="black" color="green">
+    <Container className="relative py-10 contrast:border-2 contrast:border-yellowContrast">
+      <Heading variant="h3" contrast="yellow" color="green">
         {title}
       </Heading>
       <div className="md:flex">
-        <p className="my-6 font-courier text-lg text-greenMain md:w-2/3">
-          {content}
-        </p>
+        <p className="my-6 font-courier text-lg md:w-2/3">{content}</p>
         <div className="relative m-auto aspect-[0.89] w-[300px] max-w-[300px]">
           <Image
             src="/images/history/main/veteran.webp"
@@ -37,7 +35,7 @@ export const HistoryBiogramComponent = () => (
         </div>
       </div>
       <Button
-        variant="primaryBlue"
+        variant="primary"
         label="Sprawdź"
         ariaDescription="Sprawdź"
         className="m-auto mt-6"

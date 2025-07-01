@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   return (
-    <div className="bg-backgroundMain text-greenMain tablet:pb-20 desktop:pb-150">
+    <div className="tablet:pb-20 desktop:pb-150">
       <Container as="main" className="space-y-20">
         <div className="space-y-4 desktop:space-y-10">
           <Breadcrumbs />

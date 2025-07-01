@@ -33,7 +33,7 @@ export const DonateModal = () => {
         <Modal
           isOpen={isOpen}
           onClose={close}
-          className="bg-backgroundB px-10 text-greenMain"
+          className="bg-backgroundB px-10 text-textDarkGreen contrast:bg-black00"
         >
           <DonateForm />
         </Modal>

@@ -17,14 +17,11 @@ export default function BoardPage() {
 
       <Container
         as="article"
-        className="font-16 h-fit w-full bg-greenMain py-6 leading-6 text-backgroundMain contrast:bg-black00 contrast:text-yellowContrast desktop:flex desktop:min-h-[740px] desktop:w-[1022px] desktop:flex-col desktop:justify-center"
+        className="font-16 h-fit w-full bg-greenMain py-6 leading-6 text-textLight desktop:flex desktop:min-h-[740px] desktop:w-[1022px] desktop:flex-col desktop:justify-center"
       >
         <ShowOnTabletAndUp className="flex flex-col items-center px-[88px] pt-3">
           <LogoAK className="h-[100px] w-[275px]" />
-          <div
-            className="my-9 h-[1px] w-full bg-white contrast:bg-yellowContrast"
-            aria-hidden="true"
-          ></div>
+          <div className="my-9 h-[1px] w-full" aria-hidden="true"></div>
         </ShowOnTabletAndUp>
 
         <article className="desktop:grid desktop:grid-cols-2">
@@ -45,7 +42,7 @@ export default function BoardPage() {
 
       <Container
         as="section"
-        className="font-16 flex flex-col gap-10 pb-10 pt-6 leading-6 text-black contrast:text-yellowContrast tablet:px-6 tablet:pb-20 desktop:mx-auto desktop:w-[1022px] desktop:px-0 desktop:pb-150"
+        className="font-16 flex flex-col gap-10 pb-10 pt-6 leading-6 tablet:px-6 tablet:pb-20 desktop:mx-auto desktop:w-[1022px] desktop:px-0 desktop:pb-150"
       >
         <p>{boardData.announcement}</p>
         <p>{boardData.electionInfo}</p>

@@ -10,9 +10,10 @@ export default function AboutUsPage() {
         src="/images/become_donor_bg_1.webp"
         alt="AboutUs BackgroundImage"
         fill
-        className="h-full bg-black00 object-center-100 tablet:object-[80%]"
+        priority
+        className="h-full object-center-100 contrast:hidden tablet:object-[80%]"
       >
-        <Container className="flex flex-col items-start justify-center tablet:px-10 desktop:pl-24">
+        <Container className="flex flex-col items-start justify-center tablet:px-10 tablet:py-10 desktop:py-40 desktop:pl-24">
           <Breadcrumbs color="white" />
 
           <Heading
@@ -44,7 +45,7 @@ export default function AboutUsPage() {
         </Container>
       </BackgroundImage>
 
-      <Container className="mt-5 flex flex-col items-center justify-center gap-6 pb-10 text-16 text-black tablet:hidden tablet:text-18 desktop:text-justify">
+      <Container className="mt-5 flex flex-col items-center justify-center gap-6 pb-10 text-16 text-textDarkGreen tablet:hidden tablet:text-18 desktop:text-justify">
         <AboutUs />
       </Container>
     </section>

@@ -29,7 +29,7 @@ export const TaxSection = () => (
       przekazać na ważny cel.
     </p>
 
-    <Heading variant="h4" color="green" contrast="black">
+    <Heading variant="h4" color="green" contrast="yellow">
       Jak przekazać 1,5%?
     </Heading>
     <DonationInstructions />

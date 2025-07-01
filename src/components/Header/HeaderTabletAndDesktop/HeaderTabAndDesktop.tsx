@@ -7,7 +7,7 @@ import { HeaderNavigation } from "./HeaderNavigation";
 
 export const HeaderTabAndDesktop = () => (
   <div
-    className="hidden items-center justify-between gap-2 py-5 tablet:flex"
+    className="hidden items-center justify-around gap-2 py-5 tablet:flex desktop:mt-4"
     data-testid="header-tab-desktop"
   >
     <HeaderLogo aria-label="Logo strony głównej" />

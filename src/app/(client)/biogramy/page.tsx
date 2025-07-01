@@ -7,7 +7,7 @@ import { people } from "./data/peopleList";
 
 export default function BiogramsPage() {
   return (
-    <div className="bg-backgroundMain pb-20 text-greenMain">
+    <div className="pb-20">
       <Container
         as="article"
         className="flex flex-col gap-10 pb-6 tablet:gap-14 tablet:pb-36"

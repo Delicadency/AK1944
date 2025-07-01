@@ -14,7 +14,7 @@ export const LegalInfo = () => (
       Informacje prawne
     </h2>
 
-    <InfoList className="font-source-sans text-lg text-greenMain">
+    <InfoList className="font-source-sans text-lg text-textDarkGreen">
       <InfoItem icon={<IconBriefcase className="h-8 w-8" />} label="NIP:">
         {AK_DATA.NIP}
       </InfoItem>

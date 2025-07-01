@@ -111,11 +111,15 @@ interface SubmenuProps {
 const Submenu = ({ items, parentLabel, onLinkClick, id }: SubmenuProps) => (
   <ul
     id={id}
-    className="absolute z-50 mt-2 flex w-[243px] flex-col gap-5 bg-greenB p-4 shadow-lg contrast:bg-yellowContrast"
+    className="absolute z-50 flex w-[243px] flex-col bg-greenB shadow-lg"
     aria-label={`Podmenu dla ${parentLabel}`}
   >
     {items.map(({ label, href }, index) => (
-      <li key={index} className="mb-2" aria-label={`Podmenu: ${label}`}>
+      <li
+        key={index}
+        className="p-4 contrast:border-x-2 contrast:border-y-[1px] contrast:border-yellowContrast contrast:hover:bg-[#262827]"
+        aria-label={`Podmenu: ${label}`}
+      >
         <NavLink href={href} label={label} onClick={onLinkClick} />
       </li>
     ))}

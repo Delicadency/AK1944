@@ -37,7 +37,7 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
       <div className="absolute left-0 top-1/2 z-10 -translate-y-1/2">
         <button
           onClick={handlePrev}
-          className="rounded-sm bg-greenB p-2 hover:bg-green-800"
+          className="hover:bg-green-800 rounded-sm bg-greenB p-2"
           aria-label="Poprzednie zdjęcie"
         >
           <Image
@@ -53,7 +53,7 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
       <div className="absolute right-0 top-1/2 z-10 -translate-y-1/2">
         <button
           onClick={handleNext}
-          className="rounded-sm bg-greenB p-2 hover:bg-green-800"
+          className="hover:bg-green-800 rounded-sm bg-greenB p-2"
           aria-label="Kolejne zdjęcie"
         >
           <Image

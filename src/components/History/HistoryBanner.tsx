@@ -11,7 +11,7 @@ export const HistoryBanner = () => (
     alt="Historyczne zdjęcie 5. Pułku Strzelców Konnych"
     src="/images/history/main/history_bg.webp"
     fill
-    className="absolute z-0 object-cover desktop:object-fill"
+    className="absolute z-0 object-cover contrast:hidden desktop:object-fill"
     priority
   >
     <Container className="pb-36 desktop:h-[912px]" as="section">
@@ -24,7 +24,7 @@ export const HistoryBanner = () => (
       >
         {title}
       </Heading>
-      <div className="max-w-[700px] rounded-md bg-black00/10 p-[15px] font-sourceSans text-lg text-white contrast:bg-black00/40 contrast:text-yellowContrast desktop:flex desktop:flex-col desktop:gap-6">
+      <div className="max-w-[700px] rounded-md bg-black00/10 p-[15px] font-sourceSans text-lg text-white contrast:bg-black00/40 desktop:flex desktop:flex-col desktop:gap-6">
         {description.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}

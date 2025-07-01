@@ -5,12 +5,12 @@ import AboutUsLandingCard from "../shared/AboutUsLandingCard/AboutUsLandingCard"
 import { Routes } from "@/routes";
 
 export const AboutUsLanding = () => (
-  <section className="pb-10 contrast:bg-black00">
+  <section className="pb-10">
     <Container className="flex flex-col items-center gap-10 py-10 tablet:gap-6 tablet:px-9 tablet:py-12 desktop:px-[314px]">
       <Heading color="green" contrast="yellow" underline>
         O nas
       </Heading>
-      <p className="text-base contrast:text-yellowContrast tablet:text-center desktop:pb-4">
+      <p className="text-base tablet:text-center desktop:pb-4">
         Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK) to organizacja
         skupiająca byłych żołnierzy Armii Krajowej oraz ich sympatyków. Powstała
         w 1990 roku i ma na celu upamiętnienie dziedzictwa AK, ochronę dobrego
@@ -22,7 +22,7 @@ export const AboutUsLanding = () => (
         label="Poznajmy się"
         href={Routes.ABOUT}
         ariaDescription="Poznajmy się"
-        variant="primaryBlue"
+        variant="primary"
       />
     </Container>
     <div className="flex w-full flex-col gap-10 tablet:snap-mandatory tablet:flex-row tablet:overflow-x-auto tablet:scroll-smooth tablet:px-11 desktop:mx-auto desktop:max-w-[1440px] desktop:items-center desktop:justify-center desktop:gap-6 desktop:overflow-x-hidden desktop:px-28">

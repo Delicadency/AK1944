@@ -42,20 +42,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pl" data-lt-installed="true">
+    <html
+      lang="pl"
+      data-lt-installed="true"
+      className="scroll-pt-20 scroll-smooth tablet:scroll-pt-[136px]"
+    >
       <body
         className={cn(
           figtree.variable,
           lora.variable,
           sourceSans.variable,
-          "bg-backgroundMain text-greenMain antialiased contrast:bg-black00 contrast:text-yellowContrast",
+          "bg-backgroundMain text-textDarkGreen antialiased",
         )}
       >
-        <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <div className="flex min-h-screen flex-col">
+          <ThemeProvider>
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </div>
         <Analytics />
         <SpeedInsights />
       </body>

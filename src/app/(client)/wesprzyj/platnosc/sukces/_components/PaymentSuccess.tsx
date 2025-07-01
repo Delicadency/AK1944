@@ -9,16 +9,16 @@ interface Props {
 
 export const PaymentSuccess = ({ signature, amount }: Props) => (
   <div className="flex flex-col items-center gap-6 px-4 text-center tablet:px-6">
-    <IconCheckSquare className="size-16 text-green-500" />
+    <IconCheckSquare className="size-16 text-textDarkGreen" />
     <div className="space-y-2">
       <h1 className="text-2xl font-bold">
         {signature}, dziękujemy za wsparcie!
       </h1>
-      <p className="text-lg text-gray-600">
+      <p className="text-lg text-grayDate">
         Twoja wpłata w wysokości {formatPrice(amount / 100)} została
         zrealizowana pomyślnie.
       </p>
-      <p className="text-gray-600">
+      <p className="text-grayDate">
         Dzięki Twojemu wsparciu możemy kontynuować naszą misję upamiętniania
         historii Armii Krajowej.
       </p>

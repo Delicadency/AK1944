@@ -17,14 +17,14 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
         src="/images/history/main/paper_bg.webp"
         width="768"
         height="948"
-        className="absolute object-fill"
+        className="absolute object-fill contrast:hidden"
         aria-hidden="true"
       >
-        <div className="mx-auto w-full max-w-[767px] px-6 py-12 contrast:bg-yellowContrast mobile:pt-28 tablet:max-w-[1279px] tablet:pt-0 desktop:max-w-[1440px] desktop:px-18 desktop:py-18">
-          <Heading variant="h2" contrast="black" color="green">
+        <div className="mx-auto w-full max-w-[767px] px-6 py-12 mobile:pt-28 tablet:max-w-[1279px] tablet:pt-0 desktop:max-w-[1440px] desktop:px-18 desktop:py-18">
+          <Heading variant="h2" contrast="yellow" color="green">
             {biogram.title}
           </Heading>
-          <Heading className="h4" contrast="black" color="greenB">
+          <Heading className="h4" contrast="yellow" color="greenB">
             ps. {biogram.pseudonym.map((p: string) => `"${p}"`).join(", ")}
           </Heading>
 
@@ -60,7 +60,7 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
                 {biogramData.map((item, index) => (
                   <div key={index}>
                     <span>{item.label}&nbsp;</span>
-                    <span className="font-bold text-greenMain">
+                    <span className="font-bold text-textDarkGreen">
                       {item.value}
                     </span>
                   </div>
@@ -71,7 +71,7 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
                 {biogram.description.map((paragraph, idx) => (
                   <p
                     key={idx}
-                    className="my-6 font-courier text-18 text-greenMain"
+                    className="my-6 font-courier text-18 text-textDarkGreen"
                   >
                     {paragraph}
                   </p>
@@ -84,7 +84,7 @@ export const BiogramHistory = ({ biogram }: BiogramHistoryProps) => {
               biogram.descriptionSecond.map((paragraph, idx) => (
                 <p
                   key={idx}
-                  className="my-6 font-courier text-18 text-greenMain"
+                  className="my-6 font-courier text-18 text-textDarkGreen"
                 >
                   {paragraph}
                 </p>

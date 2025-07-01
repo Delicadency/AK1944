@@ -16,7 +16,7 @@ interface Props {
 export const HeaderMobileMenu = ({ onClose }: Props) => (
   <Container>
     <div
-      className="relative size-full w-screen bg-greenB contrast:bg-yellowContrast"
+      className="relative size-full w-screen bg-greenB"
       aria-label="Menu"
       aria-roledescription="Menu"
     >
@@ -24,7 +24,7 @@ export const HeaderMobileMenu = ({ onClose }: Props) => (
         <HeaderLogo />
 
         <p
-          className="h-8 w-[135px] text-center font-courier text-14 text-white contrast:text-black00"
+          className="h-10 w-[135px] text-center font-courier text-14 text-white transition duration-300"
           aria-label="Światowy Związek Żołnierzy Armii Krajowej"
         >
           Światowy Związek Żołnierzy AK
@@ -36,7 +36,7 @@ export const HeaderMobileMenu = ({ onClose }: Props) => (
           aria-label="Zamknij menu"
           onClick={onClose}
         >
-          <IconXCircle className="text-greenC transition duration-300 hover:text-backgroundMain active:scale-110 contrast:text-black00" />
+          <IconXCircle className="text-textLightGreen transition duration-300 active:scale-110" />
         </button>
       </div>
 

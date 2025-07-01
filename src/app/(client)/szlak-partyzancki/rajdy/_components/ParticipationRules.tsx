@@ -16,7 +16,7 @@ export const ParticipationRules = ({ rally }: RulesProps) => {
   const sections = getRallySections(rally);
 
   return (
-    <div className="bg-backgroundMain pb-20 text-greenMain">
+    <div className="pb-20">
       <Container
         as="article"
         className="flex flex-col gap-10 pb-6 tablet:gap-8 tablet:pb-36"
@@ -40,7 +40,8 @@ export const ParticipationRules = ({ rally }: RulesProps) => {
               iconName={btn.iconName as IconName}
               href={btn.href}
               ariaDescription={btn.label}
-              variant="lightGreen"
+              variant="secondary"
+              className="text-textDarkGreen"
             />
           ))}
           <Button
@@ -49,6 +50,7 @@ export const ParticipationRules = ({ rally }: RulesProps) => {
             iconName="send"
             ariaDescription="Zapisz się na rajd"
             variant="primaryBlue"
+            disabled
           />
         </div>
 
@@ -69,6 +71,7 @@ export const ParticipationRules = ({ rally }: RulesProps) => {
           ariaDescription="Zapisz się na rajd"
           variant="primaryBlue"
           className="mx-auto tablet:mx-0"
+          disabled
         />
       </Container>
     </div>

@@ -18,18 +18,19 @@ export const CalendarCard = ({ withButton = false }: Props) => {
   const dayInWords = currentDate.toLocaleString("pl-PL", { weekday: "long" });
 
   return (
-    <div className="flex items-center justify-center overflow-hidden px-0 tablet:px-0 desktop:px-0">
+    <div className="flex items-center justify-center overflow-hidden px-0 contrast:border-2 contrast:border-b-yellowContrast tablet:px-0 desktop:px-0">
       <BackgroundImage
         alt="calendar background"
         src="/images/calendar_background.png"
         fill
+        className="contrast:hidden"
       >
         <Container className="flex w-[284px] flex-col items-center justify-center py-4 font-lora">
           <h4 className="text-24 font-bold" aria-label="Rok i miesiąc">
             {currentMonth} {currentYear}
           </h4>
           <hr
-            className="mt-5 w-full border border-solid border-redMain contrast:border-black"
+            className="mt-5 w-full border border-solid border-redMain contrast:border-yellowContrast"
             aria-hidden
           />
           <p
@@ -42,7 +43,7 @@ export const CalendarCard = ({ withButton = false }: Props) => {
             {dayInWords}
           </p>
           <hr
-            className="my-5 w-full border border-solid border-redMain contrast:border-black"
+            className="my-5 w-full border border-solid border-redMain contrast:border-yellowContrast"
             aria-hidden
           />
           {eventForToday?.title && (
@@ -54,7 +55,7 @@ export const CalendarCard = ({ withButton = false }: Props) => {
           )}
           {withButton && (
             <Button
-              variant="primaryBlue"
+              variant="primary"
               label="Kalendarz uroczystości"
               ariaDescription="Kalendarz uroczystości"
               href={Routes.CALENDAR}
