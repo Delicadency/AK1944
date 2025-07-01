@@ -32,7 +32,7 @@ describe("HeaderMobile", () => {
   it("renders the text with correct classes", () => {
     render(<HeaderMobile />);
     expect(screen.getByText("Światowy Związek Żołnierzy AK")).toHaveClass(
-      "h-8 w-[135px] text-center font-courier text-14 text-white",
+      "h-10 w-[135px] text-center font-courier text-14 text-white",
     );
   });
 
