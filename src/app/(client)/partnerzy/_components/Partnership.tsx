@@ -10,7 +10,7 @@ export const Partnership = () => (
 
     <p className="text-center font-courier text-lg/5">
       Po nitce wspólnej pamięci – razem zadbajmy, aby historia Armii Krajowej
-      nigdy nie zostanie zapomniana!
+      nigdy nie została zapomniana!
     </p>
   </section>
 );
