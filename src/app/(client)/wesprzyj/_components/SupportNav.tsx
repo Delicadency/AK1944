@@ -21,21 +21,21 @@ const navItems = [
   {
     label: "Przekaż 1,5% podatku",
     icon: <TaxIcon />,
-    href: "#tax-section",
+    href: "#podatek",
   },
   {
     label: "Wpłać darowiznę",
     icon: <DonationIcon />,
-    href: "#donation-section",
+    href: "#dotacja",
   },
   {
     label: "Zostań partnerem",
     icon: <PartnerIcon />,
-    href: "#partner-section",
+    href: "#partner",
   },
   {
     label: "Skontaktuj się",
     icon: <ContactIcon />,
-    href: "#contact-section",
+    href: "#kontakt",
   },
 ] as const;

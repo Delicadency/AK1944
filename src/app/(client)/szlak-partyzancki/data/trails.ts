@@ -52,7 +52,7 @@ export const trails: Record<TrailSlug, TrailData> = {
           "28 lipca 1944 r. dom rodzinny porucznika Ludwika Kubika „Lucjana” zamieniono na kwaterę dowództwa I Zgrupowania Obwodu AK Dębica. Na budynku zawieszono biało-czerwone flagi. Koncentrujący się akowcy rozbili obóz, zaciągnęli straże, ubezpieczenia i przystąpili do realizacji działań bojowych. Ustalono najdogodniejsze miejsca do ataku na szosę Ropczyce-Sędziszów. Małymi patrolami przeprowadzano dalekie rozpoznanie. Wykonano kilka wypadów, by zdobyć broń. Nocą z 31 lipca na 1 sierpnia 1944 r. zrealizowano akcję „Lena”, wysadzając w powietrze oba tory kolejowe na odcinku Ropczyce-Brzezówka.",
       },
       {
-        point: "Punkt Las Trzemeczna",
+        point: "Punkt Las Czemeczna",
         description:
           "Latem 1944 r. las w rejonie Gnojnicy Lipnicy stał się bazą żołnierzy AK I Zgrupowania Obwodu Dębica, realizujących akcję „Burza”. Po walkach stoczonych w dniu 4 sierpnia i kontrataku Niemców, akowcy musieli się wycofać. Stąd przeprowadzali wypady na samochody nieprzyjaciela, ułatwiali też działania nacierającym oddziałom Armii Czerwonej. Podczas jednej z akcji zginęli Władysław Jarząb i Czesław Mikowski. Duże zaangażowanie wykazywali zaprzysiężeni w szeregi AK leśnicy. Opiekowali się organizacyjną radiostacją i magazynowali rzeczy ewakuowane z Zakładów Przemysłowych w Sędziszowie Młp. i majątków ziemskich.",
       },
@@ -102,7 +102,7 @@ export const trails: Record<TrailSlug, TrailData> = {
           "28 lipca 1944 r. przed wyruszeniem do działań akcji „Burza” na polanie leśnej w „Sośninie” Helena Eugenia Kozek „Myszka” członkini Wojskowej Służby Kobiet wręczyła żołnierzom AK opaski biało-czerwone oraz środki opatrunkowe wykonane przez nią i jej koleżanki. Komendantką WSK w Podobwodzie AK Sędziszów „Sława” była Józefa Depa Fitoł „Horpyna”, a jej zastępczynią  Apolonia Pondo „Justyna”. Dziewczęta z WSK latem 1944 r. były nieocenionym wsparciem dla akowców walczących w akcji „Burza”. Dbały o prowiant i wyżywienie. Pełniły służbę kurierską i sanitarną, niosąc doraźną pomoc rannym kolegom, wielokrotnie transportowały ich do szpitali.",
       },
       {
-        point: "Punkt Podlasek",
+        point: "Punkt Krzyż Milenijny Podlasek",
         description:
           "4 sierpnia 1944 r. pluton Mieczysława Stachowskiego „Sępa” po przebiciu się za sowiecką linię frontu w celu uniknięcia dalszych strat, wycofał się. Akowcy skrajem lasu przemieszczali się przez Podlasek w kierunku Sędziszowa Młp. Wychodząca na otwarty teren szpica oddziału została zaatakowana ogniem niemieckich karabinów maszynowych i granatników. W tym samym czasie z tyłu omyłkowo ostrzelali ich Sowieci. Po wycofaniu się do lasu akowcy przemaszerowali do szkoły w Iwierzycach, gdzie umyli się i przespali. W konsekwencji ostrzału ranny został Ludwik Baran „Most”, którego koledzy zdołali bezpiecznie wynieść i opatrzyć.",
       },
@@ -157,12 +157,12 @@ export const trails: Record<TrailSlug, TrailData> = {
           'Na cmentarzu w Gumniskach podczas okupacji znajdował się ukryty magazyn broni. Dziś w tym miejscu, pośrodku cmentarza znajduje się grobowiec poległych w czasie akcji "Burza" partyzantów Armii Krajowej, których ciała ekshumowano tutaj po wojnie. Na cmentarzu warto poświęcoć czas mna chwilę zadumy przy pięknej drewnianej kapliczce katyńskiej, wykonanej przez miejscowego rzeźbiarza, Stanisława Nylca.',
       },
       {
-        point: "Punkt Leśniczówka Berdech",
+        point: "Punkt Berdech",
         description:
           'W tym miejscu rozpoczyna się drugi etap naszego szlaku. Na terenie leśniczówki, 28 lipca 1944 r., miała miejsce koncentracja oddziałów II Zgrupowania AK Obwodu Dębica do akcji "Burza\. W tym czasie - pisał Antoni Stańko, leśnictwo zamieniło się w warowny obóz. Rozstawione posterunki i lotne patrole broniły obcym dostępu. Budynki i dziedziniec pełne były broni i oporządzenia, materiałów wojskowych, żywności... Dziś na Berdechu znajduje się nowa leśniczówka, która chętnie gości weteranów Armii Krajowej oraz młodzież.',
       },
       {
-        point: "Punkt Gajówka Wł. Klabachy",
+        point: "Punkt Klabachówka",
         description:
           "Po wyjściu z berdechowskiego lasu szlak wiedzie piękną polną drogą w kierunku Południka. Wokół nas roztacza się niesamowita panorama łąk i pól. Dochodzimy do miejsca w którym niegdyś mieściła się gajówka Władysława Klabachy, miejsce spotkań łączników i magazyn broni. Z uwagi na zagrożenie dekonspiracją leśniczówki na Berdechu, dowództwo zdecydowało się przenieść na krótki czas, sztab II Zgrupowania do gajówki Władysława Klabachy na Południku. Obecnie po zabudowaniach gajówki nie ma już śladu, wokół znajdują się tylko dzikie drzewa, niektóre zapewne pamiętają jeszcze tamte dni. Szlak tymczasem zanurza się w las w kierunku jaru.",
       },
@@ -187,7 +187,7 @@ export const trails: Record<TrailSlug, TrailData> = {
           "Punkt ten znajduje się w Gołęczynie, poza znakowaną trasą szlaku. W czasie wojny znajdowały się tutaj zabudowania leśniczówki Stanisława Zborżila „Sosny”. Tam stacjonował sztab III Zgrupowania AK Obwodu Dębica. Rankiem, 20 sierpnia 1944 r. zabudowania Zborżilówki zostały otoczone przez duży oddział niemiecki. Wywiązała się walka w czasie której zginęło wielu żołnierzy III Zgrupowania. Śmiertelnie raniony został także kpt. Józef Lutak „Dyzma”, oficer dywersji Inspektoratu AK Rzeszów, uważany za najdzielniejszego partyzanta na Rzeszowszczyźnie. Jego pogrzeb, z honorami wojskowymi, odbył się dwa dni później na Kałużówce.",
       },
       {
-        point: "Punkt Krzyż „Miecza”",
+        point: "Punkt Miecza",
         description:
           'Miejsce to upamiętnia najsłynniejszą akcję dywersyjną przeprowadzoną w czasie "Burzy" w Obwodzie Dębica. 12 sierpnia 1944 r. oddział niemiecki w sile batalionu przystąpił do pacyfikacji mieszkańców Braciejowej i Gumnisk. Na pomoc bezbronnej ludności wyruszyła z lasów grupa dywersyjna Władysława Strumskiego pod dowództwem kpt. Józefa Lutaka „Dyzmy”. Dynamicznie przeprowadzona akcja zakończyła się spektakularnym sukcesem. Niemcy pomimo kilkukrotnej przewagi liczebnej, musieli ratować się ucieczką. W czasie tych działań zginął żołnierz oddziału dyspozycyjnego, Stanisław Mroczka ps. „Miecz”. Krzyż w Gumniskach upamiętnia brawurową akcję żołnierzy dębickiej dywersji, a punkt ten kończy trasę Szlaku Partyzanckiego.',
       },

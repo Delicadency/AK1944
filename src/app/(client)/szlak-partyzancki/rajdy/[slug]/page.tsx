@@ -1,6 +1,6 @@
-import { participationInRallyRulesData } from "../../data/participationInRallyRulesData";
-import { ParticipationRules } from "../../_components/ParticipationRules";
 import { ComingSoon } from "@/components/ComingSoon/ComingSoon";
+import { participationInRallyRulesData } from "../data/participationInRallyRulesData";
+import { ParticipationRules } from "../_components/ParticipationRules";
 
 type PageProps = {
   params: Promise<{ slug: string }>;

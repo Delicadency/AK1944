@@ -23,6 +23,7 @@ export const SectionList: React.FC<SectionListProps> = ({
   items,
   listType,
 }) => {
+  if (!items) return null;
   const renderItem = (item: string, index: number) => {
     switch (listType) {
       case "number":
