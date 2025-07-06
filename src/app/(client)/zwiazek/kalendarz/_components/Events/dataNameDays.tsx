@@ -1,3 +1,5 @@
+import { pad } from "@/app/(client)/zwiazek/kalendarz/_utils/pad";
+
 export interface NameDay {
   id: string;
   date: string;
@@ -13,8 +15,8 @@ export const getNameDaysForDate = (date: string): string[] => {
 // Funkcja pomocnicza do znajdowania imienin dla dzisiejszego dnia
 export const getTodaysNameDays = (): string[] => {
   const today = new Date();
-  const day = today.getDate().toString().padStart(2, "0");
-  const month = (today.getMonth() + 1).toString().padStart(2, "0");
+  const day = pad(today.getDate());
+  const month = pad(today.getMonth() + 1);
   const dateString = `${day}.${month}`;
 
   return getNameDaysForDate(dateString);
