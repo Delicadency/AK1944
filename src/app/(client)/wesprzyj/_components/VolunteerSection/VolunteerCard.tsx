@@ -3,13 +3,17 @@ import { SupportCard } from "../SupportCard";
 import { Button } from "@/components/shared/Button/Button";
 import { Routes } from "@/routes";
 
-export const VolunteerCard = () => (
+interface Props {
+  buttonText?: string;
+  href?: string;
+}
+
+export const VolunteerCard = ({
+  buttonText = "Zostań wolontariuszem",
+  href = Routes.VOLUNTEERS,
+}: Props) => (
   <SupportCard className="space-y-4">
     <VoluntaryIcon />
-    <Button
-      href={Routes.VOLUNTEERS}
-      label="Zostań wolontariuszem"
-      ariaDescription="Zostań wolontariuszem"
-    />
+    <Button href={href} label={buttonText} ariaDescription={buttonText} />
   </SupportCard>
 );
