@@ -1,12 +1,15 @@
-import { IconGift } from "@/icons/IconGift";
+import { VoluntaryIcon } from "@/icons/VoluntaryIcon";
 import { SupportCard } from "../SupportCard";
-import { CardHeader } from "../SupportCard/CardHeader";
+import { Button } from "@/components/shared/Button/Button";
+import { Routes } from "@/routes";
 
 export const VolunteerCard = () => (
-  <SupportCard>
-    <CardHeader>Zostań wolontariuszem:</CardHeader>
-    <div className="mt-3 flex justify-center desktop:mt-4">
-      <IconGift className="size-16 text-greenMain tablet:size-20 desktop:size-24" />
-    </div>
+  <SupportCard className="space-y-4">
+    <VoluntaryIcon />
+    <Button
+      href={Routes.VOLUNTEERS}
+      label="Zostań wolontariuszem"
+      ariaDescription="Zostań wolontariuszem"
+    />
   </SupportCard>
 );

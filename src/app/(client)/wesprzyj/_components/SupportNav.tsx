@@ -1,5 +1,5 @@
 import { PartnerIcon } from "@/icons/PartnerIcon";
-import { IconGift } from "@/icons/IconGift";
+import { VoluntaryIcon } from "@/icons/VoluntaryIcon";
 import { ContactIcon } from "./icons/ContactIcon";
 import { DonationIcon } from "./icons/DonationIcon";
 import { TaxIcon } from "./icons/TaxIcon";
@@ -36,7 +36,7 @@ const navItems = [
   },
   {
     label: "Zostań wolontariuszem",
-    icon: <IconGift />,
+    icon: <VoluntaryIcon />,
     href: "#volunteer-section",
   },
   {
