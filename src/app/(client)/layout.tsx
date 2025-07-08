@@ -3,8 +3,6 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
 import ThemeProvider from "@/context/ThemesProvider";
-import { Header } from "@/components/Header/Header";
-import { Footer } from "@/components/Footer/Footer";
 import { cn } from "@/utils";
 import "./globals.css";
 
@@ -42,29 +40,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="pl"
-      data-lt-installed="true"
-      className="scroll-pt-20 scroll-smooth tablet:scroll-pt-[136px]"
+    <div
+      className={cn(
+        figtree.variable,
+        lora.variable,
+        sourceSans.variable,
+        "scroll-pt-20 scroll-smooth bg-backgroundMain text-textDarkGreen antialiased tablet:scroll-pt-[136px]",
+      )}
     >
-      <body
-        className={cn(
-          figtree.variable,
-          lora.variable,
-          sourceSans.variable,
-          "bg-backgroundMain text-textDarkGreen antialiased",
-        )}
-      >
-        <div className="flex min-h-screen flex-col">
-          <ThemeProvider>
-            <Header />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </ThemeProvider>
-        </div>
-        <Analytics />
-        <SpeedInsights />
-      </body>
-    </html>
+      <div className="flex min-h-screen flex-col">
+        <ThemeProvider>
+          <main className="flex-grow">{children}</main>
+        </ThemeProvider>
+      </div>
+      <Analytics />
+      <SpeedInsights />
+    </div>
   );
 }
