@@ -7,7 +7,7 @@ export const allRallies: Rally[] = [
     title: "Odsłonięcie pomnika Ludwika Marszałka w Dębicy",
     date: "10 lutego, 2024",
     description:
-      "Zapraszamy na uroczystość odsłnięcia pomnika Ludwika Marszałka i zamordowanych członków Zrzeszenia „Wolność i Niezawisłość” z Obwodu SZP-ZWZ-AK Dębica. Uroczystość odbędzie się 3 marca 2024 roku w Dębicy. Program uroczystości obejmuje m.in. mszę świętą, odsłonięcie pomnika, apel pamięci oraz galę z okazji odsłonięcia pomnika.",
+      "Zapraszamy na uroczystość odsłonięcia pomnika Ludwika Marszałka i zamordowanych członków Zrzeszenia „Wolność i Niezawisłość” z Obwodu SZP-ZWZ-AK Dębica. Uroczystość odbędzie się 3 marca 2024 roku w Dębicy. Program uroczystości obejmuje m.in. mszę świętą, odsłonięcie pomnika, apel pamięci oraz galę z okazji odsłonięcia pomnika.",
     imageUrl: "/images/placeholder_image.png",
   },
   {
