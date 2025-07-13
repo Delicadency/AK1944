@@ -1,17 +1,17 @@
+import "./(client)/globals.css";
 import { Routes } from "@/routes";
 import { Button } from "@/components/shared/Button/Button";
-import Image from "next/image";
-import "./(client)/globals.css";
+import { NotFoundIcon } from "@/icons/NotFoundIcon";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-backgroundMain px-4 text-center font-lora font-bold text-greenMain">
+    <main className="flex min-h-screen flex-col items-center justify-center px-4 text-center font-lora font-bold">
       <h1 className="mb-10 text-20 desktop:mb-20 desktop:text-40">
         Zapis nie został odnaleziony…
       </h1>
 
-      <div className="relative mb-20">
-        <Image src="/images/404.png" alt="Błąd 404" width="860" height="218" />
+      <div className="relative mb-20 w-full max-w-[860px] px-4">
+        <NotFoundIcon />
       </div>
 
       <p className="mb-10 max-h-[72px] text-12 leading-relaxed desktop:mb-20 desktop:text-28">
