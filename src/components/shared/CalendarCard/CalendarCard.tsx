@@ -3,6 +3,7 @@ import { BackgroundImage } from "@/components/shared/BackgroundImage/BackgroundI
 import { Button } from "@/components/shared/Button/Button";
 import { getEventForToday } from "@/app/(client)/zwiazek/kalendarz/_utils/getEventsForToday";
 import Container from "@/components/shared/Container";
+import { getTodaysNameDays } from "@/app/(client)/zwiazek/kalendarz/_components/Events/dataNameDays";
 
 interface Props {
   withButton?: boolean;
@@ -25,7 +26,7 @@ export const CalendarCard = ({ withButton = false }: Props) => {
         fill
         className="contrast:hidden"
       >
-        <Container className="flex w-[284px] flex-col items-center justify-center py-4 font-lora">
+        <Container className="flex min-h-[400px] w-[284px] flex-col items-center justify-start py-4 font-lora">
           <h4 className="text-24 font-bold" aria-label="Rok i miesiąc">
             {currentMonth} {currentYear}
           </h4>
@@ -46,10 +47,19 @@ export const CalendarCard = ({ withButton = false }: Props) => {
             className="my-5 w-full border border-solid border-redMain contrast:border-yellowContrast"
             aria-hidden
           />
-          {eventForToday?.title && (
+          {eventForToday?.title ? (
             <div className="flex flex-col items-center">
               <p className="relative mb-5 font-sans text-16 leading-normal tracking-tight">
                 <b>{eventYear}</b> - {eventForToday?.title}
+              </p>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center">
+              <p className="relative mb-5 font-sans text-16 leading-normal tracking-tight">
+                Imieniny obchodzą:
+              </p>
+              <p className="relative mb-5 font-sans text-16 leading-normal tracking-tight">
+                {getTodaysNameDays().join(", ")}
               </p>
             </div>
           )}
