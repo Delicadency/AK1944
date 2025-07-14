@@ -4,7 +4,7 @@ import { Button } from "@/components/shared/Button/Button";
 import Container from "@/components/shared/Container";
 import { Heading } from "@/components/shared/Heading/Heading";
 import { Suspense } from "react";
-import { mainText } from "./data/rallyTextData";
+import { mainTextFirst, mainTextTwo } from "./data/rallyTextData";
 import { RallyList } from "./_components/RallyList";
 
 type PageProps = {
@@ -26,7 +26,8 @@ export default function RalliesPage({ searchParams }: PageProps) {
         <Heading variant="h2" color="green" contrast="yellow">
           Rajdy
         </Heading>
-        <p className="py-3 font-sourceSans text-18">{mainText}</p>
+        <p className="py-3 font-sourceSans text-18">{mainTextFirst}</p>
+        <p className="py-3 font-sourceSans text-18">{mainTextTwo}</p>
         <Button
           label="Zapisz się na rajd"
           href={""}

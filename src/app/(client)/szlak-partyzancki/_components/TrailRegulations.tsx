@@ -7,7 +7,7 @@ export const TrailRegulations = () => {
   return (
     <div className="flex flex-col gap-10 pb-7">
       <Heading color="white" contrast="yellow" className="max-w-[490px]">
-        Regulanim korzystania ze Szlaku Partyzanckiego
+        Regulamin korzystania ze Szlaku Partyzanckiego
       </Heading>
       <QuoteSection
         quote={quotes.find((q) => q.id === "intro")!}

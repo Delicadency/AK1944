@@ -58,7 +58,7 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
               <div className="flex flex-wrap gap-5">
                 <Button
                   label="Zasady uczestnictwa"
-                  href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
+                  href={`/szlak-partyzancki/rajdy/${rally.slug}`}
                   ariaDescription={`Zasady uczestnictwa dla ${rally.title}`}
                   variant="secondary"
                   className="text-textDarkGreen"

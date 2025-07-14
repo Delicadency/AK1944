@@ -11,19 +11,19 @@ export const buttons: ButtonLink[] = [
     href: "#cele-rajdu",
   },
   {
-    iconName: "compass",
-    label: "Warunki turystyczne szlaku i zalecenia dla uczestników",
-    href: "#warunki-szlaku",
-  },
-  {
     iconName: "help",
     label: "Informacja o warunkach uczestnictwa",
     href: "#warunki-uczestnictwa",
   },
   {
+    iconName: "compass",
+    label: "Warunki turystyczne szlaku i zalecenia dla uczestników",
+    href: "#warunki-szlaku",
+  },
+  {
     iconName: "coffee",
-    label: "Operatorzy zapewniają",
-    href: "#operatorzy",
+    label: "Organizatorzy zapewniają",
+    href: "#organizatorzy",
   },
   {
     iconName: "gift",

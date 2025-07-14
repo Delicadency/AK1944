@@ -4,7 +4,7 @@ import { ContactCard } from "./ContactCard";
 
 export const ContactSection = () => (
   <SupportSection
-    id="contact-section"
+    id="kontakt"
     title="Skontaktuj się z nami"
     card={<ContactCard />}
   >

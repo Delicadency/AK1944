@@ -3,7 +3,7 @@ import { PartnerCard } from "./PartnerCard";
 
 export const PartnerSection = () => (
   <SupportSection
-    id="partner-section"
+    id="partner"
     title="Zostań naszym partnerem"
     card={<PartnerCard />}
   >
