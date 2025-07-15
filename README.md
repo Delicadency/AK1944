@@ -18,14 +18,8 @@ Jesteśmy zespołem młodych deweloperów, którzy rozwijają ten projekt charyt
 
 ## 🛠️ Technologie
 
-### Frontend
-- **Next.js 14** - React framework z SSR/SSG
-- **React 18** - Biblioteka do budowy UI
-- **TypeScript** - Statyczne typowanie
-- **Tailwind CSS** - Utility-first CSS framework
-
-### Narzędzia deweloperskie
-- **ESLint** - Linter dla JavaScript/TypeScript
-- **Prettier** - Formatowanie kodu
-- **Husky** - Git hooks
-- **Lint-staged** - Lintowanie przed commitem
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
