@@ -2,9 +2,9 @@
 
 ![Logo AK 1944](https://ak1944.pl/_next/image?url=%2Fimages%2FLogo_SZZAK.png&w=256&q=75)
 
-**🌐 [Odwiedź stronę: ak1944.pl](https://ak1944.pl)**
+**🌐 <a href="https://ak1944.pl" target="_blank">Odwiedź stronę: ak1944.pl</a>**
 
-## O projekcie  
+## O projekcie
 
 Ten projekt to nowoczesna wersja oficjalnej strony Światowego Związku Żołnierzy Armii Krajowej (ŚZŻAK). Celem jest:  
 Upamiętnienie bohaterów AK i popularyzacja historii  
