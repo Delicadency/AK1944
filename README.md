@@ -24,7 +24,7 @@ Jesteśmy zespołem młodych deweloperów, którzy rozwijają ten projekt charyt
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-## 🚀 Szybki start
+## 🚀 Jak uruchomić projekt lokalnie?  
 
 ```bash
 git clone https://github.com/Delicadency/AK1944.git
