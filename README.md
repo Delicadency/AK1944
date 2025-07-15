@@ -15,3 +15,17 @@ Zachowanie pamięci o przeszłości przy użyciu nowoczesnych technologii
 Stworzenie angażującej, responsywnej i łatwej w nawigacji strony 
 
 Jesteśmy zespołem młodych deweloperów, którzy rozwijają ten projekt charytatywnie, wykorzystując swoje umiejętności, by historia Armii Krajowej była dostępna dla kolejnych pokoleń.  
+
+## 🛠️ Technologie
+
+### Frontend
+- **Next.js 14** - React framework z SSR/SSG
+- **React 18** - Biblioteka do budowy UI
+- **TypeScript** - Statyczne typowanie
+- **Tailwind CSS** - Utility-first CSS framework
+
+### Narzędzia deweloperskie
+- **ESLint** - Linter dla JavaScript/TypeScript
+- **Prettier** - Formatowanie kodu
+- **Husky** - Git hooks
+- **Lint-staged** - Lintowanie przed commitem
