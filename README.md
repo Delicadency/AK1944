@@ -1,7 +1,8 @@
-Światowy Związek Żołnierzy Armii Krajowej – Oficjalna Strona
+# Światowy Związek Żołnierzy Armii Krajowej – Oficjalna Strona
+
 ![Logo AK 1944](https://ak1944.pl/_next/image?url=%2Fimages%2FLogo_SZZAK.png&w=256&q=75)
 
-O projekcie  
+## O projekcie  
 
 Ten projekt to nowoczesna wersja oficjalnej strony Światowego Związku Żołnierzy Armii Krajowej (ŚZŻAK). Celem jest:  
 Upamiętnienie bohaterów AK i popularyzacja historii  
