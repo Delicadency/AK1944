@@ -23,3 +23,12 @@ Jesteśmy zespołem młodych deweloperów, którzy rozwijają ten projekt charyt
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+# 🚀 Szybki start
+
+```bash
+git clone https://github.com/Delicadency/AK1944.git
+cd AK1944
+npm install
+npm run dev
+Otwórz http://localhost:3000 w przeglądarce.
