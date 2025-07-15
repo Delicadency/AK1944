@@ -2,7 +2,7 @@
 
 ![Logo AK 1944](https://ak1944.pl/_next/image?url=%2Fimages%2FLogo_SZZAK.png&w=256&q=75)
 
-**🌐 <a href="https://ak1944.pl" target="_blank">Odwiedź stronę: ak1944.pl</a>**
+**🌐 <a href="https://ak1944.pl" target="_blank" rel="noopener">Odwiedź stronę: ak1944.pl</a>**
 
 ## O projekcie
 
