@@ -6,20 +6,20 @@ import ThemeProvider from "@/context/ThemesProvider";
 import { Header } from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 import { cn } from "@/utils";
-import "./globals.css";
+import "./(client)/globals.css";
 
 const figtree = localFont({
-  src: "./fonts/Figtree-Variable.woff2",
+  src: "./(client)/fonts/Figtree-Variable.woff2",
   variable: "--font-figtree",
   weight: "400",
 });
 const lora = localFont({
-  src: "./fonts/Lora-Variable.woff2",
+  src: "./(client)/fonts/Lora-Variable.woff2",
   variable: "--font-lora",
   weight: "700",
 });
 const sourceSans = localFont({
-  src: "./fonts/SourceSans3-Variable.woff2",
+  src: "./(client)/fonts/SourceSans3-Variable.woff2",
   variable: "--font-source-sans",
   weight: "400 600",
 });
