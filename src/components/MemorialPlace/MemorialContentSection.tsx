@@ -9,15 +9,15 @@ export const MemorialContentSection = ({ place }: { place: PlaceDetails }) => (
       )}
 
       {Array.isArray(place.highlight) && (
-        <div className="mx-auto mb-1.5 max-w-[510px] space-y-8 rounded-md bg-greenLight p-4 px-8 py-5 contrast:bg-black00">
+        <div className="mx-auto mb-1.5 max-w-[510px] items-center justify-center space-y-8 rounded-md bg-greenLight p-4 px-8 py-5 contrast:bg-black00">
           {place.highlight.map((block, idx) => (
             <p
               key={idx}
               className={`whitespace-pre-line text-18 font-bold text-textLightGreen ${
-                block.align === "left"
-                  ? "text-left"
-                  : block.align === "right"
-                    ? "text-right"
+                block.align === "center"
+                  ? "text-center"
+                  : block.align === "left"
+                    ? "text-center"
                     : "text-center"
               }`}
               style={{

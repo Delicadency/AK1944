@@ -8,7 +8,7 @@ import { IconDollar } from "@/icons/IconDollar";
 export const LegalInfo = () => (
   <section
     aria-labelledby="legal-info"
-    className="mt-8 max-w-[260px] text-left tablet:mt-0"
+    className="mt-8 max-w-[350px] text-left tablet:mt-0"
   >
     <h2 id="legal-info" className="sr-only">
       Informacje prawne
