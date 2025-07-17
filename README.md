@@ -1,22 +1,22 @@
-# Światowy Związek Żołnierzy Armii Krajowej – Oficjalna Strona
+# Światowy Związek Żołnierzy Armii Krajowej – Official Website
 
 <a href="https://ak1944.pl">
   <img src="https://ak1944.pl/_next/image?url=%2Fimages%2FLogo_SZZAK.png&w=256&q=75" alt="Logo AK 1944">
 </a>
 
-**🌐 <a href="https://ak1944.pl">Odwiedź stronę: ak1944.pl</a>**
+**🌐 <a href="https://ak1944.pl">Visit page: ak1944.pl</a>**
 
-## O projekcie
+## About the project
 
-Ten projekt to nowoczesna wersja oficjalnej strony Światowego Związku Żołnierzy Armii Krajowej (ŚZŻAK). Celem jest:  
-Upamiętnienie bohaterów AK i popularyzacja historii  
-Udostępnienie wartościowych treści historycznych w przystępnej formie  
-Zachowanie pamięci o przeszłości przy użyciu nowoczesnych technologii  
-Stworzenie angażującej, responsywnej i łatwej w nawigacji strony 
+This project is a modern version of the official website for the World Union of Home Army Soldiers (ŚZŻAK). The goal is:
+Commemorating AK heroes and promoting history
+Making valuable historical content accessible in an approachable form
+Preserving memory of the past using modern technologies
+Creating an engaging, responsive, and easy-to-navigate website
 
-Jesteśmy zespołem młodych deweloperów, którzy rozwijają ten projekt charytatywnie, wykorzystując swoje umiejętności, by historia Armii Krajowej była dostępna dla kolejnych pokoleń.  
+are a team of young developers who are developing this project on a charitable basis, using our skills so that the history of the Home Army is accessible to future generations.
 
-## 🛠️ Technologie
+## 🛠️ Technologies
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -24,7 +24,7 @@ Jesteśmy zespołem młodych deweloperów, którzy rozwijają ten projekt charyt
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-## 🚀 Jak uruchomić projekt lokalnie?  
+## 🚀 How to run the project locally?
 
 ```bash
 git clone https://github.com/Delicadency/AK1944.git
