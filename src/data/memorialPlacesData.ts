@@ -4,6 +4,7 @@ import type { PlaceDetails } from "@/types";
 
 export const memorialPlaces: PlaceDetails[] = [
   {
+    id: 1,
     slug: "pomnik-pchor.-mariana-chmielewskiego",
     name: "Pomnik upamiętniający pchor. Mariana Chmielewskiego ps. „Maria”",
     location: "Dębica",
@@ -26,19 +27,79 @@ export const memorialPlaces: PlaceDetails[] = [
     descriptionContinuation: " ",
     image: "/images/memorial-places/place2.jpg",
   },
-  // {
-  //   slug: "",
-  //   name: "Miejsce 3",
-  //   location: "Lokalizacja miejsca 3",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
-  //   highlight: [
-  //     { text: "Pierwszy paragraf tekstu w zielonym polu", align: "center" },
-  //     { text: "Drugi paragraf", align: "left" },
-  //     { text: "Trzeci paragraf", align: "right" },
-  //   ],
-  //   descriptionContinuation: "Dalszy ciąg opisu miejsca.",
-  //   image: "/images/place3.jpg",
-  //   link: "/zwiazek/miejsca-pamieci/${slug}",
-  // },
+  {
+    id: 2,
+    slug: "p",
+    name: "Miejsce 3",
+    location: "Lokalizacja miejsca 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: [
+      { text: "Pierwszy paragraf tekstu w zielonym polu", align: "center" },
+      { text: "Drugi paragraf", align: "left" },
+      { text: "Trzeci paragraf", align: "right" },
+    ],
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
+    image: "/images/placeholder_image.png",
+  },
+  {
+    id: 3,
+    slug: "z",
+    name: "Miejsce 3",
+    location: "Lokalizacja miejsca 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: [
+      { text: "Pierwszy paragraf tekstu w zielonym polu", align: "center" },
+      { text: "Drugi paragraf", align: "left" },
+      { text: "Trzeci paragraf", align: "right" },
+    ],
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
+    image: "/images/placeholder_image.png",
+  },
+  {
+    id: 4,
+    slug: "x",
+    name: "Miejsce 3",
+    location: "Lokalizacja miejsca 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: [
+      { text: "Pierwszy paragraf tekstu w zielonym polu", align: "center" },
+      { text: "Drugi paragraf", align: "left" },
+      { text: "Trzeci paragraf", align: "right" },
+    ],
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
+    image: "/images/placeholder_image.png",
+  },
+  {
+    id: 5,
+    slug: "y",
+    name: "Miejsce 3",
+    location: "Lokalizacja miejsca 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: [
+      { text: "Pierwszy paragraf tekstu w zielonym polu", align: "center" },
+      { text: "Drugi paragraf", align: "left" },
+      { text: "Trzeci paragraf", align: "right" },
+    ],
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
+    image: "/images/placeholder_image.png",
+  },
+  {
+    id: 6,
+    slug: "i",
+    name: "Miejsce 3",
+    location: "Lokalizacja miejsca 3",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Vitae ornare odio et ullamcorper arcu cursus.",
+    highlight: [
+      { text: "Pierwszy paragraf tekstu w zielonym polu", align: "center" },
+      { text: "Drugi paragraf", align: "left" },
+      { text: "Trzeci paragraf", align: "right" },
+    ],
+    descriptionContinuation: "Dalszy ciąg opisu miejsca.",
+    image: "/images/placeholder_image.png",
+  },
 ];

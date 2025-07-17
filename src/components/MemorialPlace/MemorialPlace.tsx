@@ -25,7 +25,7 @@ export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
       {/* BUTTON */}
       <div className="mt-4 flex w-full justify-center desktop:hidden">
         <Button
-          label="Czytaj dalej"
+          label="Czytaj więcej"
           variant="secondary"
           className="rounded-desktop min-w-[150px]"
           ariaDescription={`Przejdź do szczegółów miejsca: ${place.name}`}
@@ -62,7 +62,7 @@ export const MemorialPlace = ({ place }: { place: PlaceDetails }) => (
         {/* BUTTON (DESKTOP ONLY) */}
         <div className="mt-4 hidden desktop:flex desktop:items-start desktop:justify-center">
           <Button
-            label="Czytaj dalej"
+            label="Czytaj więcej"
             variant="secondary"
             className="rounded-desktop min-w-[150px]"
             ariaDescription={`Przejdź do szczegółów miejsca: ${place.name}`}
