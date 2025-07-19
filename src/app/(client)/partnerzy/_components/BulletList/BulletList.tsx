@@ -6,7 +6,7 @@ interface Props {
 
 export const BulletList = ({ points }: Props) => (
   <article className="space-y-6">
-    <p>Oferujemy różne formy współpracy, takie jak</p>
+    <p>Oferujemy różne formy współpracy, takie jak:</p>
 
     <ul className="flex flex-col justify-center gap-6">
       {points.map((point) => (

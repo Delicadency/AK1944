@@ -23,19 +23,8 @@ export const boardData: BoardData = {
       ],
     },
     {
-      title: "Komisja Rewizyjna:",
-      names: [
-        "Andrzej Żylicz - przewodniczący KR",
-        "Tadeusz Garstka - członek KR",
-        "Stanisław Nylec - członek KR",
-        "Grzegorz Kloc* - zastępca członka",
-        "Krystian Tumiński* - zastępca członka",
-      ],
-    },
-    {
       title: "Delegaci na Walny Zjazd Okręgu:",
       names: [
-        "Bronisław Ćwik - delegat",
         "Elżbieta Jarzębska* – delegat",
         "Małgorzata Grzybowska* – zastępca delegata",
         "Andrzej Lis* – zastępca delegata",

@@ -7,7 +7,7 @@ export const ShowOnTabletAndUp: React.FC<ContainerProps> = ({
   as: ShowOnTabletAndUp = "div",
 }) => {
   return (
-    <ShowOnTabletAndUp className={cn("mobile:hidden tablet:block", className)}>
+    <ShowOnTabletAndUp className={cn("mobile:hidden tablet:flex", className)}>
       {children}
     </ShowOnTabletAndUp>
   );
