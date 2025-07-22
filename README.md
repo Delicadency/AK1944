@@ -93,7 +93,7 @@ AK1944/
 
 ## 🤝 Contributing
 
-We welcome contributions to help preserve and share the history of the Home Army! If you'd like to submit a Pull Request, please ensure your code meets our standards:
+We welcome contributions to help preserve and share the history! If you'd like to submit a Pull Request, please ensure your code meets our standards:
 
 ### Code Quality Requirements:
 
