@@ -52,18 +52,17 @@ All features are regularly tested with Axe DevTools to maintain accessibility st
 
 ## 📁 Project Structure
 
-AK1944/
-├── app/ # Next.js 13+ App Router
-│ ├── components/ # Reusable UI components
-│ ├── api/ # API routes
-│ └── (routes)/ # Page routes and layouts
-├── public/ # Static assets (images, fonts)
-├── styles/ # Global styles and Tailwind config
-├── lib/ # Utility functions and helpers
-├── types/ # TypeScript type definitions
-├── tests/ # Jest tests and test utilities
-├── stories/ # Storybook component stories
-└── payload/ # Payload CMS configuration
+- **app/** - Next.js 13+ App Router
+  - **components/** - Reusable UI components
+  - **api/** - API routes
+  - **(routes)/** - Page routes and layouts
+- **public/** - Static assets (images, fonts)
+- **styles/** - Global styles and Tailwind config
+- **lib/** - Utility functions and helpers
+- **types/** - TypeScript type definitions
+- **tests/** - Jest tests and test utilities
+- **stories/** - Storybook component stories
+- **payload/** - Payload CMS configuration
 
 ### Naming Convention
 
