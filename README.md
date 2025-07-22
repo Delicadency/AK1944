@@ -113,3 +113,25 @@ npm run lint
 npm run format
 npm run test
 ```
+
+## 📄 License
+
+This project is proprietary software. All rights reserved.
+
+**Copyright © 2025 Światowy Związek Żołnierzy Armii Krajowej (ŚZŻAK)**
+
+### Restrictions:
+
+- **No copying** - The source code cannot be copied or reproduced
+- **No distribution** - The code cannot be distributed in any form
+- **No commercial use** - The code cannot be used for commercial purposes
+- **No derivative works** - You may not create derivative works based on this code
+
+### Permitted use:
+
+- Viewing the code for educational purposes only
+- Contributing to this repository via Pull Requests (contributions become property of ŚZŻAK)
+
+For any questions regarding the use of this code, please contact the Światowy Związek Żołnierzy Armii Krajowej.
+
+All content, logos, and materials are protected by copyright and are the property of ŚZŻAK.
