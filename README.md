@@ -90,3 +90,26 @@ AK1944/
 - **Files**: camelCase (`useAuth.ts`, `formatDate.ts`)
 - **Folders**: kebab-case (`about-us`, `contact-form`)
 - **CSS Modules**: camelCase (`styles.module.css`)
+
+## 🤝 Contributing
+
+We welcome contributions to help preserve and share the history of the Home Army! If you'd like to submit a Pull Request, please ensure your code meets our standards:
+
+### Code Quality Requirements:
+
+- **Code formatting** - All code must be formatted with Prettier (run `npm run format`)
+- **Linting** - Code must pass ESLint checks without errors (run `npm run lint`)
+- **Styling** - Use only Tailwind CSS utility classes as defined in our `tailwind.config.ts`
+- **Accessibility** - All new features must be WCAG 2.1 Level AA compliant:
+- Test with keyboard navigation
+- Verify proper ARIA attributes
+- Check contrast ratios
+- Test with screen readers
+
+### Before submitting PR:
+
+```bash
+npm run lint
+npm run format
+npm run test
+```
