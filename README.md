@@ -39,31 +39,6 @@ npm run dev
 Open http://localhost:3000 in browser.
 ```
 
-## ♿ Accessibility (WCAG 2.1 Level AA Compliance)
-
-We are committed to making the history accessible to everyone. Our website follows WCAG 2.1 Level AA guidelines to ensure all users can access this important historical content.
-
-### Key Accessibility Features:
-
-**🏷️ Semantic HTML & ARIA Attributes**
-
-- Proper semantic HTML5 tags (`<nav>`, `<main>`, `<article>`, `<section>`) for better screen reader navigation
-- ARIA labels and roles for interactive components
-- Descriptive alt texts for all historical images and documents
-- Logical heading hierarchy (h1-h6) throughout the site
-
-**🎨 High Contrast Mode**
-
-- Built-in contrast mode toggle for users with visual impairments
-- Clear visual indicators for all interactive elements
-
-**📱 Responsive Web Design (RWD)**
-
-- Fully responsive layout from mobile (320px) to FullHD displays
-- Touch-friendly targets (minimum 44x44px) for mobile users
-- Content remains readable and functional at 200% zoom
-- No horizontal scrolling required at any viewport size
-
 ## ♿ Accessibility (WCAG 2.1 Level AA)
 
 We ensure our website is accessible to all users by implementing:
