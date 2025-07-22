@@ -39,6 +39,7 @@ export interface SubmenuItem {
 }
 
 export interface PlaceDetails {
+  id: number;
   slug: string;
   name: string;
   location: string;
@@ -62,3 +63,11 @@ export type ActionState =
   | { status: "idle"; message?: string }
   | { status: "success"; message?: string }
   | { status: "error"; message?: string; issues?: Record<string, string[]> };
+
+export type PageProps = {
+  currentPage: number;
+};
+
+export type SearchParamsProps = {
+  searchParams: Promise<{ [key: string]: string | undefined }>;
+};

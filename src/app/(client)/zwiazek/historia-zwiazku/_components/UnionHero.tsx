@@ -19,7 +19,7 @@ export const UnionHero = ({ paragraph }: Props) => (
       as="article"
       className="text-16 leading-6 text-white contrast:block tablet:text-18 tablet:leading-7"
     >
-      <Breadcrumbs color="white" />
+      <Breadcrumbs color="white" homeIconColor="green" />
       <Heading
         variant="h2"
         color="white"

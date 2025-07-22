@@ -17,7 +17,7 @@ export const MemorialRelatedPlaces = ({
     >
       Inne miejsca pamięci:
     </Heading>
-    <div className="grid grid-cols-1 gap-6 tablet:grid-cols-3">
+    <div className="mx-auto grid w-[90%] grid-cols-1 items-center tablet:grid-cols-3">
       {places.slice(0, 3).map((item) => (
         <Link
           key={item.slug}
@@ -31,7 +31,7 @@ export const MemorialRelatedPlaces = ({
               alt={item.name}
               width={300}
               height={200}
-              className="rounded-desktop w-full object-cover"
+              className="rounded-desktop w-full max-w-[350px] object-cover"
             />
           )}
           <h3 className="text-center font-lora font-bold text-textLightGreen">

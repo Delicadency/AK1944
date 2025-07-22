@@ -25,13 +25,19 @@ interface BreadcrumbProps {
   color?: "green" | "white";
   contrastVariant?: "yellow" | "black";
   currentPageLabel?: string;
+  homeIconColor?: "green" | "white";
+  homeIconContrastVariant?: "yellow" | "black";
 }
 
 export const Breadcrumbs = ({
   color = "green",
   contrastVariant = "yellow",
   currentPageLabel,
+  homeIconColor = "green",
+  homeIconContrastVariant = "yellow",
 }: BreadcrumbProps) => {
+  const iconHomeColor = homeIconColor ?? color;
+  const iconHomeContrast = homeIconContrastVariant ?? contrastVariant;
   const getCircleColor = (
     color: "green" | "white",
     contrastVariant: "yellow" | "black",
@@ -117,8 +123,11 @@ export const Breadcrumbs = ({
         <li className="flex flex-row items-center justify-center">
           <Link href="/" className="flex items-center justify-center gap-2">
             <IconBackHome
-              circleClassName={getCircleColor(color, contrastVariant)}
-              houseClassName={getHouseStrokeColor(color, contrastVariant)}
+              circleClassName={getCircleColor(iconHomeColor, iconHomeContrast)}
+              houseClassName={getHouseStrokeColor(
+                iconHomeColor,
+                iconHomeContrast,
+              )}
             />
             <IconChevronDown
               className={clsx(
