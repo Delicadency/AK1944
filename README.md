@@ -54,17 +54,34 @@ All features are regularly tested with Axe DevTools to maintain accessibility st
 
 ```
 AK1944/
-├── app/# Next.js 13+ App Router
-│   ├── components/# Reusable UI components
-│   ├── api/# API routes
-│   └── (routes)/# Page routes and layouts
-├── public/# Static assets (images, fonts)
-├── styles/# Global styles and Tailwind config
-├── lib/# Utility functions and helpers
-├── types/# TypeScript type definitions
-├── tests/# Jest tests and test utilities
-├── stories/# Storybook component stories
-└── payload/# Payload CMS configuration
+├── .github/               # GitHub workflows and configs
+├── .husky/                # Git hooks for code quality
+├── .next/                 # Next.js build output
+├── .storybook/            # Storybook configuration
+├── node_modules/          # Dependencies
+├── public/                # Static assets
+│   ├── images/            # Image files
+│   ├── favicon.ico        # Site favicon
+│   └── vercel.svg         # Vercel logo
+├── src/                   # Source code
+│   ├── app/               # Next.js App Router
+│   ├── components/        # Reusable UI components
+│   ├── context/           # React Context providers
+│   ├── data/              # Static data files
+│   ├── dataAccess/        # Data fetching logic
+│   ├── hooks/             # Custom React hooks
+│   ├── icons/             # SVG icons
+│   ├── mocks/             # Mock data for testing
+│   ├── types/             # TypeScript type definitions
+│   └── utils/             # Helper functions
+├── .env.example           # Environment variables template
+├── .eslintrc.json         # ESLint configuration
+├── .gitignore             # Git ignore file
+├── jest.config.js         # Jest testing config
+├── next.config.ts         # Next.js configuration
+├── package.json           # Project dependencies
+├── tailwind.config.ts     # Tailwind CSS config
+└── tsconfig.json          # TypeScript config
 ```
 
 ### Naming Convention
