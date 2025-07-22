@@ -49,3 +49,25 @@ We ensure our website is accessible to all users by implementing:
 - **Full keyboard navigation** - accessible without mouse, with visible focus indicators
 
 All features are regularly tested with Axe DevTools to maintain accessibility standards.
+
+## 📁 Project Structure
+
+AK1944/
+├── app/ # Next.js 13+ App Router
+│ ├── components/ # Reusable UI components
+│ ├── api/ # API routes
+│ └── (routes)/ # Page routes and layouts
+├── public/ # Static assets (images, fonts)
+├── styles/ # Global styles and Tailwind config
+├── lib/ # Utility functions and helpers
+├── types/ # TypeScript type definitions
+├── tests/ # Jest tests and test utilities
+├── stories/ # Storybook component stories
+└── payload/ # Payload CMS configuration
+
+### Naming Convention
+
+- **Components**: PascalCase (`HeroSection.tsx`, `NavigationBar.tsx`)
+- **Files**: camelCase (`useAuth.ts`, `formatDate.ts`)
+- **Folders**: kebab-case (`about-us`, `contact-form`)
+- **CSS Modules**: camelCase (`styles.module.css`)
