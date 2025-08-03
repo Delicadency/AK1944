@@ -3,6 +3,32 @@ import { RallyData } from "../_models/rallyData";
 export const participationInRallyRulesData: RallyData[] = [
   {
     id: 1,
+    slug: "odsloniecie-pomnika-3-marca",
+    title: "Odsłonięcie pomnika Ludwika Marszałka w Dębicy",
+    date: "10 lutego, 2024",
+    invite:
+      "Zapraszamy na uroczystość odsłonięcia pomnika Ludwika Marszałka i zamordowanych członków Zrzeszenia „Wolność i Niezawisłość” z Obwodu SZP-ZWZ-AK Dębica. Uroczystość odbędzie się 3 marca 2024 roku w Dębicy. Program uroczystości obejmuje m.in. mszę świętą, odsłonięcie pomnika, apel pamięci oraz galę z okazji odsłonięcia pomnika.",
+    programList: [
+      "3 marca 2024 (niedziela)",
+      "Kościół pw. Miłosierdzia Bożego w Dębicy [godz. 11:00]",
+      "Msza święta w intencji Ojczyzny z okazji Narodowego Dnia Pamięci „Żołnierzy Wyklętych”",
+
+      "Pomnik Żołnierzy Niezłomnych przy Rondzie Adama Mickiewicza w Dębicy [godz. 12:00]",
+      "Podniesienie flagi Rzeczpospolitej Polskiej, ceremonia odsłonięcia i poświęcenia pomnika, apel pamięci, salwa honorowa, złożenie wieńców i wiązanek kwiatów",
+
+      "Dom Kultury i Kino „Śnieżka” w Dębicy [godz. 13:30]",
+      "Uroczysta Gala z okazji odsłonięcia Pomnika Żołnierzy Niezłomnych okolicznościowe wystąpienia, wręczenie honorowych wyróżnień i podziękowań, występ Grupy Safo Miejskiego Ośrodka Kultury w Dębicy oraz Soul Sanok",
+      "[bezpłatne bilety wstępu do odbioru w DKiK „Śnieżka”]",
+
+      "Wydarzenie towarzyszące – 1 marca 2024 (piątek)",
+      "Parafia pw. Św. Jadwigi w Dębicy [godz. 19:00]",
+
+      "Droga Krzyżowa Żołnierzy Wyklętych z kościoła parafialnego na Cmentarz Wojskowy",
+      "Apel pamięci, modlitwa, złożenie „świateł pamięci”",
+    ],
+  },
+  {
+    id: 2,
     slug: "rajd-kaluzowka-2017",
     title: "Rajd rowerowy na Kałużówkę",
     date: "5 sierpnia, 2017",
@@ -46,14 +72,13 @@ export const participationInRallyRulesData: RallyData[] = [
       "Informacja o miejscu rozpoczęcia rajdu dla każdego patrolu będzie podana telefonicznie po otrzymaniu kart zgłoszeń. Poinformujemy także o możliwości dotarcia do punktu startowego dostępnymi środkami lokomocji. Po zakończeniu rajdu powrót autobusem do Dębicy.",
     programList: [
       "8:15 Zbiórka patroli w poszczególnych punktach: Gołęczyna, Latoszyn, Braciejowa, Głobikowa",
+      "8:30 Wędrówka szlakiem, połączona z wykonywaniem zadań na trasie",
       "13:30 Polowa Msza Święta na polanie Kałużówka",
       "14:15 Podsumowanie rajdu, wręczenie Przechodniego Proporca 5. Pułku Strzelców Konnych AK",
       "15:00 Zakończenie rajdu",
       "Karty zgłoszenia należy dostarczyć do dnia 7 czerwca 2017 roku osobiście, faksem, pocztą tradycyjną lub za pośrednictwem poczty email na jeden z adresów:",
       "Zespół Szkół w Gumniskach, Gumniska 120, 39 – 210 Dębica, tel./fax 014 681 66 79, spgum@gazeta.pl Katolickie Centrum Edukacji KANA, ul. Chopina 2, 39-200 Dębica, tel. 14 6969 110, kana.debica@wp.pl",
       "Szczegółowe informacje na temat rajdu na stronie: http://www.ak1944.pl/",
-      "8:30 Wędrówka szlakiem, połączona z wykonywaniem zadań na trasie",
-      "14:00 – Ognisko i wręczenie nagród",
     ],
     organizators: [
       "Światowy Związek Żołnierzy Armii Krajowej Środowisko 5. Pułku Strzelców Konnych AK w Dębicy",

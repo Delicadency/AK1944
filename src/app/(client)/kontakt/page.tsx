@@ -46,7 +46,7 @@ export default function ContactPage() {
             variant="h3"
             contrast="yellow"
             color="green"
-            className="text-[1.75rem] tablet:mt-5 tablet:text-[2.5rem] desktop:mb-6 desktop:text-[2rem]"
+            className="mt-5 text-[1.75rem] tablet:text-[2.5rem] desktop:mb-6 desktop:text-[2rem]"
           >
             Kontakt
           </Heading>
@@ -63,18 +63,8 @@ export default function ContactPage() {
             height={90}
             className="mb-6 hidden h-auto tablet:mb-14 tablet:mt-14 tablet:block tablet:w-[247px] desktop:hidden"
           />
-
           <Heading
-            id="organization-info"
             variant="h3"
-            contrast="yellow"
-            color="green"
-            className="mb-6 text-[1.75rem] tablet:mb-14 tablet:text-[2.5rem] desktop:hidden"
-          >
-            Światowy związek AK oraz kontakt w sprawie grobów
-          </Heading>
-          <Heading
-            variant="h4"
             contrast="yellow"
             color="green"
             className="mb-6 hidden flex-col flex-wrap break-words desktop:flex"
@@ -84,7 +74,7 @@ export default function ContactPage() {
           </Heading>
           <p
             id="organization-info"
-            className="mb-6 font-semibold tablet:hidden desktop:block"
+            className="mb-6 mt-6 font-semibold desktop:hidden"
           >
             Światowy Związek Żołnierzy Armii Krajowej – Środowisko 5. Pułku
             Strzelców Konnych Armii Krajowej w Dębicy

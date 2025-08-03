@@ -2,13 +2,10 @@ import { Button } from "@/components/shared/Button/Button";
 import { Heading } from "@/components/shared/Heading/Heading";
 import Image from "next/image";
 import { allRallies } from "../data/rallyPageData";
-import { RallyPagination } from "./RallyPagination";
+import { Pagination } from "../../../../../components/shared/Pagination";
+import { PageProps } from "@/types";
 
-type RallyListProps = {
-  currentPage: number;
-};
-
-export const RallyList = ({ currentPage }: RallyListProps) => {
+export const RallyList = ({ currentPage }: PageProps) => {
   const ITEMS_PER_PAGE = 4;
   const start = (currentPage - 1) * ITEMS_PER_PAGE;
   const paginatedRallies = allRallies.slice(start, start + ITEMS_PER_PAGE);
@@ -58,7 +55,7 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
               <div className="flex flex-wrap gap-5">
                 <Button
                   label="Zasady uczestnictwa"
-                  href={`/szlak-partyzancki/rajdy/zasady-uczestnictwa/${rally.slug}`}
+                  href={`/szlak-partyzancki/rajdy/${rally.slug}`}
                   ariaDescription={`Zasady uczestnictwa dla ${rally.title}`}
                   variant="secondary"
                   className="text-textDarkGreen"
@@ -75,9 +72,10 @@ export const RallyList = ({ currentPage }: RallyListProps) => {
           </div>
         </div>
       ))}
-      <RallyPagination
+      <Pagination
         currentPage={currentPage}
         totalPages={Math.ceil(allRallies.length / ITEMS_PER_PAGE)}
+        basePath="/szlak-partyzancki/rajdy"
       />
     </div>
   );

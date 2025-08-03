@@ -19,7 +19,7 @@ export default function BoardPage() {
         as="article"
         className="font-16 h-fit w-full bg-greenMain py-6 leading-6 text-textLight desktop:flex desktop:min-h-[740px] desktop:w-[1022px] desktop:flex-col desktop:justify-center"
       >
-        <ShowOnTabletAndUp className="flex flex-col items-center px-[88px] pt-3">
+        <ShowOnTabletAndUp className="mx-auto flex flex-col items-center pt-3">
           <LogoAK className="h-[100px] w-[275px]" />
           <div className="my-9 h-[1px] w-full" aria-hidden="true"></div>
         </ShowOnTabletAndUp>

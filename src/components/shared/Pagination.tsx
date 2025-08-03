@@ -5,9 +5,10 @@ import { useRouter, useSearchParams } from "next/navigation";
 type Props = {
   currentPage: number;
   totalPages: number;
+  basePath?: string;
 };
 
-export const RallyPagination = ({ currentPage, totalPages }: Props) => {
+export const Pagination = ({ currentPage, totalPages, basePath }: Props) => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -17,8 +18,7 @@ export const RallyPagination = ({ currentPage, totalPages }: Props) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", page.toString());
 
-    // Upewniamy się, że ścieżka jest poprawna
-    router.push(`/szlak-partyzancki/rajdy?${params.toString()}`);
+    router.push(`${basePath}?${params.toString()}`);
   };
 
   return (

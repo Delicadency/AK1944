@@ -3,6 +3,15 @@ import { Rally } from "../_models/rally";
 export const allRallies: Rally[] = [
   {
     id: 1,
+    slug: "odsloniecie-pomnika-3-marca",
+    title: "Odsłonięcie pomnika Ludwika Marszałka w Dębicy",
+    date: "10 lutego, 2024",
+    description:
+      "Zapraszamy na uroczystość odsłonięcia pomnika Ludwika Marszałka i zamordowanych członków Zrzeszenia „Wolność i Niezawisłość” z Obwodu SZP-ZWZ-AK Dębica. Uroczystość odbędzie się 3 marca 2024 roku w Dębicy. Program uroczystości obejmuje m.in. mszę świętą, odsłonięcie pomnika, apel pamięci oraz galę z okazji odsłonięcia pomnika.",
+    imageUrl: "/images/placeholder_image.png",
+  },
+  {
+    id: 2,
     slug: "rajd-kaluzowka-2018",
     title: "Rajd rowerowy na Kałużówkę 2018",
     date: "5 sierpnia, 2018",
@@ -11,7 +20,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 2,
+    id: 3,
     slug: "rajd-szlak-partyzancki-ponadgimnazjalne",
     title: "Rajd Szlakiem Partyzanckim dla uczniów szkół ponadgimnazjalnych",
     date: "11 października, 2017",
@@ -20,7 +29,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 3,
+    id: 4,
     slug: "rajd-kaluzowka-2017",
     title: "Rajd rowerowy na Kałużówkę",
     date: "5 sierpnia, 2017",
@@ -29,7 +38,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 4,
+    id: 5,
     slug: "rajd-gwiazdzisty-2017",
     title: "12 czerwca zapraszamy na XII Rajd Gwiaździsty „KAŁUŻÓWKA 2017”",
     date: "23 maja, 2017",
@@ -38,7 +47,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 5,
+    id: 6,
     slug: "rajd-rozwiazanie-ak-2017",
     title: "IV rajd na rozwiązanie Armii Krajowej",
     date: "29 stycznia, 2017",
@@ -47,7 +56,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 6,
+    id: 7,
     slug: "rowerowy-rajd-inauguracja-2016",
     title: "Rowerowy rajd Szlakiem Partyzanckim – inauguracja trasy!",
     date: "17 września, 2016",
@@ -56,7 +65,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 7,
+    id: 8,
     slug: "rajd-gwiazdzisty-start-2016",
     title: "Informacja o miejscach wymarszu patroli na Rajd Gwiaździsty 2016",
     date: "8 czerwca, 2016",
@@ -65,7 +74,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 8,
+    id: 9,
     slug: "rajd-gwiazdzisty-2016",
     title: "XI Rajd Gwiaździsty „KAŁUŻÓWKA 2016” – zapowiedź",
     date: "26 maja, 2016",
@@ -74,7 +83,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 9,
+    id: 10,
     slug: "rajd-inauguracyjny-2016",
     title: "Zaproszenie na Rajd Inauguracyjny",
     date: "26 maja, 2016",
@@ -83,7 +92,7 @@ export const allRallies: Rally[] = [
     imageUrl: "/images/placeholder_image.png",
   },
   {
-    id: 10,
+    id: 11,
     slug: "rajd-rozwiazanie-ak-2016",
     title: "III Rajd na rozwiązanie Armii Krajowej",
     date: "22 stycznia, 2016",

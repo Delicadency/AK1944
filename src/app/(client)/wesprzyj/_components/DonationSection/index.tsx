@@ -3,7 +3,7 @@ import { DonationCard } from "./DonationCard";
 
 export const DonationSection = () => (
   <SupportSection
-    id="donation-section"
+    id="dotacja"
     title="Wpłać darowiznę lub wspieraj nas regularnie."
     card={<DonationCard />}
   >

@@ -6,7 +6,7 @@ import { TaxCard } from "../../../../../components/shared/TaxCard/TaxCard";
 export const TaxSection = () => (
   <SupportSection
     title="Przekaż 1,5% swojego podatku"
-    id="tax-section"
+    id="podatek"
     card={<TaxCard />}
   >
     <p>

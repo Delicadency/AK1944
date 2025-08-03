@@ -187,7 +187,7 @@ export const summarySection = {
 } as const;
 
 export const districtSection = {
-  districtTitle: "Obwód AK Dębica w Operacji „Burza” - Struktura i Działania",
+  districtTitle: "Obwód AK Dębica w Akcji „Burza” - Struktura i Działania",
   content: [
     "Obwód AK Dębica, wchodzący w skład 24. Dywizji Piechoty, odtwarzał w okresie „Burzy” - 5. Pułk Strzelców Konnych Armii Krajowej. Dowództwo nad całością objął zastępca inspektora rejonowego w Rzeszowie, kpt. Adam Lazarowicz „Klamra”, natomiast komendant Obwodu Dębica, kpt. Ludwik Marszałek „Zbroja”, został na czas „Burzy” - zastępcą „Klamry”. Teren Obwodu podzielono na trzy rejony walki zwane także zgrupowaniami [1].",
     "Rozkaz o rozpoczęciu „Burzy” przywiózł z Rzeszowa do Gumnisk k. Dębicy Ludwik Marszałek „Zbroja” i dostarczył go Adamowi Lazarowiczowi „Klamrze” o świcie 28 lipca 1944 roku. Dowódca pułku niezwłocznie zaalarmował całość Obwodu i zarządził koncentracje oddziałów w ramach zgrupowań w trzech rejonach. Miejsce postoju dowództwa pułku oraz dowodzenia całością sił znajdowało się w leśniczówce Berdech (na wzgórzu otaczającym wieś Braciejowa, w parafii Gumniska), gdzie zarządzono także koncentrację oddziałów II Zgrupowania [2].",
@@ -221,7 +221,7 @@ export const heroicDefenceSection = {
 
 export const commandTransferSection = {
   commandTransferTitle:
-    "Akcja w Gumniskach i Przeniesienie Dowództwa na Polanę Kałużówka",
+    "Akcja w Gumniskach i Przeniesienie Dowództwa na Polanę Kałużówki",
   content: [
     "Brawurowa akcja zakończyła się sukcesem. Na placu boju poległo około 20 Niemców, a kilkunastu zostało rannych. Podczas wycofywania poległ jeden żołnierz z oddziału dyspozycyjnego. Był nim Stanisław Mroczka „Miecz”. Niemcy zdołali zabrać około 20 cywilów (głównie starców oraz miejscowego proboszcza), którzy zostali w większości wypuszczeni w Dębicy, natomiast reszta została zagarnięta do prac przyfrontowych, skąd po kilku dniach powróciła do domów [7].",
     "Tymczasem „Klamra” jeszcze przed pacyfikacją Gumnisk (na przełomie pierwszej i drugiej dekady sierpnia), zarządził po raz drugi przeniesienie dowództwa pułku i sztabu II Zgrupowania.",
@@ -250,7 +250,7 @@ export const partisanSection = {
 
 export const evacuationSection = {
   evacuationTitle:
-    "Bitwa na Polanie Kałużówka - Heroiczny Opór i Ewakuacja II Zgrupowania",
+    "Bitwa na Polanie Kałużówki - Heroiczny Opór i Ewakuacja II Zgrupowania",
   content: [
     "Jednak rankiem 23 sierpnia Niemcy skierowali silny ogień dwóch baterii artylerii na stanowiska II Zgrupowania w rejonie Kałużówki. Następnie od strony Południka wyszło rozpoznanie patroli bojowych skutecznie odpartych przez kompanię „Pęka”. Przez cały dzień i noc z 23 na 24 sierpnia Niemcy kładli silny ogień artylerii na niewielki stosunkowo teren na którym znajdowało się II Zgrupowanie [14]. Pod wpływem tego ognia pojawiły się pierwsze straty w szeregach II Zgrupowania 5. PSK AK. W tej sytuacji „Klamra”, celem uniknięcia dalszych strat, podjął ryzykowną decyzję próby przebicia się na stronę radziecką. W tym celu nawiązał przez radiostację kontakt z dowództwem radzieckim, aby Sowieci położyli ogień na wskazany skraj lasu, celem upozorowania natarcia na stanowiska niemieckie, co pomogłoby oddziałom II Rejonu opuścić las i wydostać się z okrążenia. Rosjanie wyrazili zgodę, jednakże w oznaczonym czasie położyli ogień, który został skierowany nie na wyznaczony przez „Klamrę” odcinek, lecz wprost na stanowiska II Zgrupowania. Wprawdzie Sowieci przepraszali później za tę pomyłkę, jednakże „Klamra” nie zdecydował się na powtórzenie manewru [15].",
     "Około godziny 5 rano, w czwartek 24 sierpnia od wschodu tzn. od strony drogi Braciejowa - Południk oraz od południowego-wschodu, tzn. od strony miejscowości Południk wyszło główne natarcie batalionu piechoty niemieckiej. Atak wspierał silny ogień artylerii i moździerzy, skierowany na polskie stanowiska. Jako pierwszy wycofał się oddział „rozwiedki”, której brakło amunicji. Pod silnym naporem nieprzyjaciela na skrzydło kompanii Franciszka Szary „Pęka”, stanowiącej pierwszą linię obrony od strony Południka, dowódca kompanii wydał rozkaz cofnięcia na zapasowe stanowiska. Skuteczny opór w tym rejonie stawiła drużyna saperów Zdzisława Chodackiego „Migdała”, drużyna dyspozycyjna „Brutusa” oraz pluton Artura Cwena „Rena”. Jednakże i te oddziały musiały się wycofać w głąb polany na wzgórze oznakowane na mapie: 426 m. n.p.m. [16].",
@@ -262,7 +262,7 @@ export const evacuationSection = {
 } as const;
 
 export const epilogSection = {
-  epilogTitle: "Rozwiązanie oddziałów i tragiczny epilog",
+  epilogTitle: "Rozwiązanie oddziałów i epilog",
   content: [
     "W dniu 25 sierpnia Zgrupowanie przeszło w rejon spalonej przez Niemców leśniczówki Władysława Klabachy [20]. Przejście przez front okazało się niemożliwe. Teren był już mocno obsadzony przez oddziały niemieckie, a na przedpolu Niemcy zastawili sidła w postaci pola minowego. Sytuacja oddziałów II Rejonu stawała się coraz bardziej dramatyczna. Żołnierze od kilku dni nie mieli w ustach żadnego pożywienia. Kontrowersyjna stała się kwestia związana z transportem rannych.",
     "Po trzech dniach pobytu w jarze na Południku  dowództwo podjęło decyzję wymarszu w kierunku zachodnim, a więc w rejon gdzie uprzednio znajdowały się oddziały III Zgrupowania (rozwiązanego 23 sierpnia). Późnym wieczorem 28 sierpnia, gdy zapadł już całkowity zmrok Zgrupowanie wyruszyło w rejon lasów Gołęczyny [21].",
