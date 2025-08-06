@@ -25,6 +25,7 @@ export const Map = ({ map }: MapProps) => {
         loading="lazy"
         onMouseEnter={disableScroll}
         onMouseLeave={enableScroll}
+        onLoad={() => window.scrollTo(0, 0)}
       ></iframe>
       <div className="w-full py-1">
         <a
